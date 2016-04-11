@@ -1,0 +1,228 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       09/Apr/2016  14:28:58
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\hardware_init_combined.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\hardware_init_combined.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\hardware_init_combined.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\hardware_init_combined.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\hardware_init_combined.c
+      1          /*
+      2           * Copyright (c) 2013-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "board_combined.h"
+     32          #include "pin_mux_combined.h"
+     33          #include "fsl_clock_manager.h"
+     34          #include "fsl_debug_console.h"
+     35          #include "fsl_ltc_driver.h"
+     36          #include "Flash_Adapter.h"
+     37          
+     38          void hardware_init_combined(void) {
+     39          
+     40            if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+     41            {
+     42              PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* Release hold with ACKISO:  Only has an effect if recovering from VLLSx.*/
+     43              /*clear power management registers after recovery from vlls*/
+     44              SMC_BWR_STOPCTRL_LLSM(SMC, 0);
+     45              SMC_BWR_PMCTRL_STOPM(SMC, 0);
+     46              SMC_BWR_PMCTRL_RUNM(SMC, 0);
+     47            }
+     48            /* enable clock for PORTs */
+     49            CLOCK_SYS_EnablePortClock(PORTA_IDX);
+     50            CLOCK_SYS_EnablePortClock(PORTB_IDX);
+     51            CLOCK_SYS_EnablePortClock(PORTC_IDX);
+     52          
+     53            /* Init board clock */
+     54            BOARD_ClockInit();
+     55            //dbg_uart_init();
+     56            
+     57            
+     58            configure_i2c_pins(BOARD_ACCEL_I2C_INSTANCE);
+     59            //dbg_uart_init();
+     60          
+     61          
+     62            /* Init DCDC module */
+     63            BOARD_DCDCInit();
+     64            
+     65            /* Install callbacks to handle enter and exit low power */
+     66          #if cPWR_UsePowerDownMode
+     67            BOARD_InstallLowPowerCallbacks();
+     68          #endif
+     69            
+     70            NV_ReadHWParameters(&gHardwareParameters);
+     71          }
+     72          
+     73          /*!
+     74          ** @}
+     75          */
+     76          /*
+     77          ** ###################################################################
+     78          **
+     79          **     This file was created by Processor Expert 10.4 [05.10]
+     80          **     for the Freescale Kinetis series of microcontrollers.
+     81          **
+     82          ** ###################################################################
+     83          */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   hardware_init_combined
+         8   -> BOARD_ClockInit
+         8   -> BOARD_DCDCInit
+         8   -> CLOCK_SYS_EnablePortClock
+         8   -> NV_ReadHWParameters
+         8   -> configure_i2c_pins
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     100  hardware_init_combined
+
+ 
+ 100 bytes in section .text
+ 
+ 100 bytes of CODE memory
+
+Errors: none
+Warnings: none

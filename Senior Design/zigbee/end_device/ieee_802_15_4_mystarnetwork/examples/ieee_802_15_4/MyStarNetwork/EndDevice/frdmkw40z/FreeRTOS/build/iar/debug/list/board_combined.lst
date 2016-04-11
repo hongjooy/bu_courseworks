@@ -1,0 +1,810 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       09/Apr/2016  14:28:57
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\board_combined.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\board_combined.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\board_combined.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\board_combined.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\board_combined.c
+      1          /*
+      2           * Copyright (c) 2013-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          /************************************************************************************
+     31          *************************************************************************************
+     32          * Include
+     33          *************************************************************************************
+     34          ************************************************************************************/
+     35          #include "EmbeddedTypes.h"
+     36          #include "board_combined.h"
+     37          #include "fsl_clock_manager.h"
+     38          #include "fsl_smc_hal.h"
+     39          #include "fsl_debug_console.h"
+     40          #include "pin_mux_combined.h"
+     41          #include "fsl_adc16_driver.h"
+     42          #include "fsl_pmc_hal.h"
+     43          
+     44          #if cPWR_UsePowerDownMode
+     45          #include "PWR_Interface.h"
+     46          #endif
+     47          
+     48          #if gDCDC_Enabled_d
+     49          #include "DCDC.h"
+     50          #endif
+     51          
+     52          /************************************************************************************
+     53          *************************************************************************************
+     54          * Private type definitions and macros
+     55          *************************************************************************************
+     56          ************************************************************************************/
+     57          #define ADC16_INSTANCE                (0)   /* ADC instance */
+     58          #define ADC16_CHN_GROUP               (0)   /* ADC group configuration selection */
+     59          #define ADC16_POTENTIOMETER_CHN       (kAdc16Chn0) /* Potentiometer channel */
+     60          
+     61          #define ADC16_BATLVL_CHN              (kAdc16Chn23) /* Potentiometer channel */
+     62          #define ADC16_BL_LOWER_LIMIT          (0) /* min percentage of battery charge */
+     63          #define ADC16_BL_UPPER_LIMIT          (100) /* max percentage of battery charge */
+     64          #define ADC16_BL_DYNAMIC_RANGE        (ADC16_BL_UPPER_LIMIT - ADC16_BL_LOWER_LIMIT) /* Range = [ADC16_HB_LOWER_LIMIT .. ADC16_HB_LOWER_LIMIT + ADC16_HB_DYNAMIC_RANGE] */
+     65          
+     66          #define ADC16_BANDGAP_CHN             (kAdc16Chn27) /* ADC channel of BANDGAP Voltage reference*/
+     67          
+     68          #define MIN_VOLT_BUCK 180
+     69          #define MAX_VOLT_BUCK 310
+     70          #define FULL_BAT      100
+     71          #define EMPTY_BAT     0
+     72          
+     73          /************************************************************************************
+     74          *************************************************************************************
+     75          * Private memory declarations
+     76          *************************************************************************************
+     77          ************************************************************************************/
+     78          uint32_t offsetVdd = 0;               
+     79          adc16_converter_config_t adcUserConfig;   // structure for user config
+     80          
+     81          static uint32_t adcValue = 0; /* ADC value */
+     82          static adc16_converter_config_t adcUserConfig; /* structure for user config */
+     83          
+     84          /* Configuration for enter VLPR mode. Core clock = 4MHz. */
+     85          const clock_manager_user_config_t g_defaultClockConfigVlpr =
+     86          {
+     87              .mcgConfig =
+     88              {
+     89                  .mcg_mode           = kMcgModeBLPI,   // Work in BLPI mode.
+     90                  .irclkEnable        = true,  // MCGIRCLK enable.
+     91                  .irclkEnableInStop  = false, // MCGIRCLK disable in STOP mode.
+     92                  .ircs               = kMcgIrcFast, // Select IRC4M.
+     93                  .fcrdiv             = 0U,    // FCRDIV is 0.
+     94          
+     95                  .frdiv   = 5U,
+     96                  .drs     = kMcgDcoRangeSelLow,  // Low frequency range
+     97                  .dmx32   = kMcgDmx32Default,    // DCO has a default range of 25%
+     98                  .oscsel  = kMcgOscselOsc,       // Select OSC
+     99          
+    100              },
+    101              .simConfig =
+    102              {
+    103                  .er32kSrc  = kClockEr32kSrcOsc0,     // ERCLK32K selection, use OSC0.
+    104                  .outdiv1   = 0U,
+    105                  .outdiv4   = 4U,
+    106              }
+    107          };
+    108          
+    109          /* Configuration for enter RUN mode. Core clock = 16MHz / 32MHz. */
+    110          const clock_manager_user_config_t g_defaultClockConfigRun =
+    111          {
+    112              .mcgConfig =
+    113              {
+    114                  .mcg_mode           = kMcgModeBLPE, // Work in BLPE mode.
+    115                  .irclkEnable        = true,  // MCGIRCLK enable.
+    116                  .irclkEnableInStop  = false, // MCGIRCLK disable in STOP mode.
+    117                  .ircs               = kMcgIrcSlow, // Select IRC32k.
+    118                  .fcrdiv             = 0U,    // FCRDIV is 0.
+    119          
+    120                  .frdiv   = 5U,
+    121                  .drs     = kMcgDcoRangeSelLow,  // Low frequency range
+    122                  .dmx32   = kMcgDmx32Default,    // DCO has a default range of 25%
+    123                  .oscsel  = kMcgOscselOsc,       // Select 
+    124              },
+    125              .simConfig =
+    126              {
+    127                  .pllFllSel = kClockPllFllSelFll,    // PLLFLLSEL select FLL.
+    128                  .er32kSrc  = kClockEr32kSrcOsc0,     // ERCLK32K selection, use OSC0.
+    129          #if CLOCK_INIT_CONFIG == CLOCK_RUN_16        
+    130                  .outdiv1   = 1U,
+    131                  .outdiv4   = 0U,
+    132          #else
+    133                  .outdiv1   = 0U,
+    134                  .outdiv4   = 1U,
+    135          #endif        
+    136              }
+    137          };
+    138          
+    139          #if gDCDC_Enabled_d == 1
+    140          const dcdcConfig_t mDcdcDefaultConfig = 
+    141          {
+    142          #if APP_DCDC_MODE == gDCDC_Mode_Buck_c
+    143            .vbatMin = 1800,
+    144            .vbatMax = 4200,
+    145          #elif APP_DCDC_MODE == gDCDC_Mode_Boost_c
+    146            .vbatMin = 900,
+    147            .vbatMax = 1800,
+    148          #endif  
+    149            .dcdcMode = APP_DCDC_MODE,
+    150            .vBatMonitorIntervalMs = APP_DCDC_VBAT_MONITOR_INTERVAL,
+    151            .pfDCDCAppCallback = NULL, /* .pfDCDCAppCallback = DCDCCallback, */
+    152            .dcdc1P45OutputTargetVal = gDCDC_1P45OutputTargetVal_1_450_c,
+    153            .dcdc1P8OutputTargetVal = gDCDC_1P8OutputTargetVal_1_800_c
+    154          };
+    155          #endif
+    156          
+    157          /************************************************************************************
+    158          *************************************************************************************
+    159          * Private functions prototypes
+    160          *************************************************************************************
+    161          ************************************************************************************/
+    162          static void ADC16_CalibrateParams(void);
+    163          static inline uint32_t ADC16_Measure(void);
+    164          static inline uint32_t ADC16_BatLvl(void);
+    165          static inline uint32_t ADC16_BgLvl(void);
+    166          static uint16_t ADC16_ReadValue(adc16_chn_t chnIdx, uint8_t diffMode);
+    167          static void DCDC_AdjustVbatDiv4();
+    168          static void CLOCK_SetBootConfig(clock_manager_user_config_t const* config);
+    169          /************************************************************************************
+    170          *************************************************************************************
+    171          * Public functions prototypes
+    172          *************************************************************************************
+    173          ************************************************************************************/
+    174          void BOARD_InstallLowPowerCallbacks(void);
+    175          void BOARD_EnterLowPowerCb(void);
+    176          void BOARD_ExitLowPowerCb(void);
+    177          /************************************************************************************
+    178          *************************************************************************************
+    179          * Public functions
+    180          *************************************************************************************
+    181          ************************************************************************************/
+    182          
+    183          /* Function to initialize OSC0 base on board configuration. */
+    184          void BOARD_InitOsc0(void)
+    185          {
+    186              // OSC0 has not configuration register, only set frequency
+    187              MCG_WR_C2_RANGE(MCG,kOscRangeHigh);
+    188              g_xtal0ClkFreq = 32000000U;
+    189          }
+    190          
+    191          /* Function to initialize RTC external clock base on board configuration. */
+    192          void BOARD_InitRtcOsc(void)
+    193          {
+    194              rtc_osc_user_config_t rtcOscConfig =
+    195              {
+    196                  .freq                = RTC_XTAL_FREQ,
+    197                  .enableCapacitor2p   = RTC_SC2P_ENABLE_CONFIG,
+    198                  .enableCapacitor4p   = RTC_SC4P_ENABLE_CONFIG,
+    199                  .enableCapacitor8p   = RTC_SC8P_ENABLE_CONFIG,
+    200                  .enableCapacitor16p  = RTC_SC16P_ENABLE_CONFIG,
+    201                  .enableOsc           = RTC_OSC_ENABLE_CONFIG,
+    202              };
+    203          
+    204              CLOCK_SYS_RtcOscInit(0U, &rtcOscConfig);
+    205          }
+    206          
+    207          void BOARD_InitAdc(void)
+    208          {
+    209          #if gDCDC_Enabled_d == 0
+    210                  SIM_HAL_EnableClock(SIM, kSimClockGateDcdc);
+    211                  CLOCK_SYS_EnableAdcClock(0);
+    212                  ADC16_DRV_StructInitUserConfigDefault(&adcUserConfig);
+    213                  adcUserConfig.resolution = kAdc16ResolutionBitOfDiffModeAs13;
+    214                  adcUserConfig.refVoltSrc = kAdc16RefVoltSrcOfVref;
+    215                  ADC16_DRV_Init(ADC16_INSTANCE, &adcUserConfig);
+    216                  ADC16_CalibrateParams();
+    217          #endif     
+    218          }
+    219          
+    220          uint8_t BOARD_GetBatteryLevel(void)
+    221          {
+    222              uint16_t batVal, bgVal, batLvl, batVolt, bgVolt = 100; /*cV*/
+    223              
+    224              bgVal = ADC16_BgLvl();
+    225              DCDC_AdjustVbatDiv4(); /* Bat voltage  divided by 4 */
+    226              batVal = ADC16_BatLvl() * 4; /* Need to multiply the value by 4 because the measured voltage is divided by 4*/
+    227              
+    228              batVolt = bgVolt * batVal / bgVal;
+    229              
+    230              batLvl = (batVolt - MIN_VOLT_BUCK) * (FULL_BAT - EMPTY_BAT) / (MAX_VOLT_BUCK - MIN_VOLT_BUCK);
+    231              return ((batLvl <= 100) ? batLvl:100);    
+    232          }
+    233          
+    234          uint16_t BOARD_GetPotentiometerLevel(void)
+    235          {
+    236              uint16_t value;
+    237          	    
+    238              value = ADC16_Measure();
+    239          	
+    240          	value = (0x8000 & value) ? 0 : value;
+    241                  
+    242              return value;
+    243          }
+    244          
+    245          /* Initialize clock. */
+    246          void BOARD_ClockInit(void)
+    247          {
+    248              /* Set allowed power mode, allow all. */
+    249              SMC_HAL_SetProtection(SMC, kAllowPowerModeAll);
+    250          
+    251              /* Setup board clock source. */
+    252              // Setup OSC0 if used.
+    253              // Configure OSC0 pin mux.
+    254              PORT_HAL_SetMuxMode(EXTAL0_PORT, EXTAL0_PIN, EXTAL0_PINMUX);
+    255              PORT_HAL_SetMuxMode(XTAL0_PORT, XTAL0_PIN, XTAL0_PINMUX);
+    256          
+    257              BOARD_InitOsc0();
+    258              BOARD_InitRtcOsc();
+    259          
+    260              /* Set system clock configuration. */
+    261          #if (CLOCK_INIT_CONFIG == CLOCK_VLPR)
+    262              CLOCK_SetBootConfig(&g_defaultClockConfigVlpr);
+    263          #else
+    264              CLOCK_SetBootConfig(&g_defaultClockConfigRun);
+    265          #endif
+    266              
+    267              CLOCK_SYS_SetTpmSrc(0, kClockTpmSrcOsc0erClk);
+    268          }
+    269          
+    270          /* Initialize DCDC. */
+    271          void BOARD_DCDCInit(void)
+    272          {
+    273          #if gDCDC_Enabled_d == 1
+    274              /* Initialize DCDC module */
+    275              DCDC_Init(&mDcdcDefaultConfig); 
+    276          #endif
+    277          }
+    278          
+    279          void dbg_uart_init(void)
+    280          {
+    281              configure_lpuart_pins(BOARD_DEBUG_UART_INSTANCE);
+    282          
+    283              // Select different clock source for LPSCI. */
+    284          #if (CLOCK_INIT_CONFIG == CLOCK_VLPR)
+    285              CLOCK_SYS_SetLpuartSrc(BOARD_DEBUG_UART_INSTANCE, kClockLpuartSrcMcgIrClk);
+    286          #else
+    287              CLOCK_SYS_SetLpuartSrc(BOARD_DEBUG_UART_INSTANCE, kClockLpuartSrcMcgFllClk);
+    288          #endif
+    289          
+    290          //    DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, BOARD_DEBUG_UART_BAUD, kDebugConsoleLPUART);
+    291          }
+    292          
+    293          int debug_printf( char const * s, ... )
+    294          {
+    295              return 0;
+    296          }
+    297          
+    298          /************************************************************************************
+    299          *************************************************************************************
+    300          * Private functions
+    301          *************************************************************************************
+    302          ************************************************************************************/
+    303          
+    304          /*!
+    305           * @brief Parameters calibration: VDD and ADCR_TEMP25
+    306           *
+    307           * This function used BANDGAP as reference voltage to measure vdd and
+    308           * calibrate V_TEMP25 with that vdd value.
+    309           */
+    310          #if gDCDC_Enabled_d == 0
+    311          static const adc16_hw_average_config_t adcHwAverageConfig =
+    312          {
+    313            .hwAverageEnable = true, /*!< Enable the hardware average function. */
+    314            .hwAverageCountMode = kAdc16HwAverageCountOf16 /*!< Select the count of conversion result for accumulator. */
+    315          } ;
+    316          #endif
+    317          
+    318          void ADC16_CalibrateParams(void)
+    319          {
+    320              adc16_calibration_param_t adcCalibraitionParam;   
+    321          
+    322          #if FSL_FEATURE_ADC16_HAS_CALIBRATION
+    323              ADC16_DRV_GetAutoCalibrationParam(ADC16_INSTANCE, &adcCalibraitionParam);
+    324              ADC16_DRV_SetCalibrationParam(ADC16_INSTANCE, &adcCalibraitionParam);
+    325          #endif /* FSL_FEATURE_ADC16_HAS_CALIBRATION */
+    326            
+    327          #if gDCDC_Enabled_d == 0    
+    328            ADC16_DRV_ConfigHwAverage(0, &adcHwAverageConfig);
+    329          #endif
+    330            
+    331              pmc_bandgap_buffer_config_t pmcBandgapConfig = {
+    332                  .enable = true,
+    333          #if FSL_FEATURE_PMC_HAS_BGEN
+    334                  .enableInLowPower = false,
+    335          #endif
+    336          #if FSL_FEATURE_PMC_HAS_BGBDS
+    337                  .drive = kPmcBandgapBufferDriveLow,
+    338          #endif
+    339              };
+    340              
+    341              // Enable BANDGAP reference voltage
+    342              PMC_HAL_BandgapBufferConfig(PMC_BASE_PTR, &pmcBandgapConfig);
+    343          }
+    344          
+    345          
+    346          /*!
+    347           * @brief Gets the current voltage of divider (potentiometer)
+    348           *
+    349           * This function measure the ADC channel corresponding to external potentiometer
+    350           */
+    351          static inline uint32_t ADC16_Measure(void)
+    352          {
+    353              adcValue = ADC16_ReadValue((adc16_chn_t)ADC16_POTENTIOMETER_CHN, true);
+    354              return adcValue;
+    355          }
+    356          
+    357          
+    358          /*!
+    359           * @brief Gets the current voltage of the battery
+    360           *
+    361           * This function measure the ADC channel corresponding to the battery
+    362           */
+    363          static inline uint32_t ADC16_BatLvl(void)
+    364          {
+    365              adcValue = ADC16_ReadValue((adc16_chn_t)ADC16_BATLVL_CHN, false);
+    366              return adcValue;
+    367          }
+    368          
+    369          /*!
+    370           * @brief Gets the current bandgap voltage
+    371           *
+    372           * This function measure the ADC channel corresponding to the bandgap
+    373           */
+    374          static inline uint32_t ADC16_BgLvl(void)
+    375          {
+    376              adcValue = ADC16_ReadValue((adc16_chn_t)ADC16_BANDGAP_CHN, false);
+    377              return adcValue;
+    378          }
+    379          
+    380          
+    381          /*!
+    382           * @brief Reads the ADC value from the channel given as input
+    383           *
+    384           * This function measure the ADC channel given as input
+    385           */
+    386          static uint16_t ADC16_ReadValue(adc16_chn_t chnIdx, uint8_t diffMode)
+    387          {
+    388            adc16_chn_config_t chnConfig;
+    389          
+    390              /* Configure the conversion channel */
+    391              chnConfig.chnIdx     = chnIdx;
+    392          #if FSL_FEATURE_ADC16_HAS_DIFF_MODE
+    393              chnConfig.diffConvEnable = diffMode;
+    394          #endif
+    395              chnConfig.convCompletedIntEnable  = false;
+    396          
+    397              /* Software trigger the conversion */
+    398              ADC16_DRV_ConfigConvChn(ADC16_INSTANCE, ADC16_CHN_GROUP, &chnConfig);
+    399          
+    400              /* Wait for the conversion to be done */
+    401              ADC16_DRV_WaitConvDone(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    402          
+    403              /* Fetch the conversion value */
+    404              adcValue = (diffMode) ? ADC16_DRV_GetConvValueSigned(ADC16_INSTANCE, ADC16_CHN_GROUP) : ADC16_DRV_GetConvValueRAW(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    405          
+    406              /* Calculates adcValue in 16bit resolution from 12bit resolution 
+    407              in order to convert to reading */
+    408          #if (FSL_FEATURE_ADC16_MAX_RESOLUTION < 16)
+    409              adcValue = adcValue << 4;
+    410          #endif
+    411              /* Pause the conversion */
+    412              ADC16_DRV_PauseConv(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    413              
+    414              return adcValue;
+    415          }
+    416          
+    417          static void DCDC_AdjustVbatDiv4()
+    418          {
+    419            const uint8_t vBatDiv = 3;
+    420            DCDC_BWR_REG0_DCDC_VBAT_DIV_CTRL(DCDC_BASE_PTR, vBatDiv);  
+    421          }
+    422          
+    423          static void CLOCK_SetBootConfig(clock_manager_user_config_t const* config)
+    424          {
+    425              CLOCK_SYS_SetSimConfigration(&config->simConfig);
+    426          
+    427              CLOCK_SYS_SetMcgMode(&config->mcgConfig);
+    428          
+    429              SystemCoreClock = CORE_CLOCK_FREQ;
+    430          }
+    431          
+    432          void BOARD_InstallLowPowerCallbacks()
+    433          {
+    434          #if cPWR_UsePowerDownMode
+    435            PWR_RegisterLowPowerEnterCallback((pfPWRCallBack_t)BOARD_EnterLowPowerCb);
+    436            PWR_RegisterLowPowerExitCallback((pfPWRCallBack_t)BOARD_ExitLowPowerCb); 
+    437          #endif
+    438          }
+    439          
+    440          void BOARD_TogglePins(bool isLowPower)
+    441          {
+    442              if(isLowPower)
+    443              {
+    444                  PORT_HAL_SetMuxMode(PORTA,16u,kPortPinDisabled);
+    445                  PORT_HAL_SetMuxMode(PORTA,17u,kPortPinDisabled);
+    446          
+    447                  PORT_HAL_SetMuxMode(PORTB,1u,kPortPinDisabled);
+    448                  PORT_HAL_SetMuxMode(PORTB,2u,kPortPinDisabled);
+    449                  PORT_HAL_SetMuxMode(PORTB,3u,kPortPinDisabled);
+    450                  PORT_HAL_SetMuxMode(PORTB,16u,kPortPinDisabled);
+    451                  PORT_HAL_SetMuxMode(PORTB,17u,kPortPinDisabled);
+    452          
+    453                  PORT_HAL_SetMuxMode(PORTC,2u,kPortPinDisabled);
+    454                  PORT_HAL_SetMuxMode(PORTC,3u,kPortPinDisabled);
+    455                  PORT_HAL_SetMuxMode(PORTC,6u,kPortPinDisabled);
+    456                  PORT_HAL_SetMuxMode(PORTC,7u,kPortPinDisabled);
+    457          
+    458                  /* LEDs */
+    459                  PORT_HAL_SetMuxMode(PORTC,0u,kPortPinDisabled);
+    460                  PORT_HAL_SetMuxMode(PORTC,1u,kPortPinDisabled);
+    461                  PORT_HAL_SetMuxMode(PORTC,4u,kPortPinDisabled);
+    462                  PORT_HAL_SetMuxMode(PORTC,5u,kPortPinDisabled);
+    463          
+    464                  PORT_HAL_SetMuxMode(PORTC,16u,kPortPinDisabled);
+    465                  PORT_HAL_SetMuxMode(PORTC,17u,kPortPinDisabled);
+    466                  PORT_HAL_SetMuxMode(PORTC,18u,kPortPinDisabled);
+    467                  PORT_HAL_SetMuxMode(PORTC,19u,kPortPinDisabled);
+    468          
+    469                  //NMI
+    470                  PORT_HAL_SetMuxMode(PORTB,18u,kPortPinDisabled);
+    471          
+    472                  //SWD pins
+    473                  PORT_HAL_SetMuxMode(PORTA,0u,kPortPinDisabled);
+    474                  PORT_HAL_SetMuxMode(PORTA,1u,kPortPinDisabled);
+    475              }
+    476              else
+    477              {
+    478                  //SWD pins
+    479                  PORT_HAL_SetMuxMode(PORTA,0u,kPortMuxAlt7);
+    480                  PORT_HAL_SetPullMode(PORTA,0u,kPortPullUp);
+    481                  PORT_HAL_SetPullCmd(PORTA,0u, true);
+    482                  
+    483                  PORT_HAL_SetMuxMode(PORTA,1u,kPortMuxAlt7);
+    484                  PORT_HAL_SetSlewRateMode(PORTA,1u,kPortSlowSlewRate);
+    485                  PORT_HAL_SetPullMode(PORTA,1u,kPortPullDown);
+    486                  PORT_HAL_SetPullCmd(PORTA,1u, true);
+    487          
+    488                  /* LEDs */
+    489                  PORT_HAL_SetMuxMode(PORTC,0u,kPortMuxAsGpio);
+    490                  PORT_HAL_SetMuxMode(PORTC,1u,kPortMuxAsGpio);
+    491                  PORT_HAL_SetMuxMode(PORTC,4u,kPortMuxAsGpio);
+    492                  PORT_HAL_SetMuxMode(PORTC,5u,kPortMuxAsGpio);
+    493                  
+    494                  configure_lpuart_pins(0);
+    495              }
+    496          }
+    497          
+    498          void BOARD_EnterLowPowerCb()
+    499          {
+    500          #if APP_DISABLE_PINS_IN_LOW_POWER  
+    501              BOARD_TogglePins(TRUE);
+    502          #endif
+    503              
+    504          #if gDCDC_Enabled_d
+    505              DCDC_BWR_REG0_DCDC_VBAT_DIV_CTRL(DCDC_BASE_PTR, 0);
+    506              DCDC_PrepareForPulsedMode();
+    507          #endif
+    508          }
+    509          
+    510          void BOARD_ExitLowPowerCb()
+    511          {  
+    512          #if APP_DISABLE_PINS_IN_LOW_POWER  
+    513            BOARD_TogglePins(FALSE);
+    514          #endif
+    515            
+    516          #if gDCDC_Enabled_d
+    517              DCDC_PrepareForContinuousMode();
+    518          #endif
+    519          }
+    520          /*******************************************************************************
+    521           * EOF
+    522           ******************************************************************************/
+    523          
+    524           
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   ADC16_BatLvl
+         8   -> ADC16_ReadValue
+       8   ADC16_BgLvl
+         8   -> ADC16_ReadValue
+      16   ADC16_CalibrateParams
+        16   -> ADC16_DRV_ConfigHwAverage
+        16   -> ADC16_DRV_GetAutoCalibrationParam
+        16   -> ADC16_DRV_SetCalibrationParam
+        16   -> PMC_HAL_BandgapBufferConfig
+       8   ADC16_Measure
+         8   -> ADC16_ReadValue
+      16   ADC16_ReadValue
+        16   -> ADC16_DRV_ConfigConvChn
+        16   -> ADC16_DRV_GetConvValueRAW
+        16   -> ADC16_DRV_GetConvValueSigned
+        16   -> ADC16_DRV_PauseConv
+        16   -> ADC16_DRV_WaitConvDone
+       8   BOARD_ClockInit
+         8   -> BOARD_InitOsc0
+         8   -> BOARD_InitRtcOsc
+         8   -> CLOCK_SYS_SetTpmSrc
+         8   -> CLOCK_SetBootConfig
+         8   -> PORT_HAL_SetMuxMode
+         8   -> SMC_HAL_SetProtection
+       0   BOARD_DCDCInit
+       0   BOARD_EnterLowPowerCb
+       0   BOARD_ExitLowPowerCb
+      24   BOARD_GetBatteryLevel
+        24   -> ADC16_BatLvl
+        24   -> ADC16_BgLvl
+        24   -> DCDC_AdjustVbatDiv4
+        24 __aeabi_idiv
+       8   BOARD_GetPotentiometerLevel
+         8   -> ADC16_Measure
+       8   BOARD_InitAdc
+         8   -> ADC16_CalibrateParams
+         8   -> ADC16_DRV_Init
+         8   -> ADC16_DRV_StructInitUserConfigDefault
+         8   -> CLOCK_SYS_EnableAdcClock
+         8   -> SIM_HAL_EnableClock
+       0   BOARD_InitOsc0
+      24   BOARD_InitRtcOsc
+        24   -> CLOCK_SYS_RtcOscInit
+       0   BOARD_InstallLowPowerCallbacks
+       8   BOARD_TogglePins
+         8   -> PORT_HAL_SetMuxMode
+         8   -> PORT_HAL_SetPullCmd
+         8   -> PORT_HAL_SetPullMode
+         8   -> PORT_HAL_SetSlewRateMode
+         8   -> configure_lpuart_pins
+       8   CLOCK_HAL_SetLpuartSrc
+       8   CLOCK_HAL_SetTpmSrc
+      16   CLOCK_SYS_SetLpuartSrc
+        16   -> CLOCK_HAL_SetLpuartSrc
+      16   CLOCK_SYS_SetTpmSrc
+        16   -> CLOCK_HAL_SetTpmSrc
+       8   CLOCK_SetBootConfig
+         8   -> CLOCK_SYS_SetMcgMode
+         8   -> CLOCK_SYS_SetSimConfigration
+       0   DCDC_AdjustVbatDiv4
+       0   PMC_HAL_BandgapBufferConfig
+      16   PORT_HAL_SetMuxMode
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetPullCmd
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetPullMode
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetSlewRateMode
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+       4   SIM_HAL_EnableClock
+       0   SMC_HAL_SetProtection
+       8   dbg_uart_init
+         8   -> CLOCK_SYS_SetLpuartSrc
+         8   -> configure_lpuart_pins
+      12   debug_printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_10
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+       4  ??DataTable19_4
+       4  ??DataTable19_5
+       4  ??DataTable19_6
+       4  ??DataTable19_7
+       4  ??DataTable19_8
+       4  ??DataTable19_9
+       4  ??DataTable20
+       4  ??DataTable20_1
+       4  ??DataTable20_10
+       4  ??DataTable20_11
+       4  ??DataTable20_2
+       4  ??DataTable20_3
+       4  ??DataTable20_4
+       4  ??DataTable20_5
+       4  ??DataTable20_6
+       4  ??DataTable20_7
+       4  ??DataTable20_8
+       4  ??DataTable20_9
+      12  ?_0
+      92  ?_1
+      12  ?_2
+       4  ?_3
+      20  ADC16_BatLvl
+      20  ADC16_BgLvl
+      42  ADC16_CalibrateParams
+      20  ADC16_Measure
+      98  ADC16_ReadValue
+      54  BOARD_ClockInit
+       2  BOARD_DCDCInit
+       2  BOARD_EnterLowPowerCb
+       2  BOARD_ExitLowPowerCb
+      78  BOARD_GetBatteryLevel
+      22  BOARD_GetPotentiometerLevel
+      48  BOARD_InitAdc
+      24  BOARD_InitOsc0
+      26  BOARD_InitRtcOsc
+       2  BOARD_InstallLowPowerCallbacks
+     350  BOARD_TogglePins
+      20  CLOCK_HAL_SetLpuartSrc
+      20  CLOCK_HAL_SetTpmSrc
+      20  CLOCK_SYS_SetLpuartSrc
+      20  CLOCK_SYS_SetTpmSrc
+      26  CLOCK_SetBootConfig
+      12  DCDC_AdjustVbatDiv4
+       6  PMC_HAL_BandgapBufferConfig
+      44  PORT_HAL_SetMuxMode
+      46  PORT_HAL_SetPullCmd
+      44  PORT_HAL_SetPullMode
+      46  PORT_HAL_SetSlewRateMode
+      46  SIM_HAL_EnableClock
+       4  SMC_HAL_SetProtection
+       4  adcHwAverageConfig
+      12  adcUserConfig
+       4  adcValue
+      18  dbg_uart_init
+      10  debug_printf
+      16  g_defaultClockConfigRun
+      16  g_defaultClockConfigVlpr
+       4  offsetVdd
+
+ 
+    20 bytes in section .bss
+   156 bytes in section .rodata
+ 1 288 bytes in section .text
+ 
+ 1 288 bytes of CODE  memory
+   156 bytes of CONST memory
+    20 bytes of DATA  memory
+
+Errors: none
+Warnings: none

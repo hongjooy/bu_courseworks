@@ -1,0 +1,967 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:14
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\ASP.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\ASP.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\ASP.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\ASP.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\ASP.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file ASP.c
+      6          * This is the source file for the ASP module.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          
+     40          #include "EmbeddedTypes.h"
+     41          #include "fsl_os_abstraction.h"
+     42          #include "fsl_device_registers.h"
+     43          
+     44          #include "Phy.h"
+     45          #include "PhyInterface.h"
+     46          #include "MpmInterface.h"
+     47          #include "AspInterface.h"
+     48          #include "MemManager.h"
+     49          #include "FunctionLib.h"
+     50          
+     51          #if gFsciIncluded_c
+     52          #include "FsciInterface.h"
+     53          #include "FsciAspCommands.h"
+     54          #endif
+     55          
+     56          #ifdef gSmacSupported
+     57          #include "SMAC_Interface.h"
+     58          #endif
+     59          
+     60          #if gAspCapability_d
+     61          
+     62          /*! *********************************************************************************
+     63          *************************************************************************************
+     64          * Public macros
+     65          *************************************************************************************
+     66          ********************************************************************************** */
+     67          #define mFAD_THR_ResetValue         0x82
+     68          #define mANT_AGC_CTRL_ResetValue    0x40
+     69          
+     70          
+     71          /*! *********************************************************************************
+     72          *************************************************************************************
+     73          * Public type definitions
+     74          *************************************************************************************
+     75          ********************************************************************************** */
+     76          enum {
+     77            gDftNormal_c,
+     78            gDftTxPattern_c,
+     79            gDftTxRandom_c,
+     80            gDftTxPnChipData_c,
+     81            gDftTxExternalSrc_c,
+     82            gDftTxNoMod_Carrier_c,
+     83            gDftTxNoMod_ToneLFSR_c,
+     84            gDftTxNoMod_ToneSelect_c,
+     85          };
+     86          
+     87          
+     88          /*! *********************************************************************************
+     89          *************************************************************************************
+     90          * Private functions prototype
+     91          *************************************************************************************
+     92          ********************************************************************************** */
+     93          #if gFsciIncluded_c
+     94          static void fsciAspReqHandler(void *pData, void* param, uint32_t interfaceId);
+     95          static void AspSapMonitor(void *pData, void* param, uint32_t interfaceId);
+     96          #endif
+     97          
+     98          void ASP_PRBS9_Load (void);
+     99          
+    100          /*! *********************************************************************************
+    101          *************************************************************************************
+    102          * Private memory declarations
+    103          *************************************************************************************
+    104          ********************************************************************************** */
+    105          
+    106          
+    107          /*! *********************************************************************************
+    108          *************************************************************************************
+    109          * Public functions
+    110          *************************************************************************************
+    111          ********************************************************************************** */
+    112          
+    113          /*! *********************************************************************************
+    114          * \brief  Initialize the ASP module
+    115          *
+    116          * \param[in]  phyInstance The instance of the PHY
+    117          * \param[in]  interfaceId The FSCI interface used
+    118          *
+    119          ********************************************************************************** */
+    120          #undef mFuncId_c
+    121          #define mFuncId_c 0
+    122          void ASP_Init( instanceId_t phyInstance )
+    123          {
+    124          }
+    125          
+    126          /*! *********************************************************************************
+    127          * \brief  ASP SAP handler.
+    128          *
+    129          * \param[in]  pMsg        Pointer to the request message
+    130          * \param[in]  instanceId  The instance of the PHY
+    131          *
+    132          * \return  AspStatus_t
+    133          *
+    134          ********************************************************************************** */
+    135          #undef mFuncId_c
+    136          #define mFuncId_c 1
+    137          AspStatus_t APP_ASP_SapHandler(AppToAspMessage_t *pMsg, instanceId_t phyInstance)
+    138          {
+    139              AspStatus_t status = gAspSuccess_c;
+    140          #if gFsciIncluded_c
+    141              FSCI_Monitor( gFSCI_AspSapId_c,
+    142                            pMsg,
+    143                            NULL,
+    144                            fsciGetAspInterfaceId(phyInstance) );
+    145          #endif
+    146              switch( pMsg->msgType )
+    147              {
+    148              case aspMsgTypeGetTimeReq_c:
+    149                  Asp_GetTimeReq((uint64_t*)&pMsg->msgData.aspGetTimeReq.time);
+    150                  break;
+    151              case aspMsgTypeXcvrWriteReq_c:
+    152                  status = Asp_XcvrWriteReq( pMsg->msgData.aspXcvrData.mode,
+    153                                             pMsg->msgData.aspXcvrData.addr,
+    154                                             pMsg->msgData.aspXcvrData.len,
+    155                                             pMsg->msgData.aspXcvrData.data);
+    156                  break;
+    157              case aspMsgTypeXcvrReadReq_c:
+    158                  status = Asp_XcvrReadReq( pMsg->msgData.aspXcvrData.mode,
+    159                                            pMsg->msgData.aspXcvrData.addr,
+    160                                            pMsg->msgData.aspXcvrData.len,
+    161                                            pMsg->msgData.aspXcvrData.data);
+    162                  break;
+    163              case aspMsgTypeSetFADState_c:
+    164                  status = Asp_SetFADState(pMsg->msgData.aspFADState);
+    165                  break;
+    166              case aspMsgTypeSetFADThreshold_c:
+    167                  status = Asp_SetFADThreshold(pMsg->msgData.aspFADThreshold);
+    168                  break;
+    169              case aspMsgTypeSetANTXState_c:
+    170                  status = Asp_SetANTXState(pMsg->msgData.aspANTXState);
+    171                  break;
+    172              case aspMsgTypeGetANTXState_c:
+    173                  *((uint8_t*)&status) = Asp_GetANTXState();
+    174                  break;
+    175              case aspMsgTypeSetPowerLevel_c:
+    176                  status = Asp_SetPowerLevel(pMsg->msgData.aspSetPowerLevelReq.powerLevel);
+    177                  break;
+    178              case aspMsgTypeGetPowerLevel_c:
+    179                  *((uint8_t*)&status) = Asp_GetPowerLevel(); /* remove compiler warning */
+    180                  break;
+    181              case aspMsgTypeTelecSetFreq_c:
+    182                  status = ASP_TelecSetFreq(pMsg->msgData.aspTelecsetFreq.channel);
+    183                  break;
+    184              case aspMsgTypeTelecSendRawData_c:
+    185                  status = ASP_TelecSendRawData((uint8_t*)&pMsg->msgData.aspTelecSendRawData);
+    186                  break;
+    187              case aspMsgTypeTelecTest_c:
+    188                  status = ASP_TelecTest(pMsg->msgData.aspTelecTest.mode);
+    189                  break;
+    190              case aspMsgTypeSetLQIMode_c:
+    191                  status = Asp_SetLQIMode(pMsg->msgData.aspLQIMode);
+    192                  break;
+    193              case aspMsgTypeGetRSSILevel_c:
+    194                  *((uint8_t*)&status) = Asp_GetRSSILevel(); /* remove compiler warning */
+    195                  break;
+    196          #if gMpmIncluded_d
+    197              case aspMsgTypeSetMpmConfig_c:
+    198                  {
+    199                      mpmConfig_t cfg = {
+    200                          .autoMode = pMsg->msgData.MpmConfig.autoMode,
+    201                          .dwellTime = pMsg->msgData.MpmConfig.dwellTime,
+    202                          .activeMAC = pMsg->msgData.MpmConfig.activeMAC
+    203                      };
+    204          
+    205                      MPM_SetConfig(&cfg);
+    206                  }
+    207                  break;
+    208              case aspMsgTypeGetMpmConfig_c:
+    209                  {
+    210                      mpmConfig_t cfg;
+    211          
+    212                      MPM_GetConfig(&cfg);
+    213                      pMsg->msgData.MpmConfig.autoMode = cfg.autoMode;
+    214                      pMsg->msgData.MpmConfig.dwellTime = cfg.dwellTime;
+    215                      pMsg->msgData.MpmConfig.activeMAC = cfg.activeMAC;
+    216                  }
+    217                  break;
+    218          #endif
+    219              default:
+    220                  status = gAspInvalidRequest_c; /* OR gAspInvalidParameter_c */
+    221                  break;
+    222              }
+    223          #if gFsciIncluded_c
+    224              FSCI_Monitor( gFSCI_AspSapId_c,
+    225                            pMsg,
+    226                            (void*)&status,
+    227                            fsciGetAspInterfaceId(phyInstance) );
+    228          #endif
+    229              return status;
+    230          }
+    231          
+    232          /*! *********************************************************************************
+    233          * \brief  Returns the current PHY time
+    234          *
+    235          * \param[in]  time  location where the PHY time will be stored
+    236          *
+    237          ********************************************************************************** */
+    238          #undef mFuncId_c
+    239          #define mFuncId_c 2
+    240          void Asp_GetTimeReq(uint64_t *time)
+    241          {
+    242              PhyTimeReadClock( time );
+    243          }
+    244          
+    245          /*! *********************************************************************************
+    246          * \brief  Write XCVR registers
+    247          *
+    248          * \param[in]  mode   ZLL/XCVR access
+    249          * \param[in]  addr   address
+    250          * \param[in]  len    number of bytes to write
+    251          * \param[in]  pData  data o be written
+    252          *
+    253          * \return  AspStatus_t
+    254          *
+    255          ********************************************************************************** */
+    256          #undef mFuncId_c
+    257          #define mFuncId_c 3
+    258          AspStatus_t Asp_XcvrWriteReq (uint8_t mode, uint16_t addr, uint8_t len, uint8_t* pData)
+    259          {
+    260              if (mode)
+    261              {
+    262                  /* Indirect access: XCVR regs */
+    263                  FLib_MemCpy((void*)(XCVR + addr), pData, len);
+    264              }
+    265              else
+    266              {
+    267                  /* Direct access: ZLL regs */
+    268                  FLib_MemCpy((void*)(ZLL + addr), pData, len);
+    269              }
+    270          
+    271              return gAspSuccess_c;
+    272          }
+    273          
+    274          /*! *********************************************************************************
+    275          * \brief  Read XCVR registers
+    276          *
+    277          * \param[in]  mode   Direct/Indirect access
+    278          * \param[in]  addr   XCVR address
+    279          * \param[in]  len    number of bytes to read
+    280          * \param[in]  pData  location where data will be stored
+    281          *
+    282          * \return  AspStatus_t
+    283          *
+    284          ********************************************************************************** */
+    285          #undef mFuncId_c
+    286          #define mFuncId_c 4
+    287          AspStatus_t Asp_XcvrReadReq  (uint8_t mode, uint16_t addr, uint8_t len, uint8_t* pData)
+    288          {
+    289              if (mode)
+    290              {
+    291                  /* Indirect access: XCVR regs */
+    292                  FLib_MemCpy(pData, (void*)(XCVR + addr), len);
+    293              }
+    294              else
+    295              {
+    296                  /* Direct access: ZLL regs */
+    297                  FLib_MemCpy(pData, (void*)(ZLL + addr), len);
+    298              }
+    299          
+    300              return gAspSuccess_c;
+    301          }
+    302          
+    303          /*! *********************************************************************************
+    304          * \brief  Set Tx output power level
+    305          *
+    306          * \param[in]  powerLevel   The new power level: 0x03-0x1F (see documentation for details)
+    307          *
+    308          * \return  AspStatus_t
+    309          *
+    310          ********************************************************************************** */
+    311          #undef mFuncId_c
+    312          #define mFuncId_c 5
+    313          AspStatus_t Asp_SetPowerLevel( uint8_t powerLevel )
+    314          {
+    315              uint8_t res;
+    316              
+    317              res = PhyPlmeSetPwrLevelRequest(powerLevel);
+    318              
+    319              if( res == gPhySuccess_c )
+    320              {
+    321                  return gAspSuccess_c;
+    322              }
+    323              else
+    324              {
+    325                  return gAspDenied_c;
+    326              }
+    327          }
+    328          
+    329          /*! *********************************************************************************
+    330          * \brief  Read the current Tx power level
+    331          *
+    332          * \return  power level
+    333          *
+    334          ********************************************************************************** */
+    335          #undef mFuncId_c
+    336          #define mFuncId_c 6
+    337          uint8_t Asp_GetPowerLevel()
+    338          {
+    339              return PhyPlmeGetPwrLevelRequest();
+    340          }
+    341          
+    342          /*! *********************************************************************************
+    343          * \brief  Set the state of Active Promiscuous functionality
+    344          *
+    345          * \param[in]  state  new state 
+    346          *
+    347          * \return  AspStatus_t
+    348          *
+    349          ********************************************************************************** */
+    350          #undef mFuncId_c
+    351          #define mFuncId_c 7
+    352          AspStatus_t Asp_SetActivePromState(bool_t state)
+    353          {
+    354              PhySetActivePromiscuous(state);
+    355              return gAspSuccess_c;
+    356          }
+    357          
+    358          /*! *********************************************************************************
+    359          * \brief  Set the state of Fast Antenna Diversity functionality
+    360          *
+    361          * \param[in]  state  new state 
+    362          *
+    363          * \return  AspStatus_t
+    364          *
+    365          ********************************************************************************** */
+    366          #undef mFuncId_c
+    367          #define mFuncId_c 8
+    368          AspStatus_t Asp_SetFADState(bool_t state)
+    369          {
+    370              if( gPhySuccess_c != PhyPlmeSetFADStateRequest(state) )
+    371              {
+    372                  return gAspDenied_c;
+    373              }
+    374              return gAspSuccess_c;
+    375          }
+    376          
+    377          /*! *********************************************************************************
+    378          * \brief  Set the Fast Antenna Diversity threshold
+    379          *
+    380          * \param[in]  threshold 
+    381          *
+    382          * \return  AspStatus_t
+    383          *
+    384          ********************************************************************************** */
+    385          #undef mFuncId_c
+    386          #define mFuncId_c 9
+    387          AspStatus_t Asp_SetFADThreshold(uint8_t threshold)
+    388          {
+    389              if( gPhySuccess_c != PhyPlmeSetFADThresholdRequest(threshold) )
+    390              {
+    391                  return gAspDenied_c;
+    392              }
+    393              return gAspSuccess_c;
+    394          }
+    395          
+    396          /*! *********************************************************************************
+    397          * \brief  Set the ANTX functionality
+    398          *
+    399          * \param[in]  state 
+    400          *
+    401          * \return  AspStatus_t
+    402          *
+    403          ********************************************************************************** */
+    404          #undef mFuncId_c
+    405          #define mFuncId_c 10
+    406          AspStatus_t Asp_SetANTXState(bool_t state)
+    407          {
+    408              if( gPhySuccess_c != PhyPlmeSetANTXStateRequest(state) )
+    409              {
+    410                  return gAspDenied_c;
+    411              }
+    412              return gAspSuccess_c;
+    413          }
+    414          
+    415          /*! *********************************************************************************
+    416          * \brief  Get the ANTX functionality
+    417          *
+    418          * \return  current state
+    419          *
+    420          ********************************************************************************** */
+    421          #undef mFuncId_c
+    422          #define mFuncId_c 11
+    423          uint8_t Asp_GetANTXState(void)
+    424          {
+    425            return PhyPlmeGetANTXStateRequest();
+    426          }
+    427          
+    428          /*! *********************************************************************************
+    429          * \brief  Set the ANTX pad state
+    430          *
+    431          * \param[in]  antAB_on 
+    432          * \param[in]  rxtxSwitch_on 
+    433          *
+    434          * \return  status
+    435          *
+    436          ********************************************************************************** */
+    437          #undef mFuncId_c
+    438          #define mFuncId_c 12
+    439          uint8_t Asp_SetANTPadStateRequest(bool_t antAB_on, bool_t rxtxSwitch_on)
+    440          {
+    441              return PhyPlmeSetANTPadStateRequest(antAB_on, rxtxSwitch_on);
+    442          }
+    443          
+    444          /*! *********************************************************************************
+    445          * \brief  Set the ANTX pad strength
+    446          *
+    447          * \param[in]  hiStrength 
+    448          *
+    449          * \return  status
+    450          *
+    451          ********************************************************************************** */
+    452          #undef mFuncId_c
+    453          #define mFuncId_c 13
+    454          uint8_t Asp_SetANTPadStrengthRequest(bool_t hiStrength)
+    455          {
+    456              return 0;
+    457          }
+    458          
+    459          /*! *********************************************************************************
+    460          * \brief  Set the ANTX inverted pads
+    461          *
+    462          * \param[in]  invAntA  invert Ant_A pad
+    463          * \param[in]  invAntB  invert Ant_B pad
+    464          * \param[in]  invTx    invert Tx pad
+    465          * \param[in]  invRx    invert Rx pad
+    466          *
+    467          * \return  status
+    468          *
+    469          ********************************************************************************** */
+    470          #undef mFuncId_c
+    471          #define mFuncId_c 14
+    472          uint8_t Asp_SetANTPadInvertedRequest(bool_t invAntA, bool_t invAntB, bool_t invTx, bool_t invRx)
+    473          {
+    474              return PhyPlmeSetANTPadInvertedRequest(invAntA, invAntB, invTx, invRx);
+    475          }
+    476          
+    477          /*! *********************************************************************************
+    478          * \brief  Set the LQI mode
+    479          *
+    480          * \param[in]  mode 
+    481          *
+    482          * \return  AspStatus_t
+    483          *
+    484          ********************************************************************************** */
+    485          #undef mFuncId_c
+    486          #define mFuncId_c 15
+    487          AspStatus_t Asp_SetLQIMode(bool_t mode)
+    488          {
+    489              if( gPhySuccess_c != PhyPlmeSetLQIModeRequest(mode) )
+    490              {
+    491                  return gAspDenied_c;
+    492              }
+    493              return gAspSuccess_c;
+    494          }
+    495          
+    496          /*! *********************************************************************************
+    497          * \brief  Get the last RSSI level
+    498          *
+    499          * \return  RSSI
+    500          *
+    501          ********************************************************************************** */
+    502          #undef mFuncId_c
+    503          #define mFuncId_c 16
+    504          uint8_t Asp_GetRSSILevel(void)
+    505          {
+    506            return PhyPlmeGetRSSILevelRequest();
+    507          }
+    508          
+    509          /*! *********************************************************************************
+    510          * \brief  Set current channel
+    511          *
+    512          * \param[in]  channel  channel number (11-26)
+    513          *
+    514          * \return  AspStatus_t
+    515          *
+    516          ********************************************************************************** */
+    517          #undef mFuncId_c
+    518          #define mFuncId_c 17
+    519          AspStatus_t ASP_TelecSetFreq(uint8_t channel)
+    520          {
+    521              PhyPlmeForceTrxOffRequest();
+    522              if( gPhySuccess_c != PhyPlmeSetCurrentChannelRequest(channel,0) )
+    523              {
+    524                  return gAspInvalidParameter_c;
+    525              }
+    526          
+    527              return gAspSuccess_c;
+    528          }
+    529          
+    530          /*! *********************************************************************************
+    531          * \brief  Send a raw data frame OTA
+    532          *
+    533          * \param[in]  dataPtr  raw data
+    534          *
+    535          * \return  AspStatus_t
+    536          *
+    537          ********************************************************************************** */
+    538          #undef mFuncId_c
+    539          #define mFuncId_c 18
+    540          AspStatus_t ASP_TelecSendRawData(uint8_t* dataPtr)
+    541          {
+    542              dataPtr[0] += 2; /* Add FCS length to PSDU Length*/
+    543          
+    544              /* Validate the length */
+    545              if(dataPtr[0] > gMaxPHYPacketSize_c)
+    546                  return gAspTooLong_c;
+    547          
+    548              /* Force Idle */
+    549              PhyPlmeForceTrxOffRequest();
+    550              XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR, gDftNormal_c);
+    551              ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 0);
+    552          
+    553              /* Load the TX PB: load the PSDU Lenght byte but not the FCS bytes */
+    554              FLib_MemCpy( (void*)&ZLL_PKT_BUFFER0, dataPtr, dataPtr[0] + 1 - 2);
+    555              /* Program a Tx sequence */
+    556              ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gTX_c );
+    557              return gAspSuccess_c;
+    558          }
+    559          
+    560          /*! *********************************************************************************
+    561          * \brief  Set Telec test mode
+    562          *
+    563          * \param[in]  mode  Telec test mode
+    564          *
+    565          * \return  AspStatus_t
+    566          *
+    567          ********************************************************************************** */
+    568          #undef mFuncId_c
+    569          #define mFuncId_c 19
+    570          AspStatus_t ASP_TelecTest(uint8_t mode)
+    571          {
+    572              uint8_t channel;
+    573              static bool_t fracSet = FALSE;
+    574          
+    575              /* Get current channel number */
+    576              channel = PhyPlmeGetCurrentChannelRequest(0);
+    577          
+    578              if( fracSet )
+    579              {
+    580                  ASP_TelecSetFreq(channel);
+    581                  fracSet = FALSE;
+    582              }
+    583          
+    584              switch( mode )
+    585              {
+    586              case gTestForceIdle_c:  /* ForceIdle(); */
+    587          #ifdef gSmacSupported
+    588                  MLMEPhySoftReset();
+    589          #else
+    590                  PhyPlmeForceTrxOffRequest();
+    591          #endif
+    592                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR, gDftNormal_c);
+    593                  XCVR_BWR_TSM_CTRL_FORCE_TX_EN(XCVR, 0);
+    594                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 0);
+    595                  XCVR_BWR_TX_DIG_CTRL_DFT_EN(XCVR, 0);
+    596                  XCVR_BWR_TX_DIG_CTRL_LFSR_EN(XCVR, 0);
+    597                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 0);
+    598                  break;
+    599          
+    600              case gTestPulseTxPrbs9_c:  /* Continuously transmit a PRBS9 pattern. */
+    601                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR, gDftNormal_c);
+    602                  ASP_PRBS9_Load(); /* Load the TX RAM */
+    603                  /* Enable continuous TX mode */
+    604                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    605                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gTX_c );
+    606                  break;
+    607          
+    608              case gTestContinuousRx_c:  /* Sets the device into continuous RX mode */
+    609                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftNormal_c);
+    610                  /* Set length of data in DUAL_PAN_DWELL register */
+    611                  ZLL_BWR_DUAL_PAN_CTRL_DUAL_PAN_DWELL(ZLL, 127);
+    612                  /* Enable continuous RX mode */
+    613                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    614                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gRX_c );
+    615                  break;
+    616          
+    617              case gTestContinuousTxMod_c:  /* Sets the device to continuously transmit a 10101010 pattern */
+    618                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxPattern_c);
+    619                  XCVR_BWR_TX_DIG_CTRL_DFT_EN(XCVR, 1);
+    620                  XCVR_WR_TX_DFT_MOD_PAT(XCVR,0xAAAAAAAA);
+    621                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    622                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    623                  XCVR_BWR_TSM_CTRL_FORCE_TX_EN(XCVR, 1);
+    624                  break;
+    625          
+    626              case gTestContinuousTxNoMod_c: /* Sets the device to continuously transmit an unmodulated CW */
+    627                  /* Enable unmodulated TX */
+    628                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxNoMod_Carrier_c);
+    629                  /* Enable continuous TX mode */
+    630                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    631                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    632                  fracSet = TRUE;
+    633                  /* Program a Tx sequence */
+    634                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gTX_c );
+    635                  break;
+    636          
+    637              case gTestContinuousTx2Mhz_c:
+    638              case gTestContinuousTx200Khz_c:
+    639                  /* Not available for this IC */
+    640                  return gAspInvalidRequest_c;
+    641          
+    642              case gTestContinuousTx1MbpsPRBS9_c:
+    643                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxPnChipData_c);
+    644                  XCVR_BWR_TX_DIG_CTRL_DFT_LFSR_LEN(XCVR, 0); /* length 9 */
+    645                  XCVR_BWR_TX_DIG_CTRL_LFSR_EN(XCVR,1);
+    646                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    647                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    648                  XCVR_BWR_TSM_CTRL_FORCE_TX_EN(XCVR, 1);
+    649                  break;
+    650          
+    651              case gTestContinuousTxExternalSrc_c:
+    652                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxExternalSrc_c);
+    653                  /* Enable continuous TX mode */
+    654                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    655                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    656                  /* Program a Tx sequence */
+    657                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gTX_c );
+    658                  break;
+    659          
+    660              case gTestContinuousTxModZero_c:
+    661                  /* Enable unmodulated TX */
+    662                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxPattern_c);
+    663                  XCVR_BWR_TX_DIG_CTRL_DFT_EN(XCVR, 1);
+    664                  XCVR_WR_TX_DFT_MOD_PAT(XCVR,0x00000000);
+    665          
+    666                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    667                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    668                  XCVR_BWR_TSM_CTRL_FORCE_TX_EN(XCVR, 1);
+    669                  break;
+    670          
+    671              case gTestContinuousTxModOne_c:
+    672                  /* Enable unmodulated TX */
+    673                  XCVR_BWR_TX_DIG_CTRL_DFT_MODE(XCVR,gDftTxPattern_c);
+    674                  XCVR_BWR_TX_DIG_CTRL_DFT_EN(XCVR, 1);
+    675                  XCVR_WR_TX_DFT_MOD_PAT(XCVR,0xFFFFFFFF);
+    676          
+    677                  XCVR_BWR_DTEST_CTRL_DTEST_EN(XCVR, 1);
+    678                  ZLL_BWR_SEQ_CTRL_STS_CONTINUOUS_EN(ZLL, 1);
+    679                  XCVR_BWR_TSM_CTRL_FORCE_TX_EN(XCVR, 1);
+    680                  break;
+    681              default:
+    682                  return gAspInvalidParameter_c;
+    683              }
+    684          
+    685              return gAspSuccess_c;
+    686          }
+    687          
+    688          /*! *********************************************************************************
+    689          * \brief  Generate and load a PRBS9 pattern into Tx buffer
+    690          *
+    691          ********************************************************************************** */
+    692          void ASP_PRBS9_Load (void)
+    693          {
+    694            uint8_t c1; /* Byte counter */
+    695            uint8_t c2; /* Bit counter */
+    696            uint16_t t1; /* LFSR */
+    697            uint16_t t2; /* LFSR output */
+    698            uint16_t t3; /* LFSR feedback tap */
+    699            uint8_t t4; /* Assembled transmit byte */
+    700            uint8_t *pTxBuffer = (uint8_t*)&ZLL_PKT_BUFFER0;
+    701          
+    702            pTxBuffer[0] = 64;
+    703              t1 = 0x01FF; /* Initialize the LFSR */
+    704              for (c1=1; c1<=64; c1++) /* Byte counter */
+    705              {
+    706                  t4 = 0x00; /* Initialize the byte */
+    707                  for (c2=0; c2<8; c2++) /* Bit counter */
+    708                  {
+    709                      t2 = (t1 & 0x0001); /* LFSR output */
+    710                      if (t2 == 0x0001)
+    711                      {
+    712                          t4 = t4 | 0x80; /* Set/Clear byte based on LFSR output */
+    713                      }
+    714                      if (c2 != 7)
+    715                      {
+    716                          t4 = t4 >> 1; /* LSBit will be first bit out of LFSR */
+    717                      }
+    718                      t3 = ((t1 & 0x0010) >> 4); /* LFSR tap */
+    719                      t1 = t1 >> 1; /* Now shift the LFSR */
+    720                      if (t2 == t3) /* Set/Clr the LFSR MSBit */
+    721                      {
+    722                          t1 = t1 & 0xFEFF;
+    723                      }
+    724                      else
+    725                      {
+    726                          t1 = t1 | 0x0100;
+    727                      }
+    728                  }
+    729                pTxBuffer[c1] = t4;
+    730              }
+    731          }
+    732          
+    733          #endif /* gAspCapability_d */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   APP_ASP_SapHandler
+        16   -> ASP_TelecSendRawData
+        16   -> ASP_TelecSetFreq
+        16   -> ASP_TelecTest
+        16   -> Asp_GetANTXState
+        16   -> Asp_GetPowerLevel
+        16   -> Asp_GetRSSILevel
+        16   -> Asp_GetTimeReq
+        16   -> Asp_SetANTXState
+        16   -> Asp_SetFADState
+        16   -> Asp_SetFADThreshold
+        16   -> Asp_SetLQIMode
+        16   -> Asp_SetPowerLevel
+        16   -> Asp_XcvrReadReq
+        16   -> Asp_XcvrWriteReq
+       0   ASP_Init
+      24   ASP_PRBS9_Load
+       8   ASP_TelecSendRawData
+         8   -> FLib_MemCpy
+         8   -> PhyAbort
+       8   ASP_TelecSetFreq
+         8   -> PhyAbort
+         8   -> PhyPlmeSetCurrentChannelRequest
+      16   ASP_TelecTest
+        16   -> ASP_PRBS9_Load
+        16   -> ASP_TelecSetFreq
+        16   -> PhyAbort
+        16   -> PhyPlmeGetCurrentChannelRequest
+       8   Asp_GetANTXState
+         8   -> PhyPlmeGetANTXStateRequest
+       8   Asp_GetPowerLevel
+         8   -> PhyPlmeGetPwrLevelRequest
+       8   Asp_GetRSSILevel
+         8   -> PhyPlmeGetRSSILevelRequest
+       8   Asp_GetTimeReq
+         8   -> PhyTimeReadClock
+      24   Asp_SetANTPadInvertedRequest
+        24   -> PhyPlmeSetANTPadInvertedRequest
+      16   Asp_SetANTPadStateRequest
+        16   -> PhyPlmeSetANTPadStateRequest
+       0   Asp_SetANTPadStrengthRequest
+       8   Asp_SetANTXState
+         8   -> PhyPlmeSetANTXStateRequest
+       8   Asp_SetActivePromState
+         8   -> PhySetActivePromiscuous
+       8   Asp_SetFADState
+         8   -> PhyPlmeSetFADStateRequest
+       8   Asp_SetFADThreshold
+         8   -> PhyPlmeSetFADThresholdRequest
+       8   Asp_SetLQIMode
+         8   -> PhyPlmeSetLQIModeRequest
+      16   Asp_SetPowerLevel
+        16   -> PhyPlmeSetPwrLevelRequest
+      24   Asp_XcvrReadReq
+        24   -> FLib_MemCpy
+      24   Asp_XcvrWriteReq
+        24   -> FLib_MemCpy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable3
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+     250  APP_ASP_SapHandler
+       2  ASP_Init
+     130  ASP_PRBS9_Load
+      58  ASP_TelecSendRawData
+      30  ASP_TelecSetFreq
+     392  ASP_TelecTest
+       8  Asp_GetANTXState
+       8  Asp_GetPowerLevel
+       8  Asp_GetRSSILevel
+      12  Asp_GetTimeReq
+      32  Asp_SetANTPadInvertedRequest
+      20  Asp_SetANTPadStateRequest
+       6  Asp_SetANTPadStrengthRequest
+      24  Asp_SetANTXState
+      16  Asp_SetActivePromState
+      24  Asp_SetFADState
+      24  Asp_SetFADThreshold
+      24  Asp_SetLQIMode
+      28  Asp_SetPowerLevel
+      66  Asp_XcvrReadReq
+      66  Asp_XcvrWriteReq
+       1  fracSet
+
+ 
+     1 byte  in section .bss
+ 1 296 bytes in section .text
+ 
+ 1 296 bytes of CODE memory
+     1 byte  of DATA memory
+
+Errors: none
+Warnings: none

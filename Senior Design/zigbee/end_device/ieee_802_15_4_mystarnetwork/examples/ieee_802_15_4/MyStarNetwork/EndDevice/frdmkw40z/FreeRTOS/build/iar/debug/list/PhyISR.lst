@@ -1,0 +1,833 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:46
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyISR.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyISR.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PhyISR.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyISR.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyISR.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file PhyISR.c
+      6          * PHY ISR Functions
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "EmbeddedTypes.h"
+     40          #include "Phy.h"
+     41          #include "PhyInterface.h"
+     42          #include "FunctionLib.h"
+     43          
+     44          #include "fsl_os_abstraction.h"
+     45          #include "fsl_device_registers.h"
+     46          
+     47          #include "KW4xXcvrDrv.h"
+     48          
+     49          /*! *********************************************************************************
+     50          *************************************************************************************
+     51          * Private macros
+     52          *************************************************************************************
+     53          ********************************************************************************** */
+     54          #define gPhyIrqPriority_c     (0x80)
+     55          
+     56          #if gUsePBTransferThereshold_d
+     57            #define mPhyGetPBTransferThreshold(len) ((len) - 2)
+     58          #endif
+     59          
+     60          
+     61          /*! *********************************************************************************
+     62          *************************************************************************************
+     63          * Private memory declarations
+     64          *************************************************************************************
+     65          ********************************************************************************** */
+     66          extern Phy_PhyLocalStruct_t     phyLocal;
+     67          static volatile phyRxParams_t * mpRxParams        = NULL;
+     68          static const uint8_t            mPhyInstance      = 0;
+     69          uint8_t                         mPhyLastRxLQI     = 0;
+     70          uint8_t                         mPhyLastRxRSSI    = 0;
+     71          uint8_t                         mPhyIrqDisableCnt = 1;
+     72          bool_t                          mPhyForceFP = FALSE;
+     73          
+     74          
+     75          /*! *********************************************************************************
+     76          *************************************************************************************
+     77          * Private prototypes
+     78          *************************************************************************************
+     79          ********************************************************************************** */
+     80          static void PhyIsrSeqCleanup();
+     81          static void PhyIsrTimeoutCleanup();
+     82          static void Phy_GetRxParams(void);
+     83          static uint8_t Phy_LqiConvert(uint8_t hwLqi);
+     84          
+     85          
+     86          /*! *********************************************************************************
+     87          *************************************************************************************
+     88          * Public functions
+     89          *************************************************************************************
+     90          ********************************************************************************** */
+     91          
+     92          /*! *********************************************************************************
+     93          * \brief  Disable the 802.15.4 radio IRQ
+     94          *
+     95          ********************************************************************************** */
+     96          void ProtectFromXcvrInterrupt(void)
+     97          {
+     98              OSA_EnterCritical(kCriticalDisableInt);
+     99             
+    100              if( mPhyIrqDisableCnt == 0 )
+    101              {
+    102                  ZLL_BWR_PHY_CTRL_TRCV_MSK(ZLL, 1);
+    103              }
+    104              
+    105              mPhyIrqDisableCnt++;
+    106              
+    107              OSA_ExitCritical(kCriticalDisableInt);
+    108          }
+    109          
+    110          /*! *********************************************************************************
+    111          * \brief  Enable the 802.15.4 radio IRQ
+    112          *
+    113          ********************************************************************************** */
+    114          void UnprotectFromXcvrInterrupt(void)
+    115          {
+    116              OSA_EnterCritical(kCriticalDisableInt);
+    117              
+    118              if( mPhyIrqDisableCnt )
+    119              {
+    120                  mPhyIrqDisableCnt--;
+    121                  
+    122                  if( mPhyIrqDisableCnt == 0 )
+    123                  {
+    124                      ZLL_BWR_PHY_CTRL_TRCV_MSK(ZLL, 0);
+    125                  }
+    126              }
+    127          
+    128              OSA_ExitCritical(kCriticalDisableInt);
+    129          }
+    130          
+    131          /*! *********************************************************************************
+    132          * \brief  Sets the location of the Rx parameters
+    133          *
+    134          * \param[in]  pRxParam pointer to Rx parameters
+    135          *
+    136          ********************************************************************************** */
+    137          void PhyIsrPassRxParams
+    138          (
+    139            volatile phyRxParams_t * pRxParam
+    140          )
+    141          {
+    142              mpRxParams = pRxParam;
+    143          }
+    144          
+    145          /*! *********************************************************************************
+    146          * \brief  Clear and mask PHY IRQ, set sequence to Idle
+    147          *
+    148          ********************************************************************************** */
+    149          static void PhyIsrSeqCleanup
+    150          (
+    151            void
+    152          )
+    153          {
+    154              uint32_t irqSts;
+    155          
+    156              /* Mask SEQ, RX, TX and CCA interrupts */
+    157              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_CCAMSK_MASK |
+    158                              ZLL_PHY_CTRL_RXMSK_MASK  |
+    159                              ZLL_PHY_CTRL_TXMSK_MASK  |
+    160                              ZLL_PHY_CTRL_SEQMSK_MASK;
+    161              /* Set the PHY sequencer back to IDLE */
+    162              ZLL_PHY_CTRL &= ~(ZLL_PHY_CTRL_XCVSEQ_MASK);
+    163          
+    164              while( ZLL_SEQ_STATE & ZLL_SEQ_STATE_SEQ_STATE_MASK );
+    165          
+    166              irqSts = ZLL_IRQSTS;
+    167              /* Mask TMR3 interrupt */
+    168              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    169              /* Clear transceiver interrupts except TMRxIRQ */
+    170              irqSts &= ~( ZLL_IRQSTS_TMR1IRQ_MASK |
+    171                           ZLL_IRQSTS_TMR2IRQ_MASK |
+    172                           ZLL_IRQSTS_TMR3IRQ_MASK |
+    173                           ZLL_IRQSTS_TMR4IRQ_MASK );
+    174              ZLL_IRQSTS = irqSts;
+    175          }
+    176          
+    177          /*! *********************************************************************************
+    178          * \brief  Clear and mask PHY IRQ, disable timeout, set sequence to Idle
+    179          *
+    180          ********************************************************************************** */
+    181          static void PhyIsrTimeoutCleanup
+    182          (
+    183            void
+    184          )
+    185          {
+    186              uint32_t irqSts;
+    187          
+    188              /* Mask SEQ, RX, TX and CCA interrupts */
+    189              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_CCAMSK_MASK |
+    190                              ZLL_PHY_CTRL_RXMSK_MASK  |
+    191                              ZLL_PHY_CTRL_TXMSK_MASK  |
+    192                              ZLL_PHY_CTRL_SEQMSK_MASK;
+    193              /* Disable TMR3 comparator and timeout */
+    194              ZLL_PHY_CTRL &= ~(ZLL_PHY_CTRL_TMR3CMP_EN_MASK | ZLL_PHY_CTRL_TC3TMOUT_MASK);
+    195              /* Set the PHY sequencer back to IDLE */
+    196              ZLL_PHY_CTRL &= ~(ZLL_PHY_CTRL_XCVSEQ_MASK);
+    197          
+    198              while( ZLL_SEQ_STATE & ZLL_SEQ_STATE_SEQ_STATE_MASK );
+    199          
+    200              irqSts = ZLL_IRQSTS;
+    201              /* Mask TMR3 interrupt */
+    202              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    203              /* Clear transceiver interrupts except TMR1IRQ, TMR2IRQ and TMR4IRQ. */
+    204              irqSts &= ~( ZLL_IRQSTS_TMR1IRQ_MASK |
+    205                           ZLL_IRQSTS_TMR2IRQ_MASK |
+    206                           ZLL_IRQSTS_TMR4IRQ_MASK );
+    207              ZLL_IRQSTS = irqSts;
+    208          }
+    209          
+    210          /*! *********************************************************************************
+    211          * \brief  Scales energy level to 0-255
+    212          *
+    213          * \param[in]  energyLevel  the energy level reported by HW
+    214          *
+    215          * \return  uint8_t  the energy level scaled in 0x00-0xFF
+    216          *
+    217          ********************************************************************************** */
+    218          uint8_t Phy_GetEnergyLevel
+    219          (
+    220          uint8_t energyLevel /* [dbm] */
+    221          )
+    222          {
+    223              int32_t temp = (int8_t)energyLevel;
+    224          
+    225              if( temp <= -78 )
+    226                  return 0x00;
+    227          
+    228              if( temp >=0 )
+    229                  return 0xFF;
+    230          
+    231              /* Convert energy level from dbm into a 0x00-0xFF value */
+    232              temp = 255*temp/78 + 255;
+    233           
+    234              return (uint8_t)temp;
+    235          }
+    236          
+    237          /*! *********************************************************************************
+    238          * \brief  This function returns the LQI for the las received packet
+    239          *
+    240          * \return  uint8_t  LQI value
+    241          *
+    242          ********************************************************************************** */
+    243          uint8_t PhyGetLastRxLqiValue(void)
+    244          {
+    245              return mPhyLastRxLQI;
+    246          }
+    247          
+    248          /*! *********************************************************************************
+    249          * \brief  This function returns the RSSI for the las received packet
+    250          *
+    251          * \return  uint8_t  RSSI value
+    252          *
+    253          ********************************************************************************** */
+    254          uint8_t PhyGetLastRxRssiValue(void)
+    255          {
+    256              /*RSSI*/
+    257              /*
+    258              **       LQI
+    259              **RSSI = ---  - LQI_COMP
+    260              **       2.25
+    261              */
+    262              uint8_t LQI_COMP = ZLL_RD_CCA_LQI_CTRL_LQI_OFFSET_COMP(ZLL);
+    263              int32_t lqi_to_rssi= ((mPhyLastRxRSSI * 456) >> 10) - LQI_COMP;
+    264              
+    265              return (uint8_t)lqi_to_rssi;
+    266          }
+    267              
+    268          /*! *********************************************************************************
+    269          * \brief  This function converts the LQI reported by the PHY into an signed RSSI value
+    270          *
+    271          * \param[in]  LQI  the LQI reported by the PHY
+    272          *
+    273          * \return  the RSSI value in dbm
+    274          *
+    275          ********************************************************************************** */
+    276          int8_t PhyConvertLQIToRSSI(uint8_t lqi)
+    277          {
+    278              int32_t rssi = 6*lqi/17 - 95;
+    279          
+    280              return (int8_t)rssi;
+    281          }
+    282          
+    283          /*! *********************************************************************************
+    284          * \brief  PHY ISR
+    285          *
+    286          ********************************************************************************** */
+    287          void PHY_InterruptHandler(void)
+    288          {
+    289              uint8_t xcvseqCopy;
+    290              uint32_t irqSts;
+    291          
+    292              /* Mask XCVR interrupts */
+    293              ProtectFromXcvrInterrupt();
+    294          
+    295              /* Read current XCVRSEQ and interrup status */
+    296              xcvseqCopy = ZLL_PHY_CTRL & ZLL_PHY_CTRL_XCVSEQ_MASK;
+    297              irqSts     = ZLL_IRQSTS;
+    298              /* Clear all xcvr interrupts */
+    299              ZLL_IRQSTS = irqSts;
+    300          
+    301              /* Flter Fail IRQ */
+    302              if( (irqSts & ZLL_IRQSTS_FILTERFAIL_IRQ_MASK) &&
+    303                 !(ZLL_PHY_CTRL & ZLL_PHY_CTRL_FILTERFAIL_MSK_MASK) )
+    304              {
+    305                  Radio_Phy_PlmeFilterFailRx(mPhyInstance);
+    306              }
+    307              /* Rx Watermark IRQ */
+    308              else if( (irqSts & ZLL_IRQSTS_RXWTRMRKIRQ_MASK) &&
+    309                      !(ZLL_PHY_CTRL & ZLL_PHY_CTRL_RX_WMRK_MSK_MASK) )
+    310              {
+    311                  Radio_Phy_PlmeRxWatermark(mPhyInstance, ZLL_RD_IRQSTS_RX_FRAME_LENGTH(ZLL));
+    312              }
+    313          
+    314              /* Timer 1 Compare Match */
+    315              if( (irqSts & ZLL_IRQSTS_TMR1IRQ_MASK) &&
+    316                 !(irqSts & ZLL_IRQSTS_TMR1MSK_MASK) )
+    317              {
+    318                  PhyTimeDisableWaitTimeout();
+    319          
+    320                  Radio_Phy_TimeWaitTimeoutIndication(mPhyInstance);
+    321              }
+    322          
+    323              /* Sequencer interrupt, the autosequence has completed */
+    324              if( (irqSts & ZLL_IRQSTS_SEQIRQ_MASK) &&
+    325                 !(ZLL_PHY_CTRL & ZLL_PHY_CTRL_SEQMSK_MASK))
+    326              {
+    327                  /* PLL unlock, the autosequence has been aborted due to PLL unlock */
+    328                  if( irqSts & ZLL_IRQSTS_PLL_UNLOCK_IRQ_MASK )
+    329                  {
+    330                      PhyIsrSeqCleanup();
+    331                      Radio_Phy_PlmeSyncLossIndication(mPhyInstance);
+    332                      UnprotectFromXcvrInterrupt();
+    333                      return;
+    334                  }
+    335          
+    336                  /* TMR3 timeout, the autosequence has been aborted due to TMR3 timeout */
+    337                  if( (irqSts & ZLL_IRQSTS_TMR3IRQ_MASK) &&
+    338                     !(irqSts & ZLL_IRQSTS_RXIRQ_MASK) &&
+    339                      (gTX_c != xcvseqCopy) )
+    340                  {
+    341                      PhyIsrTimeoutCleanup();
+    342                      Radio_Phy_TimeRxTimeoutIndication(mPhyInstance);
+    343                      UnprotectFromXcvrInterrupt();
+    344                      return;
+    345                  }
+    346          
+    347                  PhyIsrSeqCleanup();
+    348          
+    349                  switch(xcvseqCopy)
+    350                  {
+    351                  case gTX_c:
+    352                      if( (irqSts & ZLL_IRQSTS_CCA_MASK ) &&
+    353                         (ZLL_PHY_CTRL & ZLL_PHY_CTRL_CCABFRTX_MASK) )
+    354                      {
+    355                          Radio_Phy_PlmeCcaConfirm(gPhyChannelBusy_c, mPhyInstance);
+    356                      }
+    357                      else
+    358                      {
+    359                          Radio_Phy_PdDataConfirm(mPhyInstance, FALSE);
+    360                      }
+    361                      break;
+    362          
+    363                  case gTR_c:
+    364                      if( (irqSts & ZLL_IRQSTS_CCA_MASK ) &&
+    365                          (ZLL_PHY_CTRL & ZLL_PHY_CTRL_CCABFRTX_MASK) )
+    366                      {
+    367                          Radio_Phy_PlmeCcaConfirm(gPhyChannelBusy_c, mPhyInstance);
+    368                      }
+    369                      else
+    370                      {
+    371                          Phy_GetRxParams();
+    372                          Radio_Phy_PdDataConfirm(mPhyInstance, (irqSts & ZLL_IRQSTS_RX_FRM_PEND_MASK) > 0);
+    373                      }
+    374                      break;
+    375          
+    376                  case gRX_c:
+    377                      /* Check SAA0 and SAA1 (source address absent) */
+    378                      if( irqSts & ZLL_IRQSTS_PI_MASK )
+    379                      {
+    380                          /* Save the state of the FP bit sent in ACK frame */
+    381                          if( PhyPpIsTxAckDataPending() )
+    382                          {
+    383                              phyLocal.flags |= gPhyFlagTxAckFP_c;
+    384                          }
+    385                          else
+    386                          {
+    387                              phyLocal.flags &= ~gPhyFlagTxAckFP_c;
+    388                          }
+    389          
+    390                          if( ZLL_SAM_MATCH & (ZLL_SAM_MATCH_SAA0_ADDR_ABSENT_MASK | ZLL_SAM_MATCH_SAA1_ADDR_ABSENT_MASK) )
+    391                          {
+    392                              mPhyForceFP = TRUE;
+    393                          }
+    394                      }
+    395                      
+    396                      Phy_GetRxParams();
+    397                      Radio_Phy_PdDataIndication(mPhyInstance);
+    398                      break;
+    399          
+    400                  case gCCA_c:
+    401                      if( ZLL_RD_PHY_CTRL_CCATYPE(ZLL) == gCcaED_c )
+    402                      {
+    403                          Radio_Phy_PlmeEdConfirm( ZLL_RD_LQI_AND_RSSI_CCA1_ED_FNL(ZLL), mPhyInstance );
+    404                      }
+    405                      else /* CCA */
+    406                      {
+    407                          if( irqSts & ZLL_IRQSTS_CCA_MASK )
+    408                          {
+    409                              Radio_Phy_PlmeCcaConfirm(gPhyChannelBusy_c, mPhyInstance);
+    410                          }
+    411                          else
+    412                          {
+    413                              Radio_Phy_PlmeCcaConfirm(gPhyChannelIdle_c, mPhyInstance);
+    414                          }
+    415                      }
+    416                      break;
+    417          
+    418                  case gCCCA_c:
+    419                      Radio_Phy_PlmeCcaConfirm(gPhyChannelIdle_c, mPhyInstance);
+    420                      break;
+    421          
+    422                  default:
+    423                      Radio_Phy_PlmeSyncLossIndication(mPhyInstance);
+    424                      break;
+    425                  }
+    426              }
+    427              /* Timers interrupt */
+    428              else
+    429              {
+    430                  /* Timer 2 Compare Match */
+    431                  if( (irqSts & ZLL_IRQSTS_TMR2IRQ_MASK) &&
+    432                     !(irqSts & ZLL_IRQSTS_TMR2MSK_MASK) )
+    433                  {
+    434                      PhyTimeDisableEventTrigger();
+    435          
+    436                      if( gIdle_c != xcvseqCopy )
+    437                      {
+    438                          Radio_Phy_TimeStartEventIndication(mPhyInstance);
+    439                      }
+    440                  }
+    441          
+    442                  /* Timer 3 Compare Match */
+    443                  if( (irqSts & ZLL_IRQSTS_TMR3IRQ_MASK) &&
+    444                     !(irqSts & ZLL_IRQSTS_TMR3MSK_MASK) )
+    445                  {
+    446                      PhyTimeDisableEventTimeout();
+    447          
+    448                      /* Ensure that we're not issuing TimeoutIndication while the Automated sequence is still in progress */
+    449                      /* TMR3 can expire during R-T turnaround for example, case in which the sequence is not interrupted */
+    450                      if( gIdle_c == xcvseqCopy )
+    451                      {
+    452                          Radio_Phy_TimeRxTimeoutIndication(mPhyInstance);
+    453                      }
+    454                  }
+    455          
+    456                  /* Timer 4 Compare Match */
+    457                  if( (irqSts & ZLL_IRQSTS_TMR4IRQ_MASK) &&
+    458                     !(irqSts & ZLL_IRQSTS_TMR4MSK_MASK) )
+    459                  {
+    460                      uint32_t irqSts = ZLL_IRQSTS;
+    461          
+    462                      /* Disable TMR4 comparator */
+    463                      ZLL_BWR_PHY_CTRL_TMR4CMP_EN(ZLL, 0);
+    464                      /* Mask and clear TMR4 interrupt (do not change other IRQ status) */
+    465                      irqSts &= ~( ZLL_IRQSTS_TMR1MSK_MASK |
+    466                                   ZLL_IRQSTS_TMR2MSK_MASK |
+    467                                   ZLL_IRQSTS_TMR3MSK_MASK);
+    468                      irqSts |= ZLL_IRQSTS_TMR4IRQ_MASK | ZLL_IRQSTS_TMR4MSK_MASK;
+    469                      ZLL_IRQSTS = irqSts;
+    470                  }
+    471              }
+    472          
+    473              UnprotectFromXcvrInterrupt();
+    474          }
+    475          
+    476          /*! *********************************************************************************
+    477          * \brief  This function installs the PHY ISR
+    478          *
+    479          ********************************************************************************** */
+    480          void PHY_InstallIsr( void )
+    481          {
+    482              OSA_InstallIntHandler(ZigBee_IRQn, PHY_InterruptHandler);
+    483          
+    484              /* enable transceiver SPI interrupt request */
+    485              NVIC_ClearPendingIRQ(ZigBee_IRQn);
+    486              NVIC_EnableIRQ(ZigBee_IRQn);
+    487              
+    488              /* set transceiver interrupt priority */
+    489              NVIC_SetPriority(ZigBee_IRQn, gPhyIrqPriority_c >> (8 - __NVIC_PRIO_BITS));
+    490              UnprotectFromXcvrInterrupt();
+    491          }
+    492          
+    493          /*! *********************************************************************************
+    494           * \brief Check is an XCVR IRQ is pending
+    495           *
+    496           * \return  TRUE if ISR pending, else FALSE
+    497           *
+    498           ********************************************************************************** */
+    499          bool_t PHY_isIrqPending(void)
+    500          {
+    501              uint32_t temp;
+    502              
+    503              if( !(ZLL_PHY_CTRL & ZLL_PHY_CTRL_TRCV_MSK_MASK) )
+    504              {
+    505                  /* Check usual ZLL IRQs */
+    506                  temp = ZLL_PHY_CTRL & ( ZLL_PHY_CTRL_SEQMSK_MASK         |
+    507                                          ZLL_PHY_CTRL_TXMSK_MASK          |
+    508                                          ZLL_PHY_CTRL_RXMSK_MASK          |
+    509                                          ZLL_PHY_CTRL_CCAMSK_MASK         |
+    510                                          ZLL_PHY_CTRL_RX_WMRK_MSK_MASK    |
+    511                                          ZLL_PHY_CTRL_FILTERFAIL_MSK_MASK |
+    512                                          ZLL_PHY_CTRL_PLL_UNLOCK_MSK_MASK );
+    513                  temp = temp >> ZLL_PHY_CTRL_SEQMSK_SHIFT;
+    514                  
+    515                  if( ZLL_IRQSTS & temp )
+    516                  {
+    517                      return TRUE;
+    518                  }
+    519                  
+    520                  /* Check ZLL Timers IRQs */
+    521                  temp = ZLL_IRQSTS & ( ZLL_IRQSTS_TMR1IRQ_MASK |
+    522                                        ZLL_IRQSTS_TMR2IRQ_MASK |
+    523                                        ZLL_IRQSTS_TMR3IRQ_MASK |
+    524                                        ZLL_IRQSTS_TMR4IRQ_MASK );
+    525                  temp = temp >> 4;
+    526                  
+    527                  if( ZLL_IRQSTS & temp )
+    528                  {
+    529                      return TRUE;
+    530                  }
+    531              }
+    532          
+    533              return FALSE;
+    534          }
+    535          
+    536          /*! *********************************************************************************
+    537          *************************************************************************************
+    538          * Private functions
+    539          *************************************************************************************
+    540          ********************************************************************************* */
+    541          
+    542          /*! *********************************************************************************
+    543          * \brief  Fill the Rx parameters: RSSI, LQI, Timestamp and PSDU length
+    544          *
+    545          ********************************************************************************** */
+    546          static void Phy_GetRxParams(void)
+    547          {
+    548              if(NULL != mpRxParams)
+    549              {
+    550                  /* Reports value of 0x00 for -105 dBm of received input power 
+    551                  and 0xFF for 0 dBm of received input power */
+    552                  mPhyLastRxRSSI = ZLL_RD_LQI_AND_RSSI_LQI_VALUE(ZLL);
+    553                  mPhyLastRxLQI = Phy_LqiConvert(mPhyLastRxRSSI);
+    554                  mpRxParams->linkQuality = mPhyLastRxLQI;
+    555                  mpRxParams->timeStamp = ZLL_TIMESTAMP;
+    556                  mpRxParams->psduLength = ZLL_RD_IRQSTS_RX_FRAME_LENGTH(ZLL); /* Including FCS (2 bytes) */
+    557                  mpRxParams = NULL;
+    558              }
+    559          }
+    560          
+    561          /*! *********************************************************************************
+    562          * \brief  Scales LQI to 0-255
+    563          *
+    564          * \param[in]  hwLqi  the LQI reported by HW
+    565          *
+    566          * \return  uint8_t  the LQI scaled in 0x00-0xFF
+    567          *
+    568          ********************************************************************************** */
+    569          static uint8_t Phy_LqiConvert
+    570          (
+    571          uint8_t hwLqi
+    572          )
+    573          {
+    574              uint8_t LQI_COMP = ZLL_RD_CCA_LQI_CTRL_LQI_OFFSET_COMP(ZLL);
+    575              /* Convert the LQI reported by HW into RSSI (dbm) */
+    576              int32_t rssi = ((hwLqi * 456) >> 10) - LQI_COMP;
+    577          
+    578              if( rssi <= -95 )
+    579                  return 0x00;
+    580          
+    581              if( rssi >= -5 )
+    582                  return 0xFF;
+    583          
+    584              /* Convert the RSSI value into a 0x00-0xFF value */
+    585              rssi = ((343*rssi)>>7) + 255;
+    586          
+    587              return rssi;
+    588          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   NVIC_ClearPendingIRQ
+       0   NVIC_EnableIRQ
+      20   NVIC_SetPriority
+       8   PHY_InstallIsr
+         8   -> NVIC_ClearPendingIRQ
+         8   -> NVIC_EnableIRQ
+         8   -> NVIC_SetPriority
+         8   -> OSA_InstallIntHandler
+         8   -> UnprotectFromXcvrInterrupt
+      16   PHY_InterruptHandler
+        16   -> PhyIsrSeqCleanup
+        16   -> PhyIsrTimeoutCleanup
+        16   -> PhyPpIsTxAckDataPending
+        16   -> PhyTimeDisableEventTimeout
+        16   -> PhyTimeDisableEventTrigger
+        16   -> PhyTimeDisableWaitTimeout
+        16   -> Phy_GetRxParams
+        16   -> ProtectFromXcvrInterrupt
+        16   -> Radio_Phy_PdDataConfirm
+        16   -> Radio_Phy_PdDataIndication
+        16   -> Radio_Phy_PlmeCcaConfirm
+        16   -> Radio_Phy_PlmeEdConfirm
+        16   -> Radio_Phy_PlmeFilterFailRx
+        16   -> Radio_Phy_PlmeRxWatermark
+        16   -> Radio_Phy_PlmeSyncLossIndication
+        16   -> Radio_Phy_TimeRxTimeoutIndication
+        16   -> Radio_Phy_TimeStartEventIndication
+        16   -> Radio_Phy_TimeWaitTimeoutIndication
+        16   -> UnprotectFromXcvrInterrupt
+       4   PHY_isIrqPending
+       8   PhyConvertLQIToRSSI
+         8 __aeabi_idiv
+       0   PhyGetLastRxLqiValue
+       0   PhyGetLastRxRssiValue
+       0   PhyIsrPassRxParams
+       4   PhyIsrSeqCleanup
+       4   PhyIsrTimeoutCleanup
+       8   Phy_GetEnergyLevel
+         8 __aeabi_idiv
+       8   Phy_GetRxParams
+         8   -> Phy_LqiConvert
+       4   Phy_LqiConvert
+       8   ProtectFromXcvrInterrupt
+         8   -> OSA_EnterCritical
+         8   -> OSA_ExitCritical
+       8   UnprotectFromXcvrInterrupt
+         8   -> OSA_EnterCritical
+         8   -> OSA_ExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_2
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_11
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+      14  NVIC_ClearPendingIRQ
+      14  NVIC_EnableIRQ
+     132  NVIC_SetPriority
+      36  PHY_InstallIsr
+     556  PHY_InterruptHandler
+      70  PHY_isIrqPending
+      22  PhyConvertLQIToRSSI
+       6  PhyGetLastRxLqiValue
+      28  PhyGetLastRxRssiValue
+       6  PhyIsrPassRxParams
+      66  PhyIsrSeqCleanup
+      78  PhyIsrTimeoutCleanup
+      50  Phy_GetEnergyLevel
+      78  Phy_GetRxParams
+      66  Phy_LqiConvert
+      42  ProtectFromXcvrInterrupt
+      48  UnprotectFromXcvrInterrupt
+       1  mPhyForceFP
+       1  mPhyInstance
+       1  mPhyIrqDisableCnt
+       1  mPhyLastRxLQI
+       1  mPhyLastRxRSSI
+       4  mpRxParams
+
+ 
+     7 bytes in section .bss
+     1 byte  in section .data
+     1 byte  in section .rodata
+ 1 444 bytes in section .text
+ 
+ 1 444 bytes of CODE  memory
+     1 byte  of CONST memory
+     8 bytes of DATA  memory
+
+Errors: none
+Warnings: none

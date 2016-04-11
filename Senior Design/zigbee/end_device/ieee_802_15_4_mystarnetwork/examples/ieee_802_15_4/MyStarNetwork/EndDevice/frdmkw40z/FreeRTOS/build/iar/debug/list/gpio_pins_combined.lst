@@ -1,0 +1,261 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  16:47:40
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\gpio_pins_combined.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\gpio_pins_combined.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\gpio_pins_combined.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\gpio_pins_combined.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\gpio_pins_combined.c
+      1          /* ###################################################################
+      2          **     This component module is generated by Processor Expert. Do not modify it.
+      3          **     Filename    : gpio_pins.c
+      4          **     Project     : FRDM-KW40Z
+      5          **     Processor   : MKW40Z160VHT4
+      6          **     Component   : fsl_gpio
+      7          **     Version     : Component 1.3.0, Driver 01.00, CPU db: 3.00.000
+      8          **     Repository  : KSDK 1.3.0
+      9          **     Compiler    : GNU C Compiler
+     10          **
+     11          **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc.
+     12          **     All Rights Reserved.
+     13          **
+     14          **     Redistribution and use in source and binary forms, with or without modification,
+     15          **     are permitted provided that the following conditions are met:
+     16          **
+     17          **     o Redistributions of source code must retain the above copyright notice, this list
+     18          **       of conditions and the following disclaimer.
+     19          **
+     20          **     o Redistributions in binary form must reproduce the above copyright notice, this
+     21          **       list of conditions and the following disclaimer in the documentation and/or
+     22          **       other materials provided with the distribution.
+     23          **
+     24          **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     25          **       contributors may be used to endorse or promote products derived from this
+     26          **       software without specific prior written permission.
+     27          **
+     28          **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     29          **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     30          **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     31          **     DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     32          **     ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     33          **     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     34          **     LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     35          **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     36          **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     37          **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     38          **
+     39          **     http: www.freescale.com
+     40          **     mail: support@freescale.com
+     41          ** ###################################################################*/
+     42          /*!
+     43          ** @file gpio_pins.c
+     44          ** @version 01.00
+     45          */
+     46          /*!
+     47          **  @addtogroup gpio_pins_module gpio_pins module documentation
+     48          **  @{
+     49          */
+     50          
+     51          /* MODULE gpio_pins. */
+     52          
+     53          #include <stdint.h>
+     54          #include <stdlib.h>
+     55          #include "gpio_pins_combined.h"
+     56          
+     57          /*******************************************************************************
+     58           * Definitions
+     59           ******************************************************************************/
+     60          
+     61          gpio_input_pin_user_config_t switchPins[] = {
+     62              {
+     63                  .pinName = kGpioSW3,
+     64                  .config.isPullEnable = true,
+     65                  .config.pullSelect = kPortPullUp,
+     66                  .config.isPassiveFilterEnabled = false,
+     67                  .config.interrupt = kPortIntDisabled,
+     68              },
+     69              {
+     70                  .pinName = kGpioSW4,
+     71                  .config.isPullEnable = true,
+     72                  .config.pullSelect = kPortPullUp,
+     73                  .config.isPassiveFilterEnabled = false,
+     74                  .config.interrupt = kPortIntRisingEdge
+     75              },
+     76              {
+     77                  .pinName = GPIO_PINS_OUT_OF_RANGE,
+     78              }
+     79          };
+     80          
+     81          /* Declare Output GPIO pins */
+     82          gpio_output_pin_user_config_t ledPins[] = {
+     83              {
+     84                  .pinName = kGpioLED1,
+     85                  .config.outputLogic = 1,
+     86                  .config.slewRate = kPortSlowSlewRate,
+     87                  .config.driveStrength = kPortLowDriveStrength,
+     88              },
+     89              {
+     90                  .pinName = kGpioLED2,
+     91                  .config.outputLogic = 1,
+     92                  .config.slewRate = kPortSlowSlewRate,
+     93                  .config.driveStrength = kPortLowDriveStrength,
+     94              },
+     95              {
+     96                  .pinName = kGpioLED3,
+     97                  .config.outputLogic = 1,
+     98                  .config.slewRate = kPortSlowSlewRate,
+     99                  .config.driveStrength = kPortLowDriveStrength,
+    100              },
+    101              {
+    102                  .pinName = kGpioLED4,
+    103                  .config.outputLogic = 1,
+    104                  .config.slewRate = kPortSlowSlewRate,
+    105                  .config.driveStrength = kPortLowDriveStrength,
+    106              },
+    107              {
+    108                  .pinName = GPIO_PINS_OUT_OF_RANGE,
+    109              }
+    110          };
+    111          
+    112          
+    113          
+    114          /* END gpio_pins. */
+    115          /*!
+    116          ** @}
+    117          */
+    118          /*
+    119          ** ###################################################################
+    120          **
+    121          **     This file was created by Processor Expert 10.5 [05.21]
+    122          **     for the Freescale Kinetis series of microcontrollers.
+    123          **
+    124          ** ###################################################################
+    125          */
+    126          
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      60  ledPins
+      24  switchPins
+
+ 
+ 84 bytes in section .data
+ 
+ 84 bytes of DATA memory
+
+Errors: none
+Warnings: none

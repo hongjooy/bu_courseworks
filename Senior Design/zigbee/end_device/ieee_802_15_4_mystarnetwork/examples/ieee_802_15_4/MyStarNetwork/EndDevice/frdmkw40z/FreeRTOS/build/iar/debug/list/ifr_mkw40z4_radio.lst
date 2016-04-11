@@ -1,0 +1,571 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:38
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\ifr_mkw40z4_radio.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\ifr_mkw40z4_radio.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\ifr_mkw40z4_radio.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\ifr_mkw40z4_radio.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\ifr_mkw40z4_radio.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file ifr_mkw40z4_radio.c
+      6          * MKW40Z4 Radio IFR pack/unpack function.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "EmbeddedTypes.h"
+     40          #include "ifr_mkw40z4_radio.h"
+     41          #include "MKW40Z4.h"
+     42          #include "KW4xXcvrDrv.h"
+     43          #include "Panic.h"
+     44          #include "fsl_device_registers.h"
+     45          #include "fsl_os_abstraction.h"
+     46          
+     47          /*! *********************************************************************************
+     48          *************************************************************************************
+     49          * Private macros
+     50          *************************************************************************************
+     51          ********************************************************************************** */
+     52          #define IFR_RAM                 (0)
+     53          
+     54          #define mem32(x) (*(volatile uint32_t *)(x))
+     55          
+     56          /*! *********************************************************************************
+     57          *************************************************************************************
+     58          * Public memory declarations
+     59          *************************************************************************************
+     60          ********************************************************************************** */
+     61          const uint32_t BLOCK_1_IFR[]=
+     62          {
+     63              0xABCDFFFE, /* Version #FFFE indicates default trim values */
+     64              0x4005C47C, /* IQMC_DC_GAIN_ADJ id */
+     65              0x00000400, /* IQMC_DC_GAIN_ADJ default value */
+     66              0x4005C050, /* XCVR_IQMC_CAL id */
+     67              0x00000400, /* IQMC_PHASE_ADJ=0x000 and IQMC_GAIN_ADJ=0x400 (default value) */
+     68              0x4005C43C, /* XCVR_BGAP_CTRL id */
+     69              0x00000087, /* XCVR_BGAP_CTRL=0x08 */
+     70              0x00000002, /* ZB_FILT_TRIM id */
+     71              0x00440000, /* ZB_FILT_TRIM = BBF_CAP_TUNE<3:0>=0x3, BBF_RES_TUNE2<3:0>=0x3, TZA_CAP_TUNE<3:0>=0x3 */
+     72              0x00000003, /* BLE_FILT_TRIM id */
+     73              0x00640004, /* BLE_FILT_TRIM = BBF_CAP_TUNE<3:0>=0x3, BBF_RES_TUNE2<3:0>=0x6, TZA_CAP_TUNE<3:0>=0x3 */
+     74              0x4005C024, /* BBF_DCOC_STEP */
+     75              0x00000147,
+     76              0x4005C028, /* BBF_DCOC_STEP_RCP */
+     77              0x00000322,
+     78              0x4005C110, /* TZA_DCOC_STEP & STEP_RCP */
+     79              0x005C0B21,
+     80              0x4005C114,
+     81              0x008D0743,
+     82              0x4005C118,
+     83              0x00D304DA,
+     84              0x4005C11C,
+     85              0x0136034E,
+     86              0x4005C120,
+     87              0x01C30245,
+     88              0x4005C124,
+     89              0x02890194,
+     90              0x4005C128,
+     91              0x03A3011A,
+     92              0x4005C12C,
+     93              0x053000C5,
+     94              0x4005C130,
+     95              0x0761008B,
+     96              0x4005C134,
+     97              0x0A790062,
+     98              0x4005C138,
+     99              0x0ED70045,
+    100              /* No TRIM_STATUS in SW fallback array. */
+    101              0xFEED0E0F /* End of File */
+    102          };
+    103          
+    104          /*! *********************************************************************************
+    105          *************************************************************************************
+    106          * Private prototypes
+    107          *************************************************************************************
+    108          ********************************************************************************** */
+    109          void store_sw_trim(IFR_SW_TRIM_TBL_ENTRY_T * sw_trim_tbl, uint16_t num_entries, uint32_t addr, uint32_t data);
+    110          
+    111          /*! *********************************************************************************
+    112          *************************************************************************************
+    113          * Public functions
+    114          *************************************************************************************
+    115          ********************************************************************************** */
+    116          
+    117          /*! *********************************************************************************
+    118          * \brief   Read Resource IFR
+    119          *
+    120          *  Read command for reading from IFR
+    121          *
+    122          * \param[in] read_addr flash address
+    123          *
+    124          * \return Packed data containing radio trims only.
+    125          *
+    126          ********************************************************************************** */
+    127          uint32_t read_resource_ifr(uint32_t read_addr)
+    128          {   
+    129              uint32_t packed_data;
+    130              uint8_t flash_addr23_16,flash_addr15_8,flash_addr7_0;
+    131              uint8_t read_data31_24,read_data23_16,read_data15_8,read_data7_0;
+    132              
+    133              flash_addr23_16 = (uint8_t)((read_addr & 0xFF0000)>>16);
+    134              flash_addr15_8 = (uint8_t)((read_addr & 0x00FF00)>>8);
+    135              flash_addr7_0 = (uint8_t)(read_addr & 0xFF);
+    136              
+    137          #if SILICON  
+    138              while((FTFA_FSTAT_CCIF_MASK & FTFA->FSTAT)==0); /* Wait till CCIF=1 */ 
+    139          #endif /* SILICON */
+    140              
+    141              if ((FTFA->FSTAT & FTFA_FSTAT_ACCERR_MASK)== FTFA_FSTAT_ACCERR_MASK )
+    142              {
+    143                  FTFA->FSTAT = (1<<FTFA_FSTAT_ACCERR_SHIFT); /* Write 1 to ACCEER to clear errors */
+    144              }
+    145              
+    146              FTFA_WR_FCCOB0(FTFA,RDRSRC);
+    147              FTFA_WR_FCCOB1(FTFA,flash_addr23_16);
+    148              FTFA_WR_FCCOB2(FTFA,flash_addr15_8);
+    149              FTFA_WR_FCCOB3(FTFA,flash_addr7_0);
+    150              FTFA_WR_FCCOB8(FTFA,0);
+    151              
+    152              /* Enter Critical */
+    153              OSA_EnterCritical(kCriticalDisableInt);  
+    154              
+    155              FTFA->FSTAT = FTFA_FSTAT_CCIF_MASK;
+    156              while((FTFA_FSTAT_CCIF_MASK & FTFA->FSTAT)==0); /* Wait till CCIF=1 */
+    157              
+    158              /* Exit Critical */
+    159              OSA_ExitCritical(kCriticalDisableInt);
+    160              
+    161              /* Start reading */
+    162              read_data31_24 = FTFA->FCCOB4;
+    163              read_data23_16 = FTFA->FCCOB5;
+    164              read_data15_8  = FTFA->FCCOB6;
+    165              read_data7_0   = FTFA->FCCOB7;
+    166              
+    167              packed_data = (read_data31_24<<24)|(read_data23_16<<16)|(read_data15_8<<8)|(read_data7_0<<0);
+    168              
+    169              return packed_data;
+    170          }
+    171          
+    172          uint32_t read_resource(uint16_t resource_id)
+    173          {
+    174              uint32_t ifr_addr;
+    175              
+    176              /* Return the test arrays of packed bits */    
+    177              switch (resource_id)
+    178              {
+    179              case 0x84:
+    180          #if IFR_RAM
+    181                  return 0x4370; /* TZA_CAP_TUNE=0b0100; BBF_CAP_TUNE=4’b0011; BBF_RES_TUNE2=4’b0111 */
+    182          #else
+    183                  ifr_addr = read_resource_ifr(0x84);
+    184                  return ifr_addr;
+    185          #endif 
+    186                  break;
+    187              case 0x98:
+    188          #if IFR_RAM
+    189                  return 0x40000000; /* IQMC_GAIN)ADJ=0b10000000000 */
+    190          #else
+    191                  ifr_addr = read_resource_ifr(0x98);
+    192                  return ifr_addr;
+    193          #endif 
+    194                  break;
+    195              case 0x9C:
+    196          #if IFR_RAM
+    197                  return 0x37000000; /* BGAP_V Trim = 0b0011 & BGAP_I Trim=0b0111 */
+    198          #else
+    199                  ifr_addr = read_resource_ifr(0x9C);
+    200                  return ifr_addr;
+    201          #endif
+    202              case 0x90:
+    203                  ifr_addr = read_resource_ifr(0x90);
+    204                  return ifr_addr;
+    205                  
+    206              case 0x80:
+    207                  ifr_addr = read_resource_ifr(0x80);
+    208                  return ifr_addr;   
+    209                  
+    210              case 0x88:
+    211                  ifr_addr = read_resource_ifr(0x88);
+    212                  return ifr_addr;   
+    213                  
+    214                  break;
+    215              default:
+    216                  return 0x12345678;
+    217                  break;
+    218              } 
+    219          }
+    220          
+    221          /*! *********************************************************************************
+    222          * \brief   Store a SW trim value in the table passed in from calling function.
+    223          *
+    224          * \param[in]  sw_trim_tbl pointer to the software trim table to hold SW trim values
+    225          * \param[in]  num_entries the number of entries in the SW trim table
+    226          * \param[in]  addr the software trim ID
+    227          * \param[in]  data the value of the software trim
+    228          *
+    229          * \return None.
+    230          *
+    231          ********************************************************************************** */
+    232          void store_sw_trim(IFR_SW_TRIM_TBL_ENTRY_T * sw_trim_tbl, uint16_t num_entries, uint32_t addr, uint32_t data)
+    233          {
+    234              uint16_t i;
+    235              if (sw_trim_tbl != NULL)
+    236              {
+    237                  for (i=0;i<num_entries;i++)
+    238                  {
+    239                      if (addr == sw_trim_tbl[i].trim_id)
+    240                      {
+    241                          sw_trim_tbl[i].trim_value = data;
+    242                          sw_trim_tbl[i].valid = TRUE;
+    243                          break;
+    244                      }
+    245                  }
+    246              }
+    247          }
+    248          
+    249          /*! *********************************************************************************
+    250          * \brief   Process block 1 IFR data.
+    251          *
+    252          * \param[in]  sw_trim_tbl pointer to the software trim table to hold SW trim values
+    253          * \param[in]  num_entries the number of entries in the SW trim table
+    254          * \param[in]  addr the software trim ID
+    255          * \param[in]  data the value of the software trim
+    256          *
+    257          * \return None.
+    258          *
+    259          * \remarks  Uses a IFR v2 formatted default array if the IFR is blank or corrupted.
+    260          *           Stores SW trim values to an array passed into this function.
+    261          *
+    262          ********************************************************************************** */
+    263          void handle_ifr(IFR_SW_TRIM_TBL_ENTRY_T * sw_trim_tbl, uint16_t num_entries)
+    264          {
+    265              uint32_t read_addr = 0x20000;
+    266              uint32_t dest_addr, dest_data, packed_data;
+    267              uint32_t *ifr_ptr;
+    268            
+    269              /* Read first entry in IFR table */
+    270              packed_data=read_resource_ifr(read_addr);
+    271              read_addr+=4;
+    272              if ((packed_data&~IFR_VERSION_MASK)==IFR_VERSION_HDR)
+    273              {
+    274                  /* Valid header was found, process real IFR data */
+    275                  XCVR_OVERWRITE_VER = (uint32_t)(packed_data & IFR_VERSION_MASK);
+    276                  store_sw_trim(sw_trim_tbl, num_entries, 0xABCD, (packed_data & IFR_VERSION_MASK)); /* Place IFR version # in SW trim array */
+    277                  packed_data = read_resource_ifr(read_addr);
+    278                  while (packed_data !=IFR_EOF_SYMBOL)
+    279                  {
+    280                      if(IS_A_SW_ID(packed_data)) /* SW Trim case (non_reg writes) */
+    281                      {
+    282                          dest_addr = packed_data;
+    283                          read_addr+=4;
+    284                          packed_data = read_resource_ifr(read_addr);
+    285                          dest_data = packed_data;
+    286                          /* Place SW trim in array for driver SW to use */
+    287                          store_sw_trim(sw_trim_tbl, num_entries, dest_addr, dest_data);
+    288                      }
+    289                      else
+    290                      {
+    291                          if (IS_VALID_REG_ADDR(packed_data)) /* Valid register write address */
+    292                          {
+    293                              dest_addr = packed_data;
+    294                              read_addr+=4;
+    295                              packed_data = read_resource_ifr(read_addr);
+    296                              dest_data = packed_data;        
+    297                              mem32(dest_addr) = dest_data;
+    298                          }
+    299                          else
+    300                          {
+    301                              /* Invalid address case */
+    302                          }
+    303                      } 
+    304                      read_addr+=4;
+    305                      packed_data=read_resource_ifr(read_addr);
+    306                  }
+    307              } 
+    308              else 
+    309              {
+    310                  /*  Valid header is not present, use blind IFR trim table */
+    311                  ifr_ptr = (uint32_t*) BLOCK_1_IFR;
+    312                  packed_data = *ifr_ptr;
+    313                  XCVR_OVERWRITE_VER = (uint32_t)(packed_data & IFR_VERSION_MASK);
+    314                  store_sw_trim(sw_trim_tbl, num_entries, 0xABCD, (packed_data & IFR_VERSION_MASK)); /* Place IFR version # in SW trim array */
+    315                  ifr_ptr++;
+    316                  packed_data= *ifr_ptr;
+    317                  while(packed_data!=IFR_EOF_SYMBOL)
+    318                  {
+    319                      if(IS_A_SW_ID(packed_data)) /* SW Trim case (non_reg writes) */
+    320                      {
+    321                          dest_addr = packed_data;
+    322                          ifr_ptr++;
+    323                          packed_data = *(ifr_ptr);
+    324                          dest_data = packed_data;
+    325                          /* Place SW trim in array for driver SW to use */
+    326                          store_sw_trim(sw_trim_tbl, num_entries, dest_addr, dest_data);
+    327                      }
+    328                      else 
+    329                      {
+    330                          dest_addr = packed_data;
+    331                          ifr_ptr++;
+    332                          packed_data = *ifr_ptr;
+    333                          dest_data = packed_data;
+    334                          if (IS_VALID_REG_ADDR(dest_addr)) /* Valid register write address */
+    335                          {
+    336                              mem32(dest_addr)=dest_data;
+    337                          }
+    338                          else
+    339                          {
+    340                              /* Invalid address case */
+    341                          }
+    342                      }
+    343                      ifr_ptr++;
+    344                      packed_data= *ifr_ptr;
+    345                  }
+    346              }
+    347          }
+    348          
+    349          uint32_t handle_ifr_die_id(void)
+    350          {
+    351              uint32_t id_x,id_y;
+    352              uint32_t id;
+    353              
+    354              id = read_resource_ifr(0x90);
+    355              id_x = id&0x00FF0000;
+    356              id_y = id&0x000000FF;
+    357              return (id_x|id_y);
+    358          }
+    359          
+    360          uint32_t handle_ifr_die_kw_type(void)
+    361          {
+    362              uint32_t zb,ble;
+    363              
+    364              zb = read_resource_ifr(0x80)&0x8000;
+    365              ble= read_resource_ifr(0x88)&0x100000;
+    366              
+    367              return (zb|ble);
+    368          }
+    369          
+    370          /*! *********************************************************************************
+    371          * \brief   Dumps block 1 IFR data to an array.
+    372          *
+    373          * \param[in] dump_tbl pointer to the table to hold the dumped IFR values
+    374          * \param[in] num_entries the number of entries to dump
+    375          *
+    376          * \return None.
+    377          *
+    378          * \remarks   Starts at the first address in IFR and dumps sequential entries.
+    379          *
+    380          ********************************************************************************** */
+    381          void dump_ifr(uint32_t * dump_tbl, uint8_t num_entries)
+    382          {
+    383              uint32_t ifr_address = 0x20000;
+    384              uint32_t * dump_ptr = dump_tbl;
+    385              uint8_t i;
+    386            
+    387              for (i=0;i<num_entries;i++)
+    388              {
+    389                  *dump_ptr = read_resource_ifr(ifr_address);
+    390                  dump_ptr++;
+    391                  ifr_address += 4;
+    392              }
+    393          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   dump_ifr
+        24   -> read_resource_ifr
+      32   handle_ifr
+        32   -> read_resource_ifr
+        32   -> store_sw_trim
+      16   handle_ifr_die_id
+        16   -> read_resource_ifr
+      16   handle_ifr_die_kw_type
+        16   -> read_resource_ifr
+      16   read_resource
+        16   -> read_resource_ifr
+      32   read_resource_ifr
+        32   -> OSA_EnterCritical
+        32   -> OSA_ExitCritical
+      16   store_sw_trim
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_13
+       4  ??DataTable2_14
+       4  ??DataTable2_15
+       4  ??DataTable2_16
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+     152  BLOCK_1_IFR
+      42  dump_ifr
+     256  handle_ifr
+      28  handle_ifr_die_id
+      36  handle_ifr_die_kw_type
+     110  read_resource
+     162  read_resource_ifr
+      60  store_sw_trim
+
+ 
+ 152 bytes in section .rodata
+ 762 bytes in section .text
+ 
+ 762 bytes of CODE  memory
+ 152 bytes of CONST memory
+
+Errors: none
+Warnings: none

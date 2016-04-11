@@ -1,0 +1,2362 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.3.10732/W32 for ARM                09/Apr/2016  19:58:23
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\MyStarNetworkEndDevice_FreeRTOS.out
+#    Map file     =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\MyStarNetworkEndDevice_FreeRTOS.map
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\accel.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\App.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\ASP.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\board_combined.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\CopyToRam.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\croutine.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\DCDC.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\DEFlashPartition.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\DFlashGetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\DFlashSetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\EEEWrite.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\EERAMGetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\EERAMSetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\event_groups.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Flash_Adapter.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashCheckSum.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashCommandSequence.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashEraseAllBlock.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashEraseResume.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashEraseSector.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashEraseSuspend.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashGetSecurityState.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashInit.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashProgram.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashProgramCheck.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashProgramOnce.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashProgramSection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashReadOnce.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashReadResource.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashSecurityBypass.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashVerifyAllBlock.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashVerifyBlock.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashVerifySection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FsciMacCommands.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fsl_i2c_irq.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fsl_lptmr_irq.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fsl_osa_ext_freertos.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FunctionLib.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FwkInit.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fxos_api.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\GenericList.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\GPIO_IrqAdapter.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\gpio_pins_combined.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\hardware_init_combined.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_1.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_2.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_3.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_4.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\ifr_mkw40z4_radio.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Keyboard.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\KW4xXcvrDrv.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\LED.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\list.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\MacGlobals.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\MemManager.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Messaging.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\mma8451_api.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\MPM.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Panic.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PFlashGetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PFlashSetProtection.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PFlashSwap.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PFlashSwapCtl.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyISR.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyPacketProcessor.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyPlmeData.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyStateMachine.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyTime.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\pin_mux_combined.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\port.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\portasm.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\queue.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Reset.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\RNG.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SecLib.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SerialManager.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SetEEEEnable.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SPI_Adapter.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\startup.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\startup_MKW40Z4.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\system_MKW40Z4.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\tasks.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\timers.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\TimersManager.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\TMR_Adapter.o"
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\tsm_ll_timing.o"
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\MyStarNetworkEndDevice_FreeRTOS.out"
+#        --config_def __ram_vector_table__=1 --map "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\MyStarNetworkEndDevice_FreeRTOS.map"
+#        --config "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/platform/devices/MKW40Z4/linker/iar/MKW40Z160xxx4_connectivity.icf"
+#        --semihosting
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib/lib_crypto_IAR_M0.a
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\lib\ksdk_freertos_lib\iar\KW40Z4\debug\libksdk_platform_freertos.a
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Lib/Freescale_802.15.4_MAC_06_M0_IAR.a
+#        --entry __iar_program_start --no_vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                   = *
+__SystemLibrary             = DLib
+__dlib_jmp_buf_num_elements = 8
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x000003ff] |
+                [from 0x00000410 to 0x00027bff] { ro };
+"P2":  place in [from 0x1ffff0c0 to 0x20003dff] { rw, zi };
+"P4":  place in [from 0x20003e00 to 0x20003fff] { block CSTACK };
+"P5":  place in [from 0x00000400 to 0x0000040f] { section FlashConfig };
+
+  Section             Kind        Address     Size  Object
+  -------             ----        -------     ----  ------
+"A1":                                         0xc0
+  .intvec             ro code  0x00000000     0xc0  startup_MKW40Z4.o [1]
+                             - 0x000000c0     0xc0
+
+"P1", part 1 of 2:                            0xd0
+  .rodata             const    0x000000c0      0x0  zero_init3.o [8]
+  .rodata             const    0x000000c0      0x0  copy_init3.o [8]
+  Initializer bytes   const    0x000000c0     0xd0  <for P2 s0>
+                             - 0x00000190     0xd0
+
+"P5":                                         0x10
+  FlashConfig         ro code  0x00000400     0x10  startup_MKW40Z4.o [1]
+                             - 0x00000410     0x10
+
+"P1", part 2 of 2:                         0x1623c
+  .text               ro code  0x00000410   0x1b2c  KW4xXcvrDrv.o [1]
+  .text               ro code  0x00001f3c     0x5c  ABImemcpy.o [8]
+  .text               ro code  0x00001f98    0x220  ifr_mkw40z4_radio.o [1]
+  .text               ro code  0x000021b8     0x1e  I32ToFlt.o [7]
+  .text               ro code  0x000021d6     0xaa  FltDiv.o [7]
+  .text               ro code  0x00002280     0x7c  tsm_ll_timing.o [1]
+  .rodata             const    0x000022fc     0x6c  fsl_i2c_master_driver.o [6]
+  .text               ro code  0x00002368    0x890  pow.o [7]
+  .text               ro code  0x00002bf8    0x184  DblMul.o [7]
+  .text               ro code  0x00002d7c     0x48  round.o [7]
+  .text               ro code  0x00002dc4     0x4e  DblToI32.o [7]
+  .text               ro code  0x00002e12     0x32  DblCmpGe.o [7]
+  .text               ro code  0x00002e44     0x32  FltToDbl.o [7]
+  .text               ro code  0x00002e76     0xc2  DblDiv.o [7]
+  .text               ro code  0x00002f38    0x1b4  DblAddSub.o [7]
+  .text               ro code  0x000030ec    0x3fe  fsl_os_abstraction_free_rtos.o [6]
+  .text               ro code  0x000034ea     0x44  xdnorm.o [7]
+  .rodata             const    0x0000352e      0x2  fsl_clock_MKW40Z4.o [6]
+  .text               ro code  0x00003530     0x8c  xdint.o [7]
+  .text               ro code  0x000035bc     0x24  DblCmpEq.o [7]
+  .text               ro code  0x000035e0     0x10  errno.o [4]
+  .text               ro code  0x000035f0     0x32  DblCmpLe.o [7]
+  .rodata             const    0x00003622      0x2  fsl_i2c_common.o [6]
+  .text               ro code  0x00003624     0x30  I32ToDbl.o [7]
+  .text               ro code  0x00003654     0xa4  xlog.o [7]
+  .text               ro code  0x000036f8    0x2b8  xexp.o [7]
+  .text               ro code  0x000039b0     0x24  ABIassert.o [9]
+  .text               ro code  0x000039d4    0x70c  queue.o [1]
+  .text               ro code  0x000040e0     0xe0  I32DivModFast.o [8]
+  .text               ro code  0x000041c0    0x108  port.o [1]
+  .text               ro code  0x000042c8    0xa10  tasks.o [1]
+  .text               ro code  0x00004cd8    0x216  event_groups.o [1]
+  .text               ro code  0x00004eee      0x2  startup_MKW40Z4.o [1]
+  .text               ro code  0x00004ef0    0x408  timers.o [1]
+  .text               ro code  0x000052f8     0x74  fsl_interrupt_manager.o [6]
+  CODE                ro code  0x0000536c     0xb4  portasm.o [1]
+  .text               ro code  0x00005420      0x2  xtls.o [4]
+  .text               ro code  0x00005422      0x2  startup_MKW40Z4.o [1]
+  .text               ro code  0x00005424     0x3c  xdtest.o [7]
+  .text               ro code  0x00005460    0x11c  xdscale.o [7]
+  .text               ro code  0x0000557c      0xa  abort.o [4]
+  .text               ro code  0x00005586     0xa2  list.o [1]
+  .text               ro code  0x00005628     0x84  heap_1.o [1]
+  .text               ro code  0x000056ac      0x2  IntDivZer.o [8]
+  .rodata             const    0x000056ae      0x1  fsl_osa_ext_freertos.o [1]
+  .rodata             const    0x000056af      0x1  MacGlobals.o [1]
+  .text               ro code  0x000056b0     0x18  setjmp.o [8]
+  .text               ro code  0x000056c8     0x54  ABImemset.o [8]
+  .text               ro code  0x0000571c     0x14  exit.o [9]
+  .text               ro code  0x00005730   0x11f8  MacFrames.o [3]
+  .text               ro code  0x00006928     0x1e  uwrite8.o [8]
+  .text               ro code  0x00006946     0x5e  FunctionLib.o [1]
+  .text               ro code  0x000069a4    0xa00  MacSec.o [3]
+  .text               ro code  0x000073a4     0x68  SecurityLib.o [3]
+  .text               ro code  0x0000740c     0x14  uwrite4.o [8]
+  .text               ro code  0x00007420     0x16  uread4.o [8]
+  .rodata             const    0x00007436      0x1  MacGlobals.o [1]
+  .rodata             const    0x00007437      0x1  PhyISR.o [1]
+  .text               ro code  0x00007438     0x8a  SecLib.o [1]
+  .rodata             const    0x000074c2      0x1  PhyPacketProcessor.o [1]
+  .rodata             const    0x000074c3      0x1  fsl_clock_MKW40Z4.o [6]
+  .text               ro code  0x000074c4    0x774  fsl_ltc_driver.o [6]
+  .text               ro code  0x00007c38    0x4fa  fsl_ltc_driver_aes_ccm.o [6]
+  .rodata             const    0x00008132      0x1  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00008133      0x1  fsl_clock_MKW40Z4.o [6]
+  .text               ro code  0x00008134    0x254  fsl_clock_MKW40Z4.o [6]
+  .text               ro code  0x00008388    0x268  fsl_ltc_hal.o [6]
+  .text               ro code  0x000085f0    0x1ec  fsl_ltc_driver_aes.o [6]
+  .text               ro code  0x000087dc     0x28  fsl_sim_hal_MKW40Z4.o [6]
+  .text               ro code  0x00008804    0x280  fsl_mcg_hal.o [6]
+  .text               ro code  0x00008a84   0x10d0  App.o [1]
+  .text               ro code  0x00009b54    0x3b0  fsl_adc16_driver.o [6]
+  .text               ro code  0x00009f04     0x64  hardware_init_combined.o [1]
+  .text               ro code  0x00009f68    0x188  MemManager.o [1]
+  .text               ro code  0x0000a0f0    0x61c  TimersManager.o [1]
+  .text               ro code  0x0000a70c    0x414  LED.o [1]
+  .text               ro code  0x0000ab20    0xb02  SerialManager.o [1]
+  .rodata             const    0x0000b622      0x1  fsl_trng_common.o [6]
+  .rodata             const    0x0000b623      0x1  fsl_adc16_common.o [6]
+  .text               ro code  0x0000b624    0x814  PhyStateMachine.o [1]
+  .text               ro code  0x0000be38     0xc8  RNG.o [1]
+  .text               ro code  0x0000bf00     0x7c  MacGlobals.o [1]
+  .text               ro code  0x0000bf7c    0x422  MacMain.o [3]
+  .rodata             const    0x0000c39e      0x1  fsl_ltc_common.o [6]
+  .text               ro code  0x0000c3a0    0x118  accel.o [1]
+  .text               ro code  0x0000c4b8    0x388  fsl_gpio_driver.o [6]
+  .text               ro code  0x0000c840    0xd38  MacPib.o [3]
+  .text               ro code  0x0000d578    0x2d8  Keyboard.o [1]
+  .text               ro code  0x0000d850    0x10c  GenericList.o [1]
+  .text               ro code  0x0000d95c     0x8a  Messaging.o [1]
+  .text               ro code  0x0000d9e8    0x23c  fsl_adc16_hal.o [6]
+  .text               ro code  0x0000dc24    0x120  board_combined.o [1]
+  .text               ro code  0x0000dd44    0x1b0  pin_mux_combined.o [1]
+  .text               ro code  0x0000def4     0x18  Flash_Adapter.o [1]
+  .text               ro code  0x0000df0c     0x32  I64Mul.o [8]
+  .text               ro code  0x0000df3e     0x6a  I64DivMod.o [8]
+  .text               ro code  0x0000dfa8    0x2b0  TMR_Adapter.o [1]
+  .text               ro code  0x0000e258      0x2  Panic.o [1]
+  .text               ro code  0x0000e25c    0x4e0  fsl_lpuart_driver.o [6]
+  .text               ro code  0x0000e73c    0x3a0  fsl_lpuart_hal.o [6]
+  .text               ro code  0x0000eadc     0x10  strlen.o [8]
+  .text               ro code  0x0000eaec    0x352  PhyPacketProcessor.o [1]
+  .text               ro code  0x0000ee40    0x4d0  PhyTime.o [1]
+  .text               ro code  0x0000f310      0x2  ASP.o [1]
+  .text               ro code  0x0000f314    0x518  PhyISR.o [1]
+  .text               ro code  0x0000f82c    0x61c  PhyPlmeData.o [1]
+  .text               ro code  0x0000fe48    0x554  fsl_trng_driver.o [6]
+  .text               ro code  0x0001039c     0x38  SW_RNG.o [5]
+  .text               ro code  0x000103d4    0x1a0  fsl_osa_ext_freertos.o [1]
+  .text               ro code  0x00010574    0x5c8  MacStateMachine.o [3]
+  .text               ro code  0x00010b3c    0x564  DataTx.o [3]
+  .text               ro code  0x000110a0      0x2  FsciMacCommands.o [1]
+  .text               ro code  0x000110a2    0x124  Reset.o [3]
+  .text               ro code  0x000111c8    0x398  Association.o [3]
+  .text               ro code  0x00011560    0x108  Disassociation.o [3]
+  .text               ro code  0x00011668     0xd0  Orphan.o [3]
+  .text               ro code  0x00011738    0x1a6  Start.o [3]
+  .text               ro code  0x000118e0    0x196  Poll.o [3]
+  .text               ro code  0x00011a78     0x7c  fsl_gpio_hal.o [6]
+  .text               ro code  0x00011af4    0x378  GPIO_IrqAdapter.o [1]
+  .text               ro code  0x00011e6c    0x2c4  fsl_clock_manager.o [6]
+  .text               ro code  0x00012130      0x2  I64DivZer.o [8]
+  .text               ro code  0x00012134     0x5c  fsl_tpm_hal.o [6]
+  .text               ro code  0x00012190     0xc4  fsl_tpm_driver.o [6]
+  .text               ro code  0x00012254    0x4e0  fsl_trng_hal.o [6]
+  .text               ro code  0x00012734    0x652  DataRx.o [3]
+  .text               ro code  0x00012d88     0x94  RxEnable.o [3]
+  .text               ro code  0x00012e1c     0xfa  MacSequenceMngr.o [3]
+  .text               ro code  0x00012f16      0xc  MPM.o [1]
+  .text               ro code  0x00012f24    0x62c  Scan.o [3]
+  .text               ro code  0x00013550    0x41e  fsl_mcg_hal_modes.o [6]
+  .text               ro code  0x00013970     0x2a  uread8.o [8]
+  .text               ro code  0x0001399a     0x18  MacMem.o [3]
+  .rodata             const    0x000139b4    0x400  KW4xXcvrDrv.o [1]
+  .text               ro code  0x00013db4    0x362  fsl_i2c_hal.o [6]
+  .text               ro code  0x00014118    0x32c  fsl_i2c_slave_driver.o [6]
+  .text               ro code  0x00014444    0x304  fsl_i2c_master_driver.o [6]
+  .text               ro code  0x00014748    0x10c  fxos_api.o [1]
+  .text               ro code  0x00014854    0x104  mma8451_api.o [1]
+  .text               ro code  0x00014958     0xd0  fsl_lptmr_driver.o [6]
+  .rodata             const    0x00014a28     0xb4  tsm_ll_timing.o [1]
+  .rodata             const    0x00014adc     0x98  ifr_mkw40z4_radio.o [1]
+  .rodata             const    0x00014b74     0x94  fsl_adc16_driver.o [6]
+  .rodata             const    0x00014c08     0x94  fsl_gpio_driver.o [6]
+  .rodata             const    0x00014c9c     0x94  fsl_i2c_master_driver.o [6]
+  .rodata             const    0x00014d30     0x94  fsl_trng_driver.o [6]
+  .rodata             const    0x00014dc4     0x94  fsl_ltc_driver.o [6]
+  .rodata             const    0x00014e58     0x94  fsl_lpuart_driver.o [6]
+  .rodata             const    0x00014eec     0x88  fsl_adc16_driver.o [6]
+  .rodata             const    0x00014f74     0x88  fsl_gpio_driver.o [6]
+  .rodata             const    0x00014ffc     0x88  fsl_gpio_driver.o [6]
+  .rodata             const    0x00015084     0x88  fsl_tpm_driver.o [6]
+  .text               ro code  0x0001510c     0x80  fsl_i2c_shared_function.o [6]
+  .rodata             const    0x0001518c     0x70  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x000151fc     0x70  fsl_i2c_shared_function.o [6]
+  .rodata             const    0x0001526c     0x70  fsl_interrupt_manager.o [6]
+  .rodata             const    0x000152dc     0x6c  fsl_os_abstraction_free_rtos.o [6]
+  .rodata             const    0x00015348     0x6c  fsl_lpuart_driver.o [6]
+  .rodata             const    0x000153b4     0x6c  fsl_i2c_slave_driver.o [6]
+  .rodata             const    0x00015420     0x68  fsl_adc16_driver.o [6]
+  .rodata             const    0x00015488     0x68  fsl_clock_manager.o [6]
+  .rodata             const    0x000154f0     0x68  fsl_lptmr_driver.o [6]
+  .rodata             const    0x00015558     0x64  fsl_adc16_hal.o [6]
+  .rodata             const    0x000155bc     0x60  fsl_i2c_hal.o [6]
+  .rodata             const    0x0001561c     0x60  fsl_gpio_hal.o [6]
+  .rodata             const    0x0001567c     0x5c  board_combined.o [1]
+  .rodata             const    0x000156d8     0x5c  Keyboard.o [1]
+  .rodata             const    0x00015734     0x5c  pin_mux_combined.o [1]
+  .rodata             const    0x00015790     0x5c  TMR_Adapter.o [1]
+  .rodata             const    0x000157ec     0x58  App.o [1]
+  .text               ro code  0x00015844     0x4c  startup.o [1]
+  .rodata             const    0x00015890     0x48  App.o [1]
+  .isr_handler        ro code  0x000158d8     0x40  Keyboard.o [1]
+  .rodata             const    0x00015918     0x40  App.o [1]
+  .rodata             const    0x00015958     0x40  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00015998     0x3c  KW4xXcvrDrv.o [1]
+  .rodata             const    0x000159d4     0x3c  fsl_os_abstraction_free_rtos.o [6]
+  .rodata             const    0x00015a10     0x3c  fsl_clock_MKW40Z4.o [6]
+  .text               ro code  0x00015a4c     0x3c  zero_init3.o [8]
+  .rodata             const    0x00015a88     0x38  App.o [1]
+  .rodata             const    0x00015ac0     0x38  App.o [1]
+  .rodata             const    0x00015af8     0x38  App.o [1]
+  .rodata             const    0x00015b30     0x38  App.o [1]
+  .rodata             const    0x00015b68     0x38  fsl_adc16_driver.o [6]
+  .rodata             const    0x00015ba0     0x38  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00015bd8     0x38  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00015c10     0x38  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00015c48     0x38  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00015c80     0x38  fsl_adc16_hal.o [6]
+  .rodata             const    0x00015cb8     0x34  accel.o [1]
+  .rodata             const    0x00015cec     0x30  App.o [1]
+  .text               ro code  0x00015d1c     0x30  copy_init3.o [8]
+  .rodata             const    0x00015d4c     0x2c  App.o [1]
+  .rodata             const    0x00015d78     0x2c  App.o [1]
+  .rodata             const    0x00015da4     0x2c  fsl_adc16_driver.o [6]
+  .rodata             const    0x00015dd0     0x2c  fsl_gpio_driver.o [6]
+  .rodata             const    0x00015dfc     0x2c  fsl_i2c_master_driver.o [6]
+  .rodata             const    0x00015e28     0x2c  fsl_trng_driver.o [6]
+  .rodata             const    0x00015e54     0x2c  fsl_ltc_driver.o [6]
+  .rodata             const    0x00015e80     0x2c  fsl_lpuart_driver.o [6]
+  .rodata             const    0x00015eac     0x2c  fsl_interrupt_manager.o [6]
+  .rodata             const    0x00015ed8     0x2c  fsl_interrupt_manager.o [6]
+  .rodata             const    0x00015f04     0x28  App.o [1]
+  .rodata             const    0x00015f2c     0x28  App.o [1]
+  .rodata             const    0x00015f54     0x28  App.o [1]
+  .rodata             const    0x00015f7c     0x28  TMR_Adapter.o [1]
+  .rodata             const    0x00015fa4     0x28  fsl_tpm_driver.o [6]
+  .text               ro code  0x00015fcc     0x28  data_init.o [8]
+  .rodata             const    0x00015ff4     0x24  App.o [1]
+  .rodata             const    0x00016018     0x24  fxos_api.o [1]
+  .rodata             const    0x0001603c     0x24  fxos_api.o [1]
+  .rodata             const    0x00016060     0x24  fsl_clock_manager.o [6]
+  .rodata             const    0x00016084     0x24  fsl_lptmr_driver.o [6]
+  .rodata             const    0x000160a8     0x24  fsl_lpuart_driver.o [6]
+  .rodata             const    0x000160cc     0x24  fsl_lpuart_driver.o [6]
+  .iar.init_table     const    0x000160f0     0x24  - Linker created -
+  .rodata             const    0x00016114     0x20  App.o [1]
+  .rodata             const    0x00016134     0x20  fsl_adc16_driver.o [6]
+  .rodata             const    0x00016154     0x20  fsl_i2c_master_driver.o [6]
+  .rodata             const    0x00016174     0x20  fsl_clock_manager.o [6]
+  .rodata             const    0x00016194     0x20  fsl_i2c_shared_function.o [6]
+  .rodata             const    0x000161b4     0x20  fsl_lptmr_driver.o [6]
+  .rodata             const    0x000161d4     0x20  fsl_i2c_slave_driver.o [6]
+  .rodata             const    0x000161f4     0x1c  accel.o [1]
+  .rodata             const    0x00016210     0x1c  App.o [1]
+  .rodata             const    0x0001622c     0x1c  fsl_i2c_hal.o [6]
+  .rodata             const    0x00016248     0x1c  fsl_os_abstraction_free_rtos.o [6]
+  .text               ro code  0x00016264     0x1c  startup_MKW40Z4.o [1]
+  .rodata             const    0x00016280     0x1a  MacMain.o [3]
+  .text               ro code  0x0001629c     0x1a  cmain.o [8]
+  .text               ro code  0x000162b6      0x4  low_level_init.o [4]
+  .text               ro code  0x000162ba      0x8  exit.o [4]
+  .text               ro code  0x000162c4      0xa  cexit.o [8]
+  .rodata             const    0x000162d0     0x18  accel.o [1]
+  .rodata             const    0x000162e8     0x18  App.o [1]
+  .rodata             const    0x00016300     0x18  App.o [1]
+  .rodata             const    0x00016318     0x18  App.o [1]
+  .rodata             const    0x00016330     0x18  App.o [1]
+  .rodata             const    0x00016348     0x18  App.o [1]
+  .rodata             const    0x00016360     0x18  App.o [1]
+  .rodata             const    0x00016378     0x18  App.o [1]
+  .rodata             const    0x00016390     0x18  fxos_api.o [1]
+  .rodata             const    0x000163a8     0x14  fxos_api.o [1]
+  .rodata             const    0x000163bc     0x14  fsl_clock_manager.o [6]
+  .rodata             const    0x000163d0     0x14  fsl_interrupt_manager.o [6]
+  .text               ro code  0x000163e4     0x14  fsl_i2c_irq.o [1]
+  .rodata             const    0x000163f8     0x10  board_combined.o [1]
+  .rodata             const    0x00016408      0xc  board_combined.o [1]
+  .rodata             const    0x00016418     0x10  PhyPlmeData.o [1]
+  .rodata             const    0x00016428     0x10  PhyStateMachine.o [1]
+  .rodata             const    0x00016438     0x10  PhyStateMachine.o [1]
+  .rodata             const    0x00016448     0x10  fsl_adc16_driver.o [6]
+  .rodata             const    0x00016458     0x10  fsl_gpio_driver.o [6]
+  .rodata             const    0x00016468     0x10  fsl_i2c_master_driver.o [6]
+  .rodata             const    0x00016478     0x10  fsl_mcg_hal.o [6]
+  .rodata             const    0x00016488     0x10  fsl_trng_driver.o [6]
+  .rodata             const    0x00016498     0x10  fsl_ltc_driver.o [6]
+  .rodata             const    0x000164a8     0x10  fsl_lpuart_driver.o [6]
+  .rodata             const    0x000164b8      0xc  board_combined.o [1]
+  .rodata             const    0x000164c4      0xc  fsl_osa_ext_freertos.o [1]
+  .rodata             const    0x000164d0      0xc  Keyboard.o [1]
+  .rodata             const    0x000164dc      0xc  MacGlobals.o [1]
+  .rodata             const    0x000164e8      0xc  pin_mux_combined.o [1]
+  .rodata             const    0x000164f4      0xc  SerialManager.o [1]
+  .rodata             const    0x00016500      0xc  SerialManager.o [1]
+  .rodata             const    0x0001650c      0xc  TimersManager.o [1]
+  .rodata             const    0x00016518      0xc  fsl_gpio_driver.o [6]
+  .rodata             const    0x00016524      0xc  fsl_gpio_driver.o [6]
+  .rodata             const    0x00016530      0xc  fsl_gpio_common.o [6]
+  .rodata             const    0x0001653c      0xc  fsl_gpio_common.o [6]
+  .rodata             const    0x00016548      0xc  fsl_tpm_hal.o [6]
+  .rodata             const    0x00016554      0xc  fsl_tpm_common.o [6]
+  .rodata             const    0x00016560      0xc  fsl_gpio_hal.o [6]
+  .text               ro code  0x0001656c      0xc  system_MKW40Z4.o [1]
+  .text               ro code  0x00016578      0xc  cstartup_M.o [8]
+  VERSION_TAGS        const    0x00016584      0xc  MacGlobals.o [1]
+  .text               ro code  0x00016590      0xa  fsl_lptmr_irq.o [1]
+  .rodata             const    0x0001659c      0x8  App.o [1]
+  .rodata             const    0x000165a4      0x8  App.o [1]
+  .rodata             const    0x000165ac      0x4  App.o [1]
+  .rodata             const    0x000165b0      0x8  App.o [1]
+  .rodata             const    0x000165b8      0x8  fsl_osa_ext_freertos.o [1]
+  .rodata             const    0x000165c0      0x8  Keyboard.o [1]
+  .rodata             const    0x000165c8      0x8  KW4xXcvrDrv.o [1]
+  .rodata             const    0x000165d0      0x8  KW4xXcvrDrv.o [1]
+  .rodata             const    0x000165d8      0x8  KW4xXcvrDrv.o [1]
+  .rodata             const    0x000165e0      0x8  tasks.o [1]
+  .rodata             const    0x000165e8      0x8  timers.o [1]
+  .rodata             const    0x000165f0      0x8  fsl_i2c_master_driver.o [6]
+  .rodata             const    0x000165f8      0x8  fsl_os_abstraction_free_rtos.o [6]
+  .rodata             const    0x00016600      0x8  fsl_os_abstraction_free_rtos.o [6]
+  .rodata             const    0x00016608      0x8  fsl_os_abstraction_free_rtos.o [6]
+  .rodata             const    0x00016610      0x8  fsl_lpuart_driver.o [6]
+  .rodata             const    0x00016618      0x8  fsl_i2c_common.o [6]
+  .text               ro code  0x00016620      0x8  startup_MKW40Z4.o [1]
+  .rodata             const    0x00016628      0x4  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x0001662c      0x4  fsl_clock_MKW40Z4.o [6]
+  .rodata             const    0x00016630      0x4  fsl_gpio_common.o [6]
+  .rodata             const    0x00016634      0x4  fsl_trng_common.o [6]
+  .rodata             const    0x00016638      0x4  fsl_lpuart_common.o [6]
+  .rodata             const    0x0001663c      0x4  fsl_lptmr_common.o [6]
+  .rodata             const    0x00016640      0x4  fsl_tpm_common.o [6]
+  .rodata             const    0x00016644      0x4  fsl_adc16_common.o [6]
+  .rodata             const    0x00016648      0x4  fsl_ltc_common.o [6]
+                             - 0x0001664c  0x1623c
+
+"P2", part 1 of 2:                            0xd0
+  P2 s0                        0x1ffff0c0     0xd0  <Init block>
+    .data             inited   0x1ffff0c0     0x3c  gpio_pins_combined.o [1]
+    .data             inited   0x1ffff0fc     0x18  App.o [1]
+    .data             inited   0x1ffff114     0x18  gpio_pins_combined.o [1]
+    .data             inited   0x1ffff12c     0x10  MemManager.o [1]
+    .data             inited   0x1ffff13c      0x8  MacMain.o [3]
+    .data             inited   0x1ffff144      0x4  App.o [1]
+    .data             inited   0x1ffff148      0x4  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff14c      0x4  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff150      0x4  port.o [1]
+    .data             inited   0x1ffff154      0x4  system_MKW40Z4.o [1]
+    .data             inited   0x1ffff158      0x4  tasks.o [1]
+    .data             inited   0x1ffff15c      0x4  MacMain.o [3]
+    .data             inited   0x1ffff160      0x4  fsl_mcg_hal.o [6]
+    .data             inited   0x1ffff164      0x4  fsl_mcg_hal.o [6]
+    .data             inited   0x1ffff168      0x4  SW_RNG.o [5]
+    __DLIB_PERTHREAD  inited   0x1ffff16c      0x4  errno.o [4]
+    .data             inited   0x1ffff170      0x2  App.o [1]
+    .data             inited   0x1ffff172      0x2  App.o [1]
+    .data             inited   0x1ffff174      0x2  App.o [1]
+    .data             inited   0x1ffff176      0x2  App.o [1]
+    .data             inited   0x1ffff178      0x2  App.o [1]
+    .data             inited   0x1ffff17a      0x2  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff17c      0x1  App.o [1]
+    .data             inited   0x1ffff17d      0x1  App.o [1]
+    .data             inited   0x1ffff17e      0x1  App.o [1]
+    .data             inited   0x1ffff17f      0x1  Keyboard.o [1]
+    .data             inited   0x1ffff180      0x1  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff181      0x1  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff182      0x1  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff183      0x1  KW4xXcvrDrv.o [1]
+    .data             inited   0x1ffff184      0x1  LED.o [1]
+    .data             inited   0x1ffff185      0x1  LED.o [1]
+    .data             inited   0x1ffff186      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff187      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff188      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff189      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff18a      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff18b      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff18c      0x1  MacGlobals.o [1]
+    .data             inited   0x1ffff18d      0x1  PhyISR.o [1]
+    .data             inited   0x1ffff18e      0x1  PhyPlmeData.o [1]
+    .data             inited   0x1ffff18f      0x1  fsl_lpuart_common.o [6]
+                             - 0x1ffff190     0xd0
+
+"P2", part 2 of 2:                          0x37c8
+  .bss                zero     0x1ffff190   0x1f40  heap_1.o [1]
+  .bss                zero     0x200010d0    0xe40  MemManager.o [1]
+  .bss                zero     0x20001f10    0x174  SerialManager.o [1]
+  .bss                zero     0x20002084    0x168  MacGlobals.o [1]
+  .bss                zero     0x200021ec    0x168  tasks.o [1]
+  .bss                zero     0x20002354     0x3c  GPIO_IrqAdapter.o [1]
+  .bss                zero     0x20002390    0x100  TimersManager.o [1]
+  .bss                zero     0x20002490     0x50  PhyTime.o [1]
+  .bss                zero     0x200024e0     0x48  Flash_Adapter.o [1]
+  .bss                zero     0x20002528     0x48  PhyStateMachine.o [1]
+  .bss                zero     0x20002570     0x40  MacGlobals.o [1]
+  .bss                zero     0x200025b0     0x40  port.o [1]
+  .bss                zero     0x200025f0     0x34  App.o [1]
+  .bss                zero     0x20002624     0x30  MemManager.o [1]
+  .bss                zero     0x20002654     0x30  SerialManager.o [1]
+  .bss                zero     0x20002684     0x28  MacGlobals.o [1]
+  .bss                zero     0x200026ac     0x20  App.o [1]
+  .bss                zero     0x200026cc     0x14  tasks.o [1]
+  .bss                zero     0x200026e0     0x20  MacGlobals.o [1]
+  .bss                zero     0x20002700     0x20  fsl_os_abstraction_free_rtos.o [6]
+  .bss                zero     0x20002720     0x14  tasks.o [1]
+  .bss                zero     0x20002734     0x14  tasks.o [1]
+  .bss                zero     0x20002748     0x14  tasks.o [1]
+  .bss                zero     0x2000275c     0x14  tasks.o [1]
+  .bss                zero     0x20002770     0x14  timers.o [1]
+  .bss                zero     0x20002784     0x14  timers.o [1]
+  .bss                zero     0x20002798     0x10  MacGlobals.o [1]
+  .bss                zero     0x200027a8     0x10  fsl_trng_driver.o [6]
+  .bss                zero     0x200027b8      0xc  App.o [1]
+  .bss                zero     0x200027c4      0xc  App.o [1]
+  .bss                zero     0x200027d0      0xc  App.o [1]
+  .bss                zero     0x200027dc      0xc  App.o [1]
+  .bss                zero     0x200027e8      0xc  App.o [1]
+  .bss                zero     0x200027f4      0xc  fsl_osa_ext_freertos.o [1]
+  .bss                zero     0x20002800      0xc  MacGlobals.o [1]
+  .bss                zero     0x2000280c      0x8  App.o [1]
+  .bss                zero     0x20002814      0x8  App.o [1]
+  .bss                zero     0x2000281c      0x8  MacGlobals.o [1]
+  .bss                zero     0x20002824      0x8  MacGlobals.o [1]
+  .bss                zero     0x2000282c      0x4  App.o [1]
+  .bss                zero     0x20002830      0x8  PhyTime.o [1]
+  .bss                zero     0x20002838      0x8  SerialManager.o [1]
+  .bss                zero     0x20002840      0x8  TimersManager.o [1]
+  .bss                zero     0x20002848      0x8  TimersManager.o [1]
+  .bss                zero     0x20002850      0x8  fsl_i2c_common.o [6]
+  .bss                zero     0x20002858      0x4  App.o [1]
+  .bss                zero     0x2000285c      0x4  App.o [1]
+  .bss                zero     0x20002860      0x4  App.o [1]
+  .bss                zero     0x20002864      0x4  App.o [1]
+  .bss                zero     0x20002868      0x4  heap_1.o [1]
+  .bss                zero     0x2000286c      0x4  heap_1.o [1]
+  .bss                zero     0x20002870      0x4  Keyboard.o [1]
+  .bss                zero     0x20002874      0x4  Keyboard.o [1]
+  .bss                zero     0x20002878      0x4  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000287c      0x4  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002880      0x4  LED.o [1]
+  .bss                zero     0x20002884      0x4  MacGlobals.o [1]
+  .bss                zero     0x20002888      0x4  MacGlobals.o [1]
+  .bss                zero     0x2000288c      0x4  PhyISR.o [1]
+  .bss                zero     0x20002890      0x4  PhyTime.o [1]
+  .bss                zero     0x20002894      0x4  PhyTime.o [1]
+  .bss                zero     0x20002898      0x4  SerialManager.o [1]
+  .bss                zero     0x2000289c      0x4  SerialManager.o [1]
+  .bss                zero     0x200028a0      0x4  tasks.o [1]
+  .bss                zero     0x200028a4      0x4  tasks.o [1]
+  .bss                zero     0x200028a8      0x4  tasks.o [1]
+  .bss                zero     0x200028ac      0x4  tasks.o [1]
+  .bss                zero     0x200028b0      0x4  tasks.o [1]
+  .bss                zero     0x200028b4      0x4  tasks.o [1]
+  .bss                zero     0x200028b8      0x4  tasks.o [1]
+  .bss                zero     0x200028bc      0x4  tasks.o [1]
+  .bss                zero     0x200028c0      0x4  tasks.o [1]
+  .bss                zero     0x200028c4      0x4  tasks.o [1]
+  .bss                zero     0x200028c8      0x4  tasks.o [1]
+  .bss                zero     0x200028cc      0x4  tasks.o [1]
+  .bss                zero     0x200028d0      0x4  tasks.o [1]
+  .bss                zero     0x200028d4      0x4  timers.o [1]
+  .bss                zero     0x200028d8      0x4  timers.o [1]
+  .bss                zero     0x200028dc      0x4  timers.o [1]
+  .bss                zero     0x200028e0      0x4  timers.o [1]
+  .bss                zero     0x200028e4      0x4  TimersManager.o [1]
+  .bss                zero     0x200028e8      0x4  TimersManager.o [1]
+  .bss                zero     0x200028ec      0x4  fsl_os_abstraction_free_rtos.o [6]
+  .bss                zero     0x200028f0      0x4  fsl_mcg_hal.o [6]
+  .bss                zero     0x200028f4      0x4  fsl_mcg_hal.o [6]
+  .bss                zero     0x200028f8      0x4  fsl_ltc_driver.o [6]
+  .bss                zero     0x200028fc      0x4  fsl_lpuart_common.o [6]
+  .bss                zero     0x20002900      0x4  fsl_lptmr_common.o [6]
+  .bss                zero     0x20002904      0x2  App.o [1]
+  .bss                zero     0x20002906      0x2  App.o [1]
+  .bss                zero     0x20002908      0x2  App.o [1]
+  .bss                zero     0x2000290a      0x2  App.o [1]
+  .bss                zero     0x2000290c      0x2  App.o [1]
+  .bss                zero     0x2000290e      0x2  App.o [1]
+  .bss                zero     0x20002910      0x2  App.o [1]
+  .bss                zero     0x20002912      0x2  App.o [1]
+  .bss                zero     0x20002914      0x2  App.o [1]
+  .bss                zero     0x20002916      0x2  App.o [1]
+  .bss                zero     0x20002918      0x2  GPIO_IrqAdapter.o [1]
+  .bss                zero     0x2000291a      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000291c      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000291e      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002920      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002922      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002924      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002926      0x2  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002928      0x2  MemManager.o [1]
+  .bss                zero     0x2000292a      0x2  TimersManager.o [1]
+  .bss                zero     0x2000292c      0x2  TimersManager.o [1]
+  .bss                zero     0x2000292e      0x2  TimersManager.o [1]
+  .bss                zero     0x20002930      0x2  DataTx.o [3]
+  .bss                zero     0x20002932      0x1  App.o [1]
+  .bss                zero     0x20002933      0x1  App.o [1]
+  .bss                zero     0x20002934      0x1  App.o [1]
+  .bss                zero     0x20002935      0x1  App.o [1]
+  .bss                zero     0x20002936      0x1  App.o [1]
+  .bss                zero     0x20002937      0x1  App.o [1]
+  .bss                zero     0x20002938      0x1  App.o [1]
+  .bss                zero     0x20002939      0x1  App.o [1]
+  .bss                zero     0x2000293a      0x1  Keyboard.o [1]
+  .bss                zero     0x2000293b      0x1  Keyboard.o [1]
+  .bss                zero     0x2000293c      0x1  Keyboard.o [1]
+  .bss                zero     0x2000293d      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000293e      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000293f      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002940      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002941      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002942      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002943      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002944      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002945      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002946      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002947      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002948      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x20002949      0x1  KW4xXcvrDrv.o [1]
+  .bss                zero     0x2000294a      0x1  LED.o [1]
+  .bss                zero     0x2000294b      0x1  LED.o [1]
+  .bss                zero     0x2000294c      0x1  MacGlobals.o [1]
+  .bss                zero     0x2000294d      0x1  PhyISR.o [1]
+  .bss                zero     0x2000294e      0x1  PhyISR.o [1]
+  .bss                zero     0x2000294f      0x1  PhyISR.o [1]
+  .bss                zero     0x20002950      0x1  RNG.o [1]
+  .bss                zero     0x20002951      0x1  SerialManager.o [1]
+  .bss                zero     0x20002952      0x1  TimersManager.o [1]
+  .bss                zero     0x20002953      0x1  TimersManager.o [1]
+  .bss                zero     0x20002954      0x1  TimersManager.o [1]
+  .bss                zero     0x20002955      0x1  TimersManager.o [1]
+  .bss                zero     0x20002956      0x1  fsl_i2c_slave_driver.o [6]
+  .bss                zero     0x20002957      0x1  fsl_i2c_slave_driver.o [6]
+                             - 0x20002958   0x37c8
+
+"P4":                                        0x200
+  CSTACK                       0x20003e00    0x200  <Block>
+    CSTACK            uninit   0x20003e00    0x200  <Block tail>
+                             - 0x20004000    0x200
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x37c8:
+          0x1ffff190  0x37c8
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xd0:
+          0x000000c0    0xd0
+    1 destination range, total size 0xd0:
+          0x1ffff0c0    0xd0
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                          ro code  ro data  rw data
+    ------                          -------  -------  -------
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj: [1]
+    ASP.o                                 2
+    App.o                             4 304    1 037      249
+    Flash_Adapter.o                      24                72
+    FsciMacCommands.o                     2
+    FunctionLib.o                        94
+    GPIO_IrqAdapter.o                   888                62
+    GenericList.o                       268
+    KW4xXcvrDrv.o                     6 956    1 122       49
+    Keyboard.o                          792      113       12
+    LED.o                             1 044        2        8
+    MPM.o                                12
+    MacGlobals.o                        124       33      556
+    MemManager.o                        392       16    3 714
+    Messaging.o                         138
+    Panic.o                               2
+    PhyISR.o                          1 304        2        8
+    PhyPacketProcessor.o                850        1
+    PhyPlmeData.o                     1 564       17        1
+    PhyStateMachine.o                 2 068       32       72
+    PhyTime.o                         1 232                96
+    RNG.o                               200                 1
+    SecLib.o                            138
+    SerialManager.o                   2 818       24      437
+    TMR_Adapter.o                       688      132
+    TimersManager.o                   1 564       12      290
+    accel.o                             280      104
+    board_combined.o                    288      132
+    event_groups.o                      534
+    fsl_i2c_irq.o                        20
+    fsl_lptmr_irq.o                      10
+    fsl_osa_ext_freertos.o              416       21       12
+    fxos_api.o                          268      116
+    gpio_pins_combined.o                          84       84
+    hardware_init_combined.o            100
+    heap_1.o                            132             8 008
+    ifr_mkw40z4_radio.o                 544      152
+    list.o                              162
+    mma8451_api.o                       260
+    pin_mux_combined.o                  432      104
+    port.o                              264        4       68
+    portasm.o                           180
+    queue.o                           1 804
+    startup.o                            76
+    startup_MKW40Z4.o                   248
+    system_MKW40Z4.o                     12        4        4
+    tasks.o                           2 576       12      516
+    timers.o                          1 032        8       56
+    tsm_ll_timing.o                     124      180
+    ---------------------------------------------------------
+    Total:                           37 230    3 464   14 375
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+Freescale_802.15.4_MAC_06_M0_IAR.a: [3]
+    Association.o                       920
+    DataRx.o                          1 618
+    DataTx.o                          1 380                 2
+    Disassociation.o                    264
+    MacFrames.o                       4 600
+    MacMain.o                         1 058       38       12
+    MacMem.o                             24
+    MacPib.o                          3 384
+    MacSec.o                          2 560
+    MacSequenceMngr.o                   250
+    MacStateMachine.o                 1 480
+    Orphan.o                            208
+    Poll.o                              406
+    Reset.o                             292
+    RxEnable.o                          148
+    Scan.o                            1 580
+    SecurityLib.o                       104
+    Start.o                             422
+    ---------------------------------------------------------
+    Total:                           20 698       38       14
+
+dl6M_tln.a: [4]
+    abort.o                              10
+    errno.o                              16        4        4
+    exit.o                                8
+    low_level_init.o                      4
+    xtls.o                                2
+    ---------------------------------------------------------
+    Total:                               40        4        4
+
+lib_crypto_IAR_M0.a: [5]
+    SW_RNG.o                             56        4        4
+    ---------------------------------------------------------
+    Total:                               56        4        4
+
+libksdk_platform_freertos.a: [6]
+    fsl_adc16_common.o                             5
+    fsl_adc16_driver.o                  944      536
+    fsl_adc16_hal.o                     572      156
+    fsl_clock_MKW40Z4.o                 596      473
+    fsl_clock_manager.o                 708      192
+    fsl_gpio_common.o                             28
+    fsl_gpio_driver.o                   904      504
+    fsl_gpio_hal.o                      124      108
+    fsl_i2c_common.o                              10        8
+    fsl_i2c_hal.o                       866      124
+    fsl_i2c_master_driver.o             772      356
+    fsl_i2c_shared_function.o           128      144
+    fsl_i2c_slave_driver.o              812      140        2
+    fsl_interrupt_manager.o             116      220
+    fsl_lptmr_common.o                             4        4
+    fsl_lptmr_driver.o                  208      172
+    fsl_lpuart_common.o                            5        5
+    fsl_lpuart_driver.o               1 248      396
+    fsl_lpuart_hal.o                    928
+    fsl_ltc_common.o                               5
+    fsl_ltc_driver.o                  1 908      208        4
+    fsl_ltc_driver_aes.o                492
+    fsl_ltc_driver_aes_ccm.o          1 274
+    fsl_ltc_hal.o                       616
+    fsl_mcg_hal.o                       640       24       16
+    fsl_mcg_hal_modes.o               1 054
+    fsl_os_abstraction_free_rtos.o    1 022      220       36
+    fsl_sim_hal_MKW40Z4.o                40
+    fsl_tpm_common.o                              16
+    fsl_tpm_driver.o                    196      176
+    fsl_tpm_hal.o                        92       12
+    fsl_trng_common.o                              5
+    fsl_trng_driver.o                 1 364      208       16
+    fsl_trng_hal.o                    1 248
+    ---------------------------------------------------------
+    Total:                           18 872    4 447       91
+
+m6M_tl.a: [7]
+    DblAddSub.o                         436
+    DblCmpEq.o                           36
+    DblCmpGe.o                           50
+    DblCmpLe.o                           50
+    DblDiv.o                            194
+    DblMul.o                            388
+    DblToI32.o                           78
+    FltDiv.o                            170
+    FltToDbl.o                           50
+    I32ToDbl.o                           48
+    I32ToFlt.o                           30
+    pow.o                             2 192
+    round.o                              72
+    xdint.o                             140
+    xdnorm.o                             68
+    xdscale.o                           284
+    xdtest.o                             60
+    xexp.o                              696
+    xlog.o                              164
+    ---------------------------------------------------------
+    Total:                            5 206
+
+rt6M_tl.a: [8]
+    ABImemcpy.o                          92
+    ABImemset.o                          84
+    I32DivModFast.o                     224
+    I64DivMod.o                         106
+    I64DivZer.o                           2
+    I64Mul.o                             50
+    IntDivZer.o                           2
+    cexit.o                              10
+    cmain.o                              26
+    copy_init3.o                         48
+    cstartup_M.o                         12
+    data_init.o                          40
+    setjmp.o                             24
+    strlen.o                             16
+    uread4.o                             22
+    uread8.o                             42
+    uwrite4.o                            20
+    uwrite8.o                            30
+    zero_init3.o                         60
+    ---------------------------------------------------------
+    Total:                              910
+
+shb_l.a: [9]
+    ABIassert.o                          36
+    exit.o                               20
+    ---------------------------------------------------------
+    Total:                               56
+
+    Gaps                                 29       10
+    Linker created                                36      512
+-------------------------------------------------------------
+    Grand Total:                     83 097    8 003   15 000
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x000160f0           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00016114           --   Gb  - Linker created -
+?main                   0x0001629d          Code  Gb  cmain.o [8]
+ADC16_DRV_ConfigConvChn
+                        0x00009e01    0x3a  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_ConfigHwAverage
+                        0x00009dc5    0x34  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_GetAutoCalibrationParam
+                        0x00009c61    0x84  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_GetConvValueRAW
+                        0x00009eb1    0x2c  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_GetConvValueSigned
+                        0x00009ee1    0x12  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_Init          0x00009d71    0x48  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_PauseConv     0x00009e75    0x38  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_SetCalibrationParam
+                        0x00009ce5    0x44  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_StructInitUserConfigDefault
+                        0x00009d31    0x40  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_DRV_WaitConvDone  0x00009e3b    0x30  Code  Gb  fsl_adc16_driver.o [6]
+ADC16_HAL_ConfigChn     0x0000dac3    0x48  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_ConfigConverter
+                        0x0000db0b    0xc8  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_ConfigHwAverage
+                        0x0000dbd3    0x28  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_GetAutoCalibrationFailedFlag
+                        0x00009bdb    0x1a  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_GetAutoMinusSideGainValue
+                        0x0000da63    0x60  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_GetAutoPlusSideGainValue
+                        0x0000da03    0x60  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_GetChnConvCompletedFlag
+                        0x00009b63    0x36  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_GetChnConvValue
+                        0x00009b99    0x2c  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_GetOffsetValue
+                        0x00009c11     0xc  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_Init          0x0000d9e9    0x1a  Code  Gb  fsl_adc16_hal.o [6]
+ADC16_HAL_SetAutoCalibrationCmd
+                        0x00009bc5    0x16  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_SetMinusSideGainValue
+                        0x00009c03     0xe  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_SetOffsetValue
+                        0x00009c1d     0xe  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_HAL_SetPlusSideGainValue
+                        0x00009bf5     0xe  Code  Lc  fsl_adc16_driver.o [6]
+ADC16_Measure           0x00008a8b    0x3c  Code  Gb  App.o [1]
+AES_128_CCM             0x00007443    0x80  Code  Gb  SecLib.o [1]
+AES_128_CCM_Star        0x000073a5    0x68  Code  Gb  SecurityLib.o [3]
+ASP_Init                0x0000f311     0x2  Code  Gb  ASP.o [1]
+AppThread               0x00008cf1   0x3c8  Code  Gb  App.o [1]
+App_CommRxCallBack      0x000090e1    0x34  Code  Lc  App.o [1]
+App_HandleAssociateConfirm
+                        0x0000930d    0x1e  Code  Lc  App.o [1]
+App_HandleGenericKey    0x00009aad    0x2a  Code  Lc  App.o [1]
+App_HandleKeys          0x00009ad7    0x16  Code  Lc  App.o [1]
+App_HandleMcpsInput     0x00009365    0x32  Code  Lc  App.o [1]
+App_HandleMessage       0x000093a1    0x6c  Code  Lc  App.o [1]
+App_HandleMlmeInput     0x00009335    0x22  Code  Lc  App.o [1]
+App_HandleScanActiveConfirm
+                        0x000091c1    0xa0  Code  Lc  App.o [1]
+App_Idle                0x000099d9    0x2a  Code  Lc  App.o [1]
+App_IntervalTimeoutHandler
+                        0x00009a6f     0xe  Code  Lc  App.o [1]
+App_PollIntervalTimeoutHandler
+                        0x00009a85     0xe  Code  Lc  App.o [1]
+App_ReceiveData         0x00009981    0x52  Code  Lc  App.o [1]
+App_SendAssociateRequest
+                        0x00009279    0x90  Code  Lc  App.o [1]
+App_SendPredefinedMessage
+                        0x00009445    0xe2  Code  Lc  App.o [1]
+App_SendSensorStatus    0x0000955d   0x40c  Code  Lc  App.o [1]
+App_SensorIntervalTimeoutHandler
+                        0x00009a99     0xe  Code  Lc  App.o [1]
+App_StartScan           0x00009135    0x72  Code  Lc  App.o [1]
+App_UpdateLEDs          0x00009a11    0x5e  Code  Lc  App.o [1]
+App_WaitMsg             0x00009429    0x1c  Code  Lc  App.o [1]
+App_init                0x00008c03    0x7e  Code  Gb  App.o [1]
+AssociationPoll_DataRx  0x000112f5   0x11c  Code  Gb  Association.o [3]
+AssociationPoll_SendStatus
+                        0x0001128b    0x6a  Code  Gb  Association.o [3]
+AssociationReq_SendStatus
+                        0x00011411    0xb2  Code  Gb  Association.o [3]
+AssociationRes_SendStatus
+                        0x00011509    0x58  Code  Gb  Association.o [3]
+AssociationRes_VerifyParameters
+                        0x000114d5    0x34  Code  Gb  Association.o [3]
+Association_InitSeq     0x00011213    0x64  Code  Gb  Association.o [3]
+Association_TriggerPoll
+                        0x00011277    0x14  Code  Gb  Association.o [3]
+Association_VerifyParameters
+                        0x000111c9    0x4a  Code  Gb  Association.o [3]
+BLOCK_1_IFR             0x00014adc    0x98  Data  Gb  ifr_mkw40z4_radio.o [1]
+BOARD_ClockInit         0x0000dcaf    0x36  Code  Gb  board_combined.o [1]
+BOARD_DCDCInit          0x0000dce5     0x2  Code  Gb  board_combined.o [1]
+BOARD_InitOsc0          0x0000dc7d    0x18  Code  Gb  board_combined.o [1]
+BOARD_InitRtcOsc        0x0000dc95    0x1a  Code  Gb  board_combined.o [1]
+BindToMAC               0x0000bf7d    0x2c  Code  Gb  MacMain.o [3]
+BindToPHY               0x0000b659     0x6  Code  Gb  PhyStateMachine.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x00013551     0xc  Code  Lc  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_GetFllClk     0x00008957    0x44  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_GetFllRefClk  0x000088b7    0x64  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_GetFllSrc     0x0001355d     0xe  Code  Lc  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_GetInternalRefClk
+                        0x00008a11    0x46  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x00011ebf     0xe  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x00008813     0xe  Code  Lc  fsl_mcg_hal.o [6]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x0001356b     0xe  Code  Lc  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_GetLpuartSrc  0x00008171     0xe  Code  Lc  fsl_clock_MKW40Z4.o [6]
+CLOCK_HAL_GetMcgExternalClkFreq
+                        0x00008855    0x1a  Code  Lc  fsl_mcg_hal.o [6]
+CLOCK_HAL_GetMcgMode    0x00013595    0x7a  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_GetTpmSrc     0x00008163     0xe  Code  Lc  fsl_clock_MKW40Z4.o [6]
+CLOCK_HAL_IsOsc0Stable  0x00013579    0x1c  Code  Lc  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_PrepareOsc    0x00008847     0xe  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_SetBlpeMode   0x0001394d    0x22  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetBlpiMode   0x00013911    0x3c  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetExternalRefClock32kSrc
+                        0x0000817f     0xc  Code  Lc  fsl_clock_MKW40Z4.o [6]
+CLOCK_HAL_SetFbeMode    0x00013831    0xdc  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetFbiMode    0x00013769    0xc4  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetFeeMode    0x0001369f    0xca  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetFeiMode    0x0001360f    0x90  Code  Gb  fsl_mcg_hal_modes.o [6]
+CLOCK_HAL_SetInternalRefClkEnableCmd
+                        0x00011e9b     0xc  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_HAL_SetInternalRefClkEnableInStopCmd
+                        0x00011ea7     0xa  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x00011eb1     0xe  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x00008805     0xe  Code  Lc  fsl_mcg_hal.o [6]
+CLOCK_HAL_SetLpuartSrc  0x0000e2b1    0x14  Code  Lc  fsl_lpuart_driver.o [6]
+CLOCK_HAL_SetOutDiv     0x000087dd    0x24  Code  Gb  fsl_sim_hal_MKW40Z4.o [6]
+CLOCK_HAL_SetTpmSrc     0x0000dc51    0x14  Code  Lc  board_combined.o [1]
+CLOCK_HAL_TestFllExternalRefFreq
+                        0x0000886f    0x48  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_TestFllFreq   0x0000891b    0x3c  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_TestOscFreq   0x00008821    0x26  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_HAL_UpdateFastClkInternalRefDiv
+                        0x0000899b    0x72  Code  Gb  fsl_mcg_hal.o [6]
+CLOCK_SYS_EnableAdcClock
+                        0x00008279    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnableI2cClock
+                        0x000082b5    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnableLpuartClock
+                        0x000082e5    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnableLtcClock
+                        0x0000832d    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnablePortClock
+                        0x00008253    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnableRtcClock
+                        0x00011ecd     0xe  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_SYS_EnableTpmClock
+                        0x00008309    0x22  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_EnableTrngClock
+                        0x0000ffaf     0xe  Code  Lc  fsl_trng_driver.o [6]
+CLOCK_SYS_FllStableDelay
+                        0x00011f65    0x12  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_SYS_GetLptmrGateCmd
+                        0x00014995     0xe  Code  Lc  fsl_lptmr_driver.o [6]
+CLOCK_SYS_GetLpuartFreq
+                        0x00008211    0x42  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_GetOsc0ExternalRefClockFreq
+                        0x000081ab     0x6  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_GetTpmFreq    0x000081c1    0x42  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_GetTrngGateCmd
+                        0x0000ffbd     0xe  Code  Lc  fsl_trng_driver.o [6]
+CLOCK_SYS_McgModeToIdx  0x00011f81    0x30  Code  Lc  fsl_clock_manager.o [6]
+CLOCK_SYS_RtcOscInit    0x000120a7    0x60  Code  Gb  fsl_clock_manager.o [6]
+CLOCK_SYS_SetLpuartSrc  0x0000e2c5    0x14  Code  Lc  fsl_lpuart_driver.o [6]
+CLOCK_SYS_SetMcgMode    0x00011fb5    0xf2  Code  Gb  fsl_clock_manager.o [6]
+CLOCK_SYS_SetSimConfigration
+                        0x0000818b    0x20  Code  Gb  fsl_clock_MKW40Z4.o [6]
+CLOCK_SYS_SetTpmSrc     0x0000dc65    0x14  Code  Lc  board_combined.o [1]
+CLOCK_SetBootConfig     0x0000dcf5    0x1a  Code  Lc  board_combined.o [1]
+CSTACK$$Base            0x20003e00           --   Gb  - Linker created -
+CSTACK$$Limit           0x20004000           --   Gb  - Linker created -
+CoordRealignment_SendStatus
+                        0x00011891    0x26  Code  Gb  Start.o [3]
+DataTx_Backoff          0x00011031    0x1c  Code  Gb  DataTx.o [3]
+DataTx_CheckForExpirePackets
+                        0x00010f3d    0x8a  Code  Gb  DataTx.o [3]
+DataTx_CsmaCaRetry      0x00011009    0x28  Code  Gb  DataTx.o [3]
+DataTx_InitSeq          0x00010bab   0x18e  Code  Gb  DataTx.o [3]
+DataTx_SendData         0x00010d39    0x1a  Code  Gb  DataTx.o [3]
+DataTx_SendDataConfirm  0x00010d59    0x9c  Code  Gb  DataTx.o [3]
+DataTx_SendDataWithBackoff
+                        0x0001104d    0x38  Code  Gb  DataTx.o [3]
+DataTx_SendEmptyFrame   0x00010df5    0x3a  Code  Gb  DataTx.o [3]
+DataTx_SendStatus       0x00010e31   0x10c  Code  Gb  DataTx.o [3]
+DataTx_VerifyParameters
+                        0x00010b3d    0x6e  Code  Gb  DataTx.o [3]
+Disassociation_InitSeq  0x000115e9    0x42  Code  Gb  Disassociation.o [3]
+Disassociation_SendStatus
+                        0x0001162b    0x3a  Code  Gb  Disassociation.o [3]
+Disassociation_VerifyParameters
+                        0x00011561    0x88  Code  Gb  Disassociation.o [3]
+Dumy_MCPS_NWK_SapHandler
+                        0x0000c38d     0x4  Code  Gb  MacMain.o [3]
+Dumy_MLME_NWK_SapHandler
+                        0x0000c391     0x2  Code  Gb  MacMain.o [3]
+FLib_MemCmp             0x00006977    0x20  Code  Gb  FunctionLib.o [1]
+FLib_MemCpy             0x00006947    0x14  Code  Gb  FunctionLib.o [1]
+FLib_MemCpyReverseOrder
+                        0x0000695b    0x1c  Code  Gb  FunctionLib.o [1]
+FLib_MemSet             0x00006997     0xe  Code  Gb  FunctionLib.o [1]
+FREESCALE_PROD_DATA_BASE_ADDR {Abs}
+                        0x00027c00           --   Gb  command line/config [2]
+FrameBuild_AssociationRequest
+                        0x00005731   0x162  Code  Gb  MacFrames.o [3]
+FrameBuild_AssociationResponse
+                        0x00005893   0x162  Code  Gb  MacFrames.o [3]
+FrameBuild_Beacon       0x0000633d   0x1c8  Code  Gb  MacFrames.o [3]
+FrameBuild_BeaconRequest
+                        0x00006029    0x70  Code  Gb  MacFrames.o [3]
+FrameBuild_CoordinatorRealignment
+                        0x000060ad   0x282  Code  Gb  MacFrames.o [3]
+FrameBuild_Data         0x0000651d   0x28c  Code  Gb  MacFrames.o [3]
+FrameBuild_DataRequest  0x00005b81   0x280  Code  Gb  MacFrames.o [3]
+FrameBuild_DisassociationNotification
+                        0x00005a01   0x172  Code  Gb  MacFrames.o [3]
+FrameBuild_OrphanNotification
+                        0x00005f31    0xf8  Code  Gb  MacFrames.o [3]
+FrameBuild_PanIdConflictNotification
+                        0x00005e01   0x122  Code  Gb  MacFrames.o [3]
+GPIO_DRV_ClearPinOutput
+                        0x0000c7c9    0x1c  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_DRV_InputPinInit   0x0000c6cd    0x7a  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_DRV_OutputPinInit  0x0000c747    0x5a  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_DRV_ReadPinInput   0x0000c805    0x1c  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_DRV_SetPinOutput   0x0000c7a5    0x1c  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_DRV_TogglePinOutput
+                        0x0000c7e5    0x1c  Code  Gb  fsl_gpio_driver.o [6]
+GPIO_HAL_ClearPinOutput
+                        0x0000c625    0x20  Code  Lc  fsl_gpio_driver.o [6]
+GPIO_HAL_ReadPinInput   0x0000c665    0x26  Code  Lc  fsl_gpio_driver.o [6]
+GPIO_HAL_SetPinDir      0x00011a79    0x46  Code  Gb  fsl_gpio_hal.o [6]
+GPIO_HAL_SetPinOutput   0x0000c605    0x20  Code  Lc  fsl_gpio_driver.o [6]
+GPIO_HAL_TogglePinOutput
+                        0x0000c645    0x20  Code  Lc  fsl_gpio_driver.o [6]
+GPIO_HAL_WritePinOutput
+                        0x00011abf    0x2e  Code  Gb  fsl_gpio_hal.o [6]
+GpioInstallIsr          0x00011be5   0x1c0  Code  Gb  GPIO_IrqAdapter.o [1]
+Gpio_CommonIsr          0x00011db9    0x5e  Code  Lc  GPIO_IrqAdapter.o [1]
+Gpio_InstallPortISR     0x00011e25    0x40  Code  Lc  GPIO_IrqAdapter.o [1]
+HWDCoffsetCal           0x2000293f     0x1  Data  Lc  KW4xXcvrDrv.o [1]
+I2C0_IRQHandler         0x000163e5     0xa  Code  Gb  fsl_i2c_irq.o [1]
+I2C1_IRQHandler         0x000163ef     0xa  Code  Gb  fsl_i2c_irq.o [1]
+I2C_DRV_CompleteTransfer
+                        0x000146dd    0x5c  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_DRV_IRQHandler      0x00015135    0x4c  Code  Gb  fsl_i2c_shared_function.o [6]
+I2C_DRV_MasterIRQHandler
+                        0x000145d5   0x102  Code  Gb  fsl_i2c_master_driver.o [6]
+I2C_DRV_MasterInit      0x0001452b    0x86  Code  Gb  fsl_i2c_master_driver.o [6]
+I2C_DRV_SlaveIRQHandler
+                        0x000141f1   0x236  Code  Gb  fsl_i2c_slave_driver.o [6]
+I2C_HAL_ClearArbitrationLost
+                        0x000144d5     0x6  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_ClearInt        0x000144ef     0x6  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_ClearInt        0x00014177     0x6  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_ClearStartFlag  0x000141e1    0x10  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_ClearStopFlag   0x00014199    0x10  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_Enable          0x00014453    0x10  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_GetDirMode      0x00014483     0xe  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_GetDirMode      0x0001412d     0xe  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_GetStartFlag    0x000141c5    0x1c  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_GetStartStopIntCmd
+                        0x000141a9    0x1c  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_GetStatusFlag   0x000144ad     0xc  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_GetStatusFlag   0x00013ded     0xc  Code  Lc  fsl_i2c_hal.o [6]
+I2C_HAL_GetStatusFlag   0x0001510d     0xc  Code  Lc  fsl_i2c_shared_function.o [6]
+I2C_HAL_GetStatusFlag   0x00014157     0xc  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_GetStopFlag     0x0001417d    0x1c  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_Init            0x00013df9    0x2e  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_IsMaster        0x000144b9    0x1c  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_IsMaster        0x00015119    0x1c  Code  Lc  fsl_i2c_shared_function.o [6]
+I2C_HAL_MasterReceiveDataPolling
+                        0x00013f37   0x12a  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_MasterSendDataPolling
+                        0x00014061    0xb6  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_ReadByte        0x00014491     0x4  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_ReadByte        0x00013de9     0x4  Code  Lc  fsl_i2c_hal.o [6]
+I2C_HAL_ReadByte        0x0001413b     0x4  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_ReadByteBlocking
+                        0x00013ebd    0x2a  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_SendAck         0x00014463    0x10  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_SendAck         0x00013db5    0x10  Code  Lc  fsl_i2c_hal.o [6]
+I2C_HAL_SendNak         0x00014473    0x10  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_SendNak         0x00013dc5    0x10  Code  Lc  fsl_i2c_hal.o [6]
+I2C_HAL_SendStart       0x00013e27    0x34  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_SendStop        0x00013e5d    0x56  Code  Gb  fsl_i2c_hal.o [6]
+I2C_HAL_SetDirMode      0x00013dd5    0x14  Code  Lc  fsl_i2c_hal.o [6]
+I2C_HAL_SetDirMode      0x00014119    0x14  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_SetIntCmd       0x000144db    0x14  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_SetIntCmd       0x00014163    0x14  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_WriteByte       0x00014495    0x18  Code  Lc  fsl_i2c_master_driver.o [6]
+I2C_HAL_WriteByte       0x0001413f    0x18  Code  Lc  fsl_i2c_slave_driver.o [6]
+I2C_HAL_WriteByteBlocking
+                        0x00013ee7    0x50  Code  Gb  fsl_i2c_hal.o [6]
+INT_SYS_DisableIRQ      0x00007635    0x36  Code  Lc  fsl_ltc_driver.o [6]
+INT_SYS_EnableIRQ       0x00009c2b    0x36  Code  Lc  fsl_adc16_driver.o [6]
+INT_SYS_EnableIRQ       0x0000c68b    0x36  Code  Lc  fsl_gpio_driver.o [6]
+INT_SYS_EnableIRQ       0x000144f5    0x36  Code  Lc  fsl_i2c_master_driver.o [6]
+INT_SYS_EnableIRQ       0x0000ff1b    0x36  Code  Lc  fsl_trng_driver.o [6]
+INT_SYS_EnableIRQ       0x0000e2d9    0x36  Code  Lc  fsl_lpuart_driver.o [6]
+INT_SYS_InstallHandler  0x000052f9    0x60  Code  Gb  fsl_interrupt_manager.o [6]
+KBD_Init                0x0000d7e9    0x3a  Code  Gb  Keyboard.o [1]
+KBD_KeyCheck            0x0000d661    0x68  Code  Lc  Keyboard.o [1]
+KBD_KeySwitchPortGet    0x0000d5ff    0x62  Code  Lc  Keyboard.o [1]
+KbGpioInit              0x0000d5e3    0x1c  Code  Lc  Keyboard.o [1]
+KeyScan                 0x0000d6c9    0xd2  Code  Lc  Keyboard.o [1]
+LED_DecrementBlip       0x0000aa39    0x52  Code  Lc  LED.o [1]
+LED_ExitSerialFlash     0x0000a9f5    0x40  Code  Lc  LED.o [1]
+LED_FlashTimeout        0x0000aa8b    0x7e  Code  Lc  LED.o [1]
+LED_Init                0x0000a70d    0x24  Code  Gb  LED.o [1]
+LED_Operate             0x0000a731    0xc4  Code  Gb  LED.o [1]
+LED_SetLed              0x0000a97d    0x78  Code  Gb  LED.o [1]
+LED_StartBlip           0x0000a8cf    0x30  Code  Gb  LED.o [1]
+LED_StartFlash          0x0000a8a3    0x2c  Code  Gb  LED.o [1]
+LED_StartSerialFlash    0x0000a927    0x48  Code  Gb  LED.o [1]
+LED_StopFlash           0x0000a8ff    0x28  Code  Gb  LED.o [1]
+LED_StopFlashingAllLeds
+                        0x0000a897     0xc  Code  Gb  LED.o [1]
+LED_ToggleLed           0x0000a861    0x36  Code  Gb  LED.o [1]
+LED_TurnOffLed          0x0000a82b    0x36  Code  Gb  LED.o [1]
+LED_TurnOnLed           0x0000a7f5    0x36  Code  Gb  LED.o [1]
+LPTMR0_IRQHandler       0x00016591     0xa  Code  Gb  fsl_lptmr_irq.o [1]
+LPTMR_DRV_IRQHandler    0x000149ad    0x68  Code  Gb  fsl_lptmr_driver.o [6]
+LPTMR_HAL_ClearIntFlag  0x00014959     0xc  Code  Lc  fsl_lptmr_driver.o [6]
+LPUART_DRV_AbortSendingData
+                        0x0000e4ed    0x34  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_CompleteReceiveData
+                        0x0000e6cd    0x52  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_DRV_CompleteSendData
+                        0x0000e67d    0x4a  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_DRV_IRQHandler   0x0000e531    0xec  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_Init         0x0000e30f    0xd4  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_InstallRxCallback
+                        0x0000e3e3    0x56  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_InstallTxCallback
+                        0x0000e439    0x30  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_SendData     0x0000e48d    0x54  Code  Gb  fsl_lpuart_driver.o [6]
+LPUART_DRV_StartSendData
+                        0x0000e61d    0x5a  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_HAL_ClearStatusFlag
+                        0x0000ea41    0x92  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_GetStatusFlag
+                        0x0000e9cb    0x76  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_Getchar      0x0000e2ab     0x6  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_HAL_Init         0x0000e73d    0x28  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_Putchar      0x0000e2a5     0x6  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_HAL_SetBaudRate  0x0000e771    0xfc  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_SetBitCountPerChar
+                        0x0000e86d    0x32  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_SetIntMode   0x0000e8cf    0xfc  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_SetParityMode
+                        0x0000e89f    0x30  Code  Gb  fsl_lpuart_hal.o [6]
+LPUART_HAL_SetReceiverCmd
+                        0x0000e281    0x16  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_HAL_SetStopBitCount
+                        0x0000e297     0xe  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_HAL_SetTransmitterCmd
+                        0x0000e26b    0x16  Code  Lc  fsl_lpuart_driver.o [6]
+LPUART_IRQHandler       0x0000b5b7     0xc  Code  Gb  SerialManager.o [1]
+LTC_DRV_Init            0x0000766b    0x3c  Code  Gb  fsl_ltc_driver.o [6]
+LTC_DRV_aes_decrypt_tag_ccm
+                        0x000080c7    0x6c  Code  Gb  fsl_ltc_driver_aes_ccm.o [6]
+LTC_DRV_aes_encrypt_tag_ccm
+                        0x0000807d    0x4a  Code  Gb  fsl_ltc_driver_aes_ccm.o [6]
+LTC_HAL_ClearDoneInterruptStatus
+                        0x0000760b    0x12  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ClearDoneInterruptStatus
+                        0x0000861f    0x12  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_ClearWritten    0x000075f3     0x4  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ClearWritten    0x0000861b     0x4  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_Command         0x00007551     0x6  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_Command         0x000083c7     0x6  Code  Lc  fsl_ltc_hal.o [6]
+LTC_HAL_GetContext      0x00008507    0xa2  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_GetDataSize     0x0000754b     0x6  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_GetDataSize     0x00007c53     0x6  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+LTC_HAL_GetErrorStatusFlagMasked
+                        0x00008447     0x8  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_GetStatusFIFO   0x0000762d     0x8  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_GetStatusFlag   0x000075f7    0x14  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_GetStatusFlagMasked
+                        0x0000843f     0x8  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_GetWordFromUnaligned
+                        0x000074d3    0x22  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_GetWordFromUnaligned
+                        0x00008389    0x22  Code  Lc  fsl_ltc_hal.o [6]
+LTC_HAL_Init            0x000083cd     0xe  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_InputFIFOFull   0x00008631    0x10  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_ModeGetAlgorithmState
+                        0x00007535     0x8  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ModeGetEncrypt  0x000085f1     0xa  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_ModeSetAlgorithm
+                        0x00007511     0x8  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ModeSetAlgorithmState
+                        0x00007523    0x12  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ModeSetAlgorithmState
+                        0x00008605    0x12  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_ModeSetAlgorithmState
+                        0x00007c39    0x12  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+LTC_HAL_ModeSetEncrypt  0x00007519     0xa  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ModeSetICVTest  0x000085fb     0xa  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_ModeSetSymmetricAlg
+                        0x0000753d     0xa  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_ReadMode        0x00007c4f     0x4  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+LTC_HAL_ReadOutputFIFO  0x00007625     0x8  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetAADSize      0x0000844f    0x16  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetContext      0x00008465    0xa2  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetCtxRegInputByteSwap
+                        0x000075bf    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetCtxRegOutputByteSwap
+                        0x000075d9    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetDataSize     0x00008403    0x1a  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetICVSize      0x00008421    0x1e  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetInputFIFOByteSwap
+                        0x00007557    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetKey          0x000085a9    0x48  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetKeyRegInputByteSwap
+                        0x0000758b    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetKeyRegOutputByteSwap
+                        0x000075a5    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetKeySize      0x000083db    0x28  Code  Gb  fsl_ltc_hal.o [6]
+LTC_HAL_SetOutputFIFOByteSwap
+                        0x00007571    0x1a  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetUnalignedFromWord
+                        0x000074f5    0x1c  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_SetUnalignedFromWord
+                        0x000083ab    0x1c  Code  Lc  fsl_ltc_hal.o [6]
+LTC_HAL_WriteInputFIFO  0x0000761d     0x8  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_WriteInputFIFO  0x00008641     0x8  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_WriteMode       0x00007547     0x4  Code  Lc  fsl_ltc_driver.o [6]
+LTC_HAL_WriteMode       0x00008617     0x4  Code  Lc  fsl_ltc_driver_aes.o [6]
+LTC_HAL_WriteMode       0x00007c4b     0x4  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+ListAddTail             0x0000d863    0x4e  Code  Gb  GenericList.o [1]
+ListAddTailMsg          0x0000d95d    0x12  Code  Gb  Messaging.o [1]
+ListGetHeadMsg          0x0000d987    0x26  Code  Gb  Messaging.o [1]
+ListGetNextMsg          0x0000d9ad    0x2a  Code  Gb  Messaging.o [1]
+ListGetSize             0x0000d959     0x4  Code  Gb  GenericList.o [1]
+ListInit                0x0000d851    0x12  Code  Gb  GenericList.o [1]
+ListRemoveElement       0x0000d8fd    0x5c  Code  Gb  GenericList.o [1]
+ListRemoveHead          0x0000d8b1    0x4c  Code  Gb  GenericList.o [1]
+ListRemoveHeadMsg       0x0000d96f    0x18  Code  Gb  Messaging.o [1]
+ListRemoveMsg           0x0000d9d7    0x10  Code  Gb  Messaging.o [1]
+MAC_EventSet            0x0000bfb5    0x2a  Code  Gb  MacMain.o [3]
+MAC_Init                0x0000bf01    0x7c  Code  Gb  MacGlobals.o [1]
+MAC_Monitor             0x000110a1     0x2  Code  Gb  FsciMacCommands.o [1]
+MAC_PD_SapHandler       0x0000b75d    0x5e  Code  Gb  PhyStateMachine.o [1]
+MAC_PLME_SapHandler     0x0000b7bb   0x104  Code  Gb  PhyStateMachine.o [1]
+MAC_stack               0x20002888     0x4  Data  Gb  MacGlobals.o [1]
+MAC_version             0x00016584     0xc  Data  Gb  MacGlobals.o [1]
+MCPS_NWK_SapHandler     0x00009b07    0x1a  Code  Gb  App.o [1]
+MEM_BufferAlloc         0x00009ff7    0x7e  Code  Gb  MemManager.o [1]
+MEM_BufferFree          0x0000a075    0x6a  Code  Gb  MemManager.o [1]
+MEM_Init                0x00009f69    0x8e  Code  Gb  MemManager.o [1]
+MLME_NWK_SapHandler     0x00009aed    0x1a  Code  Gb  App.o [1]
+MPM_AcquirePAN          0x00012f17     0x6  Code  Gb  MPM.o [1]
+MPM_ReleasePAN          0x00012f1d     0x6  Code  Gb  MPM.o [1]
+Mac_CompactDeviceAddrTable
+                        0x0000d42d    0x9c  Code  Lc  MacPib.o [3]
+Mac_ComputeMaxFrameTotalWaitTime
+                        0x0000d23f    0x64  Code  Lc  MacPib.o [3]
+Mac_CreateMcpsDataInd   0x00012b81    0xc0  Code  Gb  DataRx.o [3]
+Mac_CreateMlmeCommStatusInd
+                        0x00012c41    0x98  Code  Gb  DataRx.o [3]
+Mac_CreateMlmeSyncLossInd
+                        0x00012cd9    0x54  Code  Gb  DataRx.o [3]
+Mac_GetMacHeader        0x000067c1    0xe2  Code  Gb  MacFrames.o [3]
+Mac_GetMaxMsduLength    0x000068a3    0x2e  Code  Gb  MacFrames.o [3]
+Mac_GetNextFreeDevTblEntry
+                        0x0000d4c9    0x26  Code  Lc  MacPib.o [3]
+Mac_GetOverheadSize     0x000068d1    0x4a  Code  Gb  MacFrames.o [3]
+Mac_GetRandomBackoff    0x00010fc7    0x3e  Code  Gb  DataTx.o [3]
+Mac_IndirectTxHandle    0x000108e1   0x250  Code  Lc  MacStateMachine.o [3]
+Mac_InitCsmaCaVariables
+                        0x00011095     0xc  Code  Gb  DataTx.o [3]
+Mac_InitializeData      0x0000c0c1    0x96  Code  Gb  MacMain.o [3]
+Mac_IsPanIdConflict     0x00012d2d    0x5a  Code  Gb  DataRx.o [3]
+Mac_McpsDataReqHandle   0x000106dd    0x72  Code  Gb  MacStateMachine.o [3]
+Mac_McpsPurgeReqHandle  0x0001074f    0x7c  Code  Lc  MacStateMachine.o [3]
+Mac_MemAllocZero        0x0001399b    0x18  Code  Gb  MacMem.o [3]
+Mac_MlmeScanReqHandle   0x000107cb   0x116  Code  Lc  MacStateMachine.o [3]
+Mac_NwkMsgHandler       0x00010625    0xb8  Code  Gb  MacStateMachine.o [3]
+Mac_PhyMsgHandler       0x00010581    0xa4  Code  Gb  MacStateMachine.o [3]
+Mac_PreProcessDataIndication
+                        0x00012735    0x96  Code  Gb  DataRx.o [3]
+Mac_ProcessBeaconFrame  0x000129ed   0x194  Code  Gb  DataRx.o [3]
+Mac_ProcessDataIndication
+                        0x000127d1   0x21c  Code  Gb  DataRx.o [3]
+Mac_RegisterSapHandlers
+                        0x0000c157    0x12  Code  Gb  MacMain.o [3]
+Mac_ScanMsgHandler      0x00012f25    0x94  Code  Gb  Scan.o [3]
+Mac_SetDeviceAddrTableHandle
+                        0x0000d4fd    0x7c  Code  Lc  MacPib.o [3]
+Mac_SetExtendedAddress  0x0000d3ff    0x2e  Code  Gb  MacPib.o [3]
+Mac_SetPhyPIBs          0x0000d2a3   0x15c  Code  Gb  MacPib.o [3]
+Mac_SetTrxActiveMode    0x0000c39d     0x2  Code  Gb  MacMain.o [3]
+Mac_SetTrxLowPowerMode  0x0000c39b     0x2  Code  Gb  MacMain.o [3]
+Mac_Task                0x0000bfdf    0xe2  Code  Gb  MacMain.o [3]
+Mac_TimerNotify         0x0000bfa9     0xc  Code  Lc  MacMain.o [3]
+Mac_TransactionExpire   0x00010575     0xc  Code  Gb  MacStateMachine.o [3]
+Mlme_VerifyNwkInput     0x0000c275    0xf6  Code  Gb  MacMain.o [3]
+NVIC_ClearPendingIRQ    0x00011b03     0xe  Code  Lc  GPIO_IrqAdapter.o [1]
+NVIC_ClearPendingIRQ    0x0000f323     0xe  Code  Lc  PhyISR.o [1]
+NVIC_ClearPendingIRQ    0x0000dfb7     0xe  Code  Lc  TMR_Adapter.o [1]
+NVIC_DisableIRQ         0x000074c5     0xe  Code  Lc  fsl_ltc_driver.o [6]
+NVIC_EnableIRQ          0x00011af5     0xe  Code  Lc  GPIO_IrqAdapter.o [1]
+NVIC_EnableIRQ          0x0000f315     0xe  Code  Lc  PhyISR.o [1]
+NVIC_EnableIRQ          0x0000dfa9     0xe  Code  Lc  TMR_Adapter.o [1]
+NVIC_EnableIRQ          0x00009b55     0xe  Code  Lc  fsl_adc16_driver.o [6]
+NVIC_EnableIRQ          0x0000c4b9     0xe  Code  Lc  fsl_gpio_driver.o [6]
+NVIC_EnableIRQ          0x00014445     0xe  Code  Lc  fsl_i2c_master_driver.o [6]
+NVIC_EnableIRQ          0x0000fe49     0xe  Code  Lc  fsl_trng_driver.o [6]
+NVIC_EnableIRQ          0x0000e25d     0xe  Code  Lc  fsl_lpuart_driver.o [6]
+NVIC_GetPriority        0x00011b95    0x4a  Code  Lc  GPIO_IrqAdapter.o [1]
+NVIC_SetPriority        0x00011b11    0x84  Code  Lc  GPIO_IrqAdapter.o [1]
+NVIC_SetPriority        0x0000f331    0x84  Code  Lc  PhyISR.o [1]
+NVIC_SetPriority        0x0000ab21    0x84  Code  Lc  SerialManager.o [1]
+NVIC_SetPriority        0x0000dfc5    0x84  Code  Lc  TMR_Adapter.o [1]
+NV_ReadHWParameters     0x0000def5    0x12  Code  Gb  Flash_Adapter.o [1]
+NWK_MCPS_SapHandler     0x0000c193    0x3c  Code  Gb  MacMain.o [3]
+NWK_MLME_SapHandler     0x0000c1d5    0x96  Code  Gb  MacMain.o [3]
+OSA_EXT_EventCreate     0x000103e1    0x54  Code  Gb  fsl_osa_ext_freertos.o [1]
+OSA_EXT_EventSet        0x00010435    0x2a  Code  Gb  fsl_osa_ext_freertos.o [1]
+OSA_EXT_EventWait       0x0001045f    0x4a  Code  Gb  fsl_osa_ext_freertos.o [1]
+OSA_EXT_InterruptDisable
+                        0x000104b3     0xa  Code  Gb  fsl_osa_ext_freertos.o [1]
+OSA_EXT_InterruptEnable
+                        0x000104a9     0xa  Code  Gb  fsl_osa_ext_freertos.o [1]
+OSA_EnterCritical       0x0000341b    0x52  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_EventCreate         0x000032bf    0x30  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_EventSet            0x00003369    0x4a  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_EventWait           0x000032f5    0x70  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_ExitCritical        0x00003475    0x50  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_Init                0x000034dd     0x4  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_InstallIntHandler   0x00003409    0x12  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_MutexCreate         0x000031e3    0x2c  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_MutexLock           0x0000320f    0x6a  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_MutexUnlock         0x00003279    0x46  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_SemaCreate          0x000030ed    0x32  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_SemaPost            0x000031b5    0x2e  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_SemaWait            0x0000311f    0x52  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_SemaphorePostFromISR
+                        0x0000318d    0x28  Code  Lc  fsl_os_abstraction_free_rtos.o [6]
+OSA_SemaphorePostFromTask
+                        0x00003171    0x1c  Code  Lc  fsl_os_abstraction_free_rtos.o [6]
+OSA_Start               0x000034e1     0xa  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_TaskCreate          0x000033c5    0x3c  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+OSA_TaskGetHandler      0x00003401     0x8  Code  Gb  fsl_os_abstraction_free_rtos.o [6]
+Orphan_InitSeq          0x0001169f    0x42  Code  Gb  Orphan.o [3]
+Orphan_SendStatus       0x000116e1    0x58  Code  Gb  Orphan.o [3]
+Orphan_VerifyParameters
+                        0x00011669    0x36  Code  Gb  Orphan.o [3]
+PD_MAC_SapHandler       0x0000c169    0x22  Code  Gb  MacMain.o [3]
+PD_SendMessage          0x0000bcfd    0xf2  Code  Lc  PhyStateMachine.o [1]
+PHY_InstallIsr          0x0000f735    0x24  Code  Gb  PhyISR.o [1]
+PHY_InterruptHandler    0x0000f509   0x22c  Code  Gb  PhyISR.o [1]
+PLME_MAC_SapHandler     0x0000c18b     0x8  Code  Gb  MacMain.o [3]
+PLME_SendMessage        0x0000bc7f    0x72  Code  Lc  PhyStateMachine.o [1]
+PMC_HAL_BandgapBufferConfig
+                        0x00008a85     0x6  Code  Lc  App.o [1]
+PORT_HAL_ClearPinIntFlag
+                        0x0000d5af    0x2e  Code  Lc  Keyboard.o [1]
+PORT_HAL_GetPortIntFlag
+                        0x00011bdf     0x6  Code  Lc  GPIO_IrqAdapter.o [1]
+PORT_HAL_GetPortIntFlag
+                        0x0000d5dd     0x6  Code  Lc  Keyboard.o [1]
+PORT_HAL_IsPinIntPending
+                        0x0000d579    0x36  Code  Lc  Keyboard.o [1]
+PORT_HAL_SetDriveStrengthMode
+                        0x0000c57d    0x2e  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetMuxMode     0x0000dc25    0x2c  Code  Lc  board_combined.o [1]
+PORT_HAL_SetMuxMode     0x0000ddcd    0x2c  Code  Lc  pin_mux_combined.o [1]
+PORT_HAL_SetMuxMode     0x0000c5ab    0x2c  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetPassiveFilterCmd
+                        0x0000dd9f    0x2e  Code  Lc  pin_mux_combined.o [1]
+PORT_HAL_SetPassiveFilterCmd
+                        0x0000c54f    0x2e  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetPinIntMode  0x0000c5d7    0x2e  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetPullCmd     0x0000dd71    0x2e  Code  Lc  pin_mux_combined.o [1]
+PORT_HAL_SetPullCmd     0x0000c4f3    0x2e  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetPullMode    0x0000dd45    0x2c  Code  Lc  pin_mux_combined.o [1]
+PORT_HAL_SetPullMode    0x0000c4c7    0x2c  Code  Lc  fsl_gpio_driver.o [6]
+PORT_HAL_SetSlewRateMode
+                        0x0000c521    0x2e  Code  Lc  fsl_gpio_driver.o [6]
+PendSV_Handler          0x0000538b          Code  Gb  portasm.o [1]
+Phy24Task               0x0000b669    0xf4  Code  Lc  PhyStateMachine.o [1]
+PhyAbort                0x0000eb5f    0x72  Code  Gb  PhyPacketProcessor.o [1]
+PhyHwInit               0x0000eaed    0x72  Code  Gb  PhyPacketProcessor.o [1]
+PhyIsIdleRx             0x0000bae5    0x1c  Code  Gb  PhyStateMachine.o [1]
+PhyIsrPassRxParams      0x0000f40f     0x6  Code  Gb  PhyISR.o [1]
+PhyIsrSeqCleanup        0x0000f415    0x42  Code  Lc  PhyISR.o [1]
+PhyIsrTimeoutCleanup    0x0000f457    0x4e  Code  Lc  PhyISR.o [1]
+PhyPdDataRequest        0x0000f82d    0xcc  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeCcaEdRequest     0x0000f9a5    0x7c  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeGetCurrentChannelRequest
+                        0x0000fa4d    0x1a  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeGetPIBRequest    0x0000fc19   0x1c4  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeGetPwrLevelRequest
+                        0x0000fa85     0x8  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeRxRequest        0x0000f8f9    0xac  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeSetCurrentChannelRequest
+                        0x0000fa21    0x2c  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeSetFrameWaitTime
+                        0x0000ba87     0x6  Code  Gb  PhyStateMachine.o [1]
+PhyPlmeSetPIBRequest    0x0000fab9   0x150  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeSetPwrLevelRequest
+                        0x0000fa67    0x1e  Code  Gb  PhyPlmeData.o [1]
+PhyPlmeSetPwrState      0x0000ee39     0x6  Code  Gb  PhyPacketProcessor.o [1]
+PhyPlmeSetRxOnWhenIdle  0x0000ba8d    0x58  Code  Gb  PhyStateMachine.o [1]
+PhyPpGetState           0x0000ebd1     0xa  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpIsTxAckDataPending
+                        0x0000edd5    0x2a  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpSetLongAddr        0x0000ec5b    0x42  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpSetMacRole         0x0000ec9d    0x30  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpSetPanId           0x0000ebdb    0x40  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpSetPromiscuous     0x0000eccd    0x5c  Code  Gb  PhyPacketProcessor.o [1]
+PhyPpSetShortAddr       0x0000ec1b    0x40  Code  Gb  PhyPacketProcessor.o [1]
+PhyPp_IndirectQueueInsert
+                        0x0000ed51    0x32  Code  Gb  PhyPacketProcessor.o [1]
+PhyPp_RemoveFromIndirect
+                        0x0000ed89    0x2c  Code  Gb  PhyPacketProcessor.o [1]
+PhyRxRetry              0x0000fde1    0x3c  Code  Lc  PhyPlmeData.o [1]
+PhyTimeDisableEventTimeout
+                        0x0000ef2f    0x3a  Code  Gb  PhyTime.o [1]
+PhyTimeDisableEventTrigger
+                        0x0000ee8f    0x3a  Code  Gb  PhyTime.o [1]
+PhyTimeDisableWaitTimeout
+                        0x0000efc7    0x2e  Code  Gb  PhyTime.o [1]
+PhyTimeGetEventTimeout  0x0000ef27     0x8  Code  Gb  PhyTime.o [1]
+PhyTimeReadClock        0x0000ef69     0xc  Code  Gb  PhyTime.o [1]
+PhyTimeSetEventTimeout  0x0000eec9    0x5e  Code  Gb  PhyTime.o [1]
+PhyTimeSetEventTrigger  0x0000ee41    0x4e  Code  Gb  PhyTime.o [1]
+PhyTimeSetWaitTimeout   0x0000ef75    0x52  Code  Gb  PhyTime.o [1]
+PhyTime_CancelEventsWithParam
+                        0x0000f181    0x66  Code  Gb  PhyTime.o [1]
+PhyTime_GetNextEvent    0x0000f2b1    0x54  Code  Lc  PhyTime.o [1]
+PhyTime_GetTimestamp    0x0000f0a5    0x40  Code  Gb  PhyTime.o [1]
+PhyTime_ISR             0x0000effd    0x38  Code  Gb  PhyTime.o [1]
+PhyTime_Maintenance     0x0000f223    0x54  Code  Gb  PhyTime.o [1]
+PhyTime_OverflowCB      0x0000f27d    0x24  Code  Lc  PhyTime.o [1]
+PhyTime_RunCallback     0x0000f1e9    0x3a  Code  Gb  PhyTime.o [1]
+PhyTime_ScheduleEvent   0x0000f0e9    0x8c  Code  Gb  PhyTime.o [1]
+PhyTime_TimerInit       0x0000f041    0x5c  Code  Gb  PhyTime.o [1]
+Phy_EnterIdle           0x0000ba47    0x40  Code  Lc  PhyStateMachine.o [1]
+Phy_GetEnergyLevel      0x0000f4a5    0x32  Code  Gb  PhyISR.o [1]
+Phy_GetRxParams         0x0000f75d    0x4e  Code  Lc  PhyISR.o [1]
+Phy_HandlePdDataReq     0x0000b8cd   0x104  Code  Lc  PhyStateMachine.o [1]
+Phy_Init                0x0000b625    0x34  Code  Gb  PhyStateMachine.o [1]
+Phy_LqiConvert          0x0000f7b5    0x42  Code  Lc  PhyISR.o [1]
+Phy_RegisterSapHandlers
+                        0x0000b65f     0xa  Code  Gb  PhyStateMachine.o [1]
+Phy_SendLatePD          0x0000be05    0x10  Code  Lc  PhyStateMachine.o [1]
+Phy_SendLatePLME        0x0000bdef    0x10  Code  Lc  PhyStateMachine.o [1]
+Phy_SetSequenceTiming   0x0000b9d1    0x76  Code  Gb  PhyStateMachine.o [1]
+Poll_DataRx             0x00011981    0x9c  Code  Gb  Poll.o [3]
+Poll_InitSeq            0x0001191f    0x44  Code  Gb  Poll.o [3]
+Poll_SendConfirm        0x00011a1d    0x5a  Code  Gb  Poll.o [3]
+Poll_SendStatus         0x00011963    0x16  Code  Gb  Poll.o [3]
+Poll_VerifyParameters   0x000118e1    0x3e  Code  Gb  Poll.o [3]
+ProtectFromXcvrInterrupt
+                        0x0000f3b5    0x2a  Code  Gb  PhyISR.o [1]
+RNG_GetRandomNo         0x0000beb1    0x1c  Code  Gb  RNG.o [1]
+RNG_Init                0x0000be51    0x60  Code  Gb  RNG.o [1]
+RTC_HAL_IsOscillatorEnabled
+                        0x00011f49    0x1a  Code  Lc  fsl_clock_manager.o [6]
+RTC_HAL_SetOsc16pfLoadCmd
+                        0x00011f1d    0x16  Code  Lc  fsl_clock_manager.o [6]
+RTC_HAL_SetOsc2pfLoadCmd
+                        0x00011edb    0x16  Code  Lc  fsl_clock_manager.o [6]
+RTC_HAL_SetOsc4pfLoadCmd
+                        0x00011ef1    0x16  Code  Lc  fsl_clock_manager.o [6]
+RTC_HAL_SetOsc8pfLoadCmd
+                        0x00011f07    0x16  Code  Lc  fsl_clock_manager.o [6]
+RTC_HAL_SetOscillatorCmd
+                        0x00011f33    0x16  Code  Lc  fsl_clock_manager.o [6]
+Radio_Phy_PdDataConfirm
+                        0x0000bb01    0x62  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PdDataIndication
+                        0x0000bb6d    0x18  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PlmeCcaConfirm
+                        0x0000bb93    0x1e  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PlmeEdConfirm
+                        0x0000bbb1    0x1e  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PlmeFilterFailRx
+                        0x0000bc7d     0x2  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PlmeRxWatermark
+                        0x0000bbf3    0x7a  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_PlmeSyncLossIndication
+                        0x0000bc6d    0x10  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_TimeRxTimeoutIndication
+                        0x0000bbd5    0x1c  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_TimeStartEventIndication
+                        0x0000bbf1     0x2  Code  Gb  PhyStateMachine.o [1]
+Radio_Phy_TimeWaitTimeoutIndication
+                        0x0000bb89     0xa  Code  Gb  PhyStateMachine.o [1]
+Region$$Table$$Base     0x000160f0           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00016114           --   Gb  - Linker created -
+RxEnable_Deactivate     0x00012de9    0x34  Code  Gb  RxEnable.o [3]
+RxEnable_InitSeq        0x00012d89    0x5c  Code  Gb  RxEnable.o [3]
+SIM_HAL_EnableClock     0x00008135    0x2e  Code  Lc  fsl_clock_MKW40Z4.o [6]
+SIM_HAL_EnableClock     0x00011e6d    0x2e  Code  Lc  fsl_clock_manager.o [6]
+SIM_HAL_EnableClock     0x0000ff51    0x2e  Code  Lc  fsl_trng_driver.o [6]
+SIM_HAL_GetGateCmd      0x00014965    0x30  Code  Lc  fsl_lptmr_driver.o [6]
+SIM_HAL_GetGateCmd      0x0000ff7f    0x30  Code  Lc  fsl_trng_driver.o [6]
+SMC_HAL_SetProtection   0x0000dc79     0x4  Code  Lc  board_combined.o [1]
+SMGR_stack              0x20002898     0x4  Data  Gb  SerialManager.o [1]
+SVC_Handler             0x000053e5          Code  Gb  portasm.o [1]
+Scan_ActivePassiveAcquire
+                        0x000131b9   0x120  Code  Gb  Scan.o [3]
+Scan_Advance            0x000130c9    0x22  Code  Gb  Scan.o [3]
+Scan_Deactivate         0x00013437    0x68  Code  Lc  Scan.o [3]
+Scan_EdAcquire          0x0001316d    0x3c  Code  Gb  Scan.o [3]
+Scan_FastEdAcquire      0x00013129    0x44  Code  Gb  Scan.o [3]
+Scan_NextChannel        0x0001337f    0xb8  Code  Lc  Scan.o [3]
+Scan_OrphanAcquire      0x000132d9    0xa6  Code  Gb  Scan.o [3]
+Scan_SendData           0x000134eb    0x16  Code  Lc  Scan.o [3]
+Scan_SendDataWithBackoff
+                        0x00013501    0x3e  Code  Lc  Scan.o [3]
+Scan_StartActivePassiveScan
+                        0x00013053    0x48  Code  Gb  Scan.o [3]
+Scan_StartEDScan        0x00012fe1    0x4e  Code  Gb  Scan.o [3]
+Scan_StartFastEDScan    0x00012fb9    0x28  Code  Gb  Scan.o [3]
+Scan_StartOrphanScan    0x0001309b    0x2e  Code  Gb  Scan.o [3]
+Scan_StartTimer         0x000130eb    0x24  Code  Gb  Scan.o [3]
+Scan_Timeout            0x0001349f    0x44  Code  Lc  Scan.o [3]
+SecLib_Init             0x00007439     0xa  Code  Gb  SecLib.o [1]
+SecLib_get_random       0x000103ad    0x20  Code  Gb  SW_RNG.o [5]
+SecLib_set_rng_seed     0x0001039d    0x10  Code  Gb  SW_RNG.o [5]
+Sec_CheckBeaconSecurityParameters
+                        0x00006ec7    0xbc  Code  Gb  MacSec.o [3]
+Sec_CheckBlacklist      0x00006b55    0xbc  Code  Lc  MacSec.o [3]
+Sec_CreateAuxSecHeader  0x00007079    0x8a  Code  Gb  MacSec.o [3]
+Sec_DetermineASHLength  0x000069dd    0x2e  Code  Gb  MacSec.o [3]
+Sec_DetermineAddressFieldsLength
+                        0x000069a5    0x36  Code  Lc  MacSec.o [3]
+Sec_DetermineNonPayloadFieldsLength
+                        0x00006b01    0x54  Code  Lc  MacSec.o [3]
+Sec_LookupKeyDescriptor
+                        0x00006c11    0x64  Code  Lc  MacSec.o [3]
+Sec_ParseAddressingFields
+                        0x00006a11    0xe8  Code  Lc  MacSec.o [3]
+Sec_RetrieveRxSecurityMaterial
+                        0x00006d6b   0x15c  Code  Lc  MacSec.o [3]
+Sec_RetrieveTxKey       0x00006c75    0xd8  Code  Lc  MacSec.o [3]
+Sec_SecureTxFrame       0x00006f89    0xf0  Code  Gb  MacSec.o [3]
+Sec_SecurityLevelCompare
+                        0x00006d4d    0x1e  Code  Lc  MacSec.o [3]
+Sec_UnsecureRxFrame     0x00007103   0x29e  Code  Gb  MacSec.o [3]
+SerialManagerTask       0x0000ac17    0xf6  Code  Gb  SerialManager.o [1]
+SerialManager_Init      0x0000aba5    0x72  Code  Gb  SerialManager.o [1]
+SerialManager_RxNotify  0x0000b3ef    0x62  Code  Gb  SerialManager.o [1]
+SerialManager_TxNotify  0x0000b451    0x94  Code  Gb  SerialManager.o [1]
+Serial_AsyncWrite       0x0000ae6d   0x102  Code  Gb  SerialManager.o [1]
+Serial_InitInterface    0x0000ad11   0x136  Code  Gb  SerialManager.o [1]
+Serial_LpuartRxCb       0x0000b5c3    0x2c  Code  Gb  SerialManager.o [1]
+Serial_LpuartTxCb       0x0000b5f9    0x2a  Code  Gb  SerialManager.o [1]
+Serial_Print            0x0000b1d1    0x42  Code  Gb  SerialManager.o [1]
+Serial_PrintHex         0x0000b213    0xdc  Code  Gb  SerialManager.o [1]
+Serial_Read             0x0000afe5    0xb6  Code  Gb  SerialManager.o [1]
+Serial_RxBufferByteCount
+                        0x0000b0b1    0x8c  Code  Gb  SerialManager.o [1]
+Serial_SetBaudRate      0x0000b171    0x56  Code  Gb  SerialManager.o [1]
+Serial_SetRxCallBack    0x0000b13d    0x2e  Code  Gb  SerialManager.o [1]
+Serial_SyncTxCallback   0x0000b5a7    0x10  Code  Lc  SerialManager.o [1]
+Serial_SyncWrite        0x0000af6f    0x6e  Code  Gb  SerialManager.o [1]
+Serial_TxQueueMaintenance
+                        0x0000b4e5    0xc2  Code  Lc  SerialManager.o [1]
+Serial_WriteInternal    0x0000b2f9    0xf6  Code  Lc  SerialManager.o [1]
+StackTimer_ClearIntFlag
+                        0x0000e223     0xa  Code  Gb  TMR_Adapter.o [1]
+StackTimer_Disable      0x0000e1d5     0xe  Code  Gb  TMR_Adapter.o [1]
+StackTimer_Enable       0x0000e1c7     0xe  Code  Gb  TMR_Adapter.o [1]
+StackTimer_GetCounterValue
+                        0x0000e203     0xc  Code  Gb  TMR_Adapter.o [1]
+StackTimer_GetInputFrequency
+                        0x0000e1e3    0x20  Code  Gb  TMR_Adapter.o [1]
+StackTimer_ISR          0x0000a21b    0x12  Code  Gb  TimersManager.o [1]
+StackTimer_Init         0x0000e143    0x84  Code  Gb  TMR_Adapter.o [1]
+StackTimer_SetOffsetTicks
+                        0x0000e20f    0x14  Code  Gb  TMR_Adapter.o [1]
+Start_InitSeq           0x000117f1    0x46  Code  Gb  Start.o [3]
+Start_SeqTerminate      0x000118b7    0x28  Code  Gb  Start.o [3]
+Start_SetPIBs           0x00011837    0x5a  Code  Gb  Start.o [3]
+Start_VerifyParameters  0x00011739    0xb4  Code  Gb  Start.o [3]
+Switch_CheckIRQ         0x0000d79b    0x48  Code  Lc  Keyboard.o [1]
+Switch_Press_ISR        0x000158d9    0x40  Code  Gb  Keyboard.o [1]
+SysTick_Handler         0x0000536d          Code  Gb  portasm.o [1]
+SystemCoreClock         0x1ffff154     0x4  Data  Gb  system_MKW40Z4.o [1]
+SystemInit              0x0001656d     0x8  Code  Gb  system_MKW40Z4.o [1]
+TMR_AllocateTimer       0x0000a1dd    0x2a  Code  Gb  TimersManager.o [1]
+TMR_AreAllTimersOff     0x0000a207    0x14  Code  Gb  TimersManager.o [1]
+TMR_EnableTimer         0x0000a689    0x5c  Code  Gb  TimersManager.o [1]
+TMR_GetTimerStatus      0x0000a0f1     0xc  Code  Lc  TimersManager.o [1]
+TMR_GetTimerType        0x0000a111     0xc  Code  Lc  TimersManager.o [1]
+TMR_Init                0x0000a14d    0x90  Code  Gb  TimersManager.o [1]
+TMR_IsTimerActive       0x0000a22f    0x1a  Code  Gb  TimersManager.o [1]
+TMR_SetTimerStatus      0x0000a0fd    0x14  Code  Lc  TimersManager.o [1]
+TMR_SetTimerType        0x0000a11d    0x14  Code  Lc  TimersManager.o [1]
+TMR_StartIntervalTimer  0x0000a319    0x1c  Code  Gb  TimersManager.o [1]
+TMR_StartSingleShotTimer
+                        0x0000a335    0x1c  Code  Gb  TimersManager.o [1]
+TMR_StartTimer          0x0000a255    0x9a  Code  Gb  TimersManager.o [1]
+TMR_StopTimer           0x0000a351    0x8c  Code  Gb  TimersManager.o [1]
+TMR_Task                0x0000a3e5   0x29c  Code  Gb  TimersManager.o [1]
+TMR_stack               0x200028e8     0x4  Data  Gb  TimersManager.o [1]
+TPM_DRV_IRQHandler      0x000121f5    0x56  Code  Gb  fsl_tpm_driver.o [6]
+TPM_HAL_ClearCounter    0x0000e069     0xe  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_ClearStatusReg  0x000121e5     0x6  Code  Lc  fsl_tpm_driver.o [6]
+TPM_HAL_EnableChnInt    0x0000e0df    0x32  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_EnableTimerOverflowInt
+                        0x0000e05d     0xc  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_GetClockDiv     0x0000e053     0xa  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_GetCounterVal   0x0000e077     0xc  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_IsChnIntEnabled
+                        0x000121a9    0x3c  Code  Lc  fsl_tpm_driver.o [6]
+TPM_HAL_IsOverflowIntEnabled
+                        0x00012191    0x18  Code  Lc  fsl_tpm_driver.o [6]
+TPM_HAL_Reset           0x00012153    0x34  Code  Gb  fsl_tpm_hal.o [6]
+TPM_HAL_SetChnCountVal  0x0000e111    0x32  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_SetChnMsnbaElsnbaVal
+                        0x0000e0a1    0x3e  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_SetClockDiv     0x0000e049     0xa  Code  Lc  TMR_Adapter.o [1]
+TPM_HAL_SetClockMode    0x00012135    0x1e  Code  Gb  fsl_tpm_hal.o [6]
+TPM_HAL_SetMod          0x0000e083    0x1e  Code  Lc  TMR_Adapter.o [1]
+TRNG_DRV_GetRandomData  0x00010265   0x102  Code  Gb  fsl_trng_driver.o [6]
+TRNG_DRV_IRQHandler     0x00010367    0x2a  Code  Gb  fsl_trng_driver.o [6]
+TRNG_DRV_Init           0x000101a9    0xa0  Code  Gb  fsl_trng_driver.o [6]
+TRNG_DRV_InitUserConfigDefault
+                        0x0000ffcb    0x8a  Code  Gb  fsl_trng_driver.o [6]
+TRNG_HAL_ClearError     0x0000fe87     0xe  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_ClearIntStatusFlag
+                        0x0000ff05    0x16  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_Enable         0x00012295    0x18  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_EnableLock     0x0000fe95    0x10  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_GetEntropyValidCmd
+                        0x0000be39    0x18  Code  Lc  RNG.o [1]
+TRNG_HAL_GetEntropyValidCmd
+                        0x0000fe57    0x18  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_GetErrorCmd    0x0000fe6f    0x18  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_GetErrorCmd    0x00012263    0x18  Code  Lc  fsl_trng_hal.o [6]
+TRNG_HAL_GetStatus      0x00012549   0x192  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_Init           0x0001227b    0x1a  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_ReadEntropy    0x00012527    0x22  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_SetClockMode   0x0000feaf     0xe  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetEntropyDelay
+                        0x0000fed7    0x12  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetIntMode     0x000124fd    0x2a  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_SetLongRunMaxLimit
+                        0x0000fef7     0xe  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetRetryCount  0x000126db    0x2a  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_SetRingOscDiv  0x0000febd     0xc  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetSampleMode  0x0000fea5     0xa  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetSampleSize  0x0000fec9     0xe  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetSparseBitLimit
+                        0x0000fee9     0xe  Code  Lc  fsl_trng_driver.o [6]
+TRNG_HAL_SetStatisticalCheckLimit
+                        0x000122ad   0x222  Code  Gb  fsl_trng_hal.o [6]
+TRNG_HAL_SetWorkingMode
+                        0x00012255     0xe  Code  Lc  fsl_trng_hal.o [6]
+TRNG_ISR                0x0000becd    0x24  Code  Lc  RNG.o [1]
+TmrTicksFromMilliseconds
+                        0x0000a131    0x1a  Code  Gb  TimersManager.o [1]
+UnprotectFromXcvrInterrupt
+                        0x0000f3df    0x30  Code  Gb  PhyISR.o [1]
+XcvrCalcSetupDcoc       0x00000ab1   0xb44  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrDelay               0x0000191d    0x12  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrForceRxWd           0x000018ed     0x8  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrForceRxWu           0x000018e5     0x8  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrInit                0x00000411    0x10  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrInit_ModeChg_Common
+                        0x0000044d   0x340  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrManualDCOCCal       0x00001931   0x5a2  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrOverrideChannel     0x000017d5    0xa2  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrPanic               0x00000421    0x22  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetAnalogDef_ModeSwitch
+                        0x00001749    0x64  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetAnalogDefaults   0x000016af    0x80  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetRxDigDef_ModeSwitch
+                        0x00000981    0x70  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetRxDigDefaults    0x0000089b    0xcc  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetTsmDef_ModeSwitch
+                        0x00000879    0x22  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetTsmDefaults      0x000007c1    0x78  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetTxDigPLLDef_ModeSwitch
+                        0x000016ad     0x2  Code  Gb  KW4xXcvrDrv.o [1]
+XcvrSetTxDigPLLDefaults
+                        0x00001629    0x5a  Code  Gb  KW4xXcvrDrv.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x20003df0           --   Gb  command line/config [2]
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                        0x000000c0           --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1ffff000           --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000           --   Gb  command line/config [2]
+__Vectors               0x00000000           --   Gb  startup_MKW40Z4.o [1]
+__Vectors_End           0x000000c0          Data  Gb  startup_MKW40Z4.o [1]
+__Vectors_Size {Abs}    0x000000c0           --   Gb  startup_MKW40Z4.o [1]
+__aeabi_JMP_BUF_SIZE {Abs}
+                        0x00000008           --   Gb  setjmp.o [8]
+__aeabi_assert          0x000039b1    0x24  Code  Gb  ABIassert.o [9]
+__aeabi_cdcmpeq         0x000035bd          Code  Gb  DblCmpEq.o [7]
+__aeabi_cdcmple         0x000035f1          Code  Gb  DblCmpLe.o [7]
+__aeabi_cdrcmple        0x00002e13          Code  Gb  DblCmpGe.o [7]
+__aeabi_d2iz            0x00002dc5          Code  Gb  DblToI32.o [7]
+__aeabi_dadd            0x00002f39          Code  Gb  DblAddSub.o [7]
+__aeabi_ddiv            0x00002e77          Code  Gb  DblDiv.o [7]
+__aeabi_dmul            0x00002bf9          Code  Gb  DblMul.o [7]
+__aeabi_dsub            0x00002fff          Code  Gb  DblAddSub.o [7]
+__aeabi_errno_addr      0x000035e1     0xa  Code  Gb  errno.o [4]
+__aeabi_f2d             0x00002e45          Code  Gb  FltToDbl.o [7]
+__aeabi_fdiv            0x000021d7          Code  Gb  FltDiv.o [7]
+__aeabi_i2d             0x00003625          Code  Gb  I32ToDbl.o [7]
+__aeabi_idiv            0x0000410d          Code  Gb  I32DivModFast.o [8]
+__aeabi_idiv0           0x000056ad          Code  Gb  IntDivZer.o [8]
+__aeabi_idivmod         0x0000410d          Code  Gb  I32DivModFast.o [8]
+__aeabi_ldiv0           0x00012131          Code  Gb  I64DivZer.o [8]
+__aeabi_lmul            0x0000df0d          Code  Gb  I64Mul.o [8]
+__aeabi_memclr4         0x00005719          Code  Gb  ABImemset.o [8]
+__aeabi_memclr8         0x00005719          Code  Gb  ABImemset.o [8]
+__aeabi_memcpy          0x00001f3d          Code  Gb  ABImemcpy.o [8]
+__aeabi_memcpy4         0x00001f65          Code  Wk  ABImemcpy.o [8]
+__aeabi_memset          0x000056c9          Code  Gb  ABImemset.o [8]
+__aeabi_ui2f            0x000021b9          Code  Gb  I32ToFlt.o [7]
+__aeabi_uidiv           0x00004113          Code  Gb  I32DivModFast.o [8]
+__aeabi_uidivmod        0x00004113          Code  Gb  I32DivModFast.o [8]
+__aeabi_uldivmod        0x0000df3f          Code  Gb  I64DivMod.o [8]
+__aeabi_uread4          0x00007421          Code  Gb  uread4.o [8]
+__aeabi_uread8          0x00013971          Code  Gb  uread8.o [8]
+__aeabi_uwrite4         0x0000740d          Code  Gb  uwrite4.o [8]
+__aeabi_uwrite8         0x00006929          Code  Gb  uwrite8.o [8]
+__cmain                 0x0001629d          Code  Gb  cmain.o [8]
+__exit                  0x0000571d    0x14  Code  Gb  exit.o [9]
+__iar_Dint              0x00003531    0x8c  Code  Gb  xdint.o [7]
+__iar_Dnorm             0x000034eb    0x44  Code  Gb  xdnorm.o [7]
+__iar_Dscale            0x00005461   0x11c  Code  Gb  xdscale.o [7]
+__iar_Dtest             0x00005425    0x3c  Code  Gb  xdtest.o [7]
+__iar_Errno             0x1ffff16c     0x4  Data  Gb  errno.o [4]
+__iar_Exp               0x000036f9   0x2b8  Code  Gb  xexp.o [7]
+__iar_Logpoly           0x00003655    0x6c  Code  Gb  xlog.o [7]
+__iar_Memset4_word      0x000056e9          Code  Gb  ABImemset.o [8]
+__iar_Memset_word       0x000056d5          Code  Gb  ABImemset.o [8]
+__iar_copy_init3        0x00015d1d    0x30  Code  Gb  copy_init3.o [8]
+__iar_d2uiz             0x00002de9          Code  Gb  DblToI32.o [7]
+__iar_data_init3        0x00015fcd    0x28  Code  Gb  data_init.o [8]
+__iar_dlib_perthread_access
+                        0x00005421     0x2  Code  Gb  xtls.o [4]
+__iar_program_start     0x00016579          Code  Gb  cstartup_M.o [8]
+__iar_ui2d              0x00003639          Code  Gb  I32ToDbl.o [7]
+__iar_ui2f              0x000021bd          Code  Gb  I32ToFlt.o [7]
+__iar_zero_init3        0x00015a4d    0x3c  Code  Gb  zero_init3.o [8]
+__low_level_init        0x000162b7     0x4  Code  Gb  low_level_init.o [4]
+__vector_table          0x00000000          Data  Gb  startup_MKW40Z4.o [1]
+__vector_table_0x1c     0x0000001c          Data  Gb  startup_MKW40Z4.o [1]
+_call_main              0x000162a9          Code  Gb  cmain.o [8]
+_exit                   0x000162c5          Code  Gb  cexit.o [8]
+_main                   0x000162b3          Code  Gb  cmain.o [8]
+abort                   0x0000557d     0xa  Code  Gb  abort.o [4]
+accDev                  0x200025f0    0x34  Data  Gb  App.o [1]
+accDevice               0x2000280c     0x8  Data  Gb  App.o [1]
+accelData               0x200027c4     0xc  Data  Gb  App.o [1]
+accel_init              0x0000c3ff    0x9c  Code  Gb  accel.o [1]
+accel_read_reg          0x0000c3a1    0x32  Code  Gb  accel.o [1]
+accel_write_reg         0x0000c3d3    0x2c  Code  Gb  accel.o [1]
+accelerometerCounter    0x2000290a     0x2  Data  Gb  App.o [1]
+accelerometerPeriod     0x1ffff174     0x2  Data  Gb  App.o [1]
+adcGateTable            0x000074c3     0x1  Data  Lc  fsl_clock_MKW40Z4.o [6]
+adcUserConfig_1         0x200027b8     0xc  Data  Gb  App.o [1]
+adcValue                0x20002904     0x2  Data  Gb  App.o [1]
+adc_gain_trimmed        0x1ffff14c     0x4  Data  Gb  KW4xXcvrDrv.o [1]
+addrModeFieldLengthTable
+                        0x00006924     0x4  Data  Gb  MacFrames.o [3]
+aes_ccm_check_input_args
+                        0x00007ecd    0x76  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+aes_ccm_context_init    0x00007c95    0xbe  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+aes_ccm_process         0x00007f43   0x12c  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+aes_ccm_process_aad     0x00007d53   0x174  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+ble_bbf_cap_tune        0x1ffff181     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+ble_bbf_res_tune2       0x1ffff182     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+ble_tsm_init_blt        0x00014a28    0xb4  Data  Lc  tsm_ll_timing.o [1]
+ble_tza_cap_tune        0x1ffff180     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+calibrateParams         0x00008ac7    0x82  Code  Gb  App.o [1]
+configure_i2c_pins      0x0000ddf9    0xb4  Code  Gb  pin_mux_combined.o [1]
+configure_lpuart_pins   0x0000dead    0x34  Code  Gb  pin_mux_combined.o [1]
+createNewSeq            0x00012ea3    0x16  Code  Gb  MacSequenceMngr.o [3]
+debug_printf            0x0000dce7     0xa  Code  Gb  board_combined.o [1]
+dummy                   0x20002957     0x1  Data  Gb  fsl_i2c_slave_driver.o [6]
+exit                    0x000162bb     0x8  Code  Gb  exit.o [4]
+fxos_init               0x00014749    0xb8  Code  Gb  fxos_api.o [1]
+fxos_read_register_array
+                        0x00014829    0x2c  Code  Gb  fxos_api.o [1]
+fxos_read_sensor_data   0x00014815    0x14  Code  Gb  fxos_api.o [1]
+gBLERxChfCoeff          0x000165c8     0x8  Data  Gb  KW4xXcvrDrv.o [1]
+gFreeMessagesCount      0x20002928     0x2  Data  Gb  MemManager.o [1]
+gHardwareParameters     0x200024e0    0x48  Data  Gb  Flash_Adapter.o [1]
+gMacData                0x20002084   0x168  Data  Gb  MacGlobals.o [1]
+gMacLocalDataSize       0x00016298     0x2  Data  Gb  MacMain.o [3]
+gMacMaxIndirectTransactions
+                        0x2000294c     0x1  Data  Gb  MacGlobals.o [1]
+gMacNoOfInstances       0x000056af     0x1  Data  Gb  MacGlobals.o [1]
+gMacReadOnlyPibs        0x0000cc60    0x14  Data  Lc  MacPib.o [3]
+gMacTaskHandler         0x20002884     0x4  Data  Gb  MacGlobals.o [1]
+gMacWipeSecurityTables  0x00007436     0x1  Data  Gb  MacGlobals.o [1]
+gNumDeviceAddrTableEntries
+                        0x1ffff18a     0x1  Data  Gb  MacGlobals.o [1]
+gNumDeviceTableEntries  0x1ffff18b     0x1  Data  Gb  MacGlobals.o [1]
+gNumKeyDeviceListEntries
+                        0x1ffff188     0x1  Data  Gb  MacGlobals.o [1]
+gNumKeyIdLookupListEntries
+                        0x1ffff187     0x1  Data  Gb  MacGlobals.o [1]
+gNumKeyTableEntries     0x1ffff186     0x1  Data  Gb  MacGlobals.o [1]
+gNumKeyUsageListEntries
+                        0x1ffff189     0x1  Data  Gb  MacGlobals.o [1]
+gNumSecurityLevelTableEntries
+                        0x1ffff18c     0x1  Data  Gb  MacGlobals.o [1]
+gPABiasTbl              0x000165d8     0x8  Data  Gb  KW4xXcvrDrv.o [1]
+gPIBDeviceAddrTable     0x200026e0    0x20  Data  Gb  MacGlobals.o [1]
+gPIBDeviceTable         0x20002798    0x10  Data  Gb  MacGlobals.o [1]
+gPIBKeyDeviceDescriptorTable
+                        0x20002800     0xc  Data  Gb  MacGlobals.o [1]
+gPIBKeyIdLookupDescriptorTable
+                        0x20002684    0x28  Data  Gb  MacGlobals.o [1]
+gPIBKeyTable            0x20002570    0x40  Data  Gb  MacGlobals.o [1]
+gPIBKeyUsageDescriptorTable
+                        0x2000281c     0x8  Data  Gb  MacGlobals.o [1]
+gPIBSecurityLevelTable  0x20002824     0x8  Data  Gb  MacGlobals.o [1]
+gPhyIndirectQueueSize_c
+                        0x000074c2     0x1  Data  Gb  PhyPacketProcessor.o [1]
+gPhyTimerOverflow       0x20002830     0x8  Data  Gb  PhyTime.o [1]
+gRxRetryTimer           0x1ffff18e     0x1  Data  Gb  PhyPlmeData.o [1]
+gSerialManagerTaskId    0x2000289c     0x4  Data  Gb  SerialManager.o [1]
+gState                  0x20002938     0x1  Data  Gb  App.o [1]
+gUseRtos_c              0x000056ae     0x1  Data  Gb  fsl_osa_ext_freertos.o [1]
+gZigbeeRxChfCoeff       0x000165d0     0x8  Data  Gb  KW4xXcvrDrv.o [1]
+g_adcBase               0x00016644     0x4  Data  Gb  fsl_adc16_common.o [6]
+g_adcIrqId              0x0000b623     0x1  Data  Gb  fsl_adc16_common.o [6]
+g_base_priority_array   0x20002700    0x20  Data  Lc  fsl_os_abstraction_free_rtos.o [6]
+g_base_priority_top     0x200028ec     0x4  Data  Lc  fsl_os_abstraction_free_rtos.o [6]
+g_defaultClockConfigRun
+                        0x000163f8    0x10  Data  Gb  board_combined.o [1]
+g_fastInternalRefClkFreq
+                        0x1ffff160     0x4  Data  Gb  fsl_mcg_hal.o [6]
+g_gpioBase              0x00016530     0xc  Data  Gb  fsl_gpio_common.o [6]
+g_i2cBase               0x00016618     0x8  Data  Gb  fsl_i2c_common.o [6]
+g_i2cIrqId              0x00003622     0x2  Data  Gb  fsl_i2c_common.o [6]
+g_i2cStatePtr           0x20002850     0x8  Data  Gb  fsl_i2c_common.o [6]
+g_lptmrBase             0x0001663c     0x4  Data  Gb  fsl_lptmr_common.o [6]
+g_lptmrStatePtr         0x20002900     0x4  Data  Gb  fsl_lptmr_common.o [6]
+g_lpuartBase            0x00016638     0x4  Data  Gb  fsl_lpuart_common.o [6]
+g_lpuartRxTxIrqId       0x1ffff18f     0x1  Data  Gb  fsl_lpuart_common.o [6]
+g_lpuartStatePtr        0x200028fc     0x4  Data  Gb  fsl_lpuart_common.o [6]
+g_ltcBase               0x00016648     0x4  Data  Gb  fsl_ltc_common.o [6]
+g_ltcIrqId              0x0000c39e     0x1  Data  Gb  fsl_ltc_common.o [6]
+g_portBase              0x0001653c     0xc  Data  Gb  fsl_gpio_common.o [6]
+g_portIrqId             0x00016630     0x4  Data  Gb  fsl_gpio_common.o [6]
+g_slowInternalRefClkFreq
+                        0x1ffff164     0x4  Data  Gb  fsl_mcg_hal.o [6]
+g_tpmBase               0x00016554     0xc  Data  Gb  fsl_tpm_common.o [6]
+g_tpmChannelCount       0x00016548     0xc  Data  Gb  fsl_tpm_hal.o [6]
+g_tpmIrqId              0x00016640     0x4  Data  Gb  fsl_tpm_common.o [6]
+g_trngBase              0x00016634     0x4  Data  Gb  fsl_trng_common.o [6]
+g_trngIrqId             0x0000b622     0x1  Data  Gb  fsl_trng_common.o [6]
+g_xtal0ClkFreq          0x200028f0     0x4  Data  Gb  fsl_mcg_hal.o [6]
+g_xtalRtcClkFreq        0x200028f4     0x4  Data  Gb  fsl_mcg_hal.o [6]
+gen1_dcgain_trims_enabled
+                        0x2000293e     0x1  Data  Lc  KW4xXcvrDrv.o [1]
+getChecksum             0x00012eb9    0x2c  Code  Gb  MacSequenceMngr.o [3]
+getFirstSequenceByChecksum
+                        0x00012e1d    0x1a  Code  Gb  MacSequenceMngr.o [3]
+getFreeIndex            0x00012ee5    0x32  Code  Gb  MacSequenceMngr.o [3]
+getLastSequenceByChecksum
+                        0x00012e37    0x20  Code  Gb  MacSequenceMngr.o [3]
+getSequenceByDestination
+                        0x00012e57    0x2c  Code  Gb  MacSequenceMngr.o [3]
+getSequenceByMsduHandle
+                        0x00012e83    0x20  Code  Gb  MacSequenceMngr.o [3]
+gpfPhyTimeNotify        0x20002890     0x4  Data  Gb  PhyTime.o [1]
+handle_ifr              0x00002077   0x100  Code  Gb  ifr_mkw40z4_radio.o [1]
+hardware_init_combined  0x00009f05    0x64  Code  Gb  hardware_init_combined.o [1]
+i2cGateTable            0x0000352e     0x2  Data  Lc  fsl_clock_MKW40Z4.o [6]
+i2cInterface            0x200027d0     0xc  Data  Gb  App.o [1]
+ifr_version             0x1ffff17a     0x2  Data  Lc  KW4xXcvrDrv.o [1]
+init_data_bss           0x00015845    0x4c  Code  Gb  startup.o [1]
+inter_counter           0x2000282c     0x4  Data  Gb  App.o [1]
+internal_Pow            0x00002369   0x434  Code  Lc  pow.o [7]
+keyIdModeToAshLengthTable
+                        0x00006a0c     0x4  Data  Gb  MacSec.o [3]
+ledPins                 0x1ffff0c0    0x3c  Data  Gb  gpio_pins_combined.o [1]
+lnbias                  0x000027d8   0x420  Data  Lc  pow.o [7]
+lpuartGateTable         0x00008132     0x1  Data  Lc  fsl_clock_MKW40Z4.o [6]
+ltcGateTable            0x00008133     0x1  Data  Lc  fsl_clock_MKW40Z4.o [6]
+ltc_context             0x200028f8     0x4  Data  Lc  fsl_ltc_driver.o [6]
+ltc_drv_aes_process_tag
+                        0x0000878f    0x4a  Code  Gb  fsl_ltc_driver_aes.o [6]
+ltc_drv_aes_received_mac_compare
+                        0x000086fb    0x94  Code  Gb  fsl_ltc_driver_aes.o [6]
+ltc_drv_check_instance  0x00007c69    0x10  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+ltc_drv_check_key_size  0x00007c59    0x10  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+ltc_drv_clear_all       0x00007c11    0x16  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_move_block_to_ltc_ififo
+                        0x00008649    0x58  Code  Gb  fsl_ltc_driver_aes.o [6]
+ltc_drv_move_to_ififo   0x000086a1    0x5a  Code  Gb  fsl_ltc_driver_aes.o [6]
+ltc_drv_return_status   0x000076a7    0xa0  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_alg_state
+                        0x00007765    0xf6  Code  Lc  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_init  0x000078a3    0x2e  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_init_final
+                        0x00007875    0x2e  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_process
+                        0x000078d1    0xe8  Code  Lc  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_process_data
+                        0x000079b9    0x6c  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_symmetric_process_data_multiple
+                        0x00007a29   0x158  Code  Gb  fsl_ltc_driver.o [6]
+ltc_drv_wait            0x00007b85    0x8c  Code  Gb  fsl_ltc_driver.o [6]
+mAddress                0x20002916     0x2  Data  Lc  App.o [1]
+mAppEvent               0x20002814     0x8  Data  Lc  App.o [1]
+mCoordInfo              0x200026ac    0x20  Data  Lc  App.o [1]
+mCounterFreqHz          0x200028e4     0x4  Data  Lc  TimersManager.o [1]
+mDrvData                0x20002654    0x30  Data  Lc  SerialManager.o [1]
+mExtendedAddress        0x000165b0     0x8  Data  Lc  App.o [1]
+mGpioIsr                0x20002354    0x3c  Data  Lc  GPIO_IrqAdapter.o [1]
+mGpioIsrCount           0x20002918     0x2  Data  Lc  GPIO_IrqAdapter.o [1]
+mInterfaceId            0x20002937     0x1  Data  Lc  App.o [1]
+mKeyScanTimerID         0x1ffff17f     0x1  Data  Gb  Keyboard.o [1]
+mKeyState               0x2000293a     0x1  Data  Lc  Keyboard.o [1]
+mLEDTimerID             0x1ffff185     0x1  Data  Lc  LED.o [1]
+mLedBlips               0x20002880     0x4  Data  Lc  LED.o [1]
+mLedFlashingLEDs        0x2000294b     0x1  Data  Lc  LED.o [1]
+mLedStartFlashingPosition
+                        0x1ffff184     0x1  Data  Lc  LED.o [1]
+mLongKeyCount           0x2000293b     0x1  Data  Lc  Keyboard.o [1]
+mMacEventObj            0x1ffff13c     0x4  Data  Gb  MacMain.o [3]
+mMacInstance            0x20002864     0x4  Data  Lc  App.o [1]
+mMacVersionString       0x1ffff15c     0x4  Data  Gb  MacMain.o [3]
+mMaxToCountDown_c       0x2000292c     0x2  Data  Lc  TimersManager.o [1]
+mMcpsNwkInputQueue      0x200027e8     0xc  Data  Lc  App.o [1]
+mMlmeNwkInputQueue      0x200027dc     0xc  Data  Lc  App.o [1]
+mMsduHandle             0x20002933     0x1  Data  Lc  App.o [1]
+mPhyForceFP             0x2000294f     0x1  Data  Gb  PhyISR.o [1]
+mPhyInstance            0x00007437     0x1  Data  Lc  PhyISR.o [1]
+mPhyIrqDisableCnt       0x1ffff18d     0x1  Data  Gb  PhyISR.o [1]
+mPhyLastRxLQI           0x2000294d     0x1  Data  Gb  PhyISR.o [1]
+mPhyLastRxRSSI          0x2000294e     0x1  Data  Gb  PhyISR.o [1]
+mPhyTimers              0x20002490    0x50  Data  Lc  PhyTime.o [1]
+mPibAttributesRangeTable
+                        0x0000cc74    0x64  Data  Lc  MacPib.o [3]
+mPollIntervalTimerId_c  0x1ffff17e     0x1  Data  Lc  App.o [1]
+mRngDisallowMcuSleep    0x20002950     0x1  Data  Gb  RNG.o [1]
+mSMTaskEvent            0x20002838     0x8  Data  Gb  SerialManager.o [1]
+mSecLib_random          0x1ffff168     0x4  Data  Lc  SW_RNG.o [5]
+mSensorTimerId_c        0x1ffff17d     0x1  Data  Lc  App.o [1]
+mSerials                0x20001f10   0x174  Data  Lc  SerialManager.o [1]
+mSmgr_LpuartCfg         0x00016500     0xc  Data  Gb  SerialManager.o [1]
+mSoftTimerId_c          0x1ffff17c     0x1  Data  Lc  App.o [1]
+mStopPolling            0x20002936     0x1  Data  Lc  App.o [1]
+mSwNames                0x000165c0     0x8  Data  Lc  Keyboard.o [1]
+mSwitch_SCAN            0x20002870     0x4  Data  Lc  Keyboard.o [1]
+mTicksFor4ms            0x2000292e     0x2  Data  Lc  TimersManager.o [1]
+mTimerThreadEventId     0x20002848     0x8  Data  Lc  TimersManager.o [1]
+mWaitPollConfirm        0x20002935     0x1  Data  Lc  App.o [1]
+maGeneralMsg            0x1ffff0fc    0x18  Data  Lc  App.o [1]
+maTmrTimerStatusTable   0x20002840     0x8  Data  Lc  TimersManager.o [1]
+maTmrTimerTable         0x20002390   0x100  Data  Lc  TimersManager.o [1]
+macInitPIBs             0x0000c841   0x2f6  Code  Gb  MacPib.o [3]
+macVerifySetReq         0x0000cb79    0xe6  Code  Gb  MacPib.o [3]
+main                    0x000104bd    0x30  Code  Gb  fsl_osa_ext_freertos.o [1]
+main_task               0x00008b49    0xba  Code  Gb  App.o [1]
+mapTable                0x000139b4   0x400  Data  Gb  KW4xXcvrDrv.o [1]
+mcPendingPackets        0x20002934     0x1  Data  Lc  App.o [1]
+mcgModeMatrix           0x00016060    0x24  Data  Lc  fsl_clock_manager.o [6]
+memHeap                 0x200010d0   0xe40  Data  Gb  MemManager.o [1]
+memPools                0x20002624    0x30  Data  Gb  MemManager.o [1]
+mfLedInSerialMode       0x2000294a     0x1  Data  Lc  LED.o [1]
+micCounter              0x20002906     0x2  Data  Gb  App.o [1]
+micPeriod               0x1ffff170     0x2  Data  Gb  App.o [1]
+mlmeGetSetReq           0x0000ccd9   0x464  Code  Gb  MacPib.o [3]
+mlmeGetSizeOfPIB        0x0000d13d   0x102  Code  Gb  MacPib.o [3]
+mlmeResetReq            0x000110a3   0x124  Code  Gb  Reset.o [3]
+mma8451_init            0x00014855    0x98  Code  Gb  mma8451_api.o [1]
+mma8451_read_sensor_data
+                        0x000148ed    0x6c  Code  Gb  mma8451_api.o [1]
+mpPacket                0x20002860     0x4  Data  Lc  App.o [1]
+mpPacket1               0x20002858     0x4  Data  Lc  App.o [1]
+mpPacket2               0x2000285c     0x4  Data  Lc  App.o [1]
+mpRxParams              0x2000288c     0x4  Data  Lc  PhyISR.o [1]
+mpfKeyFunction          0x20002874     0x4  Data  Lc  Keyboard.o [1]
+numMicSamplesPerPeriod  0x1ffff172     0x2  Data  Gb  App.o [1]
+numMicSamplesTakenCounter
+                        0x20002908     0x2  Data  Gb  App.o [1]
+numPulseSamplesPerPeriod
+                        0x1ffff178     0x2  Data  Gb  App.o [1]
+numPulseSamplesTakenCounter
+                        0x20002914     0x2  Data  Gb  App.o [1]
+numberOfActiveTimers    0x20002952     0x1  Data  Lc  TimersManager.o [1]
+numberOfLowPowerActiveTimers
+                        0x20002953     0x1  Data  Lc  TimersManager.o [1]
+orientation             0x20002932     0x1  Data  Gb  App.o [1]
+osEventHeap             0x200027f4     0xc  Data  Gb  fsl_osa_ext_freertos.o [1]
+osEventInfo             0x000164c4     0xc  Data  Gb  fsl_osa_ext_freertos.o [1]
+osObjectAlloc           0x000104fd    0x2a  Code  Lc  fsl_osa_ext_freertos.o [1]
+osObjectFree            0x00010553    0x22  Code  Lc  fsl_osa_ext_freertos.o [1]
+osObjectIsAllocated     0x00010527    0x2c  Code  Lc  fsl_osa_ext_freertos.o [1]
+out                     0x1ffff144     0x4  Data  Gb  App.o [1]
+pNextEvent              0x20002894     0x4  Data  Lc  PhyTime.o [1]
+panic                   0x0000e259     0x2  Code  Gb  Panic.o [1]
+panic_fptr_is_valid     0x2000293d     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+panic_function_ptr      0x20002878     0x4  Data  Gb  KW4xXcvrDrv.o [1]
+phyLocal                0x20002528    0x48  Data  Gb  PhyStateMachine.o [1]
+poolInfo                0x1ffff12c    0x10  Data  Gb  MemManager.o [1]
+portGateTable           0x00016628     0x4  Data  Lc  fsl_clock_MKW40Z4.o [6]
+pow                     0x000027c9     0xe  Code  Gb  pow.o [7]
+pressedKey              0x2000293c     0x1  Data  Lc  Keyboard.o [1]
+previousTimeInTicks     0x2000292a     0x2  Data  Lc  TimersManager.o [1]
+prvAddCurrentTaskToDelayedList
+                        0x00004a71    0x3e  Code  Lc  tasks.o [1]
+prvAllocateTCBAndStack  0x00004ab5    0x62  Code  Lc  tasks.o [1]
+prvCheckForValidListAndQueue
+                        0x0000526d    0x46  Code  Lc  timers.o [1]
+prvCheckTasksWaitingTermination
+                        0x00004a0d    0x5a  Code  Lc  tasks.o [1]
+prvCopyDataFromQueue    0x00003fc1    0x30  Code  Lc  queue.o [1]
+prvCopyDataToQueue      0x00003f29    0x98  Code  Lc  queue.o [1]
+prvDeleteTCB            0x00004b1d    0x12  Code  Lc  tasks.o [1]
+prvGetNextExpireTime    0x00005049    0x30  Code  Lc  timers.o [1]
+prvIdleTask             0x00004945    0x16  Code  Lc  tasks.o [1]
+prvInitialiseTCBVariables
+                        0x00004965    0x5e  Code  Lc  tasks.o [1]
+prvInitialiseTaskLists  0x000049c3    0x46  Code  Lc  tasks.o [1]
+prvInsertTimerInActiveList
+                        0x000050a1    0x52  Code  Lc  timers.o [1]
+prvIsQueueEmpty         0x0000405b    0x20  Code  Lc  queue.o [1]
+prvIsQueueFull          0x0000407b    0x22  Code  Lc  queue.o [1]
+prvProcessExpiredTimer  0x00004f91    0x50  Code  Lc  timers.o [1]
+prvProcessReceivedCommands
+                        0x00005101    0xe2  Code  Lc  timers.o [1]
+prvProcessTimerOrBlockTask
+                        0x00004ffb    0x4e  Code  Lc  timers.o [1]
+prvResetNextTaskUnblockTime
+                        0x00004b2f    0x28  Code  Lc  tasks.o [1]
+prvSampleTimeNow        0x00005079    0x28  Code  Lc  timers.o [1]
+prvSwitchTimerLists     0x000051e5    0x84  Code  Lc  timers.o [1]
+prvTaskExitError        0x000041c1    0x16  Code  Gb  port.o [1]
+prvTestWaitCondition    0x00004ecd    0x22  Code  Lc  event_groups.o [1]
+prvTimerTask            0x00004fe1    0x1a  Code  Lc  timers.o [1]
+prvUnlockQueue          0x00003ff1    0x6a  Code  Lc  queue.o [1]
+pulseCounter            0x20002912     0x2  Data  Gb  App.o [1]
+pulsePeriod             0x1ffff176     0x2  Data  Gb  App.o [1]
+pvPortMalloc            0x00005629    0x66  Code  Gb  heap_1.o [1]
+pvTaskIncrementMutexHeldCount
+                        0x00004c9b    0x1a  Code  Gb  tasks.o [1]
+pxCurrentTCB            0x200028a0     0x4  Data  Gb  tasks.o [1]
+pxCurrentTimerList      0x200028d4     0x4  Data  Lc  timers.o [1]
+pxDelayedTaskList       0x200028a4     0x4  Data  Lc  tasks.o [1]
+pxOverflowDelayedTaskList
+                        0x200028a8     0x4  Data  Lc  tasks.o [1]
+pxOverflowTimerList     0x200028d8     0x4  Data  Lc  timers.o [1]
+pxPortInitialiseStack   0x000041d7    0x1a  Code  Gb  port.o [1]
+pxReadyTasksLists       0x200021ec   0x168  Data  Lc  tasks.o [1]
+read_resource_ifr       0x00001f99    0xa2  Code  Gb  ifr_mkw40z4_radio.o [1]
+round                   0x00002d7d    0x48  Code  Gb  round.o [7]
+setjmp                  0x000056b1          Code  Gb  setjmp.o [8]
+startup_task            0x000103d5     0xc  Code  Gb  fsl_osa_ext_freertos.o [1]
+status                  0x20002956     0x1  Data  Gb  fsl_i2c_slave_driver.o [6]
+store_sw_trim           0x0000203b    0x3c  Code  Gb  ifr_mkw40z4_radio.o [1]
+strlen                  0x0000eadd    0x10  Code  Gb  strlen.o [8]
+swap_bytes              0x00007c79    0x1c  Code  Lc  fsl_ltc_driver_aes_ccm.o [6]
+switchPins              0x1ffff114    0x18  Data  Gb  gpio_pins_combined.o [1]
+timerHardwareIsRunning  0x20002954     0x1  Data  Lc  TimersManager.o [1]
+tpmGateTable            0x0001662c     0x4  Data  Lc  fsl_clock_MKW40Z4.o [6]
+trim_status             0x1ffff148     0x4  Data  Lc  KW4xXcvrDrv.o [1]
+trng_context            0x200027a8    0x10  Data  Lc  fsl_trng_driver.o [6]
+trng_drv_ApplyUserConfig
+                        0x00010061   0x126  Code  Lc  fsl_trng_driver.o [6]
+tsm_ll_timing_init      0x00002281    0x7c  Code  Gb  tsm_ll_timing.o [1]
+ucHeap                  0x1ffff190  0x1f40  Data  Lc  heap_1.o [1]
+uxCriticalNesting       0x1ffff150     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x200028b0     0x4  Data  Lc  tasks.o [1]
+uxListRemove            0x000055ff    0x2a  Code  Gb  list.o [1]
+uxPendedTicks           0x200028c0     0x4  Data  Lc  tasks.o [1]
+uxPortSetInterruptMaskFromISR
+                        0x000053d7          Code  Gb  portasm.o [1]
+uxSchedulerSuspended    0x200028d0     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x200028cc     0x4  Data  Lc  tasks.o [1]
+uxTaskResetEventItemValue
+                        0x00004c81    0x1a  Code  Gb  tasks.o [1]
+uxTasksDeleted          0x200028ac     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x200028b8     0x4  Data  Lc  tasks.o [1]
+vEventGroupSetBitsCallback
+                        0x00004ebd    0x10  Code  Gb  event_groups.o [1]
+vListInitialise         0x00005587    0x1e  Code  Gb  list.o [1]
+vListInitialiseItem     0x000055a5     0x6  Code  Gb  list.o [1]
+vListInsert             0x000055c3    0x3c  Code  Gb  list.o [1]
+vListInsertEnd          0x000055ab    0x18  Code  Gb  list.o [1]
+vPortClearInterruptMask
+                        0x000053d1          Code  Gb  portasm.o [1]
+vPortClearInterruptMaskFromISR
+                        0x000053df          Code  Gb  portasm.o [1]
+vPortEnterCritical      0x00004261    0x16  Code  Gb  port.o [1]
+vPortExitCritical       0x00004279    0x18  Code  Gb  port.o [1]
+vPortFree               0x00005691     0xc  Code  Gb  heap_1.o [1]
+vPortInitTickTimer      0x000041f1    0x34  Code  Gb  port.o [1]
+vPortSetInterruptMask   0x000053cb          Code  Gb  portasm.o [1]
+vPortStartFirstTask     0x00005409          Code  Gb  portasm.o [1]
+vPortStartTickTimer     0x00004225     0x8  Code  Gb  port.o [1]
+vPortYieldFromISR       0x00004291    0x12  Code  Gb  port.o [1]
+vQueueWaitForMessageRestricted
+                        0x0000409d    0x44  Code  Gb  queue.o [1]
+vSetMSP                 0x00005383          Code  Gb  portasm.o [1]
+vTaskMissedYield        0x0000493d     0x8  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList   0x000046b1    0x4a  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventListRestricted
+                        0x0000476d    0x34  Code  Gb  tasks.o [1]
+vTaskPlaceOnUnorderedEventList
+                        0x00004709    0x64  Code  Gb  tasks.o [1]
+vTaskPriorityInherit    0x00004b89    0x76  Code  Gb  tasks.o [1]
+vTaskSetTimeOutState    0x000048b1    0x18  Code  Gb  tasks.o [1]
+vTaskStartScheduler     0x000043ed    0x4c  Code  Gb  tasks.o [1]
+vTaskSuspendAll         0x00004439     0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext      0x0000463d    0x6e  Code  Gb  tasks.o [1]
+xActiveTimerList1       0x20002770    0x14  Data  Lc  timers.o [1]
+xActiveTimerList2       0x20002784    0x14  Data  Lc  timers.o [1]
+xData                   0x2000290c     0x2  Data  Gb  App.o [1]
+xDelayedTaskList1       0x200026cc    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x20002720    0x14  Data  Lc  tasks.o [1]
+xEventGroupCreate       0x00004cd9    0x1e  Code  Gb  event_groups.o [1]
+xEventGroupSetBits      0x00004e09    0xb2  Code  Gb  event_groups.o [1]
+xEventGroupWaitBits     0x00004cf9   0x110  Code  Gb  event_groups.o [1]
+xJumpBuf                0x200025b0    0x40  Data  Lc  port.o [1]
+xNextFreeByte           0x20002868     0x4  Data  Lc  heap_1.o [1]
+xNextTaskUnblockTime    0x1ffff158     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x200028c8     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x20002734    0x14  Data  Lc  tasks.o [1]
+xPortStartScheduler     0x0000422d    0x34  Code  Gb  port.o [1]
+xQueueCreateCountingSemaphore
+                        0x00003b35    0x34  Code  Gb  queue.o [1]
+xQueueCreateMutex       0x00003ab5    0x60  Code  Gb  queue.o [1]
+xQueueGenericCreate     0x00003a4d    0x66  Code  Gb  queue.o [1]
+xQueueGenericReceive    0x00003dc9   0x160  Code  Gb  queue.o [1]
+xQueueGenericReset      0x000039d5    0x76  Code  Gb  queue.o [1]
+xQueueGenericSend       0x00003b69   0x148  Code  Gb  queue.o [1]
+xQueueGenericSendFromISR
+                        0x00003cb1    0xa6  Code  Gb  queue.o [1]
+xQueueGetMutexHolder    0x00003b15    0x20  Code  Gb  queue.o [1]
+xQueueGiveFromISR       0x00003d59    0x6e  Code  Gb  queue.o [1]
+xSchedulerRunning       0x200028bc     0x4  Data  Lc  tasks.o [1]
+xSuspendedTaskList      0x2000275c    0x14  Data  Lc  tasks.o [1]
+xTaskCheckForTimeOut    0x000048cd    0x70  Code  Gb  tasks.o [1]
+xTaskGenericCreate      0x000042c9   0x10a  Code  Gb  tasks.o [1]
+xTaskGetCurrentTaskHandle
+                        0x00004b5d     0x8  Code  Gb  tasks.o [1]
+xTaskGetSchedulerState  0x00004b65    0x24  Code  Gb  tasks.o [1]
+xTaskGetTickCount       0x00004511    0x14  Code  Gb  tasks.o [1]
+xTaskIncrementTick      0x00004535    0xfe  Code  Gb  tasks.o [1]
+xTaskPriorityDisinherit
+                        0x00004c15    0x68  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                        0x000047bd    0x78  Code  Gb  tasks.o [1]
+xTaskRemoveFromUnorderedEventList
+                        0x00004839    0x76  Code  Gb  tasks.o [1]
+xTaskResumeAll          0x00004445    0xc6  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x20002748    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x200028b4     0x4  Data  Lc  tasks.o [1]
+xTimerCreateTimerTask   0x00004ef1    0x3c  Code  Gb  timers.o [1]
+xTimerGenericCommand    0x00004f2d    0x64  Code  Gb  timers.o [1]
+xTimerPendFunctionCallFromISR
+                        0x000052b3    0x2e  Code  Gb  timers.o [1]
+xTimerQueue             0x200028dc     0x4  Data  Lc  timers.o [1]
+xYieldPending           0x200028c4     0x4  Data  Lc  tasks.o [1]
+yData                   0x2000290e     0x2  Data  Gb  App.o [1]
+zData                   0x20002910     0x2  Data  Gb  App.o [1]
+zb_bbf_cap_tune         0x20002941     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+zb_bbf_res_tune2        0x20002942     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+zb_tza_cap_tune         0x20002940     0x1  Data  Gb  KW4xXcvrDrv.o [1]
+
+
+[1] = C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj
+[2] = command line
+[3] = Freescale_802.15.4_MAC_06_M0_IAR.a
+[4] = dl6M_tln.a
+[5] = lib_crypto_IAR_M0.a
+[6] = libksdk_platform_freertos.a
+[7] = m6M_tl.a
+[8] = rt6M_tl.a
+[9] = shb_l.a
+
+  83 097 bytes of readonly  code memory
+   8 003 bytes of readonly  data memory
+  15 000 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

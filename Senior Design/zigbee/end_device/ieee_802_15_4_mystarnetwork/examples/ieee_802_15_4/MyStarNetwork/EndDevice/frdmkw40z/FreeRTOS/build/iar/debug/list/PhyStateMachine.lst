@@ -1,0 +1,1418 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:48
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyStateMachine.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyStateMachine.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PhyStateMachine.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyStateMachine.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyStateMachine.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file PhyStateMachine.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          #ifdef gSrcTask_d
+     35          #undef gSrcTask_d
+     36          #endif
+     37          
+     38          #define gSrcTask_d PHY
+     39          
+     40          
+     41          #define mPhyOverhead_d 160 /* [sym] */
+     42          #define mPhyMaxFrameDuration_d (gPhySHRDuration_c + (1 + gMaxPHYPacketSize_c) * gPhySymbolsPerOctet_c + gPhyTurnaroundTime_c + 54)
+     43          
+     44          /*! *********************************************************************************
+     45          *************************************************************************************
+     46          * Include
+     47          *************************************************************************************
+     48          ********************************************************************************** */
+     49          #include "EmbeddedTypes.h"
+     50          #include "fsl_os_abstraction.h"
+     51          #include "fsl_device_registers.h"
+     52          
+     53          #include "PhyInterface.h"
+     54          #include "Phy.h"
+     55          #include "MemManager.h"
+     56          #include "Messaging.h"
+     57          #include "FunctionLib.h"
+     58          
+     59          #include "AspInterface.h"
+     60          #include "MpmInterface.h"
+     61                 
+     62          #ifdef gMWS_Enabled_d
+     63          #include "MWS.h"
+     64          #include "KW4xXcvrDrv.h"
+     65          #endif
+     66          
+     67          
+     68          /*! *********************************************************************************
+     69          *************************************************************************************
+     70          * Private macros
+     71          *************************************************************************************
+     72          ********************************************************************************** */
+     73          #define mPhyMaxIdleRxDuration_c         (0xF00000) /* [sym] */
+     74          
+     75          
+     76          /*! *********************************************************************************
+     77          *************************************************************************************
+     78          * Private type definitions
+     79          *************************************************************************************
+     80          ********************************************************************************** */
+     81          
+     82          /*! *********************************************************************************
+     83          *************************************************************************************
+     84          * Private prototypes
+     85          *************************************************************************************
+     86          ********************************************************************************** */
+     87          static void Phy24Task(Phy_PhyLocalStruct_t *pPhyData);
+     88          
+     89          static phyStatus_t Phy_HandlePdDataReq( Phy_PhyLocalStruct_t *pPhyData, macToPdDataMessage_t * pMsg );
+     90          
+     91          static void Phy_EnterIdle( Phy_PhyLocalStruct_t *pPhyData );
+     92          
+     93          static void PLME_SendMessage(Phy_PhyLocalStruct_t *pPhyData, phyMessageId_t msgType);
+     94          
+     95          static void PD_SendMessage(Phy_PhyLocalStruct_t *pPhyData, phyMessageId_t msgType);
+     96          
+     97          static void Phy_SendLatePD( uint32_t param );
+     98          static void Phy_SendLatePLME( uint32_t param );
+     99          
+    100          
+    101          /*! *********************************************************************************
+    102          *************************************************************************************
+    103          * Private memory declarations
+    104          *************************************************************************************
+    105          ********************************************************************************** */
+    106          Phy_PhyLocalStruct_t phyLocal;
+    107          #if gMWS_Enabled_d
+    108          uint8_t mXCVR_Busy = 0;
+    109          #endif
+    110          
+    111          
+    112          /*! *********************************************************************************
+    113          *************************************************************************************
+    114          * Public functions
+    115          *************************************************************************************
+    116          ********************************************************************************** */
+    117          
+    118          /*! *********************************************************************************
+    119          * \brief  This function creates the PHY task
+    120          *
+    121          ********************************************************************************** */
+    122          void Phy_Init(void)
+    123          {
+    124              PhyHwInit();
+    125              PhyTime_TimerInit(NULL);
+    126              ASP_Init( 0 );
+    127              MPM_Init();
+    128          
+    129              phyLocal.flags = gPhyFlagDeferTx_c;
+    130              phyLocal.rxParams.pRxData = NULL;
+    131              
+    132              /* Prepare input queues.*/
+    133              MSG_InitQueue( &phyLocal.macPhyInputQueue );
+    134          
+    135              PhyIsrPassRxParams( NULL );
+    136              PhyPlmeSetPwrState( gPhyDefaultIdlePwrMode_c );
+    137          }
+    138          
+    139          /*! *********************************************************************************
+    140          * \brief  This function binds a MAC instance to a PHY instance
+    141          *
+    142          * \param[in]  instanceId The instance of the MAC
+    143          *
+    144          * \return  The instance of the PHY.
+    145          *
+    146          ********************************************************************************** */
+    147          instanceId_t BindToPHY( instanceId_t macInstance )
+    148          {
+    149              return 0;
+    150          }
+    151          
+    152          /*! *********************************************************************************
+    153          * \brief  This function registers the MAC PD and PLME SAP handlers
+    154          *
+    155          * \param[in]  pPD_MAC_SapHandler   Pointer to the MAC PD handler function
+    156          * \param[in]  pPLME_MAC_SapHandler Pointer to the MAC PLME handler function
+    157          * \param[in]  instanceId           The instance of the PHY
+    158          *
+    159          * \return  The status of the operation.
+    160          *
+    161          ********************************************************************************** */
+    162          void Phy_RegisterSapHandlers( PD_MAC_SapHandler_t pPD_MAC_SapHandler,
+    163                                        PLME_MAC_SapHandler_t pPLME_MAC_SapHandler,
+    164                                        instanceId_t instanceId )
+    165          {
+    166              (void)instanceId;
+    167              phyLocal.PD_MAC_SapHandler = pPD_MAC_SapHandler;
+    168              phyLocal.PLME_MAC_SapHandler = pPLME_MAC_SapHandler;
+    169          }
+    170          
+    171          /*! *********************************************************************************
+    172          * \brief  This function represents the PHY's task
+    173          *
+    174          * \param[in]  taskParam The instance of the PHY
+    175          *
+    176          ********************************************************************************** */
+    177          static void Phy24Task(Phy_PhyLocalStruct_t *pPhyStruct)
+    178          {
+    179              uint8_t state;
+    180              phyMessageHeader_t * pMsgIn;
+    181              phyStatus_t status = gPhySuccess_c;
+    182          
+    183              ProtectFromXcvrInterrupt();
+    184          
+    185              /* Handling messages from upper layer */
+    186              while( MSG_Pending(&pPhyStruct->macPhyInputQueue) )
+    187              {
+    188                  state = PhyGetSeqState();
+    189          
+    190                  /* Check if PHY is busy */
+    191                  if( (state != gIdle_c) && (state != gRX_c) )
+    192                  {
+    193                      UnprotectFromXcvrInterrupt();
+    194                      return;
+    195                  }
+    196          
+    197                  /* PHY doesn't free dynamic alocated messages! */
+    198                  pMsgIn = MSG_DeQueue( &pPhyStruct->macPhyInputQueue );
+    199                  pPhyStruct->currentMacInstance = pMsgIn->macInstance;
+    200          
+    201          #if gMWS_Enabled_d        
+    202                  /* Dual Mode */
+    203                  if( mXCVR_Busy )
+    204                  {
+    205                      uint32_t time;
+    206                      uint32_t duration;
+    207                      
+    208                      switch( pMsgIn->msgType )
+    209                      {
+    210                      case gPdDataReq_c:
+    211                          duration = ((macToPdDataMessage_t *)pMsgIn)->msgData.dataReq.txDuration;
+    212                          break;
+    213                      case gPlmeCcaReq_c:
+    214                      case gPlmeEdReq_c:
+    215                          duration = 8+10;
+    216                          break;
+    217                      default:
+    218                          duration = 0;
+    219                      }
+    220          
+    221                      time = BLE_InactivityDuration() / 16; /* convert to symbols */
+    222                      
+    223                      if( (duration + mPhyOverhead_d) >= time )
+    224                      {        
+    225                          /* postpone sequence */
+    226                          MSG_QueueHead( &pPhyStruct->macPhyInputQueue, pMsgIn );
+    227                          XcvrChangeMode(BLE);
+    228                          UnprotectFromXcvrInterrupt();
+    229                          return;
+    230                      }
+    231                  }
+    232          
+    233                  XcvrChangeMode(ZIGBEE);
+    234          #endif
+    235          
+    236                  if( gRX_c == state )
+    237                  {
+    238                      state = gIdle_c;
+    239                      PhyPlmeForceTrxOffRequest();
+    240                  }
+    241          
+    242          #if gMpmIncluded_d
+    243                  if( status == gPhySuccess_c )
+    244                  {
+    245                      status = MPM_PrepareForTx( pMsgIn->macInstance );
+    246                  }
+    247          #endif
+    248          
+    249                  if( status == gPhySuccess_c )
+    250                  {
+    251                      pPhyStruct->flags &= ~(gPhyFlagIdleRx_c);
+    252          
+    253                      switch( pMsgIn->msgType )
+    254                      {
+    255                      case gPdDataReq_c:
+    256                          status = Phy_HandlePdDataReq( pPhyStruct, (macToPdDataMessage_t *)pMsgIn );
+    257                          break;
+    258                      case gPlmeCcaReq_c:
+    259                          status = PhyPlmeCcaEdRequest(gPhyCCAMode1_c, gPhyContCcaDisabled);
+    260                          break;
+    261                      case gPlmeEdReq_c:
+    262                          status = PhyPlmeCcaEdRequest(gPhyEnergyDetectMode_c, gPhyContCcaDisabled);
+    263                          break;
+    264                      default:
+    265                          status = gPhyInvalidPrimitive_c;
+    266                      }
+    267                  }
+    268          
+    269                  /* Check status */
+    270                  if( gPhySuccess_c == status )
+    271                  {
+    272                      UnprotectFromXcvrInterrupt();
+    273                      return;
+    274                  }
+    275                  else
+    276                  {
+    277                      switch( pMsgIn->msgType )
+    278                      {
+    279                      case gPdDataReq_c:
+    280                          PD_SendMessage(pPhyStruct, gPdDataCnf_c);
+    281                          break;
+    282                          /* Fallthorough */
+    283                      case gPlmeCcaReq_c:
+    284                          pPhyStruct->channelParams.channelStatus = gPhyChannelBusy_c;
+    285                          PLME_SendMessage(pPhyStruct, gPlmeCcaCnf_c);
+    286                          break;
+    287                      case gPlmeEdReq_c:
+    288                          pPhyStruct->channelParams.energyLeveldB = 0;
+    289                          PLME_SendMessage(pPhyStruct, gPlmeEdCnf_c);
+    290                          break;
+    291                      default:
+    292                          PLME_SendMessage(pPhyStruct, gPlmeTimeoutInd_c);
+    293                      }
+    294                  }
+    295              }/* while( MSG_Pending(&pPhyStruct->macPhyInputQueue) ) */
+    296          
+    297              UnprotectFromXcvrInterrupt();
+    298          
+    299              /* Check if PHY can enter Idle state */
+    300              if( gIdle_c == PhyGetSeqState() )
+    301              {
+    302                  Phy_EnterIdle( pPhyStruct );
+    303              }
+    304          }
+    305          
+    306          /*! *********************************************************************************
+    307          * \brief  This is the PD SAP message handler
+    308          *
+    309          * \param[in]  pMsg Pointer to the PD request message
+    310          * \param[in]  instanceId The instance of the PHY
+    311          *
+    312          * \return  The status of the operation.
+    313          *
+    314          ********************************************************************************** */
+    315          phyStatus_t MAC_PD_SapHandler(macToPdDataMessage_t *pMsg, instanceId_t phyInstance)
+    316          {
+    317              phyStatus_t result = gPhySuccess_c;
+    318              uint8_t baseIndex = 0;
+    319          
+    320              (void)phyInstance;
+    321          
+    322              if( NULL == pMsg )
+    323              {
+    324                  return gPhyInvalidParameter_c;
+    325              }
+    326          
+    327          #if gMpmIncluded_d
+    328              if( pMsg->msgType == gPdIndQueueInsertReq_c || pMsg->msgType == gPdIndQueueRemoveReq_c )
+    329              {
+    330                  baseIndex = MPM_GetRegSet( MPM_GetPanIndex(pMsg->macInstance) );
+    331                  baseIndex = 
+    332          #if gPhyUseNeighborTable_d
+    333                          baseIndex * (gPhyHwIndQueueSize_d/gMpmPhyPanRegSets_c) +
+    334          #endif
+    335                          baseIndex * (gPhyIndirectQueueSize_c/gMpmPhyPanRegSets_c);
+    336              }
+    337          #endif
+    338          
+    339              switch( pMsg->msgType )
+    340              {
+    341              case gPdIndQueueInsertReq_c:
+    342                  result = PhyPp_IndirectQueueInsert(baseIndex + pMsg->msgData.indQueueInsertReq.index,
+    343                                                     pMsg->msgData.indQueueInsertReq.checksum,
+    344                                                     phyInstance);
+    345                  break;
+    346          
+    347              case gPdIndQueueRemoveReq_c:
+    348                  result = PhyPp_RemoveFromIndirect(baseIndex + pMsg->msgData.indQueueRemoveReq.index,
+    349                                                    phyInstance);
+    350                  break;
+    351          
+    352              case gPdDataReq_c:
+    353                  MSG_Queue(&phyLocal.macPhyInputQueue, pMsg);
+    354                  Phy24Task( &phyLocal );
+    355                  break;
+    356          
+    357              default:
+    358                  result = gPhyInvalidPrimitive_c;
+    359              }
+    360          
+    361              return result;
+    362          }
+    363          
+    364          /*! *********************************************************************************
+    365          * \brief  This is the PLME SAP message handler
+    366          *
+    367          * \param[in]  pMsg Pointer to the PLME request message
+    368          * \param[in]  instanceId The instance of the PHY
+    369          *
+    370          * \return  phyStatus_t The status of the operation.
+    371          *
+    372          ********************************************************************************** */
+    373          phyStatus_t MAC_PLME_SapHandler(macToPlmeMessage_t * pMsg, instanceId_t phyInstance)
+    374          {
+    375              Phy_PhyLocalStruct_t *pPhyStruct = &phyLocal;
+    376              uint8_t phyRegSet = 0;
+    377          #if gMpmIncluded_d
+    378              phyStatus_t result;
+    379              int32_t panIdx = MPM_GetPanIndex( pMsg->macInstance );
+    380          
+    381              phyRegSet = MPM_GetRegSet( panIdx );
+    382          #endif
+    383          
+    384              if( NULL == pMsg )
+    385              {
+    386                  return gPhyInvalidParameter_c;
+    387              }
+    388          
+    389              switch( pMsg->msgType )
+    390              {
+    391              case gPlmeEdReq_c:
+    392              case gPlmeCcaReq_c:
+    393                  MSG_Queue(&phyLocal.macPhyInputQueue, pMsg);
+    394                  Phy24Task( &phyLocal );
+    395                  break;
+    396          
+    397              case gPlmeSetReq_c:
+    398          #if gMpmIncluded_d
+    399                  result = MPM_SetPIB(pMsg->msgData.setReq.PibAttribute,
+    400                                      &pMsg->msgData.setReq.PibAttributeValue,
+    401                                      panIdx );
+    402                  if( !MPM_isPanActive(panIdx) )
+    403                  {
+    404                      return result;
+    405                  }
+    406          #endif
+    407                  return PhyPlmeSetPIBRequest(pMsg->msgData.setReq.PibAttribute, pMsg->msgData.setReq.PibAttributeValue, phyRegSet, phyInstance);
+    408          
+    409              case gPlmeGetReq_c:
+    410          #if gMpmIncluded_d
+    411                  if( gPhySuccess_c == MPM_GetPIB(pMsg->msgData.getReq.PibAttribute, pMsg->msgData.getReq.pPibAttributeValue, panIdx) )
+    412                  {
+    413                      break;
+    414                  }
+    415          #endif
+    416                  return PhyPlmeGetPIBRequest( pMsg->msgData.getReq.PibAttribute, pMsg->msgData.getReq.pPibAttributeValue, phyRegSet, phyInstance);
+    417          
+    418              case gPlmeSetTRxStateReq_c:
+    419                  if(gPhySetRxOn_c == pMsg->msgData.setTRxStateReq.state)
+    420                  {
+    421                      if( PhyIsIdleRx(phyInstance) )
+    422                      {
+    423                          PhyPlmeForceTrxOffRequest();
+    424                      }
+    425                      else if( gIdle_c != PhyGetSeqState() )
+    426                      {
+    427                          return gPhyBusy_c;
+    428                      }
+    429          #if gMpmIncluded_d
+    430                      /* If another PAN has the RxOnWhenIdle PIB set, enable the DualPan Auto mode */
+    431                      if( gPhySuccess_c != MPM_PrepareForRx( pMsg->macInstance ) )
+    432                          return gPhyBusy_c;
+    433          #endif
+    434                      pPhyStruct->flags &= ~(gPhyFlagIdleRx_c);
+    435          
+    436                      /* Compensate Rx warmup time */
+    437                      if( pMsg->msgData.setTRxStateReq.startTime != gPhySeqStartAsap_c )
+    438                      {
+    439                          pMsg->msgData.setTRxStateReq.startTime -= XCVR_BRD_END_OF_SEQ_END_OF_RX_WU(XCVR)/16;
+    440                      }
+    441                      else
+    442                      {
+    443                          pMsg->msgData.setTRxStateReq.rxDuration += XCVR_BRD_END_OF_SEQ_END_OF_RX_WU(XCVR)/16;
+    444                      }
+    445                      
+    446                      Phy_SetSequenceTiming(pMsg->msgData.setTRxStateReq.startTime,
+    447                                            pMsg->msgData.setTRxStateReq.rxDuration);
+    448          
+    449                      return PhyPlmeRxRequest(pMsg->msgData.setTRxStateReq.slottedMode, (phyRxParams_t *) &pPhyStruct->rxParams);
+    450                  }
+    451                  else if (gPhyForceTRxOff_c == pMsg->msgData.setTRxStateReq.state)
+    452                  {
+    453          #if gMpmIncluded_d
+    454                      if( !MPM_isPanActive(panIdx) )
+    455                          return gPhySuccess_c;
+    456          #endif
+    457                      pPhyStruct->flags &= ~(gPhyFlagIdleRx_c);
+    458                      PhyPlmeForceTrxOffRequest();
+    459                  }
+    460                  break;
+    461          
+    462              default:
+    463                  return gPhyInvalidPrimitive_c;
+    464              }
+    465          
+    466              return gPhySuccess_c;
+    467          }
+    468          
+    469          /*! *********************************************************************************
+    470          * \brief  This function programs a new TX sequence
+    471          *
+    472          * \param[in]  pMsg Pointer to the PD request message
+    473          * \param[in]  pPhyData pointer to PHY data
+    474          *
+    475          * \return  The status of the operation.
+    476          *
+    477          ********************************************************************************** */
+    478          static phyStatus_t Phy_HandlePdDataReq( Phy_PhyLocalStruct_t *pPhyData, macToPdDataMessage_t * pMsg )
+    479          {
+    480              phyStatus_t status = gPhySuccess_c;
+    481              phyTime_t time;
+    482              
+    483              if( NULL == pMsg->msgData.dataReq.pPsdu )
+    484              {
+    485                  return gPhyInvalidParameter_c;
+    486              }
+    487              
+    488              ProtectFromXcvrInterrupt();
+    489          
+    490              /* Compensate XCVR Tx warmup time */
+    491              if( pMsg->msgData.dataReq.startTime != gPhySeqStartAsap_c )
+    492              {
+    493                  pMsg->msgData.dataReq.startTime -= XCVR_BRD_END_OF_SEQ_END_OF_TX_WU(XCVR)/16;
+    494                  PhyTimeSetEventTrigger( pMsg->msgData.dataReq.startTime );
+    495              }
+    496              else
+    497              {
+    498                  pMsg->msgData.dataReq.txDuration += XCVR_BRD_END_OF_SEQ_END_OF_TX_WU(XCVR)/16;
+    499              }
+    500          
+    501              status = PhyPdDataRequest(&pMsg->msgData.dataReq , &pPhyData->rxParams, &pPhyData->txParams);
+    502          
+    503              time = PhyTime_GetTimestamp();
+    504          
+    505              if( time > pMsg->msgData.dataReq.startTime )
+    506              {
+    507                  status = gPhyTRxOff_c;
+    508              }
+    509              else if( pMsg->msgData.dataReq.txDuration != 0xFFFFFFFF )
+    510              {
+    511                  if( pMsg->msgData.dataReq.startTime != gPhySeqStartAsap_c )
+    512                  {
+    513                      time = pMsg->msgData.dataReq.startTime + pMsg->msgData.dataReq.txDuration;
+    514                  }
+    515                  else
+    516                  {
+    517                      time += pMsg->msgData.dataReq.txDuration;
+    518                  }
+    519                  /* Compensate PHY overhead */
+    520                  time += 10;
+    521                  PhyTimeSetEventTimeout( &time );
+    522              }
+    523          
+    524              UnprotectFromXcvrInterrupt();
+    525          
+    526              if( gPhySuccess_c != status )
+    527              {
+    528                  PhyPlmeForceTrxOffRequest();
+    529              }
+    530          
+    531              return status;
+    532          }
+    533          
+    534          /*! *********************************************************************************
+    535          * \brief  This function sets the start time and the timeout value for a sequence.
+    536          *
+    537          * \param[in]  startTime The absolute start time for the sequence.
+    538          *             If startTime is gPhySeqStartAsap_c, the start timer is disabled.
+    539          * \param[in]  seqDuration The duration of the sequence.
+    540          *             If seqDuration is 0xFFFFFFFF, the timeout is disabled.
+    541          *
+    542          ********************************************************************************** */
+    543          void Phy_SetSequenceTiming(phyTime_t startTime, uint32_t seqDuration)
+    544          {
+    545              phyTime_t endTime;
+    546          
+    547              OSA_EnterCritical(kCriticalDisableInt);
+    548          
+    549              if( gPhySeqStartAsap_c == startTime )
+    550              {
+    551                  PhyTimeReadClock( &endTime );
+    552              }
+    553              else
+    554              {
+    555                  PhyTimeSetEventTrigger( startTime );
+    556                  endTime = startTime & gPhyTimeMask_c;
+    557              }
+    558          
+    559              if( 0xFFFFFFFF != seqDuration )
+    560              {
+    561                  endTime += seqDuration;
+    562                  endTime = endTime & gPhyTimeMask_c;
+    563          
+    564                  PhyTimeSetEventTimeout( &(endTime) );
+    565              }
+    566          
+    567              OSA_ExitCritical(kCriticalDisableInt);
+    568          }
+    569          
+    570          /*! *********************************************************************************
+    571          * \brief  This function starts the IdleRX if the PhyRxOnWhenIdle PIB is set
+    572          *
+    573          * \param[in]  pPhyData pointer to PHY data
+    574          *
+    575          ********************************************************************************** */
+    576          void Phy_EnterIdle( Phy_PhyLocalStruct_t *pPhyData )
+    577          {
+    578              if( (pPhyData->flags & gPhyFlagRxOnWhenIdle_c)
+    579          #if gMpmIncluded_d
+    580                 /* Prepare the Active PAN/PANs */
+    581                 && (gPhySuccess_c == MPM_PrepareForRx(gInvalidInstanceId_c))
+    582          #endif
+    583                )
+    584              {
+    585                  uint32_t time = mPhyMaxIdleRxDuration_c;
+    586          #if gMWS_Enabled_d
+    587                  if( mXCVR_Busy )
+    588                  {
+    589                      time = BLE_InactivityDuration() / 16; /* convert to symbols */
+    590          
+    591                      if( time < (mPhyMaxFrameDuration_d + mPhyOverhead_d) )
+    592                      {
+    593                          pPhyData->flags &= ~(gPhyFlagIdleRx_c);
+    594                          XcvrChangeMode(BLE);
+    595                          return;
+    596                      }
+    597          
+    598                      if( time > (mPhyMaxIdleRxDuration_c + mPhyOverhead_d ) ) 
+    599                      {
+    600                          time = mPhyMaxIdleRxDuration_c;
+    601                      }
+    602                      else
+    603                      {
+    604                          time -= mPhyOverhead_d;
+    605                      }
+    606                  }
+    607                  
+    608                  XcvrChangeMode(ZIGBEE);
+    609          #endif
+    610                  pPhyData->flags |= gPhyFlagIdleRx_c;
+    611                  Phy_SetSequenceTiming( gPhySeqStartAsap_c, time );
+    612                  PhyPlmeRxRequest( gPhyUnslottedMode_c, (phyRxParams_t*)&pPhyData->rxParams );
+    613              }
+    614              else
+    615              {
+    616                  pPhyData->flags &= ~(gPhyFlagIdleRx_c);
+    617          #if gMWS_Enabled_d
+    618                  if(mXCVR_Busy)
+    619                  {
+    620                      XcvrChangeMode(BLE);
+    621                  }
+    622          #endif
+    623              }
+    624          }
+    625          
+    626          /*! *********************************************************************************
+    627          * \brief  This function sets the value of the maxFrameWaitTime PIB
+    628          *
+    629          * \param[in]  instanceId The instance of the PHY
+    630          * \param[in]  time The maxFrameWaitTime value
+    631          *
+    632          ********************************************************************************** */
+    633          void PhyPlmeSetFrameWaitTime( uint32_t time, instanceId_t instanceId )
+    634          {
+    635              phyLocal.maxFrameWaitTime = time;
+    636          }
+    637          
+    638          /*! *********************************************************************************
+    639          * \brief  This function sets the state of the PhyRxOnWhenIdle PIB
+    640          *
+    641          * \param[in]  instanceId The instance of the PHY
+    642          * \param[in]  state The PhyRxOnWhenIdle value
+    643          *
+    644          ********************************************************************************** */
+    645          void PhyPlmeSetRxOnWhenIdle( bool_t state, instanceId_t instanceId )
+    646          {
+    647              uint8_t radioState = PhyGetSeqState();
+    648          #if gMpmIncluded_d
+    649              /* Check if at least one PAN has RxOnWhenIdle set */
+    650              if( FALSE == state )
+    651              {
+    652                  uint32_t i;
+    653          
+    654                  for( i=0; i<gMpmMaxPANs_c; i++ )
+    655                  {
+    656                      MPM_GetPIB( gPhyPibRxOnWhenIdle, &state, i );
+    657                      if( state )
+    658                          break;
+    659                  }
+    660              }
+    661          #endif
+    662              if( state )
+    663              {
+    664                  phyLocal.flags |= gPhyFlagRxOnWhenIdle_c;
+    665                  if( radioState == gIdle_c)
+    666                  {
+    667                      Phy_EnterIdle( &phyLocal );
+    668                  }
+    669          #if gMpmIncluded_d
+    670                  else if( (radioState == gRX_c) && (phyLocal.flags & gPhyFlagIdleRx_c) )
+    671                  {
+    672                      PhyPlmeForceTrxOffRequest();
+    673                      Phy_EnterIdle( &phyLocal );
+    674                  }
+    675          #endif
+    676              }
+    677              else
+    678              {
+    679                  phyLocal.flags &= ~gPhyFlagRxOnWhenIdle_c;
+    680                  if( (radioState == gRX_c) && (phyLocal.flags & gPhyFlagIdleRx_c) )
+    681                  {
+    682                      PhyPlmeForceTrxOffRequest();
+    683                      phyLocal.flags &= ~gPhyFlagIdleRx_c;
+    684                  }
+    685              }
+    686          }
+    687          
+    688          /*! *********************************************************************************
+    689          * \brief  This function starts the IdleRX if the PhyRxOnWhenIdle PIB is set
+    690          *
+    691          * \param[in]  instanceId The instance of the PHY
+    692          *
+    693          ********************************************************************************** */
+    694          bool_t PhyIsIdleRx( instanceId_t instanceId )
+    695          {
+    696              if( (phyLocal.flags & gPhyFlagIdleRx_c) && (gRX_c == PhyGetSeqState()))
+    697                  return TRUE;
+    698          
+    699              return FALSE;
+    700          }
+    701          
+    702          /*! *********************************************************************************
+    703          * \brief  This function signals the PHY task that a TX operation completed successfully.
+    704          *         If the received ACK has FP=1, then the radio will enter RX state for
+    705          *         maxFrameWaitTime duration.
+    706          *
+    707          * \param[in]  instanceId The instance of the PHY
+    708          * \param[in]  framePending The value of the framePending bit for the received ACK
+    709          *
+    710          ********************************************************************************** */
+    711          void Radio_Phy_PdDataConfirm(instanceId_t instanceId, bool_t framePending)
+    712          {
+    713              PhyTimeDisableEventTimeout();
+    714          
+    715              if( framePending )
+    716              {
+    717                  phyLocal.flags |= gPhyFlagRxFP_c;
+    718                  if( phyLocal.maxFrameWaitTime > 0 )
+    719                  {
+    720                      /* Restart Rx asap if an ACK with FP=1 is received */
+    721                      phyLocal.flags &= ~(gPhyFlagIdleRx_c);
+    722                      Phy_SetSequenceTiming( gPhySeqStartAsap_c, phyLocal.maxFrameWaitTime );
+    723                      PhyPlmeRxRequest( gPhyUnslottedMode_c, (phyRxParams_t *) &phyLocal.rxParams );
+    724                  }
+    725              }
+    726              else
+    727              {
+    728                  phyLocal.flags &= ~gPhyFlagRxFP_c;
+    729              }
+    730          
+    731              PD_SendMessage(&phyLocal, gPdDataCnf_c);
+    732              Phy24Task(&phyLocal);
+    733          }
+    734          
+    735          /*! *********************************************************************************
+    736          * \brief  This function signals the PHY task that new data has been received
+    737          *
+    738          * \param[in]  instanceId The instance of the PHY
+    739          *
+    740          ********************************************************************************** */
+    741          void Radio_Phy_PdDataIndication(instanceId_t instanceId)
+    742          {
+    743              PhyTimeDisableEventTimeout();
+    744          
+    745              PD_SendMessage(&phyLocal, gPdDataInd_c);
+    746              Phy24Task(&phyLocal);
+    747          }
+    748          
+    749          /*! *********************************************************************************
+    750          * \brief  This function signals the PHY task that timer1 compare match occured
+    751          *
+    752          * \param[in]  instanceId The instance of the PHY
+    753          *
+    754          ********************************************************************************** */
+    755          void Radio_Phy_TimeWaitTimeoutIndication(instanceId_t instanceId)
+    756          {
+    757              PhyTime_ISR();
+    758          }
+    759          
+    760          /*! *********************************************************************************
+    761          * \brief  This function signals the PHY task that a CCA sequence has finished
+    762          *
+    763          * \param[in]  instanceId The instance of the PHY
+    764          * \param[in]  phyChannelStatus The status of the channel: Idle/Busy
+    765          *
+    766          * \return  None.
+    767          *
+    768          ********************************************************************************** */
+    769          void Radio_Phy_PlmeCcaConfirm(phyStatus_t phyChannelStatus, instanceId_t instanceId)
+    770          {
+    771              PhyTimeDisableEventTimeout();
+    772          
+    773              phyLocal.channelParams.channelStatus = phyChannelStatus;
+    774          
+    775              PLME_SendMessage(&phyLocal, gPlmeCcaCnf_c);
+    776              Phy24Task(&phyLocal);
+    777          }
+    778          
+    779          /*! *********************************************************************************
+    780          * \brief  This function signals the PHY task that a ED sequence has finished
+    781          *
+    782          * \param[in]  instanceId The instance of the PHY
+    783          * \param[in]  energyLevel The enetgy level on the channel.
+    784          * \param[in]  energyLeveldB The energy level in DB
+    785          *
+    786          ********************************************************************************** */
+    787          void Radio_Phy_PlmeEdConfirm(uint8_t energyLeveldB, instanceId_t instanceId)
+    788          {
+    789              PhyTimeDisableEventTimeout();
+    790          
+    791              phyLocal.channelParams.energyLeveldB = energyLeveldB;
+    792          
+    793              PLME_SendMessage(&phyLocal, gPlmeEdCnf_c);
+    794              Phy24Task(&phyLocal);
+    795          }
+    796          
+    797          /*! *********************************************************************************
+    798          * \brief  This function signals the PHY task that the programmed sequence has timed out
+    799          *         The Radio is forced to Idle.
+    800          *
+    801          * \param[in]  instanceId The instance of the PHY
+    802          *
+    803          ********************************************************************************** */
+    804          void Radio_Phy_TimeRxTimeoutIndication(instanceId_t instanceId)
+    805          {
+    806              if( !(phyLocal.flags & gPhyFlagIdleRx_c) )
+    807                  PLME_SendMessage(&phyLocal, gPlmeTimeoutInd_c);
+    808          
+    809              Phy24Task(&phyLocal);
+    810          }
+    811          
+    812          /*! *********************************************************************************
+    813          * \brief  This function signals the PHY task that the programmed sequence has started
+    814          *
+    815          * \param[in]  instanceId The instance of the PHY
+    816          *
+    817          * \return  None.
+    818          *
+    819          ********************************************************************************** */
+    820          void Radio_Phy_TimeStartEventIndication(instanceId_t instanceId)
+    821          {
+    822          #ifdef MAC_PHY_DEBUG
+    823              PLME_SendMessage(&phyLocal[instanceId], gPlme_StartEventInd_c);
+    824              Phy24Task(&phyLocal[instanceId]);
+    825          #endif
+    826          }
+    827          
+    828          /*! *********************************************************************************
+    829          * \brief  This function signals the PHY task that the specified Rx watermark has been reached.
+    830          *         Also, if there is not enough time to receive the entire packet, the
+    831          *         RX timeout will be extended.
+    832          *
+    833          * \param[in]  instanceId The instance of the PHY
+    834          * \param[in]  frameLen the length of the PSDU
+    835          *
+    836          ********************************************************************************** */
+    837          void Radio_Phy_PlmeRxWatermark(instanceId_t instanceId, uint32_t frameLen)
+    838          {
+    839              if( phyLocal.flags & gPhyFlagDeferTx_c )
+    840              {
+    841                  phyTime_t currentTime, time;
+    842          
+    843                  OSA_EnterCritical(kCriticalDisableInt);
+    844          
+    845                  /* Read currentTime and Timeout values [sym] */
+    846                  PhyTimeReadClock(&currentTime);
+    847                  /* Convert to symbols and add IFS and ACK duration */
+    848                  frameLen = frameLen * 2 + 12 + 22 + 2;
+    849          
+    850                  time = (PhyTimeGetEventTimeout() - currentTime) & gPhyTimeMask_c;
+    851          
+    852                  if( time > 1 )
+    853                  {
+    854                      /* Disable TMR3 compare */
+    855                      ZLL_BWR_PHY_CTRL_TMR3CMP_EN(ZLL,0);
+    856                      /* Write new TMR3 compare value */
+    857                      currentTime += frameLen;
+    858                      ZLL_WR_T3CMP( ZLL, currentTime );
+    859                      /* Enable TMR3 compare */
+    860                      ZLL_BWR_PHY_CTRL_TMR3CMP_EN(ZLL,1);
+    861                  }
+    862          
+    863                  OSA_ExitCritical(kCriticalDisableInt);
+    864              }
+    865          
+    866          #ifdef MAC_PHY_DEBUG
+    867              PLME_SendMessage(&phyLocal[instanceId], gPlme_RxSfdDetectInd_c);
+    868              Phy24Task(&phyLocal[instanceId]);
+    869          #endif
+    870          }
+    871          
+    872          /*! *********************************************************************************
+    873          * \brief  This function signals the PHY task that a Sync Loss occured (PLL unlock)
+    874          *         The Radio is forced to Idle.
+    875          *
+    876          * \param[in]  instanceId The instance of the PHY
+    877          *
+    878          ********************************************************************************** */
+    879          void Radio_Phy_PlmeSyncLossIndication(instanceId_t instanceId)
+    880          {
+    881              PhyPlmeForceTrxOffRequest();
+    882          #ifdef MAC_PHY_DEBUG
+    883              PLME_SendMessage(&phyLocal[instanceId], gPlme_SyncLossInd_c);
+    884          #endif
+    885              Radio_Phy_TimeRxTimeoutIndication(instanceId);
+    886          }
+    887          
+    888          /*! *********************************************************************************
+    889          * \brief  This function signals the PHY task that a Filter Fail occured
+    890          *
+    891          * \param[in]  instanceId The instance of the PHY
+    892          *
+    893          ********************************************************************************** */
+    894          void Radio_Phy_PlmeFilterFailRx(instanceId_t instanceId)
+    895          {
+    896          #ifdef MAC_PHY_DEBUG
+    897              PLME_SendMessage(&phyLocal[instanceId], gPlme_FilterFailInd_c);
+    898              Phy24Task(&phyLocal[instanceId]);
+    899          #endif
+    900          }
+    901          
+    902          /*! *********************************************************************************
+    903          * \brief  This function signals the PHY task that an unexpected Transceiver Reset
+    904          *          occured and force the TRX to Off
+    905          *
+    906          * \param[in]  instanceId The instance of the PHY
+    907          *
+    908          ********************************************************************************** */
+    909          void Radio_Phy_UnexpectedTransceiverReset(instanceId_t instanceId)
+    910          {
+    911              PhyPlmeForceTrxOffRequest();
+    912          #ifdef MAC_PHY_DEBUG
+    913              PLME_SendMessage(&phyLocal[instanceId], gPlme_UnexpectedRadioResetInd_c);
+    914          #endif
+    915              Radio_Phy_TimeRxTimeoutIndication(instanceId);
+    916          }
+    917          
+    918          /*! *********************************************************************************
+    919          * \brief  Senf a PLME message to upper layer
+    920          *
+    921          * \param[in]  instanceId The instance of the PHY
+    922          * \param[in]  msgType    The type of message to be sent
+    923          *
+    924          ********************************************************************************** */
+    925          static void PLME_SendMessage(Phy_PhyLocalStruct_t *pPhyStruct, phyMessageId_t msgType)
+    926          {
+    927              plmeToMacMessage_t * pMsg = MEM_BufferAlloc(sizeof(plmeToMacMessage_t));
+    928          
+    929              if(NULL == pMsg)
+    930              {
+    931                  phyTimeEvent_t ev = {
+    932                      .parameter = (uint32_t)msgType,
+    933                      .callback = Phy_SendLatePLME,
+    934                      .timestamp = gPhyRxRetryInterval_c + PhyTime_GetTimestamp()
+    935                  };
+    936                  
+    937                  PhyTime_ScheduleEvent(&ev);
+    938                  return;
+    939              }
+    940          
+    941              pMsg->msgType = msgType;
+    942          
+    943              switch(msgType)
+    944              {
+    945              case gPlmeCcaCnf_c:
+    946                  pMsg->msgData.ccaCnf.status = pPhyStruct->channelParams.channelStatus;
+    947                  break;
+    948          
+    949              case gPlmeEdCnf_c:
+    950                  pMsg->msgData.edCnf.status        = gPhySuccess_c;
+    951                  pMsg->msgData.edCnf.energyLeveldB = pPhyStruct->channelParams.energyLeveldB;
+    952                  pMsg->msgData.edCnf.energyLevel   = Phy_GetEnergyLevel(pPhyStruct->channelParams.energyLeveldB);
+    953                  break;
+    954          
+    955              default:
+    956                  /* No aditional info needs to be filled */
+    957                  break;
+    958              }
+    959          
+    960              pPhyStruct->PLME_MAC_SapHandler(pMsg, pPhyStruct->currentMacInstance);
+    961          }
+    962          
+    963          /*! *********************************************************************************
+    964          * \brief  Senf a PD message to upper layer
+    965          *
+    966          * \param[in]  instanceId The instance of the PHY
+    967          * \param[in]  msgType    The type of message to be sent
+    968          *
+    969          ********************************************************************************** */
+    970          static void PD_SendMessage(Phy_PhyLocalStruct_t *pPhyStruct, phyMessageId_t msgType)
+    971          {
+    972              pdDataToMacMessage_t *pMsg;
+    973          
+    974              if( msgType == gPdDataInd_c )
+    975              {
+    976                  uint32_t temp;
+    977                  uint16_t len = pPhyStruct->rxParams.psduLength - 2; /* Excluding FCS (2 bytes) */
+    978          
+    979                  pMsg = pPhyStruct->rxParams.pRxData;
+    980                  pPhyStruct->rxParams.pRxData = NULL;
+    981          
+    982                  FLib_MemCpy((uint8_t *)(pMsg->msgData.dataInd.pPsdu), (void*)&ZLL_PKT_BUFFER0, len);
+    983          
+    984                  pMsg->msgType                         = gPdDataInd_c;
+    985                  pMsg->msgData.dataInd.ppduLinkQuality = pPhyStruct->rxParams.linkQuality;
+    986                  pMsg->msgData.dataInd.psduLength      = len;
+    987          
+    988                  pMsg->msgData.dataInd.timeStamp       = PhyTime_GetTimestamp();      /* current timestamp (64bit) */
+    989                  temp = (uint32_t)(pMsg->msgData.dataInd.timeStamp & gPhyTimeMask_c); /* convert to 24bit */
+    990                  pMsg->msgData.dataInd.timeStamp -= (temp - pPhyStruct->rxParams.timeStamp) & gPhyTimeMask_c;
+    991          #if !(gMpmIncluded_d)
+    992                  pPhyStruct->PD_MAC_SapHandler(pMsg, pPhyStruct->currentMacInstance);
+    993          #else
+    994                  {
+    995                      uint32_t i, bitMask = PhyPpGetPanOfRxPacket();
+    996          
+    997                      for( i=0; i<gMpmPhyPanRegSets_c; i++ )
+    998                      {
+    999                          if( bitMask & (1 << i) )
+   1000                          {
+   1001                              bitMask &= ~(1 << i);
+   1002                              pPhyStruct->currentMacInstance = MPM_GetMacInstanceFromRegSet(i);
+   1003          
+   1004                              /* If the packet passed filtering on muliple PANs, send a copy to each one */
+   1005                              if( bitMask )
+   1006                              {
+   1007                                  pdDataToMacMessage_t *pDataIndCopy;
+   1008          
+   1009                                  pDataIndCopy = MEM_BufferAlloc(sizeof(pdDataToMacMessage_t) + len);
+   1010                                  if( pDataIndCopy )
+   1011                                  {
+   1012                                      FLib_MemCpy(pDataIndCopy, pMsg, sizeof(pdDataToMacMessage_t) + len);
+   1013                                      pPhyStruct->PD_MAC_SapHandler(pDataIndCopy, pPhyStruct->currentMacInstance);
+   1014                                  }
+   1015                              }
+   1016                              else
+   1017                              {
+   1018                                  pPhyStruct->PD_MAC_SapHandler(pMsg, pPhyStruct->currentMacInstance);
+   1019                                  break;
+   1020                              }
+   1021                          }
+   1022                      }
+   1023                  }
+   1024          #endif
+   1025              }
+   1026              else
+   1027              {
+   1028                  phyStatus_t status;
+   1029          
+   1030                  if( pPhyStruct->flags & gPhyFlagRxFP_c )
+   1031                  {
+   1032                      pPhyStruct->flags &= ~(gPhyFlagRxFP_c);
+   1033                      status = gPhyFramePending_c;
+   1034                  }
+   1035                  else
+   1036                  {
+   1037                      status = gPhySuccess_c;
+   1038                  }
+   1039          
+   1040                  pMsg = MEM_BufferAlloc(sizeof(phyMessageHeader_t) + sizeof(pdDataCnf_t));
+   1041          
+   1042                  if(NULL == pMsg)
+   1043                  {
+   1044                      phyTimeEvent_t ev = {
+   1045                          .callback = Phy_SendLatePD,
+   1046                          .parameter = (uint32_t)msgType,
+   1047                          .timestamp = gPhyRxRetryInterval_c + PhyTime_GetTimestamp()
+   1048                      };
+   1049                      
+   1050                      PhyTime_ScheduleEvent(&ev);
+   1051                      return;
+   1052                  }
+   1053          
+   1054                  pMsg->msgType = gPdDataCnf_c;
+   1055                  pMsg->msgData.dataCnf.status = status;
+   1056                  pPhyStruct->PD_MAC_SapHandler(pMsg, pPhyStruct->currentMacInstance);
+   1057              }
+   1058          }
+   1059          
+   1060          /*! *********************************************************************************
+   1061          * \brief  Notify the 802.15.4 PHY that it can resume activity
+   1062          *
+   1063          * \param[in]  instance The instance of the PHY
+   1064          *
+   1065          ********************************************************************************** */
+   1066          void PhyNotify( uint32_t isBusy )
+   1067          {
+   1068          #if gMWS_Enabled_d
+   1069              if( SIM_SCGC5 & SIM_SCGC5_ZigBee_MASK )
+   1070              {
+   1071                  if( !mXCVR_Busy && isBusy )
+   1072                  {
+   1073                      uint8_t state = ZLL_RD_PHY_CTRL_XCVSEQ(ZLL);
+   1074          
+   1075                      mXCVR_Busy = (uint8_t)isBusy;
+   1076                      PhyAbort();
+   1077                      XcvrChangeMode(BLE);
+   1078          
+   1079                      switch(state)
+   1080                      {
+   1081                      case gCCA_c:
+   1082                          if( ZLL_RD_PHY_CTRL_CCATYPE(ZLL) == gCcaED_c )
+   1083                          {
+   1084                              phyLocal.channelParams.energyLeveldB = ZLL_RD_LQI_AND_RSSI_CCA1_ED_FNL(ZLL);
+   1085                              PLME_SendMessage(&phyLocal, gPlmeEdCnf_c);
+   1086                              break;
+   1087                          }
+   1088                      case gTX_c:
+   1089                      case gTR_c:
+   1090                          phyLocal.channelParams.channelStatus = gPhyChannelBusy_c;
+   1091                          PLME_SendMessage(&phyLocal, gPlmeCcaCnf_c);
+   1092                          break;
+   1093                      default:
+   1094                          break;
+   1095                      }
+   1096                  }
+   1097                  else
+   1098                  {
+   1099                      mXCVR_Busy = (uint8_t)isBusy;
+   1100                      Phy24Task(&phyLocal);
+   1101                  }
+   1102              }
+   1103          #endif
+   1104          }
+   1105          
+   1106          static void Phy_SendLatePLME( uint32_t param )
+   1107          {
+   1108              PLME_SendMessage(&phyLocal, (phyMessageId_t)param);
+   1109          }
+   1110          
+   1111          static void Phy_SendLatePD( uint32_t param )
+   1112          {
+   1113              PD_SendMessage(&phyLocal, (phyMessageId_t)param);
+   1114          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BindToPHY
+      24   MAC_PD_SapHandler
+        24   -> ListAddTailMsg
+        24   -> Phy24Task
+        24   -> PhyPp_IndirectQueueInsert
+        24   -> PhyPp_RemoveFromIndirect
+      32   MAC_PLME_SapHandler
+        32   -> ListAddTailMsg
+        32   -> Phy24Task
+        32   -> PhyAbort
+        32   -> PhyIsIdleRx
+        32   -> PhyPlmeGetPIBRequest
+        32   -> PhyPlmeRxRequest
+        32   -> PhyPlmeSetPIBRequest
+        32   -> PhyPpGetState
+        32   -> Phy_SetSequenceTiming
+      48   PD_SendMessage
+        48   -- Indirect call
+        48   -> FLib_MemCpy
+        48   -> MEM_BufferAlloc
+        48   -> PhyTime_GetTimestamp
+        48   -> PhyTime_ScheduleEvent
+        48   -> __aeabi_memcpy4
+      32   PLME_SendMessage
+        32   -- Indirect call
+        32   -> MEM_BufferAlloc
+        32   -> PhyTime_GetTimestamp
+        32   -> PhyTime_ScheduleEvent
+        32   -> Phy_GetEnergyLevel
+        32   -> __aeabi_memcpy4
+      24   Phy24Task
+        24   -> ListRemoveHeadMsg
+        24   -> PD_SendMessage
+        24   -> PLME_SendMessage
+        24   -> PhyAbort
+        24   -> PhyPlmeCcaEdRequest
+        24   -> PhyPpGetState
+        24   -> Phy_EnterIdle
+        24   -> Phy_HandlePdDataReq
+        24   -> ProtectFromXcvrInterrupt
+        24   -> UnprotectFromXcvrInterrupt
+       8   PhyIsIdleRx
+         8   -> PhyPpGetState
+       0   PhyNotify
+       0   PhyPlmeSetFrameWaitTime
+      16   PhyPlmeSetRxOnWhenIdle
+        16   -> PhyAbort
+        16   -> PhyPpGetState
+        16   -> Phy_EnterIdle
+      16   Phy_EnterIdle
+        16   -> PhyPlmeRxRequest
+        16   -> Phy_SetSequenceTiming
+      24   Phy_HandlePdDataReq
+        24   -> PhyAbort
+        24   -> PhyPdDataRequest
+        24   -> PhyTimeSetEventTimeout
+        24   -> PhyTimeSetEventTrigger
+        24   -> PhyTime_GetTimestamp
+        24   -> ProtectFromXcvrInterrupt
+        24   -> UnprotectFromXcvrInterrupt
+       8   Phy_Init
+         8   -> ASP_Init
+         8   -> ListInit
+         8   -> PhyHwInit
+         8   -> PhyIsrPassRxParams
+         8   -> PhyPlmeSetPwrState
+         8   -> PhyTime_TimerInit
+       0   Phy_RegisterSapHandlers
+       8   Phy_SendLatePD
+         8   -> PD_SendMessage
+       8   Phy_SendLatePLME
+         8   -> PLME_SendMessage
+      24   Phy_SetSequenceTiming
+        24   -> OSA_EnterCritical
+        24   -> OSA_ExitCritical
+        24   -> PhyTimeReadClock
+        24   -> PhyTimeSetEventTimeout
+        24   -> PhyTimeSetEventTrigger
+      16   Radio_Phy_PdDataConfirm
+        16   -> PD_SendMessage
+        16   -> Phy24Task
+        16   -> PhyPlmeRxRequest
+        16   -> PhyTimeDisableEventTimeout
+        16   -> Phy_SetSequenceTiming
+       8   Radio_Phy_PdDataIndication
+         8   -> PD_SendMessage
+         8   -> Phy24Task
+         8   -> PhyTimeDisableEventTimeout
+      16   Radio_Phy_PlmeCcaConfirm
+        16   -> PLME_SendMessage
+        16   -> Phy24Task
+        16   -> PhyTimeDisableEventTimeout
+      16   Radio_Phy_PlmeEdConfirm
+        16   -> PLME_SendMessage
+        16   -> Phy24Task
+        16   -> PhyTimeDisableEventTimeout
+       0   Radio_Phy_PlmeFilterFailRx
+      32   Radio_Phy_PlmeRxWatermark
+        32   -> OSA_EnterCritical
+        32   -> OSA_ExitCritical
+        32   -> PhyTimeGetEventTimeout
+        32   -> PhyTimeReadClock
+       8   Radio_Phy_PlmeSyncLossIndication
+         8   -> PhyAbort
+         8   -> Radio_Phy_TimeRxTimeoutIndication
+       8   Radio_Phy_TimeRxTimeoutIndication
+         8   -> PLME_SendMessage
+         8   -> Phy24Task
+       0   Radio_Phy_TimeStartEventIndication
+       8   Radio_Phy_TimeWaitTimeoutIndication
+         8   -> PhyTime_ISR
+       8   Radio_Phy_UnexpectedTransceiverReset
+         8   -> PhyAbort
+         8   -> Radio_Phy_TimeRxTimeoutIndication
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ??DataTable10
+       4  ??DataTable11
+       4  ??DataTable13
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+       4  ??DataTable18
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+       4  ??DataTable19_4
+       4  ??DataTable19_5
+       4  ??DataTable19_6
+       4  ??DataTable19_7
+       4  ??DataTable19_8
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+      16  ?_0
+      16  ?_1
+       6  BindToPHY
+      94  MAC_PD_SapHandler
+     260  MAC_PLME_SapHandler
+     242  PD_SendMessage
+     114  PLME_SendMessage
+     244  Phy24Task
+      28  PhyIsIdleRx
+       2  PhyNotify
+       6  PhyPlmeSetFrameWaitTime
+      88  PhyPlmeSetRxOnWhenIdle
+      64  Phy_EnterIdle
+     260  Phy_HandlePdDataReq
+      52  Phy_Init
+      10  Phy_RegisterSapHandlers
+      16  Phy_SendLatePD
+      16  Phy_SendLatePLME
+     118  Phy_SetSequenceTiming
+      98  Radio_Phy_PdDataConfirm
+      24  Radio_Phy_PdDataIndication
+      30  Radio_Phy_PlmeCcaConfirm
+      30  Radio_Phy_PlmeEdConfirm
+       2  Radio_Phy_PlmeFilterFailRx
+     122  Radio_Phy_PlmeRxWatermark
+      16  Radio_Phy_PlmeSyncLossIndication
+      28  Radio_Phy_TimeRxTimeoutIndication
+       2  Radio_Phy_TimeStartEventIndication
+      10  Radio_Phy_TimeWaitTimeoutIndication
+      16  Radio_Phy_UnexpectedTransceiverReset
+      72  phyLocal
+
+ 
+    72 bytes in section .bss
+    32 bytes in section .rodata
+ 2 078 bytes in section .text
+ 
+ 2 078 bytes of CODE  memory
+    32 bytes of CONST memory
+    72 bytes of DATA  memory
+
+Errors: none
+Warnings: none

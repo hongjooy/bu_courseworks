@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>MyStarNetworkEndDevice/Debug</Project><Project>ksdk_freertos_lib/Debug</Project></CurrentConfigs><CurrentProj>MyStarNetworkEndDevice</CurrentProj><OverviewSelected>1</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>842</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>892</ColumnWidth1><ColumnWidth2>238</ColumnWidth2><ColumnWidth3>59</ColumnWidth3></Build>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1190</ColumnWidth1></Debug-Log>
+      <TerminalIO/>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-7207-27183</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>&lt;ws&gt;/MyStarNetworkEndDevice</ExpandedNode><ExpandedNode>&lt;ws&gt;/MyStarNetworkEndDevice/RTOS</ExpandedNode><ExpandedNode>&lt;ws&gt;/MyStarNetworkEndDevice/RTOS/FreeRTOS</ExpandedNode><ExpandedNode>&lt;ws&gt;/MyStarNetworkEndDevice/Source</ExpandedNode><ExpandedNode>&lt;ws&gt;/ksdk_freertos_lib</ExpandedNode><ExpandedNode>&lt;ws&gt;/ksdk_freertos_lib/platform</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-5638-27212</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-24291-27477</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>1</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\..\..\framework\OSAbstraction\Source\fsl_osa_ext_freertos.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>994</YPos2><SelStart2>36657</SelStart2><SelEnd2>36657</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\common\App.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>168</YPos2><SelStart2>0</SelStart2><SelEnd2>62299</SelEnd2></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\..\..\..\..\..\Users\Jooyoun Hong.Julianne\Desktop\sound\mic\lptmr\pin_mux.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>3</YPos2><SelStart2>1275</SelStart2><SelEnd2>1275</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-026885A8><key>iaridepm.enu1</key></Toolbar-026885A8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>1000</Bottom><Right>942</Right><x>-2</x><y>-2</y><xscreen>1685</xscreen><yscreen>1757</yscreen><sizeHorzCX>658203</sizeHorzCX><sizeHorzCY>1186361</sizeHorzCY><sizeVertCX>368750</sizeVertCX><sizeVertCY>676570</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>430</Bottom><Right>2562</Right><x>-2</x><y>-2</y><xscreen>2564</xscreen><yscreen>432</yscreen><sizeHorzCX>1001562</sizeHorzCX><sizeHorzCY>291695</sizeHorzCY><sizeVertCX>658203</sizeVertCX><sizeVertCY>1186361</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

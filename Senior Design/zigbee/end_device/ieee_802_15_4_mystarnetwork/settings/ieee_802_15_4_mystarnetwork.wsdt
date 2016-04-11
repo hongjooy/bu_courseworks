@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>ksdk_freertos_lib/Debug</Project><Project>ieee_802_15_4_mystarnetwork/Debug</Project></CurrentConfigs><CurrentProj>ieee_802_15_4_mystarnetwork</CurrentProj><OverviewSelected>1</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>211</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1869</ColumnWidth1><ColumnWidth2>498</ColumnWidth2><ColumnWidth3>124</ColumnWidth3></Build>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>2492</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-2123-10584</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>&lt;ws&gt;/ieee_802_15_4_mystarnetwork</ExpandedNode><ExpandedNode>&lt;ws&gt;/ieee_802_15_4_mystarnetwork/KSDK</ExpandedNode><ExpandedNode>&lt;ws&gt;/ieee_802_15_4_mystarnetwork/RTOS</ExpandedNode><ExpandedNode>&lt;ws&gt;/ieee_802_15_4_mystarnetwork/Source</ExpandedNode><ExpandedNode>&lt;ws&gt;/ieee_802_15_4_mystarnetwork/framework</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-10028-10845</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-29373-25834</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\examples\ieee_802_15_4\MyStarNetwork\EndDevice\common\App.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>1357</YPos2><SelStart2>58248</SelStart2><SelEnd2>58248</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\OSAbstraction\Source\fsl_osa_ext_freertos.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>966</YPos2><SelStart2>33981</SelStart2><SelEnd2>33981</SelEnd2></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\examples\ieee_802_15_4\MyStarNetwork\EndDevice\common\App.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00F460A8><key>iaridepm.enu1</key></Toolbar-00F460A8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>731</Bottom><Right>302</Right><x>-2</x><y>-2</y><xscreen>113</xscreen><yscreen>133</yscreen><sizeHorzCX>66198</sizeHorzCX><sizeHorzCY>134752</sizeHorzCY><sizeVertCX>178090</sizeVertCX><sizeVertCY>742655</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>211</Bottom><Right>1709</Right><x>-2</x><y>-2</y><xscreen>1711</xscreen><yscreen>213</yscreen><sizeHorzCX>1002343</sizeHorzCX><sizeHorzCY>215805</sizeHorzCY><sizeVertCX>66198</sizeVertCX><sizeVertCY>134752</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

@@ -1,0 +1,428 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:21
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Flash\Internal\Flash_Adapter.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Flash\Internal\Flash_Adapter.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\Flash_Adapter.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Flash_Adapter.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Flash\Internal\Flash_Adapter.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file Flash_Adapter.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "Flash_Adapter.h"
+     40          #include "FunctionLib.h"
+     41          #include "fsl_os_abstraction.h"
+     42          
+     43          /*! *********************************************************************************
+     44          *************************************************************************************
+     45          * Private type definitions
+     46          *************************************************************************************
+     47          ********************************************************************************** */
+     48          
+     49          /*! *********************************************************************************
+     50          *************************************************************************************
+     51          * Private prototypes
+     52          *************************************************************************************
+     53          ********************************************************************************** */
+     54          
+     55          /*! *********************************************************************************
+     56          *************************************************************************************
+     57          * Public memory declarations
+     58          *************************************************************************************
+     59          ********************************************************************************** */
+     60          extern uint32_t FREESCALE_PROD_DATA_BASE_ADDR[];
+     61          
+     62          /* Hardware parameters */
+     63          hardwareParameters_t gHardwareParameters;
+     64          
+     65          FLASH_SSD_CONFIG gFlashConfig =
+     66          {
+     67              FTFx_REG_BASE,          /* FTFx control register base */
+     68              P_FLASH_BASE,           /* base address of PFlash block */
+     69              P_FLASH_SIZE,           /* size of PFlash block */
+     70              FLEXNVM_BASE,           /* base address of DFlash block */
+     71              0,                      /* size of DFlash block */
+     72              EERAM_BASE,             /* base address of EERAM block */
+     73              0,                      /* size of EEE block */
+     74              DEBUGENABLE,            /* background debug mode enable bit */
+     75              NULL_CALLBACK           /* pointer to callback function */
+     76          };
+     77          
+     78          pFLASHCOMMANDSEQUENCE gFlashLaunchCommand = NULL;
+     79          uint16_t __ram_func[LAUNCH_CMD_SIZE/2];
+     80          
+     81          /*! *********************************************************************************
+     82          *************************************************************************************
+     83          * Public functions
+     84          *************************************************************************************
+     85          ********************************************************************************** */
+     86          
+     87          /*! *********************************************************************************
+     88           * \brief  Initialize the FLASH driver
+     89           *
+     90          ********************************************************************************** */
+     91          void NV_Init(void)
+     92          {
+     93              if( !gFlashLaunchCommand )
+     94              {
+     95                  FlashInit(&gFlashConfig);
+     96                  gFlashLaunchCommand = (pFLASHCOMMANDSEQUENCE)RelocateFunction((uint32_t)__ram_func , 
+     97                                                                                LAUNCH_CMD_SIZE,
+     98                                                                                (uint32_t)FlashCommandSequence);
+     99              }
+    100          }
+    101          
+    102          /*! *********************************************************************************
+    103           * \brief  Write data to FLASH
+    104           * 
+    105           * \param[in] pSSDConfig  Pointer to a flash config structure  
+    106           * \param[in] dest        The address of the Flash location
+    107           * \param[in] size        The number of bytes to be programed
+    108           * \param[in] pData       Pointer to the data to be programmed to Flash
+    109           * \param[in] pFlashCommandSequence  Pointer to the Flash RAM function
+    110           *
+    111           * \return error code
+    112           *
+    113          ********************************************************************************** */
+    114          uint32_t NV_FlashProgramUnaligned(PFLASH_SSD_CONFIG pSSDConfig,
+    115                                            uint32_t dest,
+    116                                            uint32_t size,
+    117                                            uint8_t* pData,
+    118                                            pFLASHCOMMANDSEQUENCE pFlashCommandSequence)
+    119          {
+    120              uint8_t  buffer[PGM_SIZE_BYTE];
+    121              uint16_t bytes = dest & (PGM_SIZE_BYTE-1);
+    122              uint32_t status;
+    123          
+    124              if( bytes )
+    125              {
+    126                  uint16_t unalignedBytes = PGM_SIZE_BYTE - bytes;
+    127          
+    128                  if( unalignedBytes > size )
+    129                  {
+    130                      unalignedBytes = size;
+    131                  }
+    132          
+    133                  FLib_MemCpy(buffer, (void*)(dest - bytes), PGM_SIZE_BYTE);
+    134                  FLib_MemCpy(&buffer[bytes], pData, unalignedBytes);
+    135          #if gNvDisableIntCmdSeq_c
+    136                  OSA_EnterCritical(kCriticalDisableInt);
+    137          #endif
+    138                  status = FlashProgram(pSSDConfig, dest - bytes, PGM_SIZE_BYTE, buffer, pFlashCommandSequence);
+    139          #if gNvDisableIntCmdSeq_c
+    140                  OSA_ExitCritical(kCriticalDisableInt);
+    141          #endif
+    142                  if( status != FTFx_OK )
+    143                      return status;
+    144          
+    145                  dest += PGM_SIZE_BYTE - bytes;
+    146                  pData += unalignedBytes;
+    147                  size -= unalignedBytes;
+    148              }
+    149          
+    150              bytes = size & ~(PGM_SIZE_BYTE-1);
+    151          
+    152              if( bytes )
+    153              {
+    154          #if gNvDisableIntCmdSeq_c
+    155                  OSA_EnterCritical(kCriticalDisableInt);
+    156          #endif
+    157                  status = FlashProgram(pSSDConfig, dest, bytes, pData, pFlashCommandSequence);
+    158          #if gNvDisableIntCmdSeq_c
+    159                  OSA_ExitCritical(kCriticalDisableInt);
+    160          #endif
+    161                  if( status != FTFx_OK )
+    162                      return status;
+    163          
+    164                  dest  += bytes;
+    165                  pData += bytes;
+    166                  size  -= bytes;
+    167              }
+    168              
+    169              if( size )
+    170              {
+    171                  FLib_MemCpy(buffer, (void*)dest, PGM_SIZE_BYTE);
+    172                  FLib_MemCpy(buffer, pData, size);
+    173          #if gNvDisableIntCmdSeq_c
+    174                  OSA_EnterCritical(kCriticalDisableInt);
+    175          #endif
+    176                  status = FlashProgram(pSSDConfig, dest, PGM_SIZE_BYTE, buffer, pFlashCommandSequence);
+    177          #if gNvDisableIntCmdSeq_c
+    178                  OSA_ExitCritical(kCriticalDisableInt);
+    179          #endif
+    180                  if( status != FTFx_OK )
+    181                      return status;
+    182              }
+    183              
+    184              return FTFx_OK;
+    185          }
+    186          
+    187          /*! *********************************************************************************
+    188           * \brief  Erase to 0xFF one ore more FLASH sectors.
+    189           * 
+    190           * \param[in] pSSDConfig  Pointer to a flash config structure  
+    191           * \param[in] dest        The start address of the first sector to be erased
+    192           * \param[in] size        The amount of flash to be erased (multiple of sector size)
+    193           * \param[in] pFlashCommandSequence  Pointer to the Flash RAM function
+    194           *
+    195           * \return error code
+    196           *
+    197          ********************************************************************************** */
+    198          uint32_t NV_FlashEraseSector(PFLASH_SSD_CONFIG pSSDConfig,
+    199                                            uint32_t dest,
+    200                                            uint32_t size,
+    201                                            pFLASHCOMMANDSEQUENCE pFlashCommandSequence)
+    202          {
+    203              uint32_t status;
+    204          #if gNvDisableIntCmdSeq_c
+    205              OSA_EnterCritical(kCriticalDisableInt);
+    206          #endif
+    207              status = FlashEraseSector(pSSDConfig, dest, size, pFlashCommandSequence);
+    208          #if gNvDisableIntCmdSeq_c
+    209              OSA_ExitCritical(kCriticalDisableInt);
+    210          #endif
+    211              return status;
+    212          }
+    213          
+    214          /*! *********************************************************************************
+    215           * \brief  Load the HW parameters from Flash to RAM
+    216           * 
+    217           * \param[in] pHwParams  pointer to a structure where HW parameters will be stored
+    218           *
+    219           * \return error code
+    220           *
+    221          ********************************************************************************** */
+    222          uint32_t NV_ReadHWParameters(hardwareParameters_t *pHwParams)
+    223          {
+    224              FLib_MemCpy(pHwParams, FREESCALE_PROD_DATA_BASE_ADDR, sizeof(hardwareParameters_t));
+    225              
+    226              return 0;
+    227          }
+    228          
+    229          /*! *********************************************************************************
+    230           * \brief  Store the HW parameters to Flash 
+    231           * 
+    232           * \param[in] pHwParams  pointer to a structure containing HW parameters
+    233           *
+    234           * \return error code of the Flash erase/write functions
+    235           *
+    236          ********************************************************************************** */
+    237          uint32_t NV_WriteHWParameters(hardwareParameters_t *pHwParams)
+    238          {
+    239              uint32_t status = 0;
+    240              NV_Init();
+    241              
+    242              status = NV_FlashEraseSector(&gFlashConfig,
+    243                                           (uint32_t)FREESCALE_PROD_DATA_BASE_ADDR,
+    244                                           FTFx_PSECTOR_SIZE,
+    245                                           gFlashLaunchCommand);
+    246              if( 0 == status )
+    247              {
+    248                  status = NV_FlashProgramUnaligned(&gFlashConfig,
+    249                                                    (uint32_t)FREESCALE_PROD_DATA_BASE_ADDR,
+    250                                                    sizeof(hardwareParameters_t),
+    251                                                    (uint8_t*)pHwParams,
+    252                                                    gFlashLaunchCommand);
+    253              }
+    254          
+    255              return status;
+    256          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   NV_FlashEraseSector
+        24   -> FlashEraseSector
+        24   -> OSA_EnterCritical
+        24   -> OSA_ExitCritical
+      40   NV_FlashProgramUnaligned
+        40   -> FLib_MemCpy
+        40   -> FlashProgram
+        40   -> OSA_EnterCritical
+        40   -> OSA_ExitCritical
+       8   NV_Init
+         8   -> FlashInit
+         8   -> RelocateFunction
+       8   NV_ReadHWParameters
+         8   -> FLib_MemCpy
+      16   NV_WriteHWParameters
+        16   -> NV_FlashEraseSector
+        16   -> NV_FlashProgramUnaligned
+        16   -> NV_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+      40  NV_FlashEraseSector
+     272  NV_FlashProgramUnaligned
+      32  NV_Init
+      18  NV_ReadHWParameters
+      56  NV_WriteHWParameters
+      64  __ram_func
+      36  gFlashConfig
+       4  gFlashLaunchCommand
+      72  gHardwareParameters
+
+ 
+ 140 bytes in section .bss
+  36 bytes in section .data
+ 442 bytes in section .text
+ 
+ 442 bytes of CODE memory
+ 176 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,268 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:37
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_3.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_3.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\heap_3.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_3.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_3.c
+      1          /* << EST */
+      2          #include "FreeRTOSConfig.h"
+      3          #if configFRTOS_MEMORY_SCHEME==3
+      4          
+      5          /*
+      6              FreeRTOS V8.2.0 - Copyright (C) 2015 Real Time Engineers Ltd.
+      7              All rights reserved
+      8          
+      9              VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
+     10          
+     11              This file is part of the FreeRTOS distribution.
+     12          
+     13              FreeRTOS is free software; you can redistribute it and/or modify it under
+     14              the terms of the GNU General Public License (version 2) as published by the
+     15              Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
+     16          
+     17          	***************************************************************************
+     18              >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+     19              >>!   distribute a combined work that includes FreeRTOS without being   !<<
+     20              >>!   obliged to provide the source code for proprietary components     !<<
+     21              >>!   outside of the FreeRTOS kernel.                                   !<<
+     22          	***************************************************************************
+     23          
+     24              FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
+     25              WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+     26              FOR A PARTICULAR PURPOSE.  Full license text is available on the following
+     27              link: http://www.freertos.org/a00114.html
+     28          
+     29              ***************************************************************************
+     30               *                                                                       *
+     31               *    FreeRTOS provides completely free yet professionally developed,    *
+     32               *    robust, strictly quality controlled, supported, and cross          *
+     33               *    platform software that is more than just the market leader, it     *
+     34               *    is the industry's de facto standard.                               *
+     35               *                                                                       *
+     36               *    Help yourself get started quickly while simultaneously helping     *
+     37               *    to support the FreeRTOS project by purchasing a FreeRTOS           *
+     38               *    tutorial book, reference manual, or both:                          *
+     39               *    http://www.FreeRTOS.org/Documentation                              *
+     40               *                                                                       *
+     41              ***************************************************************************
+     42          
+     43              http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
+     44          	the FAQ page "My application does not run, what could be wrong?".  Have you
+     45          	defined configASSERT()?
+     46          
+     47          	http://www.FreeRTOS.org/support - In return for receiving this top quality
+     48          	embedded software for free we request you assist our global community by
+     49          	participating in the support forum.
+     50          
+     51          	http://www.FreeRTOS.org/training - Investing in training allows your team to
+     52          	be as productive as possible as early as possible.  Now you can receive
+     53          	FreeRTOS training directly from Richard Barry, CEO of Real Time Engineers
+     54          	Ltd, and the world's leading authority on the world's leading RTOS.
+     55          
+     56              http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+     57              including FreeRTOS+Trace - an indispensable productivity tool, a DOS
+     58              compatible FAT file system, and our tiny thread aware UDP/IP stack.
+     59          
+     60              http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
+     61              Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
+     62          
+     63              http://www.OpenRTOS.com - Real Time Engineers ltd. license FreeRTOS to High
+     64              Integrity Systems ltd. to sell under the OpenRTOS brand.  Low cost OpenRTOS
+     65              licenses offer ticketed support, indemnification and commercial middleware.
+     66          
+     67              http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+     68              engineered and independently SIL3 certified version for use in safety and
+     69              mission critical applications that require provable dependability.
+     70          
+     71              1 tab == 4 spaces!
+     72          */
+     73          
+     74          
+     75          /*
+     76           * Implementation of pvPortMalloc() and vPortFree() that relies on the
+     77           * compilers own malloc() and free() implementations.
+     78           *
+     79           * This file can only be used if the linker is configured to to generate
+     80           * a heap memory area.
+     81           *
+     82           * See heap_1.c, heap_2.c and heap_4.c for alternative implementations, and the
+     83           * memory management pages of http://www.FreeRTOS.org for more information.
+     84           */
+     85          
+     86          #include <stdlib.h>
+     87          
+     88          
+     89          /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+     90          all the API functions to use the MPU wrappers.  That should only be done when
+     91          task.h is included from an application file. */
+     92          #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     93          
+     94          #include "FreeRTOS.h"
+     95          #include "task.h"
+     96          
+     97          #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     98          
+     99          /*-----------------------------------------------------------*/
+    100          
+    101          void *pvPortMalloc( size_t xWantedSize )
+    102          {
+    103          void *pvReturn;
+    104          
+    105          	vTaskSuspendAll();
+    106          	{
+    107          		pvReturn = malloc( xWantedSize );
+    108          		traceMALLOC( pvReturn, xWantedSize );
+    109          	}
+    110          	( void ) xTaskResumeAll();
+    111          
+    112          	#if( configUSE_MALLOC_FAILED_HOOK == 1 )
+    113          	{
+    114          		if( pvReturn == NULL )
+    115          		{
+    116          			extern void vApplicationMallocFailedHook( void );
+    117          			vApplicationMallocFailedHook();
+    118          		}
+    119          	}
+    120          	#endif
+    121          
+    122          	return pvReturn;
+    123          }
+    124          /*-----------------------------------------------------------*/
+    125          
+    126          void vPortFree( void *pv )
+    127          {
+    128          	if( pv )
+    129          	{
+    130          		vTaskSuspendAll();
+    131          		{
+    132          			free( pv );
+    133          			traceFREE( pv, 0 );
+    134          		}
+    135          		( void ) xTaskResumeAll();
+    136          	}
+    137          }
+    138          
+    139          
+    140          #endif /* configFRTOS_MEMORY_SCHEME==3 */ /* << EST */
+    141          
+    142          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

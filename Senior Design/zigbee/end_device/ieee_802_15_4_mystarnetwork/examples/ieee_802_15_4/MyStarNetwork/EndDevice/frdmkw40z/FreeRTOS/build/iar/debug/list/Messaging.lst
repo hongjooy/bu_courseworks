@@ -1,0 +1,413 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:42
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Messaging\Source\Messaging.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Messaging\Source\Messaging.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\Messaging.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Messaging.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Messaging\Source\Messaging.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file Messaging.c
+      6          * This is a source file for the messaging module.
+      7          * It contains the implementation of inter-task messaging.
+      8          *
+      9          * Redistribution and use in source and binary forms, with or without modification,
+     10          * are permitted provided that the following conditions are met:
+     11          *
+     12          * o Redistributions of source code must retain the above copyright notice, this list
+     13          *   of conditions and the following disclaimer.
+     14          *
+     15          * o Redistributions in binary form must reproduce the above copyright notice, this
+     16          *   list of conditions and the following disclaimer in the documentation and/or
+     17          *   other materials provided with the distribution.
+     18          *
+     19          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     20          *   contributors may be used to endorse or promote products derived from this
+     21          *   software without specific prior written permission.
+     22          *
+     23          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     24          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     25          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     26          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     27          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     28          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     29          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     30          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     31          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     32          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     33          */
+     34          
+     35          /************************************************************************************
+     36          *************************************************************************************
+     37          * Include
+     38          *************************************************************************************
+     39          ************************************************************************************/
+     40          #include "EmbeddedTypes.h"
+     41          #include "MemManager.h"
+     42          #include "Messaging.h"
+     43          #include "fsl_os_abstraction.h"
+     44          
+     45          /************************************************************************************
+     46          *************************************************************************************
+     47          * Private macros
+     48          *************************************************************************************
+     49          ************************************************************************************/
+     50          
+     51          /************************************************************************************
+     52          *************************************************************************************
+     53          * Private prototypes
+     54          *************************************************************************************
+     55          ************************************************************************************/
+     56          
+     57          /************************************************************************************
+     58          *************************************************************************************
+     59          * Private type definitions
+     60          *************************************************************************************
+     61          ************************************************************************************/
+     62          
+     63          /************************************************************************************
+     64          *************************************************************************************
+     65          * Private memory declarations
+     66          *************************************************************************************
+     67          ************************************************************************************/
+     68          
+     69          /************************************************************************************
+     70          *************************************************************************************
+     71          * Public functions
+     72          *************************************************************************************
+     73          ************************************************************************************/
+     74          /*! *********************************************************************************
+     75          * \brief     Links element to the tail of the list for the message system. 
+     76          *
+     77          * \param[in] list - pointer to the list to insert into.
+     78          *            buffer - data block to add
+     79          *
+     80          * \return void.
+     81          *
+     82          * \pre Buffer must be allocated using MemManager.
+     83          *
+     84          * \post
+     85          *
+     86          * \remarks
+     87          *
+     88          ********************************************************************************** */
+     89          listStatus_t ListAddTailMsg(listHandle_t list, void* buffer)
+     90          {
+     91            buffer = (listHeader_t *)buffer - 1;
+     92            return ListAddTail(list, (listElementHandle_t)buffer);
+     93          }
+     94          
+     95          /*! *********************************************************************************
+     96          * \brief     Links element to the head of the list for the message system. 
+     97          *
+     98          * \param[in] list - pointer to the list to insert into.
+     99          *            buffer - data block to add
+    100          *
+    101          * \return listStatus_t.
+    102          *
+    103          * \pre Buffer must be allocated using MemManager.
+    104          *
+    105          * \post
+    106          *
+    107          * \remarks
+    108          *
+    109          ********************************************************************************** */
+    110          listStatus_t ListAddHeadMsg(listHandle_t list, void* buffer)
+    111          {
+    112            buffer = (listHeader_t *)buffer - 1;
+    113            return ListAddHead(list, (listElementHandle_t)buffer);
+    114          }
+    115          
+    116          /*! *********************************************************************************
+    117          * \brief     Links the new element before a specified element. 
+    118          *
+    119          * \param[in] pMsg - current element from list
+    120          *            pNewMsg - new element to add
+    121          *
+    122          * \return listStatus_t.
+    123          *
+    124          * \pre Buffer must be allocated using MemManager.
+    125          *
+    126          * \post
+    127          *
+    128          * \remarks
+    129          *
+    130          ********************************************************************************** */
+    131          listStatus_t ListAddPrevMsg( void* pMsg, void* pNewMsg )
+    132          {
+    133            listHeader_t *pElem = (listHeader_t*) pMsg - 1;
+    134            listHeader_t *pNewElem  = (listHeader_t*) pNewMsg - 1;
+    135                
+    136            return ListAddPrevElement((listElementHandle_t)pElem, (listElementHandle_t)pNewElem);            
+    137          }
+    138          
+    139          
+    140          /*! *********************************************************************************
+    141          * \brief     Unlinks element from the head of the list for the message system. 
+    142          *
+    143          * \param[in] list - pointer to the list to remove from.
+    144          *
+    145          * \return NULL if list is empty.
+    146          *         pointer to the data block if removal was successful.
+    147          *
+    148          * \pre Buffer must be allocated using MemManager.
+    149          *
+    150          * \post
+    151          *
+    152          * \remarks
+    153          *
+    154          ********************************************************************************** */
+    155          void *ListRemoveHeadMsg(listHandle_t list)
+    156          {
+    157            void *buffer;
+    158            
+    159            buffer = ListRemoveHead(list);
+    160            return buffer ? (listHeader_t *)buffer+1 : buffer;
+    161          }
+    162          
+    163          /*! *********************************************************************************
+    164          * \brief     Returns a pointer to the head of the list for the message system. 
+    165          *
+    166          * \param[in] list - pointer to the list
+    167          *
+    168          * \return NULL if list is empty.
+    169          *         pointer to the data block
+    170          *
+    171          * \pre
+    172          *
+    173          * \post
+    174          *
+    175          * \remarks
+    176          *
+    177          ********************************************************************************** */
+    178          void *ListGetHeadMsg( listHandle_t list )
+    179          {
+    180              listHeader_t *p;
+    181          
+    182              OSA_EnterCritical(kCriticalDisableInt);
+    183              
+    184              if( list->head )
+    185              {
+    186                  p = (listHeader_t*)(list->head) + 1;
+    187              }
+    188              else
+    189              {
+    190                  p = NULL;
+    191              }
+    192              
+    193              OSA_ExitCritical(kCriticalDisableInt);
+    194          
+    195              return p;
+    196          }
+    197          
+    198          /*! *********************************************************************************
+    199          * \brief     Returns a pointer to the data of the next message in the list.
+    200          *
+    201          * \param[in] buffer - pointer to the data of the current message.
+    202          *
+    203          * \return NULL if buffer is the last element of the list.
+    204          *         pointer to the next data block if exists.
+    205          *
+    206          * \pre Buffer must be allocated using MemManager.
+    207          *
+    208          * \post
+    209          *
+    210          * \remarks
+    211          *
+    212          ********************************************************************************** */
+    213          void *ListGetNextMsg( void* buffer )
+    214          {
+    215              listHeader_t *p;
+    216          
+    217              OSA_EnterCritical(kCriticalDisableInt);
+    218              
+    219              p = (listHeader_t*)buffer - 1;
+    220          
+    221              if( p->link.next )
+    222              {
+    223                  p = (listHeader_t*)(p->link.next) + 1;
+    224              }
+    225              else
+    226              {
+    227                  p = NULL;
+    228              }
+    229          
+    230              OSA_ExitCritical(kCriticalDisableInt);
+    231              
+    232              return p;
+    233          }
+    234          
+    235          /*! *********************************************************************************
+    236          * \brief     Unlik the specified element from the list.
+    237          *
+    238          * \param[in] buffer - pointer to the data of the current message.
+    239          *
+    240          * \return None.
+    241          *
+    242          * \pre Buffer must be allocated using MemManager.
+    243          *
+    244          * \post
+    245          *
+    246          * \remarks
+    247          *
+    248          ********************************************************************************** */
+    249          listStatus_t ListRemoveMsg( void* buffer )
+    250          {
+    251              listHeader_t *p = (listHeader_t*)buffer - 1;
+    252          
+    253              return ListRemoveElement( (listElementHandle_t)p );
+    254          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   ListAddHeadMsg
+        16   -> ListAddHead
+      24   ListAddPrevMsg
+        24   -> ListAddPrevElement
+      16   ListAddTailMsg
+        16   -> ListAddTail
+      16   ListGetHeadMsg
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   ListGetNextMsg
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   ListRemoveHeadMsg
+        16   -> ListRemoveHead
+      16   ListRemoveMsg
+        16   -> ListRemoveElement
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      18  ListAddHeadMsg
+      24  ListAddPrevMsg
+      18  ListAddTailMsg
+      38  ListGetHeadMsg
+      42  ListGetNextMsg
+      24  ListRemoveHeadMsg
+      16  ListRemoveMsg
+
+ 
+ 180 bytes in section .text
+ 
+ 180 bytes of CODE memory
+
+Errors: none
+Warnings: none

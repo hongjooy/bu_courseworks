@@ -1,0 +1,847 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:48
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPlmeData.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPlmeData.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PhyPlmeData.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyPlmeData.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPlmeData.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file PhyPlmeData.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "Phy.h"
+     40          #include "PhyInterface.h"
+     41          #include "EmbeddedTypes.h"
+     42          #include "FunctionLib.h"
+     43          
+     44          #include "fsl_os_abstraction.h"
+     45          #include "fsl_device_registers.h"
+     46          
+     47          
+     48          /*! *********************************************************************************
+     49          *************************************************************************************
+     50          * Private macros
+     51          *************************************************************************************
+     52          ********************************************************************************** */
+     53          #define PHY_PARAMETERS_VALIDATION 1
+     54          
+     55          
+     56          /*! *********************************************************************************
+     57          *************************************************************************************
+     58          * Private memory declarations
+     59          *************************************************************************************
+     60          ********************************************************************************** */
+     61          extern Phy_PhyLocalStruct_t     phyLocal;
+     62          #if gPhyRxRetryInterval_c
+     63          uint8_t gRxRetryTimer = gInvalidTimerId_c;
+     64          #endif
+     65          
+     66          
+     67          /*! *********************************************************************************
+     68          *************************************************************************************
+     69          * Private prototypes
+     70          *************************************************************************************
+     71          ********************************************************************************** */
+     72          #if gPhyRxRetryInterval_c
+     73          static void PhyRxRetry( uint32_t param );
+     74          #endif
+     75          
+     76          
+     77          /*! *********************************************************************************
+     78          *************************************************************************************
+     79          * Public functions
+     80          *************************************************************************************
+     81          ********************************************************************************** */
+     82          
+     83          /*! *********************************************************************************
+     84          * \brief  This function will start a TX sequence. The packet will be sent OTA
+     85          *
+     86          * \param[in]  pTxPacket   pointer to the TX packet structure
+     87          * \param[in]  pRxParams   pointer to RX parameters
+     88          * \param[in]  pTxParams   pointer to TX parameters
+     89          *
+     90          * \return  phyStatus_t
+     91          *
+     92          ********************************************************************************** */
+     93          phyStatus_t PhyPdDataRequest( pdDataReq_t *pTxPacket,
+     94                                        volatile phyRxParams_t *pRxParams,
+     95                                        volatile phyTxParams_t *pTxParams )
+     96          {
+     97              uint32_t irqSts;
+     98              uint8_t xcvseq;
+     99              uint8_t *pPB;
+    100          
+    101          #ifdef PHY_PARAMETERS_VALIDATION
+    102              if(NULL == pTxPacket)
+    103              {
+    104                  return gPhyInvalidParameter_c;
+    105              }
+    106          
+    107              /* if CCA required ... */
+    108              if( (pTxPacket->CCABeforeTx == gPhyCCAMode3_c) || (pTxPacket->CCABeforeTx == gPhyEnergyDetectMode_c))
+    109              { /* ... cannot perform other types than MODE1 and MODE2 */
+    110                  return gPhyInvalidParameter_c;
+    111              }
+    112          
+    113          #endif /* PHY_PARAMETERS_VALIDATION */
+    114          
+    115              if( gIdle_c != PhyGetSeqState() )
+    116              {
+    117                  return gPhyBusy_c;
+    118              }
+    119          
+    120              /* Load data into Packet Buffer */
+    121              pPB = (uint8_t*)&ZLL_PKT_BUFFER0;
+    122              pPB[0] = pTxPacket->psduLength + 2; /* including 2 bytes of FCS */
+    123              FLib_MemCpy( &pPB[1], pTxPacket->pPsdu, pTxPacket->psduLength );
+    124          
+    125              /* Perform CCA before TX if required */
+    126              if( pTxPacket->CCABeforeTx != gPhyNoCCABeforeTx_c )
+    127              {
+    128                  ZLL_BWR_PHY_CTRL_CCABFRTX(ZLL, 1);
+    129                  ZLL_BWR_PHY_CTRL_CCATYPE( ZLL, pTxPacket->CCABeforeTx );
+    130              }
+    131              else
+    132              {
+    133                  ZLL_BWR_PHY_CTRL_CCABFRTX(ZLL, 0);
+    134              }
+    135          
+    136              /* Slotted operation */
+    137              if( pTxPacket->slottedTx == gPhySlottedMode_c )
+    138              {
+    139                  ZLL_BWR_PHY_CTRL_SLOTTED(ZLL, 1);
+    140              }
+    141              else
+    142              {
+    143                  ZLL_BWR_PHY_CTRL_SLOTTED(ZLL, 0);
+    144              }
+    145          
+    146              /* Perform TxRxAck sequence if required by phyTxMode */
+    147              if(pTxPacket->ackRequired == gPhyRxAckRqd_c)
+    148              {
+    149                  PhyIsrPassRxParams(pRxParams);
+    150                  ZLL_BWR_PHY_CTRL_RXACKRQD(ZLL, 1);
+    151                  xcvseq = gTR_c;
+    152              }
+    153              else
+    154              {
+    155                  PhyIsrPassRxParams(NULL);
+    156                  ZLL_BWR_PHY_CTRL_RXACKRQD(ZLL, 0);
+    157                  xcvseq = gTX_c;
+    158              }
+    159          
+    160              /* Ensure that no spurious interrupts are raised(do not change TMR1 and TMR4 IRQ status) */
+    161              irqSts = ZLL_IRQSTS;
+    162              irqSts &= ~(ZLL_IRQSTS_TMR1IRQ_MASK | ZLL_IRQSTS_TMR4IRQ_MASK);
+    163              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    164              ZLL_IRQSTS = irqSts;
+    165          
+    166              /* Start the TX / TRX / CCA sequence */
+    167              ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, xcvseq );
+    168              /* Unmask SEQ interrupt */
+    169              ZLL_BWR_PHY_CTRL_SEQMSK(ZLL, 0);
+    170          
+    171              return gPhySuccess_c;
+    172          }
+    173          
+    174          /*! *********************************************************************************
+    175          * \brief  This function will start a RX sequence
+    176          *
+    177          * \param[in]  phyRxMode   slotted/unslotted
+    178          * \param[in]  pRxParams   pointer to RX parameters
+    179          *
+    180          * \return  phyStatus_t
+    181          *
+    182          ********************************************************************************** */
+    183          phyStatus_t PhyPlmeRxRequest( phySlottedMode_t phyRxMode, phyRxParams_t *  pRxParams )
+    184          {
+    185              uint32_t irqSts;
+    186          
+    187          #ifdef PHY_PARAMETERS_VALIDATION
+    188              if(NULL == pRxParams)
+    189              {
+    190                  return gPhyInvalidParameter_c;
+    191              }
+    192          #endif /* PHY_PARAMETERS_VALIDATION */
+    193          
+    194              if( gIdle_c != PhyGetSeqState() )
+    195              {
+    196                  return gPhyBusy_c;
+    197              }
+    198          
+    199              pRxParams->phyRxMode = phyRxMode;
+    200          
+    201              if( NULL == pRxParams->pRxData )
+    202              {
+    203                  pRxParams->pRxData = MEM_BufferAlloc(sizeof(pdDataToMacMessage_t) + gMaxPHYPacketSize_c);
+    204              }
+    205          
+    206              if( NULL == pRxParams->pRxData )
+    207              {
+    208          #if gPhyRxRetryInterval_c
+    209                  if( gRxRetryTimer == gInvalidTimerId_c )
+    210                  {
+    211                      phyTimeEvent_t event = {
+    212                          .timestamp = PhyTime_GetTimestamp() + gPhyRxRetryInterval_c,
+    213                          .parameter = 0,
+    214                          .callback  = PhyRxRetry,
+    215                      };
+    216                      
+    217                      gRxRetryTimer = PhyTime_ScheduleEvent( &event );
+    218                  }
+    219          #endif
+    220                  return gPhyTRxOff_c;   
+    221              }
+    222          
+    223              PhyIsrPassRxParams(pRxParams);
+    224          
+    225              pRxParams->pRxData->msgData.dataInd.pPsdu = 
+    226                  (uint8_t*)&pRxParams->pRxData->msgData.dataInd.pPsdu +
+    227                  sizeof(pRxParams->pRxData->msgData.dataInd.pPsdu);
+    228          
+    229              /* Slotted operation */
+    230              if(gPhySlottedMode_c == phyRxMode)
+    231              {
+    232                  ZLL_BWR_PHY_CTRL_SLOTTED(ZLL, 1);
+    233              }
+    234              else
+    235              {
+    236                  ZLL_BWR_PHY_CTRL_SLOTTED(ZLL, 0);
+    237              }
+    238          
+    239              /* Ensure that no spurious interrupts are raised, but do not change TMR1 and TMR4 IRQ status */
+    240              irqSts = ZLL_IRQSTS;
+    241              irqSts &= ~(ZLL_IRQSTS_TMR1IRQ_MASK | ZLL_IRQSTS_TMR4IRQ_MASK);
+    242              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    243              ZLL_IRQSTS = irqSts;
+    244          
+    245              /* Start the RX sequence */
+    246              ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gRX_c );
+    247              /* unmask SEQ interrupt */
+    248              ZLL_BWR_PHY_CTRL_SEQMSK(ZLL, 0);
+    249          
+    250              return gPhySuccess_c;
+    251          }
+    252          
+    253          /*! *********************************************************************************
+    254          * \brief  This function will start a CCA / CCCA sequence
+    255          *
+    256          * \param[in]  ccaParam   the type of CCA
+    257          * \param[in]  cccaMode   continuous or single CCA
+    258          *
+    259          * \return  phyStatus_t
+    260          *
+    261          ********************************************************************************** */
+    262          phyStatus_t PhyPlmeCcaEdRequest( phyCCAType_t ccaParam, phyContCCAMode_t cccaMode )
+    263          {
+    264              uint32_t irqSts;
+    265          
+    266          #ifdef PHY_PARAMETERS_VALIDATION
+    267              /* Check for illegal CCA type */
+    268              if( (ccaParam != gPhyCCAMode1_c) && (ccaParam != gPhyCCAMode2_c) && (ccaParam != gPhyCCAMode3_c) && (ccaParam != gPhyEnergyDetectMode_c))
+    269              {
+    270                  return gPhyInvalidParameter_c;
+    271              }
+    272          
+    273              /* Cannot perform Continuous CCA using ED type */
+    274              if( (ccaParam == gPhyEnergyDetectMode_c) && (cccaMode == gPhyContCcaEnabled) )
+    275              {
+    276                  return gPhyInvalidParameter_c;
+    277              }
+    278          #endif /* PHY_PARAMETERS_VALIDATION */
+    279          
+    280              if( gIdle_c != PhyGetSeqState() )
+    281              {
+    282                  return gPhyBusy_c;
+    283              }
+    284          
+    285              /* Write in PHY CTRL the desired type of CCA */
+    286              ZLL_BWR_PHY_CTRL_CCATYPE( ZLL, ccaParam );
+    287          
+    288              /* Ensure that no spurious interrupts are raised(do not change TMR1 and TMR4 IRQ status) */
+    289              irqSts = ZLL_IRQSTS;
+    290              irqSts &= ~(ZLL_IRQSTS_TMR1IRQ_MASK | ZLL_IRQSTS_TMR4IRQ_MASK);
+    291              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    292              ZLL_IRQSTS = irqSts;
+    293              /* Unmask SEQ interrupt */
+    294              ZLL_BWR_PHY_CTRL_SEQMSK(ZLL, 0);
+    295          
+    296              /* continuous CCA */
+    297              if(cccaMode == gPhyContCcaEnabled)
+    298              {
+    299                  /* start the continuous CCA sequence
+    300                     immediately or by TC2', depending on a previous PhyTimeSetEventTrigger() call) */
+    301                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gCCCA_c );
+    302              }
+    303              /* normal CCA (not continuous) */
+    304              else
+    305              {
+    306                  /* start the CCA or ED sequence (this depends on CcaType used)
+    307                     immediately or by TC2', depending on a previous PhyTimeSetEventTrigger() call) */
+    308                  ZLL_BWR_PHY_CTRL_XCVSEQ( ZLL, gCCA_c );
+    309              }
+    310              /* At the end of the scheduled sequence, an interrupt will occur:
+    311                 CCA , SEQ or TMR3 */
+    312          
+    313              return gPhySuccess_c;
+    314          }
+    315          
+    316          /*! *********************************************************************************
+    317          * \brief  This function will set the channel number for the specified PAN
+    318          *
+    319          * \param[in]   channel   new channel number
+    320          * \param[in]   pan       the PAN registers (0/1)
+    321          *
+    322          * \return  phyStatus_t
+    323          *
+    324          ********************************************************************************** */
+    325          phyStatus_t PhyPlmeSetCurrentChannelRequest
+    326          (
+    327            uint8_t channel,
+    328            uint8_t pan
+    329          )
+    330          {
+    331          
+    332          #ifdef PHY_PARAMETERS_VALIDATION
+    333            if((channel < 11) || (channel > 26))
+    334            {
+    335              return gPhyInvalidParameter_c;
+    336            }
+    337          #endif /* PHY_PARAMETERS_VALIDATION */
+    338          
+    339            if( !pan )
+    340                ZLL_WR_CHANNEL_NUM0( ZLL, channel );
+    341            else
+    342                ZLL_WR_CHANNEL_NUM1( ZLL, channel );
+    343          
+    344            return gPhySuccess_c;
+    345          }
+    346          
+    347          /*! *********************************************************************************
+    348          * \brief  This function will return the current channel for a specified PAN
+    349          *
+    350          * \param[in]   pan   the PAN registers (0/1)
+    351          *
+    352          * \return  uint8_t  current channel number
+    353          *
+    354          ********************************************************************************** */
+    355          uint8_t PhyPlmeGetCurrentChannelRequest
+    356          (
+    357            uint8_t pan
+    358          )
+    359          {
+    360            if( !pan )
+    361                return ZLL_CHANNEL_NUM0;
+    362            else
+    363                return ZLL_CHANNEL_NUM1;
+    364          }
+    365          
+    366          /*! *********************************************************************************
+    367          * \brief  This function will set the radio Tx power
+    368          *
+    369          * \param[in]   pwrStep   the Tx power
+    370          *
+    371          * \return  phyStatus_t
+    372          *
+    373          ********************************************************************************** */
+    374          phyStatus_t PhyPlmeSetPwrLevelRequest
+    375          (
+    376            uint8_t pwrStep
+    377          )
+    378          {
+    379          #ifdef PHY_PARAMETERS_VALIDATION
+    380            if((pwrStep < 3) || (pwrStep > 15))
+    381            {
+    382              return gPhyInvalidParameter_c;
+    383            }
+    384          #endif /* PHY_PARAMETERS_VALIDATION */
+    385          
+    386            ZLL_PA_PWR = pwrStep;
+    387            return gPhySuccess_c;
+    388          }
+    389          
+    390          /*! *********************************************************************************
+    391          * \brief  This function will return the radio Tx power
+    392          *
+    393          * \return  Power level
+    394          *
+    395          ********************************************************************************** */
+    396          uint8_t PhyPlmeGetPwrLevelRequest(void)
+    397          {
+    398              return (uint8_t)ZLL_PA_PWR;
+    399          }
+    400          
+    401          /*! *********************************************************************************
+    402          * \brief  This function will set the value of PHY PIBs
+    403          *
+    404          * \param[in]   pibId            the Id of the PIB
+    405          * \param[in]   pibValue         the new value of the PIB
+    406          * \param[in]   phyRegistrySet   the PAN registers (0/1)
+    407          * \param[in]   instanceId       the instance of the PHY
+    408          *
+    409          * \return  phyStatus_t
+    410          *
+    411          ********************************************************************************** */
+    412          phyStatus_t PhyPlmeSetPIBRequest(phyPibId_t pibId, uint64_t pibValue, uint8_t phyRegistrySet, instanceId_t instanceId)
+    413          {
+    414            phyStatus_t result = gPhySuccess_c;
+    415          
+    416            switch(pibId)
+    417            {
+    418              case gPhyPibCurrentChannel_c:
+    419              {
+    420                  bool_t value = !!(phyLocal.flags & gPhyFlagRxOnWhenIdle_c);
+    421          
+    422                  PhyPlmeSetRxOnWhenIdle(FALSE, instanceId);
+    423                  result = PhyPlmeSetCurrentChannelRequest((uint8_t) pibValue, phyRegistrySet);
+    424                  PhyPlmeSetRxOnWhenIdle(value, instanceId);
+    425              }
+    426              break;
+    427              case gPhyPibTransmitPower_c:
+    428              {
+    429                  result = PhyPlmeSetPwrLevelRequest((uint8_t) pibValue);
+    430              }
+    431              break;
+    432              case gPhyPibLongAddress_c:
+    433              {
+    434                  uint64_t longAddr = pibValue;
+    435                  result = PhyPpSetLongAddr((uint8_t *) &longAddr, phyRegistrySet);
+    436              }
+    437              break;
+    438              case gPhyPibShortAddress_c:
+    439              {
+    440                  uint16_t shortAddr = (uint16_t) pibValue;
+    441                  result = PhyPpSetShortAddr((uint8_t *) &shortAddr, phyRegistrySet);
+    442              }
+    443              break;
+    444              case gPhyPibPanId_c:
+    445              {
+    446                  uint16_t panId = (uint16_t) pibValue;
+    447                  result = PhyPpSetPanId((uint8_t *) &panId, phyRegistrySet);
+    448              }
+    449              break;
+    450              case gPhyPibPanCoordinator_c:
+    451              {
+    452                  bool_t macRole = (bool_t) pibValue;
+    453                  result = PhyPpSetMacRole(macRole, phyRegistrySet);
+    454              }
+    455              break;
+    456              case gPhyPibCurrentPage_c:
+    457              {
+    458                  /* Nothinh to do... */
+    459              }
+    460              break;
+    461              case gPhyPibPromiscuousMode_c:
+    462              {
+    463                  PhyPpSetPromiscuous((uint8_t)pibValue);
+    464              }
+    465              break;
+    466              case gPhyPibRxOnWhenIdle:
+    467              {
+    468                  PhyPlmeSetRxOnWhenIdle( (bool_t)pibValue, instanceId );
+    469              }
+    470              break;
+    471              case gPhyPibFrameWaitTime_c:
+    472              {
+    473                  PhyPlmeSetFrameWaitTime( (uint32_t)pibValue, instanceId );
+    474              }
+    475              break;
+    476              case gPhyPibDeferTxIfRxBusy_c:
+    477              {
+    478                  if( pibValue )
+    479                      phyLocal.flags |= gPhyFlagDeferTx_c;
+    480                  else
+    481                      phyLocal.flags &= ~gPhyFlagDeferTx_c;
+    482              }
+    483              break;
+    484              case gPhyPibLastTxAckFP_c:
+    485              {
+    486                  result = gPhyReadOnly_c;
+    487              }
+    488              break;
+    489              default:
+    490              {
+    491                  result = gPhyUnsupportedAttribute_c;
+    492              }
+    493              break;
+    494            }
+    495          
+    496            return result;
+    497          }
+    498          
+    499          /*! *********************************************************************************
+    500          * \brief  This function will return the value of PHY PIBs
+    501          *
+    502          * \param[in]   pibId            the Id of the PIB
+    503          * \param[out]  pibValue         pointer to a location where the value will be stored
+    504          * \param[in]   phyRegistrySet   the PAN registers (0/1)
+    505          * \param[in]   instanceId       the instance of the PHY
+    506          *
+    507          * \return  phyStatus_t
+    508          *
+    509          ********************************************************************************** */
+    510          phyStatus_t PhyPlmeGetPIBRequest(phyPibId_t pibId, uint64_t * pibValue, uint8_t phyRegistrySet, instanceId_t instanceId)
+    511          {
+    512              phyStatus_t result = gPhySuccess_c;
+    513              uint64_t value;
+    514              uint8_t size = 1;
+    515              
+    516              switch(pibId)
+    517              {
+    518                case gPhyPibCurrentChannel_c:
+    519                {
+    520                    value = (uint64_t) PhyPlmeGetCurrentChannelRequest(phyRegistrySet);
+    521                }
+    522                break;
+    523                case gPhyPibTransmitPower_c:
+    524                {
+    525                    value = PhyPlmeGetPwrLevelRequest();
+    526                }
+    527                break;
+    528                case gPhyPibLongAddress_c:
+    529                {
+    530                    size = 8;
+    531                    if( !phyRegistrySet )
+    532                    {
+    533                        value   = ZLL_RD_MACLONGADDRS0_MSB(ZLL);
+    534                        value <<= 32;
+    535                        value  |= ZLL_RD_MACLONGADDRS0_LSB(ZLL);
+    536                    }
+    537                    else
+    538                    {
+    539                        value   = ZLL_RD_MACLONGADDRS1_MSB(ZLL);
+    540                        value <<= 32;
+    541                        value  |= ZLL_RD_MACLONGADDRS1_LSB(ZLL);
+    542                    }
+    543                }
+    544                break;
+    545                case gPhyPibShortAddress_c:
+    546                {
+    547                    size = 2;
+    548                    if( !phyRegistrySet )
+    549                        value = ZLL_RD_MACSHORTADDRS0_MACSHORTADDRS0(ZLL);
+    550                    else
+    551                        value = ZLL_RD_MACSHORTADDRS1_MACSHORTADDRS1(ZLL);
+    552                }
+    553                break;
+    554                case gPhyPibPanId_c:
+    555                {
+    556                    size = 2;
+    557                    if( !phyRegistrySet )
+    558                        value = ZLL_RD_MACSHORTADDRS0_MACPANID0(ZLL);
+    559                    else
+    560                        value = ZLL_RD_MACSHORTADDRS1_MACPANID1(ZLL);
+    561                }
+    562                break;
+    563                case gPhyPibPanCoordinator_c:
+    564                {
+    565                    if( !phyRegistrySet )
+    566                        value = ZLL_RD_PHY_CTRL_PANCORDNTR0(ZLL);
+    567                    else
+    568                        value = ZLL_RD_DUAL_PAN_CTRL_PANCORDNTR1(ZLL);
+    569                }
+    570                break;
+    571                case gPhyPibRxOnWhenIdle:
+    572                {
+    573                    value = !!(phyLocal.flags & gPhyFlagRxOnWhenIdle_c);
+    574                }
+    575                break;
+    576                case gPhyPibFrameWaitTime_c:
+    577                {
+    578                    value = phyLocal.maxFrameWaitTime;
+    579                }
+    580                break;
+    581                case gPhyPibDeferTxIfRxBusy_c:
+    582                {
+    583                    value = !!(phyLocal.flags & gPhyFlagDeferTx_c);
+    584                }
+    585                break;
+    586                case gPhyPibLastTxAckFP_c:
+    587                {
+    588                    value = !!(phyLocal.flags & gPhyFlagTxAckFP_c);
+    589                }
+    590                break;
+    591                default:
+    592                {
+    593                    size = 0;
+    594                    result = gPhyUnsupportedAttribute_c;
+    595                }
+    596                break;
+    597              }
+    598          
+    599              /* Avoid unaligned memory access issues */
+    600              FLib_MemCpy(pibValue, &value, size);
+    601              return result;
+    602          }
+    603          
+    604          /************************************************************************************
+    605          *************************************************************************************
+    606          * Private functions
+    607          *************************************************************************************
+    608          ************************************************************************************/
+    609          
+    610          /*! *********************************************************************************
+    611          * \brief  This function try to restart the Rx
+    612          *
+    613          * \param[in]   param  phy Rx params
+    614          *
+    615          ********************************************************************************** */
+    616          #if gPhyRxRetryInterval_c
+    617          static void PhyRxRetry( uint32_t param )
+    618          {
+    619              volatile phyRxParams_t *pRxParams = &phyLocal.rxParams;
+    620              phyTime_t absEndTime = pRxParams->timeStamp;
+    621              absEndTime += pRxParams->duration;
+    622          
+    623              gRxRetryTimer = gInvalidTimerId_c;
+    624              if( PhyTime_GetTimestamp() < absEndTime )
+    625              {
+    626                  PhyPlmeRxRequest( pRxParams->phyRxMode, (phyRxParams_t*)pRxParams );
+    627              }
+    628              else
+    629              {
+    630                  Radio_Phy_TimeRxTimeoutIndication(param);
+    631              }
+    632          }
+    633          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   PhyPdDataRequest
+        32   -> FLib_MemCpy
+        32   -> PhyIsrPassRxParams
+        32   -> PhyPpGetState
+      16   PhyPlmeCcaEdRequest
+        16   -> PhyPpGetState
+       4   PhyPlmeGetCurrentChannelRequest
+      40   PhyPlmeGetPIBRequest
+        40   -> FLib_MemCpy
+        40   -> PhyPlmeGetCurrentChannelRequest
+        40   -> PhyPlmeGetPwrLevelRequest
+       0   PhyPlmeGetPwrLevelRequest
+      32   PhyPlmeRxRequest
+        32   -> MEM_BufferAlloc
+        32   -> PhyIsrPassRxParams
+        32   -> PhyPpGetState
+        32   -> PhyTime_GetTimestamp
+        32   -> PhyTime_ScheduleEvent
+        32   -> __aeabi_memcpy4
+       4   PhyPlmeSetCurrentChannelRequest
+      48   PhyPlmeSetPIBRequest
+        48   -> PhyPlmeSetCurrentChannelRequest
+        48   -> PhyPlmeSetFrameWaitTime
+        48   -> PhyPlmeSetPwrLevelRequest
+        48   -> PhyPlmeSetRxOnWhenIdle
+        48   -> PhyPpSetLongAddr
+        48   -> PhyPpSetMacRole
+        48   -> PhyPpSetPanId
+        48   -> PhyPpSetPromiscuous
+        48   -> PhyPpSetShortAddr
+       4   PhyPlmeSetPwrLevelRequest
+      24   PhyRxRetry
+        24   -> PhyPlmeRxRequest
+        24   -> PhyTime_GetTimestamp
+        24   -> Radio_Phy_TimeRxTimeoutIndication
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable8
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+      16  ?_0
+     204  PhyPdDataRequest
+     124  PhyPlmeCcaEdRequest
+      26  PhyPlmeGetCurrentChannelRequest
+     452  PhyPlmeGetPIBRequest
+       8  PhyPlmeGetPwrLevelRequest
+     172  PhyPlmeRxRequest
+      44  PhyPlmeSetCurrentChannelRequest
+     336  PhyPlmeSetPIBRequest
+      30  PhyPlmeSetPwrLevelRequest
+      60  PhyRxRetry
+       1  gRxRetryTimer
+
+ 
+     1 byte  in section .data
+    16 bytes in section .rodata
+ 1 564 bytes in section .text
+ 
+ 1 564 bytes of CODE  memory
+    16 bytes of CONST memory
+     1 byte  of DATA  memory
+
+Errors: none
+Warnings: none

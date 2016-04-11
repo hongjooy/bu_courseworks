@@ -1,0 +1,949 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:54
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SPI_Adapter\SPI_Adapter.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SPI_Adapter\SPI_Adapter.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\SPI_Adapter.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SPI_Adapter.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SPI_Adapter\SPI_Adapter.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file SPI_adapter.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "SPI_Adapter.h"
+     40          #include "pin_mux.h"
+     41          #include "panic.h"
+     42          #include "fsl_clock_manager.h"
+     43          #include "fsl_os_abstraction.h"
+     44          
+     45          #if FSL_FEATURE_SOC_DSPI_COUNT
+     46          #include "fsl_dspi_hal.h"
+     47          #else
+     48          #include "fsl_spi_hal.h"
+     49          #endif
+     50          
+     51          
+     52          /*! *********************************************************************************
+     53          *************************************************************************************
+     54          * Private macros
+     55          *************************************************************************************
+     56          ********************************************************************************** */
+     57          #ifndef gXcvrSpiInstance_c
+     58          #define gXcvrSpiInstance_c (0xFF)
+     59          #endif
+     60          
+     61          
+     62          /*! *********************************************************************************
+     63          *************************************************************************************
+     64          * Private type definitions
+     65          *************************************************************************************
+     66          ********************************************************************************** */
+     67          
+     68          
+     69          /*! *********************************************************************************
+     70          *************************************************************************************
+     71          * Private prototypes
+     72          *************************************************************************************
+     73          ********************************************************************************** */
+     74          static void SPIx_ISR(void);
+     75          static bool_t Spi_IsMaster(SPI_Type*);
+     76          static void Spi_SetIntState(SPI_Type*, bool_t);
+     77          static uint32_t Spi_ReadData(SPI_Type* baseAddr);
+     78          static void Spi_WriteData(SPI_Type*, spiState_t*, uint32_t);
+     79          
+     80          
+     81          /*! *********************************************************************************
+     82          *************************************************************************************
+     83          * Private memory declarations
+     84          *************************************************************************************
+     85          ********************************************************************************** */
+     86          /*! @brief Pointer to runtime state structure.*/
+     87          spiState_t * gpaSpiState[SPI_INSTANCE_COUNT];
+     88          /*! @brief Table of base pointers for SPI instances. */
+     89          static SPI_Type * const mSpiBase[SPI_INSTANCE_COUNT] = SPI_BASE_PTRS;
+     90          /*! @brief Table to save SPI IRQ enum numbers defined in CMSIS files. */
+     91          static const IRQn_Type mSpiIrqId[] = SPI_IRQS;
+     92          /*! @brief Table of SPI FIFO sizes per instance. */
+     93          #if FSL_FEATURE_SPI_FIFO_SIZE
+     94          const uint32_t mSpi_FifoSize[SPI_INSTANCE_COUNT] = FSL_FEATURE_SPI_FIFO_SIZEx;
+     95          #endif
+     96          /*! @brief Default DSPI configuration.*/
+     97          #if FSL_FEATURE_SOC_DSPI_COUNT
+     98          static const dspi_command_config_t mDefaultSpiCfg = {
+     99              .isChipSelectContinuous = FALSE,
+    100              .whichCtar = kDspiCtar0,
+    101              .whichPcs = kDspiPcs0,
+    102              .isEndOfQueue = FALSE,
+    103              .clearTransferCount = TRUE
+    104          };
+    105          #endif
+    106          
+    107          
+    108          /*! *********************************************************************************
+    109          *************************************************************************************
+    110          * Public functions
+    111          *************************************************************************************
+    112          ********************************************************************************** */
+    113          
+    114          /*! *********************************************************************************
+    115          * \brief   This function will initialize the SPI module
+    116          *
+    117          * \param[in] instance     The SPI module number
+    118          * \param[in] pSpiState    Pointer to a location where to store the SPI state
+    119          * \param[in] pfCallback   Pointer to a Callback function
+    120          * \param[in] cbParam      Parameter to be used in Callback function
+    121          *
+    122          * \return error code
+    123          *
+    124          ********************************************************************************** */
+    125          spiStatus_t Spi_Init(uint32_t instance, spiState_t* pSpiState, pfSPIx_TRxCB_t pfCallback, void* cbParam)
+    126          {
+    127              IRQn_Type spiIrq = mSpiIrqId[instance];
+    128              SPI_Type *baseAddr = mSpiBase[instance];
+    129          
+    130              if( !pSpiState || (instance == gXcvrSpiInstance_c) || (instance >= SPI_INSTANCE_COUNT))
+    131              {
+    132                  panic(0,(uint32_t)Spi_Init,0,0);
+    133                  return spiInvalidParameter;
+    134              }
+    135          
+    136              /* set SPI Pin Mux */    
+    137              configure_spi_pins(instance);
+    138              /* Enable SPI clock */
+    139              CLOCK_SYS_EnableSpiClock(instance);
+    140              /* Basic SPI initialization */
+    141          #if FSL_FEATURE_SOC_DSPI_COUNT
+    142              DSPI_HAL_Init(baseAddr);
+    143              DSPI_HAL_SetContinuousSckCmd(baseAddr, FALSE);
+    144              DSPI_HAL_SetPcsPolarityMode(baseAddr, kDspiPcs0, kDspiPcs_ActiveLow);
+    145              DSPI_HAL_SetFifoCmd(baseAddr, FALSE, FALSE);
+    146              DSPI_HAL_SetFlushFifoCmd(baseAddr, TRUE, TRUE);
+    147              DSPI_HAL_Enable(baseAddr);
+    148          #else
+    149              SPI_HAL_Init(baseAddr);
+    150          #if FSL_FEATURE_SPI_FIFO_SIZE
+    151              SPI_HAL_SetFifoMode(baseAddr, FALSE, kSpiTxFifoOneFourthEmpty, kSpiRxFifoOneHalfFull);
+    152          #endif
+    153              SPI_HAL_Enable(baseAddr);
+    154          #endif
+    155              /* Store Callback function and parameter */
+    156              gpaSpiState[instance] = pSpiState;
+    157              pSpiState->cb = pfCallback;
+    158              pSpiState->callbackParam = cbParam;
+    159              pSpiState->pRxData = NULL;
+    160              pSpiState->pTxData = NULL;
+    161              pSpiState->trxByteCount = 0;
+    162              pSpiState->txByteCount  = 0;
+    163              /* Overwrite old ISR */
+    164              (void)OSA_InstallIntHandler(spiIrq, SPIx_ISR);
+    165              /* set interrupt priority */
+    166              NVIC_SetPriority(spiIrq, gSpi_IsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    167              NVIC_ClearPendingIRQ(spiIrq);
+    168              NVIC_EnableIRQ(spiIrq);
+    169              return spiSuccess;
+    170          }
+    171          
+    172          
+    173          /*! *********************************************************************************
+    174          * \brief   This function will configure the SPI module
+    175          *
+    176          * \param[in] instance     The SPI module number
+    177          * \param[in] pConfig      Pointer to the configuration structure
+    178          *
+    179          * \return error code
+    180          *
+    181          ********************************************************************************** */
+    182          spiStatus_t Spi_Configure(uint32_t instance, spiBusConfig_t* pConfig)
+    183          {
+    184              bool_t intState;
+    185              SPI_Type *baseAddr = mSpiBase[instance];
+    186              spiState_t* pState = gpaSpiState[instance];
+    187              /* Default SPI configuration */
+    188          #if FSL_FEATURE_SOC_DSPI_COUNT
+    189              dspi_data_format_config_t dspiCfg = {
+    190                  .bitsPerFrame = 8,
+    191                  .clkPolarity  = kDspiClockPolarity_ActiveHigh,
+    192                  .clkPhase     = kDspiClockPhase_FirstEdge,
+    193                  .direction    = kDspiMsbFirst
+    194              };
+    195          #else
+    196              spi_clock_polarity_t clkPol     = kSpiClockPolarity_ActiveHigh;
+    197              spi_clock_phase_t clkPhase      = kSpiClockPhase_FirstEdge;
+    198              spi_shift_direction_t direction = kSpiMsbFirst;
+    199          #endif
+    200              
+    201              if( !pConfig || (instance >= SPI_INSTANCE_COUNT) )
+    202              {
+    203                  return spiInvalidParameter;
+    204              }
+    205          
+    206              /* Enable SPI IRQ is configured as Slave OR if Rx byte signaling is enabled*/
+    207              intState = !pConfig->master || pState->signalRxByte;
+    208          
+    209          #if FSL_FEATURE_SOC_DSPI_COUNT
+    210              DSPI_HAL_StopTransfer(baseAddr);
+    211              /* SPI Clock Polarity */    
+    212              if( !pConfig->clkActiveHigh )
+    213              {
+    214                  dspiCfg.clkPolarity = kDspiClockPolarity_ActiveLow;
+    215              }
+    216          
+    217              /* SPI Clock Phase */
+    218              if( !pConfig->clkPhaseFirstEdge )
+    219              {
+    220                  dspiCfg.clkPhase = kDspiClockPhase_SecondEdge;
+    221              }
+    222          
+    223              /* SPI shift direction */
+    224              if( !pConfig->MsbFirst )
+    225              {
+    226                  dspiCfg.direction = kDspiLsbFirst;
+    227              }
+    228          
+    229              /* Apply DSPI configuration */
+    230              DSPI_HAL_SetDataFormat(baseAddr, kDspiCtar0, &dspiCfg);
+    231              (void)DSPI_HAL_CalculateDelay(mSpiBase[instance], kDspiCtar0, kDspiAfterTransfer, CLOCK_SYS_GetSpiFreq(instance), 4000);
+    232          
+    233              if( pConfig->master )
+    234              {
+    235                  DSPI_HAL_SetMasterSlaveMode(baseAddr, kDspiMaster);
+    236                  DSPI_HAL_SetBaudRate(baseAddr, kDspiCtar0,  pConfig->bitsPerSec, CLOCK_SYS_GetSpiFreq(instance));
+    237                  pState->dspiCmd = DSPI_HAL_GetFormattedCommand(baseAddr, (dspi_command_config_t*)&mDefaultSpiCfg );
+    238              }
+    239              else
+    240              {
+    241                  DSPI_HAL_SetMasterSlaveMode(baseAddr, kDspiSlave);
+    242                  DSPI_HAL_WriteDataSlavemode(baseAddr, gSpi_DummyChar_d);
+    243              }
+    244          
+    245              DSPI_HAL_StartTransfer(baseAddr);
+    246              
+    247          #else /* FSL_FEATURE_SOC_DSPI_COUNT */
+    248              
+    249              /* SPI Clock Polarity */    
+    250              if( !pConfig->clkActiveHigh )
+    251              {
+    252                  clkPol = kSpiClockPolarity_ActiveLow;
+    253              }
+    254          
+    255              /* SPI Clock Phase */
+    256              if( !pConfig->clkPhaseFirstEdge )
+    257              {
+    258                  clkPhase = kSpiClockPhase_SecondEdge;
+    259              }
+    260          
+    261              /* SPI shift direction */
+    262              if( !pConfig->MsbFirst )
+    263              {
+    264                  direction = kSpiLsbFirst;
+    265              }
+    266          
+    267              /* Apply SPI configuration */
+    268              SPI_HAL_SetDataFormat(baseAddr, clkPol, clkPhase, direction);
+    269          
+    270          #if FSL_FEATURE_SPI_16BIT_TRANSFERS
+    271              SPI_HAL_Set8or16BitMode(baseAddr, kSpi8BitMode);
+    272          #endif
+    273          
+    274              if( pConfig->master )
+    275              {
+    276                  SPI_HAL_SetMasterSlave(baseAddr, kSpiMaster);
+    277                  SPI_HAL_SetBaud(baseAddr, pConfig->bitsPerSec, CLOCK_SYS_GetSpiFreq(instance));
+    278              }
+    279              else
+    280              {
+    281                  SPI_HAL_SetMasterSlave(baseAddr, kSpiSlave);
+    282              }
+    283          #endif /* FSL_FEATURE_SOC_DSPI_COUNT */
+    284          
+    285              Spi_SetIntState(baseAddr, intState);
+    286              
+    287              return spiSuccess;
+    288          }
+    289          
+    290          
+    291          /*! *********************************************************************************
+    292          * \brief   This function transfer data synchronously over SPI.
+    293          *          The Callback function will not run since the transfer ends when this function returns
+    294          *
+    295          * \param[in] instance     The SPI module number
+    296          * \param[in] pTxData      Pointer to the data to be sent over SPI
+    297                                    Can be NULL if there is no data to TX (RX only)
+    298          * \param[in] pRxData      Pointer to a location where received data will be stored.
+    299                                    Can be NULL if no RX data is expected (TX only).
+    300          * \param[in] size         Number of bytes o be transfered over the SPI
+    301          *
+    302          * \return error code
+    303          *
+    304          ********************************************************************************** */
+    305          spiStatus_t Spi_SyncTransfer(uint32_t instance, uint8_t* pTxData, uint8_t* pRxData, uint16_t size)
+    306          {
+    307              volatile uint32_t data;
+    308              SPI_Type *baseAddr = mSpiBase[instance];
+    309              spiState_t* pState = gpaSpiState[instance];
+    310              bool_t intState = !Spi_IsMaster(baseAddr) || pState->signalRxByte;
+    311          
+    312              /* Parameter validation */
+    313              if( (!pTxData && !pRxData) || (instance >= SPI_INSTANCE_COUNT) )
+    314              {
+    315                  return spiInvalidParameter;
+    316              }
+    317          
+    318              /* Check if SPI is Busy */
+    319              OSA_EnterCritical(kCriticalDisableInt);
+    320              if( pState->trxByteCount )
+    321              {
+    322                  OSA_ExitCritical(kCriticalDisableInt);
+    323                  return spiBusy;
+    324              }
+    325          
+    326              /* Mark SPI as busy*/
+    327              pState->trxByteCount = size;
+    328              /* Disable SPI interrupts */
+    329              Spi_SetIntState(baseAddr, FALSE);
+    330          #if FSL_FEATURE_SOC_DSPI_COUNT    
+    331              DSPI_HAL_ClearStatusFlag(baseAddr, kDspiTxComplete);
+    332              //DSPI_HAL_SetFlushFifoCmd(baseAddr, TRUE, TRUE);
+    333          #endif
+    334              OSA_ExitCritical(kCriticalDisableInt);
+    335              
+    336              while( size-- )
+    337              {
+    338                  if( pTxData )
+    339                  {
+    340                      data = *pTxData;
+    341                      pTxData++;
+    342                  }
+    343                  else
+    344                  {
+    345                      data = gSpi_DummyChar_d;
+    346                  }
+    347          
+    348                  /* Start SPI transfer */
+    349          #if FSL_FEATURE_SOC_DSPI_COUNT
+    350                  
+    351                  Spi_WriteData(baseAddr, pState, data);
+    352                  while( !DSPI_HAL_GetStatusFlag(baseAddr, kDspiTxComplete) );
+    353                  DSPI_HAL_ClearStatusFlag(baseAddr, kDspiTxComplete);
+    354          
+    355          #else /* FSL_FEATURE_SOC_DSPI_COUNT */
+    356          
+    357                  while( SPI_HAL_IsTxBuffEmptyPending(baseAddr) );
+    358                  Spi_WriteData(baseAddr, pState, data);
+    359                  while( SPI_HAL_IsTxBuffEmptyPending(baseAddr) );
+    360          #endif /* FSL_FEATURE_SOC_DSPI_COUNT */
+    361          
+    362                  data = Spi_ReadData(baseAddr);
+    363          
+    364                  if( pRxData )
+    365                  {
+    366                      *pRxData = data;
+    367                      pRxData++;
+    368                  }
+    369              }
+    370          
+    371              /* Mark SPI as Idle */
+    372              pState->trxByteCount = 0;
+    373              /* Restore SPI IRQ state */
+    374              Spi_SetIntState(baseAddr, intState);
+    375          
+    376              return spiSuccess;
+    377          }
+    378          
+    379          /*! *********************************************************************************
+    380          * \brief   This function transfer data asynchronously over SPI.
+    381          *          If a Callback function was registered, it will run at the end of the transfer
+    382          *
+    383          * \param[in] instance     The SPI module number
+    384          * \param[in] pTxData      Pointer to the data to be sent over SPI
+    385                                    Can be NULL if there is no data to TX (RX only)
+    386          * \param[in] pRxData      Pointer to a location where received data will be stored.
+    387                                    Can be NULL if no RX data is expected (TX only).
+    388          * \param[in] size         Number of bytes o be transfered over the SPI
+    389          *
+    390          * \return error code
+    391          *
+    392          ********************************************************************************** */
+    393          spiStatus_t Spi_AsyncTransfer(uint32_t instance, uint8_t* pTxData, uint8_t* pRxData, uint16_t size)
+    394          {
+    395              SPI_Type *baseAddr = mSpiBase[instance];
+    396              spiState_t* pState = gpaSpiState[instance];
+    397              
+    398              /* Parameter validation */
+    399              if( (!pTxData && !pRxData) || (instance >= SPI_INSTANCE_COUNT) )
+    400              {
+    401                  return spiInvalidParameter;
+    402              }
+    403          
+    404              /* Check if SPI is Busy */
+    405              OSA_EnterCritical(kCriticalDisableInt);
+    406              if( pState->trxByteCount )
+    407              {
+    408                  OSA_ExitCritical(kCriticalDisableInt);
+    409                  return spiBusy;
+    410              }
+    411          
+    412              /* Mark SPI as busy*/
+    413              pState->trxByteCount = size;
+    414              OSA_ExitCritical(kCriticalDisableInt);
+    415          
+    416              /* Fill transfer parameters */
+    417              pState->pTxData = pTxData;
+    418              pState->pRxData = pRxData;
+    419              pState->txByteCount = size;
+    420          
+    421          #if FSL_FEATURE_SOC_DSPI_COUNT
+    422              /* Fill the SPI Tx FIFO (if available, only Slave mode) */
+    423              DSPI_HAL_SetFlushFifoCmd(baseAddr, TRUE, TRUE);
+    424              DSPI_HAL_ClearStatusFlag(baseAddr, kDspiTxFifoFillRequest);
+    425          
+    426              while( DSPI_HAL_GetStatusFlag(baseAddr, kDspiTxFifoFillRequest) && pState->txByteCount )
+    427              {
+    428                  --pState->txByteCount;
+    429          
+    430                  if( pState->pTxData )
+    431                  {
+    432                      ((uint8_t*)&pState->dspiCmd)[0] = *pState->pTxData;
+    433                      ++pState->pTxData;
+    434                  }
+    435                  else
+    436                  {
+    437                      ((uint8_t*)&pState->dspiCmd)[0] = gSpi_DummyChar_d;
+    438                  }
+    439          
+    440                  /* Start SPI transfer */
+    441                  if( DSPI_HAL_IsMaster(baseAddr) )
+    442                  {
+    443                      DSPI_HAL_WriteCmdDataMastermode(baseAddr, pState->dspiCmd);
+    444                      break;
+    445                  }
+    446                  else
+    447                  {
+    448                      DSPI_HAL_WriteDataSlavemode(baseAddr, pState->dspiCmd);
+    449                  }
+    450          
+    451                  DSPI_HAL_ClearStatusFlag(baseAddr, kDspiTxFifoFillRequest);
+    452              }
+    453          #else /* FSL_FEATURE_SOC_DSPI_COUNT */
+    454          
+    455          #if FSL_FEATURE_SPI_FIFO_SIZE
+    456              while( !SPI_HAL_GetFifoStatusFlag(baseAddr, kSpiTxFifoFull) && pState->txByteCount )
+    457          #endif
+    458              {
+    459                  uint8_t data;
+    460          
+    461                  --pState->txByteCount;
+    462          
+    463                  if( pState->pTxData )
+    464                  {
+    465                      data = *pState->pTxData;
+    466                      ++pState->pTxData;
+    467                  }
+    468                  else
+    469                  {
+    470                      data = gSpi_DummyChar_d;
+    471                  }
+    472          
+    473                  Spi_WriteData(baseAddr, pState, data);
+    474          #if FSL_FEATURE_SPI_FIFO_SIZE
+    475                  if( !SPI_HAL_GetFifoCmd(baseAddr) || Spi_IsMaster(baseAddr) )
+    476                  {
+    477                      break;
+    478                  }
+    479          #endif
+    480              }
+    481          #endif /* FSL_FEATURE_SOC_DSPI_COUNT */
+    482          
+    483              /* Enable SPI IRQ */
+    484              Spi_SetIntState(baseAddr, TRUE);
+    485              
+    486              return spiSuccess;
+    487          }
+    488          
+    489          
+    490          /*! *********************************************************************************
+    491          *************************************************************************************
+    492          * Private functions
+    493          *************************************************************************************
+    494          ********************************************************************************* */
+    495          
+    496          /*! *********************************************************************************
+    497          * \brief   This is the ISR of the SPI module
+    498          *
+    499          ********************************************************************************** */
+    500          static void SPIx_ISR(void)
+    501          {
+    502              uint32_t    irq = __get_IPSR() - 16;
+    503              spiState_t *pState;
+    504              SPI_Type   *baseAddr;
+    505              uint32_t    instance;
+    506              uint32_t    data;
+    507              uint32_t    flags;
+    508          
+    509              /* Get SPI instance */
+    510              for( instance=0; instance<SPI_INSTANCE_COUNT; instance++ )
+    511              {
+    512                  if( irq == mSpiIrqId[instance] )
+    513                      break;
+    514              }
+    515          
+    516              pState = gpaSpiState[instance];
+    517              baseAddr = mSpiBase[instance];
+    518          
+    519              /* Data was transfered */
+    520              /* Clear status and read received byte */
+    521              while(
+    522          #if FSL_FEATURE_SOC_DSPI_COUNT
+    523                    DSPI_HAL_GetStatusFlag(baseAddr, kDspiRxFifoDrainRequest)
+    524          #else
+    525                    SPI_HAL_IsReadBuffFullPending(baseAddr)
+    526          #endif
+    527                   )
+    528              {
+    529                  flags = 0;
+    530                  data  = Spi_ReadData(baseAddr);
+    531          #if FSL_FEATURE_SOC_DSPI_COUNT
+    532                  DSPI_HAL_ClearStatusFlag(baseAddr, kDspiRxFifoDrainRequest);
+    533          #endif
+    534          
+    535                  if( pState->signalRxByte )
+    536                  {
+    537                      flags |= gSPI_ByteRxFlag_d;
+    538                  }
+    539                  
+    540                  if( pState->pRxData )
+    541                  {
+    542                      *pState->pRxData = data;
+    543                      ++pState->pRxData;
+    544                  }
+    545          
+    546                  if( pState->trxByteCount )
+    547                  {
+    548                      --pState->trxByteCount;
+    549                      /* Check if transfer is complete */
+    550                      if( !pState->trxByteCount )
+    551                      {
+    552                          if( Spi_IsMaster(baseAddr) )
+    553                          {
+    554                              /* Disable SPI IRQ if continuous SPI RX is not enabled */
+    555                              Spi_SetIntState(baseAddr, pState->signalRxByte);
+    556                          }
+    557                          else
+    558                          {
+    559                              Spi_WriteData(baseAddr, pState, gSpi_DummyChar_d);
+    560                          }
+    561                          
+    562                          if( pState->pTxData )
+    563                          {
+    564                              pState->pTxData = NULL;
+    565                              flags |= gSPI_TxEndFlag_d;
+    566                          }
+    567          
+    568                          if( pState->pRxData )
+    569                          {
+    570                              pState->pRxData = NULL;
+    571                              flags |= gSPI_RxEndFlag_d;
+    572                          }
+    573                      }
+    574                      /* Get next byte to transmit */
+    575                      else 
+    576                      {
+    577                          data = gSpi_DummyChar_d;
+    578                          
+    579                          if( pState->txByteCount )
+    580                          {
+    581                              --pState->txByteCount;
+    582          
+    583                              if( pState->pTxData )
+    584                              {
+    585                                  data = *pState->pTxData;
+    586                                  ++pState->pTxData;
+    587                              }
+    588                              
+    589                              Spi_WriteData(baseAddr, pState, data);
+    590                          }
+    591                          else if( Spi_IsMaster(baseAddr) )
+    592                          {
+    593                              Spi_WriteData(baseAddr, pState, data);
+    594                          }
+    595                      }
+    596                  }
+    597           
+    598                  /* Run callback function */
+    599                  if( pState->cb && flags )
+    600                  {
+    601                      pState->cb(flags, pState);
+    602                  }
+    603                  
+    604              }/* while(...) */
+    605              
+    606          }
+    607          
+    608          /*! *********************************************************************************
+    609          * \brief   SPI driver helper function used to write data into SPI HW
+    610          *
+    611          * \param[in] baseAddr  pointer to the SPI registers
+    612          * \param[in] pState    pointer to the SPI driver data
+    613          * \param[in] data      data to be sent over SPI
+    614          *
+    615          ********************************************************************************** */
+    616          static void Spi_WriteData(SPI_Type* baseAddr, spiState_t *pState, uint32_t data)
+    617          {
+    618          #if FSL_FEATURE_SOC_DSPI_COUNT
+    619              if( DSPI_HAL_IsMaster(baseAddr) )
+    620              {
+    621                  ((uint8_t*)&pState->dspiCmd)[0] = (uint8_t)data;
+    622                  DSPI_HAL_WriteCmdDataMastermode(baseAddr, pState->dspiCmd);
+    623              }
+    624              else
+    625              {
+    626                  DSPI_HAL_WriteDataSlavemode(baseAddr, data);
+    627              }
+    628              
+    629          #else
+    630              #if FSL_FEATURE_SPI_16BIT_TRANSFERS
+    631                  SPI_HAL_WriteDataLow(baseAddr, data);
+    632              #else
+    633                  SPI_HAL_WriteData(baseAddr, data);
+    634              #endif
+    635          #endif    
+    636          }
+    637          
+    638          /*! *********************************************************************************
+    639          * \brief   SPI driver helper function used to read data drom SPI HW
+    640          *
+    641          * \param[in] baseAddr  pointer to the SPI registers
+    642          *
+    643          * \return data from SPI HW.
+    644          *
+    645          ********************************************************************************** */
+    646          static uint32_t Spi_ReadData(SPI_Type* baseAddr)
+    647          {
+    648          #if FSL_FEATURE_SOC_DSPI_COUNT
+    649              return DSPI_HAL_ReadData(baseAddr);
+    650              
+    651          #else
+    652              #if FSL_FEATURE_SPI_16BIT_TRANSFERS
+    653                  return SPI_HAL_ReadDataLow(baseAddr);
+    654              #else
+    655                  return SPI_HAL_ReadData(baseAddr);
+    656              #endif
+    657          #endif    
+    658          }
+    659          
+    660          /*! *********************************************************************************
+    661          * \brief   SPI driver helper function used to determine the SPI role (Master/Slave)
+    662          *
+    663          * \param[in] baseAddr  pointer to the SPI registers
+    664          *
+    665          * \return TRUE is SPI is configured as Master, else FALSE.
+    666          *
+    667          ********************************************************************************** */
+    668          static bool_t Spi_IsMaster(SPI_Type* baseAddr)
+    669          {
+    670          #if FSL_FEATURE_SOC_DSPI_COUNT                
+    671              return  DSPI_HAL_IsMaster(baseAddr);
+    672          #else
+    673              return SPI_HAL_IsMaster(baseAddr);
+    674          #endif
+    675          }
+    676          
+    677          /*! *********************************************************************************
+    678          * \brief   SPI driver helper function used to enable/disable SPI interrupts
+    679          *
+    680          * \param[in] baseAddr  pointer to the SPI registers
+    681          * \param[in] state     the state of the SPI interrupts
+    682          *
+    683          ********************************************************************************** */
+    684          static void Spi_SetIntState(SPI_Type* baseAddr, bool_t state)
+    685          {
+    686          #if FSL_FEATURE_SOC_DSPI_COUNT
+    687              DSPI_HAL_SetIntMode(baseAddr, kDspiRxFifoDrainRequest, state);
+    688          #else
+    689              SPI_HAL_SetReceiveAndFaultIntCmd(baseAddr, state);
+    690          #endif
+    691          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DSPI_HAL_ClearStatusFlag
+       0   DSPI_HAL_Enable
+       0   DSPI_HAL_GetStatusFlag
+       0   DSPI_HAL_IsMaster
+       0   DSPI_HAL_ReadData
+       0   DSPI_HAL_SetContinuousSckCmd
+       0   DSPI_HAL_SetMasterSlaveMode
+       0   DSPI_HAL_StartTransfer
+       0   DSPI_HAL_StopTransfer
+       0   DSPI_HAL_WriteCmdDataMastermode
+       0   DSPI_HAL_WriteDataSlavemode
+       0   NVIC_ClearPendingIRQ
+       0   NVIC_EnableIRQ
+      20   NVIC_SetPriority
+      32   SPIx_ISR
+        32   -- Indirect call
+        32   -> DSPI_HAL_ClearStatusFlag
+        32   -> DSPI_HAL_GetStatusFlag
+        32   -> Spi_IsMaster
+        32   -> Spi_ReadData
+        32   -> Spi_SetIntState
+        32   -> Spi_WriteData
+      32   Spi_AsyncTransfer
+        32   -> DSPI_HAL_ClearStatusFlag
+        32   -> DSPI_HAL_GetStatusFlag
+        32   -> DSPI_HAL_IsMaster
+        32   -> DSPI_HAL_SetFlushFifoCmd
+        32   -> DSPI_HAL_WriteCmdDataMastermode
+        32   -> DSPI_HAL_WriteDataSlavemode
+        32   -> OSA_EnterCritical
+        32   -> OSA_ExitCritical
+        32   -> Spi_SetIntState
+      40   Spi_Configure
+        40   -> CLOCK_SYS_GetSpiFreq
+        40   -> DSPI_HAL_CalculateDelay
+        40   -> DSPI_HAL_GetFormattedCommand
+        40   -> DSPI_HAL_SetBaudRate
+        40   -> DSPI_HAL_SetDataFormat
+        40   -> DSPI_HAL_SetMasterSlaveMode
+        40   -> DSPI_HAL_StartTransfer
+        40   -> DSPI_HAL_StopTransfer
+        40   -> DSPI_HAL_WriteDataSlavemode
+        40   -> Spi_SetIntState
+      32   Spi_Init
+        32   -> CLOCK_SYS_EnableSpiClock
+        32   -> DSPI_HAL_Enable
+        32   -> DSPI_HAL_Init
+        32   -> DSPI_HAL_SetContinuousSckCmd
+        32   -> DSPI_HAL_SetFifoCmd
+        32   -> DSPI_HAL_SetFlushFifoCmd
+        32   -> DSPI_HAL_SetPcsPolarityMode
+        32   -> NVIC_ClearPendingIRQ
+        32   -> NVIC_EnableIRQ
+        32   -> NVIC_SetPriority
+        32   -> OSA_InstallIntHandler
+        32   -> configure_spi_pins
+        32   -> panic
+       8   Spi_IsMaster
+         8   -> DSPI_HAL_IsMaster
+       8   Spi_ReadData
+         8   -> DSPI_HAL_ReadData
+      16   Spi_SetIntState
+        16   -> DSPI_HAL_SetIntMode
+      40   Spi_SyncTransfer
+        40   -> DSPI_HAL_ClearStatusFlag
+        40   -> DSPI_HAL_GetStatusFlag
+        40   -> OSA_EnterCritical
+        40   -> OSA_ExitCritical
+        40   -> Spi_IsMaster
+        40   -> Spi_ReadData
+        40   -> Spi_SetIntState
+        40   -> Spi_WriteData
+      16   Spi_WriteData
+        16   -> DSPI_HAL_IsMaster
+        16   -> DSPI_HAL_WriteCmdDataMastermode
+        16   -> DSPI_HAL_WriteDataSlavemode
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       8  ?_0
+       8  DSPI_HAL_ClearStatusFlag
+      12  DSPI_HAL_Enable
+      12  DSPI_HAL_GetStatusFlag
+       8  DSPI_HAL_IsMaster
+       4  DSPI_HAL_ReadData
+      14  DSPI_HAL_SetContinuousSckCmd
+      14  DSPI_HAL_SetMasterSlaveMode
+      12  DSPI_HAL_StartTransfer
+      12  DSPI_HAL_StopTransfer
+       4  DSPI_HAL_WriteCmdDataMastermode
+       4  DSPI_HAL_WriteDataSlavemode
+      14  NVIC_ClearPendingIRQ
+      14  NVIC_EnableIRQ
+     132  NVIC_SetPriority
+     286  SPIx_ISR
+     202  Spi_AsyncTransfer
+     238  Spi_Configure
+     194  Spi_Init
+      12  Spi_IsMaster
+      12  Spi_ReadData
+      30  Spi_SetIntState
+     230  Spi_SyncTransfer
+      42  Spi_WriteData
+       8  gpaSpiState
+       8  mDefaultSpiCfg
+       8  mSpiBase
+       2  mSpiIrqId
+
+ 
+     8 bytes in section .bss
+    26 bytes in section .rodata
+ 1 566 bytes in section .text
+ 
+ 1 566 bytes of CODE  memory
+    26 bytes of CONST memory
+     8 bytes of DATA  memory
+
+Errors: none
+Warnings: none

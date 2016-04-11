@@ -1,0 +1,657 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:34
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\FunctionLib\FunctionLib.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\FunctionLib\FunctionLib.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\FunctionLib.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FunctionLib.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\FunctionLib\FunctionLib.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file FunctionLib.c
+      6          * This module contains various common functions like copy and compare routines.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          #include "FunctionLib.h"
+     35          
+     36          #if gUseToolchainMemFunc_d
+     37          #include <string.h>
+     38          #endif
+     39          
+     40          /*! *********************************************************************************
+     41          *************************************************************************************
+     42          * Private macros
+     43          *************************************************************************************
+     44          ********************************************************************************** */
+     45          
+     46          /*! *********************************************************************************
+     47          *************************************************************************************
+     48          * Private prototypes
+     49          *************************************************************************************
+     50          ********************************************************************************** */
+     51          
+     52          /*! *********************************************************************************
+     53          *************************************************************************************
+     54          * Private type definitions
+     55          *************************************************************************************
+     56          ********************************************************************************** */
+     57          
+     58          /*! *********************************************************************************
+     59          *************************************************************************************
+     60          * Public memory declarations
+     61          *************************************************************************************
+     62          ********************************************************************************** */
+     63          
+     64          /*! *********************************************************************************
+     65          *************************************************************************************
+     66          * Private memory declarations
+     67          *************************************************************************************
+     68          ********************************************************************************** */
+     69          
+     70          /*! *********************************************************************************
+     71          *************************************************************************************
+     72          * Public functions
+     73          *************************************************************************************
+     74          ********************************************************************************** */
+     75          
+     76          /*! *********************************************************************************
+     77          * \brief  This function copies bytes from one buffer to another.
+     78          *         The buffers should not overlap.
+     79          *
+     80          * \param[in, out]  pDst Pointer to the destination buffer.
+     81          *
+     82          * \param[in]  pSrc Pointer to the source buffer.
+     83          *
+     84          * \param[in]  cBytes Number of bytes to copy.
+     85          *
+     86          * \post  The source and destination buffers must not overlap.
+     87          *
+     88          * \remarks
+     89          *
+     90          ********************************************************************************** */
+     91          void FLib_MemCpy (void* pDst,
+     92                            void* pSrc,
+     93                            uint32_t cBytes)
+     94          {
+     95          #if gUseToolchainMemFunc_d
+     96              memcpy(pDst, pSrc, cBytes);
+     97          #else
+     98              while (cBytes)
+     99              {
+    100                  *((uint8_t*)pDst) = *((uint8_t*)pSrc);
+    101                  pDst = ((uint8_t*)pDst)+1;
+    102                  pSrc = ((uint8_t*)pSrc)+1;
+    103                  cBytes--;
+    104              }
+    105          #endif
+    106          }
+    107          
+    108          /*! *********************************************************************************
+    109          * \brief  This function copies the specified number of bytes from the
+    110          *         source address to the destination address.  No attempt is made
+    111          *         to handle overlapping copies to prevent loss of data.
+    112          *         The copying is optimized to avoid alignment problems, and attempts
+    113          *         to copy 32bit numbers optimally.
+    114          *
+    115          * \param[in]  from_ptr Pointer to the source buffer.
+    116          *
+    117          * \param[in, out]  to_ptr Pointer to the destination buffer.
+    118          *
+    119          * \param[in]  number_of_bytes  Number of bytes to copy (32 bit value).
+    120          *
+    121          * \post
+    122          *
+    123          * \remarks
+    124          *
+    125          ********************************************************************************** */
+    126          void FLib_MemCpyAligned32bit (void* to_ptr,
+    127                                        void* from_ptr,                              
+    128                                        register uint32_t number_of_bytes)
+    129          {
+    130              uint8_t*    from8_ptr = (uint8_t*)from_ptr;
+    131              uint8_t*    to8_ptr = (uint8_t*)to_ptr;
+    132              uint16_t*   from16_ptr = (uint16_t*)from_ptr;
+    133              uint16_t*   to16_ptr = (uint16_t*)to_ptr;
+    134              register    uint32_t* from32_ptr = (uint32_t*)from_ptr;
+    135              register    uint32_t* to32_ptr = (uint32_t*)to_ptr;
+    136          
+    137              register    uint32_t loops;
+    138          
+    139              if (number_of_bytes > 3)
+    140              {
+    141                  /* Try to align source on word */
+    142                  if ((uint32_t)from_ptr & 1)
+    143                  {
+    144                      from8_ptr = (uint8_t*)from_ptr;
+    145                      to8_ptr = (uint8_t*)to_ptr;
+    146          
+    147                      *to8_ptr++ = *from8_ptr++;
+    148          
+    149                      from_ptr = from8_ptr;
+    150                      to_ptr = to8_ptr;
+    151                      --number_of_bytes;
+    152                  }
+    153          
+    154                  /* Try to align source on longword */
+    155                  if ((uint32_t)from_ptr & 2)
+    156                  {
+    157                      from16_ptr = (uint16_t*)from_ptr;
+    158                      to16_ptr = (uint16_t*)to_ptr;
+    159          
+    160                      *to16_ptr++ = *from16_ptr++;
+    161          
+    162                      from_ptr = from16_ptr;
+    163                      to_ptr = to16_ptr;
+    164                      number_of_bytes -= 2;
+    165                  }
+    166          
+    167                  from32_ptr = (uint32_t*)from_ptr;
+    168                  to32_ptr = (uint32_t*)to_ptr;
+    169          
+    170                  for (loops = number_of_bytes >> 2; loops != 0; loops--)
+    171                  {
+    172                      *to32_ptr++ = *from32_ptr++;
+    173                  }
+    174          
+    175                  from_ptr = from32_ptr;
+    176                  to_ptr = to32_ptr;
+    177              }
+    178          
+    179              /* Copy all remaining bytes */
+    180              if (number_of_bytes & 2)
+    181              {
+    182                  from16_ptr = (uint16_t*)from_ptr;
+    183                  to16_ptr = (uint16_t*)to_ptr;
+    184          
+    185                  *to16_ptr++ = *from16_ptr++;
+    186          
+    187                  from_ptr = from16_ptr;
+    188                  to_ptr = to16_ptr;
+    189              }
+    190          
+    191              if (number_of_bytes & 1)
+    192              {
+    193                  *(uint8_t*)to_ptr = *(uint8_t*)from_ptr;
+    194              }
+    195          }
+    196          
+    197          
+    198          /*! *********************************************************************************
+    199          * \brief  Copy bytes from one buffer to another. The buffers should not overlap.
+    200          *         The function can copy in either direction. If 'dir' is TRUE, then the function
+    201          *         works like FLib_MemCpy(). If FALSE, the function swaps the buffer pointers
+    202          *         before copying.
+    203          *
+    204          * \param[in, out]  pBuf1 Pointer to the destination/source buffer.
+    205          *
+    206          * \param[in, out]  pBuf2 Pointer to the source/destination buffer.
+    207          *
+    208          * \param[in]  dir Direction to copy: pBuf2->pBuf1 if TRUE, pBuf1->pBuf2 if FALSE
+    209          *
+    210          * \param[in]  n Number of bytes to copy.
+    211          *
+    212          * \post  The source and destination buffers must not overlap.
+    213          *
+    214          * \remarks
+    215          *
+    216          ********************************************************************************** */
+    217          void FLib_MemCpyDir (void* pBuf1,
+    218                               void* pBuf2,
+    219                               bool_t dir,
+    220                               uint32_t n)
+    221          {
+    222              if (dir)
+    223              {
+    224                  FLib_MemCpy (pBuf1, pBuf2, n);
+    225              }
+    226              else
+    227              {
+    228                  FLib_MemCpy (pBuf2, pBuf1, n);
+    229              }
+    230          }
+    231          
+    232          
+    233          /*! *********************************************************************************
+    234          * \brief  The byte at index i from the source buffer is copied to index ((n-1) - i)
+    235          *         in the destination buffer (and vice versa).
+    236          *
+    237          * \param[in, out]  pDst Pointer to the destination buffer.
+    238          *
+    239          * \param[in]  pSrc Pointer to the source buffer.
+    240          *
+    241          * \param[in]  cBytes Number of bytes to copy.
+    242          *
+    243          * \post
+    244          *
+    245          * \remarks
+    246          *
+    247          ********************************************************************************** */
+    248          void FLib_MemCpyReverseOrder (void* pDst,
+    249                                        void* pSrc,
+    250                                        uint32_t cBytes)
+    251          {
+    252              if(cBytes == 0)
+    253              {
+    254                  return;
+    255              }
+    256              pDst = (uint8_t*)pDst + (uint32_t)(cBytes-1);
+    257              while (cBytes)
+    258              {
+    259                  *((uint8_t*)pDst) = *((uint8_t*)pSrc);
+    260                  pDst = (uint8_t*)pDst-1;
+    261                  pSrc = (uint8_t*)pSrc+1;
+    262                  cBytes--;
+    263              }
+    264          }
+    265          
+    266          
+    267          /*! *********************************************************************************
+    268          * \brief  This function compares two buffers.
+    269          *
+    270          * \param[in]  pData1  First buffer to compare.
+    271          *
+    272          * \param[in]  pData2  Second buffer to compare.
+    273          *
+    274          * \param[in]  cBytes Number of bytes to compare.
+    275          *
+    276          * \return  This function return TRUE if the buffers are equal and FALSE otherwise.
+    277          *
+    278          * \post
+    279          *
+    280          * \remarks
+    281          *
+    282          ********************************************************************************** */
+    283          bool_t FLib_MemCmp (void* pData1,    // IN: First memory block to compare
+    284                              void* pData2,    // IN: Second memory block to compare
+    285                              uint32_t cBytes  // IN: Number of bytes to compare.
+    286                             )
+    287          {
+    288          #if gUseToolchainMemFunc_d
+    289              if( memcmp(pData1, pData2, cBytes) )
+    290                  return FALSE;
+    291          #else
+    292              while (cBytes)
+    293              {
+    294                  if ( *((uint8_t *)pData1) != *((uint8_t *)pData2))
+    295                  {
+    296                      return FALSE;
+    297                  }
+    298          
+    299                  pData2 = (uint8_t* )pData2+1;
+    300                  pData1 = (uint8_t* )pData1+1;
+    301                  cBytes--;
+    302              }
+    303          #endif
+    304              return TRUE;
+    305          }
+    306          
+    307          
+    308          /*! *********************************************************************************
+    309          * \brief  This function resets all bytes in a specified buffer to a set value.
+    310          *
+    311          * \param[in,out]  pDst  Address of the buffer to set.
+    312          *
+    313          * \param[in]  value  Set value.
+    314          *
+    315          * \param[in]  cBytes Number of bytes to set in the buffer (maximum 255 bytes).
+    316          *
+    317          * \post
+    318          *
+    319          * \remarks
+    320          *
+    321          ********************************************************************************** */
+    322          void FLib_MemSet (void* pDst,
+    323                            uint8_t value,
+    324                            uint32_t cBytes)
+    325          {
+    326          #if gUseToolchainMemFunc_d
+    327              memset(pDst, value, cBytes);
+    328          #else
+    329              while (cBytes)
+    330              {
+    331                  ((uint8_t* )pDst)[--cBytes] = value;
+    332              }
+    333          #endif
+    334          }
+    335          
+    336          
+    337          /*! *********************************************************************************
+    338          * \brief  This function copies a buffer,
+    339          *         possibly into the same overlapping memory as it is taken from
+    340          *
+    341          * \param[in, out]  pDst Pointer to the destination buffer.
+    342          *
+    343          * \param[in]  pSrc Pointer to the source buffer.
+    344          *
+    345          * \param[in]  cBytes Number of bytes to copy.
+    346          *
+    347          * \post
+    348          *
+    349          * \remarks
+    350          *
+    351          ********************************************************************************** */
+    352          void FLib_MemInPlaceCpy (void* pDst,
+    353                                   void* pSrc,
+    354                                   uint32_t cBytes)
+    355          {
+    356              if (pDst != pSrc)
+    357              {
+    358                  /* Do nothing if copying to same position */
+    359                  if (pDst < pSrc)
+    360                  {
+    361                      /* If dst is before src in memory copy forward */
+    362          #if gUseToolchainMemFunc_d
+    363                      memcpy(pDst, pSrc, cBytes);
+    364          #else
+    365                      while (cBytes)
+    366                      {
+    367                          *((uint8_t*)pDst) = *((uint8_t*)pSrc);
+    368                          pDst = ((uint8_t*)pDst)+1;
+    369                          pSrc = ((uint8_t*)pSrc)+1;
+    370                          cBytes--;
+    371                      }
+    372          #endif
+    373                  }
+    374                  else
+    375                  {
+    376                      /* If dst is after src in memory copy backward */
+    377                      while(cBytes)
+    378                      {
+    379                          cBytes--;
+    380                          ((uint8_t* )pDst)[cBytes] = ((uint8_t* )pSrc)[cBytes];
+    381                      }
+    382                  }
+    383              }
+    384          }
+    385          
+    386          /*! *********************************************************************************
+    387          * \brief This function copies a 16bit value to an unaligned a memory block.
+    388          *
+    389          * \param[in, out]  pDst Pointer to the destination memory block.
+    390          *
+    391          * \param[in]  val16 The value to be copied.
+    392          *
+    393          ********************************************************************************** */
+    394          void FLib_MemCopy16Unaligned (void* pDst,
+    395                                        uint16_t val16)
+    396          {
+    397              uint8_t* pData = (uint8_t*)pDst;
+    398          
+    399              *pData++ = (uint8_t)(val16);
+    400              *pData =   (uint8_t)(val16 >> 8);
+    401          
+    402              return;
+    403          }
+    404          
+    405          
+    406          /*! *********************************************************************************
+    407          * \brief This function copies a 32bit value to an unaligned a memory block.
+    408          *
+    409          * \param[in, out]  pDst Pointer to the destination memory block.
+    410          *
+    411          * \param[in]  val32 The value to be copied.
+    412          *
+    413          ********************************************************************************** */
+    414          void FLib_MemCopy32Unaligned (void* pDst,
+    415                                        uint32_t val32)
+    416          {
+    417              uint8_t* pData = (uint8_t*)pDst;
+    418          
+    419              *pData++ = (uint8_t)(val32);
+    420              *pData++ = (uint8_t)(val32 >> 8);
+    421              *pData++ = (uint8_t)(val32 >> 16);
+    422              *pData++ = (uint8_t)(val32 >> 24);
+    423          
+    424              return;
+    425          }
+    426          
+    427          
+    428          /*! *********************************************************************************
+    429          * \brief This function copies a 64bit value to an unaligned a memory block.
+    430          *
+    431          * \param[in, out]  pDst Pointer to the destination memory block.
+    432          *
+    433          * \param[in]  val64 The value to be copied.
+    434          *
+    435          ********************************************************************************** */
+    436          void FLib_MemCopy64Unaligned (void* pDst,
+    437                                        uint64_t val64)
+    438          {
+    439              uint8_t* pData = (uint8_t*)pDst;
+    440          
+    441              *pData++ = (uint8_t)(val64);
+    442              *pData++ = (uint8_t)(val64 >> 8);
+    443              *pData++ = (uint8_t)(val64 >> 16);
+    444              *pData++ = (uint8_t)(val64 >> 24);
+    445              *pData++ = (uint8_t)(val64 >> 32);
+    446              *pData++ = (uint8_t)(val64 >> 40);
+    447              *pData++ = (uint8_t)(val64 >> 48);
+    448              *pData = (uint8_t)(val64 >> 56);
+    449          
+    450              return;
+    451          }
+    452          
+    453          
+    454          /*! *********************************************************************************
+    455          * \brief  This function adds an offset to a pointer.
+    456          *
+    457          * \param[in,out]  pPtr  Pointer to the pointer to add the offset to
+    458          *
+    459          * \param[in]  offset  Offset to add to the specified pointer.
+    460          *
+    461          * \post
+    462          *
+    463          * \remarks
+    464          *
+    465          ********************************************************************************** */
+    466          void FLib_AddOffsetToPointer (void** pPtr,
+    467                                        uint32_t offset)
+    468          {
+    469              (*pPtr) = ((uint8_t* )*pPtr) + offset;
+    470          }
+    471          
+    472          
+    473          /*! *********************************************************************************
+    474          * \brief  This function returns the length of a NULL terminated string.
+    475          *
+    476          * \param[in]  str  A NULL terminated string
+    477          *
+    478          * \return  the size of string in bytes
+    479          *
+    480          ********************************************************************************** */
+    481          uint32_t FLib_StrLen(char *str)
+    482          {
+    483          #if gUseToolchainMemFunc_d
+    484               return strlen(str);
+    485          #else
+    486              register uint32_t len=0;
+    487          
+    488              while(*str != '\0')
+    489              {
+    490                  str++;
+    491                  len++;
+    492              }
+    493          
+    494              return len;
+    495          #endif
+    496          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   FLib_AddOffsetToPointer
+       8   FLib_MemCmp
+       0   FLib_MemCopy16Unaligned
+       0   FLib_MemCopy32Unaligned
+      16   FLib_MemCopy64Unaligned
+       4   FLib_MemCpy
+      36   FLib_MemCpyAligned32bit
+      24   FLib_MemCpyDir
+        24   -> FLib_MemCpy
+       4   FLib_MemCpyReverseOrder
+       4   FLib_MemInPlaceCpy
+       4   FLib_MemSet
+       4   FLib_StrLen
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  FLib_AddOffsetToPointer
+      32  FLib_MemCmp
+      18  FLib_MemCopy16Unaligned
+      30  FLib_MemCopy32Unaligned
+      78  FLib_MemCopy64Unaligned
+      20  FLib_MemCpy
+     166  FLib_MemCpyAligned32bit
+      40  FLib_MemCpyDir
+      28  FLib_MemCpyReverseOrder
+      40  FLib_MemInPlaceCpy
+      14  FLib_MemSet
+      20  FLib_StrLen
+
+ 
+ 494 bytes in section .text
+ 
+ 494 bytes of CODE memory
+
+Errors: none
+Warnings: none

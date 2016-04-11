@@ -1,0 +1,1029 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:39
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Keyboard\Source\Keyboard.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Keyboard\Source\Keyboard.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\Keyboard.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\Keyboard.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\Keyboard\Source\Keyboard.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file Keyboard.c
+      6          * Description: Keyboard implementation file for ARM CORTEX-M4 processor.
+      7          *              The keyboard handling logic can understand one or more keys 
+      8          *              pressed simultaneous. 
+      9          *
+     10          * Redistribution and use in source and binary forms, with or without modification,
+     11          * are permitted provided that the following conditions are met:
+     12          *
+     13          * o Redistributions of source code must retain the above copyright notice, this list
+     14          *   of conditions and the following disclaimer.
+     15          *
+     16          * o Redistributions in binary form must reproduce the above copyright notice, this
+     17          *   list of conditions and the following disclaimer in the documentation and/or
+     18          *   other materials provided with the distribution.
+     19          *
+     20          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     21          *   contributors may be used to endorse or promote products derived from this
+     22          *   software without specific prior written permission.
+     23          *
+     24          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     25          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     26          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     27          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     28          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     29          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     30          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     31          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     32          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     33          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     34          */
+     35          #include "EmbeddedTypes.h"
+     36          #include "Keyboard.h"
+     37          #include "TimersManager.h"
+     38          
+     39          #include "board.h"
+     40          #include "fsl_gpio_driver.h"
+     41          #include "fsl_os_abstraction.h"
+     42          #include "Gpio_IrqAdapter.h"
+     43          
+     44          
+     45          /******************************************************************************
+     46          *******************************************************************************
+     47          * Private macros
+     48          *******************************************************************************
+     49          ******************************************************************************/
+     50          
+     51          /*
+     52          * Hardware settings
+     53          */
+     54          
+     55          #define gKeyboard_IsrPrio_c (0x80)
+     56          
+     57          #if gKeyBoardSupported_d
+     58              /* gSWITCHx_MASK_c is used for detecting which key is pressed */
+     59              #define gSWITCH1_MASK_c                 0x01
+     60              #define gSWITCH2_MASK_c                 0x02
+     61              #define gSWITCH3_MASK_c                 0x04
+     62              #define gSWITCH4_MASK_c                 0x08
+     63          #else
+     64              #define gSWITCH1_MASK_c                 0
+     65              #define gSWITCH2_MASK_c                 0
+     66              #define gSWITCH3_MASK_c                 0
+     67              #define gSWITCH4_MASK_c                 0
+     68          #endif /* gKeyBoardSupported_d */
+     69          
+     70          #if gKeyBoardSupported_d
+     71          /*
+     72           * Name: mNoKey_c
+     73           * Description: no key macro definition
+     74           */
+     75          #define mNoKey_c 0xff
+     76          #endif /* gKeyBoardSupported_d */
+     77          
+     78          /* Configuration check */
+     79          
+     80          #if (gKeyBoardSupported_d) && (gKBD_KeysCount_c > 4)
+     81          #error "Cannot support more than 4 switches"
+     82          #endif
+     83          
+     84          #if (gKeyBoardSupported_d) && (gKBD_KeysCount_c == 0)
+     85          #warning "KEYBOARD module is enabled but the pushbuttons count is ZERO"
+     86          #endif
+     87          
+     88          #if (gKeyBoardSupported_d) && (!gTMR_Enabled_d)
+     89          #warning "Keyboard scan cannot operate without the TIMER platform component"
+     90          #endif
+     91          
+     92          
+     93          /******************************************************************************
+     94          *******************************************************************************
+     95          * Private type definitions
+     96          *******************************************************************************
+     97          ******************************************************************************/
+     98          #if gKeyBoardSupported_d
+     99          /* 
+    100           * Name: KeyState_t
+    101           * Description: enumerated data type for key states
+    102           */
+    103          #if (gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c)
+    104          
+    105          typedef enum tag_KeyState{
+    106            mStateKeyIdle,        /* coming in for first time */
+    107            mStateKeyDetected,    /* got a key, waiting to see if it's a long key */
+    108            mStateKeyWaitRelease  /* got the long key, waiting for the release to go back to idle */
+    109          }KeyState_t;
+    110          
+    111          #elif (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c)
+    112          
+    113          typedef enum tag_KeyState {
+    114            mStateKeyDebounce,
+    115            mStateKeyHoldDetection,
+    116            mStateKeyHoldGen,
+    117          } KeyState_t;
+    118          
+    119          #endif /* gKeyEventNotificationMode_d */
+    120          #endif /* gKeyBoardSupported_d*/
+    121          
+    122          #if gKeyBoardSupported_d
+    123          /*
+    124           * Name:
+    125           * Description: switches scan result definition 
+    126           */
+    127          typedef uint32_t    switchScan_t;
+    128          #endif /* gKeyBoardSupported_d */
+    129          
+    130          
+    131          /******************************************************************************
+    132          *******************************************************************************
+    133          * Private prototypes
+    134          *******************************************************************************
+    135          ******************************************************************************/
+    136          
+    137          #if gKeyBoardSupported_d
+    138          /******************************************************************************
+    139           * Name: KbGpioInit
+    140           * Description: Initialize the GPIOs used by the keyboard (switches)
+    141           * Parameter(s): -
+    142           * Return: -
+    143           ******************************************************************************/
+    144          static void KbGpioInit
+    145          (
+    146              void
+    147          );
+    148          
+    149          #if gTMR_Enabled_d
+    150          
+    151          /******************************************************************************
+    152           * Name: KBD_KeySwitchPortGet
+    153           * Description: Gets the switch port
+    154           * Parameter(s): -
+    155           * Return: switch port value (pressed / not pressed keys)
+    156           ******************************************************************************/
+    157          static switchScan_t KBD_KeySwitchPortGet
+    158          (
+    159                  void
+    160          );
+    161          
+    162          /******************************************************************************
+    163           * Name: KBD_KeyCheck
+    164           * Description: Called to check if a key is still pressed
+    165           * Parameter(s): [IN] previousPressed - previously pressed key
+    166           * Return: TRUE if the key passed as argument is still pressed, FALSE otherwise
+    167           ******************************************************************************/
+    168          #if ((gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) ||  \
+    169              (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c))
+    170          static bool_t KBD_KeyCheck
+    171          (
+    172              switchScan_t previousPressed
+    173          );
+    174          #endif /* #if ((gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) ||    \
+    175              (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c)) */
+    176          
+    177          /******************************************************************************
+    178           * Name: KeyScan
+    179           * Description: scan the keyboard switches and detects key press/hold/release 
+    180           *              or short/long press
+    181           * Parameter(s): [IN]timerId - key scan timer ID
+    182           * Return: -
+    183           ******************************************************************************/
+    184          static void KeyScan
+    185          (
+    186              uint8_t timerId
+    187          );
+    188          #endif /* #if gTMR_Enabled_d */
+    189          
+    190          static bool_t Switch_CheckIRQ
+    191          (
+    192              uint32_t idx
+    193          );
+    194          #endif /* gKeyBoardSupported_d */
+    195          
+    196          /******************************************************************************
+    197          *******************************************************************************
+    198          * Private memory declarations
+    199          *******************************************************************************
+    200          ******************************************************************************/
+    201          
+    202          #if gKeyBoardSupported_d
+    203          
+    204          #if (gKeyEventNotificationMode_d == gKbdEventPressOnly_c)
+    205          /*
+    206           * Name: mKeyPressed
+    207           * Description: Keys pressed mask; each bit represents a key / electrode; 
+    208           *             (i.e. bit0 -> KEY0, bit1 -> KEY1, etc)  
+    209           */
+    210          static volatile uint16_t mKeyPressed;
+    211          #endif /* gKeyEventNotificationMode_d == gKbdEventPressOnly_c */
+    212          
+    213          #if (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c)
+    214          
+    215          #if gKeyBoardSupported_d
+    216          #if gTMR_Enabled_d
+    217          /*
+    218           * Name: mKbdHoldDectionKeyCount
+    219           * Description: counter used for key hold detection
+    220           */
+    221          static uint16_t       mKbdHoldDectionKeyCount;
+    222          
+    223          /*
+    224           * Name: mKbdHoldGenKeyCount
+    225           * Description: counter used for key hold generation
+    226           */
+    227          static uint16_t       mKbdHoldGenKeyCount;
+    228          #endif /* #if gTMR_Enabled_d */
+    229          #endif /* gKeyBoardSupported_d */
+    230          #endif /* gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c */
+    231          
+    232          #if ( (gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) || (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c) ) 
+    233          
+    234          #if gKeyBoardSupported_d
+    235          #if gTMR_Enabled_d
+    236          /*
+    237           * Name: mSwitch_SCAN
+    238           * Description: switch scan result
+    239           */
+    240          static uint32_t mSwitch_SCAN;
+    241          
+    242          #if (gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c)
+    243          /*
+    244           * Name: mKeyState
+    245           * Description: key scan state variable used in the scanning state machine
+    246           */
+    247          static uint8_t mKeyState = mStateKeyIdle;
+    248          
+    249          /*
+    250           * Name: mLongKeyCount
+    251           * Description: self explanatory
+    252           */
+    253          static uint8_t mLongKeyCount;
+    254          #elif (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c)
+    255          /*
+    256           * Name: mKeyState
+    257           * Description: key scan state variable used in the scanning state machine
+    258           */
+    259          static uint8_t mKeyState = mStateKeyDebounce;
+    260          
+    261          #endif /* gKeyEventNotificationMode_d */
+    262          #endif /* #if gTMR_Enabled_d */
+    263          #endif /* gKeyBoardSupported_d */
+    264          #endif /* (gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) || (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c) */
+    265          
+    266          /*
+    267           * Name: pressedKey
+    268           * Description: pressed key number
+    269           */
+    270          #if gKeyBoardSupported_d
+    271          #if gTMR_Enabled_d
+    272          static uint8_t pressedKey;
+    273          #endif
+    274          #endif
+    275          
+    276          /*
+    277           * Name: mKeyScanTimerID
+    278           * Description: timer ID used for key scanning
+    279           */
+    280          tmrTimerID_t mKeyScanTimerID = gTmrInvalidTimerID_c;
+    281          
+    282          /*
+    283           * Name: mpfKeyFunction
+    284           * Description: pointer to the application callback function
+    285           */
+    286          static KBDFunction_t mpfKeyFunction = NULL;
+    287          
+    288          static const uint32_t mSwNames[] = {
+    289          #if gKBD_KeysCount_c > 0
+    290              kGpioSW1,
+    291          #endif
+    292          #if gKBD_KeysCount_c > 1
+    293              kGpioSW2,
+    294          #endif
+    295          #if gKBD_KeysCount_c > 2
+    296              kGpioSW3,
+    297          #endif
+    298          #if gKBD_KeysCount_c > 3
+    299              kGpioSW4,
+    300          #endif
+    301          };
+    302          
+    303          #endif /* gKeyBoardSupported_d */
+    304          
+    305          /******************************************************************************
+    306          *******************************************************************************
+    307          * Private functions
+    308          *******************************************************************************
+    309          ******************************************************************************/
+    310          #if gKeyBoardSupported_d
+    311          /******************************************************************************
+    312           * Name: KbGpioInit
+    313           * Description: Initialize the GPIOs used by the keyboard (switches)
+    314           * Parameter(s): -
+    315           * Return: -
+    316           ******************************************************************************/
+    317          static void KbGpioInit
+    318          (
+    319              void
+    320          )
+    321          {
+    322              uint32_t i;
+    323           
+    324              for( i=0; i<gKBD_KeysCount_c; i++ )
+    325              {
+    326                  /* Initialize KBD pins. Function also sets pin MUX as GPIO */
+    327                  GPIO_DRV_InputPinInit(&switchPins[i]);
+    328              }
+    329          }
+    330          
+    331          void KBD_Deinit
+    332          (
+    333                void
+    334          )
+    335          {
+    336              uint8_t i;
+    337              TMR_FreeTimer(mKeyScanTimerID);
+    338          
+    339              for( i=0; i<gKBD_KeysCount_c; i++ )
+    340              {
+    341                  GpioUninstallIsr(switchPins[i].pinName);
+    342              }
+    343          }
+    344          
+    345          #if gTMR_Enabled_d
+    346          
+    347          /******************************************************************************
+    348           * Name: KBD_KeySwitchPortGet
+    349           * Description: Gets the switch port
+    350           * Parameter(s): -
+    351           * Return: switch port value (pressed / not pressed keys)
+    352           ******************************************************************************/
+    353          static switchScan_t KBD_KeySwitchPortGet
+    354          (
+    355          void
+    356          )
+    357          {
+    358              uint32_t portScan, i;
+    359              pressedKey = mNoKey_c;
+    360          
+    361              for( i=0, portScan=0; i<gKBD_KeysCount_c; i++ )
+    362              {
+    363                  if( GPIO_DRV_ReadPinInput(mSwNames[i]) == 0 )
+    364                  {
+    365                      portScan |= (1 << i);
+    366                  }
+    367              }
+    368          
+    369          #if gSWITCH1_MASK_c 
+    370              if(portScan & gSWITCH1_MASK_c)
+    371                  pressedKey = 0;
+    372          #if (gSWITCH2_MASK_c | gSWITCH3_MASK_c | gSWITCH4_MASK_c)
+    373              else
+    374          #endif
+    375          #endif 
+    376                  
+    377          #if gSWITCH2_MASK_c
+    378                  if(portScan & gSWITCH2_MASK_c)
+    379                      pressedKey = 1;
+    380          #if(gSWITCH3_MASK_c | gSWITCH4_MASK_c)
+    381                  else
+    382          #endif 
+    383          #endif 
+    384                      
+    385          #if gSWITCH3_MASK_c
+    386                      if(portScan & gSWITCH3_MASK_c)
+    387                          pressedKey = 2;
+    388          #if gSWITCH4_MASK_c
+    389                      else
+    390          #endif
+    391          #endif 
+    392                          
+    393          #if gSWITCH4_MASK_c 
+    394                          if(portScan & gSWITCH4_MASK_c)
+    395                              pressedKey = 3;
+    396          #endif
+    397                      
+    398                      return portScan;
+    399          }
+    400          
+    401          /******************************************************************************
+    402           * Name: KBD_KeyCheck
+    403           * Description: Called to check if a key is still pressed
+    404           * Parameter(s): [IN] previousPressed - previously pressed key
+    405           * Return: TRUE if the key passed as argument is still pressed, FALSE otherwise
+    406           ******************************************************************************/
+    407          #if ((gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) ||  \
+    408              (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c))
+    409          static bool_t KBD_KeyCheck
+    410          (
+    411              switchScan_t previousPressed
+    412          )
+    413          {
+    414              bool_t pressed = FALSE;
+    415              uint32_t portScan, i;
+    416              uint8_t key = mNoKey_c;
+    417          
+    418              (void)previousPressed; /* avoid compiler warnings */
+    419          
+    420              for( i=0, portScan=0; i<gKBD_KeysCount_c; i++ )
+    421              {
+    422                  if( GPIO_DRV_ReadPinInput(mSwNames[i]) == 0 )
+    423                  {
+    424                      portScan |= (1 << i);
+    425                  }
+    426              }
+    427              
+    428          #if gSWITCH1_MASK_c
+    429              if(portScan & gSWITCH1_MASK_c)
+    430                  key = 0;
+    431          #if(gSWITCH2_MASK_c | gSWITCH3_MASK_c | gSWITCH4_MASK_c) 
+    432              else 
+    433          #endif
+    434          #endif 
+    435          
+    436          #if gSWITCH2_MASK_c
+    437                  if(portScan & gSWITCH2_MASK_c)
+    438                      key = 1;
+    439          #if(gSWITCH3_MASK_c | gSWITCH4_MASK_c)
+    440                  else
+    441          #endif
+    442          #endif 
+    443          
+    444          #if gSWITCH3_MASK_c
+    445                      if(portScan & gSWITCH3_MASK_c)
+    446                          key = 2;
+    447          #if gSWITCH4_MASK_c
+    448                      else
+    449          #endif
+    450          #endif  
+    451          
+    452          #if gSWITCH4_MASK_c
+    453                          if(portScan & gSWITCH4_MASK_c)
+    454                              key = 3;
+    455          #endif 
+    456              /* Check if the switch is still pressed */
+    457              if(pressedKey == key)
+    458              {
+    459                  pressed = TRUE;
+    460              }
+    461          
+    462              return pressed;
+    463          }
+    464          #endif /*#if ((gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c) || \
+    465              (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c))*/
+    466          
+    467          
+    468          /******************************************************************************
+    469           * Name: KeyScan
+    470           * Description: scan the keyboard switches and detects key press/hold/release 
+    471           *              or short/long press
+    472           * Parameter(s): [IN]timerId - key scan timer ID
+    473           * Return: -
+    474           ******************************************************************************/
+    475          #if (gKeyEventNotificationMode_d == gKbdEventPressOnly_c)
+    476          static void KeyScan
+    477          (
+    478              uint8_t timerId
+    479          )
+    480          {   
+    481              if(KBD_KeySwitchPortGet())
+    482              {
+    483                  TMR_StopTimer(timerId);
+    484          
+    485                  mpfKeyFunction(1<<pressedKey); /* bits 0..3 are for keyboard */
+    486              }   
+    487          }
+    488          
+    489          #elif (gKeyEventNotificationMode_d == gKbdEventShortLongPressMode_c)
+    490          static void KeyScan
+    491          (
+    492                  uint8_t timerId
+    493          )
+    494          {
+    495              uint8_t keyBase;
+    496              uint32_t portScan, i;
+    497          
+    498              switch(mKeyState) 
+    499              {
+    500          
+    501              /* got a fresh key */
+    502              case mStateKeyIdle:      
+    503                  mSwitch_SCAN = KBD_KeySwitchPortGet();
+    504                  if(mSwitch_SCAN != 0)
+    505                  {        
+    506                      mKeyState = mStateKeyDetected;
+    507                      mLongKeyCount = 0;
+    508                  }
+    509                  else
+    510                  {
+    511                      TMR_StopTimer(timerId); 
+    512                  }
+    513                  break;
+    514          
+    515                  /* a key was detected. Has it been released or still being pressed? */
+    516              case mStateKeyDetected:
+    517                  keyBase = 0;  /* assume no key */
+    518          
+    519                  /* Check to see if the key is still pressed. Ignore other pressed keys */
+    520                  if( KBD_KeyCheck(mSwitch_SCAN) ) 
+    521                  {
+    522                      mLongKeyCount++;
+    523          
+    524                      if(mLongKeyCount >= gKbdLongKeyIterations_c) 
+    525                      {
+    526                          keyBase = gKBD_EventLongPB1_c;
+    527                      }
+    528                  }
+    529                  else 
+    530                  {     
+    531                      /* short key press */
+    532                      keyBase = gKBD_EventPB1_c;
+    533                  }
+    534          
+    535                  if(keyBase) 
+    536                  {       
+    537                      /* if a key was pressed, send it */
+    538                      if(pressedKey != mNoKey_c)
+    539                      {
+    540                          mpfKeyFunction(keyBase + pressedKey);
+    541                      }
+    542          
+    543                      /* whether we sent a key or not, wait to go back to keyboard  */
+    544                      mKeyState = mStateKeyWaitRelease;
+    545                  }
+    546                  break;
+    547          
+    548                  /* got the long key, waiting for the release to go back to idle */
+    549              case mStateKeyWaitRelease:      
+    550                  /* wait for the release before going back to idle */  
+    551                  for( i=0, portScan=0; i<gKBD_KeysCount_c; i++ )
+    552                  {
+    553                      if( GPIO_DRV_ReadPinInput(mSwNames[i]) == 0 )
+    554                      {
+    555                          portScan |= (1 << i);
+    556                      }
+    557                  }
+    558          
+    559                  if((mSwitch_SCAN == 0) || (portScan == 0)) 
+    560                  {
+    561                      mKeyState = mStateKeyIdle;
+    562                      TMR_StopTimer(timerId);                
+    563                  }
+    564                  break;        
+    565              default:
+    566                  break;
+    567              }
+    568          }
+    569          
+    570          #elif (gKeyEventNotificationMode_d == gKbdEventPressHoldReleaseMode_c)
+    571          static void KeyScan
+    572          (
+    573                  uint8_t timerId
+    574          )
+    575          {
+    576              uint32_t portScan, i;
+    577            
+    578              switch(mKeyState) 
+    579              {    
+    580              case mStateKeyDebounce:
+    581                  mSwitch_SCAN = KBD_KeySwitchPortGet();
+    582                  if(mSwitch_SCAN != 0) 
+    583                  {
+    584                      mKeyState =  mStateKeyHoldDetection;
+    585                      mKbdHoldDectionKeyCount = 0; 
+    586                      //Generate press event indication     
+    587                      if(pressedKey != mNoKey_c) 
+    588                      {
+    589                          mpfKeyFunction(gKBD_EventPressPB1_c + pressedKey);           
+    590                      }
+    591                  } 
+    592                  else 
+    593                  {
+    594                      TMR_StopTimer(timerId);
+    595                  }      
+    596                  break;
+    597              case mStateKeyHoldDetection:
+    598                  if( KBD_KeyCheck(mSwitch_SCAN) ) 
+    599                  {
+    600                      mKbdHoldDectionKeyCount++;        
+    601                      if (mKbdHoldDectionKeyCount >= gKbdFirstHoldDetectIterations_c) 
+    602                      {
+    603                          //first hold event detected - generate hold event
+    604                          if(pressedKey != mNoKey_c) 
+    605                          {
+    606                              mpfKeyFunction(gKBD_EventHoldPB1_c + pressedKey);                       
+    607                          }                    
+    608                          mKbdHoldGenKeyCount = 0;
+    609                          mKeyState = mStateKeyHoldGen;
+    610                      }
+    611                  } 
+    612                  else 
+    613                  {
+    614                      for( i=0, portScan=0; i<gKBD_KeysCount_c; i++ )
+    615                      {
+    616                          if( GPIO_DRV_ReadPinInput(mSwNames[i]) == 0 )
+    617                          {
+    618                              portScan |= (1 << i);
+    619                          }
+    620                      }
+    621          
+    622                      if((mSwitch_SCAN == 0) || (portScan == 0)) 
+    623                      {
+    624                          if(pressedKey != mNoKey_c) 
+    625                          {
+    626                              mpfKeyFunction(gKBD_EventReleasePB1_c + pressedKey);                       
+    627                              mKeyState = mStateKeyDebounce;
+    628                              TMR_StopTimer(timerId);            
+    629                          }                                       
+    630                      }                
+    631                  }
+    632                  break;
+    633              case mStateKeyHoldGen:
+    634                  if( KBD_KeyCheck(mSwitch_SCAN) ) 
+    635                  {
+    636                      mKbdHoldGenKeyCount++;
+    637                      if(mKbdHoldGenKeyCount >= gKbdHoldDetectIterations_c) 
+    638                      {
+    639                          mKbdHoldGenKeyCount = 0;
+    640                          if(pressedKey != mNoKey_c) 
+    641                          {
+    642                              mpfKeyFunction(gKBD_EventHoldPB1_c + pressedKey);
+    643                          }           
+    644                      }
+    645                  } 
+    646                  else 
+    647                  {
+    648                      for( i=0, portScan=0; i<gKBD_KeysCount_c; i++ )
+    649                      {
+    650                          if( GPIO_DRV_ReadPinInput(mSwNames[i]) == 0 )
+    651                          {
+    652                              portScan |= (1 << i);
+    653                          }
+    654                      }
+    655          
+    656                      if((mSwitch_SCAN == 0) || (portScan == 0)) 
+    657                      {
+    658                          if(pressedKey != mNoKey_c) 
+    659                          {
+    660                              mpfKeyFunction(gKBD_EventReleasePB1_c + pressedKey);
+    661          
+    662                              mKeyState = mStateKeyDebounce;
+    663                              TMR_StopTimer(timerId);            
+    664                          }                                       
+    665                      }                     
+    666                  }
+    667                  break;
+    668              default:
+    669                  break;
+    670              }
+    671          }
+    672          #endif /* gKeyEventNotificationMode_d */
+    673          #endif /* gTMR_Enabled_d */
+    674          
+    675          static bool_t Switch_CheckIRQ(uint32_t idx)
+    676          {
+    677              PORT_Type * baseAddr = g_portBase[GPIO_EXTRACT_PORT(mSwNames[idx])];
+    678              uint32_t pin = GPIO_EXTRACT_PIN(mSwNames[idx]);
+    679          
+    680              if( PORT_HAL_GetPortIntFlag(baseAddr) )
+    681              {
+    682                  if( PORT_HAL_IsPinIntPending(baseAddr, pin) )
+    683                  {
+    684                      /* set the local variable to mark that the interrupt is caused by one of the keyboard switches */
+    685                      PORT_HAL_ClearPinIntFlag(baseAddr, pin);
+    686                      return TRUE;
+    687                  }
+    688              }
+    689          
+    690              return FALSE;
+    691          }
+    692          #endif /* gKeyBoardSupported_d */
+    693          
+    694          /******************************************************************************
+    695          *******************************************************************************
+    696          * Public functions
+    697          *******************************************************************************/
+    698          
+    699          #if gKeyBoardSupported_d
+    700          
+    701          /******************************************************************************
+    702           * Name: KBD_Init
+    703           * Description: Initializes the keyboard module internal variables 
+    704           * Parameter(s): [IN] pfCallBackAdr - pointer to application callback function
+    705           * Return: -
+    706           * Notes: It the TIMER platform component is enabled, TMR_Init() function MUST
+    707           *        be called before KBD_Init() function
+    708           ******************************************************************************/
+    709          void KBD_Init( KBDFunction_t pfCallBackAdr )
+    710          {
+    711              uint32_t i;
+    712          
+    713              /* if no valid pointer provided, return */
+    714              if(NULL == pfCallBackAdr) 
+    715                  return;
+    716          
+    717              /* store the pointer to callback function provided by the application */
+    718              mpfKeyFunction = pfCallBackAdr;
+    719          
+    720          #if gKeyBoardSupported_d        
+    721          #if gTMR_Enabled_d
+    722              /* timer is used to determine short or long key press */
+    723              mKeyScanTimerID = TMR_AllocateTimer();
+    724          #endif /* #if gTMR_Enabled_d */    
+    725          
+    726              /* initialize all the GPIO pins for keyboard */
+    727              KbGpioInit();
+    728          
+    729              for( i=0; i<gKBD_KeysCount_c; i++ )
+    730              {
+    731                  GpioInstallIsr(Switch_Press_ISR, gGpioIsrPrioLow_c, gKeyboard_IsrPrio_c, mSwNames[i]);
+    732              }
+    733          
+    734          #endif /* gKeyBoardSupported_d */                
+    735          }
+    736          
+    737          /******************************************************************************
+    738           * Name: KBD_IsWakeUpSource
+    739           * Description: 
+    740           * Parameter(s): -
+    741           * Return: -
+    742           ******************************************************************************/
+    743          #if gKeyBoardSupported_d
+    744          bool_t KBD_IsWakeUpSource
+    745          (
+    746            void
+    747          )
+    748          {
+    749              uint32_t i;
+    750          
+    751              for( i=0; i<gKBD_KeysCount_c; i++ )
+    752              {
+    753                  if( PORT_HAL_IsPinIntPending(g_portBase[GPIO_EXTRACT_PORT(mSwNames[i])], GPIO_EXTRACT_PIN(mSwNames[i])) )
+    754                  {
+    755                      return TRUE;
+    756                  }
+    757              }
+    758          
+    759              return FALSE;
+    760          }
+    761          #endif /* gKeyBoardSupported_d */
+    762          
+    763          /******************************************************************************
+    764           * Name: KBD_SwitchPressOnWakeUp
+    765           * Description: 
+    766           * Parameter(s): -
+    767           * Return: -
+    768           ******************************************************************************/
+    769          #if gKeyBoardSupported_d
+    770          void KBD_SwitchPressedOnWakeUp
+    771          (
+    772            void
+    773          )
+    774          {
+    775          #if gTMR_Enabled_d
+    776                  TMR_StartIntervalTimer(mKeyScanTimerID, gKeyScanInterval_c, (pfTmrCallBack_t)KeyScan, (void*)mKeyScanTimerID);       
+    777          #endif
+    778          }
+    779          #endif /* gKeyBoardSupported_d */
+    780          
+    781          /******************************************************************************
+    782           * Name: Switch_Press_ISR
+    783           * Description: Keyboard (switches) interrupt handler
+    784           * Parameter(s): [IN] mask - mask corresponding to pin
+    785           * Return: -
+    786           ******************************************************************************/
+    787          #if gKeyBoardSupported_d
+    788          #if defined(__IAR_SYSTEMS_ICC__)
+    789          #pragma location = ".isr_handler"
+    790          #endif
+    791          void Switch_Press_ISR
+    792          (
+    793          void
+    794          )
+    795          {
+    796              uint32_t i = 0;
+    797              uint8_t kbi_irq = 0;
+    798          
+    799              for(i=0; i<gKBD_KeysCount_c; i++)
+    800              {
+    801                  if( Switch_CheckIRQ(i) )
+    802                  {
+    803                      kbi_irq++;
+    804                  }
+    805              }
+    806          
+    807              if(kbi_irq)
+    808              {
+    809          #if gTMR_Enabled_d
+    810                  TMR_StartIntervalTimer(mKeyScanTimerID, gKeyScanInterval_c, (pfTmrCallBack_t)KeyScan, (void*)mKeyScanTimerID);       
+    811          #endif
+    812              }
+    813          }
+    814          #endif /* gKeyBoardSupported_d */
+    815          #endif /* #if gKeyBoardSupported_d */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   KBD_Deinit
+         8   -> GpioUninstallIsr
+         8   -> TMR_FreeTimer
+      16   KBD_Init
+        16   -> GpioInstallIsr
+        16   -> KbGpioInit
+        16   -> TMR_AllocateTimer
+       8   KBD_IsWakeUpSource
+         8   -> PORT_HAL_IsPinIntPending
+      24   KBD_KeyCheck
+        24   -> GPIO_DRV_ReadPinInput
+      16   KBD_KeySwitchPortGet
+        16   -> GPIO_DRV_ReadPinInput
+       8   KBD_SwitchPressedOnWakeUp
+         8   -> TMR_StartIntervalTimer
+       8   KbGpioInit
+         8   -> GPIO_DRV_InputPinInit
+      24   KeyScan
+        24   -- Indirect call
+        24   -> GPIO_DRV_ReadPinInput
+        24   -> KBD_KeyCheck
+        24   -> KBD_KeySwitchPortGet
+        24   -> TMR_StopTimer
+      16   PORT_HAL_ClearPinIntFlag
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+       0   PORT_HAL_GetPortIntFlag
+      16   PORT_HAL_IsPinIntPending
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   Switch_CheckIRQ
+        16   -> PORT_HAL_ClearPinIntFlag
+        16   -> PORT_HAL_GetPortIntFlag
+        16   -> PORT_HAL_IsPinIntPending
+      16   Switch_Press_ISR
+        16   -> Switch_CheckIRQ
+        16   -> TMR_StartIntervalTimer
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_10
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+       4  ??DataTable7
+       4  ??DataTable8
+      12  ?_0
+      92  ?_1
+      40  KBD_Deinit
+      58  KBD_Init
+      60  KBD_IsWakeUpSource
+     104  KBD_KeyCheck
+      98  KBD_KeySwitchPortGet
+      20  KBD_SwitchPressedOnWakeUp
+      28  KbGpioInit
+     210  KeyScan
+      46  PORT_HAL_ClearPinIntFlag
+       6  PORT_HAL_GetPortIntFlag
+      54  PORT_HAL_IsPinIntPending
+      72  Switch_CheckIRQ
+      64  Switch_Press_ISR
+       1  mKeyScanTimerID
+       1  mKeyState
+       1  mLongKeyCount
+       8  mSwNames
+       4  mSwitch_SCAN
+       4  mpfKeyFunction
+       1  pressedKey
+
+ 
+  11 bytes in section .bss
+   1 byte  in section .data
+  64 bytes in section .isr_handler
+ 112 bytes in section .rodata
+ 848 bytes in section .text
+ 
+ 912 bytes of CODE  memory
+ 112 bytes of CONST memory
+  12 bytes of DATA  memory
+
+Errors: none
+Warnings: none

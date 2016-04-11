@@ -1,0 +1,834 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:41
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\MemManager\Source\MemManager.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\MemManager\Source\MemManager.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\MemManager.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\MemManager.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\MemManager\Source\MemManager.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file MemManager.c
+      6          * This is the source file for the Memory Manager.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          
+     35          /*! *********************************************************************************
+     36          *************************************************************************************
+     37          * Include
+     38          *************************************************************************************
+     39          ********************************************************************************** */
+     40          #include "EmbeddedTypes.h"
+     41          #include "fsl_os_abstraction.h"
+     42          #include "Panic.h"
+     43          #include "MemManager.h"
+     44          
+     45          /*! *********************************************************************************
+     46          *************************************************************************************
+     47          * Private memory declarations
+     48          *************************************************************************************
+     49          ********************************************************************************** */
+     50          
+     51          #define _block_size_  {
+     52          #define _number_of_blocks_  ,
+     53          #define _eol_  },
+     54                     
+     55          poolInfo_t poolInfo[] =
+     56          {
+     57            PoolsDetails_c
+     58            {0, 0} /*termination tag*/
+     59          };
+     60          
+     61          #undef _block_size_
+     62          #undef _number_of_blocks_
+     63          #undef _eol_
+     64          
+     65          #define _block_size_ (sizeof(listHeader_t)+
+     66          #define _number_of_blocks_ ) *
+     67          #define _eol_  +
+     68          
+     69          #define heapSize_c (PoolsDetails_c 0)
+     70          
+     71          // Heap
+     72          uint8_t memHeap[heapSize_c];
+     73          const uint32_t heapSize = heapSize_c;
+     74          
+     75          #undef _block_size_
+     76          #undef _number_of_blocks_
+     77          #undef _eol_
+     78          
+     79          #define _block_size_ 0 *
+     80          #define _number_of_blocks_ + 0 *
+     81          #define _eol_  + 1 +
+     82          
+     83          #define poolCount (PoolsDetails_c 0)
+     84          
+     85          // Memory pool info and anchors.
+     86          pools_t memPools[poolCount];
+     87          
+     88          #undef _block_size_
+     89          #undef _number_of_blocks_
+     90          #undef _eol_
+     91          
+     92          #ifdef MEM_TRACKING
+     93          
+     94          #define _block_size_ 0*
+     95          #define _number_of_blocks_ +
+     96          #define _eol_  +
+     97          
+     98          #define mTotalNoOfMsgs_d (PoolsDetails_c 0)
+     99          static const uint16_t mTotalNoOfMsgs_c = mTotalNoOfMsgs_d;
+    100          blockTracking_t memTrack[mTotalNoOfMsgs_d];
+    101          
+    102          #undef _block_size_
+    103          #undef _number_of_blocks_
+    104          #undef _eol_
+    105          
+    106          #endif /*MEM_TRACKING*/
+    107          
+    108          // Free messages counter. Not used by module.
+    109          uint16_t gFreeMessagesCount;
+    110          
+    111          /*! *********************************************************************************
+    112          *************************************************************************************
+    113          * Public functions
+    114          *************************************************************************************
+    115          ********************************************************************************** */
+    116          
+    117          /*! *********************************************************************************
+    118          * \brief   This function initializes the message module private variables. 
+    119          *          Must be called at boot time, or if device is reset.
+    120          *
+    121          * \param[in] none
+    122          *
+    123          * \return MEM_SUCCESS_c if initialization is successful. (It's always successful).
+    124          *
+    125          ********************************************************************************** */
+    126          memStatus_t MEM_Init()
+    127          {
+    128            poolInfo_t *pPoolInfo = poolInfo; // IN: Memory layout information
+    129            pools_t *pPools = memPools;// OUT: Will be initialized with requested memory pools.
+    130            uint8_t *pHeap = memHeap;// IN: Memory heap.
+    131              
+    132            uint8_t poolN;
+    133          #ifdef MEM_TRACKING
+    134            uint16_t memTrackIndex = 0;  
+    135          #endif /*MEM_TRACKING*/
+    136          
+    137            gFreeMessagesCount = 0;
+    138            
+    139            for(;;) 
+    140            {  
+    141              poolN = pPoolInfo->poolSize;
+    142              ListInit((listHandle_t)&pPools->anchor, poolN);
+    143          #ifdef MEM_STATISTICS
+    144              pPools->poolStatistics.numBlocks = 0;
+    145              pPools->poolStatistics.allocatedBlocks = 0;
+    146              pPools->poolStatistics.allocatedBlocksPeak = 0;
+    147              pPools->poolStatistics.allocationFailures = 0;
+    148              pPools->poolStatistics.freeFailures = 0;
+    149          #ifdef MEM_TRACKING
+    150              pPools->poolStatistics.poolFragmentWaste = 0;
+    151              pPools->poolStatistics.poolFragmentWastePeak = 0;
+    152          #endif /*MEM_TRACKING*/
+    153          #endif /*MEM_STATISTICS*/
+    154          
+    155              while(poolN) 
+    156              {
+    157                // Add block to list of free memory.
+    158                ListAddTail((listHandle_t)&pPools->anchor, (listElementHandle_t)&((listHeader_t *)pHeap)->link);
+    159                ((listHeader_t *)pHeap)->pParentPool = pPools;
+    160          #ifdef MEM_STATISTICS
+    161                pPools->poolStatistics.numBlocks++;
+    162          #endif /*MEM_STATISTICS*/
+    163          
+    164                gFreeMessagesCount++;
+    165          #ifdef MEM_TRACKING
+    166                memTrack[memTrackIndex].blockAddr = (void *)(pHeap + sizeof(listHeader_t));
+    167                memTrack[memTrackIndex].blockSize = pPoolInfo->blockSize;
+    168                memTrack[memTrackIndex].fragmentWaste = 0;
+    169                memTrack[memTrackIndex].allocAddr = NULL;
+    170                memTrack[memTrackIndex].allocCounter = 0;
+    171                memTrack[memTrackIndex].allocStatus = MEM_TRACKING_FREE_c;
+    172                memTrack[memTrackIndex].freeAddr = NULL;
+    173                memTrack[memTrackIndex].freeCounter = 0;
+    174                memTrackIndex++;
+    175          #endif /*MEM_TRACKING*/
+    176            
+    177                  // Add block size (without list header)
+    178                pHeap += pPoolInfo->blockSize + sizeof(listHeader_t);
+    179                poolN--;
+    180              }
+    181          
+    182              pPools->blockSize = pPoolInfo->blockSize;
+    183              pPools->nextBlockSize = (pPoolInfo+1)->blockSize;
+    184              if(pPools->nextBlockSize == 0)
+    185              {
+    186                break;
+    187              }
+    188              
+    189              pPools++;
+    190              pPoolInfo++;
+    191            }
+    192          
+    193            return MEM_SUCCESS_c;
+    194          }
+    195          
+    196          /*! *********************************************************************************
+    197          * \brief    This function returns the number of available blocks greater or 
+    198          *           equal to the given size.
+    199          *
+    200          * \param[in] size - Size of blocks to check for availability.
+    201          *
+    202          * \return Number of available blocks greater or equal to the given size.
+    203          *
+    204          * \pre Memory manager must be previously initialized.
+    205          *
+    206          ********************************************************************************** */
+    207          uint32_t MEM_GetAvailableBlocks
+    208            (
+    209            uint32_t size
+    210            )
+    211          {
+    212            pools_t *pPools = memPools;
+    213            uint32_t pTotalCount = 0;
+    214            
+    215            for(;;)
+    216            {
+    217              if(size <= pPools->blockSize)
+    218              {
+    219                pTotalCount += ListGetSize((listHandle_t)&pPools->anchor);
+    220              }
+    221              
+    222              if(pPools->nextBlockSize == 0)
+    223              {
+    224                break;
+    225              }
+    226              
+    227              pPools++;
+    228            }
+    229            
+    230            return  pTotalCount;
+    231          }
+    232          
+    233          /*! *********************************************************************************
+    234          * \brief     Allocate a block from the memory pools. The function uses the 
+    235          *            numBytes argument to look up a pool with adequate block sizes.
+    236          * \param[in] numBytes - Size of buffer to allocate.
+    237          *
+    238          * \return Pointer to the allocated buffer, NULL if failed.
+    239          *
+    240          * \pre Memory manager must be previously initialized.
+    241          *
+    242          ********************************************************************************** */
+    243          void* MEM_BufferAlloc
+    244            (
+    245            uint32_t numBytes // IN: Minimum number of bytes to allocate
+    246            )
+    247          {
+    248          #ifdef MEM_TRACKING
+    249          
+    250            /* Save the Link Register */
+    251            volatile uint32_t savedLR;
+    252          //  __asm("str  r14, [SP]");
+    253            __asm("push {r2}  ");
+    254            __asm("push {LR} ");
+    255            __asm("pop  {r2} ");
+    256            __asm("str  r2, [SP, #4]");
+    257            __asm("pop {r2}");
+    258          
+    259          #endif /*MEM_TRACKING*/
+    260            
+    261            pools_t *pPools = memPools;
+    262            listHeader_t *pBlock;
+    263            
+    264          #ifdef MEM_TRACKING
+    265            uint16_t requestedSize = numBytes;
+    266          #endif /*MEM_TRACKING*/
+    267          
+    268            OSA_EnterCritical(kCriticalDisableInt);
+    269          
+    270            while(numBytes)
+    271            {
+    272              if(numBytes <= pPools->blockSize)
+    273              {
+    274                pBlock = (listHeader_t *)ListRemoveHead((listHandle_t)&pPools->anchor);
+    275                
+    276                if(NULL != pBlock)
+    277                {
+    278                  pBlock++;
+    279                  gFreeMessagesCount--;
+    280                  
+    281          #ifdef MEM_STATISTICS
+    282                  pPools->poolStatistics.allocatedBlocks++;
+    283                  if ( pPools->poolStatistics.allocatedBlocks > pPools->poolStatistics.allocatedBlocksPeak )
+    284                  {
+    285                    pPools->poolStatistics.allocatedBlocksPeak = pPools->poolStatistics.allocatedBlocks;
+    286                  }
+    287                  MEM_ASSERT(pPools->poolStatistics.allocatedBlocks <= pPools->poolStatistics.numBlocks);
+    288          #endif /*MEM_STATISTICS*/
+    289                  
+    290          #ifdef MEM_TRACKING
+    291                  MEM_Track(pBlock, MEM_TRACKING_ALLOC_c, savedLR, requestedSize);
+    292          #endif /*MEM_TRACKING*/
+    293                  OSA_ExitCritical(kCriticalDisableInt);
+    294                  return pBlock;
+    295                }
+    296                else
+    297                {
+    298                  if(numBytes > pPools->nextBlockSize) break;
+    299                  // No more blocks of that size, try next size.
+    300                  numBytes = pPools->nextBlockSize;   
+    301                }
+    302              }
+    303                // Try next pool
+    304              if(pPools->nextBlockSize)
+    305                pPools++;
+    306              else
+    307                break;
+    308            }
+    309          #ifdef MEM_STATISTICS
+    310            pPools->poolStatistics.allocationFailures++;
+    311          #endif /*MEM_STATISTICS*/ 
+    312          
+    313          #ifdef MEM_DEBUG
+    314            panic( 0, (uint32_t)MEM_BufferAlloc, 0, 0);
+    315          #endif
+    316          
+    317            OSA_ExitCritical(kCriticalDisableInt);
+    318            return NULL;
+    319          }
+    320          
+    321          /*! *********************************************************************************
+    322          * \brief     Deallocate a memory block by putting it in the corresponding pool 
+    323          *            of free blocks. 
+    324          *
+    325          * \param[in] buffer - Pointer to buffer to deallocate.
+    326          *
+    327          * \return MEM_SUCCESS_c if deallocation was successful, MEM_FREE_ERROR_c if not.
+    328          *
+    329          * \pre Memory manager must be previously initialized.
+    330          *
+    331          * \remarks Never deallocate the same buffer twice.
+    332          *
+    333          ********************************************************************************** */
+    334          memStatus_t MEM_BufferFree
+    335            (
+    336            void* buffer // IN: Block of memory to free
+    337            )
+    338          {
+    339          #ifdef MEM_TRACKING
+    340          
+    341            /* Save the Link Register */
+    342            volatile uint32_t savedLR;
+    343          //  __asm("str  r14, [SP]");
+    344            __asm("push {r1}  ");
+    345            __asm("push {LR} ");
+    346            __asm("pop  {r1} ");
+    347            __asm("str  r1, [SP, #4]");
+    348            __asm("pop {r1}");
+    349          #endif /*MEM_TRACKING*/
+    350          
+    351            if(buffer == NULL) 
+    352            {
+    353              return MEM_FREE_ERROR_c;
+    354            }
+    355          
+    356            OSA_EnterCritical(kCriticalDisableInt);
+    357            
+    358            listHeader_t *pHeader = (listHeader_t *)buffer-1;
+    359            pools_t *pParentPool = (pools_t *)pHeader->pParentPool;
+    360          
+    361            pools_t *pool = memPools;
+    362            for(;;)
+    363            {
+    364              if (pParentPool == pool)
+    365                break;
+    366              if(pool->nextBlockSize == 0)
+    367              {
+    368                /* The parent pool was not found! This means that the memory buffer is corrupt or 
+    369                  that the MEM_BufferFree() function was called with an invalid parameter */
+    370          #ifdef MEM_STATISTICS
+    371                pParentPool->poolStatistics.freeFailures++;
+    372          #endif /*MEM_STATISTICS*/
+    373                OSA_ExitCritical(kCriticalDisableInt);
+    374          #ifdef MEM_DEBUG
+    375              panic( 0, (uint32_t)MEM_BufferFree, 0, 0);
+    376          #endif
+    377                return MEM_FREE_ERROR_c;
+    378              }
+    379              pool++;
+    380            }
+    381          
+    382            if( pHeader->link.list != NULL )
+    383            {
+    384                /* The memory buffer appears to be enqueued in a linked list. 
+    385                   This list may be the free memory buffers pool, or another list. */
+    386          #ifdef MEM_STATISTICS
+    387                pParentPool->poolStatistics.freeFailures++;
+    388          #endif /*MEM_STATISTICS*/
+    389                OSA_ExitCritical(kCriticalDisableInt);
+    390          #ifdef MEM_DEBUG
+    391                panic( 0, (uint32_t)MEM_BufferFree, 0, 0);
+    392          #endif
+    393                return MEM_FREE_ERROR_c;
+    394            }
+    395          
+    396            gFreeMessagesCount++;
+    397          
+    398            ListAddTail((listHandle_t)&pParentPool->anchor, (listElementHandle_t)&pHeader->link);
+    399          
+    400          #ifdef MEM_STATISTICS
+    401            MEM_ASSERT(pParentPool->poolStatistics.allocatedBlocks > 0);
+    402            pParentPool->poolStatistics.allocatedBlocks--;
+    403          #endif /*MEM_STATISTICS*/
+    404          
+    405          #ifdef MEM_TRACKING
+    406            MEM_Track(buffer, MEM_TRACKING_FREE_c, savedLR, 0);
+    407          #endif /*MEM_TRACKING*/   
+    408            OSA_ExitCritical(kCriticalDisableInt);
+    409            return MEM_SUCCESS_c; 
+    410          }
+    411          
+    412          /*! *********************************************************************************
+    413          * \brief     Determines the size of a memory block
+    414          *
+    415          * \param[in] buffer - Pointer to buffer.
+    416          *
+    417          * \return size of memory block
+    418          *
+    419          * \pre Memory manager must be previously initialized.
+    420          *
+    421          ********************************************************************************** */
+    422          uint16_t MEM_BufferGetSize
+    423          (
+    424          void* buffer // IN: Block of memory to free
+    425          )
+    426          {
+    427              if( buffer )
+    428              {
+    429                  return ((pools_t *)((listHeader_t *)buffer-1)->pParentPool)->blockSize;
+    430              }
+    431              
+    432              return 0;
+    433          }
+    434          
+    435          /*! *********************************************************************************
+    436          *************************************************************************************
+    437          * Private functions
+    438          *************************************************************************************
+    439          ********************************************************************************** */
+    440          /*! *********************************************************************************
+    441          * \brief     This function updates the tracking array element corresponding to the given 
+    442          *            block.
+    443          *
+    444          * \param[in] block - Pointer to the block.
+    445          * \param[in] alloc - Indicates whether an allocation or free operation was performed
+    446          * \param[in] address - Address where MEM_BufferAlloc or MEM_BufferFree was called 
+    447          * \param[in] requestedSize - Indicates the requested buffer size  passed to MEM_BufferAlloc.
+    448          *                            Has no use if a free operation was performed.
+    449          *
+    450          * \return Returns TRUE if correct allocation or dealocation was performed, FALSE if a
+    451          *         buffer was allocated or freed twice.
+    452          *
+    453          ********************************************************************************** */
+    454          #ifdef MEM_TRACKING
+    455          uint8_t MEM_Track(listHeader_t *block, memTrackingStatus_t alloc, uint32_t address, uint16_t requestedSize)        
+    456          {
+    457            uint16_t i;
+    458            blockTracking_t *pTrack = NULL;
+    459          #ifdef MEM_STATISTICS
+    460            poolStat_t * poolStatistics = (poolStat_t *)&((pools_t *)( (listElementHandle_t)(block-1)->pParentPool ))->poolStatistics;
+    461          #endif
+    462          
+    463            for( i=0; i<mTotalNoOfMsgs_c; i++ )
+    464            {
+    465                if( block == memTrack[i].blockAddr )
+    466                {
+    467                    pTrack = &memTrack[i];
+    468                    break;
+    469                }
+    470            }
+    471          
+    472            if( !pTrack || pTrack->allocStatus == alloc)
+    473            {
+    474          #ifdef MEM_DEBUG
+    475                panic( 0, (uint32_t)MEM_Track, 0, 0);
+    476          #endif
+    477                return FALSE;
+    478            }
+    479          
+    480            pTrack->allocStatus = alloc; 
+    481          
+    482            if(alloc == MEM_TRACKING_ALLOC_c)                                          
+    483            {
+    484              pTrack->fragmentWaste = pTrack->blockSize - requestedSize;
+    485              pTrack->allocCounter++;                     
+    486              pTrack->allocAddr = (void *)address;
+    487          #ifdef MEM_STATISTICS
+    488              
+    489              poolStatistics->poolFragmentWaste += pTrack->fragmentWaste;
+    490              if(poolStatistics->poolFragmentWaste > poolStatistics->poolFragmentWastePeak)
+    491                poolStatistics->poolFragmentWastePeak = poolStatistics->poolFragmentWaste;
+    492          #endif /*MEM_STATISTICS*/
+    493            }
+    494            else
+    495            {
+    496          #ifdef MEM_STATISTICS
+    497              poolStatistics->poolFragmentWaste -= pTrack->fragmentWaste;
+    498          #endif /*MEM_STATISTICS*/
+    499              pTrack->fragmentWaste = 0;
+    500              pTrack->freeCounter++;
+    501              pTrack->freeAddr = (void *)address;
+    502            }
+    503          
+    504            return TRUE;
+    505          }
+    506          #endif /*MEM_TRACKING*/
+    507          
+    508          /*! *********************************************************************************
+    509          * \brief     This function checks for buffer overflow when copying multiple bytes
+    510          *
+    511          * \param[in] p    - pointer to destination.
+    512          * \param[in] size - number of bytes to copy
+    513          *
+    514          * \return 1 if overflow detected, else 0
+    515          *
+    516          ********************************************************************************** */
+    517          uint8_t MEM_BufferCheck(uint8_t *p, uint32_t size)
+    518          {
+    519              poolInfo_t *pPollInfo = poolInfo;
+    520              uint8_t* memAddr = memHeap;
+    521              uint32_t poolBytes, blockBytes, i;
+    522          
+    523              if( (p < (uint8_t*)memHeap) || (p > ((uint8_t*)memHeap + sizeof(memHeap))) )
+    524                  return 0;
+    525          
+    526              while( pPollInfo->blockSize )
+    527              {
+    528                  blockBytes = pPollInfo->blockSize + sizeof(listHeader_t);
+    529                  poolBytes  = blockBytes * pPollInfo->poolSize;
+    530          
+    531                  /* Find the correct message pool */
+    532                  if( (p >= memAddr) && (p < memAddr + poolBytes) )
+    533                  {
+    534                      /* Check if the size to copy is greather then the size of the current block */
+    535                      if( size > pPollInfo->blockSize )
+    536                      {
+    537          #ifdef MEM_DEBUG
+    538                          panic(0,0,0,0);
+    539          #endif
+    540                          return 1;
+    541                      }
+    542          
+    543                      /* Find the correct memory block */
+    544                      for( i=0; i<pPollInfo->poolSize; i++ )
+    545                      {
+    546                          if( (p >= memAddr) && (p < memAddr + blockBytes) )
+    547                          {
+    548                              if( p + size > memAddr + blockBytes )
+    549                              {
+    550          #ifdef MEM_DEBUG
+    551                                  panic(0,0,0,0);
+    552          #endif
+    553                                  return 1;
+    554                              }
+    555                              else
+    556                              {
+    557                                  return 0;
+    558                              }
+    559                          }
+    560          
+    561                          memAddr += blockBytes;
+    562                      }
+    563                  }
+    564          
+    565                  /* check next pool */
+    566                  memAddr += poolBytes;
+    567                  pPollInfo++;
+    568              }
+    569          
+    570              return 0;
+    571          }
+    572          
+    573          /*! *********************************************************************************
+    574          * \brief     Performs a write-read-verify test for every byte in all memory pools.
+    575          *
+    576          * \return Returns MEM_SUCCESS_c if test was successful, MEM_ALLOC_ERROR_c if a
+    577          *         buffer was not allocated successufuly, MEM_FREE_ERROR_c  if a
+    578          *         buffer was not freed successufuly or MEM_UNKNOWN_ERROR_c if a verify error,
+    579          *         heap overflow or data corruption occurred.
+    580          *
+    581          ********************************************************************************** */
+    582          uint32_t MEM_WriteReadTest(void)
+    583          {
+    584            uint8_t *data, count = 1;
+    585            uintn32_t idx1,idx2,idx3;
+    586            uint32_t freeMsgs;
+    587            
+    588            /*memory write test*/
+    589            freeMsgs = MEM_GetAvailableBlocks(0);
+    590            
+    591            for(idx1=0; poolInfo[idx1].blockSize != 0; idx1++)
+    592            {
+    593              for(idx2=0; idx2 < poolInfo[idx1].poolSize; idx2++)
+    594              {
+    595                data = (uint8_t *)MEM_BufferAlloc(poolInfo[idx1].blockSize);
+    596                
+    597                if(data == NULL)
+    598                {
+    599                  return MEM_ALLOC_ERROR_c;
+    600                }
+    601                
+    602                for(idx3=0; idx3 < poolInfo[idx1].blockSize; idx3++)
+    603                {
+    604                  if(data > memHeap + heapSize)
+    605                  {
+    606                    return MEM_UNKNOWN_ERROR_c;
+    607                  }
+    608                  *data = count & 0xff;
+    609                  data++;
+    610                }
+    611                count++;
+    612              }
+    613            }
+    614            
+    615            count = 1;
+    616            data = memHeap;
+    617            /*memory read test*/
+    618            for(idx1=0; poolInfo[idx1].blockSize != 0; idx1++)
+    619            {
+    620              for(idx2=0; idx2 < poolInfo[idx1].poolSize; idx2++)
+    621              {
+    622                /*New block; jump over list header*/
+    623                data = data + sizeof(listHeader_t); 
+    624                for(idx3=0; idx3<poolInfo[idx1].blockSize; idx3++)
+    625                {
+    626                  if(*data == count)
+    627                  {
+    628                    data++;
+    629                  }
+    630                  else
+    631                  {
+    632                    return MEM_UNKNOWN_ERROR_c;
+    633                  }
+    634                }
+    635                if(MEM_BufferFree( data - poolInfo[idx1].blockSize) != MEM_SUCCESS_c)
+    636                {
+    637                  return MEM_FREE_ERROR_c;
+    638                }
+    639                count++;
+    640              }
+    641            }
+    642            if(MEM_GetAvailableBlocks(0) != freeMsgs)
+    643            {
+    644              return MEM_UNKNOWN_ERROR_c;
+    645            }
+    646          #ifdef MEM_STATISTICS
+    647            for(idx1 = 0; poolInfo[idx1].blockSize != 0; idx1++)
+    648            {
+    649              memPools[idx1].poolStatistics.allocatedBlocksPeak = 0;
+    650            }
+    651          #endif /*MEM_STATISTICS*/
+    652            
+    653            return MEM_SUCCESS_c;
+    654          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   MEM_BufferAlloc
+        16   -> ListRemoveHead
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      24   MEM_BufferCheck
+      24   MEM_BufferFree
+        24   -> ListAddTail
+        24   -> OSA_EnterCritical
+        24   -> OSA_ExitCritical
+       4   MEM_BufferGetSize
+      16   MEM_GetAvailableBlocks
+        16   -> ListGetSize
+      24   MEM_Init
+        24   -> ListAddTail
+        24   -> ListInit
+      32   MEM_WriteReadTest
+        32   -> MEM_BufferAlloc
+        32   -> MEM_BufferFree
+        32   -> MEM_GetAvailableBlocks
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+     126  MEM_BufferAlloc
+     168  MEM_BufferCheck
+     106  MEM_BufferFree
+      30  MEM_BufferGetSize
+      60  MEM_GetAvailableBlocks
+     142  MEM_Init
+     274  MEM_WriteReadTest
+       2  gFreeMessagesCount
+       4  heapSize
+    3648  memHeap
+      48  memPools
+      16  poolInfo
+
+ 
+ 3 698 bytes in section .bss
+    16 bytes in section .data
+     4 bytes in section .rodata
+   938 bytes in section .text
+ 
+   938 bytes of CODE  memory
+     4 bytes of CONST memory
+ 3 714 bytes of DATA  memory
+
+Errors: none
+Warnings: none

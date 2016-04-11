@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:58
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\tsm_ll_timing.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\tsm_ll_timing.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\tsm_ll_timing.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\tsm_ll_timing.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\XCVR\MKW40Z4\tsm_ll_timing.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file tsm_ll_timing.c
+      6          * TSM and LL timing register initialization code for MKW40Z4.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include <stdint.h>
+     40          #include "tsm_ll_timing.h"
+     41          #include "fsl_device_registers.h"
+     42          
+     43          /*! *********************************************************************************
+     44          *************************************************************************************
+     45          * Constants
+     46          *************************************************************************************
+     47          ********************************************************************************** */
+     48          #define USE_RAM_TESTING 0
+     49          #define END_OF_SEQ_END_OF_TX_WU_MASK   0xFF
+     50          #define END_OF_SEQ_END_OF_TX_WU_SHIFT  0
+     51          
+     52          #define END_OF_SEQ_END_OF_TX_WD_MASK   0xFF00
+     53          #define END_OF_SEQ_END_OF_TX_WD_SHIFT  8
+     54          
+     55          #define END_OF_SEQ_END_OF_RX_WU_MASK   0xFF0000
+     56          #define END_OF_SEQ_END_OF_RX_WU_SHIFT  16
+     57          
+     58          #define END_OF_SEQ_END_OF_RX_WD_MASK   0xFF000000
+     59          #define END_OF_SEQ_END_OF_RX_WD_SHIFT  24
+     60          
+     61          #define BLE_REG_BASE                    0x4005B000
+     62          #define TX_RX_ON_DELAY                 ( 0x190 ) /* 32-bit:0x190 address */
+     63          #define TX_RX_SYNTH_DELAY              ( 0x198 ) /* 32-bit:0x198 address */
+     64          
+     65          #define PLL_REG_EN_INDEX                (0)
+     66          #define PLL_VCO_REG_EN_INDEX            (1)
+     67          #define PLL_QGEN_REG_EN_INDEX           (2)
+     68          #define PLL_TCA_TX_REG_EN_INDEX         (3)
+     69          #define ADC_REG_EN_INDEX                (4)
+     70          #define PLL_REF_CLK_EN_INDEX            (5)
+     71          #define ADC_CLK_EN_INDEX                (6)
+     72          #define PLL_VCO_AUTOTUNE_INDEX          (7)
+     73          #define PLL_CYCLE_SLIP_LD_EN_INDEX      (8)
+     74          #define PLL_VCO_EN_INDEX                (9)
+     75          #define PLL_VCO_BUF_RX_EN_INDEX         (10)
+     76          #define PLL_VCO_BUF_TX_EN_INDEX         (11)
+     77          #define PLL_PA_BUF_EN_INDEX             (12)
+     78          #define PLL_LDV_EN_INDEX                (13)
+     79          #define PLL_RX_LDV_RIPPLE_MUX_EN_INDEX  (14)
+     80          #define PLL_TX_LDV_RIPPLE_MUX_EN_INDEX  (15)
+     81          #define PLL_FILTER_CHARGE_EN_INDEX      (16)
+     82          #define PLL_PHDET_EN_INDEX              (17)
+     83          #define QGEN25_EN_INDEX                 (18)
+     84          #define TX_EN_INDEX                     (19)
+     85          #define ADC_EN_INDEX                    (20)
+     86          #define ADC_I_Q_EN_INDEX                (21)
+     87          #define ADC_DAC_EN_INDEX                (22)
+     88          #define ADC_RST_EN_INDEX                (23)
+     89          #define BBF_EN_INDEX                    (24)
+     90          #define TCA_EN_INDEX                    (25)
+     91          #define PLL_DIG_EN_INDEX                (26)
+     92          #define TX_DIG_EN_INDEX                 (27)
+     93          #define RX_DIG_EN_INDEX                 (28)
+     94          #define RX_INIT_INDEX                   (29)
+     95          #define SIGMA_DELTA_EN_INDEX            (30)
+     96          #define ZBDEM_RX_EN_INDEX               (31)
+     97          #define DCOC_EN_INDEX                   (32)
+     98          #define DCOC_INIT_EN_INDEX              (33)
+     99          #define FREQ_TARG_LD_EN_INDEX           (34)
+    100          #define SAR_ADC_TRIG_EN_INDEX           (35)
+    101          #define TSM_SPARE0_EN_INDEX             (36)
+    102          #define TSM_SPARE1_EN_INDEX             (37)
+    103          #define TSM_SPARE2_EN_INDEX             (38)
+    104          #define TSM_SPARE03_EN_INDEX            (39)
+    105          #define GPIO0_TRIG_EN_INDEX             (40)
+    106          #define GPIO1_TRIG_EN_INDEX             (41)
+    107          #define GPIO2_TRIG_EN_INDEX             (42)
+    108          #define GPIO3_TRIG_EN_INDEX             (43)
+    109          
+    110          /*! *********************************************************************************
+    111          *************************************************************************************
+    112          * Private memory declarations
+    113          *************************************************************************************
+    114          ********************************************************************************** */
+    115          
+    116          /* Array of initialization values for TSM Timing registers.
+    117           * Stored in the same order as the registers so that it can be copied easily.
+    118           */
+    119          static const uint32_t ble_tsm_init_blt [NUM_TSM_TIMING_REGS] =
+    120          {
+    121              TSM_REG_VALUE(PLL_REG_EN_RX_WD, PLL_REG_EN_RX_WU, PLL_REG_EN_TX_WD, PLL_REG_EN_TX_WU),
+    122              TSM_REG_VALUE(PLL_VCO_REG_EN_RX_WD, PLL_VCO_REG_EN_RX_WU, PLL_VCO_REG_EN_TX_WD, PLL_VCO_REG_EN_TX_WU),
+    123              TSM_REG_VALUE(PLL_QGEN_REG_EN_RX_WD, PLL_QGEN_REG_EN_RX_WU, PLL_QGEN_REG_EN_TX_WD, PLL_QGEN_REG_EN_TX_WU),
+    124              TSM_REG_VALUE(PLL_TCA_TX_REG_EN_RX_WD, PLL_TCA_TX_REG_EN_RX_WU, PLL_TCA_TX_REG_EN_TX_WD, PLL_TCA_TX_REG_EN_TX_WU),
+    125              TSM_REG_VALUE(ADC_REG_EN_RX_WD, ADC_REG_EN_RX_WU, ADC_REG_EN_TX_WD, ADC_REG_EN_TX_WU),
+    126              TSM_REG_VALUE(PLL_REF_CLK_EN_RX_WD, PLL_REF_CLK_EN_RX_WU, PLL_REF_CLK_EN_TX_WD, PLL_REF_CLK_EN_TX_WU),
+    127              TSM_REG_VALUE(ADC_CLK_EN_RX_WD, ADC_CLK_EN_RX_WU, ADC_CLK_EN_TX_WD, ADC_CLK_EN_TX_WU),
+    128              TSM_REG_VALUE(PLL_VCO_AUTOTUNE_RX_WD, PLL_VCO_AUTOTUNE_RX_WU, PLL_VCO_AUTOTUNE_TX_WD, PLL_VCO_AUTOTUNE_TX_WU),
+    129              TSM_REG_VALUE(PLL_CYCLE_SLIP_LD_EN_RX_WD, PLL_CYCLE_SLIP_LD_EN_RX_WU, PLL_CYCLE_SLIP_LD_EN_TX_WD, PLL_CYCLE_SLIP_LD_EN_TX_WU),
+    130              TSM_REG_VALUE(PLL_VCO_EN_RX_WD, PLL_VCO_EN_RX_WU, PLL_VCO_EN_TX_WD, PLL_VCO_EN_TX_WU),
+    131              TSM_REG_VALUE(PLL_VCO_BUF_RX_EN_RX_WD, PLL_VCO_BUF_RX_EN_RX_WU, PLL_VCO_BUF_RX_EN_TX_WD, PLL_VCO_BUF_RX_EN_TX_WU),
+    132              TSM_REG_VALUE(PLL_VCO_BUF_TX_EN_RX_WD, PLL_VCO_BUF_TX_EN_RX_WU, PLL_VCO_BUF_TX_EN_TX_WD, PLL_VCO_BUF_TX_EN_TX_WU),
+    133              TSM_REG_VALUE(PLL_PA_BUF_EN_RX_WD, PLL_PA_BUF_EN_RX_WU, PLL_PA_BUF_EN_TX_WD, PLL_PA_BUF_EN_TX_WU),
+    134              TSM_REG_VALUE(PLL_LDV_EN_RX_WD, PLL_LDV_EN_RX_WU, PLL_LDV_EN_TX_WD, PLL_LDV_EN_TX_WU),
+    135              TSM_REG_VALUE(PLL_RX_LDV_RIPPLE_MUX_EN_RX_WD, PLL_RX_LDV_RIPPLE_MUX_EN_RX_WU, PLL_RX_LDV_RIPPLE_MUX_EN_TX_WD, PLL_RX_LDV_RIPPLE_MUX_EN_TX_WU),
+    136              TSM_REG_VALUE(PLL_TX_LDV_RIPPLE_MUX_EN_RX_WD, PLL_TX_LDV_RIPPLE_MUX_EN_RX_WU, PLL_TX_LDV_RIPPLE_MUX_EN_TX_WD, PLL_TX_LDV_RIPPLE_MUX_EN_TX_WU),
+    137              TSM_REG_VALUE(PLL_FILTER_CHARGE_EN_RX_WD, PLL_FILTER_CHARGE_EN_RX_WU, PLL_FILTER_CHARGE_EN_TX_WD, PLL_FILTER_CHARGE_EN_TX_WU),
+    138              TSM_REG_VALUE(PLL_PHDET_EN_RX_WD, PLL_PHDET_EN_RX_WU, PLL_PHDET_EN_TX_WD, PLL_PHDET_EN_TX_WU),
+    139              TSM_REG_VALUE(QGEN25_EN_RX_WD, QGEN25_EN_RX_WU, QGEN25_EN_TX_WD, QGEN25_EN_TX_WU),
+    140              TSM_REG_VALUE(TX_EN_RX_WD, TX_EN_RX_WU, TX_EN_TX_WD, TX_EN_TX_WU),
+    141              TSM_REG_VALUE(ADC_EN_RX_WD, ADC_EN_RX_WU, ADC_EN_TX_WD, ADC_EN_TX_WU),
+    142              TSM_REG_VALUE(ADC_I_Q_EN_RX_WD, ADC_I_Q_EN_RX_WU, ADC_I_Q_EN_TX_WD, ADC_I_Q_EN_TX_WU),
+    143              TSM_REG_VALUE(ADC_DAC_EN_RX_WD, ADC_DAC_EN_RX_WU, ADC_DAC_EN_TX_WD, ADC_DAC_EN_TX_WU),
+    144              TSM_REG_VALUE(ADC_RST_EN_RX_WD, ADC_RST_EN_RX_WU, ADC_RST_EN_TX_WD, ADC_RST_EN_TX_WU),
+    145              TSM_REG_VALUE(BBF_EN_RX_WD, BBF_EN_RX_WU, BBF_EN_TX_WD, BBF_EN_TX_WU),
+    146              TSM_REG_VALUE(TCA_EN_RX_WD, TCA_EN_RX_WU, TCA_EN_TX_WD, TCA_EN_TX_WU),
+    147              TSM_REG_VALUE(PLL_DIG_EN_RX_WD, PLL_DIG_EN_RX_WU, PLL_DIG_EN_TX_WD, PLL_DIG_EN_TX_WU),
+    148              TSM_REG_VALUE(TX_DIG_EN_RX_WD, TX_DIG_EN_RX_WU, TX_DIG_EN_TX_WD, TX_DIG_EN_TX_WU),
+    149              TSM_REG_VALUE(RX_DIG_EN_RX_WD, RX_DIG_EN_RX_WU, RX_DIG_EN_TX_WD, RX_DIG_EN_TX_WU),
+    150              TSM_REG_VALUE(RX_INIT_RX_WD, RX_INIT_RX_WU, RX_INIT_TX_WD, RX_INIT_TX_WU),
+    151              TSM_REG_VALUE(SIGMA_DELTA_EN_RX_WD, SIGMA_DELTA_EN_RX_WU, SIGMA_DELTA_EN_TX_WD, SIGMA_DELTA_EN_TX_WU),
+    152              TSM_REG_VALUE(ZBDEM_RX_EN_RX_WD, ZBDEM_RX_EN_RX_WU, ZBDEM_RX_EN_TX_WD, ZBDEM_RX_EN_TX_WU),
+    153              TSM_REG_VALUE(DCOC_EN_RX_WD, DCOC_EN_RX_WU, DCOC_EN_TX_WD, DCOC_EN_TX_WU),
+    154              TSM_REG_VALUE(DCOC_INIT_EN_RX_WD, DCOC_INIT_EN_RX_WU, DCOC_INIT_EN_TX_WD, DCOC_INIT_EN_TX_WU),
+    155              TSM_REG_VALUE(FREQ_TARG_LD_EN_RX_WD, FREQ_TARG_LD_EN_RX_WU, FREQ_TARG_LD_EN_TX_WD, FREQ_TARG_LD_EN_TX_WU),
+    156              TSM_REG_VALUE(SAR_ADC_TRIG_EN_RX_WD, SAR_ADC_TRIG_EN_RX_WU, SAR_ADC_TRIG_EN_TX_WD, SAR_ADC_TRIG_EN_TX_WU),
+    157              TSM_REG_VALUE(TSM_SPARE0_EN_RX_WD, TSM_SPARE0_EN_RX_WU, TSM_SPARE0_EN_TX_WD, TSM_SPARE0_EN_TX_WU),
+    158              TSM_REG_VALUE(TSM_SPARE1_EN_RX_WD, TSM_SPARE1_EN_RX_WU, TSM_SPARE1_EN_TX_WD, TSM_SPARE1_EN_TX_WU),
+    159              TSM_REG_VALUE(TSM_SPARE2_EN_RX_WD, TSM_SPARE2_EN_RX_WU, TSM_SPARE2_EN_TX_WD, TSM_SPARE2_EN_TX_WU),
+    160              TSM_REG_VALUE(TSM_SPARE03_EN_RX_WD, TSM_SPARE03_EN_RX_WU, TSM_SPARE03_EN_TX_WD, TSM_SPARE03_EN_TX_WU),
+    161              TSM_REG_VALUE(GPIO0_TRIG_EN_RX_WD, GPIO0_TRIG_EN_RX_WU, GPIO0_TRIG_EN_TX_WD, GPIO0_TRIG_EN_TX_WU),
+    162              TSM_REG_VALUE(GPIO1_TRIG_EN_RX_WD, GPIO1_TRIG_EN_RX_WU, GPIO1_TRIG_EN_TX_WD, GPIO1_TRIG_EN_TX_WU),
+    163              TSM_REG_VALUE(GPIO2_TRIG_EN_RX_WD, GPIO2_TRIG_EN_RX_WU, GPIO2_TRIG_EN_TX_WD, GPIO2_TRIG_EN_TX_WU),
+    164              TSM_REG_VALUE(GPIO3_TRIG_EN_RX_WD, GPIO3_TRIG_EN_RX_WU, GPIO3_TRIG_EN_TX_WD, GPIO3_TRIG_EN_TX_WU),
+    165          };
+    166          
+    167          /*! *********************************************************************************
+    168          *************************************************************************************
+    169          * Public functions
+    170          *************************************************************************************
+    171          ********************************************************************************** */
+    172          
+    173          /* Frequency remap initialization performs any required init for both 
+    174           * the LL and TSM registers to implement proper time sequences.
+    175           */
+    176          void tsm_ll_timing_init(PHY_RADIO_T mode)
+    177          {
+    178              uint8_t i;
+    179          #if USE_RAM_TESTING
+    180              /* Test only code which places the timing values in a RAM array */
+    181              static uint32_t tsm_values_test[NUM_TSM_TIMING_REGS];
+    182              uint32_t * tsm_reg_ptr = &tsm_values_test[0];
+    183          #else
+    184              /* Normal operational code */
+    185              uint32_t * tsm_reg_ptr = (uint32_t *)&XCVR_TSM_TIMING00;
+    186          #endif
+    187              
+    188              /* Setup TSM timing registers with time sequences for BLE unconditionally */
+    189              /* NOTE: This code depends on the array of init values being in the proper order! */
+    190              for (i=0;i<NUM_TSM_TIMING_REGS;i++)
+    191              {
+    192                  *tsm_reg_ptr++ = ble_tsm_init_blt[i];
+    193              }
+    194              
+    195              /* Now (if needed) adjust from BLE timings to Zigbee timings since they are VERY similar */
+    196              if (mode == ZIGBEE_RADIO)
+    197              {
+    198                  /* TX_DIG_EN must be earlier for Zigbee */
+    199                  XCVR_TSM_TIMING27 = TSM_REG_VALUE(TX_DIG_EN_RX_WD, TX_DIG_EN_RX_WU, TX_DIG_EN_TX_WD, TX_DIG_EN_TX_WU-ZB_TX_DIG_ADVANCE);
+    200                  
+    201                  /* ZBDEM_RX_EN must be setup properly (it is disabled in BLE).
+    202                  * It's timing is the same as RX_DIG_EN! 
+    203                  */
+    204                  XCVR_TSM_TIMING31 = TSM_REG_VALUE(RX_DIG_EN_RX_WD, RX_DIG_EN_RX_WU, RX_DIG_EN_TX_WD, RX_DIG_EN_TX_WU);
+    205              }
+    206              
+    207              /* Setup XCVR registers for END_OF_TX_WU, END_OF_TX_WD, END_OF_RX_WU, END_OF_RX_WD
+    208              * based on the sequence components defined for the TSM timing registers. 
+    209              */
+    210              XCVR_END_OF_SEQ = END_OF_SEQ_VALUE;
+    211              
+    212              if (mode == BLE_RADIO) /* Only do this when in BLE mode! */
+    213              {
+    214                  /* Setup LL registers with adjustment for how early to start the TX or RX sequence */
+    215                  *(volatile uint16_t *)(BLE_REG_BASE + TX_RX_ON_DELAY) = TX_RX_ON_DELAY_VALUE;
+    216                  *(volatile uint16_t *)(BLE_REG_BASE + TX_RX_SYNTH_DELAY) = TX_RX_SYNTH_DELAY_VALUE;
+    217              }
+    218          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   tsm_ll_timing_init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     180  ble_tsm_init_blt
+     124  tsm_ll_timing_init
+
+ 
+ 180 bytes in section .rodata
+ 124 bytes in section .text
+ 
+ 124 bytes of CODE  memory
+ 180 bytes of CONST memory
+
+Errors: none
+Warnings: none

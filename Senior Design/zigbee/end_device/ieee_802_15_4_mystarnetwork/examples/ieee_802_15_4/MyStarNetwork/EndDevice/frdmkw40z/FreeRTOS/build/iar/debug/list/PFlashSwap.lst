@@ -1,0 +1,289 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:45
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\PFlashSwap.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\PFlashSwap.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PFlashSwap.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PFlashSwap.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\PFlashSwap.c
+      1          /**HEADER********************************************************************
+      2           Copyright (c) 2010-2014 Freescale Semiconductor, Inc.
+      3           ALL RIGHTS RESERVED.
+      4          
+      5           Redistribution and use in source and binary forms, with or without
+      6           modification, are permitted provided that the following conditions are met:
+      7              * Redistributions of source code must retain the above copyright
+      8                notice, this list of conditions and the following disclaimer.
+      9              * Redistributions in binary form must reproduce the above copyright
+     10                notice, this list of conditions and the following disclaimer in the
+     11                documentation and/or other materials provided with the distribution.
+     12              * Neither the name of the Freescale Semiconductor, Inc. nor the
+     13                names of its contributors may be used to endorse or promote products
+     14                derived from this software without specific prior written permission.
+     15          
+     16           THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     17           ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     18           WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     19           DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT,
+     20           INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     21           (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     22           LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+     23           ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     24           (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     25           SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     26          *****************************************************************************
+     27          *****************************************************************************
+     28          *                                                                           *
+     29          *        Standard Software Flash Driver For FTFx                            *
+     30          *                                                                           *
+     31          * FILE NAME     :  SSD_FTFx.h                                               *
+     32          * DATE          :  Sep 25, 2014                                           *
+     33          *                                                                           *
+     34          * AUTHOR        :  FPT Team                                                 *
+     35          * E-mail        :  r56611@freescale.com                                     *
+     36          *                                                                           *
+     37          *****************************************************************************/
+     38          
+     39          /************************** CHANGES *************************************
+     40          1.1.GA      09.25.2014      FPT Team      First version of SDK C90TFS flash driver
+     41                                                    inherited from BM C90TFS flash driver v1.02
+     42                                                    (08.04.2014, FPT Team)
+     43          *************************************************************************/
+     44          /* include the header files */
+     45          #include "SSD_FTFx.h"
+     46          
+     47          #ifdef SWAP_M
+     48          /************************************************************************
+     49          *
+     50          *  Function Name    : PFlashSwap.c
+     51          *  Description      : Perform a swap between P-Flash block 0 and
+     52          *                     P-Flash block 1
+     53          *
+     54          *
+     55          *  Arguments        : PFLASH_SSD_CONFIG, uint32_t, pFLASHCOMMANDSEQUENCE,
+     56          *                     PSWAP_CALLBACK
+     57          *
+     58          *  Return Value     : uint32_t
+     59          *
+     60          *************************************************************************/
+     61          
+     62          /* Enable size optimization */
+     63          #if(ARM_CORTEX_M != CPU_CORE)
+     64          #pragma optimize_for_size on
+     65          #pragma optimization_level 4
+     66          #endif /* End of CPU_CORE */
+     67          
+     68          uint32_t SIZE_OPTIMIZATION PFlashSwap(PFLASH_SSD_CONFIG pSSDConfig, \
+     69                            uint32_t addr, \
+     70                            PFLASH_SWAP_CALLBACK pSwapCallback, \
+     71                            pFLASHCOMMANDSEQUENCE pFlashCommandSequence)
+     72          {
+     73              uint32_t ret = FTFx_OK;      /* Return code */
+     74              uint8_t currentSwapMode , currentSwapBlockStatus , nextSwapBlockStatus;
+     75              bool swapContinue;
+     76          
+     77              currentSwapMode = currentSwapBlockStatus = nextSwapBlockStatus = 0xFFU;
+     78              swapContinue = FALSE;
+     79          
+     80              /* Report current swap state */
+     81              ret = PFlashSwapCtl(pSSDConfig,addr,FTFx_SWAP_REPORT_STATUS,&currentSwapMode, \
+     82              &currentSwapBlockStatus, &nextSwapBlockStatus ,pFlashCommandSequence);
+     83          
+     84              if (FTFx_OK == ret)
+     85              {
+     86                  if ((FTFx_SWAP_UNINIT == currentSwapMode) || (FTFx_SWAP_READY == currentSwapMode) || \
+     87                      (FTFx_SWAP_UPDATE == currentSwapMode))
+     88                  {
+     89                      /* If current swap mode is Uninitialized */
+     90                      if (FTFx_SWAP_UNINIT == currentSwapMode)
+     91                      {
+     92                          /* Initialize Swap to Initialized/READY state */
+     93                          ret = PFlashSwapCtl(pSSDConfig, addr, FTFx_SWAP_SET_INDICATOR_ADDR,&currentSwapMode, \
+     94                          &currentSwapBlockStatus, &nextSwapBlockStatus , pFlashCommandSequence);
+     95                      }
+     96                          /* If current swap mode is Initialized/Ready */
+     97                      else if (FTFx_SWAP_READY == currentSwapMode)
+     98                      {
+     99                          /* Initialize Swap to UPDATE state */
+    100                          ret = PFlashSwapCtl(pSSDConfig, addr, FTFx_SWAP_SET_IN_PREPARE,&currentSwapMode, \
+    101                          &currentSwapBlockStatus, &nextSwapBlockStatus , pFlashCommandSequence);
+    102                      }
+    103                      else if (FTFx_SWAP_UPDATE == currentSwapMode){}
+    104          
+    105                      /* Check for the success of command execution */
+    106                      /* Report the current swap state to user via callback */
+    107                      if ((NULL_SWAP_CALLBACK != pSwapCallback) && (FTFx_OK == ret))
+    108                      {
+    109                          swapContinue = pSwapCallback(currentSwapMode);
+    110          
+    111                          if (swapContinue)
+    112                          {
+    113                              /* Report current swap state */
+    114                              ret = PFlashSwapCtl(pSSDConfig,addr,FTFx_SWAP_REPORT_STATUS,&currentSwapMode, \
+    115                                                  &currentSwapBlockStatus, &nextSwapBlockStatus , pFlashCommandSequence);
+    116                          }
+    117                      }
+    118                  }
+    119                  if ((NULL_SWAP_CALLBACK == pSwapCallback)&&(FTFx_SWAP_UPDATE == currentSwapMode))
+    120                  {
+    121                      /* Erase indicator sector in non active block to proceed swap system to update-erased state */
+    122                      ret = FlashEraseSector(pSSDConfig, addr + (pSSDConfig->PFlashSize >> 1), FTFx_PSECTOR_SIZE, \
+    123                                              pFlashCommandSequence);
+    124                      if (FTFx_OK == ret)
+    125                      {
+    126                          /* Now the swap state must be Update-Erased, so report current swap state */
+    127                          ret = PFlashSwapCtl(pSSDConfig,addr,FTFx_SWAP_REPORT_STATUS,&currentSwapMode, \
+    128                                              &currentSwapBlockStatus, &nextSwapBlockStatus , pFlashCommandSequence);
+    129                      }
+    130                  }
+    131                  /* If current swap mode is Update or Update-Erased */
+    132                  if  (FTFx_SWAP_UPDATE_ERASED == currentSwapMode)
+    133                  {
+    134                      if (NULL_SWAP_CALLBACK == pSwapCallback)
+    135                      {
+    136                          swapContinue = TRUE;
+    137                      }
+    138                      else
+    139                      {
+    140                          swapContinue = pSwapCallback(currentSwapMode);
+    141                      }
+    142          
+    143                      if (swapContinue)
+    144                      {
+    145                          /* Progress Swap to COMPLETE State */
+    146                          ret = PFlashSwapCtl(pSSDConfig,addr,FTFx_SWAP_SET_IN_COMPLETE,&currentSwapMode, \
+    147                          &currentSwapBlockStatus, &nextSwapBlockStatus , pFlashCommandSequence);
+    148                      }
+    149                  }
+    150              }
+    151          
+    152          #if C90TFS_ENABLE_DEBUG
+    153              /* Enter Debug state if enabled */
+    154              if (TRUE == (pSSDConfig->DebugEnable))
+    155              {
+    156                  ENTER_DEBUG_MODE;
+    157              }
+    158          #endif
+    159          
+    160              return(ret);
+    161          }
+    162          #endif /* End of SWAP_M */
+    163          /* End of file */
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

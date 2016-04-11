@@ -1,0 +1,1399 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:47
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPacketProcessor.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPacketProcessor.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PhyPacketProcessor.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyPacketProcessor.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyPacketProcessor.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file PhyPacketProcessor.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "EmbeddedTypes.h"
+     40          #include "MpmInterface.h"
+     41          #include "FunctionLib.h"
+     42          
+     43          #include "Phy.h"
+     44          #include "overwrites.h"
+     45          #include "KW4xXcvrDrv.h"
+     46          #include "ifr_mkw40z4_radio.h"
+     47          
+     48          #include "fsl_os_abstraction.h"
+     49          #include "fsl_device_registers.h"
+     50          
+     51          
+     52          /*! *********************************************************************************
+     53          *************************************************************************************
+     54          * Private macros
+     55          *************************************************************************************
+     56          ********************************************************************************** */
+     57          #define gPhyHwIndQueueSize_d        (128)
+     58          
+     59          
+     60          /*! *********************************************************************************
+     61          *************************************************************************************
+     62          * Private functions prototype
+     63          *************************************************************************************
+     64          ********************************************************************************** */
+     65          #if gPhyUseNeighborTable_d
+     66          static int32_t PhyGetIndexOf( uint16_t checksum );
+     67          #endif
+     68          
+     69          
+     70          /*! *********************************************************************************
+     71          *************************************************************************************
+     72          * Public memory declarations
+     73          *************************************************************************************
+     74          ********************************************************************************** */
+     75          const  uint8_t gPhyIdlePwrState = gPhyDefaultIdlePwrMode_c;
+     76          const  uint8_t gPhyActivePwrState = gPhyDefaultActivePwrMode_c;
+     77          
+     78          #if gPhyUseNeighborTable_d
+     79          /* Limit HW indirect queue size to ~10% */
+     80          const uint8_t gPhyIndirectQueueSize_c = gPhyHwIndQueueSize_d/10;
+     81          #else
+     82          const uint8_t gPhyIndirectQueueSize_c = gPhyHwIndQueueSize_d;
+     83          #endif
+     84          
+     85          
+     86          /*! *********************************************************************************
+     87          *************************************************************************************
+     88          * Public functions
+     89          *************************************************************************************
+     90          ********************************************************************************** */
+     91          
+     92          /*! *********************************************************************************
+     93          * \brief  Initialize the 802.15.4 Radio registers
+     94          *
+     95          ********************************************************************************** */
+     96          void PhyHwInit
+     97          (
+     98          void
+     99          )
+    100          {
+    101          #if gPhyUseNeighborTable_d
+    102              uint32_t i;
+    103              uint32_t phyReg;
+    104          #endif
+    105          
+    106              XcvrInit( ZIGBEE );
+    107          
+    108              /* Enable 16 bit mode for TC2 - TC2 prime EN, disable all timers,
+    109                 enable AUTOACK, mask all interrupts */
+    110              ZLL_PHY_CTRL = (gCcaCCA_MODE1_c << ZLL_PHY_CTRL_CCATYPE_SHIFT) |
+    111                             ZLL_PHY_CTRL_TC2PRIME_EN_MASK    |
+    112                             ZLL_PHY_CTRL_PB_ERR_MSK_MASK     |
+    113                             ZLL_PHY_CTRL_CRC_MSK_MASK        |
+    114                             ZLL_PHY_CTRL_PLL_UNLOCK_MSK_MASK |
+    115                             ZLL_PHY_CTRL_FILTERFAIL_MSK_MASK |
+    116                             ZLL_PHY_CTRL_RX_WMRK_MSK_MASK    |
+    117                             ZLL_PHY_CTRL_CCAMSK_MASK         |
+    118                             ZLL_PHY_CTRL_RXMSK_MASK          |
+    119                             ZLL_PHY_CTRL_TXMSK_MASK          |
+    120                             ZLL_PHY_CTRL_SEQMSK_MASK         |
+    121                             ZLL_PHY_CTRL_AUTOACK_MASK        |
+    122                             ZLL_PHY_CTRL_TRCV_MSK_MASK;
+    123          
+    124              /* Clear all PP IRQ bits to avoid unexpected interrupts immediately after init
+    125                 disable all timer interrupts */
+    126              ZLL_IRQSTS = ZLL_IRQSTS;
+    127          
+    128              /* Enable Source Addresing Match module */
+    129              ZLL_BWR_SAM_CTRL_SAP0_EN(ZLL, 1);
+    130          #if (gMpmIncluded_d)
+    131              ZLL_BWR_SAM_CTRL_SAP1_EN(ZLL, 1);
+    132              ZLL_BWR_SAM_CTRL_SAP1_START(ZLL, gPhyHwIndQueueSize_d/2);
+    133          #if gPhyUseNeighborTable_d
+    134              ZLL_BWR_SAM_CTRL_SAA0_EN(ZLL, 1);
+    135              ZLL_BWR_SAM_CTRL_SAA0_START(ZLL, gPhyIndirectQueueSize_c/2);
+    136              ZLL_BWR_SAM_CTRL_SAA1_EN(ZLL, 1);
+    137              ZLL_BWR_SAM_CTRL_SAA1_START(ZLL, gPhyHwIndQueueSize_d/2 + gPhyIndirectQueueSize_c/2);
+    138          #endif
+    139          
+    140          #elif gPhyUseNeighborTable_d
+    141              ZLL_BWR_SAM_CTRL_SAA0_EN(ZLL, 1);
+    142              ZLL_BWR_SAM_CTRL_SAA0_START(ZLL, gPhyIndirectQueueSize_c);
+    143          #endif
+    144          
+    145              /* Clear HW indirect queue */
+    146              ZLL_SAM_TABLE |= ZLL_SAM_TABLE_INVALIDATE_ALL_MASK;
+    147          #if gPhyUseNeighborTable_d
+    148              for( i=0; i<gPhyHwIndQueueSize_d; i++ )
+    149              {
+    150                  /* Invalidate current index and checksum */
+    151                  phyReg  = ZLL_SAM_TABLE & ~(ZLL_SAM_TABLE_SAM_CHECKSUM_MASK | ZLL_SAM_TABLE_SAM_INDEX_MASK);
+    152                  phyReg |= (0xFFFF << ZLL_SAM_TABLE_SAM_CHECKSUM_SHIFT) |
+    153                            (i << ZLL_SAM_TABLE_SAM_INDEX_SHIFT)     |
+    154                             ZLL_SAM_TABLE_SAM_INDEX_WR_MASK;
+    155                  ZLL_SAM_TABLE = phyReg;
+    156              }
+    157          #endif
+    158          
+    159              /*  Frame Filtering
+    160                  FRM_VER[7:6] = b11. Accept FrameVersion 0 and 1 packets, reject all others */
+    161              ZLL_RX_FRAME_FILTER = ZLL_RX_FRAME_FILTER_FRM_VER_MASK |
+    162                                    ZLL_RX_FRAME_FILTER_CMD_FT_MASK  |
+    163                                    ZLL_RX_FRAME_FILTER_DATA_FT_MASK |
+    164                                    ZLL_RX_FRAME_FILTER_BEACON_FT_MASK;
+    165          
+    166              /* Set 802.15.4 register overwrites */
+    167          //    for( i=0; i<NumberOfElements(overwrites_common); i++ )
+    168          //        *((uint32_t*)overwrites_common[i].address) = overwrites_common[i].data;
+    169          //
+    170          //    for( i=0; i<NumberOfElements(overwrites_802p15p4); i++ )
+    171          //        *((uint32_t*)overwrites_802p15p4[i].address) = overwrites_802p15p4[i].data;
+    172          
+    173              /* Set prescaller to obtain 1 symbol (16us) timebase */
+    174              ZLL_TMR_PRESCALE = 0x05;
+    175          
+    176              /* Set CCA threshold to -75 dBm */
+    177              ZLL_BWR_CCA_LQI_CTRL_CCA1_THRESH(ZLL, 0xB5);
+    178          
+    179              /* Set the default power level */
+    180              PhyPlmeSetPwrLevelRequest(gPhyDefaultTxPowerLevel_d);
+    181          
+    182              /* Adjust ACK delay to fulfill the 802.15.4 turnaround requirements */
+    183              ZLL_BWR_ACKDELAY_ACKDELAY(ZLL, -2);
+    184          
+    185              /* Enable the RxWatermark IRQ and FilterFail IRQ */
+    186          //    ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_FILTERFAIL_MSK_MASK;
+    187              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_RX_WMRK_MSK_MASK;
+    188              /* Set Rx watermark level */
+    189              ZLL_WR_RX_WTR_MARK(ZLL, 0);
+    190          
+    191              /* Set default channels */
+    192              PhyPlmeSetCurrentChannelRequest(0x0B, 0); /* 2405 MHz */
+    193              PhyPlmeSetCurrentChannelRequest(0x0B, 1); /* 2405 MHz */
+    194          
+    195              /* Install PHY ISR */
+    196              PHY_InstallIsr();
+    197          }
+    198          
+    199          /*! *********************************************************************************
+    200          * \brief  Aborts the current sequence and force the radio to IDLE
+    201          *
+    202          ********************************************************************************** */
+    203          void PhyAbort
+    204          (
+    205          void
+    206          )
+    207          {
+    208              ProtectFromXcvrInterrupt();
+    209          
+    210              /* Disable timer trigger (for scheduled XCVSEQ) */
+    211              if( ZLL_PHY_CTRL & ZLL_PHY_CTRL_TMRTRIGEN_MASK )
+    212              {
+    213                  ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMRTRIGEN_MASK;
+    214                  /* give the FSM enough time to start if it was triggered */
+    215                  while(XCVR_BRD_STATUS_TSM_COUNT(XCVR) == 0);
+    216              }
+    217          
+    218              /* If XCVR is not idle, abort current SEQ */
+    219              if( ZLL_PHY_CTRL & ZLL_PHY_CTRL_XCVSEQ_MASK )
+    220              {
+    221                  ZLL_BWR_PHY_CTRL_XCVSEQ(ZLL, gIdle_c);
+    222                  /* wait for Sequence Idle (if not already) */
+    223                  while( ZLL_SEQ_STATE & ZLL_SEQ_STATE_SEQ_STATE_MASK );
+    224              }
+    225          
+    226              /* Mask SEQ interrupt */
+    227              ZLL_BWR_PHY_CTRL_SEQMSK(ZLL, 1);
+    228              /* Stop timers */
+    229              ZLL_BWR_PHY_CTRL_TMR2CMP_EN(ZLL, 0);
+    230              ZLL_BWR_PHY_CTRL_TMR3CMP_EN(ZLL, 0);
+    231              ZLL_BWR_PHY_CTRL_TC3TMOUT(ZLL, 0);
+    232              /* clear all PP IRQ bits to avoid unexpected interrupts( do not change TMR1 and TMR4 IRQ status ) */
+    233              ZLL_IRQSTS &= ~(ZLL_IRQSTS_TMR1IRQ_MASK | ZLL_IRQSTS_TMR4IRQ_MASK);
+    234          
+    235              PhyIsrPassRxParams(NULL);
+    236          
+    237              UnprotectFromXcvrInterrupt();
+    238          }
+    239          
+    240          /*! *********************************************************************************
+    241          * \brief  Get the state of the ZLL
+    242          *
+    243          * \return  uint8_t state
+    244          *
+    245          ********************************************************************************** */
+    246          uint8_t PhyPpGetState
+    247          (
+    248          void
+    249          )
+    250          {
+    251              return ZLL_RD_PHY_CTRL_XCVSEQ(ZLL);
+    252          }
+    253          
+    254          /*! *********************************************************************************
+    255          * \brief  Set the value of the MAC PanId
+    256          *
+    257          * \param[in]  pPanId
+    258          * \param[in]  pan
+    259          *
+    260          * \return  phyStatus_t
+    261          *
+    262          ********************************************************************************** */
+    263          phyStatus_t PhyPpSetPanId
+    264          (
+    265          uint8_t *pPanId,
+    266          uint8_t pan
+    267          )
+    268          {
+    269              uint16_t value;
+    270          
+    271          #ifdef PHY_PARAMETERS_VALIDATION
+    272              if(NULL == pPanId)
+    273              {
+    274                  return gPhyInvalidParameter_c;
+    275              }
+    276          #endif /* PHY_PARAMETERS_VALIDATION */
+    277              
+    278              /* Avoid unaligned memory access issues */
+    279              FLib_MemCpy(&value, pPanId, sizeof(value));
+    280          
+    281              if( 0 == pan )
+    282                  ZLL_WR_MACSHORTADDRS0_MACPANID0( ZLL, value );
+    283              else
+    284                  ZLL_WR_MACSHORTADDRS1_MACPANID1( ZLL, value );
+    285          
+    286              return gPhySuccess_c;
+    287          }
+    288          
+    289          /*! *********************************************************************************
+    290          * \brief  Set the value of the MAC Short Address
+    291          *
+    292          * \param[in]  pShortAddr
+    293          * \param[in]  pan
+    294          *
+    295          * \return  phyStatus_t
+    296          *
+    297          ********************************************************************************** */
+    298          phyStatus_t PhyPpSetShortAddr
+    299          (
+    300          uint8_t *pShortAddr,
+    301          uint8_t pan
+    302          )
+    303          {
+    304              uint16_t value;
+    305          
+    306          #ifdef PHY_PARAMETERS_VALIDATION
+    307              if(NULL == pShortAddr)
+    308              {
+    309                  return gPhyInvalidParameter_c;
+    310              }
+    311          #endif /* PHY_PARAMETERS_VALIDATION */
+    312          
+    313              /* Avoid unaligned memory access issues */
+    314              FLib_MemCpy(&value, pShortAddr, sizeof(value));
+    315              
+    316              if( pan == 0 )
+    317                  ZLL_WR_MACSHORTADDRS0_MACSHORTADDRS0( ZLL, value );
+    318              else
+    319                  ZLL_WR_MACSHORTADDRS1_MACSHORTADDRS1( ZLL, value );
+    320          
+    321              return gPhySuccess_c;
+    322          }
+    323          
+    324          /*! *********************************************************************************
+    325          * \brief  Set the value of the MAC extended address
+    326          *
+    327          * \param[in]  pLongAddr
+    328          * \param[in]  pan
+    329          *
+    330          * \return  phyStatus_t
+    331          *
+    332          ********************************************************************************** */
+    333          phyStatus_t PhyPpSetLongAddr
+    334          (
+    335          uint8_t *pLongAddr,
+    336          uint8_t pan
+    337          )
+    338          {
+    339              uint32_t addrLo;
+    340              uint32_t addrHi;
+    341          
+    342          #ifdef PHY_PARAMETERS_VALIDATION
+    343              if(NULL == pLongAddr)
+    344              {
+    345                  return gPhyInvalidParameter_c;
+    346              }
+    347          #endif /* PHY_PARAMETERS_VALIDATION */
+    348          
+    349              /* Avoid unaligned memory access issues */
+    350              FLib_MemCpy(&addrLo, pLongAddr, sizeof(addrLo));
+    351              pLongAddr += sizeof(addrLo);
+    352              FLib_MemCpy(&addrHi, pLongAddr, sizeof(addrHi));
+    353          
+    354              if( 0 == pan )
+    355              {
+    356                  ZLL_WR_MACLONGADDRS0_LSB(ZLL, addrLo );
+    357                  ZLL_WR_MACLONGADDRS0_MSB(ZLL, addrHi );
+    358              }
+    359              else
+    360              {
+    361                  ZLL_WR_MACLONGADDRS1_LSB(ZLL, addrLo );
+    362                  ZLL_WR_MACLONGADDRS1_MSB(ZLL, addrHi );
+    363              }
+    364          
+    365              return gPhySuccess_c;
+    366          }
+    367          
+    368          /*! *********************************************************************************
+    369          * \brief  Set the MAC PanCoordinator role
+    370          *
+    371          * \param[in]  macRole
+    372          * \param[in]  pan
+    373          *
+    374          * \return  phyStatus_t
+    375          *
+    376          ********************************************************************************** */
+    377          phyStatus_t PhyPpSetMacRole
+    378          (
+    379            bool_t macRole,
+    380            uint8_t pan
+    381          )
+    382          {
+    383              uint8_t panCoord;
+    384          
+    385              if(gMacRole_PanCoord_c == macRole)
+    386                  panCoord = 1;
+    387              else
+    388                  panCoord = 0;
+    389          
+    390              if( 0 == pan )
+    391              {
+    392                  ZLL_BWR_PHY_CTRL_PANCORDNTR0(ZLL, panCoord);
+    393              }
+    394              else
+    395              {
+    396                  ZLL_BWR_DUAL_PAN_CTRL_PANCORDNTR1(ZLL, panCoord);
+    397              }
+    398          
+    399              return gPhySuccess_c;
+    400          }
+    401          
+    402          /*! *********************************************************************************
+    403          * \brief  Set the PHY in Promiscuous mode
+    404          *
+    405          * \param[in]  mode
+    406          *
+    407          ********************************************************************************** */
+    408          void PhyPpSetPromiscuous
+    409          (
+    410          bool_t mode
+    411          )
+    412          {
+    413              if( mode )
+    414              {
+    415                  if( (ZLL_PHY_CTRL & ZLL_PHY_CTRL_PROMISCUOUS_MASK) ||
+    416                      (ZLL_RX_FRAME_FILTER & ZLL_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS_MASK) )
+    417                      return;
+    418          
+    419                  ZLL_BWR_PHY_CTRL_PROMISCUOUS(ZLL, 1);
+    420              /* FRM_VER[7:6] = b00. Any FrameVersion accepted (0,1,2 & 3) */
+    421              /* All frame types accepted*/
+    422                  ZLL_RX_FRAME_FILTER &= ~ZLL_RX_FRAME_FILTER_FRM_VER_MASK;
+    423                  ZLL_RX_FRAME_FILTER |= (ZLL_RX_FRAME_FILTER_ACK_FT_MASK |
+    424                                          ZLL_RX_FRAME_FILTER_NS_FT_MASK);
+    425              }
+    426              else
+    427              {
+    428                  ZLL_BWR_PHY_CTRL_PROMISCUOUS(ZLL, 0);
+    429                  /* FRM_VER[7:6] = b11. Accept FrameVersion 0 and 1 packets, reject all others */
+    430                  /* Beacon, Data and MAC command frame types accepted */
+    431                  ZLL_RX_FRAME_FILTER &= ~(ZLL_RX_FRAME_FILTER_FRM_VER_MASK |
+    432                                           ZLL_RX_FRAME_FILTER_ACK_FT_MASK  |
+    433                                           ZLL_RX_FRAME_FILTER_NS_FT_MASK   |
+    434                                           ZLL_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS_MASK);
+    435                  ZLL_RX_FRAME_FILTER |= 0x03 << ZLL_RX_FRAME_FILTER_FRM_VER_SHIFT;
+    436              }
+    437          }
+    438          
+    439          /*! *********************************************************************************
+    440          * \brief  Set the PHY in ActivePromiscuous mode
+    441          *
+    442          * \param[in]  state
+    443          *
+    444          ********************************************************************************** */
+    445          void PhySetActivePromiscuous(bool_t state)
+    446          {
+    447              if( state )
+    448              {
+    449                  if( !(ZLL_PHY_CTRL & ZLL_PHY_CTRL_PROMISCUOUS_MASK) )
+    450                      return;
+    451          
+    452                  /* Disable Promiscuous mode */
+    453                  ZLL_BWR_PHY_CTRL_PROMISCUOUS(ZLL, 0);
+    454                  ZLL_WR_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS(ZLL, 1);
+    455              }
+    456              else
+    457              {
+    458                  if( !(ZLL_RX_FRAME_FILTER & ZLL_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS_MASK) )
+    459                      return;
+    460          
+    461                  ZLL_WR_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS(ZLL, 0);
+    462                  /* Enable Promiscuous mode */
+    463                  ZLL_BWR_PHY_CTRL_PROMISCUOUS(ZLL, 1);
+    464              }
+    465          }
+    466          
+    467          /*! *********************************************************************************
+    468          * \brief  Get the state of the ActivePromiscuous mode
+    469          *
+    470          * \return  bool_t state
+    471          *
+    472          ********************************************************************************** */
+    473          bool_t PhyGetActivePromiscuous
+    474          (
+    475          void
+    476          )
+    477          {
+    478              return ZLL_RD_RX_FRAME_FILTER_ACTIVE_PROMISCUOUS(ZLL);
+    479          }
+    480          
+    481          /*! *********************************************************************************
+    482          * \brief  Set the state of the SAM HW module
+    483          *
+    484          * \param[in]  state
+    485          *
+    486          ********************************************************************************** */
+    487          void PhyPpSetSAMState
+    488          (
+    489            bool_t state
+    490          )
+    491          {
+    492              ZLL_BWR_SAM_CTRL_SAP0_EN(ZLL, state);
+    493          #if gMpmIncluded_d
+    494              ZLL_BWR_SAM_CTRL_SAP1_EN(ZLL, state);
+    495          #endif
+    496          }
+    497          
+    498          /*! *********************************************************************************
+    499          * \brief  Add a new element to the PHY indirect queue
+    500          *
+    501          * \param[in]  index
+    502          * \param[in]  checkSum
+    503          * \param[in]  instanceId
+    504          *
+    505          * \return  phyStatus_t
+    506          *
+    507          ********************************************************************************** */
+    508          phyStatus_t PhyPp_IndirectQueueInsert
+    509          (
+    510          uint8_t  index,
+    511          uint16_t checkSum,
+    512          instanceId_t instanceId
+    513          )
+    514          {
+    515              uint32_t temp;
+    516          
+    517              (void)instanceId;
+    518              if( index >= gPhyHwIndQueueSize_d )
+    519                  return gPhyInvalidParameter_c;
+    520          
+    521              temp = ZLL_SAM_TABLE;
+    522              temp &= ~(ZLL_SAM_TABLE_SAM_INDEX_MASK | ZLL_SAM_TABLE_SAM_CHECKSUM_MASK);
+    523          
+    524              temp |= (index << ZLL_SAM_TABLE_SAM_INDEX_SHIFT) |
+    525                      (checkSum << ZLL_SAM_TABLE_SAM_CHECKSUM_SHIFT) |
+    526                      ZLL_SAM_TABLE_SAM_INDEX_WR_MASK |
+    527                      ZLL_SAM_TABLE_SAM_INDEX_EN_MASK;
+    528              ZLL_SAM_TABLE = temp;
+    529          
+    530              return gPhySuccess_c;
+    531          }
+    532          
+    533          /*! *********************************************************************************
+    534          * \brief  Remove an eleent from the PHY indirect queue
+    535          *
+    536          * \param[in]  index
+    537          * \param[in]  instanceId
+    538          *
+    539          * \return  phyStatus_t
+    540          *
+    541          ********************************************************************************** */
+    542          phyStatus_t PhyPp_RemoveFromIndirect
+    543          (
+    544          uint8_t index,
+    545          instanceId_t instanceId
+    546          )
+    547          {
+    548              uint32_t temp;
+    549              if( index >= gPhyHwIndQueueSize_d )
+    550                  return gPhyInvalidParameter_c;
+    551          
+    552              temp = ZLL_SAM_TABLE;
+    553              temp &= ~(ZLL_SAM_TABLE_SAM_INDEX_MASK);
+    554              temp |= (index << ZLL_SAM_TABLE_SAM_INDEX_SHIFT) | ZLL_SAM_TABLE_SAM_INDEX_INV_MASK;
+    555              ZLL_SAM_TABLE = temp;
+    556          
+    557              return gPhySuccess_c;
+    558          }
+    559          
+    560          /*! *********************************************************************************
+    561          * \brief  Return TRUE if the received packet is a PollRequest
+    562          *
+    563          * \return  bool_t
+    564          *
+    565          ********************************************************************************** */
+    566          bool_t PhyPpIsPollIndication
+    567          (
+    568          void
+    569          )
+    570          {
+    571              return ZLL_RD_IRQSTS_PI(ZLL);
+    572          }
+    573          
+    574          /*! *********************************************************************************
+    575          * \brief  Return the state of the FP bit of the received ACK
+    576          *
+    577          * \return  bool_t
+    578          *
+    579          ********************************************************************************** */
+    580          bool_t PhyPpIsRxAckDataPending
+    581          (
+    582          void
+    583          )
+    584          {
+    585              return ZLL_RD_IRQSTS_RX_FRM_PEND(ZLL);
+    586          }
+    587          
+    588          /*! *********************************************************************************
+    589          * \brief  Return TRUE if there is data pending for the Poling Device
+    590          *
+    591          * \return  bool_t
+    592          *
+    593          ********************************************************************************** */
+    594          bool_t PhyPpIsTxAckDataPending
+    595          (
+    596          void
+    597          )
+    598          {
+    599              if( ZLL_SAM_CTRL & (ZLL_SAM_CTRL_SAP0_EN_MASK | ZLL_SAM_CTRL_SAP1_EN_MASK) )
+    600              {
+    601                  return ZLL_RD_IRQSTS_SRCADDR(ZLL);
+    602              }
+    603              else
+    604              {
+    605                  return ZLL_RD_SAM_TABLE_ACK_FRM_PND(ZLL);
+    606              }
+    607          }
+    608          
+    609          /*! *********************************************************************************
+    610          * \brief  Set the state of the FP bit of an outgoing ACK frame
+    611          *
+    612          * \param[in]  FP  the state of the FramePending bit
+    613          *
+    614          ********************************************************************************** */
+    615          void PhyPpSetFpManually
+    616          (
+    617            bool_t FP
+    618          )
+    619          {
+    620              /* Disable the Source Address Matching feature and set FP manually */
+    621              ZLL_SAM_TABLE |= ZLL_SAM_TABLE_ACK_FRM_PND_CTRL_MASK;
+    622          
+    623              if( FP )
+    624              {
+    625                  ZLL_SAM_TABLE |= ZLL_SAM_TABLE_ACK_FRM_PND_MASK;
+    626              }
+    627              else
+    628              {
+    629                  ZLL_SAM_TABLE &= ~ZLL_SAM_TABLE_ACK_FRM_PND_MASK;
+    630              }
+    631          }
+    632          
+    633          /*! *********************************************************************************
+    634          * \brief  Set the value of the CCA threshold
+    635          *
+    636          * \param[in]  ccaThreshold
+    637          *
+    638          * \return  phyStatus_t
+    639          *
+    640          ********************************************************************************** */
+    641          phyStatus_t PhyPpSetCcaThreshold
+    642          (
+    643          uint8_t ccaThreshold
+    644          )
+    645          {
+    646              ZLL_BWR_CCA_LQI_CTRL_CCA1_THRESH( ZLL, ccaThreshold );
+    647              return gPhySuccess_c;
+    648          }
+    649          
+    650          /*! *********************************************************************************
+    651          * \brief  This function will set the value for the FAD threshold
+    652          *
+    653          * \param[in]  FADThreshold   the FAD threshold
+    654          *
+    655          * \return  phyStatus_t
+    656          *
+    657          ********************************************************************************** */
+    658          uint8_t PhyPlmeSetFADThresholdRequest(uint8_t FADThreshold)
+    659          {
+    660              XCVR_WR_FAD_THR(XCVR, FADThreshold );
+    661              return gPhySuccess_c;
+    662          }
+    663          
+    664          /*! *********************************************************************************
+    665          * \brief  This function will enable/disable the FAD
+    666          *
+    667          * \param[in]  state   the state of the FAD
+    668          *
+    669          * \return  phyStatus_t
+    670          *
+    671          ********************************************************************************** */
+    672          uint8_t PhyPlmeSetFADStateRequest(bool_t state)
+    673          {
+    674              ZLL_BWR_FAD_CTRL_FAD_EN(ZLL, state);
+    675          
+    676              return gPhySuccess_c;
+    677          }
+    678          
+    679          /*! *********************************************************************************
+    680          * \brief  This function will set the LQI mode
+    681          *
+    682          * \return  uint8_t
+    683          *
+    684          ********************************************************************************** */
+    685          uint8_t PhyPlmeSetLQIModeRequest(uint8_t lqiMode)
+    686          {
+    687              ZLL_BWR_CCA_LQI_CTRL_CCA3_AND_NOT_OR(ZLL, (lqiMode>0));
+    688          
+    689              return gPhySuccess_c;
+    690          }
+    691          
+    692          /*! *********************************************************************************
+    693          * \brief  This function will return the RSSI level
+    694          *
+    695          * \return  uint8_t
+    696          *
+    697          ********************************************************************************** */
+    698          uint8_t PhyPlmeGetRSSILevelRequest(void)
+    699          {
+    700              return ZLL_RD_LQI_AND_RSSI_RSSI(ZLL);
+    701          }
+    702          
+    703          /*! *********************************************************************************
+    704          * \brief  This function will enable/disable the ANTX
+    705          *
+    706          * \param[in]  state   the state of the ANTX
+    707          *
+    708          * \return  phyStatus_t
+    709          *
+    710          ********************************************************************************** */
+    711          uint8_t PhyPlmeSetANTXStateRequest(bool_t state)
+    712          {
+    713              ZLL_BWR_FAD_CTRL_ANTX_EN(ZLL, state);
+    714          
+    715              return gPhySuccess_c;
+    716          }
+    717          
+    718          /*! *********************************************************************************
+    719          * \brief Invert the logic of the ANT pads
+    720          *
+    721          * \param[in] invAntA - invert the ANT_A pad
+    722          * \param[in] invAntB - invert the ANT_A pad
+    723          * \param[in] invTx   - invert the ANT_TX pad
+    724          * \param[in] invRx   - invert the ANT_RX pad
+    725          *
+    726          * \return gPhySuccess
+    727          *
+    728          ********************************************************************************** */
+    729          uint8_t PhyPlmeSetANTPadInvertedRequest(bool_t invAntA, bool_t invAntB, bool_t invTx, bool_t invRx)
+    730          {
+    731              uint32_t settings = 0;
+    732          
+    733              if( invAntA ) 
+    734                  settings |= (1 << 0 );
+    735              if( invAntB ) 
+    736                  settings |= (1 << 1 );
+    737              if( invTx )   
+    738                  settings |= (1 << 2 );
+    739              if( invRx )   
+    740                  settings |= (1 << 3 );
+    741              
+    742              ZLL_BWR_FAD_CTRL_ANTX_POL(ZLL, settings);
+    743          
+    744              return gPhySuccess_c;
+    745          }
+    746          
+    747          /*! *********************************************************************************
+    748          * \brief Enable the ANT pads
+    749          *
+    750          * \param[in] antAB_on - 
+    751          * \param[in] rxtxSwitch_on - 
+    752          *
+    753          * \return gPhySuccess
+    754          *
+    755          ********************************************************************************** */
+    756          uint8_t PhyPlmeSetANTPadStateRequest(bool_t antAB_on, bool_t rxtxSwitch_on)
+    757          {
+    758              uint32_t settings = 0;
+    759          
+    760              if( antAB_on ) 
+    761                  settings |= (1 << 1 );
+    762          
+    763              if( rxtxSwitch_on ) 
+    764                  settings |= (1 << 0 );
+    765              
+    766              ZLL_BWR_FAD_CTRL_ANTX_EN(ZLL, settings);
+    767          
+    768              return gPhySuccess_c;
+    769          }
+    770          
+    771          /*! *********************************************************************************
+    772          * \brief  This function will retrn the state of the ANTX
+    773          *
+    774          * \return  uint8_t
+    775          *
+    776          ********************************************************************************** */
+    777          uint8_t PhyPlmeGetANTXStateRequest(void)
+    778          {
+    779              return ZLL_BRD_FAD_CTRL_ANTX_EN(ZLL);
+    780          }
+    781          
+    782          /*! *********************************************************************************
+    783          * \brief  Set the state of the Dual Pan Auto mode
+    784          *
+    785          * \param[in]  mode TRUE/FALSE
+    786          *
+    787          ********************************************************************************** */
+    788          void PhyPpSetDualPanAuto
+    789          (
+    790          bool_t mode
+    791          )
+    792          {
+    793              ZLL_BWR_DUAL_PAN_CTRL_DUAL_PAN_AUTO(ZLL, mode);
+    794          }
+    795          
+    796          /*! *********************************************************************************
+    797          * \brief  Get the state of the Dual Pan Auto mode
+    798          *
+    799          * \return  bool_t state
+    800          *
+    801          ********************************************************************************** */
+    802          bool_t PhyPpGetDualPanAuto
+    803          (
+    804          void
+    805          )
+    806          {
+    807              return ZLL_BRD_DUAL_PAN_CTRL_DUAL_PAN_AUTO(ZLL);
+    808          }
+    809          
+    810          /*! *********************************************************************************
+    811          * \brief  Set the dwell for the Dual Pan Auto mode
+    812          *
+    813          * \param[in]  dwell
+    814          *
+    815          ********************************************************************************** */
+    816          void PhyPpSetDualPanDwell
+    817          (
+    818          uint8_t dwell
+    819          )
+    820          {
+    821              ZLL_BWR_DUAL_PAN_CTRL_DUAL_PAN_DWELL( ZLL, dwell );
+    822          }
+    823          
+    824          /*! *********************************************************************************
+    825          * \brief  Get the dwell for the Dual Pan Auto mode
+    826          *
+    827          * \return  uint8_t PAN dwell
+    828          *
+    829          ********************************************************************************** */
+    830          uint8_t PhyPpGetDualPanDwell
+    831          (
+    832          void
+    833          )
+    834          {
+    835              return ZLL_BRD_DUAL_PAN_CTRL_DUAL_PAN_DWELL(ZLL);
+    836          }
+    837          
+    838          /*! *********************************************************************************
+    839          * \brief  Get the remeining time before a PAN switch occures
+    840          *
+    841          * \return  uint8_t remaining time
+    842          *
+    843          ********************************************************************************** */
+    844          uint8_t PhyPpGetDualPanRemain
+    845          (
+    846          void
+    847          )
+    848          {
+    849            return ZLL_BRD_DUAL_PAN_CTRL_DUAL_PAN_REMAIN(ZLL);
+    850          }
+    851          
+    852          /*! *********************************************************************************
+    853          * \brief  Set the current active Nwk
+    854          *
+    855          * \param[in]  nwk index of the nwk
+    856          *
+    857          ********************************************************************************** */
+    858          void PhyPpSetDualPanActiveNwk
+    859          (
+    860          uint8_t nwk
+    861          )
+    862          {
+    863              ZLL_BWR_DUAL_PAN_CTRL_ACTIVE_NETWORK(ZLL, (nwk > 0));
+    864          }
+    865          
+    866          /*! *********************************************************************************
+    867          * \brief  Return the index of the Acive PAN
+    868          *
+    869          * \return  uint8_t index
+    870          *
+    871          ********************************************************************************** */
+    872          uint8_t PhyPpGetDualPanActiveNwk
+    873          (
+    874          void
+    875          )
+    876          {
+    877            return ZLL_BRD_DUAL_PAN_CTRL_ACTIVE_NETWORK(ZLL);
+    878          }
+    879          
+    880          /*! *********************************************************************************
+    881          * \brief  Returns the PAN bitmask for the last Rx packet.
+    882          *         A packet can be received on multiple PANs
+    883          *
+    884          * \return  uint8_t bitmask
+    885          *
+    886          ********************************************************************************** */
+    887          uint8_t PhyPpGetPanOfRxPacket(void)
+    888          {
+    889            uint8_t PanBitMask = 0;
+    890          
+    891            if( ZLL_DUAL_PAN_CTRL & ZLL_DUAL_PAN_CTRL_DUAL_PAN_AUTO_MASK )
+    892            {
+    893                if( ZLL_DUAL_PAN_CTRL & ZLL_DUAL_PAN_CTRL_RECD_ON_PAN0_MASK )
+    894                    PanBitMask |= (1<<0);
+    895          
+    896                if( ZLL_DUAL_PAN_CTRL & ZLL_DUAL_PAN_CTRL_RECD_ON_PAN1_MASK )
+    897                    PanBitMask |= (1<<1);
+    898            }
+    899            else
+    900            {
+    901                if(ZLL_DUAL_PAN_CTRL & ZLL_DUAL_PAN_CTRL_ACTIVE_NETWORK_MASK )
+    902                    PanBitMask |= (1<<1);
+    903                else
+    904                    PanBitMask |= (1<<0);
+    905          	  
+    906            }
+    907          
+    908            return PanBitMask;
+    909          }
+    910          
+    911          /*! *********************************************************************************
+    912          * \brief  Get the indirect queue level at which the HW queue will be split between PANs
+    913          *
+    914          * \return  uint8_t level
+    915          *
+    916          ********************************************************************************** */
+    917          uint8_t PhyPpGetDualPanSamLvl(void)
+    918          {
+    919              return ZLL_BRD_SAM_CTRL_SAP1_START(ZLL);
+    920          }
+    921          
+    922          /*! *********************************************************************************
+    923          * \brief  Set the indirect queue level at which the HW queue will be split between PANs
+    924          *
+    925          * \param[in]  level
+    926          *
+    927          ********************************************************************************** */
+    928          void PhyPpSetDualPanSamLvl( uint8_t level )
+    929          {
+    930              ZLL_BWR_SAM_CTRL_SAP1_START(ZLL,level);
+    931              ZLL_BWR_SAM_CTRL_SAP1_EN(ZLL, (level > 0) );
+    932          }
+    933          
+    934          /*! *********************************************************************************
+    935          * \brief  This function compute the hash code for an 802.15.4 device
+    936          *
+    937          * \param[in]  pAddr     Pointer to an 802.15.4 address
+    938          * \param[in]  addrMode  The 802.15.4 addressing mode
+    939          * \param[in]  PanId     The 802.15.2 PAN Id
+    940          *
+    941          * \return  hash code
+    942          *
+    943          ********************************************************************************** */
+    944          uint16_t PhyGetChecksum(uint8_t *pAddr, uint8_t addrMode, uint16_t PanId)
+    945          {
+    946              uint16_t checksum;
+    947              
+    948              /* Short address */
+    949              checksum  = PanId;
+    950              checksum += *pAddr++;
+    951              checksum += (*pAddr++) << 8;
+    952              
+    953              if( addrMode == 3 )    
+    954              {
+    955                  /* Extended address */
+    956                  checksum += *pAddr++;
+    957                  checksum += (*pAddr++) << 8;
+    958                  checksum += *pAddr++;
+    959                  checksum += (*pAddr++) << 8;
+    960                  checksum += *pAddr++;
+    961                  checksum += (*pAddr++) << 8;
+    962              }
+    963          
+    964              return checksum;
+    965          }
+    966          
+    967          /*! *********************************************************************************
+    968          * \brief  This function adds an 802.15.4 device to the neighbor table.
+    969          *         If a polling device is not in the neighbor table, the ACK will have FP=1
+    970          *
+    971          * \param[in]  pAddr     Pointer to an 802.15.4 address
+    972          * \param[in]  addrMode  The 802.15.4 addressing mode
+    973          * \param[in]  PanId     The 802.15.2 PAN Id
+    974          *
+    975          ********************************************************************************** */
+    976          uint8_t PhyAddToNeighborTable(uint8_t *pAddr, uint8_t addrMode, uint16_t PanId)
+    977          {
+    978          #if gPhyUseNeighborTable_d
+    979              int32_t index;
+    980              uint32_t phyReg;
+    981              uint16_t checksum = PhyGetChecksum(pAddr, addrMode, PanId);
+    982              uint32_t min = ZLL_RD_SAM_CTRL_SAA0_START(ZLL);
+    983              uint32_t max = gPhyHwIndQueueSize_d;
+    984          
+    985              if( PhyGetIndexOf(checksum) != -1 )
+    986              {
+    987                  /* Device is allready in the table */
+    988                  return 0;
+    989              }
+    990          
+    991              /* Find first free index */
+    992              phyReg = ZLL_SAM_TABLE;
+    993              phyReg &= ~(ZLL_SAM_TABLE_SAM_INDEX_WR_MASK  |
+    994                          ZLL_SAM_TABLE_SAM_INDEX_INV_MASK |
+    995                          ZLL_SAM_TABLE_SAM_INDEX_EN_MASK  |
+    996                          ZLL_SAM_TABLE_FIND_FREE_IDX_MASK |
+    997                          ZLL_SAM_TABLE_INVALIDATE_ALL_MASK );
+    998              ZLL_SAM_TABLE |= phyReg | ZLL_SAM_TABLE_FIND_FREE_IDX_MASK;
+    999              
+   1000              while( ZLL_SAM_TABLE & ZLL_SAM_TABLE_SAM_BUSY_MASK );
+   1001              
+   1002              index = ZLL_BRD_SAM_FREE_IDX_SAA0_1ST_FREE_IDX(ZLL);
+   1003          
+   1004              if( (index >= min) && (index < max) )
+   1005              {
+   1006                  PhyPp_IndirectQueueInsert((uint8_t)index, checksum, 0);
+   1007                  return 0;
+   1008              }
+   1009          #endif
+   1010              return 1;
+   1011          }
+   1012          
+   1013          /*! *********************************************************************************
+   1014          * \brief  This function removes an 802.15.4 device to the neighbor table.
+   1015          *         If a polling device is not in the neighbor table, the ACK will have FP=1
+   1016          *
+   1017          * \param[in]  pAddr     Pointer to an 802.15.4 address
+   1018          * \param[in]  addrMode  The 802.15.4 addressing mode
+   1019          * \param[in]  PanId     The 802.15.2 PAN Id
+   1020          *
+   1021          ********************************************************************************** */
+   1022          uint8_t PhyRemoveFromNeighborTable(uint8_t *pAddr, uint8_t addrMode, uint16_t PanId)
+   1023          {
+   1024          #if gPhyUseNeighborTable_d
+   1025              uint32_t phyReg;
+   1026              uint16_t checksum;
+   1027              int32_t  index;
+   1028          
+   1029              checksum = PhyGetChecksum(pAddr, addrMode, PanId);
+   1030              index    = PhyGetIndexOf(checksum);
+   1031              
+   1032              if( index != -1 )
+   1033              {
+   1034                  /* Invalidate current index and checksum */
+   1035                  phyReg  = ZLL_SAM_TABLE & ~(ZLL_SAM_TABLE_SAM_CHECKSUM_MASK | ZLL_SAM_TABLE_SAM_INDEX_MASK);
+   1036                  phyReg |= (0xFFFF << ZLL_SAM_TABLE_SAM_CHECKSUM_SHIFT) |
+   1037                            (index << ZLL_SAM_TABLE_SAM_INDEX_SHIFT)     |
+   1038                            ZLL_SAM_TABLE_SAM_INDEX_INV_MASK | ZLL_SAM_TABLE_SAM_INDEX_WR_MASK;
+   1039                  ZLL_SAM_TABLE = phyReg;
+   1040                  return 0;
+   1041              }
+   1042          #endif
+   1043              return 1;
+   1044          }
+   1045          
+   1046          /*! *********************************************************************************
+   1047          * \brief  This function checks if an 802.15.4 device is in the neighbor table.
+   1048          *         If a polling device is not in the neighbor table, the ACK will have FP=1
+   1049          *
+   1050          * \param[in]  checksum     hash code generated by PhyGetChecksum()
+   1051          *
+   1052          * \return  TRUE if the device is present in the neighbor table, FALSE if not.
+   1053          *
+   1054          ********************************************************************************** */
+   1055          bool_t PhyCheckNeighborTable(uint16_t checksum)
+   1056          {
+   1057          #if gPhyUseNeighborTable_d
+   1058              if( PhyGetIndexOf(checksum) != -1 )
+   1059              {
+   1060                  return TRUE;
+   1061              }
+   1062          #endif
+   1063              return FALSE;
+   1064          }
+   1065          
+   1066          /*! *********************************************************************************
+   1067          * \brief  This function returns the table index of the specified checksum.
+   1068          *
+   1069          * \param[in]  checksum     hash code generated by PhyGetChecksum()
+   1070          *
+   1071          * \return  The table index where the checksum was found or
+   1072          *          -1 if no entry was found with the specified chacksum
+   1073          *          
+   1074          *
+   1075          ********************************************************************************** */
+   1076          #if gPhyUseNeighborTable_d
+   1077          static int32_t PhyGetIndexOf( uint16_t checksum )
+   1078          {
+   1079              uint32_t i, phyReg;
+   1080              uint32_t start = ZLL_RD_SAM_CTRL_SAA0_START(ZLL);
+   1081              uint32_t stop = gPhyHwIndQueueSize_d;
+   1082              
+   1083              for(i=start; i<stop; i++)
+   1084              {
+   1085                  /* Set the index value */
+   1086                  phyReg = ZLL_SAM_TABLE;
+   1087                  phyReg &= ~(ZLL_SAM_TABLE_SAM_INDEX_MASK     |
+   1088                              ZLL_SAM_TABLE_SAM_INDEX_WR_MASK  |
+   1089                              ZLL_SAM_TABLE_SAM_INDEX_INV_MASK |
+   1090                              ZLL_SAM_TABLE_SAM_INDEX_EN_MASK  |
+   1091                              ZLL_SAM_TABLE_FIND_FREE_IDX_MASK |
+   1092                              ZLL_SAM_TABLE_INVALIDATE_ALL_MASK );
+   1093                  phyReg |= (i << ZLL_SAM_TABLE_SAM_INDEX_SHIFT) | ZLL_SAM_TABLE_SAM_INDEX_INV_MASK;
+   1094                  ZLL_SAM_TABLE = phyReg;
+   1095                  /* Read checksum located at the specified index */
+   1096                  phyReg = ZLL_SAM_TABLE;
+   1097                  phyReg = (phyReg & ZLL_SAM_TABLE_SAM_CHECKSUM_MASK) >> ZLL_SAM_TABLE_SAM_CHECKSUM_SHIFT;
+   1098          
+   1099                  if( phyReg == checksum )
+   1100                  {
+   1101                      return i;
+   1102                  }
+   1103              }
+   1104              
+   1105              return -1;
+   1106          }
+   1107          #endif
+   1108          
+   1109          phyStatus_t PhyPlmeSetPwrState( uint8_t state )
+   1110          {
+   1111              return gPhySuccess_c;
+   1112          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   PhyAbort
+         8   -> PhyIsrPassRxParams
+         8   -> ProtectFromXcvrInterrupt
+         8   -> UnprotectFromXcvrInterrupt
+       0   PhyAddToNeighborTable
+       0   PhyCheckNeighborTable
+       0   PhyGetActivePromiscuous
+       8   PhyGetChecksum
+       8   PhyHwInit
+         8   -> PHY_InstallIsr
+         8   -> PhyPlmeSetCurrentChannelRequest
+         8   -> PhyPlmeSetPwrLevelRequest
+         8   -> XcvrInit
+       0   PhyPlmeGetANTXStateRequest
+       0   PhyPlmeGetRSSILevelRequest
+      16   PhyPlmeSetANTPadInvertedRequest
+       8   PhyPlmeSetANTPadStateRequest
+       0   PhyPlmeSetANTXStateRequest
+       0   PhyPlmeSetFADStateRequest
+       0   PhyPlmeSetFADThresholdRequest
+       4   PhyPlmeSetLQIModeRequest
+       0   PhyPlmeSetPwrState
+       0   PhyPpGetDualPanActiveNwk
+       0   PhyPpGetDualPanAuto
+       0   PhyPpGetDualPanDwell
+       0   PhyPpGetDualPanRemain
+       0   PhyPpGetDualPanSamLvl
+       4   PhyPpGetPanOfRxPacket
+       0   PhyPpGetState
+       0   PhyPpIsPollIndication
+       0   PhyPpIsRxAckDataPending
+       4   PhyPpIsTxAckDataPending
+       0   PhyPpSetCcaThreshold
+       4   PhyPpSetDualPanActiveNwk
+       0   PhyPpSetDualPanAuto
+       0   PhyPpSetDualPanDwell
+       4   PhyPpSetDualPanSamLvl
+       4   PhyPpSetFpManually
+      24   PhyPpSetLongAddr
+        24   -> FLib_MemCpy
+       8   PhyPpSetMacRole
+      16   PhyPpSetPanId
+        16   -> FLib_MemCpy
+       4   PhyPpSetPromiscuous
+       0   PhyPpSetSAMState
+      16   PhyPpSetShortAddr
+        16   -> FLib_MemCpy
+      12   PhyPp_IndirectQueueInsert
+       4   PhyPp_RemoveFromIndirect
+       0   PhyRemoveFromNeighborTable
+       4   PhySetActivePromiscuous
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable11
+       4  ??DataTable12
+       4  ??DataTable13
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable15
+       4  ??DataTable21
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable22_2
+       4  ??DataTable23
+       4  ??DataTable24
+       4  ??DataTable28
+       4  ??DataTable28_1
+       4  ??DataTable34
+       4  ??DataTable35
+       4  ??DataTable35_1
+       4  ??DataTable35_10
+       4  ??DataTable35_11
+       4  ??DataTable35_12
+       4  ??DataTable35_13
+       4  ??DataTable35_14
+       4  ??DataTable35_15
+       4  ??DataTable35_16
+       4  ??DataTable35_17
+       4  ??DataTable35_18
+       4  ??DataTable35_19
+       4  ??DataTable35_2
+       4  ??DataTable35_20
+       4  ??DataTable35_3
+       4  ??DataTable35_4
+       4  ??DataTable35_5
+       4  ??DataTable35_6
+       4  ??DataTable35_7
+       4  ??DataTable35_8
+       4  ??DataTable35_9
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable9
+     114  PhyAbort
+       6  PhyAddToNeighborTable
+       6  PhyCheckNeighborTable
+      14  PhyGetActivePromiscuous
+      80  PhyGetChecksum
+     114  PhyHwInit
+       8  PhyPlmeGetANTXStateRequest
+      10  PhyPlmeGetRSSILevelRequest
+      64  PhyPlmeSetANTPadInvertedRequest
+      40  PhyPlmeSetANTPadStateRequest
+      14  PhyPlmeSetANTXStateRequest
+      12  PhyPlmeSetFADStateRequest
+      12  PhyPlmeSetFADThresholdRequest
+      28  PhyPlmeSetLQIModeRequest
+       6  PhyPlmeSetPwrState
+       8  PhyPpGetDualPanActiveNwk
+       8  PhyPpGetDualPanAuto
+       8  PhyPpGetDualPanDwell
+       8  PhyPpGetDualPanRemain
+       8  PhyPpGetDualPanSamLvl
+      68  PhyPpGetPanOfRxPacket
+      10  PhyPpGetState
+      14  PhyPpIsPollIndication
+      14  PhyPpIsRxAckDataPending
+      42  PhyPpIsTxAckDataPending
+      12  PhyPpSetCcaThreshold
+      22  PhyPpSetDualPanActiveNwk
+      10  PhyPpSetDualPanAuto
+      10  PhyPpSetDualPanDwell
+      32  PhyPpSetDualPanSamLvl
+      52  PhyPpSetFpManually
+      66  PhyPpSetLongAddr
+      48  PhyPpSetMacRole
+      64  PhyPpSetPanId
+      92  PhyPpSetPromiscuous
+       8  PhyPpSetSAMState
+      64  PhyPpSetShortAddr
+      50  PhyPp_IndirectQueueInsert
+      44  PhyPp_RemoveFromIndirect
+       6  PhyRemoveFromNeighborTable
+      66  PhySetActivePromiscuous
+       1  gPhyActivePwrState
+       1  gPhyIdlePwrState
+       1  gPhyIndirectQueueSize_c
+      72  overwrites_802p15p4
+      72  overwrites_ble
+    1488  overwrites_common
+     156  radio_trim_ifr
+
+ 
+ 1 791 bytes in section .rodata
+ 1 562 bytes in section .text
+ 
+ 1 562 bytes of CODE  memory
+ 1 791 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,2102 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       09/Apr/2016  19:58:14
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\common\App.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\common\App.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\App.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\App.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\common\App.c
+      1          /*!
+      2          * Copyright (c) 2014, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file App.c
+      6          * MyStarNetwork Demo End Device application demonstrates the data transfer between 
+      7          * end device and PAN coordinator.
+      8          *
+      9          * In 802.15.4 most communications are driven by the devices in a network. They
+     10          * are typically battery powered and need to be able to control the data flow,
+     11          * in order to optimize battery life. This is done by polling for data from
+     12          * the coordinator, and transmitting data directly to the coordinator. The
+     13          * coordinator only sends data to a device when it knows it is listening, i.e. 
+     14          * when the device has requested data.
+     15          *
+     16          * This example will demonstrate indirect data transfer from the coordinator to
+     17          * the device. Data sent to the device is not transmitted immediately but put
+     18          * into a queue in the coordinators MAC. Here it resides until the device sends
+     19          * a poll request. The poll request is initiated by the network or application
+     20          * layer on the device.
+     21          *
+     22          * To test the data transfer from the coordinator to the device, both should be
+     23          * connected to a PC with an RS232 terminal at 115200bps, 8N1. When sending an
+     24          * ASCII file (send as text) from the coordinators terminal, the file will be 
+     25          * printed to the terminal connected to the device. It resembles a bidirectional
+     26          * wireless RS232 cable replacement (though, without error checking and flow 
+     27          * control in this simple example).
+     28          *
+     29          * The steps required for receiving a data packet from the coordinator are:
+     30          * 1) We should have an association to the coordinator we want to receive from.
+     31          * 2) Allocate an MLME-Poll Request message and fill in the coordinator
+     32          *    information gained during Active Scan. Send the message to the MLME.
+     33          * 3) Shut down the tranceiver and the MCU for a certain period of time.
+     34          * 4) Wake-up and wait for MCPS-Data Indication message. It may contain the data
+     35          * from the coordinator.
+     36          *
+     37          * Redistribution and use in source and binary forms, with or without modification,
+     38          * are permitted provided that the following conditions are met:
+     39          *
+     40          * o Redistributions of source code must retain the above copyright notice, this list
+     41          *   of conditions and the following disclaimer.
+     42          *
+     43          * o Redistributions in binary form must reproduce the above copyright notice, this
+     44          *   list of conditions and the following disclaimer in the documentation and/or
+     45          *   other materials provided with the distribution.
+     46          *
+     47          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     48          *   contributors may be used to endorse or promote products derived from this
+     49          *   software without specific prior written permission.
+     50          *
+     51          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     52          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     53          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     54          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     55          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     56          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     57          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     58          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     59          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     60          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     61          */
+     62          
+     63          /*! *********************************************************************************
+     64          *************************************************************************************
+     65          * Include
+     66          *************************************************************************************
+     67          ********************************************************************************** */
+     68          #include "App.h"
+     69          
+     70          /* Drv */
+     71          #include "LED.h"
+     72          #include "Keyboard.h"
+     73          
+     74          /* Fwk */
+     75          #include "SecLib.h"
+     76          #include "RNG_Interface.h"
+     77          #include "SerialManager.h"
+     78          #include "TimersManager.h"
+     79          #include "FunctionLib.h"
+     80          #include "fsl_osa_ext.h"
+     81          
+     82          /* 802.15.4 */
+     83          #include "PhyInterface.h"
+     84          #include "MacInterface.h"
+     85          
+     86          /* KSDK */
+     87          #include "board_combined.h"
+     88          #include "fsl_os_abstraction.h"
+     89          
+     90          uint8_t flag = 0;
+     91          
+     92          
+     93          #include <stdio.h>
+     94          // SDK Included Files
+     95          
+     96          //#include "fsl_lptmr_driver.h"
+     97          #include "fsl_debug_console.h"
+     98          #include "fsl_pmc_hal.h"
+     99          #include "fsl_adc16_driver.h"
+    100          #include "accel.h"
+    101          
+    102          
+    103          
+    104          /************************************************************************************
+    105          *************************************************************************************
+    106          * Private macros
+    107          *************************************************************************************
+    108          ************************************************************************************/
+    109          
+    110          /* Default size of data payload in MCPS-Data.request.
+    111             The length has no real meaning since MCPS-Data.requests
+    112             are always sent in one-size buffers big enough to hold
+    113             a maximum length data frame. */
+    114          #define mDefaultValueOfDataLen_c               20
+    115          
+    116          /* Define the message that should be sent to the coordinator
+    117             when some key is pressed*/
+    118          #define mPredefinedMsg_c	                    "Predefined message!\n\r"
+    119          #define mPredefinedMsgLen_c	                    22
+    120          
+    121          /* Define the maximum hex value that can be displayed on the LEDs */
+    122          #define mDefaultValueOfMaxDisplayVal_c          0x0F
+    123          
+    124          /* Maximum number of outstanding packets */
+    125          #define mMaxPendingDataPackets_c                2
+    126          
+    127          /* Define wait interval in miliseconds before another associate retry */
+    128          #define mWaitInterval_c                         ( mDefaultValueOfWaitInterval_c * 1000 )
+    129          
+    130          /* Define the interval, in milliseconds, between sensor info data messages sent
+    131           * by the End Device to the Coordinator.
+    132           */
+    133          #define mSensorTimeInterval_c                  (15.625)
+    134          
+    135          /* Character that triggers sending of a Device Info Message on the serial terminal interface */
+    136          #define gMessageMarkSendDevInfo    0x01
+    137          
+    138          #ifndef mDeviceInfo
+    139          #define mDeviceInfo "Kinetis_MKW2x End Device"
+    140          #endif
+    141          
+    142          /************************************************************************************
+    143          *************************************************************************************
+    144          * Private prototypes
+    145          *************************************************************************************
+    146          ************************************************************************************/
+    147          static uint8_t App_StartScan( macScanType_t scanType );
+    148          static uint8_t App_HandleScanActiveConfirm( nwkMessage_t *pMsg );
+    149          static uint8_t App_WaitMsg( nwkMessage_t *pMsg, uint8_t msgType );
+    150          static uint8_t App_SendAssociateRequest( void );
+    151          static uint8_t App_HandleAssociateConfirm( nwkMessage_t *pMsg );
+    152          static uint8_t App_HandleMlmeInput( nwkMessage_t *pMsg );
+    153          static void    App_HandleMcpsInput( mcpsToNwkMessage_t *pMsgIn );
+    154          static void    App_HandleMessage  ( mcpsToNwkMessage_t *pMsgIn );
+    155          static void    App_SendPredefinedMessage( void );
+    156          static void    App_SendSensorStatus( void );
+    157          static void    App_ReceiveData     ( void );
+    158          static bool_t  App_Idle            ( void );
+    159          static void    App_UpdateLEDs( uint8_t val );
+    160          static void    App_CommRxCallBack              ( void* );
+    161          static void    App_IntervalTimeoutHandler      ( void* );
+    162          static void    App_SensorIntervalTimeoutHandler( void * );
+    163          static void    App_PollIntervalTimeoutHandler  ( void * );
+    164          static void    App_HandleKeys( key_event_t events );
+    165          
+    166          void App_init( void );
+    167          void AppThread (uint32_t argument);
+    168          resultType_t MLME_NWK_SapHandler (nwkMessage_t* pMsg, instanceId_t instanceId);
+    169          resultType_t MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanceId);
+    170          extern void Mac_SetExtendedAddress(uint8_t *pAddr, instanceId_t instanceId);
+    171          
+    172          /************************************************************************************
+    173          *************************************************************************************
+    174          * Private type definitions
+    175          *************************************************************************************
+    176          ************************************************************************************/
+    177          
+    178          
+    179          
+    180          ///////////////////////////////////////////////////////////////////////////////
+    181          // Definitions
+    182          ///////////////////////////////////////////////////////////////////////////////
+    183          
+    184          #define LPTMR_INSTANCE                (0)       //LPTMR instance
+    185          
+    186          #define ADC16_INSTANCE                (0)   // ADC instance
+    187          #define ADC16_INPUT_CHN               (kAdc16Chn1)  // ADC0_SE1 channel
+    188          #define ADC16_BANDGAP_CHN             (kAdc16Chn27) // ADC channel of BANDGAP
+    189          #define ADC16_CHN_GROUP               (0)   // ADC group configuration selection
+    190          
+    191          ///////////////////////////////////////////////////////////////////////////////
+    192          // Prototypes
+    193          ///////////////////////////////////////////////////////////////////////////////
+    194          void ADC16_Measure(void);
+    195          void calibrateParams(void);
+    196          
+    197          ///////////////////////////////////////////////////////////////////////////////
+    198          // Variables
+    199          ///////////////////////////////////////////////////////////////////////////////
+    200          
+    201          //LPTMR
+    202          //volatile uint32_t               lptmrCounter=0;
+    203          //volatile uint32_t               lptmrPeriod=1000000/64; //64 samples/sec
+    204          //volatile bool                   sampleOn = true;
+    205          
+    206          //ADC / Microphone
+    207          adc16_converter_config_t        adcUserConfig_1;   // structure for user config
+    208          uint16_t                        adcValue = 0;     // ADC value
+    209          uint16_t               micCounter=0;
+    210          uint16_t               numMicSamplesTakenCounter=0;
+    211          uint16_t               micPeriod=64*5; //one sample set every 5 sec
+    212          uint16_t               numMicSamplesPerPeriod=30; //10 samples per set
+    213          
+    214          //Accelerometer
+    215          uint16_t               accelerometerCounter=0;
+    216          uint16_t               accelerometerPeriod=8;
+    217          accel_dev_t accDev;
+    218          accel_dev_interface_t accDevice;
+    219          accel_sensor_data_t accelData;
+    220          accel_i2c_interface_t i2cInterface;
+    221          int16_t xData, yData, zData;
+    222          uint8_t orientation;
+    223          
+    224          //Pulse
+    225          uint16_t               pulseCounter=0;
+    226          uint16_t               numPulseSamplesTakenCounter=0;
+    227          uint16_t               pulsePeriod=64*60; //one sample set every 60 sec
+    228          uint16_t               numPulseSamplesPerPeriod=64*30; //64 samples per set
+    229          
+    230          uint32_t inter_counter = 0;
+    231          uint32_t out = 123; // ADA!! FIX THIS!!!!!!
+    232          
+    233          
+    234          
+    235          
+    236          /************************************************************************************
+    237          *************************************************************************************
+    238          * Private memory declarations
+    239          *************************************************************************************
+    240          ************************************************************************************/
+    241          /* Information about the PAN we are part of */
+    242          static panDescriptor_t mCoordInfo;
+    243          
+    244          /* This is the short address assigned by the PAN coordinator
+    245             during association. */
+    246          static uint16_t mAddress;
+    247          
+    248          /* Data request packet for sending serial terminal interface input to the coordinator */
+    249          static nwkToMcpsMessage_t *mpPacket1 = NULL;
+    250          static nwkToMcpsMessage_t *mpPacket2 = NULL;
+    251          static nwkToMcpsMessage_t *mpPacket = NULL;
+    252          /* The MSDU handle is a unique data packet identifier */
+    253          static uint8_t mMsduHandle = 0;
+    254          
+    255          /* Number of pending data packets */
+    256          static uint8_t mcPendingPackets = 0;
+    257          
+    258          /* Signals that an MLME-Poll request is pending, and that we should wait
+    259             for the MLME-Poll confirm message before sending the next poll request. 
+    260             At init we allow sending a poll request.
+    261          */
+    262          static bool_t mWaitPollConfirm = FALSE;
+    263          
+    264          /* Buffer for a message to be sent to coodinator when user presses a key */
+    265          static uint8_t maGeneralMsg[mPredefinedMsgLen_c] = mPredefinedMsg_c;  
+    266          
+    267          /* Flag to stop pooling coordintator for data. This way we ensure that idle
+    268             task gets executed and device can enter low power mode.
+    269          */
+    270          static bool_t mStopPolling = FALSE;
+    271          
+    272          /* Application input queues */
+    273          static anchor_t mMlmeNwkInputQueue;
+    274          static anchor_t mMcpsNwkInputQueue;
+    275          
+    276          static tmrTimerID_t mSoftTimerId_c = gTmrInvalidTimerID_c;
+    277          static tmrTimerID_t mSensorTimerId_c = gTmrInvalidTimerID_c;
+    278          static tmrTimerID_t mPollIntervalTimerId_c = gTmrInvalidTimerID_c;
+    279          
+    280          static const uint64_t mExtendedAddress  = mMacExtendedAddress_c;
+    281          static instanceId_t   mMacInstance;
+    282          static uint8_t        mInterfaceId;
+    283          static event_t   mAppEvent;
+    284          
+    285          /************************************************************************************
+    286          *************************************************************************************
+    287          * Public memory declarations
+    288          *************************************************************************************
+    289          ************************************************************************************/
+    290          
+    291          /* The current state of the applications state machine */
+    292          uint8_t gState;
+    293          
+    294          /************************************************************************************
+    295          *************************************************************************************
+    296          * Public functions
+    297          *************************************************************************************
+    298          ************************************************************************************/
+    299          
+    300          /*! *********************************************************************************
+    301          * \brief  This is the first task created by the OS. This task will initialize 
+    302          *         the system
+    303          *
+    304          * \param[in]  argument
+    305          *
+    306          * \return  None.
+    307          *
+    308          * \pre
+    309          *
+    310          * \post
+    311          *
+    312          * \remarks
+    313          *
+    314          ********************************************************************************** */
+    315          
+    316          void ADC16_Measure(void)
+    317          {
+    318              adc16_chn_config_t chnConfig;
+    319          
+    320              // Configure the conversion channel
+    321              // differential and interrupt mode disable.
+    322              chnConfig.chnIdx     = (adc16_chn_t)ADC16_INPUT_CHN;
+    323          #if FSL_FEATURE_ADC16_HAS_DIFF_MODE
+    324              chnConfig.diffConvEnable = false;
+    325          #endif
+    326              chnConfig.convCompletedIntEnable  = false;
+    327          
+    328              // Software trigger the conversion.
+    329              ADC16_DRV_ConfigConvChn(ADC16_INSTANCE, ADC16_CHN_GROUP, &chnConfig);
+    330          
+    331              // Wait for the conversion to be done.
+    332              ADC16_DRV_WaitConvDone(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    333          
+    334              // Fetch the conversion value.
+    335              adcValue = ADC16_DRV_GetConvValueRAW(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    336          
+    337              // Show the current temperature value.
+    338            //  PRINTF("\tADC converted value at time %d: %d\r\n", lptmrCounter/64, adcValue );  //%ld\t
+    339              
+    340              // Pause the conversion.
+    341              ADC16_DRV_PauseConv(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    342          }
+    343          
+    344          void calibrateParams(void)
+    345          {
+    346              adc16_chn_config_t adcChnConfig;
+    347          #if FSL_FEATURE_ADC16_HAS_HW_AVERAGE
+    348              adc16_hw_average_config_t userHwAverageConfig;
+    349          #endif
+    350              pmc_bandgap_buffer_config_t pmcBandgapConfig = {
+    351                  .enable = true,
+    352          #if FSL_FEATURE_PMC_HAS_BGEN
+    353                  .enableInLowPower = false,
+    354          #endif
+    355          #if FSL_FEATURE_PMC_HAS_BGBDS
+    356                  .drive = kPmcBandgapBufferDriveLow,
+    357          #endif
+    358              };
+    359          
+    360              uint32_t bandgapValue = 0;  // ADC value of BANDGAP
+    361              uint32_t vdd = 0;           // VDD in mV
+    362          
+    363          #if FSL_FEATURE_ADC16_HAS_CALIBRATION
+    364              // Auto calibration
+    365              adc16_calibration_param_t adcCalibraitionParam;
+    366              ADC16_DRV_GetAutoCalibrationParam(ADC16_INSTANCE, &adcCalibraitionParam);
+    367              ADC16_DRV_SetCalibrationParam(ADC16_INSTANCE, &adcCalibraitionParam);
+    368          #endif // FSL_FEATURE_ADC16_HAS_CALIBRATION.
+    369          
+    370              // Enable BANDGAP reference voltage
+    371              PMC_HAL_BandgapBufferConfig(PMC_BASE_PTR, &pmcBandgapConfig);
+    372          
+    373          #if FSL_FEATURE_ADC16_HAS_HW_AVERAGE
+    374              // Use hardware average to increase stability of the measurement.
+    375              userHwAverageConfig.hwAverageEnable = true;
+    376              userHwAverageConfig.hwAverageCountMode = kAdc16HwAverageCountOf32;
+    377              ADC16_DRV_ConfigHwAverage(ADC16_INSTANCE, &userHwAverageConfig);
+    378          #endif // FSL_FEATURE_ADC16_HAS_HW_AVERAGE
+    379          
+    380              // Configure the conversion channel
+    381              // differential and interrupt mode disable.
+    382              adcChnConfig.chnIdx                  = (adc16_chn_t)ADC16_BANDGAP_CHN;
+    383          #if FSL_FEATURE_ADC16_HAS_DIFF_MODE
+    384              adcChnConfig.diffConvEnable          = false;
+    385          #endif
+    386              adcChnConfig.convCompletedIntEnable  = false;
+    387              ADC16_DRV_ConfigConvChn(ADC16_INSTANCE, ADC16_CHN_GROUP, &adcChnConfig);
+    388          
+    389              // Wait for the conversion to be done
+    390              ADC16_DRV_WaitConvDone(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    391          
+    392              // Get current ADC BANDGAP value and format it.
+    393              bandgapValue = ADC16_DRV_GetConvValueSigned(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    394              // Calculates bandgapValue in 16bit resolution
+    395              // from 12bit resolution to calibrate.
+    396          #if (FSL_FEATURE_ADC16_MAX_RESOLUTION < 16)
+    397              bandgapValue = bandgapValue << 4;
+    398          #endif
+    399              // ADC stop conversion
+    400              ADC16_DRV_PauseConv(ADC16_INSTANCE, ADC16_CHN_GROUP);
+    401          
+    402              // Get VDD value measured in mV
+    403              // VDD = (ADCR_VDD x V_BG) / ADCR_BG
+    404              //vdd = ADCR_VDD * V_BG / bandgapValue;
+    405          
+    406              // Disable BANDGAP reference voltage
+    407              pmcBandgapConfig.enable = false;
+    408              PMC_HAL_BandgapBufferConfig(PMC_BASE_PTR, &pmcBandgapConfig);
+    409          }
+    410          
+    411          
+    412          
+    413          
+    414          
+    415          
+    416          
+    417          void main_task(uint32_t param)
+    418          {
+    419              static uint8_t initialized = FALSE;
+    420          
+    421              if( !initialized )
+    422              {
+    423                  initialized = TRUE;
+    424                  //hardware_init();
+    425                  hardware_init_combined();
+    426          
+    427                  MEM_Init();
+    428                  TMR_Init();
+    429                  LED_Init();
+    430                  SecLib_Init();
+    431                  SerialManager_Init();
+    432                  Phy_Init();
+    433                  RNG_Init(); /* RNG must be initialized after the PHY is Initialized */
+    434                  MAC_Init();
+    435          
+    436                  /* Bind to MAC layer */
+    437                  mMacInstance = BindToMAC( (instanceId_t)0 );
+    438                  Mac_RegisterSapHandlers( MCPS_NWK_SapHandler, MLME_NWK_SapHandler, mMacInstance );
+    439                  
+    440                  /* ADDED */
+    441                    // Register callback func for I2C
+    442                  i2cInterface.i2c_init       =  I2C_DRV_MasterInit;
+    443                  i2cInterface.i2c_read       =  I2C_HAL_MasterReceiveDataPolling;
+    444                  i2cInterface.i2c_write      =  I2C_HAL_MasterSendDataPolling;
+    445          
+    446                  accDev.i2c = &i2cInterface;
+    447                  accDev.accel = &accDevice;
+    448          
+    449                  accDev.slave.baudRate_kbps  = BOARD_ACCEL_BAUDRATE;
+    450                  accDev.slave.address        = BOARD_ACCEL_ADDR;
+    451                  accDev.slave.base           = I2C1_BASE_PTR;
+    452                  accDev.bus                  = BOARD_ACCEL_I2C_INSTANCE;
+    453                  
+    454                  // Init hardware.
+    455                  hardware_init_combined();
+    456                  
+    457                  // Initialize the Accelerometer
+    458                  accel_init(&accDev);
+    459                  
+    460                  uint32_t      currentCounter = 0;
+    461                  
+    462                  LED1_EN;
+    463                  
+    464                  // Initialization ADC for
+    465                  // 16bit resolution.
+    466                  // interrupt mode and hw trigger disabled,
+    467                  // normal convert speed, VREFH/L as reference,
+    468                  // disable continuous convert mode.
+    469                  ADC16_DRV_StructInitUserConfigDefault(&adcUserConfig_1);
+    470                  adcUserConfig_1.resolution = kAdc16ResolutionBitOf16;
+    471                  
+    472              #if BOARD_ADC_USE_ALT_VREF
+    473                  adcUserConfig_1.refVoltSrc = kAdc16RefVoltSrcOfValt;
+    474              #endif
+    475                  ADC16_DRV_Init(ADC16_INSTANCE, &adcUserConfig_1);
+    476                  // Calibrate VDD and ADCR_TEMP25
+    477                  calibrateParams();
+    478            
+    479           
+    480                  App_init();
+    481              }
+    482          
+    483              /* Call application task */
+    484              AppThread( param );
+    485          }
+    486          
+    487          
+    488          /*****************************************************************************
+    489          * Initialization function for the App Task. This is called during
+    490          * initialization and should contain any application specific initialization
+    491          * (ie. hardware initialization/setup, table initialization, power up
+    492          * notificaiton.
+    493          *
+    494          * Interface assumptions: None
+    495          *
+    496          * Return value: None
+    497          *
+    498          *****************************************************************************/
+    499          void App_init(void)
+    500          {   
+    501              OSA_EventCreate(&mAppEvent, kEventAutoClear);
+    502              /* The initial application state */
+    503              gState = stateInit;    
+    504              
+    505              /* Initialize the MAC 802.15.4 extended address */
+    506              Mac_SetExtendedAddress( (uint8_t*)&mExtendedAddress, mMacInstance );
+    507              
+    508              mSoftTimerId_c         = TMR_AllocateTimer();
+    509              mPollIntervalTimerId_c = TMR_AllocateTimer();
+    510              /* Allocate sensor data sending timer */
+    511              mSensorTimerId_c       = TMR_AllocateTimer();
+    512              
+    513              /* Register keyboard callback function */
+    514              KBD_Init( App_HandleKeys );
+    515              
+    516              /* Initialize the serial terminal interface so that we can print out status messages */
+    517              Serial_InitInterface( &mInterfaceId, APP_SERIAL_INTERFACE_TYPE, APP_SERIAL_INTERFACE_INSTANCE );
+    518              Serial_SetBaudRate  ( mInterfaceId, gUARTBaudRate57600_c );
+    519              Serial_SetRxCallBack( mInterfaceId, App_CommRxCallBack, NULL );
+    520              
+    521              /* Prepare input queues.*/
+    522              MSG_InitQueue( &mMlmeNwkInputQueue );
+    523              MSG_InitQueue( &mMcpsNwkInputQueue );
+    524              
+    525              /*signal app ready*/  
+    526              LED_StartSerialFlash(LED1);
+    527              
+    528              Serial_Print(mInterfaceId,"\n\rPress any switch on board to start running the application.\n\r", gAllowToBlock_d);  
+    529          }
+    530          
+    531          /*****************************************************************************
+    532          * The AppTask(event_t events) function is the applicantion main loop and 
+    533          * will process any incoming event. Events include timers, messages and any 
+    534          * other user defined events.
+    535          *
+    536          * Interface assumptions:
+    537          *     None
+    538          *
+    539          * Return value: 
+    540          *     None
+    541          *****************************************************************************/
+    542          void AppThread(uint32_t argument)
+    543          { 
+    544              event_flags_t ev;
+    545              /* Pointer for storing the messages from MLME, MCPS, and ASP. */
+    546              void *pMsgIn = NULL;
+    547              /* Stores the status code returned by some functions. */
+    548              uint8_t rc;  
+    549              bool_t (*pApp_Idle)(void) = NULL;  // this is only for removing compiler warning (about not calling App_Idle() ) 
+    550              
+    551              (void)pApp_Idle;
+    552              
+    553              
+    554              
+    555              while(1)
+    556              {
+    557                  OSA_EventWait(&mAppEvent, 0x00FFFFFF, FALSE, OSA_WAIT_FOREVER, &ev);
+    558          
+    559                  if( !gUseRtos_c && !ev)
+    560                  {
+    561                      break;
+    562                  }
+    563                  
+    564                  pMsgIn = NULL;
+    565          
+    566                  /* Dequeue the MLME message */
+    567                  if( ev & gAppEvtMessageFromMLME_c )
+    568                  {
+    569                      /* Get the message from MLME */
+    570                      pMsgIn = MSG_DeQueue( &mMlmeNwkInputQueue );
+    571                      
+    572                      /* Any time a beacon might arrive. Always handle the beacon frame first */
+    573                      if (pMsgIn)
+    574                      {               
+    575                          rc = App_WaitMsg( pMsgIn, gMlmeBeaconNotifyInd_c );
+    576                          if( rc == errorNoError )
+    577                          {
+    578                              /* ALWAYS free the beacon frame contained in the beacon notify indication.*/
+    579                              /* ALSO the application can use the beacon payload.*/
+    580                              MSG_Free( ((nwkMessage_t *)pMsgIn)->msgData.beaconNotifyInd.pBufferRoot );
+    581                              Serial_Print( mInterfaceId,"Received an MLME-Beacon Notify Indication\n\r", gAllowToBlock_d );
+    582                          }
+    583                      }
+    584                  }
+    585          
+    586                  switch( gState )
+    587                  {    
+    588                  case stateInit:       
+    589                      /* Goto Energy Detection state. */
+    590                      gState = stateScanActiveStart;
+    591                      OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c );  
+    592          
+    593                      /* Print a welcome message to the serial terminal interface */
+    594                      Serial_Print( mInterfaceId,"\n\rMyStarNetworkDemo-EndDevice application is initialized and ready.\n\r", gAllowToBlock_d );
+    595                      break;    
+    596                      
+    597                  case stateScanActiveStart:
+    598                      /* Start the Active scan, and goto wait for confirm state. */
+    599                      Serial_Print( mInterfaceId,"Start scanning for a PAN coordinator.\n\r", gAllowToBlock_d );
+    600                      
+    601                      rc = App_StartScan( gScanModeActive_c );
+    602                      if( rc == errorNoError )
+    603                      {
+    604                          gState = stateScanActiveWaitConfirm;
+    605                      }
+    606                      break;
+    607                      
+    608                  case stateScanActiveWaitConfirm:
+    609                      /* Stay in this state until the Scan confirm message arrives, and then goto
+    610                      the associate state or do a rescan in case of invalid short address. 
+    611                      */
+    612                      
+    613                      /* ALWAYS free the beacon frame contained in the beacon notify indication.*/
+    614                      if( ev & gAppEvtMessageFromMLME_c )
+    615                      {
+    616                          if( pMsgIn )
+    617                          {
+    618                              /* Handle the Scan Confirm message. */
+    619                              rc = App_WaitMsg( pMsgIn, gMlmeScanCnf_c );
+    620                              if( rc == errorNoError )
+    621                              {        
+    622                                  rc = App_HandleScanActiveConfirm( pMsgIn );
+    623                                  if( rc == errorNoError )
+    624                                  { 
+    625                                      Serial_Print( mInterfaceId,"Found a coordinator with the following properties:.\n\r", gAllowToBlock_d );
+    626                                      Serial_Print( mInterfaceId,"----------------------------------------------------.", gAllowToBlock_d);
+    627                                      Serial_Print( mInterfaceId,"\n\rAddress...........0x", gAllowToBlock_d ); Serial_PrintHex( mInterfaceId,(uint8_t*)&mCoordInfo.coordAddress, mCoordInfo.coordAddrMode == gAddrModeShortAddress_c ? 2 : 8, 0 );Serial_Print( mInterfaceId,".\n\r", gAllowToBlock_d );
+    628                                      Serial_Print( mInterfaceId,"\n\rPAN ID............0x", gAllowToBlock_d ); Serial_PrintHex( mInterfaceId,(uint8_t*)&mCoordInfo.coordPanId, 2, 0);Serial_Print(mInterfaceId,".\n\r", gAllowToBlock_d );
+    629                                      Serial_Print( mInterfaceId,"\n\rLogical Channel...0x", gAllowToBlock_d ); Serial_PrintHex( mInterfaceId,&mCoordInfo.logicalChannel, 1, 0);Serial_Print(mInterfaceId,".\n\r", gAllowToBlock_d );
+    630                                      Serial_Print( mInterfaceId,"\n\rBeacon Spec.......0x", gAllowToBlock_d ); Serial_PrintHex( mInterfaceId,(uint8_t*)&mCoordInfo.superframeSpec, 2, 0);Serial_Print(mInterfaceId,".\n\r", gAllowToBlock_d );
+    631                                      Serial_Print( mInterfaceId,"\n\rLink Quality......0x", gAllowToBlock_d ); Serial_PrintHex( mInterfaceId,&mCoordInfo.linkQuality, 1, 0);Serial_Print(mInterfaceId,".\n\r", gAllowToBlock_d );
+    632                                      Serial_Print( mInterfaceId,"\n\r\n\r", gAllowToBlock_d );
+    633                                      
+    634                                      gState = stateAssociate;
+    635                                      OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c );
+    636                                  }
+    637                                  else
+    638                                  {                   
+    639                                      /* Restart scanning */
+    640                                      Serial_Print( mInterfaceId,"Scan did not find a suitable coordinator.\n\r", gAllowToBlock_d );
+    641                                      
+    642                                      TMR_StartSingleShotTimer( mSoftTimerId_c, mWaitInterval_c, App_IntervalTimeoutHandler, NULL );
+    643                                      gState = stateWaitInterval;
+    644                                  }
+    645                              }
+    646                          }
+    647                      }
+    648                      break;
+    649                      
+    650                  case stateWaitInterval:
+    651                      if( ev & gAppEvtStartWait_c )
+    652                      {        
+    653                          gState = stateScanActiveStart;
+    654                          OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c );
+    655                      }
+    656                      break;
+    657                      
+    658                  case stateAssociate:
+    659                      /* Associate to the PAN coordinator */
+    660                      Serial_Print( mInterfaceId,"Associating to PAN coordinator on channel 0x", gAllowToBlock_d );
+    661                      Serial_PrintHex( mInterfaceId,&(mCoordInfo.logicalChannel), 1, 0 );
+    662                      Serial_Print( mInterfaceId,".\n\r", gAllowToBlock_d );
+    663                      
+    664                      rc = App_SendAssociateRequest();
+    665                      if( rc == errorNoError )
+    666                      {        
+    667                          gState = stateAssociateWaitConfirm;
+    668                      }
+    669                      break; 
+    670                      
+    671                  case stateAssociateWaitConfirm:
+    672                      /* Stay in this state until the Associate confirm message
+    673                      arrives, and then goto the Listen state. */
+    674                      if( ev & gAppEvtMessageFromMLME_c )
+    675                      {
+    676                          if( pMsgIn )
+    677                          {                    
+    678                              rc = App_WaitMsg( pMsgIn, gMlmeAssociateCnf_c );
+    679                              if( rc == errorNoError )
+    680                              {        
+    681                                  /* Check for coordinator at full capacity error */
+    682                                  if( App_HandleAssociateConfirm(pMsgIn) == gSuccess_c )
+    683                                  {        
+    684                                      gState = stateListen;
+    685                                      Serial_Print(mInterfaceId,"Device successfully associated.\n\r", gAllowToBlock_d);
+    686                                      Serial_Print(mInterfaceId,"We were assigned the short address 0x", gAllowToBlock_d);
+    687                                      Serial_PrintHex(mInterfaceId, (uint8_t*)&mAddress, 2, 0);
+    688                                      Serial_Print(mInterfaceId,".\n\r\n\rEnd Device ready to send and receive data over the serial terminal interface.\n\r", gAllowToBlock_d);
+    689          
+    690                                      OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c);
+    691          
+    692                                      /* Start sensor data sending interval timer. */
+    693                                      TMR_StartIntervalTimer( mSensorTimerId_c, mSensorTimeInterval_c, App_SensorIntervalTimeoutHandler, NULL );
+    694                                      /* Start poll interval timer. */  
+    695                                      TMR_StartIntervalTimer( mPollIntervalTimerId_c, mDefaultValueOfPollInterval_c, App_PollIntervalTimeoutHandler, NULL );
+    696                                  }
+    697                                  else
+    698                                  {        
+    699                                      /* Restart scanning */
+    700                                      Serial_Print(mInterfaceId,"No valid short address. Retry scan.\n\r", gAllowToBlock_d);
+    701                                      TMR_StartSingleShotTimer( mSoftTimerId_c, mWaitInterval_c, App_IntervalTimeoutHandler, NULL );
+    702                                      gState = stateWaitInterval;
+    703                                  }
+    704                              }
+    705                          }        
+    706                      }
+    707                      break; 
+    708                      
+    709                  case stateListen:
+    710                      /* Stay in this state forever. Handles poll confirm etc. */
+    711                      if( ev & gAppEvtMessageFromMLME_c )
+    712                      {  
+    713                          if( pMsgIn )
+    714                          {  
+    715                              /* Process it */
+    716                              rc = App_HandleMlmeInput( pMsgIn );
+    717                          }
+    718                      }
+    719                      
+    720                      break;
+    721                  } /* end switch */
+    722                  
+    723                  /* Free Mlme Messages */
+    724                  if( pMsgIn )
+    725                  {
+    726                      /* Messages must always be freed. */ 
+    727                      MSG_Free( pMsgIn );
+    728                      pMsgIn = NULL;
+    729                  }
+    730                  
+    731                  /* Handle MCPS confirms and transmit data from serial terminal interface */
+    732                  if( ev & gAppEvtMessageFromMCPS_c )
+    733                  {
+    734                      /* Get the message from MCPS */
+    735                      pMsgIn = MSG_DeQueue(&mMcpsNwkInputQueue);
+    736                      if( pMsgIn )
+    737                      {              
+    738                          /* Process it */
+    739                          App_HandleMcpsInput( pMsgIn );
+    740                          /* Messages from the MCPS must always be freed. */
+    741                          MSG_Free( pMsgIn );
+    742                          pMsgIn = NULL;
+    743                      }
+    744                  }
+    745                  
+    746                  if( gState == stateListen ) 
+    747                  {
+    748                      if( ev & gAppEvtSendPollReq_c )
+    749                      {	
+    750                          /* Poll coordinator for data. */	    
+    751                          if( !mStopPolling )
+    752                          {
+    753                              App_ReceiveData();
+    754          #if (gLpmIncluded_d == 1)	                     	        
+    755                              /* Stop polling coordintor in order to ensure that idle task 
+    756                              gets executed. */
+    757                              mStopPolling = TRUE;	      
+    758          #endif
+    759                          }
+    760                      }
+    761          
+    762          #if (gLpmIncluded_d == 1)	                     	        
+    763                      /* Check and if possible allow device to enter sleep mode */
+    764                      if( App_Idle() == TRUE )         
+    765                      {
+    766                          /* Allow device to enter sleep mode. The device will enter
+    767                          in low power first time the idle task gets called.
+    768                          */
+    769                          flag = 0;
+    770                          PWR_AllowDeviceToSleep(); 
+    771                          mStopPolling = FALSE;
+    772                      }
+    773                      else
+    774                      {
+    775                          OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c );
+    776                      }
+    777          #else
+    778                      pApp_Idle = App_Idle;     // this is only for removing compiler warning (about not calling App_Idle() ) 
+    779          #endif      
+    780          
+    781                      if( ev & gAppEvtSendMessage_c )
+    782                      {
+    783                          App_SendPredefinedMessage();                         
+    784                      }
+    785          
+    786                      if( ev & gAppEvtSendSensorData_c )
+    787                      {
+    788                          App_SendSensorStatus();
+    789                      }
+    790                  }
+    791          
+    792                  /* Check for pending messages in the Queue */ 
+    793                  if( MSG_Pending(&mMcpsNwkInputQueue) )
+    794                      OSA_EventSet(&mAppEvent, gAppEvtMessageFromMCPS_c );
+    795          
+    796                  if( MSG_Pending(&mMlmeNwkInputQueue) )
+    797                      OSA_EventSet(&mAppEvent, gAppEvtMessageFromMLME_c );  
+    798          
+    799                  if( !gUseRtos_c )
+    800                  {
+    801                      break;
+    802                  } 
+    803              }
+    804          }
+    805          
+    806          /*****************************************************************************
+    807          * App_CommRxCallBack
+    808          *
+    809          * This callback is triggered when a new byte is received over the serial terminal interface
+    810          *
+    811          *****************************************************************************/
+    812          static void App_CommRxCallBack( void *pData ) 
+    813          {
+    814              uint8_t pressedKey;
+    815              uint16_t count;
+    816              
+    817              (void)pData;
+    818              (void)Serial_GetByteFromRxBuffer( mInterfaceId, &pressedKey, &count );
+    819              
+    820              if( count && gMessageMarkSendDevInfo == pressedKey )
+    821              {
+    822                  /* Print device info */
+    823                  Serial_Print( mInterfaceId,mDeviceInfo, gAllowToBlock_d );
+    824              }
+    825          }
+    826          
+    827          /******************************************************************************
+    828          * The App_StartScan(scanType) function will start the scan process of the
+    829          * specified type in the MAC. This is accomplished by allocating a MAC message,
+    830          * which is then assigned the desired scan parameters and sent to the MLME
+    831          * service access point.
+    832          *
+    833          * The function may return either of the following values:
+    834          *   errorNoError:          The Scan message was sent successfully.
+    835          *   errorInvalidParameter: The MLME service access point rejected the
+    836          *                          message due to an invalid parameter.
+    837          *   errorAllocFailed:      A message buffer could not be allocated.
+    838          *
+    839          ******************************************************************************/
+    840          static uint8_t App_StartScan( macScanType_t scanType )
+    841          {
+    842              mlmeMessage_t *pMsg;
+    843              mlmeScanReq_t *pScanReq;
+    844          
+    845              Serial_Print(mInterfaceId,"Sending the MLME-Scan Request message to the MAC... ", gAllowToBlock_d);
+    846          
+    847              /* Allocate a message for the MLME (We should check for NULL). */
+    848              pMsg = MSG_AllocType( mlmeMessage_t );
+    849              if( pMsg != NULL )
+    850              {
+    851                  /* This is a MLME-SCAN.req command */
+    852                  pMsg->msgType = gMlmeScanReq_c;
+    853                  /* Create the Scan request message data. */
+    854                  pScanReq = &pMsg->msgData.scanReq;
+    855                  /* gScanModeED_c, gScanModeActive_c, gScanModePassive_c, or gScanModeOrphan_c */
+    856                  pScanReq->scanType = scanType;
+    857                  /* ChannelsToScan */
+    858          #ifdef gPHY_802_15_4g_d
+    859                  pScanReq->channelPage = gChannelPageId9_c;
+    860                  pScanReq->scanChannels[0] = mDefaultValueOfChannel_c;
+    861                  FLib_MemSet(pScanReq->scanChannels+1, 0, sizeof(channelMask_t)-sizeof(uint32_t));
+    862          #else
+    863                  pScanReq->scanChannels = mDefaultValueOfChannel_c;
+    864          #endif
+    865                  
+    866                  /* Duration per channel 0-14 (dc). T[sec] = (16*960*((2^dc)+1))/1000000.
+    867                  A scan duration of 5 on 16 channels approximately takes 8 secs. */
+    868                  pScanReq->scanDuration = 5;
+    869                  
+    870                  pScanReq->securityLevel = gMacSecurityNone_c; //No security is used
+    871                  
+    872                  /* Send the Scan request to the MLME. */
+    873                  if( NWK_MLME_SapHandler( pMsg, mMacInstance ) == gSuccess_c )
+    874                  {
+    875                      Serial_Print( mInterfaceId,"Done.\n\r", gAllowToBlock_d );  
+    876                      return errorNoError;
+    877                  }																	 
+    878                  else
+    879                  {
+    880                      Serial_Print( mInterfaceId,"Invalid parameter.\n\r", gAllowToBlock_d );
+    881                      return errorInvalidParameter;
+    882                  }
+    883              }
+    884              else
+    885              {
+    886                  /* Allocation of a message buffer failed. */
+    887                  Serial_Print( mInterfaceId,"Message allocation failed.\n\r", gAllowToBlock_d );
+    888                  return errorAllocFailed;
+    889              }
+    890          }
+    891          
+    892          /******************************************************************************
+    893          * The App_HandleScanActiveConfirm(nwkMessage_t *pMsg) function will handle the
+    894          * Active Scan confirm message received from the MLME when the Active scan has
+    895          * completed. The message contains a list of PAN descriptors. Based on link
+    896          * quality inforamtion in the pan descriptors the nearest coordinator is chosen.
+    897          * The corresponding pan descriptor is stored in the global variable mCoordInfo. 
+    898          *
+    899          * The function may return either of the following values:
+    900          *   errorNoError:       A suitable pan descriptor was found.
+    901          *   errorNoScanResults: No scan results were present in the confirm message.
+    902          *
+    903          ******************************************************************************/
+    904          static uint8_t App_HandleScanActiveConfirm( nwkMessage_t *pMsg )
+    905          {
+    906              void    *pBlock;
+    907              uint8_t panDescListSize = pMsg->msgData.scanCnf.resultListSize;
+    908              uint8_t rc = errorNoScanResults;
+    909              uint8_t j;
+    910              uint8_t bestLinkQuality = 0;  
+    911              panDescriptorBlock_t *pDescBlock = pMsg->msgData.scanCnf.resList.pPanDescriptorBlockList;  
+    912              panDescriptor_t      *pPanDesc;     
+    913          
+    914              /* Check if the scan resulted in any coordinator responses. */  
+    915              if( panDescListSize > 0 )
+    916              {    
+    917                  /* Check all PAN descriptors. */
+    918                  while( NULL != pDescBlock )
+    919                  {
+    920                      for( j = 0; j < pDescBlock->panDescriptorCount; j++ )
+    921                      {            
+    922                          pPanDesc = &pDescBlock->panDescriptorList[j];
+    923          
+    924                          /* Only attempt to associate if the coordinator
+    925                          accepts associations and is non-beacon. */
+    926                          if( ( pPanDesc->superframeSpec.associationPermit ) && 
+    927                             ( pPanDesc->superframeSpec.beaconOrder == 0x0F) )
+    928                          {        
+    929                              /* Find the nearest coordinator using the link quality measure. */
+    930                              if( pPanDesc->linkQuality > bestLinkQuality )
+    931                              {
+    932                                  /* Save the information of the coordinator candidate. If we
+    933                                  find a better candiate, the information will be replaced. */
+    934                                  FLib_MemCpy( &mCoordInfo, pPanDesc, sizeof(panDescriptor_t) );
+    935                                  bestLinkQuality = pPanDesc->linkQuality;
+    936                                  rc = errorNoError;
+    937                              }
+    938                          }      
+    939                      }
+    940          
+    941                      /* Free current block */
+    942                      pBlock = pDescBlock;
+    943                      pDescBlock = pDescBlock->pNext;              
+    944                      MSG_Free( pBlock );
+    945                  }
+    946              }
+    947          
+    948              if( pDescBlock )
+    949                  MSG_Free( pDescBlock );
+    950          
+    951              return rc;
+    952          }
+    953          
+    954          /******************************************************************************
+    955          * The App_SendAssociateRequest(void) will create an Associate Request message
+    956          * and send it to the coordinator it wishes to associate to. The function uses
+    957          * information gained about the coordinator during the scan procedure.
+    958          *
+    959          * The function may return either of the following values:
+    960          *   errorNoError:          The Associate Request message was sent successfully.
+    961          *   errorInvalidParameter: The MLME service access point rejected the
+    962          *                          message due to an invalid parameter.
+    963          *   errorAllocFailed:      A message buffer could not be allocated.
+    964          *
+    965          ******************************************************************************/
+    966          static uint8_t App_SendAssociateRequest( void )
+    967          {
+    968              mlmeMessage_t *pMsg;
+    969              mlmeAssociateReq_t *pAssocReq;
+    970          
+    971              Serial_Print( mInterfaceId,"Sending the MLME-Associate Request message to the MAC ", gAllowToBlock_d );
+    972          
+    973              /* Allocate a message for the MLME message. */
+    974              pMsg = MSG_AllocType( mlmeMessage_t );
+    975              if( pMsg != NULL )
+    976              {
+    977                  /* This is a MLME-ASSOCIATE.req command. */
+    978                  pMsg->msgType = gMlmeAssociateReq_c;
+    979                  /* Create the Associate request message data. */
+    980                  pAssocReq = &pMsg->msgData.associateReq;
+    981          
+    982                  /* Use the coordinator info we got from the Active Scan. */
+    983                  FLib_MemCpy(&pAssocReq->coordAddress, &mCoordInfo.coordAddress, 8);
+    984                  FLib_MemCpy(&pAssocReq->coordPanId,   &mCoordInfo.coordPanId, 2);
+    985                  pAssocReq->coordAddrMode  = mCoordInfo.coordAddrMode;
+    986                  pAssocReq->logicalChannel = mCoordInfo.logicalChannel;
+    987                  pAssocReq->securityLevel  = gMacSecurityNone_c;
+    988          #ifdef gPHY_802_15_4g_d
+    989                  pAssocReq->channelPage = gChannelPageId9_c;
+    990          #else
+    991                  pAssocReq->channelPage = gDefaultChannelPageId_c;
+    992          #endif
+    993                  
+    994                  /* We want the coordinator to assign a short address to us. */
+    995                  pAssocReq->capabilityInfo     = gCapInfoAllocAddr_c;
+    996                  
+    997                  /* Send the Associate Request to the MLME. */
+    998                  if( NWK_MLME_SapHandler( pMsg, mMacInstance ) == gSuccess_c )
+    999                  {
+   1000                      Serial_Print( mInterfaceId,"Done.\n\r", gAllowToBlock_d );
+   1001                      return errorNoError;
+   1002                  }
+   1003                  else
+   1004                  {
+   1005                      /* One or more parameters in the message were invalid. */
+   1006                      Serial_Print( mInterfaceId,"Invalid parameter.\n\r", gAllowToBlock_d );
+   1007                      return errorInvalidParameter;
+   1008                  }
+   1009              }
+   1010              else
+   1011              {
+   1012                  /* Allocation of a message buffer failed. */
+   1013                  Serial_Print( mInterfaceId,"Message allocation failed.\n\r", gAllowToBlock_d );
+   1014                  return errorAllocFailed;
+   1015              }
+   1016          }
+   1017          
+   1018          
+   1019          /******************************************************************************
+   1020          * The App_HandleAssociateConfirm(nwkMessage_t *pMsg) function will handle the
+   1021          * Associate confirm message received from the MLME when the Association
+   1022          * procedure has completed. The message contains the short address that the
+   1023          * coordinator has assigned to us. The address and address mode are saved in
+   1024          * global variables. They will be used in the next demo application when sending
+   1025          * data .
+   1026          *
+   1027          * The function may return either of the following values:
+   1028          *   gSuccess_c:          Correct short address 
+   1029          *   gPanAccessDenied_c:  Invalid short address
+   1030          *
+   1031          ******************************************************************************/
+   1032          static uint8_t App_HandleAssociateConfirm( nwkMessage_t *pMsg )
+   1033          {
+   1034              if( pMsg->msgData.associateCnf.status == gSuccess_c )
+   1035              {
+   1036                  FLib_MemCpy( &mAddress, &pMsg->msgData.associateCnf.assocShortAddress, 2 );
+   1037                  return gSuccess_c;        
+   1038              }
+   1039              else
+   1040              {
+   1041                  /* No valid short address. */
+   1042                  return gPanAccessDenied_c;  
+   1043              }  
+   1044          }
+   1045          
+   1046          
+   1047          /******************************************************************************
+   1048          * The App_HandleMlmeInput(nwkMessage_t *pMsg) function will handle various
+   1049          * messages from the MLME, e.g. poll confirm.
+   1050          *
+   1051          * The function may return either of the following values:
+   1052          *   errorNoError:   The message was processed.
+   1053          *   errorNoMessage: The message pointer is NULL.
+   1054          *
+   1055          ******************************************************************************/
+   1056          static uint8_t App_HandleMlmeInput( nwkMessage_t *pMsg )
+   1057          {
+   1058              if( pMsg == NULL )
+   1059              {    
+   1060                  return errorNoMessage;
+   1061              }
+   1062              
+   1063              /* Handle the incoming message. The type determines the sort of processing.*/
+   1064              switch( pMsg->msgType )
+   1065              {
+   1066              case gMlmePollCnf_c:
+   1067                  if( pMsg->msgData.pollCnf.status != gSuccess_c )
+   1068                  {      
+   1069                      /* If we get to this point, then no data was available, and we
+   1070                      allow a new poll request. Otherwise, we wait for the data
+   1071                      indication before allowing the next poll request. */
+   1072                      mWaitPollConfirm = FALSE;
+   1073                  }
+   1074                  break;
+   1075              }
+   1076              return errorNoError;
+   1077          }
+   1078          
+   1079          
+   1080          /******************************************************************************
+   1081          * The App_HandleMcpsInput(mcpsToNwkMessage_t *pMsgIn) function will handle 
+   1082          * messages from the MCPS, e.g. Data Confirm, and Data Indication.
+   1083          *
+   1084          ******************************************************************************/
+   1085          static void App_HandleMcpsInput( mcpsToNwkMessage_t *pMsgIn )
+   1086          {
+   1087              switch( pMsgIn->msgType )
+   1088              {
+   1089                  /* The MCPS-Data confirm is sent by the MAC to the network 
+   1090                  or application layer when data has been sent. */
+   1091              case gMcpsDataCnf_c:
+   1092                  if( mcPendingPackets )
+   1093                  {        
+   1094                      mcPendingPackets--;
+   1095                  }
+   1096                  break;
+   1097                  
+   1098              case gMcpsDataInd_c:
+   1099                  /* Handle message */
+   1100                  App_HandleMessage( pMsgIn );
+   1101                  
+   1102                  /* Allow another MLME-Poll request. */
+   1103                  mWaitPollConfirm = FALSE;
+   1104                  break;
+   1105              }
+   1106          }
+   1107          
+   1108          
+   1109          /******************************************************************************
+   1110          * The App_HandleMessage(mcpsToNwkMessage_t *pMsgIn) function will handle a 
+   1111          * data indication message from the MCPS.If it is a network activity message,
+   1112          * the value received from the coordinator is displayed on the LEDs . If it is
+   1113          * a data packet , we send it to the serial terminal interface.
+   1114          *
+   1115          ******************************************************************************/
+   1116          static void App_HandleMessage( mcpsToNwkMessage_t *pMsgIn )
+   1117          {
+   1118              uint8_t val = *(pMsgIn->msgData.dataInd.pMsdu);
+   1119              if( ( pMsgIn->msgData.dataInd.msduLength == 1 ) &&
+   1120                  ( val <= mDefaultValueOfMaxDisplayVal_c ))
+   1121              {
+   1122                  App_UpdateLEDs(val);
+   1123              }
+   1124              else
+   1125              {
+   1126                  uint8_t hex = pMsgIn->msgData.dataInd.mpduLinkQuality;
+   1127                  Serial_Print(mInterfaceId,"\n\rPAN Coordinator(0x", gAllowToBlock_d);
+   1128                  Serial_PrintHex(mInterfaceId,&hex,1,0);
+   1129                  Serial_Print(mInterfaceId,"):", gAllowToBlock_d);
+   1130                  Serial_SyncWrite(mInterfaceId,pMsgIn->msgData.dataInd.pMsdu, pMsgIn->msgData.dataInd.msduLength);
+   1131                  Serial_Print(mInterfaceId,"\n\r", gAllowToBlock_d);
+   1132              }
+   1133          }
+   1134          
+   1135          
+   1136          /******************************************************************************
+   1137          * The App_WaitMsg(nwkMessage_t *pMsg, uint8_t msgType) function does not, as
+   1138          * the name implies, wait for a message, thus blocking the execution of the
+   1139          * state machine. Instead the function analyzes the supplied message to 
+   1140          * determine whether or not the message is of the expected type.
+   1141          *
+   1142          * The function may return either of the following values:
+   1143          *   errorNoError: The message was of the expected type.
+   1144          *   errorNoMessage: The message pointer is NULL.
+   1145          *   errorWrongConfirm: The message is not of the expected type.
+   1146          *
+   1147          ******************************************************************************/
+   1148          static uint8_t App_WaitMsg( nwkMessage_t *pMsg, uint8_t msgType )
+   1149          {
+   1150            /* Do we have a message? If not, the exit with error code */
+   1151            if( pMsg == NULL )
+   1152            {    
+   1153              return errorNoMessage;
+   1154            }
+   1155          
+   1156            /* Is it the expected message type? If not then exit with error code */
+   1157            if( pMsg->msgType != msgType )
+   1158            {    
+   1159              return errorWrongConfirm;
+   1160            }
+   1161          
+   1162            /* Found the expected message. Return with success code */
+   1163            return errorNoError;
+   1164          }
+   1165          
+   1166          
+   1167          /******************************************************************************
+   1168          * The App_SendPredefinedMessage() function will perform  data transmissions of
+   1169          * a predefined message to show some kind of a network activity. Data could also 
+   1170          * come from other sources such as sensors etc. This is completely determined by
+   1171          * the application. The constant mMaxPendingDataPackets_c determine the maximum
+   1172          * number of packets pending for transmission in the MAC. A global variable
+   1173          * is incremented each time a data packet is sent to the MCPS, and decremented
+   1174          * when the corresponding MCPS-Data Confirm message is received. If the counter
+   1175          * reaches the defined maximum no more data buffers are allocated until the
+   1176          * counter is decreased below the maximum number of pending packets.
+   1177          *
+   1178          * The function uses the coordinator information gained during the Active Scan,
+   1179          * and the short address assigned to us by coordinator, for building an MCPS-
+   1180          * Data Request message. The message is sent to the MCPS service access point
+   1181          * in the MAC.
+   1182          *
+   1183          ******************************************************************************/
+   1184          static void App_SendPredefinedMessage( void )
+   1185          {   
+   1186              mpPacket = NULL;
+   1187              
+   1188              /* Data request packet for sending serial terminal interface input to the coordinator */
+   1189              
+   1190              if( (mcPendingPackets < mMaxPendingDataPackets_c) && (mpPacket == NULL) )
+   1191              {
+   1192                  /* If the maximum number of pending data buffes is below maximum limit 
+   1193                  and we do not have a data buffer already then allocate one. */    
+   1194                  mpPacket = MSG_Alloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+   1195              }
+   1196              
+   1197              if( mpPacket != NULL )
+   1198              {  
+   1199                  mpPacket->msgData.dataReq.pMsdu = (uint8_t*)(&(mpPacket->msgData.dataReq.pMsdu)) + sizeof(uint8_t*);
+   1200                  FLib_MemCpy(mpPacket->msgData.dataReq.pMsdu, (uint8_t*) maGeneralMsg, mPredefinedMsgLen_c);
+   1201                  /* Data was available in the serial terminal interface receive buffer. Now create an
+   1202                  MCPS-Data Request message containing the serial terminal interface data. */
+   1203                  mpPacket->msgType = gMcpsDataReq_c;
+   1204                  /* Create the header using coordinator information gained during 
+   1205                  the scan procedure. Also use the short address we were assigned
+   1206                  by the coordinator during association. */
+   1207                  FLib_MemCpy(&mpPacket->msgData.dataReq.dstAddr, &mCoordInfo.coordAddress, 8);               
+   1208                  FLib_MemCpy(&mpPacket->msgData.dataReq.srcAddr, &mAddress, 2);
+   1209                  FLib_MemCpy(&mpPacket->msgData.dataReq.dstPanId, &mCoordInfo.coordPanId, 2);           
+   1210                  FLib_MemCpy(&mpPacket->msgData.dataReq.srcPanId, &mCoordInfo.coordPanId, 2);
+   1211                  mpPacket->msgData.dataReq.dstAddrMode = mCoordInfo.coordAddrMode;
+   1212                  mpPacket->msgData.dataReq.srcAddrMode = gAddrModeShortAddress_c;
+   1213                  mpPacket->msgData.dataReq.msduLength = mPredefinedMsgLen_c;
+   1214                  /* Request MAC level acknowledgement of the data packet */
+   1215                  mpPacket->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
+   1216                  /* Give the data packet a handle. The handle is
+   1217                  returned in the MCPS-Data Confirm message. */
+   1218                  mpPacket->msgData.dataReq.msduHandle = mMsduHandle++;
+   1219                  mpPacket->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+   1220                  /* Send the Data Request to the MCPS */
+   1221                  (void)NWK_MCPS_SapHandler(mpPacket, mMacInstance);
+   1222                  /* Prepare for another data buffer */
+   1223                  mcPendingPackets++;
+   1224              }
+   1225          }
+   1226          /******************************************************************************
+   1227          * The App_SendSensorStatus() function will perform  data transmissions of
+   1228          * sensor data to the coordinator. It works exactly like the
+   1229          * App_SendPredefinedMessage() function above. See it's description for details.
+   1230          ******************************************************************************/
+   1231          static void App_SendSensorStatus( void )
+   1232          {   
+   1233              //Dummy ON/OFF button status
+   1234              static uint8_t dummyToggleStatus = 0x00;
+   1235              // Dummy control info: suggests to the Coordinator that the End Device
+   1236              // will send info about: ON/OFF button, temperature sensor, Accelerometer and
+   1237              // pressure sensor
+   1238              //static uint8_t dummyControlInfo = 0x0F;
+   1239              // Dummy accelerometer data
+   1240             // static int16_t dummyAccelData[3] = {76, 84, 67};
+   1241              // Dummy pressure data
+   1242              static int16_t dummyPulse = 14;
+   1243              // Dummy temperature data
+   1244              static int8_t  dummyTemperature = 23;
+   1245              // Dummy battery level
+   1246              static int8_t  dummyBatteryLevel = 31;
+   1247              
+   1248              mpPacket1 = NULL;
+   1249              mpPacket2 = NULL;
+   1250              
+   1251              /* added sensor stuff **********************************************************/
+   1252             // lptmrCounter++;
+   1253              micCounter++;
+   1254              accelerometerCounter++;
+   1255              pulseCounter++;
+   1256              inter_counter++;
+   1257              
+   1258              /* ======================================================== ACCEL ===================================*/
+   1259              if (accelerometerCounter>=accelerometerPeriod) {
+   1260                //Turn this else-if statement into an if statement for multiple
+   1261                //samples in one interrupt.
+   1262                 mpPacket1 = NULL;
+   1263                
+   1264                //REPLACE THIS WITH MEASUREMENT FUNCTION
+   1265                //PRINTF("\tAccelerometer measurement\r\n");
+   1266                accelerometerCounter=0;
+   1267                // Get new accelerometer data.
+   1268                accDev.accel->accel_read_sensor_data(&accDev,&accelData);
+   1269                
+   1270                // Get the X, Y, and Z data from the sensor data structure.
+   1271                xData = (int16_t)((accelData.mma8451_data.accelXMSB << 8) | accelData.mma8451_data.accelXLSB) >> 2;
+   1272                yData = (int16_t)((accelData.mma8451_data.accelYMSB << 8) | accelData.mma8451_data.accelYLSB) >> 2;
+   1273                zData = (int16_t)((accelData.mma8451_data.accelZMSB << 8) | accelData.mma8451_data.accelZLSB) >> 2;
+   1274                orientation = accelData.mma8451_data.accelDir;
+   1275                
+   1276                //PRINTF("x = %d y = %d z = %d o = %d\r\n", xData, yData, zData, orientation);
+   1277                  if( (mcPendingPackets < mMaxPendingDataPackets_c) && (mpPacket1 == NULL) )
+   1278              {
+   1279                  /* If the maximum number of pending data buffes is below maximum limit 
+   1280                  and we do not have a data buffer already then allocate one. */    
+   1281                  mpPacket1 = MSG_Alloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+   1282              }
+   1283              
+   1284              if( mpPacket1 != NULL )
+   1285              {       
+   1286                  /* Data was available in the serial terminal interface receive buffer. Now create an
+   1287                  MCPS-Data Request message containing the serial terminal interface data. */
+   1288                  mpPacket1->msgType = gMcpsDataReq_c;
+   1289                  /* Create the header using coordinator information gained during 
+   1290                  the scan procedure. Also use the short address we were assigned
+   1291                  by the coordinator during association. */
+   1292                  mpPacket1->msgData.dataReq.pMsdu = (uint8_t*)(&(mpPacket1->msgData.dataReq.pMsdu)) + sizeof(uint8_t*);
+   1293          
+   1294                  FLib_MemCpy(&mpPacket1->msgData.dataReq.dstAddr, &mCoordInfo.coordAddress, 8);               
+   1295                  FLib_MemCpy(&mpPacket1->msgData.dataReq.srcAddr, &mAddress, 2);
+   1296                  FLib_MemCpy(&mpPacket1->msgData.dataReq.dstPanId, &mCoordInfo.coordPanId, 2);           
+   1297                  FLib_MemCpy(&mpPacket1->msgData.dataReq.srcPanId, &mCoordInfo.coordPanId, 2);
+   1298                  mpPacket1->msgData.dataReq.dstAddrMode = mCoordInfo.coordAddrMode;
+   1299                  mpPacket1->msgData.dataReq.srcAddrMode = gAddrModeShortAddress_c;
+   1300                  mpPacket1->msgData.dataReq.msduLength = 16;
+   1301                  // Signal to Coordinator that a sensor message follows
+   1302                  mpPacket1->msgData.dataReq.pMsdu[0] = 0x01;
+   1303                  // Put dummy sensor data into the data packet
+   1304                
+   1305                  mpPacket1->msgData.dataReq.pMsdu[1] = (uint8_t)(xData & 0xFF00);
+   1306                  mpPacket1->msgData.dataReq.pMsdu[2] = (uint8_t)(xData & 0x00FF);
+   1307                  mpPacket1->msgData.dataReq.pMsdu[3] = (uint8_t)(yData & 0xFF00);
+   1308                  mpPacket1->msgData.dataReq.pMsdu[4] = (uint8_t)(yData & 0x00FF);
+   1309                  mpPacket1->msgData.dataReq.pMsdu[5] = (uint8_t)(zData & 0xFF00);
+   1310                  mpPacket1->msgData.dataReq.pMsdu[6] = (uint8_t)(zData & 0x00FF);
+   1311                  mpPacket1->msgData.dataReq.pMsdu[7] = (uint8_t)orientation;
+   1312                  mpPacket1->msgData.dataReq.pMsdu[8] = (uint8_t)(inter_counter & 0xFF000000);
+   1313                  mpPacket1->msgData.dataReq.pMsdu[9] = (uint8_t)(inter_counter & 0x00FF0000);
+   1314                  mpPacket1->msgData.dataReq.pMsdu[10] = (uint8_t)(inter_counter & 0x0000FF00);
+   1315                  mpPacket1->msgData.dataReq.pMsdu[11] = (uint8_t)(inter_counter & 0x000000FF);
+   1316                  // ADA!! FIX THIS!!!!!!!!
+   1317                  mpPacket1->msgData.dataReq.pMsdu[12] = (uint8_t)(out & 0xFF000000);
+   1318                  mpPacket1->msgData.dataReq.pMsdu[13] = (uint8_t)(out & 0x00FF0000);
+   1319                  mpPacket1->msgData.dataReq.pMsdu[14] = (uint8_t)(out & 0x0000FF00);
+   1320                  mpPacket1->msgData.dataReq.pMsdu[15] = (uint8_t)(out & 0x000000FF);
+   1321                  
+   1322                 
+   1323                  /* Request MAC level acknowledgment of the data packet */
+   1324                  mpPacket1->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
+   1325                  /* Give the data packet a handle. The handle is
+   1326                  returned in the MCPS-Data Confirm message. */
+   1327                  mpPacket1->msgData.dataReq.msduHandle = mMsduHandle++;
+   1328                  mpPacket1->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+   1329                  /* Send the Data Request to the MCPS */
+   1330                  (void)NWK_MCPS_SapHandler(mpPacket1, mMacInstance);
+   1331                  /* Prepare for another data buffer */
+   1332                  mcPendingPackets++;
+   1333              }
+   1334          }
+   1335          
+   1336                
+   1337          
+   1338              
+   1339              /*================================================= mic ================================================*/
+   1340              
+   1341              
+   1342              else if (micCounter>=micPeriod) {
+   1343                mpPacket2 = NULL;
+   1344                ADC16_Measure();
+   1345                numMicSamplesTakenCounter++;
+   1346                if(numMicSamplesTakenCounter>=numMicSamplesPerPeriod){
+   1347                  micCounter=micCounter-micPeriod;
+   1348                  numMicSamplesTakenCounter=0;
+   1349                }
+   1350                
+   1351                
+   1352                  if( (mcPendingPackets < mMaxPendingDataPackets_c) && (mpPacket2 == NULL) )
+   1353              {
+   1354                  /* If the maximum number of pending data buffes is below maximum limit 
+   1355                  and we do not have a data buffer already then allocate one. */    
+   1356                  mpPacket2 = MSG_Alloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+   1357              }
+   1358          
+   1359              if( mpPacket2 != NULL )
+   1360              {       
+   1361                  /* Data was available in the serial terminal interface receive buffer. Now create an
+   1362                  MCPS-Data Request message containing the serial terminal interface data. */
+   1363                  mpPacket2->msgType = gMcpsDataReq_c;
+   1364                  /* Create the header using coordinator information gained during 
+   1365                  the scan procedure. Also use the short address we were assigned
+   1366                  by the coordinator during association. */
+   1367                  mpPacket2->msgData.dataReq.pMsdu = (uint8_t*)(&(mpPacket2->msgData.dataReq.pMsdu)) + sizeof(uint8_t*);
+   1368          
+   1369                  FLib_MemCpy(&mpPacket2->msgData.dataReq.dstAddr, &mCoordInfo.coordAddress, 8);               
+   1370                  FLib_MemCpy(&mpPacket2->msgData.dataReq.srcAddr, &mAddress, 2);
+   1371                  FLib_MemCpy(&mpPacket2->msgData.dataReq.dstPanId, &mCoordInfo.coordPanId, 2);           
+   1372                  FLib_MemCpy(&mpPacket2->msgData.dataReq.srcPanId, &mCoordInfo.coordPanId, 2);
+   1373                  mpPacket2->msgData.dataReq.dstAddrMode = mCoordInfo.coordAddrMode;
+   1374                  mpPacket2->msgData.dataReq.srcAddrMode = gAddrModeShortAddress_c;
+   1375                  mpPacket2->msgData.dataReq.msduLength = 11;
+   1376                  // Signal to Coordinator that a sensor message follows
+   1377                  mpPacket2->msgData.dataReq.pMsdu[0] = 0x02;
+   1378                  // Put dummy sensor data into the data packet
+   1379                  mpPacket2->msgData.dataReq.pMsdu[1] = (uint8_t)(adcValue & 0xFF00);
+   1380                  mpPacket2->msgData.dataReq.pMsdu[2] = (uint8_t)(adcValue & 0x00FF);
+   1381                  mpPacket1->msgData.dataReq.pMsdu[3] = (uint8_t)(inter_counter & 0xFF000000);
+   1382                  mpPacket1->msgData.dataReq.pMsdu[4] = (uint8_t)(inter_counter & 0x00FF0000);
+   1383                  mpPacket1->msgData.dataReq.pMsdu[5] = (uint8_t)(inter_counter & 0x0000FF00);
+   1384                  mpPacket1->msgData.dataReq.pMsdu[6] = (uint8_t)(inter_counter & 0x000000FF);
+   1385                  // ADA!! FIX THIS!!!!!!!!
+   1386                  mpPacket1->msgData.dataReq.pMsdu[7] = (uint8_t)(out & 0xFF000000);
+   1387                  mpPacket1->msgData.dataReq.pMsdu[8] = (uint8_t)(out & 0x00FF0000);
+   1388                  mpPacket1->msgData.dataReq.pMsdu[9] = (uint8_t)(out & 0x0000FF00);
+   1389                  mpPacket1->msgData.dataReq.pMsdu[10] = (uint8_t)(out & 0x000000FF);
+   1390                 
+   1391                 
+   1392                  /* Request MAC level acknowledgment of the data packet */
+   1393                  mpPacket2->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
+   1394                  /* Give the data packet a handle. The handle is
+   1395                  returned in the MCPS-Data Confirm message. */
+   1396                  mpPacket2->msgData.dataReq.msduHandle = mMsduHandle++;
+   1397                  mpPacket2->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+   1398                  /* Send the Data Request to the MCPS */
+   1399                  (void)NWK_MCPS_SapHandler(mpPacket2, mMacInstance);
+   1400                  /* Prepare for another data buffer */
+   1401                  mcPendingPackets++;
+   1402              }
+   1403          }
+   1404              
+   1405              
+   1406              
+   1407              else if (pulseCounter>=pulsePeriod) {
+   1408                //Turn this else-if statement into an if statement for multiple
+   1409                //samples in one interrupt.
+   1410                
+   1411                //REPLACE THIS WITH MEASUREMENT FUNCTION
+   1412                //PRINTF("\tPulse measurement\r\n");
+   1413                numPulseSamplesTakenCounter++;
+   1414                if(numPulseSamplesTakenCounter>=numPulseSamplesPerPeriod){
+   1415                  pulseCounter=pulseCounter-pulsePeriod;
+   1416                  numPulseSamplesTakenCounter=0;
+   1417                }
+   1418              }
+   1419                
+   1420              LED1_TOGGLE;
+   1421             // PRINTF("micCounter: %d, accelerometerCounter: %d\r\n", micCounter, 
+   1422             //        accelerometerCounter);
+   1423              
+   1424              
+   1425              
+   1426              
+   1427           
+   1428             
+   1429          }
+   1430          
+   1431          /******************************************************************************
+   1432          * The App_ReceiveData() function will check if it is possible to send out an
+   1433          * MLME-Poll request in order to receive data from the coordinator. If its 
+   1434          * permitted then a poll request is created and sent.
+   1435          * 
+   1436          * The function uses the coordinator information gained during the Active Scan
+   1437          * for building the MLME-Poll Request message. The message is sent to the MLME
+   1438          * service access point in the MAC.
+   1439          *
+   1440          ******************************************************************************/
+   1441          static void App_ReceiveData( void )
+   1442          {
+   1443              /* Check if we are permitted, and if it is time to send a poll request.
+   1444              The poll interval is adjusted dynamically to the current band-width
+   1445              requirements. */
+   1446              if( mWaitPollConfirm == FALSE )
+   1447              {  
+   1448                  /* This is an MLME-POLL.req command. */
+   1449                  mlmeMessage_t *pMlmeMsg = MSG_AllocType( mlmeMessage_t );
+   1450                  if( pMlmeMsg )
+   1451                  {
+   1452                      /* Create the Poll Request message data. */
+   1453                      pMlmeMsg->msgType = gMlmePollReq_c;
+   1454                      /* Use the coordinator information we got from the Active Scan. */
+   1455                      FLib_MemCpy(&pMlmeMsg->msgData.pollReq.coordAddress, &mCoordInfo.coordAddress, 8);
+   1456                      FLib_MemCpy(&pMlmeMsg->msgData.pollReq.coordPanId, &mCoordInfo.coordPanId, 2);
+   1457                      pMlmeMsg->msgData.pollReq.coordAddrMode = mCoordInfo.coordAddrMode;
+   1458                      pMlmeMsg->msgData.pollReq.securityLevel = gMacSecurityNone_c;
+   1459                      
+   1460                      /* Send the Poll Request to the MLME. */
+   1461                      if( NWK_MLME_SapHandler( pMlmeMsg, mMacInstance ) == gSuccess_c )
+   1462                      {
+   1463                          /* Do not allow another Poll request before the confirm is received. */
+   1464                          mWaitPollConfirm = TRUE;
+   1465                      }
+   1466                  }
+   1467              }
+   1468          }
+   1469          
+   1470          
+   1471          /******************************************************************************
+   1472          * The App_Idle(void) function will check for network or serial terminal interface activity .
+   1473          *
+   1474          * The function may return either of the following values:
+   1475          *   TRUE			: No activity detected
+   1476          *   FALSE			: Network or serial terminal interface activity detected
+   1477          *
+   1478          ******************************************************************************/
+   1479          static bool_t App_Idle( void )
+   1480          {
+   1481              if( (!MSG_Pending(&mMlmeNwkInputQueue)) &&
+   1482                  (!MSG_Pending(&mMcpsNwkInputQueue)) &&
+   1483                  (mWaitPollConfirm == FALSE)&&
+   1484                  (TMR_AreAllTimersOff()) )
+   1485              {
+   1486                  return TRUE;      
+   1487              }	 
+   1488              else
+   1489              {
+   1490                  return FALSE;  
+   1491              }
+   1492          }
+   1493          
+   1494          
+   1495          /******************************************************************************
+   1496          * The App_UpdateLEDs(uint8_t val) function will switch on/off the LEDs.
+   1497          *
+   1498          ******************************************************************************/
+   1499          static void App_UpdateLEDs( uint8_t displayMsg )
+   1500          {
+   1501              if( displayMsg & LED1 ) Led1On(); else Led1Off();
+   1502              if( displayMsg & LED2 ) Led2On(); else Led2Off();
+   1503              if( displayMsg & LED3 ) Led3On(); else Led3Off();
+   1504              if( displayMsg & LED4 ) Led4On(); else Led4Off();
+   1505          }
+   1506          
+   1507          
+   1508          /******************************************************************************
+   1509          * The App_IntervalTimeoutHandler(uint8_t timerID) function will send an event 
+   1510          * to the application task after the programmed interval of time expires
+   1511          *
+   1512          ******************************************************************************/
+   1513          static void App_IntervalTimeoutHandler(void *pData)
+   1514          {
+   1515             (void)pData;
+   1516             OSA_EventSet(&mAppEvent, gAppEvtStartWait_c);                
+   1517          }
+   1518          
+   1519          /******************************************************************************
+   1520          * The App_PollIntervalTimeoutHandler(uint8_t timerID) function will send an event 
+   1521          * to the application task after the programmed interval of time expires to send
+   1522          * a poll interval
+   1523          ******************************************************************************/
+   1524          static void App_PollIntervalTimeoutHandler( void *pData )
+   1525          {
+   1526              (void)pData;
+   1527              OSA_EventSet(&mAppEvent, gAppEvtSendPollReq_c );
+   1528          }
+   1529          
+   1530          /******************************************************************************
+   1531          * The App_SensorIntervalTimeoutHandler function will send an event 
+   1532          * to the application task after the programmed interval of time expires
+   1533          *
+   1534          ******************************************************************************/
+   1535          static void App_SensorIntervalTimeoutHandler( void *pData )
+   1536          {
+   1537              (void)pData;
+   1538              OSA_EventSet(&mAppEvent, gAppEvtSendSensorData_c );                
+   1539          }
+   1540          
+   1541          /*****************************************************************************
+   1542          * Function to handle a generic key press. Called for all keys.
+   1543          *****************************************************************************/
+   1544          static void App_HandleGenericKey(void)
+   1545          {
+   1546              if( gState == stateInit )
+   1547              {
+   1548                  LED_StopFlashingAllLeds();
+   1549          
+   1550                  OSA_EventSet(&mAppEvent, gAppEvtDummyEvent_c);        
+   1551              }
+   1552              else if(gState == stateListen)
+   1553              {
+   1554                  /* Send a predefined message to Coordinator each time user presses
+   1555                  a switch. */      
+   1556          #if (gLpmIncluded_d == 1) 
+   1557                  if (flag == 0)
+   1558                  {
+   1559                      flag = 1;
+   1560                      PWR_DisallowDeviceToSleep(); 
+   1561                  }
+   1562          #endif 
+   1563                  OSA_EventSet(&mAppEvent, gAppEvtSendMessage_c);
+   1564              } 
+   1565          }
+   1566          
+   1567          /*****************************************************************************
+   1568          * The App_HandleKeys(key_event_t events) function can handle different
+   1569          * key events. It waits for user to push a button in order to start 
+   1570          * the application.
+   1571          *
+   1572          * Interface assumptions:
+   1573          *     None
+   1574          *
+   1575          * Return value: 
+   1576          *     None
+   1577          *****************************************************************************/
+   1578          static void App_HandleKeys( key_event_t events )
+   1579          {
+   1580          #if gKBD_KeysCount_c > 0 
+   1581              switch ( events ) 
+   1582              { 
+   1583              case gKBD_EventSW1_c:
+   1584              case gKBD_EventSW2_c:
+   1585              case gKBD_EventSW3_c:
+   1586              case gKBD_EventSW4_c:
+   1587              case gKBD_EventLongSW1_c:
+   1588              case gKBD_EventLongSW2_c:
+   1589              case gKBD_EventLongSW3_c:
+   1590              case gKBD_EventLongSW4_c:
+   1591                  App_HandleGenericKey();
+   1592                  break;
+   1593              default:
+   1594                  break;  
+   1595              }
+   1596          #endif
+   1597          }
+   1598          
+   1599          
+   1600          /******************************************************************************
+   1601          * The following functions are called by the MAC to put messages into the
+   1602          * Application's queue. They need to be defined even if they are not used
+   1603          * in order to avoid linker errors.
+   1604          *
+   1605          ******************************************************************************/
+   1606          resultType_t MLME_NWK_SapHandler( nwkMessage_t* pMsg, instanceId_t instanceId )
+   1607          {
+   1608              /* Put the incoming MLME message in the applications input queue. */    
+   1609              MSG_Queue( &mMlmeNwkInputQueue, pMsg );
+   1610              OSA_EventSet(&mAppEvent, gAppEvtMessageFromMLME_c );
+   1611              return gSuccess_c;
+   1612          }
+   1613          
+   1614          resultType_t MCPS_NWK_SapHandler( mcpsToNwkMessage_t* pMsg, instanceId_t instanceId )
+   1615          {
+   1616              /* Put the incoming MCPS message in the applications input queue. */
+   1617              MSG_Queue( &mMcpsNwkInputQueue, pMsg );
+   1618              OSA_EventSet(&mAppEvent, gAppEvtMessageFromMCPS_c );
+   1619              return gSuccess_c;
+   1620          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   ADC16_Measure
+         8   -> ADC16_DRV_ConfigConvChn
+         8   -> ADC16_DRV_GetConvValueRAW
+         8   -> ADC16_DRV_PauseConv
+         8   -> ADC16_DRV_WaitConvDone
+      32   AppThread
+        32   -> App_HandleAssociateConfirm
+        32   -> App_HandleMcpsInput
+        32   -> App_HandleMlmeInput
+        32   -> App_HandleScanActiveConfirm
+        32   -> App_ReceiveData
+        32   -> App_SendAssociateRequest
+        32   -> App_SendPredefinedMessage
+        32   -> App_SendSensorStatus
+        32   -> App_StartScan
+        32   -> App_WaitMsg
+        32   -> ListRemoveHeadMsg
+        32   -> MEM_BufferFree
+        32   -> OSA_EventSet
+        32   -> OSA_EventWait
+        32   -> Serial_Print
+        32   -> Serial_PrintHex
+        32   -> TMR_StartIntervalTimer
+        32   -> TMR_StartSingleShotTimer
+      16   App_CommRxCallBack
+        16   -> Serial_Print
+        16   -> Serial_Read
+       8   App_HandleAssociateConfirm
+         8   -> FLib_MemCpy
+       8   App_HandleGenericKey
+         8   -> LED_StopFlashingAllLeds
+         8   -> OSA_EventSet
+       8   App_HandleKeys
+         8   -> App_HandleGenericKey
+       8   App_HandleMcpsInput
+         8   -> App_HandleMessage
+      16   App_HandleMessage
+        16   -> App_UpdateLEDs
+        16   -> Serial_Print
+        16   -> Serial_PrintHex
+        16   -> Serial_SyncWrite
+       4   App_HandleMlmeInput
+      32   App_HandleScanActiveConfirm
+        32   -> FLib_MemCpy
+        32   -> MEM_BufferFree
+       8   App_Idle
+         8   -> TMR_AreAllTimersOff
+       8   App_IntervalTimeoutHandler
+         8   -> OSA_EventSet
+       8   App_PollIntervalTimeoutHandler
+         8   -> OSA_EventSet
+       8   App_ReceiveData
+         8   -> FLib_MemCpy
+         8   -> MEM_BufferAlloc
+         8   -> NWK_MLME_SapHandler
+      16   App_SendAssociateRequest
+        16   -> FLib_MemCpy
+        16   -> MEM_BufferAlloc
+        16   -> NWK_MLME_SapHandler
+        16   -> Serial_Print
+       8   App_SendPredefinedMessage
+         8   -> FLib_MemCpy
+         8   -> MEM_BufferAlloc
+         8   -> NWK_MCPS_SapHandler
+       8   App_SendSensorStatus
+         8   -- Indirect call
+         8   -> ADC16_Measure
+         8   -> FLib_MemCpy
+         8   -> GPIO_DRV_TogglePinOutput
+         8   -> MEM_BufferAlloc
+         8   -> NWK_MCPS_SapHandler
+       8   App_SensorIntervalTimeoutHandler
+         8   -> OSA_EventSet
+      16   App_StartScan
+        16   -> MEM_BufferAlloc
+        16   -> NWK_MLME_SapHandler
+        16   -> Serial_Print
+       8   App_UpdateLEDs
+         8   -> LED_Operate
+       4   App_WaitMsg
+       8   App_init
+         8   -> KBD_Init
+         8   -> LED_StartSerialFlash
+         8   -> ListInit
+         8   -> Mac_SetExtendedAddress
+         8   -> OSA_EventCreate
+         8   -> Serial_InitInterface
+         8   -> Serial_Print
+         8   -> Serial_SetBaudRate
+         8   -> Serial_SetRxCallBack
+         8   -> TMR_AllocateTimer
+      16   MCPS_NWK_SapHandler
+        16   -> ListAddTailMsg
+        16   -> OSA_EventSet
+      16   MLME_NWK_SapHandler
+        16   -> ListAddTailMsg
+        16   -> OSA_EventSet
+       0   PMC_HAL_BandgapBufferConfig
+      32   calibrateParams
+        32   -> ADC16_DRV_ConfigConvChn
+        32   -> ADC16_DRV_ConfigHwAverage
+        32   -> ADC16_DRV_GetAutoCalibrationParam
+        32   -> ADC16_DRV_GetConvValueSigned
+        32   -> ADC16_DRV_PauseConv
+        32   -> ADC16_DRV_SetCalibrationParam
+        32   -> ADC16_DRV_WaitConvDone
+        32   -> PMC_HAL_BandgapBufferConfig
+      16   main_task
+        16   -> ADC16_DRV_Init
+        16   -> ADC16_DRV_StructInitUserConfigDefault
+        16   -> AppThread
+        16   -> App_init
+        16   -> BindToMAC
+        16   -> GPIO_DRV_OutputPinInit
+        16   -> LED_Init
+        16   -> MAC_Init
+        16   -> MEM_Init
+        16   -> Mac_RegisterSapHandlers
+        16   -> Phy_Init
+        16   -> RNG_Init
+        16   -> SecLib_Init
+        16   -> SerialManager_Init
+        16   -> TMR_Init
+        16   -> accel_init
+        16   -> calibrateParams
+        16   -> hardware_init_combined
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_2
+       4  ??DataTable12_3
+       4  ??DataTable12_4
+       4  ??DataTable12_5
+       4  ??DataTable12_6
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_10
+       4  ??DataTable13_11
+       4  ??DataTable13_12
+       4  ??DataTable13_2
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable13_9
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable15
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_2
+       4  ??DataTable17
+       4  ??DataTable17_1
+       4  ??DataTable18
+       4  ??DataTable19
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable22_10
+       4  ??DataTable22_11
+       4  ??DataTable22_12
+       4  ??DataTable22_2
+       4  ??DataTable22_3
+       4  ??DataTable22_4
+       4  ??DataTable22_5
+       4  ??DataTable22_6
+       4  ??DataTable22_7
+       4  ??DataTable22_8
+       4  ??DataTable22_9
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_10
+       4  ??DataTable3_11
+       4  ??DataTable3_12
+       4  ??DataTable3_13
+       4  ??DataTable3_14
+       4  ??DataTable3_15
+       4  ??DataTable3_16
+       4  ??DataTable3_17
+       4  ??DataTable3_18
+       4  ??DataTable3_19
+       4  ??DataTable3_2
+       4  ??DataTable3_20
+       4  ??DataTable3_21
+       4  ??DataTable3_22
+       4  ??DataTable3_23
+       4  ??DataTable3_24
+       4  ??DataTable3_25
+       4  ??DataTable3_26
+       4  ??DataTable3_27
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable3_9
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable8
+       4  ??DataTable9
+       4  ??DataTable9_1
+      64  ?_0
+      44  ?_1
+      24  ?_10
+      24  ?_11
+       8  ?_12
+      44  ?_13
+      48  ?_14
+      36  ?_15
+      40  ?_16
+      88  ?_17
+      40  ?_18
+      28  ?_19
+      72  ?_2
+      56  ?_20
+       8  ?_21
+      24  ?_22
+      32  ?_23
+      56  ?_24
+      24  ?_25
+       4  ?_26
+       4  ?_27
+       4  ?_28
+      40  ?_3
+      56  ?_4
+      56  ?_5
+      24  ?_6
+       4  ?_7
+      24  ?_8
+      24  ?_9
+      60  ADC16_Measure
+     968  AppThread
+      52  App_CommRxCallBack
+      30  App_HandleAssociateConfirm
+      42  App_HandleGenericKey
+      22  App_HandleKeys
+      50  App_HandleMcpsInput
+     108  App_HandleMessage
+      34  App_HandleMlmeInput
+     160  App_HandleScanActiveConfirm
+      42  App_Idle
+      14  App_IntervalTimeoutHandler
+      14  App_PollIntervalTimeoutHandler
+      82  App_ReceiveData
+     144  App_SendAssociateRequest
+     226  App_SendPredefinedMessage
+    1036  App_SendSensorStatus
+      14  App_SensorIntervalTimeoutHandler
+     114  App_StartScan
+      94  App_UpdateLEDs
+      28  App_WaitMsg
+     126  App_init
+      26  MCPS_NWK_SapHandler
+      26  MLME_NWK_SapHandler
+       6  PMC_HAL_BandgapBufferConfig
+      52  accDev
+       8  accDevice
+      12  accelData
+       2  accelerometerCounter
+       2  accelerometerPeriod
+      12  adcUserConfig_1
+       2  adcValue
+     130  calibrateParams
+       1  flag
+       1  gState
+      12  i2cInterface
+       1  initialized
+       4  inter_counter
+       2  mAddress
+       8  mAppEvent
+      32  mCoordInfo
+       8  mExtendedAddress
+       1  mInterfaceId
+       4  mMacInstance
+      12  mMcpsNwkInputQueue
+      12  mMlmeNwkInputQueue
+       1  mMsduHandle
+       1  mPollIntervalTimerId_c
+       1  mSensorTimerId_c
+       1  mSoftTimerId_c
+       1  mStopPolling
+       1  mWaitPollConfirm
+      24  maGeneralMsg
+     186  main_task
+       1  mcPendingPackets
+       2  micCounter
+       2  micPeriod
+       4  mpPacket
+       4  mpPacket1
+       4  mpPacket2
+       2  numMicSamplesPerPeriod
+       2  numMicSamplesTakenCounter
+       2  numPulseSamplesPerPeriod
+       2  numPulseSamplesTakenCounter
+       1  orientation
+       4  out
+       2  pulseCounter
+       2  pulsePeriod
+       2  xData
+       2  yData
+       2  zData
+
+ 
+   209 bytes in section .bss
+    41 bytes in section .data
+ 1 008 bytes in section .rodata
+ 4 286 bytes in section .text
+ 
+ 4 286 bytes of CODE  memory
+ 1 008 bytes of CONST memory
+   250 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

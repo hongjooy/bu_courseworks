@@ -1,0 +1,452 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:55
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\devices\MKW40Z4\startup\system_MKW40Z4.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\devices\MKW40Z4\startup\system_MKW40Z4.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\system_MKW40Z4.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\system_MKW40Z4.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\devices\MKW40Z4\startup\system_MKW40Z4.c
+      1          /*
+      2          ** ###################################################################
+      3          **     Compilers:           Keil ARM C/C++ Compiler
+      4          **                          Freescale C/C++ for Embedded ARM
+      5          **                          GNU C Compiler
+      6          **                          GNU C Compiler - CodeSourcery Sourcery G++
+      7          **                          IAR ANSI C/C++ Compiler for ARM
+      8          **
+      9          **     Reference manual:    MKW40Z160RM, Rev. 1.1, 4/2015
+     10          **     Version:             rev. 1.2, 2015-05-07
+     11          **     Build:               b150513
+     12          **
+     13          **     Abstract:
+     14          **         Provides a system configuration function and a global variable that
+     15          **         contains the system frequency. It configures the device and initializes
+     16          **         the oscillator (PLL) that is part of the microcontroller device.
+     17          **
+     18          **     Copyright (c) 2015 Freescale Semiconductor, Inc.
+     19          **     All rights reserved.
+     20          **
+     21          **     Redistribution and use in source and binary forms, with or without modification,
+     22          **     are permitted provided that the following conditions are met:
+     23          **
+     24          **     o Redistributions of source code must retain the above copyright notice, this list
+     25          **       of conditions and the following disclaimer.
+     26          **
+     27          **     o Redistributions in binary form must reproduce the above copyright notice, this
+     28          **       list of conditions and the following disclaimer in the documentation and/or
+     29          **       other materials provided with the distribution.
+     30          **
+     31          **     o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     32          **       contributors may be used to endorse or promote products derived from this
+     33          **       software without specific prior written permission.
+     34          **
+     35          **     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     36          **     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     37          **     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     38          **     DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     39          **     ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     40          **     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     41          **     LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     42          **     ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     43          **     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     44          **     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     45          **
+     46          **     http:                 www.freescale.com
+     47          **     mail:                 support@freescale.com
+     48          **
+     49          **     Revisions:
+     50          **     - rev. 1.0 (2014-07-17)
+     51          **         Initial version.
+     52          **     - rev. 1.1 (2015-03-05)
+     53          **         Update with reference manual rev 1.0
+     54          **     - rev. 1.2 (2015-05-07)
+     55          **         Update with reference manual rev 1.1
+     56          **
+     57          ** ###################################################################
+     58          */
+     59          
+     60          /*!
+     61           * @file MKW40Z4
+     62           * @version 1.2
+     63           * @date 2015-05-07
+     64           * @brief Device specific configuration file for MKW40Z4 (implementation file)
+     65           *
+     66           * Provides a system configuration function and a global variable that contains
+     67           * the system frequency. It configures the device and initializes the oscillator
+     68           * (PLL) that is part of the microcontroller device.
+     69           */
+     70          
+     71          #include <stdint.h>
+     72          #include "fsl_device_registers.h"
+     73          
+     74          
+     75          
+     76          /* ----------------------------------------------------------------------------
+     77             -- Core clock
+     78             ---------------------------------------------------------------------------- */
+     79          
+     80          uint32_t SystemCoreClock = DEFAULT_SYSTEM_CLOCK;
+     81          
+     82          /* ----------------------------------------------------------------------------
+     83             -- SystemInit()
+     84             ---------------------------------------------------------------------------- */
+     85          
+     86          void SystemInit (void) {
+     87          
+     88          #if (DISABLE_WDOG)
+     89            /* SIM_COPC: COPT=0,COPCLKS=0,COPW=0 */
+     90            SIM->COPC = (uint32_t)0x00u;
+     91          #endif /* (DISABLE_WDOG) */
+     92          #ifdef CLOCK_SETUP
+     93            if((RCM->SRS0 & RCM_SRS0_WAKEUP_MASK) != 0x00U)
+     94            {
+     95              if((PMC->REGSC & PMC_REGSC_ACKISO_MASK) != 0x00U)
+     96              {
+     97                 PMC->REGSC |= PMC_REGSC_ACKISO_MASK; /* Release hold with ACKISO:  Only has an effect if recovering from VLLSx.*/
+     98              }
+     99            } else {
+    100          #ifdef SYSTEM_RTC_CR_VALUE
+    101              SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
+    102              SIM_SCGC6 |= SIM_SCGC6_RTC_MASK;
+    103              /* PORTB_PCR18: ISF=0,MUX=0 */
+    104              PORTB->PCR[16] &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    105              /* PORTA_PCR19: ISF=0,MUX=0 */
+    106              PORTB->PCR[17] &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
+    107              if ((RTC->CR & RTC_CR_OSCE_MASK) == 0x00U) { /* Only if the OSCILLATOR is not already enabled */
+    108                RTC->CR = (uint32_t)((RTC_CR & (uint32_t)~(uint32_t)(RTC_CR_SC2P_MASK | RTC_CR_SC4P_MASK | RTC_CR_SC8P_MASK | RTC_CR_SC16P_MASK)) | (uint32_t)SYSTEM_RTC_CR_VALUE);
+    109                RTC->CR |= (uint32_t)RTC_CR_OSCE_MASK;
+    110                RTC->CR &= (uint32_t)~(uint32_t)RTC_CR_CLKO_MASK;
+    111              }
+    112          #endif
+    113            }
+    114          
+    115            /* Power mode protection initialization */
+    116          #ifdef SYSTEM_SMC_PMPROT_VALUE
+    117            SMC->PMPROT = SYSTEM_SMC_PMPROT_VALUE;
+    118          #endif
+    119          
+    120            /* RF oscillator setting */
+    121          #if defined(SYSTEM_RSIM_CONTROL_VALUE)
+    122            RSIM->CONTROL = SYSTEM_RSIM_CONTROL_VALUE;
+    123          #endif
+    124          
+    125            /* System clock initialization */
+    126            /* Internal reference clock trim initialization */
+    127          #if defined(SLOW_TRIM_ADDRESS)
+    128            if ( *((uint8_t*)SLOW_TRIM_ADDRESS) != 0xFFU) { /* Skip if non-volatile flash memory is erased */
+    129              MCG->C3 = *((uint8_t*)SLOW_TRIM_ADDRESS);
+    130          #endif /* defined(SLOW_TRIM_ADDRESS) */
+    131          #if defined(SLOW_FINE_TRIM_ADDRESS)
+    132              MCG->C4 = (MCG->C4 & ~(MCG_C4_SCFTRIM_MASK)) | ((*((uint8_t*) SLOW_FINE_TRIM_ADDRESS)) & MCG_C4_SCFTRIM_MASK);
+    133          #endif
+    134          #if defined(FAST_TRIM_ADDRESS)
+    135              MCG->C4 = (MCG->C4 & ~(MCG_C4_FCTRIM_MASK)) |((*((uint8_t*) FAST_TRIM_ADDRESS)) & MCG_C4_FCTRIM_MASK);
+    136          #endif
+    137          #if defined(FAST_FINE_TRIM_ADDRESS)
+    138              MCG->C2 = (MCG->C2 & ~(MCG_C2_FCFTRIM_MASK)) | ((*((uint8_t*)FAST_TRIM_ADDRESS)) & MCG_C2_FCFTRIM_MASK);
+    139          #endif /* defined(FAST_FINE_TRIM_ADDRESS) */
+    140          #if defined(SLOW_TRIM_ADDRESS)
+    141            }
+    142          #endif /* defined(SLOW_TRIM_ADDRESS) */
+    143          
+    144            /* Set system prescalers and clock sources */
+    145            SIM->CLKDIV1 = SYSTEM_SIM_CLKDIV1_VALUE; /* Set system prescalers */
+    146            SIM->SOPT1 = ((SIM->SOPT1) & (uint32_t)(~(SIM_SOPT1_OSC32KSEL_MASK))) | ((SYSTEM_SIM_SOPT1_VALUE) & (SIM_SOPT1_OSC32KSEL_MASK)); /* Set 32 kHz clock source (ERCLK32K) */
+    147            SIM->SOPT2 = ((SIM->SOPT2) & (uint32_t)(~(SIM_SOPT2_TPMSRC_MASK))) | ((SYSTEM_SIM_SOPT2_VALUE) & (SIM_SOPT2_TPMSRC_MASK)); /* Selects the clock source for the TPM counter clock. */
+    148          #if ((MCG_MODE == MCG_MODE_FEI) || (MCG_MODE == MCG_MODE_FBI) || (MCG_MODE == MCG_MODE_BLPI))
+    149            /* Set MCG */
+    150            MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+    151            MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+    152            /* Check that the source of the FLL reference clock is the requested one. */
+    153            if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    154              while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    155              }
+    156            } else {
+    157              while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+    158              }
+    159            }
+    160            MCG->C2 = (MCG->C2 & (uint8_t)(~(MCG_C2_FCFTRIM_MASK))) | (SYSTEM_MCG_C2_VALUE & (uint8_t)(~(MCG_C2_LP_MASK))); /* Set C2 (freq. range, ext. and int. reference selection etc. excluding trim bits; low power bit is set later) */
+    161            MCG->C4 = ((SYSTEM_MCG_C4_VALUE) & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+    162            MCG->C7 = SYSTEM_MCG_C7_VALUE;       /* Set C7 (OSC Clock Select) */
+    163            #if (MCG_MODE == MCG_MODE_BLPI)
+    164            /* BLPI specific */
+    165            MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL and PLL in bypass mode */
+    166            #endif
+    167          
+    168          #else /* MCG_MODE */
+    169            /* Set MCG */
+    170            MCG->SC = SYSTEM_MCG_SC_VALUE;       /* Set SC (fast clock internal reference divider) */
+    171            MCG->C2 = (MCG->C2 & (uint8_t)(~(MCG_C2_FCFTRIM_MASK))) | (SYSTEM_MCG_C2_VALUE & (uint8_t)(~(MCG_C2_LP_MASK))); /* Set C2 (freq. range, ext. and int. reference selection etc. excluding trim bits; low power bit is set later) */
+    172            MCG->C7 = SYSTEM_MCG_C7_VALUE;       /* Set C7 (OSC Clock Select) */
+    173            MCG->C1 = SYSTEM_MCG_C1_VALUE;       /* Set C1 (clock source selection, FLL ext. reference divider, int. reference enable etc.) */
+    174            /* Check that the source of the FLL reference clock is the requested one. */
+    175            if (((SYSTEM_MCG_C1_VALUE) & MCG_C1_IREFS_MASK) != 0x00U) {
+    176              while((MCG->S & MCG_S_IREFST_MASK) == 0x00U) {
+    177              }
+    178            } else {
+    179              while((MCG->S & MCG_S_IREFST_MASK) != 0x00U) {
+    180              }
+    181            }
+    182            MCG->C4 = ((SYSTEM_MCG_C4_VALUE)  & (uint8_t)(~(MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK))) | (MCG->C4 & (MCG_C4_FCTRIM_MASK | MCG_C4_SCFTRIM_MASK)); /* Set C4 (FLL output; trim values not changed) */
+    183          #endif /* MCG_MODE */
+    184          
+    185            /* Common for all modes */
+    186          
+    187            MCG->C6 = (SYSTEM_MCG_C6_VALUE); /* Set C6 (Clock monitor enable) */
+    188          #if ((MCG_MODE == MCG_MODE_BLPI) || (MCG_MODE == MCG_MODE_BLPE))
+    189            MCG->C2 |= (MCG_C2_LP_MASK);         /* Disable FLL in bypass mode */
+    190          #endif
+    191          #if ((MCG_MODE == MCG_MODE_FEI) || (MCG_MODE == MCG_MODE_FEE))
+    192            while((MCG->S & MCG_S_CLKST_MASK) != 0x00U) { /* Wait until output of the FLL is selected */
+    193            }
+    194          #elif ((MCG_MODE == MCG_MODE_FBI) || (MCG_MODE == MCG_MODE_BLPI))
+    195            while((MCG->S & MCG_S_CLKST_MASK) != 0x04U) { /* Wait until internal reference clock is selected as MCG output */
+    196            }
+    197          #elif ((MCG_MODE == MCG_MODE_FBE) || (MCG_MODE == MCG_MODE_BLPE))
+    198            while((MCG->S & MCG_S_CLKST_MASK) != 0x08U) { /* Wait until external reference clock is selected as MCG output */
+    199            }
+    200          #endif
+    201          #if (((SYSTEM_SMC_PMCTRL_VALUE) & SMC_PMCTRL_RUNM_MASK) == (0x02U << SMC_PMCTRL_RUNM_SHIFT))
+    202            SMC->PMCTRL = (uint8_t)((SYSTEM_SMC_PMCTRL_VALUE) & (SMC_PMCTRL_RUNM_MASK)); /* Enable VLPR mode */
+    203            while(SMC->PMSTAT != 0x04U) {        /* Wait until the system is in VLPR mode */
+    204            }
+    205          #endif
+    206          #endif
+    207          }
+    208          
+    209          /* ----------------------------------------------------------------------------
+    210             -- SystemCoreClockUpdate()
+    211             ---------------------------------------------------------------------------- */
+    212          
+    213          void SystemCoreClockUpdate (void) {
+    214          
+    215            uint32_t MCGOUTClock;                /* Variable to store output clock frequency of the MCG module */
+    216            uint16_t Divider;
+    217          
+    218            if ((MCG->C1 & MCG_C1_CLKS_MASK) == 0x00U) {
+    219              /* FLL is selected */
+    220              if ((MCG->C1 & MCG_C1_IREFS_MASK) == 0x00U) {
+    221                /* External reference clock is selected */
+    222                if((MCG->C7 & MCG_C7_OSCSEL_MASK) == 0x00U) {
+    223                  MCGOUTClock = CPU_XTAL_CLK_HZ; /* System oscillator drives MCG clock */
+    224                } else {
+    225                  MCGOUTClock = CPU_XTAL32k_CLK_HZ; /* RTC 32 kHz oscillator drives MCG clock */
+    226                }
+    227                if (((MCG->C2 & MCG_C2_RANGE_MASK) != 0x00U) && ((MCG->C7 & MCG_C7_OSCSEL_MASK) != 0x01U)) {
+    228                  switch (MCG->C1 & MCG_C1_FRDIV_MASK) {
+    229                  case 0x38U:
+    230                    Divider = 1536U;
+    231                    break;
+    232                  case 0x30U:
+    233                    Divider = 1280U;
+    234                    break;
+    235                  default:
+    236                    Divider = (uint16_t)(32LU << ((MCG->C1 & MCG_C1_FRDIV_MASK) >> MCG_C1_FRDIV_SHIFT));
+    237                    break;
+    238                  }
+    239                } else {/* ((MCG->C2 & MCG_C2_RANGE_MASK) != 0x00U) */
+    240                  Divider = (uint16_t)(1LU << ((MCG->C1 & MCG_C1_FRDIV_MASK) >> MCG_C1_FRDIV_SHIFT));
+    241                }
+    242                MCGOUTClock = (MCGOUTClock / Divider); /* Calculate the divided FLL reference clock */
+    243              } else { /* (!((MCG->C1 & MCG_C1_IREFS_MASK) == 0x00U)) */
+    244                MCGOUTClock = CPU_INT_SLOW_CLK_HZ; /* The slow internal reference clock is selected */
+    245              } /* (!((MCG->C1 & MCG_C1_IREFS_MASK) == 0x00U)) */
+    246              /* Select correct multiplier to calculate the MCG output clock  */
+    247              switch (MCG->C4 & (MCG_C4_DMX32_MASK | MCG_C4_DRST_DRS_MASK)) {
+    248                case 0x00U:
+    249                  MCGOUTClock *= 640U;
+    250                  break;
+    251                case 0x20U:
+    252                  MCGOUTClock *= 1280U;
+    253                  break;
+    254                case 0x40U:
+    255                  MCGOUTClock *= 1920U;
+    256                  break;
+    257                case 0x60U:
+    258                  MCGOUTClock *= 2560U;
+    259                  break;
+    260                case 0x80U:
+    261                  MCGOUTClock *= 732U;
+    262                  break;
+    263                case 0xA0U:
+    264                  MCGOUTClock *= 1464U;
+    265                  break;
+    266                case 0xC0U:
+    267                  MCGOUTClock *= 2197U;
+    268                  break;
+    269                case 0xE0U:
+    270                  MCGOUTClock *= 2929U;
+    271                  break;
+    272                default:
+    273                  break;
+    274              }
+    275            } else if ((MCG->C1 & MCG_C1_CLKS_MASK) == 0x40U) {
+    276              /* Internal reference clock is selected */
+    277              if ((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U) {
+    278                MCGOUTClock = CPU_INT_SLOW_CLK_HZ; /* Slow internal reference clock selected */
+    279              } else { /* (!((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U)) */
+    280                Divider = (uint16_t)(0x01LU << ((MCG->SC & MCG_SC_FCRDIV_MASK) >> MCG_SC_FCRDIV_SHIFT));
+    281                MCGOUTClock = (uint32_t) (CPU_INT_FAST_CLK_HZ / Divider); /* Fast internal reference clock selected */
+    282              } /* (!((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U)) */
+    283            } else if ((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U) {
+    284              /* External reference clock is selected */
+    285              if((MCG->C7 & MCG_C7_OSCSEL_MASK) == 0x00U) {
+    286                MCGOUTClock = CPU_XTAL_CLK_HZ;   /* System oscillator drives MCG clock */
+    287              } else {
+    288                MCGOUTClock = CPU_XTAL32k_CLK_HZ; /* RTC 32 kHz oscillator drives MCG clock */
+    289              }
+    290            } else { /* (!((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U)) */
+    291              /* Reserved value */
+    292              return;
+    293            } /* (!((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U)) */
+    294            SystemCoreClock = (MCGOUTClock / (0x01U + ((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV1_MASK) >> SIM_CLKDIV1_OUTDIV1_SHIFT)));
+    295          
+    296          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      12   SystemCoreClockUpdate
+        12 __aeabi_uidiv
+       0   SystemInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_10
+       4  ??DataTable1_11
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+       4  SystemCoreClock
+     378  SystemCoreClockUpdate
+       8  SystemInit
+
+ 
+   4 bytes in section .data
+ 434 bytes in section .text
+ 
+ 434 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

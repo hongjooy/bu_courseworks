@@ -1,0 +1,426 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:41
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\MacGlobals.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\MacGlobals.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\MacGlobals.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\MacGlobals.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\MacGlobals.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file MacGlobals.c
+      6          * This file contains various global variables definitions needed by the 802.15.4 MAC
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          *
+     33          */
+     34          
+     35          /************************************************************************************
+     36          *************************************************************************************
+     37          * Include
+     38          *************************************************************************************
+     39          ************************************************************************************/
+     40          #include "EmbeddedTypes.h"
+     41          #include "fsl_os_abstraction.h"
+     42          
+     43          #include "MacGlobals.h"
+     44          #include "MacInterface.h"
+     45          
+     46          #if !gFsciHostMacSupport_c
+     47          #include "PhyInterface.h"
+     48          #include "MpmInterface.h"
+     49          #endif
+     50          
+     51          #include "ModuleInfo.h"
+     52          #include "Panic.h"
+     53          #if gFsciIncluded_c && gFsciHostMacSupport_c
+     54            #include "FsciMacCommands.h"
+     55          #endif
+     56          
+     57          /************************************************************************************
+     58          *************************************************************************************
+     59          * Public memory definitions
+     60          *************************************************************************************
+     61          ************************************************************************************/
+     62          extern void Mac_Task( task_param_t argument );
+     63          extern void Mac_InitializeData( void );
+     64          
+     65          #if !gFsciHostMacSupport_c
+     66          extern char * mMacVersionString;
+     67          
+     68          #if defined(__IAR_SYSTEMS_ICC__)
+     69          #pragma location="VERSION_TAGS"
+     70          __root const moduleInfo_t MAC_version =
+     71          #elif defined(__GNUC__)
+     72          const moduleInfo_t MAC_version __attribute__ ((section ("VERSION_TAGS"), used)) =
+     73          #else
+     74          const moduleInfo_t MAC_version =
+     75          #endif
+     76          {
+     77              &mMacVersionString,
+     78              {0x85},  // moduleId
+     79              {gMacVerMajor_c, gMacVerMinor_c, gMacVerPatch_c}, // version number
+     80              gMacBuildNo_c,   // build number
+     81          };
+     82          #endif /* !gFsciHostMacSupport_c */
+     83          
+     84          #if gFsciIncluded_c && gFsciHostMacSupport_c
+     85          extern FsciHostMacInterface_t fsciHostMacInterfaces[gMacInstancesCnt_c];
+     86          extern uint8_t                fsciToMacBinding[gMacInstancesCnt_c];
+     87          
+     88          extern resultType_t Dumy_MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanceId);
+     89          extern resultType_t Dumy_MLME_NWK_SapHandler (nwkMessage_t* pMsg, instanceId_t instanceId);
+     90          #endif
+     91          
+     92          /* MAC RTOS objects */
+     93          task_handler_t gMacTaskHandler;
+     94          
+     95          OSA_TASK_DEFINE( MAC, gMacTaskStackSize_c );
+     96          
+     97          /* The maximum number of Indirect transactions */
+     98          uint8_t gMacMaxIndirectTransactions;
+     99          
+    100          #if gCslSupport_d
+    101          /* The maximum number of CSL transactions */    
+    102          const uint8_t gMacMaxCslTransactions = gMacCslMaxSequencesCnt_c;
+    103          
+    104          /* MAC CSL table used for sync */
+    105          #if gMacCslTableSize_c > 0
+    106              macCslEntry_t macCslTable[gMacCslTableSize_c];
+    107              const uint8_t gMacCslTableSize = gMacCslTableSize_c;
+    108              #endif
+    109          #endif
+    110          
+    111          #if gRitSupport_d
+    112          /* The maximum number of RIT transactions */    
+    113          const uint8_t gMacMaxRitTransactions = gMacRitMaxSequencesCnt_c;
+    114          
+    115          /* MAC RIT table used for sync */
+    116          #if gMacRitTableSize_c > 0
+    117              macRitEntry_t macRitTable[gMacRitTableSize_c];
+    118              const uint8_t gMacRitTableSize = gMacRitTableSize_c;
+    119              #endif
+    120          #endif
+    121          
+    122          #if gTschSupport_d    
+    123          /* MAC TSCH tables */
+    124          #if gMacHoppingSequenceTableEntries_c > 0
+    125              uint8_t gMacHoppingSequenceTable[gMacHoppingSequenceTableEntries_c];
+    126              const uint16_t gMacHoppingSequenceTableSize = gMacHoppingSequenceTableEntries_c;
+    127              #endif
+    128          #if gMacSlotframeTableEntries_c > 0
+    129              macSlotframe_t gMacSlotframeTable[gMacSlotframeTableEntries_c];
+    130              const uint8_t gMacSlotframeTableSize = gMacSlotframeTableEntries_c;
+    131              #endif    
+    132          #if gMacLinkTableEntries_c > 0
+    133              macLink_t gMacLinkTable[gMacLinkTableEntries_c];
+    134              const uint8_t gMacLinkTableSize = gMacLinkTableEntries_c;
+    135              #endif
+    136          #if gMacTschNeighborTableEntries_c > 0
+    137              macTschNeighbor_t gMacTschNeighborTable[gMacTschNeighborTableEntries_c];
+    138              const uint8_t gMacTschNeighborTableSize = gMacTschNeighborTableEntries_c;
+    139              #endif
+    140          /* MAC TSCH PAN join dynamically allocated buffer size */    
+    141          const uint8_t gMacTschMaxPanCoordSync = gMacTschMaxPanCoordSync_c;    
+    142          /* MAC TSCH max sequences in Tx queue */
+    143          const uint8_t gMacTschMaxTransactions = gMacTschMaxTransactions_c;
+    144          #endif
+    145          
+    146          /* The maximum number MAC instances */
+    147          const uint8_t gMacNoOfInstances = gMacInstancesCnt_c;
+    148          
+    149          /* Storage for MAC's internal data */
+    150          uint8_t gMacData[gMacInstancesCnt_c][gMacInternalDataSize_c];
+    151          
+    152          /* MAC internal data size. Used for sanity check */
+    153          extern const uint16_t gMacLocalDataSize;
+    154          
+    155          #if gMacSecurityEnable_d
+    156          
+    157          const bool_t gMacWipeSecurityTables = TRUE;
+    158          
+    159          /* Allocate memory for the MAC KeyTable and sub-tables */
+    160          #if gNumKeyTableEntries_c > 0
+    161              keyDescriptor_t            gPIBKeyTable[gMacInstancesCnt_c][gNumKeyTableEntries_c];
+    162              uint8_t                    gNumKeyTableEntries = gNumKeyTableEntries_c;
+    163              
+    164              #if gNumKeyIdLookupListEntries_c > 0
+    165              keyIdLookupDescriptor_t    gPIBKeyIdLookupDescriptorTable[gMacInstancesCnt_c][gNumKeyIdLookupListEntries_c * gNumKeyTableEntries_c];
+    166              uint8_t                    gNumKeyIdLookupListEntries = gNumKeyIdLookupListEntries_c;
+    167              #endif
+    168          
+    169          #ifndef gMAC2011_d    
+    170              #if gNumKeyDeviceListEntries_c > 0
+    171              keyDeviceDescriptor_t      gPIBKeyDeviceDescriptorTable[gMacInstancesCnt_c][gNumKeyDeviceListEntries_c * gNumKeyTableEntries_c];
+    172              uint8_t                    gNumKeyDeviceListEntries = gNumKeyDeviceListEntries_c;
+    173              #endif
+    174          #else /* gMAC2011_d */    
+    175              #if gNumDeviceDescriptorHandleListEntries_c > 0
+    176              uint8_t                    gPIBDeviceDescriptorHandleTable[gMacInstancesCnt_c][gNumDeviceDescriptorHandleListEntries_c * gNumKeyTableEntries_c];
+    177              uint8_t                    gNumDeviceDescriptorHandleListEntries = gNumDeviceDescriptorHandleListEntries_c;
+    178              #endif
+    179          #endif /* gMAC2011_d */
+    180              
+    181              #if gNumKeyUsageListEntries_c > 0
+    182              keyUsageDescriptor_t       gPIBKeyUsageDescriptorTable[gMacInstancesCnt_c][gNumKeyUsageListEntries_c * gNumKeyTableEntries_c];
+    183              uint8_t                    gNumKeyUsageListEntries = gNumKeyUsageListEntries_c;
+    184              #endif
+    185          #endif
+    186          
+    187          /* Allocate memory for the MAC DeviceTable */
+    188          #if gNumDeviceTableEntries_c > 0
+    189              deviceAddrDescriptor_t     gPIBDeviceAddrTable[gMacInstancesCnt_c][gNumDeviceAddrTableEntries_c];
+    190              uint8_t                    gNumDeviceAddrTableEntries = gNumDeviceAddrTableEntries_c;
+    191          
+    192              deviceDescriptor_t         gPIBDeviceTable[gMacInstancesCnt_c][gNumDeviceTableEntries_c];
+    193              uint8_t                    gNumDeviceTableEntries = gNumDeviceTableEntries_c;
+    194          #endif
+    195          
+    196          /* Allocate memory for the MAC SecurityLevelTable */
+    197          #if gNumSecurityLevelTableEntries_c > 0
+    198              securityLevelDescriptor_t  gPIBSecurityLevelTable[gMacInstancesCnt_c][gNumSecurityLevelTableEntries_c];
+    199              uint8_t                    gNumSecurityLevelTableEntries = gNumSecurityLevelTableEntries_c;
+    200          #endif
+    201          
+    202          #endif //gMacSecurityEnable_d
+    203          
+    204          /************************************************************************************
+    205          *************************************************************************************
+    206          * Public functions
+    207          *************************************************************************************
+    208          ************************************************************************************/
+    209          
+    210          /*! *********************************************************************************
+    211          * \brief  This function will create the MAC task(s)
+    212          *
+    213          ********************************************************************************** */
+    214          void MAC_Init( void )
+    215          {
+    216          #if gFsciIncluded_c && gFsciHostMacSupport_c
+    217              for( uint32_t i=0; i<gMacInstancesCnt_c; i++)
+    218              {
+    219                  fsciHostMacInterfaces[i].upperLayerId = gInvalidInstanceId_c;
+    220                  fsciHostMacInterfaces[i].pfMCPS_NWK_SapHandler = Dumy_MCPS_NWK_SapHandler;
+    221                  fsciHostMacInterfaces[i].pfMLME_NWK_SapHandler = Dumy_MLME_NWK_SapHandler;
+    222                  fsciHostMacInterfaces[i].fsciInterfaceId = mFsciInvalidInterface_c;
+    223                  fsciToMacBinding[i] = mFsciInvalidInterface_c;
+    224              }
+    225             
+    226              /* Nothing else to do if this is a FSCI host */
+    227              return;
+    228          #else
+    229              osa_status_t status;
+    230          
+    231              gMacMaxIndirectTransactions =
+    232          #if gMpmIncluded_d
+    233              gPhyIndirectQueueSize_c/gMpmPhyPanRegSets_c;
+    234          #else
+    235              gPhyIndirectQueueSize_c;
+    236          #endif
+    237              
+    238              if( gMacLocalDataSize > gMacInternalDataSize_c )
+    239              {
+    240                  /* The value of gMacInternalDataSize_c define must be increased */
+    241                  panic(0,0,0,0);
+    242                  return;
+    243              }
+    244          
+    245              Mac_InitializeData();
+    246          
+    247              /* The instance of the MAC is passed at task creaton */
+    248              status = OSA_TaskCreate((task_t)Mac_Task, "MAC_Task", gMacTaskStackSize_c, MAC_stack,
+    249                                      gMacTaskPriority_c, 0, FALSE, &gMacTaskHandler);
+    250              if( kStatus_OSA_Success != status )
+    251              {
+    252                  panic(0,0,0,0);
+    253                  return;
+    254              }
+    255          #endif /* gFsciIncluded_c && gFsciHostMacSupport_c */
+    256          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   MAC_Init
+        24   -> Mac_InitializeData
+        24   -> OSA_TaskCreate
+        24   -> panic
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  ?_0
+     124  MAC_Init
+       4  MAC_stack
+       4  MAC_task_handler
+      12  MAC_version
+     360  gMacData
+       1  gMacMaxIndirectTransactions
+       1  gMacNoOfInstances
+       4  gMacTaskHandler
+       1  gMacWipeSecurityTables
+       1  gNumDeviceAddrTableEntries
+       1  gNumDeviceTableEntries
+       1  gNumKeyDeviceListEntries
+       1  gNumKeyIdLookupListEntries
+       1  gNumKeyTableEntries
+       1  gNumKeyUsageListEntries
+       1  gNumSecurityLevelTableEntries
+      32  gPIBDeviceAddrTable
+      16  gPIBDeviceTable
+      12  gPIBKeyDeviceDescriptorTable
+      40  gPIBKeyIdLookupDescriptorTable
+      64  gPIBKeyTable
+       8  gPIBKeyUsageDescriptorTable
+       8  gPIBSecurityLevelTable
+
+ 
+ 553 bytes in section .bss
+   7 bytes in section .data
+  14 bytes in section .rodata
+ 124 bytes in section .text
+  12 bytes in section VERSION_TAGS
+ 
+ 124 bytes of CODE  memory
+  26 bytes of CONST memory
+ 560 bytes of DATA  memory
+
+Errors: none
+Warnings: none

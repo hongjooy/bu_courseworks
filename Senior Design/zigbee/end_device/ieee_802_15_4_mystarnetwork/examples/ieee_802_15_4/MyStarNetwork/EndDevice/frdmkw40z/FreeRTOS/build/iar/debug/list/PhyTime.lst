@@ -1,0 +1,916 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:49
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyTime.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyTime.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\PhyTime.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\PhyTime.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\Phy\Source\MKW40Z\PhyTime.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file PhyTime.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "Phy.h"
+     40          #include "EmbeddedTypes.h"
+     41          #include "FunctionLib.h"
+     42          
+     43          #include "fsl_os_abstraction.h"
+     44          #include "fsl_device_registers.h"
+     45          
+     46          /*! *********************************************************************************
+     47          *************************************************************************************
+     48          * Private macros
+     49          *************************************************************************************
+     50          ********************************************************************************** */
+     51          #define gPhyTimeMinSetupTime_c (4) /* symbols */
+     52          
+     53          #define BM_ZLL_IRQSTS_TMRxMSK (ZLL_IRQSTS_TMR1MSK_MASK | \
+     54                                         ZLL_IRQSTS_TMR2MSK_MASK | \
+     55                                         ZLL_IRQSTS_TMR3MSK_MASK | \
+     56                                         ZLL_IRQSTS_TMR4MSK_MASK )
+     57          
+     58          /*! *********************************************************************************
+     59          *************************************************************************************
+     60          * Public memory declarations
+     61          *************************************************************************************
+     62          ********************************************************************************** */
+     63          void (*gpfPhyTimeNotify)(void) = NULL;
+     64          
+     65          
+     66          /*! *********************************************************************************
+     67          *************************************************************************************
+     68          * Private memory declarations
+     69          *************************************************************************************
+     70          ********************************************************************************** */
+     71          static phyTimeEvent_t  mPhyTimers[gMaxPhyTimers_c];
+     72          static phyTimeEvent_t *pNextEvent;
+     73          volatile uint64_t      gPhyTimerOverflow;
+     74          
+     75          
+     76          /*! *********************************************************************************
+     77          *************************************************************************************
+     78          * Private prototypes
+     79          *************************************************************************************
+     80          ********************************************************************************** */
+     81          static void PhyTime_OverflowCB( uint32_t param );
+     82          static phyTimeEvent_t* PhyTime_GetNextEvent( void );
+     83          
+     84          
+     85          /*! *********************************************************************************
+     86          *************************************************************************************
+     87          * Public functions
+     88          *************************************************************************************
+     89          ********************************************************************************** */
+     90          
+     91          /*! *********************************************************************************
+     92          * \brief  Sets the start time of a sequence
+     93          *
+     94          * \param[in]  startTime  the start time for a sequence
+     95          *
+     96          ********************************************************************************** */
+     97          void PhyTimeSetEventTrigger
+     98          (
+     99          phyTime_t startTime
+    100          )
+    101          {
+    102              uint32_t irqSts;
+    103          
+    104              OSA_EnterCritical(kCriticalDisableInt);
+    105          
+    106              /* disable TMR2 compare */
+    107              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR2CMP_EN_MASK;
+    108          
+    109              ZLL_T2PRIMECMP = startTime;
+    110          
+    111              /* unmask TMR2 interrupt (do not change other IRQ status) */
+    112              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    113              irqSts &= ~(ZLL_IRQSTS_TMR2MSK_MASK);
+    114              /* aknowledge TMR2 IRQ */
+    115              irqSts |= ZLL_IRQSTS_TMR2IRQ_MASK;
+    116              ZLL_IRQSTS = irqSts;
+    117          
+    118              /* TC2PRIME_EN must be enabled
+    119                 enable TMR2 compare, enable autosequence start by TC2 match */
+    120              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TMR2CMP_EN_MASK | ZLL_PHY_CTRL_TMRTRIGEN_MASK;
+    121          
+    122              OSA_ExitCritical(kCriticalDisableInt);
+    123          }
+    124          
+    125          /*! *********************************************************************************
+    126          * \brief  Disable the time trigger for a sequence.
+    127          *
+    128          * \remarks The sequence will start asap
+    129          *
+    130          ********************************************************************************** */
+    131          void PhyTimeDisableEventTrigger
+    132          (
+    133          void
+    134          )
+    135          {
+    136              uint32_t irqSts;
+    137          
+    138              /* disable autosequence start by TC2 match */
+    139              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMRTRIGEN_MASK;
+    140              /* disable TMR2 compare */
+    141              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR2CMP_EN_MASK;
+    142              /* mask TMR2 interrupt (do not change other IRQ status) */
+    143              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    144              irqSts |= ZLL_IRQSTS_TMR2MSK_MASK;
+    145              /* aknowledge TMR2 IRQ */
+    146              irqSts |= ZLL_IRQSTS_TMR2IRQ_MASK;
+    147              ZLL_IRQSTS = irqSts;
+    148          }
+    149          
+    150          /*! *********************************************************************************
+    151          * \brief  Sets the timeout value for a sequence
+    152          *
+    153          * \param[in]  pEndTime the absolute time when a sequence should terminate
+    154          *
+    155          * \remarks If the sequence does not finish until the timeout, it will be aborted
+    156          *
+    157          ********************************************************************************** */
+    158          void PhyTimeSetEventTimeout
+    159          (
+    160          phyTime_t *pEndTime
+    161          )
+    162          {
+    163              uint32_t irqSts;
+    164          
+    165          #ifdef PHY_PARAMETERS_VALIDATION
+    166              if(NULL == pEndTime)
+    167              {
+    168                  return;
+    169              }
+    170          #endif /* PHY_PARAMETERS_VALIDATION */
+    171          
+    172              OSA_EnterCritical(kCriticalDisableInt);
+    173          
+    174              /* disable TMR3 compare */
+    175              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR3CMP_EN_MASK;
+    176          
+    177              ZLL_T3CMP = *pEndTime & 0x00FFFFFF;
+    178          
+    179              /* aknowledge TMR3 IRQ */
+    180              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    181              irqSts |= ZLL_IRQSTS_TMR3IRQ_MASK;
+    182              ZLL_IRQSTS = irqSts;
+    183              /* enable TMR3 compare */
+    184              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TMR3CMP_EN_MASK;
+    185              /* enable autosequence stop by TC3 match */
+    186              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TC3TMOUT_MASK;
+    187          
+    188              OSA_ExitCritical(kCriticalDisableInt);
+    189          }
+    190          
+    191          /*! *********************************************************************************
+    192          * \brief  Return the timeout value for the current sequence
+    193          *
+    194          * \return  uint32_t the timeout value
+    195          *
+    196          ********************************************************************************** */
+    197          phyTime_t PhyTimeGetEventTimeout( void )
+    198          {
+    199              return ZLL_T3CMP;
+    200          }
+    201          
+    202          /*! *********************************************************************************
+    203          * \brief  Disables the sequence timeout
+    204          *
+    205          ********************************************************************************** */
+    206          void PhyTimeDisableEventTimeout
+    207          (
+    208          void
+    209          )
+    210          {
+    211              uint32_t irqSts;
+    212          
+    213              /* disable TMR3 compare */
+    214              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR3CMP_EN_MASK;
+    215              /* disable autosequence stop by TC3 match */
+    216              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TC3TMOUT_MASK;
+    217              /* mask TMR3 interrupt (do not change other IRQ status) */
+    218              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    219              irqSts |= ZLL_IRQSTS_TMR3MSK_MASK;
+    220              /* aknowledge TMR3 IRQ */
+    221              irqSts |= ZLL_IRQSTS_TMR3IRQ_MASK;
+    222              ZLL_IRQSTS = irqSts;
+    223          }
+    224          
+    225          /*! *********************************************************************************
+    226          * \brief  Reads the absolute clock from the radio
+    227          *
+    228          * \param[out]  pRetClk pointer to a location where the current clock will be stored
+    229          *
+    230          ********************************************************************************** */
+    231          void PhyTimeReadClock
+    232          (
+    233          phyTime_t *pRetClk
+    234          )
+    235          {
+    236          #ifdef PHY_PARAMETERS_VALIDATION
+    237              if(NULL == pRetClk)
+    238              {
+    239                  return;
+    240              }
+    241          #endif /* PHY_PARAMETERS_VALIDATION */
+    242          
+    243              *pRetClk = (phyTime_t)ZLL_EVENT_TMR;
+    244          }
+    245          
+    246          /*! *********************************************************************************
+    247          * \brief  Initialize the Event Timer
+    248          *
+    249          * \param[in]  pAbsTime  pointer to the location where the new time is stored
+    250          *
+    251          ********************************************************************************** */
+    252          void PhyTimeInitEventTimer
+    253          (
+    254          uint32_t *pAbsTime
+    255          )
+    256          {
+    257          #ifdef PHY_PARAMETERS_VALIDATION
+    258              if(NULL == pAbsTime)
+    259              {
+    260                  return;
+    261              }
+    262          #endif /* PHY_PARAMETERS_VALIDATION */
+    263          
+    264              OSA_EnterCritical(kCriticalDisableInt);
+    265          
+    266              ZLL_T1CMP = *pAbsTime;
+    267          
+    268              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TMRLOAD_MASK; /* self clearing bit */
+    269          
+    270              OSA_ExitCritical(kCriticalDisableInt);
+    271          }
+    272          
+    273          /*! *********************************************************************************
+    274          * \brief  Set TMR1 timeout value
+    275          *
+    276          * \param[in]  pWaitTimeout the timeout value
+    277          *
+    278          ********************************************************************************** */
+    279          void PhyTimeSetWaitTimeout
+    280          (
+    281          phyTime_t *pWaitTimeout
+    282          )
+    283          {
+    284              uint32_t irqSts;
+    285          
+    286              OSA_EnterCritical(kCriticalDisableInt);
+    287          
+    288              /* disable TMR1 compare */
+    289              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR1CMP_EN_MASK;
+    290          
+    291              ZLL_T1CMP = *pWaitTimeout;
+    292          
+    293              /* unmask TMR1 interrupt (do not change other IRQ status) */
+    294              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    295              irqSts &= ~(ZLL_IRQSTS_TMR1MSK_MASK);
+    296              /* aknowledge TMR1 IRQ */
+    297              irqSts |= ZLL_IRQSTS_TMR1IRQ_MASK;
+    298              ZLL_IRQSTS = irqSts;
+    299              /* enable TMR1 compare */
+    300              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TMR1CMP_EN_MASK;
+    301          
+    302              OSA_ExitCritical(kCriticalDisableInt);
+    303          }
+    304          
+    305          /*! *********************************************************************************
+    306          * \brief  Disable the TMR1 timeout
+    307          *
+    308          ********************************************************************************** */
+    309          void PhyTimeDisableWaitTimeout
+    310          (
+    311          void
+    312          )
+    313          {
+    314              uint32_t irqSts;
+    315          
+    316              /* disable TMR1 compare */
+    317              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR1CMP_EN_MASK;
+    318              /* mask TMR1 interrupt (do not change other IRQ status) */
+    319              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    320              irqSts |= ZLL_IRQSTS_TMR1MSK_MASK;
+    321              /* aknowledge TMR1 IRQ */
+    322              irqSts |= ZLL_IRQSTS_TMR1IRQ_MASK;
+    323              ZLL_IRQSTS = irqSts;
+    324          }
+    325          
+    326          /*! *********************************************************************************
+    327          * \brief  Set TMR4 timeout value
+    328          *
+    329          * \param[in]  pWakeUpTime  absolute time
+    330          *
+    331          ********************************************************************************** */
+    332          void PhyTimeSetWakeUpTime
+    333          (
+    334          uint32_t *pWakeUpTime
+    335          )
+    336          {
+    337              uint32_t irqSts;
+    338          
+    339              OSA_EnterCritical(kCriticalDisableInt);
+    340          
+    341              /* disable TMR4 compare */
+    342              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR4CMP_EN_MASK;
+    343          
+    344              ZLL_T4CMP = *pWakeUpTime;
+    345              
+    346              /* unmask TMR4 interrupt (do not change other IRQ status) */
+    347              irqSts  = ZLL_IRQSTS & BM_ZLL_IRQSTS_TMRxMSK;
+    348              irqSts &= ~(ZLL_IRQSTS_TMR4MSK_MASK);
+    349              /* aknowledge TMR4 IRQ */
+    350              irqSts |= ZLL_IRQSTS_TMR4IRQ_MASK;
+    351              ZLL_IRQSTS = irqSts;
+    352              /* enable TMR4 compare */
+    353              ZLL_PHY_CTRL |= ZLL_PHY_CTRL_TMR4CMP_EN_MASK;
+    354          
+    355              OSA_ExitCritical(kCriticalDisableInt);
+    356          }
+    357          
+    358          /*! *********************************************************************************
+    359          * \brief  Check if TMR4 IRQ occured, and aknowledge it
+    360          *
+    361          * \return  TRUE if TMR4 IRQ occured
+    362          *
+    363          ********************************************************************************** */
+    364          bool_t PhyTimeIsWakeUpTimeExpired
+    365          (
+    366          void
+    367          )
+    368          {
+    369              bool_t wakeUpIrq = FALSE;
+    370              uint32_t irqSts;
+    371          
+    372              OSA_EnterCritical(kCriticalDisableInt);
+    373              
+    374              irqSts = ZLL_IRQSTS;
+    375          
+    376              /* disable TMR4 compare */
+    377              ZLL_PHY_CTRL &= ~ZLL_PHY_CTRL_TMR4CMP_EN_MASK;
+    378          
+    379              if( irqSts & ZLL_IRQSTS_TMR4IRQ_MASK )
+    380              {
+    381                  wakeUpIrq = TRUE;
+    382              }
+    383          
+    384              /* unmask TMR4 interrupt (do not change other IRQ status) */
+    385              irqSts &= BM_ZLL_IRQSTS_TMRxMSK;
+    386              irqSts &= ~(ZLL_IRQSTS_TMR4MSK_MASK);
+    387              /* aknowledge TMR4 IRQ */
+    388              irqSts |= ZLL_IRQSTS_TMR4IRQ_MASK;
+    389              ZLL_IRQSTS = irqSts;
+    390          
+    391              OSA_ExitCritical(kCriticalDisableInt);
+    392          
+    393              return wakeUpIrq;
+    394          }
+    395          
+    396          
+    397          /*! *********************************************************************************
+    398          * \brief  PHY Timer Interrupt Service Routine
+    399          *
+    400          ********************************************************************************** */
+    401          void PhyTime_ISR(void)
+    402          {
+    403              if( pNextEvent->callback == PhyTime_OverflowCB )
+    404              {
+    405                  gPhyTimerOverflow++;
+    406              }
+    407              
+    408              if( gpfPhyTimeNotify )
+    409              {
+    410                  gpfPhyTimeNotify();
+    411              }
+    412              else
+    413              {
+    414                  PhyTime_RunCallback();
+    415                  PhyTime_Maintenance();
+    416              }
+    417          }
+    418          
+    419          /*! *********************************************************************************
+    420          * \brief  Initialize the PHY Timer module
+    421          *
+    422          * \return  phyTimeStatus_t
+    423          *
+    424          ********************************************************************************** */
+    425          phyTimeStatus_t PhyTime_TimerInit( void (*cb)(void) )
+    426          {
+    427              if( gpfPhyTimeNotify )
+    428                  return gPhyTimeError_c;
+    429          
+    430              gpfPhyTimeNotify = cb;
+    431              gPhyTimerOverflow = 0;
+    432              FLib_MemSet( mPhyTimers, 0, sizeof(mPhyTimers) );
+    433          
+    434              /* Schedule Overflow Calback */
+    435              pNextEvent = &mPhyTimers[0];
+    436              pNextEvent->callback = PhyTime_OverflowCB;
+    437              pNextEvent->timestamp = (gPhyTimerOverflow+1) << gPhyTimeShift_c;
+    438              PhyTimeSetWaitTimeout( &pNextEvent->timestamp );
+    439          
+    440              return gPhyTimeOk_c;
+    441          }
+    442          
+    443          /*! *********************************************************************************
+    444          * \brief  Returns a 64bit timestamp value to be used by the MAC Layer
+    445          *
+    446          * \return  phyTime_t PHY timestamp
+    447          *
+    448          ********************************************************************************** */
+    449          phyTime_t PhyTime_GetTimestamp(void)
+    450          {
+    451              phyTime_t time = 0;
+    452          
+    453              OSA_EnterCritical(kCriticalDisableInt);
+    454              PhyTimeReadClock( &time );
+    455              time |= (gPhyTimerOverflow << gPhyTimeShift_c);
+    456              OSA_ExitCritical(kCriticalDisableInt);
+    457          
+    458              return time;
+    459          }
+    460          
+    461          /*! *********************************************************************************
+    462          * \brief  Schedules an event
+    463          *
+    464          * \param[in]  pEvent  event to be scheduled
+    465          *
+    466          * \return  phyTimeTimerId_t  the id of the alocated timer
+    467          *
+    468          ********************************************************************************** */
+    469          phyTimeTimerId_t PhyTime_ScheduleEvent( phyTimeEvent_t *pEvent )
+    470          {
+    471              phyTimeTimerId_t tmr;
+    472          
+    473              /* Parameter validation */
+    474              if( NULL == pEvent->callback )
+    475              {
+    476                  return gInvalidTimerId_c;
+    477              }
+    478          
+    479              /* Search for a free slot (slot 0 is reserved for the Overflow calback) */
+    480              OSA_EnterCritical(kCriticalDisableInt);
+    481              for( tmr=1; tmr<gMaxPhyTimers_c; tmr++ )
+    482              {
+    483                  if( mPhyTimers[tmr].callback == NULL )
+    484                  {
+    485                      mPhyTimers[tmr] = *pEvent;
+    486                      break;
+    487                  }
+    488              }
+    489              OSA_ExitCritical(kCriticalDisableInt);
+    490          
+    491              if( tmr >= gMaxPhyTimers_c )
+    492                  return gInvalidTimerId_c;
+    493          
+    494              /* Program the next event */
+    495              if((NULL == pNextEvent) ||
+    496                 (NULL != pNextEvent  && mPhyTimers[tmr].timestamp < pNextEvent->timestamp))
+    497              {
+    498                  PhyTime_Maintenance();
+    499              }
+    500          
+    501              return tmr;
+    502          }
+    503          
+    504          /*! *********************************************************************************
+    505          * \brief  Cancel an event
+    506          *
+    507          * \param[in]  timerId  the Id of the timer
+    508          *
+    509          * \return  phyTimeStatus_t
+    510          *
+    511          ********************************************************************************** */
+    512          phyTimeStatus_t PhyTime_CancelEvent( phyTimeTimerId_t timerId )
+    513          {
+    514              if( (timerId == 0) || (timerId >= gMaxPhyTimers_c) || (NULL == mPhyTimers[timerId].callback) )
+    515              {
+    516                  return gPhyTimeNotFound_c;
+    517              }
+    518          
+    519              OSA_EnterCritical(kCriticalDisableInt);
+    520              if( pNextEvent == &mPhyTimers[timerId] )
+    521              {
+    522                  pNextEvent = NULL;
+    523              }
+    524          
+    525              mPhyTimers[timerId].callback = NULL;
+    526              OSA_ExitCritical(kCriticalDisableInt);
+    527          
+    528              return gPhyTimeOk_c;
+    529          }
+    530          
+    531          /*! *********************************************************************************
+    532          * \brief  Cancel all event with the specified paameter
+    533          *
+    534          * \param[in]  param  event parameter
+    535          *
+    536          * \return  phyTimeStatus_t
+    537          *
+    538          ********************************************************************************** */
+    539          phyTimeStatus_t PhyTime_CancelEventsWithParam ( uint32_t param )
+    540          {
+    541              uint32_t i;
+    542              phyTimeStatus_t status = gPhyTimeNotFound_c;
+    543          
+    544              OSA_EnterCritical(kCriticalDisableInt);
+    545              for( i=1; i<gMaxPhyTimers_c; i++ )
+    546              {
+    547                  if( mPhyTimers[i].callback && (param == mPhyTimers[i].parameter) )
+    548                  {
+    549                      status = gPhyTimeOk_c;
+    550                      mPhyTimers[i].callback = NULL;
+    551                      if( pNextEvent == &mPhyTimers[i] )
+    552                      {
+    553                          pNextEvent = NULL;
+    554                      }
+    555                  }
+    556              }
+    557              OSA_ExitCritical(kCriticalDisableInt);
+    558          
+    559              return status;
+    560          }
+    561          
+    562          /*! *********************************************************************************
+    563          * \brief  Run the callback for the recently expired event
+    564          *
+    565          ********************************************************************************** */
+    566          void PhyTime_RunCallback( void )
+    567          {
+    568              uint32_t param;
+    569              phyTimeCallback_t cb;
+    570          
+    571              if( pNextEvent )
+    572              {
+    573                  OSA_EnterCritical(kCriticalDisableInt);
+    574          
+    575                  param = pNextEvent->parameter;
+    576                  cb = pNextEvent->callback;
+    577                  pNextEvent->callback = NULL;
+    578                  pNextEvent = NULL;
+    579          
+    580                  OSA_ExitCritical(kCriticalDisableInt);
+    581          
+    582                  cb(param);
+    583              }
+    584          }
+    585          
+    586          /*! *********************************************************************************
+    587          * \brief  Expire events too close to be scheduled.
+    588          *         Program the next event
+    589          *
+    590          ********************************************************************************** */
+    591          void PhyTime_Maintenance( void )
+    592          {
+    593              phyTime_t currentTime;
+    594              phyTimeEvent_t *pEv;
+    595          
+    596              PhyTimeDisableWaitTimeout();
+    597          
+    598              while(1)
+    599              {
+    600                  OSA_EnterCritical(kCriticalDisableInt);
+    601                  
+    602                  pEv = PhyTime_GetNextEvent();
+    603                  currentTime = PhyTime_GetTimestamp();
+    604                  
+    605                  /* Program next event if exists */
+    606                  if( pEv )
+    607                  {
+    608                      pNextEvent = pEv;
+    609                      
+    610                      if( pEv->timestamp > (currentTime + gPhyTimeMinSetupTime_c) )
+    611                      {
+    612                          PhyTimeSetWaitTimeout( &pEv->timestamp );
+    613                          pEv = NULL;
+    614                      }
+    615                  }
+    616          
+    617                  OSA_ExitCritical(kCriticalDisableInt);
+    618          
+    619                  if( !pEv )
+    620                  {
+    621                      break;
+    622                  }
+    623          
+    624                  PhyTime_RunCallback();
+    625              }
+    626          }
+    627          
+    628          
+    629          /*! *********************************************************************************
+    630          * \brief  Timer Overflow callback
+    631          *
+    632          * \param[in]  param
+    633          *
+    634          ********************************************************************************** */
+    635          static void PhyTime_OverflowCB( uint32_t param )
+    636          {
+    637              (void)param;
+    638          
+    639              /* Reprogram the next overflow callback */
+    640              mPhyTimers[0].callback = PhyTime_OverflowCB;
+    641              mPhyTimers[0].timestamp = (gPhyTimerOverflow+1) << 24;
+    642          }
+    643          
+    644          /*! *********************************************************************************
+    645          * \brief  Search for the next event to be scheduled
+    646          *
+    647          * \return phyTimeEvent_t pointer to the next event to be scheduled
+    648          *
+    649          ********************************************************************************** */
+    650          static phyTimeEvent_t* PhyTime_GetNextEvent( void )
+    651          {
+    652              phyTimeEvent_t *pEv = NULL;
+    653              uint32_t i;
+    654          
+    655              /* Search for the next event to be serviced */
+    656              for( i=0; i<gMaxPhyTimers_c; i++ )
+    657              {
+    658                  if( NULL != mPhyTimers[i].callback )
+    659                  {
+    660                      if( NULL == pEv )
+    661                      {
+    662                          pEv = &mPhyTimers[i];
+    663                      }
+    664                      /* Check which event expires first */
+    665                      else if( mPhyTimers[i].timestamp < pEv->timestamp )
+    666                      {
+    667                          pEv = &mPhyTimers[i];
+    668                      }
+    669                  }
+    670              }
+    671          
+    672              return pEv;
+    673          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   PhyTimeDisableEventTimeout
+       0   PhyTimeDisableEventTrigger
+       0   PhyTimeDisableWaitTimeout
+       0   PhyTimeGetEventTimeout
+       8   PhyTimeInitEventTimer
+         8   -> OSA_EnterCritical
+         8   -> OSA_ExitCritical
+      16   PhyTimeIsWakeUpTimeExpired
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+       0   PhyTimeReadClock
+      16   PhyTimeSetEventTimeout
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   PhyTimeSetEventTrigger
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   PhyTimeSetWaitTimeout
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   PhyTimeSetWakeUpTime
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+       8   PhyTime_CancelEvent
+         8   -> OSA_EnterCritical
+         8   -> OSA_ExitCritical
+      16   PhyTime_CancelEventsWithParam
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      12   PhyTime_GetNextEvent
+      16   PhyTime_GetTimestamp
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+        16   -> PhyTimeReadClock
+       8   PhyTime_ISR
+         8   -- Indirect call
+         8   -> PhyTime_Maintenance
+         8   -> PhyTime_RunCallback
+      16   PhyTime_Maintenance
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+        16   -> PhyTimeDisableWaitTimeout
+        16   -> PhyTimeSetWaitTimeout
+        16   -> PhyTime_GetNextEvent
+        16   -> PhyTime_GetTimestamp
+        16   -> PhyTime_RunCallback
+       4   PhyTime_OverflowCB
+      16   PhyTime_RunCallback
+        16   -- Indirect call
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      16   PhyTime_ScheduleEvent
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+        16   -> PhyTime_Maintenance
+        16   -> __aeabi_memcpy4
+       8   PhyTime_TimerInit
+         8   -> FLib_MemSet
+         8   -> PhyTimeSetWaitTimeout
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable13
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable16
+       4  ??DataTable18
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+       4  ??DataTable20
+       4  ??DataTable20_1
+       4  ??DataTable20_2
+      58  PhyTimeDisableEventTimeout
+      58  PhyTimeDisableEventTrigger
+      46  PhyTimeDisableWaitTimeout
+       8  PhyTimeGetEventTimeout
+      38  PhyTimeInitEventTimer
+      74  PhyTimeIsWakeUpTimeExpired
+      12  PhyTimeReadClock
+      94  PhyTimeSetEventTimeout
+      78  PhyTimeSetEventTrigger
+      82  PhyTimeSetWaitTimeout
+      80  PhyTimeSetWakeUpTime
+      90  PhyTime_CancelEvent
+     102  PhyTime_CancelEventsWithParam
+      84  PhyTime_GetNextEvent
+      64  PhyTime_GetTimestamp
+      56  PhyTime_ISR
+      84  PhyTime_Maintenance
+      36  PhyTime_OverflowCB
+      58  PhyTime_RunCallback
+     140  PhyTime_ScheduleEvent
+      92  PhyTime_TimerInit
+       8  gPhyTimerOverflow
+       4  gpfPhyTimeNotify
+      80  mPhyTimers
+       4  pNextEvent
+
+ 
+    96 bytes in section .bss
+ 1 518 bytes in section .text
+ 
+ 1 518 bytes of CODE memory
+    96 bytes of DATA memory
+
+Errors: none
+Warnings: none

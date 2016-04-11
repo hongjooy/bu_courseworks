@@ -1,0 +1,582 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:15
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\croutine.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\croutine.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\croutine.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\croutine.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\croutine.c
+      1          /*
+      2              FreeRTOS V8.2.0 - Copyright (C) 2015 Real Time Engineers Ltd.
+      3              All rights reserved
+      4          
+      5              VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
+      6          
+      7              This file is part of the FreeRTOS distribution.
+      8          
+      9              FreeRTOS is free software; you can redistribute it and/or modify it under
+     10              the terms of the GNU General Public License (version 2) as published by the
+     11              Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
+     12          
+     13          	***************************************************************************
+     14              >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+     15              >>!   distribute a combined work that includes FreeRTOS without being   !<<
+     16              >>!   obliged to provide the source code for proprietary components     !<<
+     17              >>!   outside of the FreeRTOS kernel.                                   !<<
+     18          	***************************************************************************
+     19          
+     20              FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
+     21              WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+     22              FOR A PARTICULAR PURPOSE.  Full license text is available on the following
+     23              link: http://www.freertos.org/a00114.html
+     24          
+     25              ***************************************************************************
+     26               *                                                                       *
+     27               *    FreeRTOS provides completely free yet professionally developed,    *
+     28               *    robust, strictly quality controlled, supported, and cross          *
+     29               *    platform software that is more than just the market leader, it     *
+     30               *    is the industry's de facto standard.                               *
+     31               *                                                                       *
+     32               *    Help yourself get started quickly while simultaneously helping     *
+     33               *    to support the FreeRTOS project by purchasing a FreeRTOS           *
+     34               *    tutorial book, reference manual, or both:                          *
+     35               *    http://www.FreeRTOS.org/Documentation                              *
+     36               *                                                                       *
+     37              ***************************************************************************
+     38          
+     39              http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
+     40          	the FAQ page "My application does not run, what could be wrong?".  Have you
+     41          	defined configASSERT()?
+     42          
+     43          	http://www.FreeRTOS.org/support - In return for receiving this top quality
+     44          	embedded software for free we request you assist our global community by
+     45          	participating in the support forum.
+     46          
+     47          	http://www.FreeRTOS.org/training - Investing in training allows your team to
+     48          	be as productive as possible as early as possible.  Now you can receive
+     49          	FreeRTOS training directly from Richard Barry, CEO of Real Time Engineers
+     50          	Ltd, and the world's leading authority on the world's leading RTOS.
+     51          
+     52              http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+     53              including FreeRTOS+Trace - an indispensable productivity tool, a DOS
+     54              compatible FAT file system, and our tiny thread aware UDP/IP stack.
+     55          
+     56              http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
+     57              Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
+     58          
+     59              http://www.OpenRTOS.com - Real Time Engineers ltd. license FreeRTOS to High
+     60              Integrity Systems ltd. to sell under the OpenRTOS brand.  Low cost OpenRTOS
+     61              licenses offer ticketed support, indemnification and commercial middleware.
+     62          
+     63              http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+     64              engineered and independently SIL3 certified version for use in safety and
+     65              mission critical applications that require provable dependability.
+     66          
+     67              1 tab == 4 spaces!
+     68          */
+     69          
+     70          #include "FreeRTOS.h"
+     71          #include "task.h"
+     72          #include "croutine.h"
+     73          
+     74          /*
+     75           * Some kernel aware debuggers require data to be viewed to be global, rather
+     76           * than file scope.
+     77           */
+     78          #ifdef portREMOVE_STATIC_QUALIFIER
+     79          	#define static
+     80          #endif
+     81          
+     82          
+     83          /* Lists for ready and blocked co-routines. --------------------*/
+     84          static List_t pxReadyCoRoutineLists[ configMAX_CO_ROUTINE_PRIORITIES ];	/*< Prioritised ready co-routines. */
+     85          static List_t xDelayedCoRoutineList1;									/*< Delayed co-routines. */
+     86          static List_t xDelayedCoRoutineList2;									/*< Delayed co-routines (two lists are used - one for delays that have overflowed the current tick count. */
+     87          static List_t * pxDelayedCoRoutineList;									/*< Points to the delayed co-routine list currently being used. */
+     88          static List_t * pxOverflowDelayedCoRoutineList;							/*< Points to the delayed co-routine list currently being used to hold co-routines that have overflowed the current tick count. */
+     89          static List_t xPendingReadyCoRoutineList;								/*< Holds co-routines that have been readied by an external event.  They cannot be added directly to the ready lists as the ready lists cannot be accessed by interrupts. */
+     90          
+     91          /* Other file private variables. --------------------------------*/
+     92          CRCB_t * pxCurrentCoRoutine = NULL;
+     93          static UBaseType_t uxTopCoRoutineReadyPriority = 0;
+     94          static TickType_t xCoRoutineTickCount = 0, xLastTickCount = 0, xPassedTicks = 0;
+     95          
+     96          /* The initial state of the co-routine when it is created. */
+     97          #define corINITIAL_STATE	( 0 )
+     98          
+     99          /*
+    100           * Place the co-routine represented by pxCRCB into the appropriate ready queue
+    101           * for the priority.  It is inserted at the end of the list.
+    102           *
+    103           * This macro accesses the co-routine ready lists and therefore must not be
+    104           * used from within an ISR.
+    105           */
+    106          #define prvAddCoRoutineToReadyQueue( pxCRCB )																		\
+    107          {																													\
+    108          	if( pxCRCB->uxPriority > uxTopCoRoutineReadyPriority )															\
+    109          	{																												\
+    110          		uxTopCoRoutineReadyPriority = pxCRCB->uxPriority;															\
+    111          	}																												\
+    112          	vListInsertEnd( ( List_t * ) &( pxReadyCoRoutineLists[ pxCRCB->uxPriority ] ), &( pxCRCB->xGenericListItem ) );	\
+    113          }
+    114          
+    115          /*
+    116           * Utility to ready all the lists used by the scheduler.  This is called
+    117           * automatically upon the creation of the first co-routine.
+    118           */
+    119          static void prvInitialiseCoRoutineLists( void );
+    120          
+    121          /*
+    122           * Co-routines that are readied by an interrupt cannot be placed directly into
+    123           * the ready lists (there is no mutual exclusion).  Instead they are placed in
+    124           * in the pending ready list in order that they can later be moved to the ready
+    125           * list by the co-routine scheduler.
+    126           */
+    127          static void prvCheckPendingReadyList( void );
+    128          
+    129          /*
+    130           * Macro that looks at the list of co-routines that are currently delayed to
+    131           * see if any require waking.
+    132           *
+    133           * Co-routines are stored in the queue in the order of their wake time -
+    134           * meaning once one co-routine has been found whose timer has not expired
+    135           * we need not look any further down the list.
+    136           */
+    137          static void prvCheckDelayedList( void );
+    138          
+    139          /*-----------------------------------------------------------*/
+    140          
+    141          BaseType_t xCoRoutineCreate( crCOROUTINE_CODE pxCoRoutineCode, UBaseType_t uxPriority, UBaseType_t uxIndex )
+    142          {
+    143          BaseType_t xReturn;
+    144          CRCB_t *pxCoRoutine;
+    145          
+    146          	/* Allocate the memory that will store the co-routine control block. */
+    147          	pxCoRoutine = ( CRCB_t * ) pvPortMalloc( sizeof( CRCB_t ) );
+    148          	if( pxCoRoutine )
+    149          	{
+    150          		/* If pxCurrentCoRoutine is NULL then this is the first co-routine to
+    151          		be created and the co-routine data structures need initialising. */
+    152          		if( pxCurrentCoRoutine == NULL )
+    153          		{
+    154          			pxCurrentCoRoutine = pxCoRoutine;
+    155          			prvInitialiseCoRoutineLists();
+    156          		}
+    157          
+    158          		/* Check the priority is within limits. */
+    159          		if( uxPriority >= configMAX_CO_ROUTINE_PRIORITIES )
+    160          		{
+    161          			uxPriority = configMAX_CO_ROUTINE_PRIORITIES - 1;
+    162          		}
+    163          
+    164          		/* Fill out the co-routine control block from the function parameters. */
+    165          		pxCoRoutine->uxState = corINITIAL_STATE;
+    166          		pxCoRoutine->uxPriority = uxPriority;
+    167          		pxCoRoutine->uxIndex = uxIndex;
+    168          		pxCoRoutine->pxCoRoutineFunction = pxCoRoutineCode;
+    169          
+    170          		/* Initialise all the other co-routine control block parameters. */
+    171          		vListInitialiseItem( &( pxCoRoutine->xGenericListItem ) );
+    172          		vListInitialiseItem( &( pxCoRoutine->xEventListItem ) );
+    173          
+    174          		/* Set the co-routine control block as a link back from the ListItem_t.
+    175          		This is so we can get back to the containing CRCB from a generic item
+    176          		in a list. */
+    177          		listSET_LIST_ITEM_OWNER( &( pxCoRoutine->xGenericListItem ), pxCoRoutine );
+    178          		listSET_LIST_ITEM_OWNER( &( pxCoRoutine->xEventListItem ), pxCoRoutine );
+    179          
+    180          		/* Event lists are always in priority order. */
+    181          		listSET_LIST_ITEM_VALUE( &( pxCoRoutine->xEventListItem ), ( ( TickType_t ) configMAX_CO_ROUTINE_PRIORITIES - ( TickType_t ) uxPriority ) );
+    182          
+    183          		/* Now the co-routine has been initialised it can be added to the ready
+    184          		list at the correct priority. */
+    185          		prvAddCoRoutineToReadyQueue( pxCoRoutine );
+    186          
+    187          		xReturn = pdPASS;
+    188          	}
+    189          	else
+    190          	{
+    191          		xReturn = errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY;
+    192          	}
+    193          
+    194          	return xReturn;
+    195          }
+    196          /*-----------------------------------------------------------*/
+    197          
+    198          void vCoRoutineAddToDelayedList( TickType_t xTicksToDelay, List_t *pxEventList )
+    199          {
+    200          TickType_t xTimeToWake;
+    201          
+    202          	/* Calculate the time to wake - this may overflow but this is
+    203          	not a problem. */
+    204          	xTimeToWake = xCoRoutineTickCount + xTicksToDelay;
+    205          
+    206          	/* We must remove ourselves from the ready list before adding
+    207          	ourselves to the blocked list as the same list item is used for
+    208          	both lists. */
+    209          	( void ) uxListRemove( ( ListItem_t * ) &( pxCurrentCoRoutine->xGenericListItem ) );
+    210          
+    211          	/* The list item will be inserted in wake time order. */
+    212          	listSET_LIST_ITEM_VALUE( &( pxCurrentCoRoutine->xGenericListItem ), xTimeToWake );
+    213          
+    214          	if( xTimeToWake < xCoRoutineTickCount )
+    215          	{
+    216          		/* Wake time has overflowed.  Place this item in the
+    217          		overflow list. */
+    218          		vListInsert( ( List_t * ) pxOverflowDelayedCoRoutineList, ( ListItem_t * ) &( pxCurrentCoRoutine->xGenericListItem ) );
+    219          	}
+    220          	else
+    221          	{
+    222          		/* The wake time has not overflowed, so we can use the
+    223          		current block list. */
+    224          		vListInsert( ( List_t * ) pxDelayedCoRoutineList, ( ListItem_t * ) &( pxCurrentCoRoutine->xGenericListItem ) );
+    225          	}
+    226          
+    227          	if( pxEventList )
+    228          	{
+    229          		/* Also add the co-routine to an event list.  If this is done then the
+    230          		function must be called with interrupts disabled. */
+    231          		vListInsert( pxEventList, &( pxCurrentCoRoutine->xEventListItem ) );
+    232          	}
+    233          }
+    234          /*-----------------------------------------------------------*/
+    235          
+    236          static void prvCheckPendingReadyList( void )
+    237          {
+    238          	/* Are there any co-routines waiting to get moved to the ready list?  These
+    239          	are co-routines that have been readied by an ISR.  The ISR cannot access
+    240          	the	ready lists itself. */
+    241          	while( listLIST_IS_EMPTY( &xPendingReadyCoRoutineList ) == pdFALSE )
+    242          	{
+    243          		CRCB_t *pxUnblockedCRCB;
+    244          
+    245          		/* The pending ready list can be accessed by an ISR. */
+    246          		portDISABLE_INTERRUPTS();
+    247          		{
+    248          			pxUnblockedCRCB = ( CRCB_t * ) listGET_OWNER_OF_HEAD_ENTRY( (&xPendingReadyCoRoutineList) );
+    249          			( void ) uxListRemove( &( pxUnblockedCRCB->xEventListItem ) );
+    250          		}
+    251          		portENABLE_INTERRUPTS();
+    252          
+    253          		( void ) uxListRemove( &( pxUnblockedCRCB->xGenericListItem ) );
+    254          		prvAddCoRoutineToReadyQueue( pxUnblockedCRCB );
+    255          	}
+    256          }
+    257          /*-----------------------------------------------------------*/
+    258          
+    259          static void prvCheckDelayedList( void )
+    260          {
+    261          CRCB_t *pxCRCB;
+    262          
+    263          	xPassedTicks = xTaskGetTickCount() - xLastTickCount;
+    264          	while( xPassedTicks )
+    265          	{
+    266          		xCoRoutineTickCount++;
+    267          		xPassedTicks--;
+    268          
+    269          		/* If the tick count has overflowed we need to swap the ready lists. */
+    270          		if( xCoRoutineTickCount == 0 )
+    271          		{
+    272          			List_t * pxTemp;
+    273          
+    274          			/* Tick count has overflowed so we need to swap the delay lists.  If there are
+    275          			any items in pxDelayedCoRoutineList here then there is an error! */
+    276          			pxTemp = pxDelayedCoRoutineList;
+    277          			pxDelayedCoRoutineList = pxOverflowDelayedCoRoutineList;
+    278          			pxOverflowDelayedCoRoutineList = pxTemp;
+    279          		}
+    280          
+    281          		/* See if this tick has made a timeout expire. */
+    282          		while( listLIST_IS_EMPTY( pxDelayedCoRoutineList ) == pdFALSE )
+    283          		{
+    284          			pxCRCB = ( CRCB_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxDelayedCoRoutineList );
+    285          
+    286          			if( xCoRoutineTickCount < listGET_LIST_ITEM_VALUE( &( pxCRCB->xGenericListItem ) ) )
+    287          			{
+    288          				/* Timeout not yet expired. */
+    289          				break;
+    290          			}
+    291          
+    292          			portDISABLE_INTERRUPTS();
+    293          			{
+    294          				/* The event could have occurred just before this critical
+    295          				section.  If this is the case then the generic list item will
+    296          				have been moved to the pending ready list and the following
+    297          				line is still valid.  Also the pvContainer parameter will have
+    298          				been set to NULL so the following lines are also valid. */
+    299          				( void ) uxListRemove( &( pxCRCB->xGenericListItem ) );
+    300          
+    301          				/* Is the co-routine waiting on an event also? */
+    302          				if( pxCRCB->xEventListItem.pvContainer )
+    303          				{
+    304          					( void ) uxListRemove( &( pxCRCB->xEventListItem ) );
+    305          				}
+    306          			}
+    307          			portENABLE_INTERRUPTS();
+    308          
+    309          			prvAddCoRoutineToReadyQueue( pxCRCB );
+    310          		}
+    311          	}
+    312          
+    313          	xLastTickCount = xCoRoutineTickCount;
+    314          }
+    315          /*-----------------------------------------------------------*/
+    316          
+    317          void vCoRoutineSchedule( void )
+    318          {
+    319          	/* See if any co-routines readied by events need moving to the ready lists. */
+    320          	prvCheckPendingReadyList();
+    321          
+    322          	/* See if any delayed co-routines have timed out. */
+    323          	prvCheckDelayedList();
+    324          
+    325          	/* Find the highest priority queue that contains ready co-routines. */
+    326          	while( listLIST_IS_EMPTY( &( pxReadyCoRoutineLists[ uxTopCoRoutineReadyPriority ] ) ) )
+    327          	{
+    328          		if( uxTopCoRoutineReadyPriority == 0 )
+    329          		{
+    330          			/* No more co-routines to check. */
+    331          			return;
+    332          		}
+    333          		--uxTopCoRoutineReadyPriority;
+    334          	}
+    335          
+    336          	/* listGET_OWNER_OF_NEXT_ENTRY walks through the list, so the co-routines
+    337          	 of the	same priority get an equal share of the processor time. */
+    338          	listGET_OWNER_OF_NEXT_ENTRY( pxCurrentCoRoutine, &( pxReadyCoRoutineLists[ uxTopCoRoutineReadyPriority ] ) );
+    339          
+    340          	/* Call the co-routine. */
+    341          	( pxCurrentCoRoutine->pxCoRoutineFunction )( pxCurrentCoRoutine, pxCurrentCoRoutine->uxIndex );
+    342          
+    343          	return;
+    344          }
+    345          /*-----------------------------------------------------------*/
+    346          
+    347          static void prvInitialiseCoRoutineLists( void )
+    348          {
+    349          UBaseType_t uxPriority;
+    350          
+    351          	for( uxPriority = 0; uxPriority < configMAX_CO_ROUTINE_PRIORITIES; uxPriority++ )
+    352          	{
+    353          		vListInitialise( ( List_t * ) &( pxReadyCoRoutineLists[ uxPriority ] ) );
+    354          	}
+    355          
+    356          	vListInitialise( ( List_t * ) &xDelayedCoRoutineList1 );
+    357          	vListInitialise( ( List_t * ) &xDelayedCoRoutineList2 );
+    358          	vListInitialise( ( List_t * ) &xPendingReadyCoRoutineList );
+    359          
+    360          	/* Start with pxDelayedCoRoutineList using list1 and the
+    361          	pxOverflowDelayedCoRoutineList using list2. */
+    362          	pxDelayedCoRoutineList = &xDelayedCoRoutineList1;
+    363          	pxOverflowDelayedCoRoutineList = &xDelayedCoRoutineList2;
+    364          }
+    365          /*-----------------------------------------------------------*/
+    366          
+    367          BaseType_t xCoRoutineRemoveFromEventList( const List_t *pxEventList )
+    368          {
+    369          CRCB_t *pxUnblockedCRCB;
+    370          BaseType_t xReturn;
+    371          
+    372          	/* This function is called from within an interrupt.  It can only access
+    373          	event lists and the pending ready list.  This function assumes that a
+    374          	check has already been made to ensure pxEventList is not empty. */
+    375          	pxUnblockedCRCB = ( CRCB_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxEventList );
+    376          	( void ) uxListRemove( &( pxUnblockedCRCB->xEventListItem ) );
+    377          	vListInsertEnd( ( List_t * ) &( xPendingReadyCoRoutineList ), &( pxUnblockedCRCB->xEventListItem ) );
+    378          
+    379          	if( pxUnblockedCRCB->uxPriority >= pxCurrentCoRoutine->uxPriority )
+    380          	{
+    381          		xReturn = pdTRUE;
+    382          	}
+    383          	else
+    384          	{
+    385          		xReturn = pdFALSE;
+    386          	}
+    387          
+    388          	return xReturn;
+    389          }
+    390          
+    391          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   prvCheckDelayedList
+         8   -> uxListRemove
+         8   -> vListInsertEnd
+         8   -> xTaskGetTickCount
+       8   prvCheckPendingReadyList
+         8   -> uxListRemove
+         8   -> vListInsertEnd
+       8   prvInitialiseCoRoutineLists
+         8   -> vListInitialise
+      16   vCoRoutineAddToDelayedList
+        16   -> uxListRemove
+        16   -> vListInsert
+       8   vCoRoutineSchedule
+         8   -- Indirect call
+         8   -> prvCheckDelayedList
+         8   -> prvCheckPendingReadyList
+      24   xCoRoutineCreate
+        24   -> prvInitialiseCoRoutineLists
+        24   -> pvPortMalloc
+        24   -> vListInitialiseItem
+        24   -> vListInsertEnd
+      16   xCoRoutineRemoveFromEventList
+        16   -> uxListRemove
+        16   -> vListInsertEnd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+     172  prvCheckDelayedList
+      76  prvCheckPendingReadyList
+      58  prvInitialiseCoRoutineLists
+       4  pxCurrentCoRoutine
+       4  pxDelayedCoRoutineList
+       4  pxOverflowDelayedCoRoutineList
+      40  pxReadyCoRoutineLists
+       4  uxTopCoRoutineReadyPriority
+      86  vCoRoutineAddToDelayedList
+     110  vCoRoutineSchedule
+     130  xCoRoutineCreate
+      54  xCoRoutineRemoveFromEventList
+       4  xCoRoutineTickCount
+      20  xDelayedCoRoutineList1
+      20  xDelayedCoRoutineList2
+       4  xLastTickCount
+       4  xPassedTicks
+      20  xPendingReadyCoRoutineList
+
+ 
+ 128 bytes in section .bss
+ 730 bytes in section .text
+ 
+ 730 bytes of CODE memory
+ 128 bytes of DATA memory
+
+Errors: none
+Warnings: none

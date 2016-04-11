@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Register Anklet{% endblock %}
+{% block body_block %}
+<style>
+#login-header{
+    width : 100%;
+    padding-top: 20px;
+    padding-left: 220px;
+
+}
+#login-container{
+    margin: 20px auto;
+  
+}
+#notmemberyet{
+    padding-left:220px
+}
+
+</style>
+<div id="login-header">
+    <h1> <strong>MOOOVE ANKLET REGISTER</strong> </h1>
+</div>
+<div id="login-container">
+    <form class="form-horizontal" method='post' action=''>
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="id_ankletnum" class="col-sm-2 control-label">Anklet Number</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="ankletnum" placeholder="Type Anklet Product Number" value="" size="50">
+            </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id_cownum" class="col-sm-2 control-label">Cow Number</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="cownum" placeholder="Type Cow Number" value="" size="50">
+            </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id_cowname" class="col-sm-2 control-label">Cow Name</label>
+        <div class="col-sm-4">
+          <p>
+            <input type="text" class="form-control" name="cowname" placeholder="(Optional) Type Cow Name" value="" size="50">
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id_cowbirthdate" class="col-sm-2 control-label">Cow Date of Birth</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="date" class="form-control" name="cowbirthdate" placeholder="Type Cow Date of Birth" value="" size="50">
+            </p>
+        </div>
+      </div>      
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" value="submit" class="btn btn-default"/>
+        </div>
+        <div>
+          {{error}}
+        </div>
+      </div>
+    </form>
+</div>
+
+
+
+
+
+
+ {% endblock %}

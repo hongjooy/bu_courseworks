@@ -1,0 +1,415 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  16:46:20
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\fxos_api.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\fxos_api.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\fxos_api.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fxos_api.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\fxos_api.c
+      1          /*
+      2           * Copyright (c) 2013-2015, Freescale Semiconductor, Inc.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * o Redistributions of source code must retain the above copyright notice, this list
+      9           *   of conditions and the following disclaimer.
+     10           *
+     11           * o Redistributions in binary form must reproduce the above copyright notice, this
+     12           *   list of conditions and the following disclaimer in the documentation and/or
+     13           *   other materials provided with the distribution.
+     14           *
+     15           * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     16           *   contributors may be used to endorse or promote products derived from this
+     17           *   software without specific prior written permission.
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     20           * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     21           * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     22           * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     23           * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     24           * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     25           * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     26           * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     27           * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     28           * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     29           */
+     30          
+     31          #include "fxos_api.h"
+     32          #include "fxos_def.h"
+     33          #include "fsl_debug_console.h"
+     34          #include <stdio.h>
+     35          
+     36          /*!
+     37           * @brief Verify and initialize device: Hybrid mode with ODR=50Hz, Mag OSR=32, Acc OSR=Normal.
+     38           *
+     39           * @param[in]  dev - FXOS Device pointer to the communications interface.
+     40           *
+     41           * @return int32_t   True if all initializations are completed without.
+     42           */
+     43          
+     44          int32_t fxos_init(accel_dev_t *dev)
+     45          {
+     46              uint8_t writeVal = RST_MASK;
+     47              uint8_t tmp;
+     48              uint32_t i;
+     49          
+     50              /* initialise device */
+     51              PRINTF("Initializing FXOS...\r\n");
+     52          
+     53              /* reset part */
+     54              PRINTF("Resetting FXOS...\r\n");
+     55              accel_write_reg(dev, CTRL_REG2, writeVal);
+     56          
+     57              /* wait for a bit */
+     58              for(i = 0; i < 0xFFFF; i++)
+     59              {
+     60                  __asm("NOP");
+     61              }
+     62          
+     63              /* setup auto sleep with FFMT trigger */
+     64              /* go to standby */
+     65              tmp = accel_read_reg(dev, CTRL_REG1);
+     66              accel_write_reg(dev, CTRL_REG1, tmp & (uint8_t)~ACTIVE_MASK );
+     67          
+     68              /* Read again to make sure we are in standby mode. */
+     69              tmp = accel_read_reg(dev, CTRL_REG1);
+     70              if((tmp & ACTIVE_MASK) == ACTIVE_MASK)
+     71              {
+     72                  PRINTF("Unable to move to Standby mode\n\n\r");
+     73                  return 1;
+     74              }
+     75          
+     76              /* Disable the FIFO */
+     77              accel_write_reg(dev, F_SETUP_REG, F_MODE_DISABLED);
+     78          
+     79          #ifdef LPSLEEP_HIRES
+     80              /* enable auto-sleep, low power in sleep, high res in wake */
+     81              accel_write_reg(dev, CTRL_REG2, SLPE_MASK | SMOD_LOW_POWER | MOD_HIGH_RES);
+     82          #else
+     83                  /* enable auto-sleep, low power in sleep, high res in wake */
+     84              accel_write_reg(dev, CTRL_REG2, MOD_HIGH_RES);
+     85          #endif
+     86          
+     87              /* set up Mag OSR and Hybrid mode using M_CTRL_REG1, use default for Acc */
+     88              accel_write_reg(dev, M_CTRL_REG1, (M_RST_MASK | M_OSR_MASK | M_HMS_MASK));
+     89          
+     90              /* Enable hyrid mode auto increment using M_CTRL_REG2 */
+     91              accel_write_reg(dev, M_CTRL_REG2, (M_HYB_AUTOINC_MASK));
+     92          
+     93          #ifdef EN_FFMT
+     94              /* enable FFMT for motion detect for X and Y axes, latch enable */
+     95              accel_write_reg(dev, FF_MT_CFG_REG, XEFE_MASK | YEFE_MASK | ZEFE_MASK | ELE_MASK | OAE_MASK);
+     96          #endif
+     97          
+     98          #ifdef SET_THRESHOLD
+     99              /* set threshold to about 0.25g */
+    100              accel_write_reg(dev, FT_MT_THS_REG, 0x04);
+    101          #endif
+    102          
+    103          #ifdef SET_DEBOUNCE
+    104              /* set debounce to zero */
+    105              accel_write_reg(dev, FF_MT_COUNT_REG, 0x00);
+    106          #endif
+    107          
+    108          #ifdef EN_AUTO_SLEEP
+    109              /* set auto-sleep wait period to 5s (=5/0.64=~8) */
+    110              accel_write_reg(dev, ASLP_COUNT_REG, 8);
+    111          #endif
+    112              /* default set to 4g mode */
+    113                  accel_write_reg(dev, XYZ_DATA_CFG_REG, FULL_SCALE_4G);
+    114          #ifdef EN_INTERRUPTS
+    115              /* enable data-ready, auto-sleep and motion detection interrupts */
+    116              /* FXOS1_WriteRegister(CTRL_REG4, INT_EN_DRDY_MASK | INT_EN_ASLP_MASK | INT_EN_FF_MT_MASK); */
+    117              accel_write_reg(dev, CTRL_REG4, 0x0);
+    118          
+    119              /* route data-ready interrupts to INT1, others INT2 (default) */
+    120              accel_write_reg(dev, CTRL_REG5, INT_CFG_DRDY_MASK);
+    121          
+    122              /* enable ffmt as a wake-up source */
+    123              accel_write_reg(dev, CTRL_REG3, WAKE_FF_MT_MASK);
+    124          
+    125              /* finally activate device with ASLP ODR=0.8Hz, ODR=100Hz, FSR=2g */
+    126              accel_write_reg(dev, CTRL_REG1,
+    127                                  HYB_ASLP_RATE_0_8HZ | HYB_DATA_RATE_100HZ | ACTIVE_MASK);
+    128          
+    129          #else
+    130                  // Setup the ODR for 50 Hz and activate the accelerometer
+    131                  accel_write_reg(dev, CTRL_REG1, (HYB_DATA_RATE_200HZ | ACTIVE_MASK));
+    132          #endif
+    133          
+    134              /* Read Control register again to ensure we are in active mode */
+    135              tmp = accel_read_reg(dev, CTRL_REG1);
+    136              if((tmp & ACTIVE_MASK) != ACTIVE_MASK)
+    137              {
+    138                  PRINTF("Unable to move to Active mode\n\n\r");
+    139                  return 1;
+    140              }
+    141          
+    142              return 0;
+    143          }
+    144          
+    145          /*!
+    146           * @brief Read data from sensors, assumes hyb_autoinc_mode is set in M_CTRL_REG2
+    147           *
+    148           * @param[in]  dev - FXOS Device pointer to the communications interface.
+    149           * @param[in] sensorData_t* sensorData    pointer to the buffer to hold sensor data
+    150           *
+    151           * @return     Init successfully or not.
+    152           */
+    153          int32_t fxos_read_sensor_data(const accel_dev_t *dev, accel_sensor_data_t *sensorData)
+    154          {
+    155              /* Read array of 12 bytes beginning from OUT_X_MSB_REG */
+    156              return fxos_read_register_array(dev, OUT_X_MSB_REG, (uint8_t *)sensorData, 12u);
+    157          }
+    158          
+    159          /*!
+    160           * @brief Read data from sensors, assumes hyb_autoinc_mode is set in M_CTRL_REG2
+    161           * and the fast-read mode is set in CTRL_REG1
+    162           *
+    163           * @param[in]  dev - FXOS Device pointer to the communications interface.
+    164           * @param[in] sensorData_t* sensorData    pointer to the buffer to hold sensor data
+    165           *
+    166           * @return     Init successfully or not.
+    167           */
+    168          uint8_t fxos_read_sensor_data_fast(const accel_dev_t *dev, accel_sensor_data_t *sensorData)
+    169          {
+    170              uint8_t buf[6];
+    171          
+    172              /* Read array of 6 bytes beginning from OUT_X_MSB_REG */
+    173              if (fxos_read_register_array_fast(dev, OUT_X_MSB_REG, buf, 6u))
+    174              {
+    175                  return 1;
+    176              }
+    177              else
+    178              {
+    179                  /* Populate real data */
+    180                  sensorData->fxos_data.accelXMSB = buf[0];
+    181                  sensorData->fxos_data.accelYMSB = buf[1];
+    182                  sensorData->fxos_data.accelZMSB = buf[2];
+    183                  sensorData->fxos_data.magXMSB   = buf[3];
+    184                  sensorData->fxos_data.magYMSB   = buf[4];
+    185                  sensorData->fxos_data.magZMSB   = buf[5];
+    186          
+    187                  /* Pad LSBs with 0s as we just did a fast read */
+    188                  sensorData->fxos_data.accelXLSB = 0;
+    189                  sensorData->fxos_data.accelYLSB = 0;
+    190                  sensorData->fxos_data.accelZLSB = 0;
+    191                  sensorData->fxos_data.magXLSB   = 0;
+    192                  sensorData->fxos_data.magYLSB   = 0;
+    193                  sensorData->fxos_data.magZLSB   = 0;
+    194          
+    195                  /* Return successful transaction */
+    196                  return 0;
+    197              }
+    198          }
+    199          
+    200          /*!
+    201           * @brief Read an array of registers
+    202           *
+    203           * @param[in]  dev - FXOS Device pointer to the communications interface.
+    204           * @param[in]  uint8_t  startRegAddr    Address of the device register to start reading from
+    205           * @param[out] uint8_t* readBuf         Read buffer to read the data into, pass in by reference
+    206           * @param[in]  uint8_t  len             Number of registers to be read
+    207           *
+    208          * @return     uint8_t Return 1 if successful, 0 if an error occurred.
+    209          */
+    210          uint8_t fxos_read_register_array(const accel_dev_t *dev, uint8_t startRegAddr, uint8_t *readBuf, uint8_t len)
+    211          {
+    212              int32_t i = 0;
+    213          
+    214              for (i = 0; i < len; i ++)
+    215              {
+    216                  readBuf[i] = accel_read_reg(dev, startRegAddr + i);
+    217                  if (readBuf[i] < 0)
+    218                  {
+    219                      PRINTF("Read reg failed @0x%x\r\n", (unsigned int)(startRegAddr + i));
+    220                      return 1;
+    221                  }
+    222              }
+    223          
+    224              return 0;
+    225          }
+    226          
+    227          /*!
+    228           * @brief Read an array of registers
+    229           *
+    230           * @param[in]  uint8_t  startRegAddr    Address of the device register to start reading from
+    231           * @param[out] uint8_t* readBuf         Read buffer to read the data into, pass in by reference
+    232           * @param[in]  uint8_t  len             Number of registers to be read
+    233           *
+    234          * @return     uint8_t Return 1 if successful, 0 if an error occurred.
+    235          */
+    236          uint8_t fxos_read_register_array_fast(const accel_dev_t *dev, uint8_t startRegAddr, uint8_t *readBuf, uint8_t len)
+    237          {
+    238          
+    239              /*if (dev->i2c->i2c_read(dev->bus, &dev->slave, &startRegAddr, 1,
+    240                             readBuf, len, 200) == kStatus_I2C_Success)
+    241              {
+    242                  return 0;
+    243              }
+    244              else
+    245              {
+    246                  return 1;
+    247              }*/
+    248              return 1;
+    249          }
+    250          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   fxos_init
+        24   -> accel_read_reg
+        24   -> accel_write_reg
+        24   -> debug_printf
+      24   fxos_read_register_array
+        24   -> accel_read_reg
+       4   fxos_read_register_array_fast
+      16   fxos_read_sensor_data
+        16   -> fxos_read_register_array
+      24   fxos_read_sensor_data_fast
+        24   -> fxos_read_register_array_fast
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       4  ??DataTable0_2
+       4  ??DataTable0_3
+       4  ??DataTable0_4
+      24  ?_0
+      20  ?_1
+      36  ?_2
+      36  ?_3
+     184  fxos_init
+      44  fxos_read_register_array
+      10  fxos_read_register_array_fast
+      20  fxos_read_sensor_data
+      92  fxos_read_sensor_data_fast
+
+ 
+ 116 bytes in section .rodata
+ 370 bytes in section .text
+ 
+ 370 bytes of CODE  memory
+ 116 bytes of CONST memory
+
+Errors: none
+Warnings: none

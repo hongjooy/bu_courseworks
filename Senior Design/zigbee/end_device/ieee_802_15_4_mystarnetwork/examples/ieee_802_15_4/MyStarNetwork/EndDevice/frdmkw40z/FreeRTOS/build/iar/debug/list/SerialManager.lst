@@ -1,0 +1,2618 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:53
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SerialManager.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SerialManager.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\SerialManager.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\SerialManager.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\SerialManager\Source\SerialManager.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file SerialManager.c
+      6          * This is the source file for the Serial Manager.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          
+     35          /*! *********************************************************************************
+     36          *************************************************************************************
+     37          * Include
+     38          *************************************************************************************
+     39          ********************************************************************************** */
+     40          
+     41          #include "SerialManager.h"
+     42          #include "Panic.h"
+     43          #include "MemManager.h"
+     44          #include "Messaging.h"
+     45          #include "FunctionLib.h"
+     46          #include "Gpio_IrqAdapter.h"
+     47          
+     48          #include "fsl_device_registers.h"
+     49          #include "fsl_os_abstraction.h"
+     50          #include "fsl_gpio_driver.h"
+     51          #include "pin_mux.h"
+     52          #include <string.h>
+     53          
+     54          #if gSerialMgr_DisallowMcuSleep_d
+     55            #include "PWR_Interface.h"
+     56          #endif
+     57          
+     58          #if (gSerialMgrUseUart_c)
+     59          #if FSL_FEATURE_SOC_UART_COUNT
+     60            #include "fsl_uart_driver.h"
+     61            #include "fsl_uart_hal.h"
+     62          #endif
+     63          #if FSL_FEATURE_SOC_LPUART_COUNT
+     64            #include "fsl_lpuart_driver.h"
+     65            #include "fsl_lpuart_hal.h"
+     66          #endif
+     67          #if FSL_FEATURE_SOC_LPSCI_COUNT
+     68            #include "fsl_lpsci_driver.h"
+     69            #include "fsl_lpsci_hal.h"
+     70          #endif
+     71            #include "fsl_clock_manager.h"
+     72          #endif
+     73          
+     74          #if (gSerialMgrUseIIC_c)
+     75            #include "fsl_i2c_master_driver.h"
+     76            #include "fsl_i2c_slave_driver.h"
+     77            #include "fsl_i2c_hal.h"
+     78          #endif
+     79          
+     80          #if (gSerialMgrUseSPI_c)
+     81            #include "SPI_Adapter.h"
+     82          #endif
+     83          
+     84          #if (gSerialMgrUseUSB_c)
+     85            #include "VirtualComInterface.h"
+     86          #endif
+     87          
+     88          #if gSerialMgrUseFSCIHdr_c
+     89            #include "FSCIInterface.h"
+     90            #include "FsciCommunication.h"
+     91          #endif
+     92          
+     93          /*! *********************************************************************************
+     94          *************************************************************************************
+     95          * Private macros
+     96          *************************************************************************************
+     97          ********************************************************************************** */
+     98          #ifndef gSMGR_UseOsSemForSynchronization_c
+     99          #define gSMGR_UseOsSemForSynchronization_c  (USE_RTOS)
+    100          #endif
+    101          
+    102          #define mSerial_IncIdx_d(idx, max) if( ++(idx) >= (max) ) { (idx) = 0; }
+    103          
+    104          #define mSerial_DecIdx_d(idx, max) if( (idx) > 0 ) { (idx)--; } else  { (idx) = (max) - 1; }
+    105          
+    106          #define gSMRxBufSize_c (gSerialMgrRxBufSize_c + 1)
+    107          
+    108          #define mSMGR_DapIsrPrio_c    (0x80)
+    109          #define mSMGR_I2cIsrPrio_c    (0x40)
+    110          #define mSMGR_UartIsrPrio_c   (0x40)
+    111          #define mSMGR_LpuartIsrPrio_c (0x40)
+    112          #define mSMGR_LpsciIsrPrio_c  (0x40)
+    113          
+    114          #if gSerialMgrUseFSCIHdr_c
+    115          #define mSMGR_FSCIHdrLen_c  sizeof(clientPacketHdr_t)
+    116          #endif
+    117          
+    118          /*! *********************************************************************************
+    119          *************************************************************************************
+    120          * Private type definitions
+    121          *************************************************************************************
+    122          ********************************************************************************** */
+    123          /* 
+    124           * Set the size of the Rx buffer indexes 
+    125           */
+    126          #if gSMRxBufSize_c < 255
+    127          typedef uint8_t bufIndex_t;
+    128          #else
+    129          typedef uint16_t bufIndex_t;
+    130          #endif
+    131          
+    132          /* 
+    133           * Defines events recognized by the SerialManager's Task
+    134           * Message used to enque async tx data 
+    135           */
+    136          typedef struct SerialManagetMsg_tag{
+    137              pSerialCallBack_t txCallback;
+    138              void             *pTxParam;
+    139              uint8_t          *pData;
+    140              uint16_t          dataSize;
+    141          }SerialMsg_t;
+    142          
+    143          /* 
+    144           * Defines the serial interface structure 
+    145           */
+    146          typedef struct serial_tag{
+    147              serialInterfaceType_t  serialType;
+    148              uint8_t                serialChannel;
+    149              /* Rx parameters */
+    150              bufIndex_t             rxIn;
+    151              volatile bufIndex_t    rxOut;
+    152              pSerialCallBack_t      rxCallback;
+    153              void                  *pRxParam;
+    154              uint8_t                rxBuffer[gSMRxBufSize_c];
+    155              /* Tx parameters */
+    156              SerialMsg_t            txQueue[gSerialMgrTxQueueSize_c];
+    157          #if gSMGR_UseOsSemForSynchronization_c
+    158              semaphore_t            txSyncSem;
+    159          #if gSerialMgr_BlockSenderOnQueueFull_c
+    160              semaphore_t            txQueueSem;
+    161              uint8_t                txBlockedTasks;
+    162          #endif
+    163          #endif
+    164          #if gSerialMgrUseFSCIHdr_c
+    165              fsciLen_t              rxFsciIn;
+    166              fsciLen_t              rxFsciLen;
+    167              uint8_t                rxFsciPkt;                 
+    168          #endif
+    169              uint8_t                txIn;
+    170              uint8_t                txOut;
+    171              uint8_t                txCurrent;
+    172              uint8_t                events;
+    173              uint8_t                state;
+    174          }serial_t;
+    175          
+    176          /* 
+    177           * SMGR task event flags 
+    178           */
+    179          typedef enum{
+    180              gSMGR_Rx_c     = (1<<0),
+    181              gSMGR_TxDone_c = (1<<1),
+    182              gSMGR_TxNew_c  = (1<<2)
+    183          }serialEventType_t;
+    184          
+    185          /*
+    186           * IIC driver specific data structures
+    187           */
+    188          #if (gSerialMgrUseIIC_c)
+    189          typedef struct smgrI2CSlaveData_tag{
+    190              i2c_slave_state_t state;
+    191          }smgrI2CSlaveData_t;
+    192          
+    193          typedef struct smgrI2CMasterData_tag{
+    194            i2c_master_state_t state;
+    195            i2c_device_t bus;
+    196          }smgrI2CMasterData_t;
+    197          #endif
+    198          
+    199          /*
+    200           * Common driver data structure union
+    201           */
+    202          typedef union smgrDrvData_tag
+    203          {
+    204          #if (gSerialMgrUseUart_c)
+    205          #if FSL_FEATURE_SOC_UART_COUNT
+    206            uart_state_t uartState;
+    207          #endif
+    208          #if FSL_FEATURE_SOC_LPUART_COUNT
+    209            lpuart_state_t lpuartState;
+    210          #endif
+    211          #if FSL_FEATURE_SOC_LPSCI_COUNT
+    212            lpsci_state_t lpsciState;
+    213          #endif
+    214          #endif /* #if (gSerialMgrUseUart_c) */
+    215          #if (gSerialMgrUseIIC_c)
+    216            smgrI2CSlaveData_t  i2cSlave;
+    217            smgrI2CMasterData_t i2cMaster;
+    218          #endif
+    219          #if (gSerialMgrUseSPI_c)
+    220            spiState_t spiState;
+    221          #endif
+    222            void *pDrvData;
+    223          }smgrDrvData_t;
+    224          
+    225          /*! *********************************************************************************
+    226          *************************************************************************************
+    227          * Private prototypes
+    228          *************************************************************************************
+    229          ********************************************************************************** */
+    230          #if (gSerialManagerMaxInterfaces_c)
+    231          /*
+    232           * SMGR internal functions
+    233           */
+    234          void SerialManagerTask(task_param_t argument);
+    235          void  SerialManager_RxNotify(uint32_t interfaceId);
+    236          void  SerialManager_TxNotify(uint32_t interfaceId);
+    237          #if gSMGR_UseOsSemForSynchronization_c
+    238          static void  Serial_SyncTxCallback(void *pSer);
+    239          #endif
+    240          static void  Serial_TxQueueMaintenance(serial_t *pSer);
+    241          static serialStatus_t Serial_WriteInternal (uint8_t InterfaceId);
+    242          #if (gSerialMgrUseSPI_c) || (gSerialMgrUseIIC_c)
+    243          static uint32_t Serial_GetInterfaceIdFromType(serialInterfaceType_t type);
+    244          static void Serial_ConfigureMasterDap(uint32_t pinName, void (*pfISR)(void));
+    245          static void Serial_ConfigureSlaveDap (uint32_t pinName);
+    246          #endif
+    247          
+    248          /*
+    249           * UART, LPUART and LPSCI specific functions
+    250           */
+    251          #if (gSerialMgrUseUart_c)
+    252          #if FSL_FEATURE_SOC_UART_COUNT
+    253          void UART_IRQHandler(void);
+    254          extern void UART_DRV_IRQHandler(uint32_t instance);
+    255          void Serial_UartRxCb(uint32_t instance, void* state);
+    256          void Serial_UartTxCb(uint32_t instance, void* state);
+    257          #endif
+    258          #if FSL_FEATURE_SOC_LPUART_COUNT
+    259          void LPUART_IRQHandler(void);
+    260          extern void LPUART_DRV_IRQHandler(uint32_t instance);
+    261          void Serial_LpuartRxCb(uint32_t instance, void* state);
+    262          void Serial_LpuartTxCb(uint32_t instance, void* state);
+    263          #endif
+    264          #if FSL_FEATURE_SOC_LPSCI_COUNT
+    265          void LPSCI_IRQHandler(void);
+    266          extern void LPSCI_DRV_IRQHandler(uint32_t instance);
+    267          void Serial_LpsciRxCb(uint32_t instance, void* state);
+    268          void Serial_LpsciTxCb(uint32_t instance, void* state);
+    269          #endif
+    270          #endif
+    271          
+    272          /*
+    273           * SPI specific functions
+    274           */
+    275          #if (gSerialMgrUseSPI_c)
+    276          static void SpiMasterDapISR(void);
+    277          static void SpiCallback(uint32_t, void*);
+    278          #endif
+    279          
+    280          /*
+    281           * IIC specific functions
+    282           */
+    283          #if (gSerialMgrUseIIC_c)
+    284          extern void  I2C_DRV_IRQHandler(uint32_t instance);
+    285          extern const IRQn_Type g_i2cIrqId[];
+    286          static void  I2Cx_ISR(void);    
+    287          static void  I2cMasterDapISR(void);
+    288          static void  I2cMasterCb(uint8_t instance);
+    289          static void  I2cSlaveCb (uint8_t instance,i2c_slave_event_t slaveEvent,void *userData);
+    290          #endif
+    291          
+    292          #endif /* #if (gSerialManagerMaxInterfaces_c) */
+    293          
+    294          #if defined(FWK_SMALL_RAM_CONFIG)
+    295          void FwkInit(void);
+    296          #endif
+    297          
+    298          /*! *********************************************************************************
+    299          *************************************************************************************
+    300          * Public memory declarations
+    301          *************************************************************************************
+    302          ********************************************************************************** */
+    303          extern const uint8_t gUseRtos_c;
+    304          
+    305          /*! *********************************************************************************
+    306          *************************************************************************************
+    307          * Private memory declarations
+    308          *************************************************************************************
+    309          ********************************************************************************** */
+    310          #if gSerialManagerMaxInterfaces_c
+    311          
+    312          /*
+    313           * RTOS objects definition
+    314           */
+    315          #if defined(FWK_SMALL_RAM_CONFIG)
+    316          extern event_t  gFwkCommonEvent;
+    317          extern task_handler_t gFwkCommonTaskId;
+    318          #define gSerialManagerTaskId gFwkCommonTaskId
+    319          #define mSMTaskEvent gFwkCommonEvent
+    320          
+    321          #else
+    322          
+    323          OSA_TASK_DEFINE( SMGR, gSerialTaskStackSize_c );
+    324          task_handler_t gSerialManagerTaskId;
+    325          event_t        mSMTaskEvent;
+    326          #endif /* defined(FWK_SMALL_RAM_CONFIG) */
+    327          
+    328          /*
+    329           * SMGR internal data
+    330           */
+    331          static serial_t      mSerials[gSerialManagerMaxInterfaces_c];
+    332          static smgrDrvData_t mDrvData[gSerialManagerMaxInterfaces_c];
+    333          
+    334          /*
+    335           * Default configuration for IIC driver
+    336           */
+    337          #if (gSerialMgrUseIIC_c)
+    338          const i2c_slave_user_config_t gI2cSlaveCfg = {
+    339              .address = gSerialMgrIICAddress_c,
+    340              .slaveListening   = false,
+    341              .slaveCallback    = I2cSlaveCb,
+    342              .callbackParam    = NULL,
+    343          #if FSL_FEATURE_I2C_HAS_START_STOP_DETECT
+    344              .startStopDetect  = false,
+    345          #endif
+    346          #if FSL_FEATURE_I2C_HAS_STOP_DETECT
+    347              .stopDetect       = false,
+    348          #endif
+    349          };
+    350          #endif /* #if (gSerialMgrUseIIC_c) */
+    351          
+    352          /*
+    353           * Default configuration for SPI driver
+    354           */
+    355          #if (gSerialMgrUseSPI_c)
+    356          uint8_t mSPI_dummyData = gSpi_DummyChar_d;
+    357          spiBusConfig_t gSpiConfig = {
+    358              .bitsPerSec = 1000000,
+    359              .master = FALSE,
+    360              .clkActiveHigh = TRUE,
+    361              .clkPhaseFirstEdge = TRUE,
+    362              .MsbFirst = TRUE
+    363          };
+    364          #endif
+    365          
+    366          /*
+    367           * Default configuration for UART, LPUART and LPSCI drivers
+    368           */
+    369          #if (gSerialMgrUseUart_c)
+    370          #if FSL_FEATURE_SOC_UART_COUNT
+    371          uart_user_config_t mSmgr_UartCfg = {
+    372              .baudRate = 115200,
+    373              .parityMode = kUartParityDisabled,
+    374              .stopBitCount = kUartOneStopBit,
+    375              .bitCountPerChar = kUart8BitsPerChar
+    376          };
+    377          #endif
+    378          #if FSL_FEATURE_SOC_LPUART_COUNT
+    379          const lpuart_user_config_t mSmgr_LpuartCfg = {
+    380              .clockSource = kClockLpuartSrcOsc0erClk,
+    381              .baudRate = 115200,
+    382              .parityMode = kLpuartParityDisabled,
+    383              .stopBitCount = kLpuartOneStopBit,
+    384              .bitCountPerChar = kLpuart8BitsPerChar
+    385          };
+    386          #endif
+    387          #if FSL_FEATURE_SOC_LPSCI_COUNT
+    388          const lpsci_user_config_t mSmgr_LpsciCfg = {
+    389              .clockSource = kClockLpsciSrcPllFllSel,         
+    390              .baudRate = 115200,
+    391              .parityMode = kLpsciParityDisabled,
+    392              .stopBitCount = kLpsciOneStopBit,
+    393              .bitCountPerChar = kLpsci8BitsPerChar
+    394          };
+    395          #endif
+    396          #endif /* #if (gSerialMgrUseUart_c) */
+    397          
+    398          #endif /* #if gSerialManagerMaxInterfaces_c */
+    399          
+    400          /*! *********************************************************************************
+    401          *************************************************************************************
+    402          * Public functions
+    403          *************************************************************************************
+    404          ********************************************************************************** */
+    405          
+    406          /*! *********************************************************************************
+    407          * \brief   Creates the SerialManager's task and initializes internal data structures
+    408          *
+    409          ********************************************************************************** */
+    410          void SerialManager_Init( void )
+    411          {
+    412          #if (gSerialManagerMaxInterfaces_c)       
+    413              static uint8_t initialized = FALSE;
+    414          
+    415              /* Check if SMGR is already initialized */
+    416              if( initialized )
+    417                  return;
+    418          
+    419              initialized = TRUE;
+    420          
+    421              /* Fill the structure with zeros */
+    422              FLib_MemSet( mSerials, 0x00, sizeof(mSerials) );
+    423          #if defined(FWK_SMALL_RAM_CONFIG)
+    424              FwkInit();
+    425          #else
+    426              osa_status_t status;
+    427              
+    428              status = OSA_EventCreate( &mSMTaskEvent, kEventAutoClear);
+    429              if( kStatus_OSA_Success != status )
+    430              {
+    431                  panic(0,0,0,0);
+    432                  return;
+    433              }
+    434          
+    435              status = OSA_TaskCreate(SerialManagerTask, "SMGR_Task", gSerialTaskStackSize_c, SMGR_stack,
+    436                                      gSerialTaskPriority_c, (task_param_t)NULL, FALSE, &gSerialManagerTaskId);
+    437              if( kStatus_OSA_Success != status )
+    438              {
+    439                  panic(0,0,0,0);
+    440                  return;
+    441              }
+    442          #endif /* #if defined(FWK_SMALL_RAM_CONFIG) */
+    443          #endif /* #if (gSerialManagerMaxInterfaces_c) */
+    444          }
+    445          
+    446          /*! *********************************************************************************
+    447          * \brief   The main task of the Serial Manager
+    448          *
+    449          * \param[in] initialData unused
+    450          *
+    451          ********************************************************************************** */
+    452          #if (gSerialManagerMaxInterfaces_c)
+    453          void SerialManagerTask(task_param_t argument)
+    454          {
+    455              uint16_t i;
+    456              uint8_t ev;    
+    457          
+    458          #if defined(FWK_SMALL_RAM_CONFIG)
+    459              {
+    460          #else
+    461              event_flags_t  mSMTaskEventFlags;        
+    462          
+    463              while( 1 )
+    464              {
+    465                  /* Wait for an event. The task will block here. */
+    466                  (void)OSA_EventWait(&mSMTaskEvent, 0x00FFFFFF, FALSE, OSA_WAIT_FOREVER ,&mSMTaskEventFlags);
+    467          #endif
+    468                  for( i = 0; i < gSerialManagerMaxInterfaces_c; i++ )
+    469                  {
+    470                      OSA_EnterCritical(kCriticalDisableInt);
+    471                      ev = mSerials[i].events;
+    472                      mSerials[i].events = 0;
+    473                      OSA_ExitCritical(kCriticalDisableInt);
+    474          
+    475                      if ( (ev & gSMGR_Rx_c) &&
+    476                           (NULL != mSerials[i].rxCallback) )
+    477                      {
+    478                          mSerials[i].rxCallback( mSerials[i].pRxParam );
+    479                      }
+    480          
+    481                      if( ev & gSMGR_TxDone_c )
+    482                      {
+    483                          Serial_TxQueueMaintenance(&mSerials[i]);
+    484                      }
+    485          
+    486                      /* If the Serial is IDLE and there is data to tx */
+    487                      if( (mSerials[i].state == 0) && mSerials[i].txQueue[mSerials[i].txCurrent].dataSize )
+    488                      {
+    489                          (void)Serial_WriteInternal( i );
+    490                      }
+    491          #if gSerialMgrUseSPI_c
+    492                      /* If the SPI Slave has more data to transmit, restart the transfer */
+    493                      if( (mSerials[i].serialType == gSerialMgrSPIMaster_c) && GPIO_DRV_ReadPinInput(kGpioSpiDAP) && !mSerials[i].state )
+    494                      {
+    495                          if( (0 == mSerials[i].txQueue[mSerials[i].txIn].dataSize) && (NULL == mSerials[i].txQueue[mSerials[i].txIn].txCallback) )
+    496                          {
+    497                              Serial_AsyncWrite( i, &mSPI_dummyData, 1, NULL, NULL );
+    498                          }
+    499                      }
+    500          #endif
+    501                  
+    502                  }
+    503                   
+    504          #if !defined(FWK_SMALL_RAM_CONFIG)    
+    505                  /* For BareMetal break the while(1) after 1 run */
+    506                  if (gUseRtos_c == 0)
+    507                  {
+    508                      break;
+    509                  }
+    510          #endif
+    511              } /* while(1) */
+    512          }
+    513          #endif
+    514          
+    515          /*! *********************************************************************************
+    516          * \brief   Initialize a communication interface.
+    517          *
+    518          * \param[in] pInterfaceId   pointer to a location where the interface Id will be stored
+    519          * \param[in] interfaceType  the type of the interface: UART/SPI/IIC/USB
+    520          * \param[in] instance       the instance of the HW module (ex: if UART1 is used, this value should be 1)
+    521          *
+    522          * \return The interface number if success or gSerialManagerInvalidInterface_c if an error occured.
+    523          *
+    524          ********************************************************************************** */
+    525          serialStatus_t Serial_InitInterface( uint8_t *pInterfaceId,
+    526                                               serialInterfaceType_t interfaceType,
+    527                                               uint8_t instance )
+    528          {
+    529          #if gSerialManagerMaxInterfaces_c
+    530              uint8_t i;
+    531              serial_t *pSer;
+    532          
+    533              *pInterfaceId = gSerialMgrInvalidIdx_c;
+    534          
+    535              for ( i=0; i<gSerialManagerMaxInterfaces_c; i++ )
+    536              {
+    537                  pSer = &mSerials[i];
+    538          
+    539                  if ( (pSer->serialType == interfaceType) &&
+    540                      (pSer->serialChannel == instance) )
+    541                  {
+    542                      /* The Interface is allready opened. */
+    543                      return gSerial_InterfaceInUse_c;
+    544                  }
+    545                  else if ( pSer->serialType == gSerialMgrNone_c )
+    546                  {
+    547                      OSA_EnterCritical(kCriticalDisableInt);
+    548                      pSer->serialChannel = instance;
+    549                      switch ( interfaceType )
+    550                      {
+    551                      case gSerialMgrUart_c:
+    552          #if gSerialMgrUseUart_c && FSL_FEATURE_SOC_UART_COUNT
+    553                          {
+    554                              IRQn_Type irq = g_uartRxTxIrqId[instance];
+    555          
+    556                              configure_uart_pins(instance);
+    557                              NVIC_SetPriority(irq, mSMGR_UartIsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    558                              OSA_InstallIntHandler(irq, UART_IRQHandler);
+    559                              UART_DRV_Init(instance, &mDrvData[i].uartState, &mSmgr_UartCfg);
+    560                              UART_DRV_InstallRxCallback(instance, Serial_UartRxCb, &pSer->rxBuffer[pSer->rxIn], (void*)i, TRUE);
+    561                              UART_DRV_InstallTxCallback(instance, Serial_UartTxCb, NULL, (void*)i);
+    562                          }
+    563          #endif
+    564                          break;
+    565          
+    566                      case gSerialMgrLpuart_c:
+    567          #if gSerialMgrUseUart_c && FSL_FEATURE_SOC_LPUART_COUNT
+    568                          {
+    569                              IRQn_Type irq = g_lpuartRxTxIrqId[instance];
+    570          
+    571                              configure_lpuart_pins(instance);
+    572                              NVIC_SetPriority(irq, mSMGR_LpuartIsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    573                              OSA_InstallIntHandler(irq, LPUART_IRQHandler);
+    574                              LPUART_DRV_Init(instance, &mDrvData[i].lpuartState, &mSmgr_LpuartCfg);
+    575                              LPUART_DRV_InstallRxCallback(instance, Serial_LpuartRxCb, &pSer->rxBuffer[pSer->rxIn], (void*)i, TRUE);
+    576                              LPUART_DRV_InstallTxCallback(instance, Serial_LpuartTxCb, NULL, (void*)i);
+    577                          }
+    578          #endif
+    579                          break;
+    580          
+    581                      case gSerialMgrLpsci_c:
+    582          #if gSerialMgrUseUart_c && FSL_FEATURE_SOC_LPSCI_COUNT
+    583                          {
+    584                              IRQn_Type irq = g_lpsciRxTxIrqId[instance];
+    585          
+    586                              configure_lpsci_pins(instance);
+    587                              NVIC_SetPriority(irq, mSMGR_LpsciIsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    588                              OSA_InstallIntHandler(irq, LPSCI_IRQHandler);
+    589                              LPSCI_DRV_Init(instance, &mDrvData[i].lpsciState, &mSmgr_LpsciCfg);
+    590                              LPSCI_DRV_InstallRxCallback(instance, Serial_LpsciRxCb, &pSer->rxBuffer[pSer->rxIn], (void*)i, TRUE);
+    591                              LPSCI_DRV_InstallTxCallback(instance, Serial_LpsciTxCb, NULL, (void*)i);
+    592                          }
+    593          #endif
+    594                          break;
+    595          
+    596                      case gSerialMgrUSB_c:
+    597          #if gSerialMgrUseUSB_c
+    598                          mDrvData[i].pDrvData = VirtualCom_Init(i);
+    599                          if (NULL == mDrvData[i].pDrvData)
+    600                          {
+    601                              OSA_ExitCritical(kCriticalDisableInt);
+    602                              return gSerial_InternalError_c;
+    603                          }
+    604          #endif
+    605                          break;
+    606          
+    607                      case gSerialMgrIICMaster_c:
+    608          #if gSerialMgrUseIIC_c
+    609                          mDrvData[i].i2cMaster.bus.address = gSerialMgrIICAddress_c;
+    610                          mDrvData[i].i2cMaster.bus.baudRate_kbps = 50;
+    611                          configure_i2c_pins(instance);
+    612                          OSA_InstallIntHandler(g_i2cIrqId[instance], I2Cx_ISR);
+    613                          NVIC_SetPriority(g_i2cIrqId[instance], mSMGR_I2cIsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    614                          NVIC_ClearPendingIRQ(g_i2cIrqId[instance]);
+    615                          NVIC_EnableIRQ(g_i2cIrqId[instance]);
+    616                          I2C_DRV_MasterInit(instance, &(mDrvData[i].i2cMaster.state));
+    617                          Serial_ConfigureMasterDap(kGpioI2cDAP, I2cMasterDapISR);
+    618          #endif
+    619                          break;                
+    620          
+    621                      case gSerialMgrIICSlave_c:
+    622          #if gSerialMgrUseIIC_c
+    623                          configure_i2c_pins(instance);
+    624                          Serial_ConfigureSlaveDap(kGpioI2cDAP);
+    625                          OSA_InstallIntHandler(g_i2cIrqId[instance], I2Cx_ISR);
+    626                          NVIC_SetPriority(g_i2cIrqId[instance], mSMGR_I2cIsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    627                          NVIC_ClearPendingIRQ(g_i2cIrqId[instance]);
+    628                          NVIC_EnableIRQ(g_i2cIrqId[instance]);
+    629                          I2C_DRV_SlaveInit(instance, &gI2cSlaveCfg, &(mDrvData[i].i2cSlave.state));
+    630                          I2C_DRV_SlaveReceiveData(instance, &pSer->rxBuffer[pSer->rxIn], 1 );
+    631          #endif
+    632                          break;
+    633          
+    634                      case gSerialMgrSPIMaster_c:
+    635          #if gSerialMgrUseSPI_c
+    636                          Spi_Init(instance, &(mDrvData[i].spiState), SpiCallback, (void*)i );
+    637                          gSpiConfig.master = TRUE;
+    638                          mDrvData[i].spiState.signalRxByte = TRUE;
+    639                          mDrvData[i].spiState.pRxData = &pSer->rxBuffer[pSer->rxIn];
+    640                          Spi_Configure(instance, &gSpiConfig);
+    641                          Serial_ConfigureMasterDap(kGpioSpiDAP, SpiMasterDapISR);
+    642          #endif
+    643                          break;
+    644          
+    645                      case gSerialMgrSPISlave_c:
+    646          #if gSerialMgrUseSPI_c
+    647                          Spi_Init(instance, &(mDrvData[i].spiState), SpiCallback, (void*)i );
+    648                          gSpiConfig.master = FALSE;
+    649                          mDrvData[i].spiState.signalRxByte = TRUE;
+    650                          mDrvData[i].spiState.pRxData = &pSer->rxBuffer[pSer->rxIn];
+    651                          Spi_Configure(instance, &gSpiConfig);
+    652                          Serial_ConfigureSlaveDap(kGpioSpiDAP);
+    653          #endif
+    654                          break;
+    655          
+    656                      default:
+    657                          OSA_ExitCritical(kCriticalDisableInt);
+    658                          return gSerial_InvalidInterface_c;
+    659                      }
+    660          
+    661          #if gSMGR_UseOsSemForSynchronization_c
+    662                      if( kStatus_OSA_Success != OSA_SemaCreate(&pSer->txSyncSem, 0) )
+    663                      {
+    664                          OSA_ExitCritical(kCriticalDisableInt);
+    665                          return gSerial_SemCreateError_c;
+    666                      }
+    667          
+    668          #if gSerialMgr_BlockSenderOnQueueFull_c
+    669                      if( kStatus_OSA_Success != OSA_SemaCreate(&pSer->txQueueSem, 0) )
+    670                      {
+    671                          OSA_ExitCritical(kCriticalDisableInt);
+    672                          return gSerial_SemCreateError_c;
+    673                      }
+    674          #endif /* gSerialMgr_BlockSenderOnQueueFull_c */
+    675          #endif /* gSMGR_UseOsSemForSynchronization_c */
+    676          
+    677                      pSer->serialType = interfaceType;
+    678                      *pInterfaceId = i;
+    679                      OSA_ExitCritical(kCriticalDisableInt);
+    680                      return gSerial_Success_c;
+    681                  }
+    682              }
+    683          
+    684              /* There are no more free interfaces. */
+    685              return gSerial_MaxInterfacesReached_c;
+    686          #else
+    687              (void)interfaceType;
+    688              (void)instance;
+    689              (void)pInterfaceId;
+    690              return gSerial_Success_c;
+    691          #endif
+    692          }
+    693          
+    694          /*! *********************************************************************************
+    695          * \brief   Transmit a data buffer asynchronously
+    696          *
+    697          * \param[in] InterfaceId the interface number
+    698          * \param[in] pBuf pointer to data location
+    699          * \param[in] bufLen the number of bytes to be sent
+    700          * \param[in] pSerialRxCallBack pointer to a function that will be called when
+    701          *            a new char is available
+    702          *
+    703          * \return The status of the operation
+    704          *
+    705          ********************************************************************************** */
+    706          serialStatus_t Serial_AsyncWrite( uint8_t id,
+    707                                            uint8_t *pBuf,
+    708                                            uint16_t bufLen,
+    709                                            pSerialCallBack_t cb,
+    710                                            void *pTxParam )
+    711          {
+    712          #if gSerialManagerMaxInterfaces_c
+    713              SerialMsg_t *pMsg = NULL;
+    714              serial_t *pSer = &mSerials[id];
+    715          
+    716          #if gSerialMgr_ParamValidation_d
+    717              if( (NULL == pBuf) || (0 == bufLen)       ||
+    718                  (id >= gSerialManagerMaxInterfaces_c) ||
+    719                  (pSer->serialType == gSerialMgrNone_c) )
+    720              {
+    721                  return gSerial_InvalidParameter_c;
+    722              }
+    723          #endif
+    724              task_handler_t taskHandler = OSA_TaskGetHandler();
+    725          
+    726          #if (gSerialMgr_BlockSenderOnQueueFull_c == 0)
+    727              if( taskHandler == gSerialManagerTaskId )
+    728              {
+    729                  Serial_TxQueueMaintenance(pSer);
+    730              }
+    731          #endif
+    732          
+    733              /* Check if slot is free */
+    734          #if gSerialMgr_BlockSenderOnQueueFull_c    
+    735              while(1)
+    736          #endif      
+    737              {
+    738                  OSA_EnterCritical(kCriticalDisableInt);
+    739                  if( (0 == pSer->txQueue[pSer->txIn].dataSize) && (NULL == pSer->txQueue[pSer->txIn].txCallback) )
+    740                  {
+    741                      pMsg = &pSer->txQueue[pSer->txIn];
+    742                      pMsg->dataSize   = bufLen;
+    743                      pMsg->pData      = (void*)pBuf;
+    744                      pMsg->txCallback = cb;
+    745                      pMsg->pTxParam   = pTxParam;
+    746                      mSerial_IncIdx_d(pSer->txIn, gSerialMgrTxQueueSize_c);
+    747                  }
+    748          #if (gSerialMgr_BlockSenderOnQueueFull_c && gSMGR_UseOsSemForSynchronization_c)
+    749                  else
+    750                  {
+    751                      if(taskHandler != gSerialManagerTaskId)
+    752                      {
+    753                          pSer->txBlockedTasks++;
+    754                      }
+    755                  }
+    756          #endif      
+    757                  OSA_ExitCritical(kCriticalDisableInt);
+    758          
+    759                  if( pMsg )
+    760                  {
+    761                      return Serial_WriteInternal( id );
+    762                  }
+    763          #if gSerialMgr_BlockSenderOnQueueFull_c
+    764                  else
+    765                  {
+    766          #if gSMGR_UseOsSemForSynchronization_c              
+    767                      if(taskHandler != gSerialManagerTaskId)
+    768                      {
+    769                          (void)OSA_SemaWait(&pSer->txQueueSem, OSA_WAIT_FOREVER);
+    770                      }
+    771                      else
+    772          #endif
+    773                      {
+    774                          Serial_TxQueueMaintenance(pSer); 
+    775                      }   
+    776                  }
+    777          #endif      
+    778              }
+    779              
+    780          #if (gSerialMgr_BlockSenderOnQueueFull_c == 0)
+    781              return gSerial_OutOfMemory_c;
+    782          #endif  
+    783          #else
+    784              (void)id;
+    785              (void)pBuf;
+    786              (void)bufLen;
+    787              (void)cb;
+    788              (void)pTxParam;
+    789              return gSerial_Success_c;
+    790          #endif /* gSerialManagerMaxInterfaces_c */
+    791          }
+    792          
+    793          
+    794          /*! *********************************************************************************
+    795          * \brief Transmit a data buffer synchronously. The task will block until the Tx is done
+    796          *
+    797          * \param[in] pBuf pointer to data location
+    798          * \param[in] bufLen the number of bytes to be sent
+    799          * \param[in] InterfaceId the interface number
+    800          *
+    801          * \return The status of the operation
+    802          *
+    803          ********************************************************************************** */
+    804          serialStatus_t Serial_SyncWrite( uint8_t InterfaceId,
+    805                                           uint8_t *pBuf,
+    806                                           uint16_t bufLen )
+    807          {
+    808              serialStatus_t status = gSerial_Success_c;
+    809          #if gSerialManagerMaxInterfaces_c
+    810              pSerialCallBack_t cb = NULL;
+    811              volatile serial_t *pSer = &mSerials[InterfaceId];
+    812          
+    813          #if gSMGR_UseOsSemForSynchronization_c
+    814              /* If the calling task is SMGR do not block on semaphore */
+    815              if( OSA_TaskGetHandler() != gSerialManagerTaskId )
+    816                   cb = Serial_SyncTxCallback;
+    817          #endif
+    818          
+    819              status  = Serial_AsyncWrite(InterfaceId, pBuf, bufLen, cb, (void*)pSer);
+    820          
+    821              if( gSerial_Success_c == status )
+    822              {
+    823                  /* Wait until Tx finishes. The sem will be released by the SMGR task */
+    824          #if gSMGR_UseOsSemForSynchronization_c
+    825                  if( cb )
+    826                  {
+    827                      (void)OSA_SemaWait((semaphore_t*)&pSer->txSyncSem, OSA_WAIT_FOREVER);
+    828                  }
+    829                  else
+    830          #endif
+    831                  {
+    832                      while(pSer->state);
+    833                  }
+    834              }
+    835          #else
+    836              (void)pBuf;
+    837              (void)bufLen;
+    838              (void)InterfaceId;
+    839          #endif /* gSerialManagerMaxInterfaces_c */
+    840              return status;
+    841          }
+    842          
+    843          /*! *********************************************************************************
+    844          * \brief   Returns a specified number of characters from the Rx buffer
+    845          *
+    846          * \param[in] InterfaceId the interface number
+    847          * \param[out] pData pointer to location where to store the characters
+    848          * \param[in] dataSize the number of characters to be read
+    849          * \param[out] bytesRead the number of characters read
+    850          *
+    851          * \return The status of the operation
+    852          *
+    853          ********************************************************************************** */
+    854          serialStatus_t Serial_Read( uint8_t InterfaceId,
+    855                                      uint8_t *pData,
+    856                                      uint16_t dataSize,
+    857                                      uint16_t *bytesRead )
+    858          {
+    859          #if (gSerialManagerMaxInterfaces_c)
+    860              serial_t *pSer = &mSerials[InterfaceId];
+    861              serialStatus_t status = gSerial_Success_c;
+    862              uint16_t i, bytes;
+    863          
+    864          #if gSerialMgr_ParamValidation_d
+    865              if ( (InterfaceId >= gSerialManagerMaxInterfaces_c) ||
+    866                  (NULL == pData) || (0 == dataSize) )
+    867                  return gSerial_InvalidParameter_c;
+    868          #endif
+    869          
+    870              /* Copy bytes from the SMGR Rx buffer */
+    871              Serial_RxBufferByteCount(InterfaceId, &bytes);
+    872          
+    873              if( bytes > 0 )
+    874              {
+    875                  if( bytes > dataSize )
+    876                      bytes = dataSize;
+    877          
+    878                  /* Copy data */
+    879                  for( i=0; i<bytes; i++ )
+    880                  {
+    881                     OSA_EnterCritical(kCriticalDisableInt);          
+    882                     *pData++ = pSer->rxBuffer[pSer->rxOut++];
+    883                      if ( pSer->rxOut >= gSMRxBufSize_c )
+    884                      {
+    885                          pSer->rxOut = 0;
+    886                      }
+    887                     OSA_ExitCritical(kCriticalDisableInt);
+    888                  }
+    889          
+    890                  dataSize -= bytes;
+    891              }
+    892          
+    893              /* Aditional processing depending on interface */
+    894              switch ( pSer->serialType )
+    895              {
+    896          #if gSerialMgrUseUSB_c
+    897              case gSerialMgrUSB_c:
+    898                  VirtualCom_SMReadNotify( mDrvData[InterfaceId].pDrvData );
+    899                  break;
+    900          #endif
+    901          
+    902          #if gSerialMgrUseIIC_c
+    903              case gSerialMgrIICMaster_c:
+    904                  if( !dataSize )
+    905                  {
+    906                      break;
+    907                  }
+    908                  /* Check if the I2C Slave has data available */
+    909                  if( !GPIO_DRV_ReadPinInput(kGpioI2cDAP) )
+    910                  {
+    911                      break;
+    912                  }
+    913                  /* Read remaining bytes from the IIC slave */        
+    914                  if(kStatus_I2C_Success != I2C_DRV_MasterReceiveDataBlocking(pSer->serialChannel, 
+    915                                                                              &mDrvData[InterfaceId].i2cMaster.bus, 
+    916                                                                              NULL, 0, pData, dataSize, OSA_WAIT_FOREVER) )
+    917                  {
+    918                      status = gSerial_InternalError_c;
+    919                      break;
+    920                  }
+    921                  bytes += dataSize;
+    922                  break;
+    923          #endif
+    924          
+    925              default:
+    926                  break;
+    927              }
+    928          
+    929              if( bytesRead )
+    930                  *bytesRead = bytes;
+    931          
+    932              return status;
+    933          #else
+    934              (void)InterfaceId;
+    935              (void)pData;
+    936              (void)dataSize;
+    937              (void)bytesRead;
+    938              return gSerial_InvalidInterface_c;
+    939          #endif
+    940          }
+    941          
+    942          /*! *********************************************************************************
+    943          * \brief   Returns a the number of bytes available in the RX buffer
+    944          *
+    945          * \param[in] InterfaceId the interface number
+    946          * \param[out] bytesCount the number of bytes available
+    947          *
+    948          * \return The status of the operation
+    949          *
+    950          ********************************************************************************** */
+    951          serialStatus_t Serial_RxBufferByteCount( uint8_t InterfaceId, uint16_t *bytesCount )
+    952          {
+    953          #if (gSerialManagerMaxInterfaces_c)
+    954          #if gSerialMgr_ParamValidation_d
+    955              if ( (InterfaceId >= gSerialManagerMaxInterfaces_c) ||
+    956                  (NULL == bytesCount) )
+    957                  return  gSerial_InvalidParameter_c;
+    958          #endif
+    959          
+    960              OSA_EnterCritical(kCriticalDisableInt);
+    961          
+    962              if( mSerials[InterfaceId].rxIn >= mSerials[InterfaceId].rxOut )
+    963              {
+    964                  *bytesCount = mSerials[InterfaceId].rxIn - mSerials[InterfaceId].rxOut;
+    965              }
+    966              else
+    967              {
+    968                  *bytesCount = gSMRxBufSize_c - mSerials[InterfaceId].rxOut + mSerials[InterfaceId].rxIn;
+    969              }
+    970          
+    971              OSA_ExitCritical(kCriticalDisableInt);
+    972          #else
+    973              (void)bytesCount;
+    974              (void)InterfaceId;
+    975          #endif
+    976              return gSerial_Success_c;
+    977          }
+    978          
+    979          /*! *********************************************************************************
+    980          * \brief   Sets a pointer to a function that will be called when data is received
+    981          *
+    982          * \param[in] InterfaceId the interface number
+    983          * \param[in] pfCallBack pointer to the function to be called
+    984          * \param[in] pRxParam pointer to a parameter which will be passed to the CB function
+    985          *
+    986          * \return The status of the operation
+    987          *
+    988          ********************************************************************************** */
+    989          serialStatus_t Serial_SetRxCallBack( uint8_t InterfaceId, pSerialCallBack_t cb, void *pRxParam )
+    990          {
+    991          #if (gSerialManagerMaxInterfaces_c)
+    992          #if gSerialMgr_ParamValidation_d
+    993              if ( InterfaceId >= gSerialManagerMaxInterfaces_c )
+    994                  return gSerial_InvalidParameter_c;
+    995          #endif
+    996              mSerials[InterfaceId].rxCallback = cb;
+    997              mSerials[InterfaceId].pRxParam = pRxParam;
+    998          #else
+    999              (void)InterfaceId;
+   1000              (void)cb;
+   1001              (void)pRxParam;
+   1002          #endif
+   1003              return gSerial_Success_c;
+   1004          }
+   1005          
+   1006          /*! *********************************************************************************
+   1007          * \brief   Set the communication speed for an interface
+   1008          *
+   1009          * \param[in] baudRate communication speed
+   1010          * \param[in] InterfaceId the interface number
+   1011          *
+   1012          * \return The status of the operation
+   1013          *
+   1014          ********************************************************************************** */
+   1015          serialStatus_t Serial_SetBaudRate( uint8_t InterfaceId, uint32_t baudRate  )
+   1016          {
+   1017              serialStatus_t status = gSerial_Success_c;
+   1018          #if gSerialManagerMaxInterfaces_c
+   1019          
+   1020          #if gSerialMgr_ParamValidation_d
+   1021              if ( (InterfaceId >= gSerialManagerMaxInterfaces_c) || (0 == baudRate) )
+   1022                  return gSerial_InvalidParameter_c;
+   1023          #endif
+   1024          
+   1025              switch ( mSerials[InterfaceId].serialType )
+   1026              {
+   1027          #if (gSerialMgrUseUart_c)
+   1028          #if FSL_FEATURE_SOC_UART_COUNT
+   1029              case gSerialMgrUart_c:
+   1030                  {
+   1031                      uint32_t instance = mSerials[InterfaceId].serialChannel;
+   1032                      UART_HAL_SetBaudRate(g_uartBase[instance], CLOCK_SYS_GetUartFreq(instance), baudRate);
+   1033                  }
+   1034                  break;
+   1035          #endif
+   1036          #if FSL_FEATURE_SOC_LPUART_COUNT
+   1037              case gSerialMgrLpuart_c:
+   1038                  {
+   1039                      uint32_t instance = mSerials[InterfaceId].serialChannel;
+   1040                      LPUART_HAL_SetBaudRate(g_lpuartBase[instance], CLOCK_SYS_GetLpuartFreq(instance), baudRate);
+   1041                  }
+   1042                  break;
+   1043          #endif
+   1044          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   1045              case gSerialMgrLpsci_c:
+   1046                  {
+   1047                      uint32_t instance = mSerials[InterfaceId].serialChannel;
+   1048                      LPSCI_HAL_SetBaudRate(g_lpsciBase[instance], CLOCK_SYS_GetLpsciFreq(instance), baudRate);
+   1049                  }
+   1050                  break;
+   1051          #endif
+   1052          #endif /* #if (gSerialMgrUseUart_c) */
+   1053          #if gSerialMgrUseIIC_c
+   1054              case gSerialMgrIICMaster_c:
+   1055                  mDrvData[InterfaceId].i2cMaster.bus.baudRate_kbps = baudRate/1000;
+   1056                  break;
+   1057          #endif
+   1058          #if gSerialMgrUseSPI_c
+   1059              case gSerialMgrSPIMaster_c:
+   1060                  gSpiConfig.bitsPerSec = baudRate;
+   1061                  Spi_Configure(mSerials[InterfaceId].serialChannel, &gSpiConfig);
+   1062                  break;
+   1063          #endif
+   1064          #if gSerialMgrUseUSB_c
+   1065              case gSerialMgrUSB_c:
+   1066                  /* Nothing to do here. */
+   1067                  break;
+   1068          #endif
+   1069              default:
+   1070                  status = gSerial_InvalidInterface_c;
+   1071              }
+   1072          #endif
+   1073              return status;
+   1074          }
+   1075          
+   1076          /*! *********************************************************************************
+   1077          * \brief   Prints a string to the serial interface
+   1078          *
+   1079          * \param[in] InterfaceId the interface number
+   1080          * \param[in] pString pointer to the string to be printed
+   1081          * \param[in] allowToBlock specify if the task will wait for the tx to finish or not.
+   1082          *
+   1083          * \return The status of the operation
+   1084          *
+   1085          ********************************************************************************** */
+   1086          serialStatus_t Serial_Print( uint8_t InterfaceId, char* pString, serialBlock_t allowToBlock )
+   1087          {
+   1088          #if gSerialManagerMaxInterfaces_c
+   1089              if ( allowToBlock )
+   1090              {
+   1091                  return Serial_SyncWrite( InterfaceId, (uint8_t*)pString, strlen(pString) );
+   1092              }
+   1093              else
+   1094              {
+   1095                  return Serial_AsyncWrite( InterfaceId, (uint8_t*)pString, strlen(pString), NULL, NULL );
+   1096              }
+   1097          #else
+   1098              (void)pString;
+   1099              (void)allowToBlock;
+   1100              (void)InterfaceId;
+   1101              return gSerial_Success_c;
+   1102          #endif
+   1103          }
+   1104          
+   1105          /*! *********************************************************************************
+   1106          * \brief   Prints an number in hedadecimal format to the serial interface
+   1107          *
+   1108          * \param[in] InterfaceId the interface number
+   1109          * \param[in] hex pointer to the number to be printed
+   1110          * \param[in] len the number ob bytes of the number
+   1111          * \param[in] flags specify display options: comma, space, new line
+   1112          *
+   1113          * \return The status of the operation
+   1114          *
+   1115          * \remarks The task will waituntil the tx has finished
+   1116          *
+   1117          ********************************************************************************** */
+   1118          serialStatus_t Serial_PrintHex( uint8_t InterfaceId,
+   1119                                          uint8_t *hex,
+   1120                                          uint8_t len,
+   1121                                          uint8_t flags )
+   1122          {
+   1123          #if (gSerialManagerMaxInterfaces_c)
+   1124              uint8_t i=0;
+   1125              serialStatus_t status;
+   1126              uint8_t hexString[6]; /* 2 bytes  - hexadecimal display
+   1127              1 byte   - separator ( comma)
+   1128              1 byte   - separator ( space)
+   1129              2 bytes  - new line (\n\r)  */
+   1130          
+   1131              if ( !(flags & gPrtHexBigEndian_c) )
+   1132                  hex = hex + (len-1);
+   1133          
+   1134              while ( len )
+   1135              {
+   1136                  /* start preparing the print of a new byte */
+   1137                  i=0;
+   1138                  hexString[i++] = HexToAscii( (*hex)>>4 );
+   1139                  hexString[i++] = HexToAscii( *hex );
+   1140          
+   1141                  if ( flags & gPrtHexCommas_c )
+   1142                  {
+   1143                      hexString[i++] = ',';
+   1144                  }
+   1145                  if ( flags & gPrtHexSpaces_c )
+   1146                  {
+   1147                      hexString[i++] = ' ';
+   1148                  }
+   1149                  hex = hex + (flags & gPrtHexBigEndian_c ? 1 : -1);
+   1150                  len--;
+   1151          
+   1152                  if ( (len == 0) && (flags & gPrtHexNewLine_c) )
+   1153                  {
+   1154                      hexString[i++] = '\n';
+   1155                      hexString[i++] = '\r';
+   1156                  }
+   1157          
+   1158                  /* transmit formatted byte */
+   1159                  status = Serial_SyncWrite( InterfaceId, (uint8_t*)hexString, (uint8_t)i) ;
+   1160                  if ( gSerial_Success_c != status )
+   1161                      return status;
+   1162              }
+   1163          #else
+   1164              /* Avoid compiler warning */
+   1165              (void)hex;
+   1166              (void)len;
+   1167              (void)InterfaceId;
+   1168              (void)flags;
+   1169          #endif
+   1170              return gSerial_Success_c;
+   1171          }
+   1172          
+   1173          /*! *********************************************************************************
+   1174          * \brief   Prints an unsigned integer to the serial interface
+   1175          *
+   1176          * \param[in] InterfaceId the interface number
+   1177          * \param[in] nr the number to be printed
+   1178          *
+   1179          * \return The status of the operation
+   1180          *
+   1181          * \remarks The task will waituntil the tx has finished
+   1182          *
+   1183          ********************************************************************************** */
+   1184          serialStatus_t Serial_PrintDec( uint8_t InterfaceId, uint32_t nr )
+   1185          {
+   1186          #if (gSerialManagerMaxInterfaces_c)
+   1187          #define gDecStringLen_d 12
+   1188              uint8_t i = gDecStringLen_d-1;
+   1189              uint8_t decString[gDecStringLen_d];
+   1190          
+   1191              if ( nr == 0 )
+   1192              {
+   1193                  decString[i] = '0';
+   1194              }
+   1195              else
+   1196              {
+   1197                  while ( nr )
+   1198                  {
+   1199                      decString[i] = '0' + (uint8_t)(nr % 10);
+   1200                      nr = nr / 10;
+   1201                      i--;
+   1202                  }
+   1203                  i++;
+   1204              }
+   1205          
+   1206              /* transmit formatted byte */
+   1207              return Serial_SyncWrite( InterfaceId, (uint8_t*)&decString[i], gDecStringLen_d-i );
+   1208          #else
+   1209              (void)nr;
+   1210              (void)InterfaceId;
+   1211              return gSerial_Success_c;
+   1212          #endif
+   1213          }
+   1214          
+   1215          
+   1216          /*! *********************************************************************************
+   1217          * \brief   Configures the enabled hardware modules of the given interface type as a wakeup source from STOP mode  
+   1218          *
+   1219          * \param[in] interface type of the modules to configure
+   1220          *
+   1221          * \return  gSerial_Success_c if there is at least one module to configure
+   1222          *          gSerial_InvalidInterface_c otherwise 
+   1223          * \pre
+   1224          *
+   1225          * \post
+   1226          *
+   1227          * \remarks 
+   1228          *
+   1229          ********************************************************************************** */
+   1230          
+   1231          serialStatus_t Serial_EnableLowPowerWakeup( serialInterfaceType_t interfaceType )
+   1232          {
+   1233              serialStatus_t status = gSerial_Success_c;
+   1234          #if gSerialManagerMaxInterfaces_c
+   1235              uint8_t uartIdx = 0;
+   1236          
+   1237              switch(interfaceType)
+   1238              {
+   1239          #if (gSerialMgrUseUart_c)
+   1240          #if FSL_FEATURE_SOC_UART_COUNT
+   1241              case gSerialMgrUart_c:
+   1242                  while( uartIdx <= FSL_FEATURE_SOC_UART_COUNT-1 )
+   1243                  {
+   1244                      if(CLOCK_SYS_GetUartGateCmd(uartIdx))
+   1245                      {
+   1246                          UART_HAL_SetIntMode(g_uartBase[uartIdx], kUartIntRxActiveEdge, FALSE);
+   1247                          UART_HAL_ClearStatusFlag(g_uartBase[uartIdx], kUartRxActiveEdgeDetect);
+   1248                          UART_HAL_SetIntMode(g_uartBase[uartIdx], kUartIntRxActiveEdge, TRUE);
+   1249                      }
+   1250                      uartIdx++;
+   1251                  }
+   1252                  break;
+   1253          #endif
+   1254          #if FSL_FEATURE_SOC_LPUART_COUNT
+   1255              case gSerialMgrLpuart_c:
+   1256                  while( uartIdx <= FSL_FEATURE_SOC_LPUART_COUNT-1 )
+   1257                  {
+   1258                      if(CLOCK_SYS_GetLpuartGateCmd(uartIdx))
+   1259                      {
+   1260                          LPUART_HAL_SetIntMode(g_lpuartBase[uartIdx], kLpuartIntRxActiveEdge, FALSE);
+   1261                          LPUART_HAL_ClearStatusFlag(g_lpuartBase[uartIdx], kLpuartRxActiveEdgeDetect);
+   1262                          LPUART_HAL_SetIntMode(g_lpuartBase[uartIdx], kLpuartIntRxActiveEdge, TRUE);
+   1263                      }
+   1264                      uartIdx++;
+   1265                  }
+   1266                  break;
+   1267          #endif
+   1268          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   1269              case gSerialMgrLpsci_c:
+   1270                  while( uartIdx <= FSL_FEATURE_SOC_LPSCI_COUNT-1 )
+   1271                  {
+   1272                      if(CLOCK_SYS_GetLpsciGateCmd(uartIdx))
+   1273                      {
+   1274                          LPSCI_HAL_SetIntMode(g_lpsciBase[uartIdx], kLpsciIntRxActiveEdge, FALSE);
+   1275                          LPSCI_HAL_ClearStatusFlag(g_lpsciBase[uartIdx], kLpsciRxActiveEdgeDetect);
+   1276                          LPSCI_HAL_SetIntMode(g_lpsciBase[uartIdx], kLpsciIntRxActiveEdge, TRUE);
+   1277                      }
+   1278                      uartIdx++;
+   1279                  }
+   1280                  break;
+   1281          #endif
+   1282          #endif /* #if (gSerialMgrUseUart_c) */
+   1283              default:
+   1284                  status = gSerial_InvalidInterface_c;
+   1285                  break;
+   1286              }
+   1287          #endif /* #if gSerialManagerMaxInterfaces_c */
+   1288              return status;
+   1289          }
+   1290          
+   1291          /*! *********************************************************************************
+   1292          * \brief   Configures the enabled hardware modules of the given interface type as modules without wakeup capabilities  
+   1293          *
+   1294          * \param[in] interface type of the modules to configure
+   1295          *
+   1296          * \return  gSerial_Success_c if there is at least one module to configure 
+   1297          *          gSerial_InvalidInterface_c otherwise 
+   1298          * \pre
+   1299          *
+   1300          * \post
+   1301          *
+   1302          * \remarks 
+   1303          *
+   1304          ********************************************************************************** */
+   1305          
+   1306          serialStatus_t Serial_DisableLowPowerWakeup( serialInterfaceType_t interfaceType )
+   1307          {
+   1308              serialStatus_t status = gSerial_Success_c;
+   1309          #if gSerialManagerMaxInterfaces_c
+   1310              uint8_t uartIdx = 0;
+   1311          
+   1312              switch(interfaceType)
+   1313              {
+   1314          #if (gSerialMgrUseUart_c)
+   1315          #if FSL_FEATURE_SOC_UART_COUNT
+   1316              case gSerialMgrUart_c:
+   1317                  while( uartIdx <= FSL_FEATURE_SOC_UART_COUNT-1 )
+   1318                  {
+   1319                      if(CLOCK_SYS_GetUartGateCmd(uartIdx))
+   1320                      {
+   1321                          UART_HAL_SetIntMode(g_uartBase[uartIdx], kUartIntRxActiveEdge, FALSE);
+   1322                          UART_HAL_ClearStatusFlag(g_uartBase[uartIdx], kUartRxActiveEdgeDetect);
+   1323                      }
+   1324                      uartIdx++;
+   1325                  }
+   1326                  break;
+   1327          #endif
+   1328          #if FSL_FEATURE_SOC_LPUART_COUNT
+   1329              case gSerialMgrLpuart_c:
+   1330                  while( uartIdx <= FSL_FEATURE_SOC_LPUART_COUNT-1 )
+   1331                  {
+   1332                      if(CLOCK_SYS_GetLpuartGateCmd(uartIdx))
+   1333                      {
+   1334                          LPUART_HAL_SetIntMode(g_lpuartBase[uartIdx], kLpuartIntRxActiveEdge, FALSE);
+   1335                          LPUART_HAL_ClearStatusFlag(g_lpuartBase[uartIdx], kLpuartRxActiveEdgeDetect);
+   1336                      }
+   1337                      uartIdx++;
+   1338                  }
+   1339                  break;
+   1340          #endif
+   1341          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   1342              case gSerialMgrLpsci_c:
+   1343                  while( uartIdx <= FSL_FEATURE_SOC_LPSCI_COUNT-1 )
+   1344                  {
+   1345                      if(CLOCK_SYS_GetLpsciGateCmd(uartIdx))
+   1346                      {
+   1347                          LPSCI_HAL_SetIntMode(g_lpsciBase[uartIdx], kLpsciIntRxActiveEdge, FALSE);
+   1348                          LPSCI_HAL_ClearStatusFlag(g_lpsciBase[uartIdx], kLpsciRxActiveEdgeDetect);
+   1349                      }
+   1350                      uartIdx++;
+   1351                  }
+   1352                  break;
+   1353          #endif
+   1354          #endif /* #if (gSerialMgrUseUart_c) */
+   1355              default:
+   1356                  status = gSerial_InvalidInterface_c;
+   1357                  break;
+   1358              }
+   1359          #endif /* #if gSerialManagerMaxInterfaces_c */
+   1360              return status;
+   1361          }
+   1362          
+   1363          /*! *********************************************************************************
+   1364          * \brief   Decides whether a enabled hardware module of the given interface type woke up the CPU from STOP mode.  
+   1365          *
+   1366          * \param[in] interface type of the modules to be evaluated as wakeup source.
+   1367          *
+   1368          * \return  TRUE if a module of the given interface type was the wakeup source
+   1369          *          FALSE otherwise 
+   1370          * \pre
+   1371          *
+   1372          * \post
+   1373          *
+   1374          * \remarks 
+   1375          *
+   1376          ********************************************************************************** */
+   1377          
+   1378          bool_t Serial_IsWakeUpSource( serialInterfaceType_t interfaceType)
+   1379          {
+   1380          #if gSerialManagerMaxInterfaces_c
+   1381              uint8_t uartIdx = 0;
+   1382          
+   1383              switch(interfaceType)
+   1384              {
+   1385          #if (gSerialMgrUseUart_c)
+   1386          #if FSL_FEATURE_SOC_UART_COUNT
+   1387              case gSerialMgrUart_c:
+   1388                  while( uartIdx <= FSL_FEATURE_SOC_UART_COUNT-1 )
+   1389                  {
+   1390                      if(CLOCK_SYS_GetUartGateCmd(uartIdx))
+   1391                      {
+   1392                          if( UART_HAL_GetStatusFlag(g_uartBase[uartIdx], kUartRxActiveEdgeDetect) )
+   1393                          {
+   1394                              return TRUE;
+   1395                          }  
+   1396                      }
+   1397                      uartIdx++;
+   1398                  }
+   1399                  break;
+   1400          #endif
+   1401          #if FSL_FEATURE_SOC_LPUART_COUNT
+   1402              case gSerialMgrLpuart_c:
+   1403                  while( uartIdx <= FSL_FEATURE_SOC_LPUART_COUNT-1 )
+   1404                  {
+   1405                      if(CLOCK_SYS_GetLpuartGateCmd(uartIdx))
+   1406                      {
+   1407                          if( LPUART_HAL_GetStatusFlag(g_lpuartBase[uartIdx], kLpuartRxActiveEdgeDetect) )
+   1408                          {
+   1409                              return TRUE;
+   1410                          }  
+   1411                      }
+   1412                      uartIdx++;
+   1413                  }
+   1414                  break;
+   1415          #endif
+   1416          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   1417              case gSerialMgrLpsci_c:
+   1418                  while( uartIdx <= FSL_FEATURE_SOC_LPSCI_COUNT-1 )
+   1419                  {
+   1420                      if(CLOCK_SYS_GetLpsciGateCmd(uartIdx))
+   1421                      {
+   1422                          if( LPSCI_HAL_GetStatusFlag(g_lpsciBase[uartIdx], kLpsciRxActiveEdgeDetect) )
+   1423                          {
+   1424                              return TRUE;
+   1425                          }  
+   1426                      }
+   1427                      uartIdx++;
+   1428                  }
+   1429                  break;
+   1430          #endif
+   1431          #endif /* #if (gSerialMgrUseUart_c) */
+   1432              default:
+   1433                  break;
+   1434              }
+   1435          #else
+   1436              (void)interfaceType;
+   1437          #endif
+   1438              return FALSE;
+   1439          }
+   1440          
+   1441          
+   1442          /*! *********************************************************************************
+   1443          *************************************************************************************
+   1444          * Private functions
+   1445          *************************************************************************************
+   1446          ********************************************************************************* */
+   1447          #if (gSerialManagerMaxInterfaces_c)
+   1448          /*! *********************************************************************************
+   1449          * \brief Transmit a data buffer to the specified interface.
+   1450          *
+   1451          * \param[in] InterfaceId the interface number
+   1452          *
+   1453          * \return The status of the operation
+   1454          *
+   1455          ********************************************************************************** */
+   1456          static serialStatus_t Serial_WriteInternal( uint8_t InterfaceId )
+   1457          {
+   1458              serialStatus_t status = gSerial_Success_c;
+   1459              serial_t *pSer = &mSerials[InterfaceId];
+   1460              uint16_t idx;
+   1461          
+   1462              OSA_EnterCritical(kCriticalDisableInt);
+   1463              if( pSer->state == 0 )
+   1464              {
+   1465                  pSer->state = 1;
+   1466          #if gSerialMgr_DisallowMcuSleep_d
+   1467                  PWR_DisallowDeviceToSleep();
+   1468          #endif
+   1469              }
+   1470              else
+   1471              {
+   1472                  /* The interface is busy transmitting!
+   1473                   * The current data will be transmitted after the previous transmissions end. 
+   1474                   */
+   1475                  OSA_ExitCritical(kCriticalDisableInt);
+   1476                  return gSerial_Success_c;
+   1477              }
+   1478              OSA_ExitCritical(kCriticalDisableInt);
+   1479          
+   1480              idx = pSer->txCurrent;
+   1481              if(pSer->txQueue[idx].dataSize == 0)
+   1482              {
+   1483          #if gSerialMgr_DisallowMcuSleep_d
+   1484                  PWR_AllowDeviceToSleep();
+   1485          #endif
+   1486                  pSer->state = 0;
+   1487                  return gSerial_Success_c;
+   1488              }
+   1489          
+   1490              switch ( mSerials[InterfaceId].serialType )
+   1491              {
+   1492          #if (gSerialMgrUseUart_c)
+   1493          #if FSL_FEATURE_SOC_UART_COUNT
+   1494              case gSerialMgrUart_c:
+   1495                  if( kStatus_UART_Success != UART_DRV_SendData( pSer->serialChannel, 
+   1496                                                                 pSer->txQueue[idx].pData, 
+   1497                                                                 pSer->txQueue[idx].dataSize ) )
+   1498                  {
+   1499                      status = gSerial_InternalError_c;
+   1500                  }
+   1501                  break;
+   1502          #endif
+   1503          #if FSL_FEATURE_SOC_LPUART_COUNT
+   1504              case gSerialMgrLpuart_c:
+   1505                  if( kStatus_LPUART_Success != LPUART_DRV_SendData( pSer->serialChannel, 
+   1506                                                                     pSer->txQueue[idx].pData, 
+   1507                                                                     pSer->txQueue[idx].dataSize ) )
+   1508                  {
+   1509                      status = gSerial_InternalError_c;
+   1510                  }
+   1511                  break;
+   1512          #endif
+   1513          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   1514              case gSerialMgrLpsci_c:
+   1515                  if( kStatus_LPSCI_Success != LPSCI_DRV_SendData( pSer->serialChannel, 
+   1516                                                                   pSer->txQueue[idx].pData, 
+   1517                                                                   pSer->txQueue[idx].dataSize ) )
+   1518                  {
+   1519                      status = gSerial_InternalError_c;
+   1520                  }
+   1521                  break;
+   1522          #endif
+   1523          #endif /* #if (gSerialMgrUseUart_c) */
+   1524          
+   1525          #if gSerialMgrUseUSB_c
+   1526              case gSerialMgrUSB_c:
+   1527                  if( VirtualCom_Write(mDrvData[InterfaceId].pDrvData, 
+   1528                                       pSer->txQueue[idx].pData, 
+   1529                                       pSer->txQueue[idx].dataSize) )
+   1530                  {
+   1531                      status = gSerial_InternalError_c;
+   1532                  }
+   1533                  break;
+   1534          #endif
+   1535          
+   1536          #if gSerialMgrUseIIC_c
+   1537              case gSerialMgrIICMaster_c:
+   1538                  if( kStatus_I2C_Success != I2C_DRV_MasterSendData( pSer->serialChannel, 
+   1539                                                                     &mDrvData[InterfaceId].i2cMaster.bus, NULL, 0,
+   1540                                                                     pSer->txQueue[idx].pData, pSer->txQueue[idx].dataSize ) )
+   1541                  {
+   1542                      status = gSerial_InternalError_c;
+   1543                  }
+   1544                  break;
+   1545          
+   1546              case gSerialMgrIICSlave_c:
+   1547                  /* Notify IIC Master that we have data to send */
+   1548                  if( kStatus_I2C_Success != I2C_DRV_SlaveSendData(pSer->serialChannel, 
+   1549                                                                   pSer->txQueue[idx].pData, 
+   1550                                                                   pSer->txQueue[idx].dataSize) )
+   1551                  {
+   1552                      status = gSerial_InternalError_c;
+   1553                      break;
+   1554                  }
+   1555                  GPIO_DRV_SetPinOutput(kGpioI2cDAP);
+   1556                  break;
+   1557          #endif
+   1558          
+   1559          #if gSerialMgrUseSPI_c
+   1560              case gSerialMgrSPISlave_c:
+   1561                  /* Notify SPI Master that we have data to send */
+   1562                  if( Spi_AsyncTransfer(pSer->serialChannel,
+   1563                                             pSer->txQueue[idx].pData,
+   1564                                             &pSer->rxBuffer[pSer->rxIn],
+   1565                                             pSer->txQueue[idx].dataSize) )
+   1566                  {
+   1567                    status = gSerial_InternalError_c;
+   1568                    break;
+   1569                  }
+   1570                  GPIO_DRV_SetPinOutput(kGpioSpiDAP);
+   1571                  break;
+   1572          
+   1573              case gSerialMgrSPIMaster_c:
+   1574                  if( Spi_AsyncTransfer(pSer->serialChannel,
+   1575                                              pSer->txQueue[idx].pData,
+   1576                                              &pSer->rxBuffer[pSer->rxIn],
+   1577                                              pSer->txQueue[idx].dataSize) )
+   1578                  {
+   1579                    status = gSerial_InternalError_c;
+   1580                  }
+   1581                  break;
+   1582          #endif
+   1583              default:
+   1584                  status = gSerial_InternalError_c;
+   1585              }
+   1586          
+   1587              if( status != gSerial_Success_c )
+   1588              {
+   1589          #if gSerialMgr_DisallowMcuSleep_d
+   1590                  PWR_AllowDeviceToSleep();
+   1591          #endif
+   1592                  pSer->txQueue[idx].dataSize = 0;
+   1593                  pSer->txQueue[idx].txCallback = NULL;
+   1594                  mSerial_IncIdx_d(pSer->txCurrent, gSerialMgrTxQueueSize_c);
+   1595                  pSer->state = 0;
+   1596              }
+   1597          
+   1598              return status;
+   1599          }
+   1600          
+   1601          /*! *********************************************************************************
+   1602          * \brief Inform the Serial Manager task that new data is available
+   1603          *
+   1604          * \param[in] pData The id interface
+   1605          *
+   1606          * \return none
+   1607          *
+   1608          * \remarks Called from usb task
+   1609          *
+   1610          ********************************************************************************** */
+   1611          
+   1612          #if gSerialMgrUseUSB_c
+   1613          void SerialManager_VirtualComRxNotify(uint8_t* pData, uint16_t dataSize, uint8_t interface)
+   1614          {
+   1615          
+   1616            while(dataSize)
+   1617            {
+   1618              OSA_EnterCritical(kCriticalDisableInt);
+   1619              mSerials[interface].rxBuffer[mSerials[interface].rxIn] = *pData++;
+   1620              mSerial_IncIdx_d(mSerials[interface].rxIn, gSMRxBufSize_c);
+   1621              if(mSerials[interface].rxIn == mSerials[interface].rxOut)
+   1622              {
+   1623                mSerial_IncIdx_d(mSerials[interface].rxOut, gSMRxBufSize_c);
+   1624              }
+   1625              OSA_ExitCritical(kCriticalDisableInt);
+   1626              dataSize--;
+   1627            }
+   1628            
+   1629             mSerials[interface].events |= gSMGR_Rx_c;
+   1630             (void)OSA_EventSet(&mSMTaskEvent, gSMGR_Rx_c);    
+   1631            
+   1632          }
+   1633          #endif
+   1634          /*! *********************************************************************************
+   1635          * \brief Inform the Serial Manager task that new data is available
+   1636          *
+   1637          * \param[in] pData The id interface
+   1638          *
+   1639          * \return none
+   1640          *
+   1641          * \remarks Called from ISR
+   1642          *
+   1643          ********************************************************************************** */
+   1644          void SerialManager_RxNotify( uint32_t i )
+   1645          {
+   1646              serial_t *pSer = &mSerials[i];
+   1647          #if gSerialMgrUseFSCIHdr_c
+   1648              uint8_t rxByte = pSer->rxBuffer[pSer->rxIn];
+   1649              uint8_t slaveDapRxEnd = 0;
+   1650          #endif    
+   1651          
+   1652              mSerial_IncIdx_d(pSer->rxIn, gSMRxBufSize_c);
+   1653              if(pSer->rxIn == pSer->rxOut)
+   1654              {
+   1655                  mSerial_IncIdx_d(pSer->rxOut, gSMRxBufSize_c);
+   1656              }
+   1657          
+   1658              switch( pSer->serialType )
+   1659              {
+   1660                  /* Uart driver is in continuous Rx. No need to restart reception. */
+   1661          #if gSerialMgrUseSPI_c
+   1662              case gSerialMgrSPISlave_c:
+   1663                  /* No need to restart RX since SPI is in continuous RX mode */
+   1664                  break;
+   1665              case gSerialMgrSPIMaster_c:
+   1666          #if gSerialMgrUseFSCIHdr_c
+   1667                  if( (0 == pSer->rxFsciPkt) && (gFSCI_StartMarker_c == rxByte) )
+   1668                  {
+   1669                      pSer->rxFsciPkt = 1;
+   1670                  }
+   1671                  
+   1672                  if( pSer->rxFsciPkt )
+   1673                  {
+   1674                      pSer->rxFsciIn++;
+   1675                      
+   1676          #if gFsciLenHas2Bytes_c            
+   1677                      if( (mSMGR_FSCIHdrLen_c - 1) == pSer->rxFsciIn )
+   1678                      {
+   1679                          pSer->rxFsciLen = rxByte + 1; /* CRC */
+   1680                      }
+   1681                      else if( mSMGR_FSCIHdrLen_c == pSer->rxFsciIn )
+   1682                      {
+   1683                          pSer->rxFsciLen += rxByte << 8;
+   1684                      }
+   1685          #else       
+   1686                      if( mSMGR_FSCIHdrLen_c == pSer->rxFsciIn )
+   1687                      {
+   1688                          pSer->rxFsciLen = rxByte + 1; /* CRC */
+   1689                      }
+   1690          #endif
+   1691                      if( pSer->rxFsciLen == (pSer->rxFsciIn - mSMGR_FSCIHdrLen_c) )
+   1692                      {
+   1693                          pSer->rxFsciPkt = 0;
+   1694                          pSer->rxFsciIn = 0;
+   1695                          pSer->rxFsciLen = 0;
+   1696                          
+   1697                          slaveDapRxEnd = GPIO_DRV_ReadPinInput(kGpioSpiDAP);
+   1698                      }
+   1699                  }
+   1700                  
+   1701                  /* If more bytes need to be received */
+   1702                  if( (pSer->rxFsciPkt || slaveDapRxEnd) && !pSer->state )
+   1703                  {
+   1704          #if gSMGR_UseOsSemForSynchronization_c
+   1705                      if( (0 == pSer->txQueue[pSer->txIn].dataSize) && (NULL == pSer->txQueue[pSer->txIn].txCallback) )
+   1706          #endif
+   1707                      {          
+   1708                          Serial_AsyncWrite( i, &mSPI_dummyData, 1, NULL, NULL );
+   1709                      }    
+   1710                  }
+   1711          #else /* gSerialMgrUseFSCIHdr_c */   
+   1712                  /* If the SPI Slave has more data to transmit, restart the transfer */
+   1713                  if( GPIO_DRV_ReadPinInput(kGpioSpiDAP) && !pSer->state )
+   1714                  {
+   1715          #if gSMGR_UseOsSemForSynchronization_c
+   1716                      if( (0 == pSer->txQueue[pSer->txIn].dataSize) && (NULL == pSer->txQueue[pSer->txIn].txCallback) )
+   1717          #endif
+   1718                      {
+   1719                          Serial_AsyncWrite( i, &mSPI_dummyData, 1, NULL, NULL );
+   1720                      }
+   1721                  }
+   1722          #endif
+   1723                  break;
+   1724          #endif
+   1725          
+   1726          #if gSerialMgrUseIIC_c
+   1727              case gSerialMgrIICSlave_c:
+   1728                  /* Restart I2C RX */
+   1729                  I2C_DRV_SlaveReceiveData(pSer->serialChannel, &pSer->rxBuffer[pSer->rxIn], 1 );
+   1730                  break;
+   1731          
+   1732              case gSerialMgrIICMaster_c:
+   1733                  pSer->rxIn = 0;
+   1734                  /* Just notify the application that the I2C Slave has data to transmit*/
+   1735                  break;
+   1736          #endif
+   1737              default:
+   1738                  break;
+   1739              }
+   1740          
+   1741              /* Signal SMGR task if not allready done */
+   1742              if( !(pSer->events & gSMGR_Rx_c) )
+   1743              {
+   1744                  pSer->events |= gSMGR_Rx_c;
+   1745                  (void)OSA_EventSet(&mSMTaskEvent, gSMGR_Rx_c);
+   1746              }
+   1747          }
+   1748          
+   1749          /*! *********************************************************************************
+   1750          * \brief Inform the Serial Manager task that a transmission has finished
+   1751          *
+   1752          * \param[in] pData the Id interface
+   1753          *
+   1754          * \return none
+   1755          *
+   1756          * \remarks Called from ISR
+   1757          *
+   1758          ********************************************************************************** */
+   1759          void SerialManager_TxNotify( uint32_t i )
+   1760          {
+   1761            
+   1762              serial_t *pSer = &mSerials[i];
+   1763          
+   1764              OSA_EnterCritical(kCriticalDisableInt);
+   1765              pSer->events |= gSMGR_TxDone_c;
+   1766              pSer->txQueue[pSer->txCurrent].dataSize = 0; //Mark as transmitted
+   1767              mSerial_IncIdx_d(pSer->txCurrent, gSerialMgrTxQueueSize_c);
+   1768          #if gSerialMgr_DisallowMcuSleep_d
+   1769              PWR_AllowDeviceToSleep();
+   1770          #endif
+   1771              pSer->state = 0;
+   1772              OSA_ExitCritical(kCriticalDisableInt);
+   1773          
+   1774              /* Transmit next block if available */
+   1775              if( pSer->txCurrent != pSer->txIn )
+   1776              {
+   1777                 if( pSer->serialType != gSerialMgrIICMaster_c && pSer->serialType != gSerialMgrIICSlave_c )
+   1778                  {
+   1779                      (void)Serial_WriteInternal(i);
+   1780                  }
+   1781              }
+   1782              else
+   1783              {
+   1784          #if (gSerialMgrUseIIC_c)
+   1785                
+   1786                if( pSer->serialType == gSerialMgrIICMaster_c &&
+   1787                   GPIO_DRV_ReadPinInput(kGpioI2cDAP) )
+   1788                {
+   1789                  /* Signal SMGR task if not allready done */
+   1790                  if( !(pSer->events & gSMGR_Rx_c) )
+   1791                  {
+   1792                    pSer->events |= gSMGR_Rx_c;
+   1793                    (void)OSA_EventSet(&mSMTaskEvent, gSMGR_Rx_c);
+   1794                  }
+   1795                }
+   1796                  if( pSer->serialType == gSerialMgrIICSlave_c )
+   1797                  {
+   1798                      GPIO_DRV_ClearPinOutput(kGpioI2cDAP);
+   1799                  }
+   1800          #endif
+   1801          #if (gSerialMgrUseSPI_c)
+   1802                  if( pSer->serialType == gSerialMgrSPISlave_c )
+   1803                  {
+   1804                      GPIO_DRV_ClearPinOutput(kGpioSpiDAP);
+   1805                  }
+   1806          #endif
+   1807              }
+   1808              (void)OSA_EventSet(&mSMTaskEvent, gSMGR_TxDone_c);
+   1809          }
+   1810          
+   1811          
+   1812          /*! *********************************************************************************
+   1813          * \brief   This function will mark all finished TX queue entries as empty.
+   1814          *          If a calback was provided, it will be run.
+   1815          *
+   1816          * \param[in] pSer pointer to the serial interface internal structure
+   1817          *
+   1818          ********************************************************************************** */
+   1819          static void Serial_TxQueueMaintenance(serial_t *pSer)
+   1820          {
+   1821              uint32_t i;
+   1822          
+   1823              while( pSer->txQueue[pSer->txOut].dataSize == 0 )
+   1824              {
+   1825                  i = pSer->txOut;
+   1826                  mSerial_IncIdx_d(pSer->txOut, gSerialMgrTxQueueSize_c);
+   1827                  
+   1828                  /* Run Calback */
+   1829                  if( pSer->txQueue[i].txCallback )
+   1830                  {
+   1831                      pSer->txQueue[i].txCallback( pSer->txQueue[i].pTxParam );
+   1832                      pSer->txQueue[i].txCallback = NULL;
+   1833                  }
+   1834          
+   1835          #if gSerialMgr_BlockSenderOnQueueFull_c && gSMGR_UseOsSemForSynchronization_c
+   1836                  OSA_EnterCritical(kCriticalDisableInt);        
+   1837                  if( pSer->txBlockedTasks )
+   1838                  {
+   1839                      pSer->txBlockedTasks--;
+   1840                      OSA_ExitCritical(kCriticalDisableInt);
+   1841                      (void)OSA_SemaPost(&pSer->txQueueSem);
+   1842                  }
+   1843                  else
+   1844                  {
+   1845                    OSA_ExitCritical(kCriticalDisableInt);
+   1846                  }
+   1847          #endif
+   1848                  if( pSer->txOut == pSer->txIn )
+   1849                      break;
+   1850          //#if defined(FWK_SMALL_RAM_CONFIG)
+   1851          //        if( pSer->txQueue[pSer->txOut].dataSize )
+   1852          //            (void)OSA_EventSet(&mSMTaskEvent, gSMGR_TxDone_c);
+   1853          //        return;
+   1854          //#endif
+   1855              }
+   1856          }
+   1857          
+   1858          /*! *********************************************************************************
+   1859          * \brief   This function will unblock the task who called Serial_SyncWrite().
+   1860          *
+   1861          * \param[in] pSer pointer to the serial interface internal structure
+   1862          *
+   1863          ********************************************************************************** */
+   1864          #if gSMGR_UseOsSemForSynchronization_c
+   1865          static void Serial_SyncTxCallback(void *pSer)
+   1866          {
+   1867              (void)OSA_SemaPost( &((serial_t *)pSer)->txSyncSem );
+   1868          }
+   1869          #endif
+   1870          
+   1871          /*! *********************************************************************************
+   1872          * \brief   This function will return the interfaceId for the specified interface
+   1873          *
+   1874          * \param[in] type     the interface type
+   1875          * \param[in] channel  the instance of the interfacte
+   1876          *
+   1877          * \return The mSerials index for the specified interface type and channel
+   1878          *
+   1879          ********************************************************************************** */
+   1880          uint32_t Serial_GetInterfaceId(serialInterfaceType_t type, uint32_t channel)
+   1881          {
+   1882              uint32_t i;
+   1883              
+   1884              for(i=0; i<gSerialManagerMaxInterfaces_c; i++)
+   1885              {
+   1886                  if( (mSerials[i].serialType == type) && 
+   1887                      (mSerials[i].serialChannel == channel) )
+   1888                      return i;
+   1889              }
+   1890          
+   1891              return gSerialMgrInvalidIdx_c;
+   1892          }
+   1893          
+   1894          /*! *********************************************************************************
+   1895          * \brief   This function will return the first interfaceId for the specified interface type
+   1896          *
+   1897          * \param[in] type     the interface type
+   1898          *
+   1899          * \return The mSerials index for the specified interface type
+   1900          *
+   1901          *
+   1902          ********************************************************************************** */
+   1903          #if (gSerialMgrUseSPI_c) || (gSerialMgrUseIIC_c)
+   1904          static uint32_t Serial_GetInterfaceIdFromType(serialInterfaceType_t type)
+   1905          {
+   1906              uint32_t i;
+   1907              
+   1908              for(i=0; i<gSerialManagerMaxInterfaces_c; i++)
+   1909              {
+   1910                  if( mSerials[i].serialType == type )
+   1911                      return i;
+   1912              }
+   1913          
+   1914              return gSerialMgrInvalidIdx_c;
+   1915          }
+   1916          #endif
+   1917          
+   1918          /*! *********************************************************************************
+   1919          * \brief   SPI transfet complete ISR callback
+   1920          *
+   1921          * \param[in] instance     the instance of the SPI module
+   1922          *
+   1923          ********************************************************************************** */
+   1924          #if (gSerialMgrUseSPI_c)
+   1925          static void SpiCallback(uint32_t flags, void* pSpiState)
+   1926          {
+   1927              spiState_t *pState = (spiState_t*)pSpiState;
+   1928              uint32_t    instance = (uint32_t)pState->callbackParam;
+   1929              serial_t   *pSer = &mSerials[instance];
+   1930          
+   1931              if( flags & gSPI_TxEndFlag_d )
+   1932              {
+   1933                  /* SPI Tx sequence end */
+   1934                  SerialManager_TxNotify(instance);
+   1935              }
+   1936          
+   1937              if( flags & (gSPI_RxEndFlag_d | gSPI_ByteRxFlag_d) )
+   1938              {
+   1939                  /* SPI Rx sequence end OR new byte received */
+   1940                  SerialManager_RxNotify(instance);
+   1941              }
+   1942          
+   1943              if( flags & gSPI_ByteRxFlag_d )
+   1944              {
+   1945                  /* Update data pointer for next SPI Rx*/
+   1946                  pState->pRxData = &pSer->rxBuffer[pSer->rxIn];  
+   1947              }
+   1948          }
+   1949          #endif
+   1950          
+   1951          /*! *********************************************************************************
+   1952          * \brief   SPI Master data available pin ISR
+   1953          *
+   1954          ********************************************************************************** */
+   1955          #if (gSerialMgrUseSPI_c)
+   1956          static void SpiMasterDapISR(void)
+   1957          {
+   1958              PORT_Type *port = g_portBase[GPIO_EXTRACT_PORT(kGpioSpiDAP)];
+   1959              uint32_t pin  = GPIO_EXTRACT_PIN(kGpioSpiDAP);
+   1960              uint32_t i = Serial_GetInterfaceIdFromType(gSerialMgrSPIMaster_c);
+   1961          
+   1962              if( PORT_HAL_IsPinIntPending(port, pin) )
+   1963              {
+   1964                  if( GPIO_DRV_ReadPinInput(kGpioSpiDAP) )
+   1965                  {
+   1966                      /* Change IRQ logic to detect when SPI Slave has no more data to send */
+   1967                      PORT_HAL_SetPinIntMode( port, pin, kPortIntLogicZero);
+   1968          
+   1969                      /* SPI Master will start a dummy transfer to receive data from SPI Slave */
+   1970                      if( mSerials[i].state == 0 )
+   1971                      {
+   1972                          Serial_AsyncWrite( i, &mSPI_dummyData, 1, NULL, NULL );
+   1973                      }
+   1974                  }
+   1975                  else
+   1976                  {
+   1977                      /* Change IRQ logic to detect when SPI Slave has new data to send */
+   1978                      PORT_HAL_SetPinIntMode( port, pin, kPortIntLogicOne);
+   1979                  }
+   1980          
+   1981                  PORT_HAL_ClearPinIntFlag(port, pin);
+   1982              }
+   1983          }
+   1984          #endif
+   1985          
+   1986          /*! *********************************************************************************
+   1987          * \brief   I2C ISR wrapper
+   1988          *
+   1989          ********************************************************************************** */
+   1990          #if (gSerialMgrUseIIC_c)
+   1991          static void I2Cx_ISR(void)
+   1992          {
+   1993              uint32_t irq = __get_IPSR() - 16;
+   1994              uint32_t instance;
+   1995              uint8_t isMaster;
+   1996              uint8_t idle = FALSE;
+   1997          
+   1998              for( instance=0; instance<I2C_INSTANCE_COUNT; instance++ )
+   1999              {
+   2000                  if( irq == g_i2cIrqId[instance] )
+   2001                      break;
+   2002              }
+   2003          
+   2004              isMaster = I2C_HAL_IsMaster(g_i2cBase[instance]);
+   2005          
+   2006              I2C_DRV_IRQHandler(instance);
+   2007          
+   2008              if( isMaster )
+   2009              {
+   2010                  idle = ((i2c_master_state_t *)g_i2cStatePtr[instance])->i2cIdle;
+   2011              }
+   2012          //    else
+   2013          //    {
+   2014          //        idle = !((i2c_slave_state_t *)g_i2cStatePtr[instance])->isTxBusy &&
+   2015          //               !((i2c_slave_state_t *)g_i2cStatePtr[instance])->isRxBusy;
+   2016          //    }
+   2017              
+   2018              if( idle )
+   2019              {
+   2020                  I2cMasterCb(instance);
+   2021              }
+   2022          }
+   2023          #endif
+   2024          
+   2025          /*! *********************************************************************************
+   2026          * \brief   I2C Master transfet complete ISR callback
+   2027          *
+   2028          * \param[in] instance     the instance of the I2C module
+   2029          *
+   2030          ********************************************************************************** */
+   2031          #if (gSerialMgrUseIIC_c)
+   2032          static void I2cMasterCb(uint8_t instance)
+   2033          {
+   2034              instance = Serial_GetInterfaceId(gSerialMgrIICMaster_c, instance);
+   2035          
+   2036              if( mSerials[instance].state )
+   2037                  SerialManager_TxNotify(instance);
+   2038              else
+   2039                  SerialManager_RxNotify(instance);
+   2040          }
+   2041          #endif
+   2042          
+   2043          /*! *********************************************************************************
+   2044          * \brief   I2C Slave transfet complete ISR callback
+   2045          *
+   2046          * \param[in] instance     the instance of the I2C module
+   2047          * \param[in] slaveEvent   the I2C event
+   2048          * \param[in] userData     pointer to user parameter
+   2049          *
+   2050          ********************************************************************************** */
+   2051          #if (gSerialMgrUseIIC_c)
+   2052          static void I2cSlaveCb(uint8_t instance, i2c_slave_event_t slaveEvent, void *userData)
+   2053          {
+   2054              instance = Serial_GetInterfaceId(gSerialMgrIICSlave_c, instance);
+   2055          
+   2056              if( slaveEvent == kI2CSlaveTxEmpty )
+   2057              {
+   2058                  SerialManager_TxNotify(instance);
+   2059              }
+   2060          
+   2061              if( slaveEvent == kI2CSlaveRxFull )
+   2062              {
+   2063                  SerialManager_RxNotify(instance);
+   2064              }
+   2065          }
+   2066          #endif
+   2067          
+   2068          /*! *********************************************************************************
+   2069          * \brief   I2C Master data available pin ISR
+   2070          *
+   2071          ********************************************************************************** */
+   2072          #if (gSerialMgrUseIIC_c)
+   2073          static void I2cMasterDapISR(void)
+   2074          {
+   2075              PORT_Type *port  = g_portBase[GPIO_EXTRACT_PORT(kGpioI2cDAP)];
+   2076              uint32_t pin     = GPIO_EXTRACT_PIN(kGpioI2cDAP);
+   2077              uint32_t i       = Serial_GetInterfaceIdFromType(gSerialMgrIICMaster_c);
+   2078          
+   2079              if( PORT_HAL_IsPinIntPending(port, pin) )
+   2080              {
+   2081                  if( GPIO_DRV_ReadPinInput(kGpioI2cDAP) )
+   2082                  {
+   2083                      PORT_HAL_SetPinIntMode( port, pin, kPortIntLogicZero);
+   2084           
+   2085                      if( !(mSerials[i].events & gSMGR_Rx_c) )
+   2086                      {
+   2087                          mSerials[i].events |= gSMGR_Rx_c;
+   2088                          (void)OSA_EventSet(&mSMTaskEvent, gSMGR_Rx_c);
+   2089                      }
+   2090                  }
+   2091                  else
+   2092                  {
+   2093                      PORT_HAL_SetPinIntMode( port, pin, kPortIntLogicOne);
+   2094                  }
+   2095          
+   2096                  PORT_HAL_ClearPinIntFlag(port, pin);
+   2097              }
+   2098          }
+   2099          #endif /* #if (gSerialMgrUseIIC_c) */
+   2100          
+   2101          /*! *********************************************************************************
+   2102          * \brief   Configures the data available pin for master SPI/IIC modules.
+   2103          *          Pin is configured as input, with intrrupt on rising edge.
+   2104          *
+   2105          * \param[in] pinName      KSDK pin name
+   2106          * \param[in] pfISR        pointer to the ISR
+   2107          *
+   2108          * \return                 pointer to old ISR
+   2109          *                         if the old ISR is the default one, returns NULL
+   2110          *
+   2111          ********************************************************************************** */
+   2112          #if (gSerialMgrUseSPI_c) || (gSerialMgrUseIIC_c)
+   2113          static void Serial_ConfigureMasterDap(uint32_t pinName, void (*pfISR)(void))
+   2114          {
+   2115              gpio_input_pin_user_config_t dapPinCfg = {
+   2116                  .pinName = pinName,
+   2117                  .config.isPullEnable = FALSE,
+   2118                  .config.pullSelect = kPortPullDown,
+   2119                  .config.isPassiveFilterEnabled = FALSE,
+   2120                  .config.interrupt = kPortIntLogicOne
+   2121              };
+   2122          
+   2123              GpioInstallIsr(pfISR, gGpioIsrPrioNormal_c, mSMGR_DapIsrPrio_c, pinName);
+   2124              GPIO_DRV_InputPinInit(&dapPinCfg);
+   2125          }
+   2126          #endif
+   2127          
+   2128          /*! *********************************************************************************
+   2129          * \brief   Configures the data available pin for slave SPI/IIC modules.
+   2130          *          Pin is configured as output.
+   2131          *
+   2132          * \param[in] pinName      KSDK pin name
+   2133          *
+   2134          ********************************************************************************** */
+   2135          #if (gSerialMgrUseSPI_c) || (gSerialMgrUseIIC_c)
+   2136          static void Serial_ConfigureSlaveDap(uint32_t pinName)
+   2137          {
+   2138              gpio_output_pin_user_config_t dapPinCfg = {
+   2139                  .pinName = pinName,
+   2140                  .config.outputLogic = 0,
+   2141                  .config.slewRate = kPortFastSlewRate,
+   2142          #if FSL_FEATURE_PORT_HAS_OPEN_DRAIN
+   2143                  .config.isOpenDrainEnabled = FALSE,
+   2144          #endif
+   2145                  .config.driveStrength = kPortHighDriveStrength,
+   2146              };
+   2147          
+   2148              GPIO_DRV_OutputPinInit(&dapPinCfg);
+   2149          }
+   2150          #endif
+   2151          
+   2152          #if (gSerialMgrUseUart_c)
+   2153          #if FSL_FEATURE_SOC_UART_COUNT
+   2154          /*! *********************************************************************************
+   2155          * \brief   Common UART ISR
+   2156          *
+   2157          ********************************************************************************** */
+   2158          void UART_IRQHandler(void)
+   2159          {
+   2160              uint32_t instance = 0;
+   2161          #if (FSL_FEATURE_SOC_UART_COUNT > 1)
+   2162              uint32_t uartIrqOffset = g_uartRxTxIrqId[1] - g_uartRxTxIrqId[0];
+   2163              instance = (__get_IPSR() - 16 - g_uartRxTxIrqId[0])/uartIrqOffset;
+   2164          #endif
+   2165              
+   2166              UART_DRV_IRQHandler(instance);
+   2167          }
+   2168          
+   2169          /*! *********************************************************************************
+   2170          * \brief   UART Rx ISR callback.
+   2171          *
+   2172          * \param[in] instance  UART instance
+   2173          * \param[in] state     pointer to the UART state structure
+   2174          *
+   2175          ********************************************************************************** */
+   2176          void Serial_UartRxCb(uint32_t instance, void* state)
+   2177          {
+   2178              uart_state_t *pState = (uart_state_t*)state;
+   2179              uint32_t i = (uint32_t)pState->rxCallbackParam;
+   2180          
+   2181              SerialManager_RxNotify(i);
+   2182              /* Update rxBuff because rxIn was incremented by the RxNotify function */
+   2183              pState->rxBuff = &mSerials[i].rxBuffer[mSerials[i].rxIn];
+   2184          }
+   2185          
+   2186          /*! *********************************************************************************
+   2187          * \brief   UART Tx ISR callback.
+   2188          *
+   2189          * \param[in] instance  UART instance
+   2190          * \param[in] state     pointer to the UART state structure
+   2191          *
+   2192          ********************************************************************************** */
+   2193          void Serial_UartTxCb(uint32_t instance, void* state)
+   2194          {
+   2195              uart_state_t *pState = (uart_state_t*)state;
+   2196              uint32_t i = (uint32_t)pState->txCallbackParam;
+   2197          
+   2198              /* will get here only if txSize > 0 */
+   2199              pState->txBuff++;
+   2200              pState->txSize--;
+   2201              
+   2202              if( pState->txSize == 0 )
+   2203              {
+   2204                  /* Transmit complete. Notify SMGR */
+   2205                  UART_DRV_AbortSendingData(instance);
+   2206                  SerialManager_TxNotify(i);
+   2207              }
+   2208          }
+   2209          #endif /* #if FSL_FEATURE_SOC_UART_COUNT */
+   2210          
+   2211          #if FSL_FEATURE_SOC_LPUART_COUNT
+   2212          /*! *********************************************************************************
+   2213          * \brief   Common LPUART ISR.
+   2214          *
+   2215          ********************************************************************************** */
+   2216          void LPUART_IRQHandler(void)
+   2217          {
+   2218              uint32_t instance = 0;
+   2219          #if (FSL_FEATURE_SOC_LPUART_COUNT > 1)
+   2220              uint32_t lpuartIrqOffset = g_lpuartRxTxIrqId[1] - g_lpuartRxTxIrqId[0];
+   2221              instance = (__get_IPSR() - 16 - g_lpuartRxTxIrqId[0])/lpuartIrqOffset;
+   2222          #endif
+   2223              
+   2224              LPUART_DRV_IRQHandler(instance);
+   2225          }
+   2226          
+   2227          /*! *********************************************************************************
+   2228          * \brief   LPUART Rx ISR callback.
+   2229          *
+   2230          * \param[in] instance  LPUART instance
+   2231          * \param[in] state     pointer to the LPUART state structure
+   2232          *
+   2233          ********************************************************************************** */
+   2234          void Serial_LpuartRxCb(uint32_t instance, void* state)
+   2235          {
+   2236              lpuart_state_t *pState = (lpuart_state_t*)state;
+   2237              uint32_t i = (uint32_t)pState->rxCallbackParam;
+   2238          
+   2239              SerialManager_RxNotify(i);
+   2240              /* Update rxBuff because rxIn was incremented by the RxNotify function */
+   2241              pState->rxBuff = &mSerials[i].rxBuffer[mSerials[i].rxIn];
+   2242          }
+   2243          
+   2244          /*! *********************************************************************************
+   2245          * \brief   LPUART Tx ISR callback.
+   2246          *
+   2247          * \param[in] instance  LPUART instance
+   2248          * \param[in] state     pointer to the LPUART state structure
+   2249          *
+   2250          ********************************************************************************** */
+   2251          void Serial_LpuartTxCb(uint32_t instance, void* state)
+   2252          {
+   2253              lpuart_state_t *pState = (lpuart_state_t*)state;
+   2254              uint32_t i = (uint32_t)pState->txCallbackParam;
+   2255          
+   2256              /* will get here only if txSize > 0 */
+   2257              pState->txBuff++;
+   2258              pState->txSize--;
+   2259              
+   2260              if( pState->txSize == 0 )
+   2261              {
+   2262                  /* Transmit complete. Notify SMGR */
+   2263                  LPUART_DRV_AbortSendingData(instance);
+   2264                  SerialManager_TxNotify(i);
+   2265              }
+   2266          }
+   2267          #endif /* #if FSL_FEATURE_SOC_LPUART_COUNT */
+   2268          
+   2269          #if FSL_FEATURE_SOC_LPSCI_COUNT
+   2270          /*! *********************************************************************************
+   2271          * \brief   Common LPSCI ISR.
+   2272          *
+   2273          ********************************************************************************** */
+   2274          void LPSCI_IRQHandler(void)
+   2275          {
+   2276              uint32_t instance = 0;
+   2277          #if (FSL_FEATURE_SOC_LPSCI_COUNT > 1)
+   2278              uint32_t lpsciIrqOffset = g_lpsciRxTxIrqId[1] - g_lpsciRxTxIrqId[0];
+   2279              instance = (__get_IPSR() - 16 - g_lpsciRxTxIrqId[0])/lpsciIrqOffset;
+   2280          #endif
+   2281          
+   2282              LPSCI_DRV_IRQHandler(instance);
+   2283          }
+   2284          
+   2285          /*! *********************************************************************************
+   2286          * \brief   LPSCI Rx ISR callback.
+   2287          *
+   2288          * \param[in] instance  LPSCI instance
+   2289          * \param[in] state     pointer to the LPSCI state structure
+   2290          *
+   2291          ********************************************************************************** */
+   2292          void Serial_LpsciRxCb(uint32_t instance, void* state)
+   2293          {
+   2294              lpsci_state_t *pState = (lpsci_state_t*)state;
+   2295              uint32_t i = (uint32_t)pState->rxCallbackParam;
+   2296          
+   2297              SerialManager_RxNotify(i);
+   2298              /* Update rxBuff because rxIn was incremented by the RxNotify function */
+   2299              pState->rxBuff = &mSerials[i].rxBuffer[mSerials[i].rxIn];
+   2300          }
+   2301          
+   2302          /*! *********************************************************************************
+   2303          * \brief   LPSCI Tx ISR callback.
+   2304          *
+   2305          * \param[in] instance  LPSCI instance
+   2306          * \param[in] state     pointer to the LPSCI state structure
+   2307          *
+   2308          ********************************************************************************** */
+   2309          void Serial_LpsciTxCb(uint32_t instance, void* state)
+   2310          {
+   2311              lpsci_state_t *pState = (lpsci_state_t*)state;
+   2312              uint32_t i = (uint32_t)pState->txCallbackParam;
+   2313          
+   2314              /* will get here only if txSize > 0 */
+   2315              pState->txBuff++;
+   2316              pState->txSize--;
+   2317              
+   2318              if( pState->txSize == 0 )
+   2319              {
+   2320                  /* Transmit complete. Notify SMGR */
+   2321                  LPSCI_DRV_AbortSendingData(instance);
+   2322                  SerialManager_TxNotify(i);
+   2323              }
+   2324          }
+   2325          #endif /* #if FSL_FEATURE_SOC_LPSCI_COUNT */
+   2326          #endif /* #if (gSerialMgrUseUart_c) */
+   2327          #endif /* #if (gSerialManagerMaxInterfaces_c) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   LPUART_IRQHandler
+         8   -> LPUART_DRV_IRQHandler
+      20   NVIC_SetPriority
+      24   SerialManagerTask
+        24   -- Indirect call
+        24   -> OSA_EnterCritical
+        24   -> OSA_EventWait
+        24   -> OSA_ExitCritical
+        24   -> Serial_TxQueueMaintenance
+        24   -> Serial_WriteInternal
+      24   SerialManager_Init
+        24   -> FLib_MemSet
+        24   -> OSA_EventCreate
+        24   -> OSA_TaskCreate
+        24   -> panic
+      16   SerialManager_RxNotify
+        16   -> OSA_EventSet
+      16   SerialManager_TxNotify
+        16   -> OSA_EnterCritical
+        16   -> OSA_EventSet
+        16   -> OSA_ExitCritical
+        16   -> Serial_WriteInternal
+      40   Serial_AsyncWrite
+        40   -> OSA_EnterCritical
+        40   -> OSA_ExitCritical
+        40   -> OSA_SemaWait
+        40   -> OSA_TaskGetHandler
+        40   -> Serial_TxQueueMaintenance
+        40   -> Serial_WriteInternal
+      16   Serial_DisableLowPowerWakeup
+        16   -> CLOCK_SYS_GetLpuartGateCmd
+        16   -> LPUART_HAL_ClearStatusFlag
+        16   -> LPUART_HAL_SetIntMode
+      16   Serial_EnableLowPowerWakeup
+        16   -> CLOCK_SYS_GetLpuartGateCmd
+        16   -> LPUART_HAL_ClearStatusFlag
+        16   -> LPUART_HAL_SetIntMode
+       8   Serial_GetInterfaceId
+      32   Serial_InitInterface
+        32   -> LPUART_DRV_Init
+        32   -> LPUART_DRV_InstallRxCallback
+        32   -> LPUART_DRV_InstallTxCallback
+        32   -> NVIC_SetPriority
+        32   -> OSA_EnterCritical
+        32   -> OSA_ExitCritical
+        32   -> OSA_InstallIntHandler
+        32   -> OSA_SemaCreate
+        32   -> configure_lpuart_pins
+      16   Serial_IsWakeUpSource
+        16   -> CLOCK_SYS_GetLpuartGateCmd
+        16   -> LPUART_HAL_GetStatusFlag
+      16   Serial_LpuartRxCb
+        16   -> SerialManager_RxNotify
+      24   Serial_LpuartTxCb
+        24   -> LPUART_DRV_AbortSendingData
+        24   -> SerialManager_TxNotify
+      24   Serial_Print
+        24   -> Serial_AsyncWrite
+        24   -> Serial_SyncWrite
+        24   -> strlen
+      32   Serial_PrintDec
+        32   -> Serial_SyncWrite
+        32 __aeabi_uidiv
+        32 __aeabi_uidivmod
+      40   Serial_PrintHex
+        40   -> Serial_SyncWrite
+      40   Serial_Read
+        40   -> OSA_EnterCritical
+        40   -> OSA_ExitCritical
+        40   -> Serial_RxBufferByteCount
+      16   Serial_RxBufferByteCount
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+      24   Serial_SetBaudRate
+        24   -> CLOCK_SYS_GetLpuartFreq
+        24   -> LPUART_HAL_SetBaudRate
+       8   Serial_SetRxCallBack
+       8   Serial_SyncTxCallback
+         8   -> OSA_SemaPost
+      32   Serial_SyncWrite
+        32   -> OSA_SemaWait
+        32   -> OSA_TaskGetHandler
+        32   -> Serial_AsyncWrite
+      16   Serial_TxQueueMaintenance
+        16   -- Indirect call
+        16   -> OSA_EnterCritical
+        16   -> OSA_ExitCritical
+        16   -> OSA_SemaPost
+      24   Serial_WriteInternal
+        24   -> LPUART_DRV_SendData
+        24   -> OSA_EnterCritical
+        24   -> OSA_ExitCritical
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable15
+       4  ??DataTable17
+       4  ??DataTable17_1
+       4  ??DataTable2
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable8
+       4  ??DataTable9
+       4  ??DataTable9_1
+      12  ?_0
+      12  LPUART_IRQHandler
+     132  NVIC_SetPriority
+       4  SMGR_stack
+       4  SMGR_task_handler
+     246  SerialManagerTask
+     114  SerialManager_Init
+      98  SerialManager_RxNotify
+     148  SerialManager_TxNotify
+     258  Serial_AsyncWrite
+      82  Serial_DisableLowPowerWakeup
+     100  Serial_EnableLowPowerWakeup
+      56  Serial_GetInterfaceId
+     310  Serial_InitInterface
+      64  Serial_IsWakeUpSource
+      44  Serial_LpuartRxCb
+      42  Serial_LpuartTxCb
+      66  Serial_Print
+      86  Serial_PrintDec
+     220  Serial_PrintHex
+     182  Serial_Read
+     140  Serial_RxBufferByteCount
+      86  Serial_SetBaudRate
+      46  Serial_SetRxCallBack
+      16  Serial_SyncTxCallback
+     110  Serial_SyncWrite
+     194  Serial_TxQueueMaintenance
+     246  Serial_WriteInternal
+       4  gSerialManagerTaskId
+       1  initialized
+      48  mDrvData
+       8  mSMTaskEvent
+     372  mSerials
+      12  mSmgr_LpuartCfg
+
+ 
+   441 bytes in section .bss
+    24 bytes in section .rodata
+ 3 198 bytes in section .text
+ 
+ 3 198 bytes of CODE  memory
+    24 bytes of CONST memory
+   441 bytes of DATA  memory
+
+Errors: none
+Warnings: none

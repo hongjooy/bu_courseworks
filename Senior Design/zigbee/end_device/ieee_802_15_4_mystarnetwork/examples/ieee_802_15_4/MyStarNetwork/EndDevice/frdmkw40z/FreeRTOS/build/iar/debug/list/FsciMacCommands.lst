@@ -1,0 +1,2988 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:33
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\FsciMacCommands.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\FsciMacCommands.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\FsciMacCommands.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FsciMacCommands.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\ieee_802_15_4\Source\App\FsciMacCommands.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file FsciMacCommands.c
+      6          * This is a source file which implements the FSCI commands received from the host.
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /************************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ************************************************************************************/
+     39          #include "EmbeddedTypes.h"
+     40          #include "FunctionLib.h"
+     41          #include "MemManager.h"
+     42          
+     43          #if gFsciIncluded_c
+     44          #include "FsciInterface.h"
+     45          #include "FsciCommands.h"
+     46          #include "FsciMacCommands.h"
+     47          #include "FsciCommunication.h"
+     48          #endif
+     49          
+     50          #include "MacInterface.h"
+     51          #if !gFsciHostMacSupport_c
+     52          #include "PhyInterface.h"
+     53          #endif
+     54          
+     55          #include "fsl_os_abstraction.h"
+     56          
+     57          /************************************************************************************
+     58          *************************************************************************************
+     59          * Private macros
+     60          *************************************************************************************
+     61          ************************************************************************************/
+     62          
+     63          
+     64          /************************************************************************************
+     65          *************************************************************************************
+     66          * Private prototypes
+     67          *************************************************************************************
+     68          ************************************************************************************/
+     69          #if !gFsciHostMacSupport_c 
+     70          extern uint16_t mlmeGetSizeOfPIB(pibId_t  pib);
+     71          #endif
+     72          
+     73          void fsciMlmeAsyncReqHandler(void *pData, void* param, uint32_t interfaceId);
+     74          
+     75          /************************************************************************************
+     76          *************************************************************************************
+     77          * Private type definitions
+     78          *************************************************************************************
+     79          ************************************************************************************/
+     80          
+     81          /************************************************************************************
+     82          *************************************************************************************
+     83          * Public memory declarations
+     84          *************************************************************************************
+     85          ************************************************************************************/
+     86          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+     87          uint8_t fsciToMacBinding[gMacInstancesCnt_c];
+     88          #endif
+     89          
+     90          #if gFsciIncluded_c && gFsciHostMacSupport_c
+     91          FsciHostMacInterface_t fsciHostMacInterfaces[gMacInstancesCnt_c];
+     92          
+     93          extern clientPacket_t *pFsciHostSyncRsp;
+     94          extern uint8_t         gFsciHostWaitingSyncRsp;
+     95          extern opGroup_t       gFsciHostWaitingOpGroup;
+     96          extern opCode_t        gFsciHostWaitingOpCode;
+     97          
+     98          #if gFsciHostSyncUseEvent_c
+     99          extern event_t         gFsciHostSyncRspEvent;
+    100          #endif
+    101          #endif
+    102          
+    103          /************************************************************************************
+    104          *************************************************************************************
+    105          * Private memory declarations
+    106          *************************************************************************************
+    107          ************************************************************************************/
+    108          
+    109          /************************************************************************************
+    110          *************************************************************************************
+    111          * Public functions
+    112          *************************************************************************************
+    113          ************************************************************************************/
+    114          
+    115          /*! *********************************************************************************
+    116          * \brief   This function registers the MAC SAP monitors and commands handlers
+    117          *
+    118          * \param[in] interfaceId
+    119          *
+    120          * \return None.
+    121          *
+    122          * \pre
+    123          *
+    124          * \post
+    125          *
+    126          * \remarks
+    127          *
+    128          ********************************************************************************** */
+    129          void fsciRegisterMac( instanceId_t macInterface, uint32_t fsciInterfaceId )
+    130          {
+    131          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+    132              
+    133              if( macInterface >= gMacInstancesCnt_c )
+    134                  return;
+    135          
+    136              /* Bind MAC instance to interfaceId */
+    137              fsciToMacBinding[macInterface] = fsciInterfaceId;
+    138          
+    139              /* Register Handler for requests coming from the serial interface */
+    140              FSCI_RegisterOpGroup( gFSCI_NwkMlmeOpcodeGroup_c, 
+    141                                    gFsciMonitorMode_c, 
+    142                                    fsciMlmeReqHandler, 
+    143                                    NULL, 
+    144                                    fsciInterfaceId );
+    145          
+    146              FSCI_RegisterOpGroup( gFSCI_NwkMcpsOpcodeGroup_c, 
+    147                                    gFsciMonitorMode_c, 
+    148                                    fsciMcpsReqHandler, 
+    149                                    NULL, 
+    150                                    fsciInterfaceId );
+    151          
+    152              /* Register SAP Monitor Handler */
+    153              FSCI_RegisterOpGroup( gFSCI_McpsSapId_c,
+    154                                    gFsciMonitorMode_c,
+    155                                    McpsSapMonitor,
+    156                                    NULL,
+    157                                    fsciInterfaceId );
+    158          
+    159              FSCI_RegisterOpGroup( gFSCI_MlmeSapId_c,
+    160                                    gFsciMonitorMode_c,
+    161                                    MlmeSapMonitor,
+    162                                    NULL,
+    163                                    fsciInterfaceId );
+    164          #endif /* gFsciIncluded_c && gFSCI_IncludeMacCommands_c */
+    165          }
+    166          
+    167          /*! *********************************************************************************
+    168          * \brief   This function registers the MAC to Host SAP monitors and commands handlers
+    169          *
+    170          * \param[in] interfaceId
+    171          *
+    172          * \return None.
+    173          *
+    174          * \pre
+    175          *
+    176          * \post
+    177          *
+    178          * \remarks
+    179          *
+    180          ********************************************************************************** */
+    181          void fsciRegisterMacToHost( instanceId_t macInterface, uint32_t fsciInterfaceId )
+    182          {
+    183          #if gFsciIncluded_c && gFsciHostMacSupport_c
+    184              
+    185              if( macInterface >= gMacInstancesCnt_c )
+    186                  return;
+    187          
+    188              /* Bind MAC instance to interfaceId */
+    189              fsciHostMacInterfaces[macInterface].fsciInterfaceId = fsciInterfaceId;
+    190          
+    191              /* Register Handler for confirms and indications coming from the serial interface */
+    192              FSCI_RegisterOpGroup( gFSCI_MlmeNwkOpcodeGroup_c, 
+    193                                    gFsciMonitorMode_c, 
+    194                                    fsciMlmeCnfHandler, 
+    195                                    NULL, 
+    196                                    fsciInterfaceId );
+    197          
+    198              FSCI_RegisterOpGroup( gFSCI_McpsNwkOpcodeGroup_c, 
+    199                                    gFsciMonitorMode_c, 
+    200                                    fsciMcpsCnfHandler, 
+    201                                    NULL, 
+    202                                    fsciInterfaceId );
+    203          
+    204              /* Register SAP Monitor Handler */
+    205              FSCI_RegisterOpGroup( gFSCI_McpsSapId_c,
+    206                                    gFsciMonitorMode_c,
+    207                                    McpsSapMonitor,
+    208                                    NULL,
+    209                                    fsciInterfaceId );
+    210          
+    211              FSCI_RegisterOpGroup( gFSCI_MlmeSapId_c,
+    212                                    gFsciMonitorMode_c,
+    213                                    MlmeSapMonitor,
+    214                                    NULL,
+    215                                    fsciInterfaceId );
+    216          #endif /* gFsciIncluded_c && gFsciHostMacSupport_c */
+    217          }
+    218          
+    219          void MAC_Monitor(uint8_t sapId, void *pMsg, void* param, uint8_t instanceId)
+    220          {
+    221          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+    222             if(gFsciSAPHook_c == FSCI_Monitor(sapId, pMsg, param, fsciGetMacInterfaceId(instanceId)) )
+    223             {
+    224                 
+    225             }
+    226          #endif
+    227          }
+    228          
+    229          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+    230          /*! *********************************************************************************
+    231          * \brief   This is the handler function for the MCPS Requests received over the
+    232                     serial interface
+    233          *
+    234          * \param[in] pData pointer to data location
+    235          * \param[in] interfaceId
+    236          *
+    237          * \return None.
+    238          *
+    239          * \pre
+    240          *
+    241          * \post
+    242          *
+    243          * \remarks
+    244          *
+    245          ********************************************************************************** */
+    246          void fsciMcpsReqHandler(void *pData, void* param, uint32_t interfaceId)
+    247          {
+    248          #define pClientPacket ((clientPacket_t*)pData)
+    249              nwkToMcpsMessage_t *pMcpsReq;
+    250             
+    251              if( mFsciNwkMcpsDataReq_c == pClientPacket->structured.header.opCode )
+    252              {
+    253                  pMcpsReq = MEM_BufferAlloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+    254              }
+    255          #if gMacCoordinatorCapability_d
+    256              else if( mFsciNwkMcpsPurgeReq_c == pClientPacket->structured.header.opCode )
+    257              {
+    258                  pMcpsReq = MEM_BufferAlloc(sizeof(nwkToMcpsMessage_t));
+    259              }
+    260          #endif
+    261              else
+    262              {
+    263                  MEM_BufferFree( pData );
+    264                  FSCI_Error( gFsciUnknownOpcode_c, interfaceId );
+    265                  return;
+    266              }
+    267          
+    268              if( NULL == pMcpsReq )
+    269              {
+    270                  MEM_BufferFree( pData );
+    271                  FSCI_Error( gFsciOutOfMessages_c, interfaceId );
+    272                  return;
+    273              }
+    274          
+    275              switch( pClientPacket->structured.header.opCode ) {
+    276              case mFsciNwkMcpsDataReq_c:
+    277                  {
+    278                      uint8_t *p = &pClientPacket->structured.payload[0];
+    279          
+    280                      pMcpsReq->msgType = gMcpsDataReq_c;
+    281          
+    282                      FLib_MemCpy( &pMcpsReq->msgData.dataReq.dstAddr, p,
+    283                                  sizeof(pMcpsReq->msgData.dataReq.dstAddr) );
+    284                      p += sizeof(pMcpsReq->msgData.dataReq.dstAddr);
+    285          
+    286                      FLib_MemCpy( &pMcpsReq->msgData.dataReq.dstPanId, p,
+    287                                   sizeof(pMcpsReq->msgData.dataReq.dstPanId));
+    288                      p += sizeof(pMcpsReq->msgData.dataReq.dstPanId);
+    289          
+    290                      pMcpsReq->msgData.dataReq.dstAddrMode   = (addrModeType_t)*p++;
+    291          
+    292                      FLib_MemCpy( &pMcpsReq->msgData.dataReq.srcAddr, p,
+    293                                  sizeof(pMcpsReq->msgData.dataReq.srcAddr) );
+    294                      p += sizeof(pMcpsReq->msgData.dataReq.srcAddr);
+    295          
+    296                      FLib_MemCpy( &pMcpsReq->msgData.dataReq.srcPanId, p,
+    297                                   sizeof(pMcpsReq->msgData.dataReq.srcPanId));
+    298                      p += sizeof(pMcpsReq->msgData.dataReq.srcPanId);
+    299          
+    300                      pMcpsReq->msgData.dataReq.srcAddrMode   = (addrModeType_t)*p++;
+    301                      pMcpsReq->msgData.dataReq.msduLength    = *p++;
+    302                      pMcpsReq->msgData.dataReq.msduHandle    = *p++;
+    303                      pMcpsReq->msgData.dataReq.txOptions     = (macTxOptions_t)*p++;
+    304          #if gMacSecurityEnable_d
+    305                      pMcpsReq->msgData.dataReq.securityLevel = (macSecurityLevel_t)*p++;
+    306                      pMcpsReq->msgData.dataReq.keyIdMode     = (keyIdModeType_t)*p++;
+    307          
+    308                      FLib_MemCpy(&pMcpsReq->msgData.dataReq.keySource, p,
+    309                                  sizeof(pMcpsReq->msgData.dataReq.keySource));
+    310                      p += sizeof(pMcpsReq->msgData.dataReq.keySource);
+    311                      pMcpsReq->msgData.dataReq.keyIndex = *p++;
+    312          #else
+    313                      pMcpsReq->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+    314                      p += 11;
+    315          #endif
+    316                      pMcpsReq->msgData.dataReq.pMsdu = (uint8_t*)&pMcpsReq->msgData.dataReq.pMsdu +
+    317                                  sizeof(pMcpsReq->msgData.dataReq.pMsdu);
+    318                      FLib_MemCpy(pMcpsReq->msgData.dataReq.pMsdu, p,
+    319                                  pMcpsReq->msgData.dataReq.msduLength);
+    320                  }
+    321                  break;
+    322          
+    323          #if gMacCoordinatorCapability_d
+    324              case mFsciNwkMcpsPurgeReq_c:
+    325                  pMcpsReq->msgType = gMcpsPurgeReq_c;
+    326                  pMcpsReq->msgData.purgeReq.msduHandle = pClientPacket->structured.payload[0];
+    327                  break;
+    328          #endif
+    329              }
+    330          
+    331              /* To reduce peak memory usage, free the FSCI request before calling MAC SAPs */
+    332              MEM_BufferFree( pData );
+    333              NWK_MCPS_SapHandler( pMcpsReq, fsciGetMacInstanceId(interfaceId) );
+    334          #undef pClientPacket
+    335          }
+    336          
+    337          #if gFsciIncluded_c && gFsciHostMacSupport_c
+    338          /*! *********************************************************************************
+    339          * \brief   This is the handler function for the MCPS Confirms and indications 
+    340                     received over the serial interface
+    341          *
+    342          * \param[in] pData pointer to data location
+    343          * \param[in] interfaceId
+    344          *
+    345          * \return None.
+    346          *
+    347          * \pre
+    348          *
+    349          * \post
+    350          *
+    351          * \remarks
+    352          *
+    353          ********************************************************************************** */
+    354          void fsciMcpsCnfHandler(void *pData, void* param, uint32_t interfaceId)
+    355          {
+    356          #define pClientPacket ((clientPacket_t*)pData)
+    357              mcpsToNwkMessage_t *pMcpsCnf;
+    358              uint8_t            *p = &pClientPacket->structured.payload[0];
+    359              uint8_t             macInstance;
+    360              uint8_t             fsciInterface;
+    361          
+    362              switch( pClientPacket->structured.header.opCode ) {
+    363              case mFsciMcpsNwkDataCnf_c:
+    364          #if gMacCoordinatorCapability_d
+    365              case mFsciMcpsNwkPurgeCnf_c:
+    366          #endif
+    367                  pMcpsCnf = MEM_BufferAlloc(sizeof(mcpsToNwkMessage_t));
+    368                  break;
+    369              case mFsciMcpsNwkDataInd_c:
+    370          #if gMacUsePromiscuous_d
+    371              case mFsciMcpsNwkPromInd_c:
+    372          #endif
+    373                  pMcpsCnf = MEM_BufferAlloc(sizeof(mcpsToNwkMessage_t) + gMaxPHYPacketSize_c);
+    374                  break;
+    375              default:
+    376                  MEM_BufferFree( pData );
+    377                  FSCI_Error( gFsciUnknownOpcode_c, interfaceId );
+    378                  return;        
+    379              }
+    380          
+    381              if( NULL == pMcpsCnf )
+    382              {
+    383                  MEM_BufferFree( pData );
+    384                  FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    385                  return;
+    386              }
+    387              
+    388              switch( pClientPacket->structured.header.opCode ) {
+    389              case mFsciMcpsNwkDataCnf_c:
+    390                  pMcpsCnf->msgType = gMcpsDataCnf_c;
+    391                  pMcpsCnf->msgData.dataCnf.msduHandle = *p++;
+    392                  pMcpsCnf->msgData.dataCnf.status = (resultType_t)*p++;
+    393                  break;
+    394          
+    395          #if gMacCoordinatorCapability_d
+    396              case mFsciMcpsNwkPurgeCnf_c:
+    397                  pMcpsCnf->msgType = gMcpsPurgeCnf_c;
+    398                  pMcpsCnf->msgData.dataCnf.msduHandle = *p++;
+    399                  pMcpsCnf->msgData.dataCnf.status = (resultType_t)*p++;        
+    400                  break;
+    401          #endif
+    402          
+    403              case mFsciMcpsNwkDataInd_c:
+    404                  pMcpsCnf->msgType = gMcpsDataInd_c;
+    405                  
+    406                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.dstAddr, p,
+    407                              sizeof(pMcpsCnf->msgData.dataInd.dstAddr));
+    408                  p += sizeof(pMcpsCnf->msgData.dataInd.dstAddr);
+    409                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.dstPanId, p,
+    410                              sizeof(pMcpsCnf->msgData.dataInd.dstPanId));
+    411                  p += sizeof(pMcpsCnf->msgData.dataInd.dstPanId);
+    412                  pMcpsCnf->msgData.dataInd.dstAddrMode = (addrModeType_t)*p++;
+    413                    
+    414                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.srcAddr, p,
+    415                              sizeof(pMcpsCnf->msgData.dataInd.srcAddr));
+    416                  p += sizeof(pMcpsCnf->msgData.dataInd.srcAddr);
+    417                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.srcPanId, p,
+    418                              sizeof(pMcpsCnf->msgData.dataInd.srcPanId));
+    419                  p += sizeof(pMcpsCnf->msgData.dataInd.srcPanId);
+    420                  pMcpsCnf->msgData.dataInd.srcAddrMode = (addrModeType_t)*p++;
+    421              
+    422                  pMcpsCnf->msgData.dataInd.msduLength = *p++;
+    423                  pMcpsCnf->msgData.dataInd.mpduLinkQuality = *p++;
+    424                  pMcpsCnf->msgData.dataInd.dsn = *p++;
+    425                  
+    426                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.timestamp, p,
+    427                              sizeof(pMcpsCnf->msgData.dataInd.timestamp));
+    428                  p += sizeof(pMcpsCnf->msgData.dataInd.timestamp);
+    429          #if gMacSecurityEnable_d
+    430                  pMcpsCnf->msgData.dataInd.securityLevel = (macSecurityLevel_t)*p++;
+    431                  pMcpsCnf->msgData.dataInd.keyIdMode = (keyIdModeType_t)*p++;
+    432                  FLib_MemCpy(&pMcpsCnf->msgData.dataInd.keySource, p,
+    433                              sizeof(pMcpsCnf->msgData.dataInd.keySource));
+    434                  p += sizeof(pMcpsCnf->msgData.dataInd.keySource);
+    435                  pMcpsCnf->msgData.dataInd.keyIndex = *p++;
+    436          #else
+    437                  pMcpsCnf->msgData.dataInd.securityLevel = gMacSecurityNone_c;
+    438                  p += 11;
+    439          #endif
+    440                  pMcpsCnf->msgData.dataInd.pMsdu = (uint8_t*)&pMcpsCnf->msgData.dataInd.pMsdu + 
+    441                                                    sizeof(pMcpsCnf->msgData.dataInd.pMsdu);
+    442                  FLib_MemCpy(pMcpsCnf->msgData.dataInd.pMsdu, p,
+    443                              pMcpsCnf->msgData.dataInd.msduLength);
+    444                  break;
+    445          
+    446          #if gMacUsePromiscuous_d
+    447              case mFsciMcpsNwkPromInd_c:
+    448                  pMcpsCnf->msgType = gMcpsPromInd_c;
+    449                  pMcpsCnf->msgData.promInd.mpduLinkQuality = *p++;
+    450                  
+    451                  FLib_MemCpy(&pMcpsCnf->msgData.promInd.timeStamp, p,
+    452                                  sizeof(pMcpsCnf->msgData.promInd.timeStamp));
+    453                  p += sizeof(pMcpsCnf->msgData.promInd.timeStamp);
+    454                  
+    455                  pMcpsCnf->msgData.promInd.msduLength = *p++;
+    456                  pMcpsCnf->msgData.promInd.pMsdu = (uint8_t*)&pMcpsCnf->msgData.promInd.pMsdu + 
+    457                                                    sizeof(pMcpsCnf->msgData.promInd.pMsdu);
+    458                  FLib_MemCpy(pMcpsCnf->msgData.promInd.pMsdu, p,
+    459                              pMcpsCnf->msgData.promInd.msduLength);
+    460                  break;
+    461          #endif
+    462              }
+    463          
+    464              macInstance = fsciHostGetMacInstanceId(interfaceId);
+    465              fsciInterface = fsciGetMacInterfaceId(macInstance);
+    466              
+    467              /* Check if there is another FSCI interface for this MAC instance 
+    468                 and forwared FSCI message received on FSCI Host interface */
+    469              if( mFsciInvalidInterface_c != fsciInterface )
+    470              {
+    471                  FSCI_transmitFormatedPacket(pData, fsciInterface);
+    472              }
+    473              else
+    474              {
+    475                  MEM_BufferFree(pData);
+    476              }
+    477          
+    478              fsciHostMacInterfaces[macInstance].pfMCPS_NWK_SapHandler(pMcpsCnf, fsciHostMacInterfaces[macInstance].upperLayerId);
+    479          #undef pClientPacket    
+    480          }
+    481          
+    482          /*! *********************************************************************************
+    483          * \brief   This is the handler function for the MLME Confirms and indications 
+    484                     received over the serial interface
+    485          *
+    486          * \param[in] pData pointer to data location
+    487          * \param[in] interfaceId
+    488          *
+    489          * \return None.
+    490          *
+    491          * \pre
+    492          *
+    493          * \post
+    494          *
+    495          * \remarks
+    496          *
+    497          ********************************************************************************** */
+    498          void fsciMlmeCnfHandler(void *pData, void* param, uint32_t interfaceId)
+    499          {
+    500          #define pClientPacket ((clientPacket_t*)pData)
+    501              nwkMessage_t *pMlmeCnf;
+    502              uint8_t      *p = &pClientPacket->structured.payload[0];
+    503              uint8_t       macInstance;
+    504              uint8_t       fsciInterface;
+    505              
+    506              switch( pClientPacket->structured.header.opCode ) {
+    507          #if gMacUseAssociation_d
+    508          #if gMacCoordinatorCapability_d
+    509              case mFsciMlmeNwkAssociateInd_c:
+    510          #endif
+    511              case mFsciMlmeNwkDisassociateInd_c:
+    512              case mFsciMlmeNwkAssociateCnf_c:
+    513              case mFsciMlmeNwkDisassociateCnf_c:
+    514          #endif
+    515              //case mFsciMlmeNwkGetCnf_c:
+    516          #if gGtsSupport_d
+    517              case mFsciMlmeNwkGtsInd_c:
+    518              case mFsciMlmeNwkGtsCnf_c:
+    519          #endif
+    520          #if gMacCoordinatorCapability_d
+    521              case mFsciMlmeNwkOrphanInd_c:
+    522          #endif
+    523              //case mFsciMlmwNwkResetCnf_c:
+    524          #if gMacUseRxEnableRequest_d
+    525              case mFsciMlmeNwkRxEnableCnf_c:
+    526          #endif
+    527              case mFsciMlmeNwkScanCnf_c:
+    528              case mFsciMlmeNwkCommStatusInd_c:
+    529              //case mFsciMlmeNwkSetCnf_c:
+    530          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+    531              case mFsciMlmeNwkStartCnf_c:
+    532          #endif
+    533              case mFsciMlmeNwkSyncLossInd_c:
+    534              case mFsciMlmeNwkPollCnf_c:
+    535              //case mFsciMlmeNwkErrorCnf_c:
+    536              //case mFsciMlmeNwkBeaconStartInd_c:
+    537              //case mFsciMlmeNwkMaintenanceScanCnf_c:
+    538          #if gMacCoordinatorCapability_d
+    539              case mFsciMlmeNwkPollNotifyInd_c:
+    540          #endif
+    541          #if gTschSupport_d
+    542              //case mFsciMlmeNwkSetSlotframeCnf_c:
+    543              //case mFsciMlmeNwkSetLinkCnf_c:
+    544              //case mFsciMlmeNwkTschModeCnf_c:
+    545              //case mFsciMlmeNwkKeepAliveCnf_c:
+    546              case mFsciMlmeNwkBeaconCnf_c:
+    547                  pMlmeCnf = MEM_BufferAlloc(sizeof(nwkMessage_t));
+    548                  break;
+    549          #endif
+    550              case mFsciMlmeNwkBeaconNotifyInd_c:
+    551                  pMlmeCnf = MEM_BufferAlloc(sizeof(nwkMessage_t) + sizeof(panDescriptor_t));
+    552                  if( NULL == pMlmeCnf )
+    553                  {
+    554                      MEM_BufferFree( pData );
+    555                      FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    556                      return;
+    557                  }
+    558                  /* Allocate buffer for beacon payload separately, always freed later */
+    559                  pMlmeCnf->msgData.beaconNotifyInd.pBufferRoot = MEM_BufferAlloc(gMaxPHYPacketSize_c);
+    560                  if( NULL == pMlmeCnf->msgData.beaconNotifyInd.pBufferRoot )
+    561                  {
+    562                      MEM_BufferFree( pData );
+    563                      FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    564                      return;
+    565                  }
+    566                  break;        
+    567              default:
+    568                  MEM_BufferFree( pData );
+    569                  FSCI_Error( gFsciUnknownOpcode_c, interfaceId );
+    570                  return;        
+    571              }
+    572          
+    573              if( NULL == pMlmeCnf )
+    574              {
+    575                  MEM_BufferFree( pData );
+    576                  FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    577                  return;
+    578              }
+    579              
+    580              switch( pClientPacket->structured.header.opCode ) {
+    581          #if gMacUseAssociation_d
+    582          #if gMacCoordinatorCapability_d
+    583              case mFsciMlmeNwkAssociateInd_c:
+    584                  pMlmeCnf->msgType = gMlmeAssociateInd_c;
+    585                  FLib_MemCpy(&pMlmeCnf->msgData.associateInd.deviceAddress, p, 8);
+    586                  p += 8;
+    587          #if gMacSecurityEnable_d
+    588                  pMlmeCnf->msgData.associateInd.securityLevel = (macSecurityLevel_t)*p++;
+    589                  pMlmeCnf->msgData.associateInd.keyIdMode = (keyIdModeType_t)*p++;
+    590                  FLib_MemCpy(&pMlmeCnf->msgData.associateInd.keySource, p, 8);
+    591                  p += 8;
+    592                  pMlmeCnf->msgData.associateInd.keyIndex = *p++;
+    593          #else
+    594                  pMlmeCnf->msgData.associateInd.securityLevel = gMacSecurityNone_c;
+    595                  p += 11;
+    596          #endif
+    597                  pMlmeCnf->msgData.associateInd.capabilityInfo = (macCapabilityInfo_t)*p++;
+    598                  break;
+    599          #endif
+    600                      
+    601              case mFsciMlmeNwkAssociateCnf_c:
+    602                  pMlmeCnf->msgType = gMlmeAssociateCnf_c;
+    603                  FLib_MemCpy(&pMlmeCnf->msgData.associateCnf.assocShortAddress, p, 2);
+    604                  p += 2;
+    605                  pMlmeCnf->msgData.associateCnf.status = (resultType_t)*p++;
+    606          #if gMacSecurityEnable_d
+    607                  pMlmeCnf->msgData.associateCnf.securityLevel = (macSecurityLevel_t)*p++;
+    608                  pMlmeCnf->msgData.associateCnf.keyIdMode = (keyIdModeType_t)*p++;
+    609                  FLib_MemCpy(&pMlmeCnf->msgData.associateCnf.keySource, p, 8);
+    610                  p += 8;
+    611                  pMlmeCnf->msgData.associateCnf.keyIndex = *p++;
+    612          #else
+    613                  pMlmeCnf->msgData.associateCnf.securityLevel = gMacSecurityNone_c;
+    614          #endif
+    615                  break;
+    616          
+    617              case mFsciMlmeNwkDisassociateInd_c:
+    618                  pMlmeCnf->msgType = gMlmeDisassociateInd_c;
+    619                  FLib_MemCpy(&pMlmeCnf->msgData.disassociateInd.deviceAddress, p, 8);
+    620                  p += 8;
+    621                  pMlmeCnf->msgData.disassociateInd.disassociateReason = (macDisassociateReason_t)*p++;
+    622          #if gMacSecurityEnable_d
+    623                  pMlmeCnf->msgData.disassociateInd.securityLevel = (macSecurityLevel_t)*p++;
+    624                  pMlmeCnf->msgData.disassociateInd.keyIdMode = (keyIdModeType_t)*p++;
+    625                  FLib_MemCpy(&pMlmeCnf->msgData.disassociateInd.keySource, p, 8);
+    626                  p += 8;
+    627                  pMlmeCnf->msgData.disassociateInd.keyIndex = *p++;
+    628          #else
+    629                  pMlmeCnf->msgData.disassociateInd.securityLevel = gMacSecurityNone_c;
+    630          #endif
+    631                  break;
+    632                  
+    633              case mFsciMlmeNwkDisassociateCnf_c:
+    634                  pMlmeCnf->msgType = gMlmeDisassociateCnf_c;
+    635                  FLib_MemCpy(&pMlmeCnf->msgData.disassociateCnf.deviceAddress, p, 8);
+    636                  p += 8;
+    637                  FLib_MemCpy(&pMlmeCnf->msgData.disassociateCnf.devicePanId, p, 2);
+    638                  p += 2;
+    639                  pMlmeCnf->msgData.disassociateCnf.deviceAddrMode = (addrModeType_t)*p++;
+    640                  pMlmeCnf->msgData.disassociateCnf.status = (resultType_t)*p++;
+    641                  break;
+    642          #endif /* #if gMacUseAssociation_d */
+    643          
+    644              //case mFsciMlmeNwkGetCnf_c:
+    645              //    break;
+    646          
+    647          #if gGtsSupport_d
+    648              case mFsciMlmeNwkGtsInd_c:
+    649                  pMlmeCnf->msgType = gMlmeGtsInd_c;
+    650                  FLib_MemCpy(&pMlmeCnf->msgData.gtsInd.deviceAddress, p, 2);
+    651                  p += 2;        
+    652                  *(uint8_t*)(&pMlmeCnf->msgData.gtsInd.gtsCharacteristics) = *p++;
+    653          #if gMacSecurityEnable_d
+    654                  pMlmeCnf->msgData.gtsInd.securityLevel = (macSecurityLevel_t)*p++;
+    655                  pMlmeCnf->msgData.gtsInd.keyIdMode = (keyIdModeType_t)*p++;
+    656                  FLib_MemCpy(&pMlmeCnf->msgData.gtsInd.keySource, p, 8);
+    657                  p += 8;        
+    658                  pMlmeCnf->msgData.gtsInd.keyIndex = *p++;
+    659          #else
+    660                  pMlmeCnf->msgData.gtsInd.securityLevel = gMacSecurityNone_c;
+    661          #endif
+    662                  break;
+    663                  
+    664              case mFsciMlmeNwkGtsCnf_c:
+    665                  pMlmeCnf->msgType = gMlmeGtsCnf_c;
+    666                  pMlmeCnf->msgData.gtsCnf.status = (resultType_t)*p++;
+    667                  *(uint8_t*)(&pMlmeCnf->msgData.gtsCnf.gtsCharacteristics) = *p++;
+    668                  break;
+    669          #endif
+    670          
+    671          #if gMacCoordinatorCapability_d
+    672              case mFsciMlmeNwkOrphanInd_c:
+    673                  pMlmeCnf->msgType = gMlmeOrphanInd_c;
+    674                  FLib_MemCpy(&pMlmeCnf->msgData.orphanInd.orphanAddress, p, 8);
+    675                  p += 8;         
+    676          #if gMacSecurityEnable_d
+    677                  pMlmeCnf->msgData.orphanInd.securityLevel = (macSecurityLevel_t)*p++;
+    678                  pMlmeCnf->msgData.orphanInd.keyIdMode = (keyIdModeType_t)*p++;
+    679                  FLib_MemCpy(&pMlmeCnf->msgData.orphanInd.keySource, p, 8);
+    680                  p += 8;        
+    681                  pMlmeCnf->msgData.orphanInd.keyIndex = *p++;
+    682          #else
+    683                  pMlmeCnf->msgData.orphanInd.securityLevel = gMacSecurityNone_c;
+    684          #endif
+    685                  break;
+    686          #endif
+    687                  
+    688          //    case mFsciMlmwNwkResetCnf_c:
+    689          //        break;
+    690          #if gMacUseRxEnableRequest_d
+    691              case mFsciMlmeNwkRxEnableCnf_c:
+    692                  pMlmeCnf->msgType = gMlmeRxEnableCnf_c;
+    693                  pMlmeCnf->msgData.rxEnableCnf.status = (resultType_t)*p++;
+    694                  break;
+    695          #endif
+    696                  
+    697              case mFsciMlmeNwkCommStatusInd_c:
+    698                  pMlmeCnf->msgType = gMlmeCommStatusInd_c;
+    699                  FLib_MemCpy(&pMlmeCnf->msgData.commStatusInd.srcAddress, p, 8);
+    700                  p += 8;
+    701                  FLib_MemCpy(&pMlmeCnf->msgData.commStatusInd.panId, p, 2);
+    702                  p += 2;         
+    703                  pMlmeCnf->msgData.commStatusInd.srcAddrMode = (addrModeType_t)*p++;
+    704                  FLib_MemCpy(&pMlmeCnf->msgData.commStatusInd.destAddress, p, 8);
+    705                  p += 8;
+    706                  pMlmeCnf->msgData.commStatusInd.destAddrMode = (addrModeType_t)*p++;
+    707                  pMlmeCnf->msgData.commStatusInd.status = (resultType_t)*p++;
+    708          #if gMacSecurityEnable_d
+    709                  pMlmeCnf->msgData.commStatusInd.securityLevel = (macSecurityLevel_t)*p++;
+    710                  pMlmeCnf->msgData.commStatusInd.keyIdMode = (keyIdModeType_t)*p++;
+    711                  FLib_MemCpy(&pMlmeCnf->msgData.commStatusInd.keySource, p, 8);
+    712                  p += 8;
+    713                  pMlmeCnf->msgData.commStatusInd.keyIndex = *p++;
+    714          #else
+    715                  pMlmeCnf->msgData.commStatusInd.securityLevel = gMacSecurityNone_c;
+    716          #endif
+    717                  break;
+    718                  
+    719              //case mFsciMlmeNwkSetCnf_c:
+    720              //    break;
+    721          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+    722              case mFsciMlmeNwkStartCnf_c:
+    723                  pMlmeCnf->msgType = gMlmeStartCnf_c;
+    724                  pMlmeCnf->msgData.startCnf.status = (resultType_t)*p++;        
+    725                  break;
+    726          #endif
+    727          
+    728              case mFsciMlmeNwkSyncLossInd_c:
+    729                  pMlmeCnf->msgType = gMlmeSyncLossInd_c;
+    730                  pMlmeCnf->msgData.syncLossInd.lossReason = (resultType_t)*p++;         
+    731                  FLib_MemCpy(&pMlmeCnf->msgData.syncLossInd.panId, p, 2);
+    732                  p += 2;        
+    733                  pMlmeCnf->msgData.syncLossInd.logicalChannel = (logicalChannelId_t)*p++;
+    734          #ifdef gPHY_802_15_4g_d        
+    735                  pMlmeCnf->msgData.syncLossInd.channelPage = gChannelPageId9_c;
+    736          #else
+    737                  pMlmeCnf->msgData.syncLossInd.channelPage = gChannelPageId0_c;
+    738          #endif
+    739          #if gMacSecurityEnable_d
+    740                  pMlmeCnf->msgData.syncLossInd.securityLevel = (macSecurityLevel_t)*p++;
+    741                  pMlmeCnf->msgData.syncLossInd.keyIdMode = (keyIdModeType_t)*p++;
+    742                  FLib_MemCpy(&pMlmeCnf->msgData.syncLossInd.keySource, p, 8);
+    743                  p += 8;
+    744                  pMlmeCnf->msgData.syncLossInd.keyIndex = *p++;
+    745          #else
+    746                  pMlmeCnf->msgData.syncLossInd.securityLevel = gMacSecurityNone_c;
+    747          #endif
+    748                  break;
+    749                  
+    750              case mFsciMlmeNwkPollCnf_c:
+    751                  pMlmeCnf->msgType = gMlmePollCnf_c;
+    752                  pMlmeCnf->msgData.pollCnf.status = (resultType_t)*p++;          
+    753                  break;
+    754                  
+    755              //case mFsciMlmeNwkErrorCnf_c:
+    756              //    break;
+    757                  
+    758              //case mFsciMlmeNwkBeaconStartInd_c:
+    759              //    break;
+    760                  
+    761              //case mFsciMlmeNwkMaintenanceScanCnf_c:
+    762              //    break;
+    763          
+    764          #if gMacCoordinatorCapability_d        
+    765              case mFsciMlmeNwkPollNotifyInd_c:
+    766                  pMlmeCnf->msgType = gMlmePollNotifyInd_c;
+    767                  pMlmeCnf->msgData.pollNotifyInd.srcAddrMode = (addrModeType_t)*p++; 
+    768                  FLib_MemCpy(&pMlmeCnf->msgData.pollNotifyInd.srcAddr, p, 8);
+    769                  p += 8;
+    770                  FLib_MemCpy(&pMlmeCnf->msgData.pollNotifyInd.srcPanId, p, 2);
+    771                  p += 2;
+    772                  break;
+    773          #endif
+    774          
+    775          #if gTschSupport_d
+    776              //case mFsciMlmeNwkSetSlotframeCnf_c:
+    777              //    break;
+    778                  
+    779              //case mFsciMlmeNwkSetLinkCnf_c:
+    780              //    break;
+    781                  
+    782              //case mFsciMlmeNwkTschModeCnf_c:
+    783              //    break;
+    784                  
+    785              //case mFsciMlmeNwkKeepAliveCnf_c:
+    786              //    break;
+    787              case mFsciMlmeNwkBeaconCnf_c:
+    788                  pMlmeCnf->msgType = gMlmeBeaconCnf_c;
+    789                  pMlmeCnf->msgData.beaconCnf.status = (resultType_t)*p++;
+    790                  break;
+    791          #endif
+    792              case mFsciMlmeNwkBeaconNotifyInd_c:
+    793                  {
+    794                      uint8_t pendAddrSize;
+    795                      
+    796                      pMlmeCnf->msgType = gMlmeBeaconNotifyInd_c;
+    797                      pMlmeCnf->msgData.beaconNotifyInd.bsn = *p++;
+    798                      pMlmeCnf->msgData.beaconNotifyInd.pendAddrSpec = *p++;
+    799                      pMlmeCnf->msgData.beaconNotifyInd.sduLength = *p++;
+    800                      
+    801                      pendAddrSize = 2 * (pMlmeCnf->msgData.beaconNotifyInd.pendAddrSpec & 0x07) +
+    802                                     8 * ((pMlmeCnf->msgData.beaconNotifyInd.pendAddrSpec >> 4) & 0x07);
+    803                      
+    804                      /* Pending address list points at start of pBufferRoot */
+    805                      pMlmeCnf->msgData.beaconNotifyInd.pAddrList = pMlmeCnf->msgData.beaconNotifyInd.pBufferRoot;
+    806                      
+    807                      /* Put pending short and extended addresses at start of pBufferRoot */
+    808                      FLib_MemCpy(pMlmeCnf->msgData.beaconNotifyInd.pAddrList, p, pendAddrSize);
+    809                      p += pendAddrSize;        
+    810          
+    811                      /* PAN descriptor points at the end of the NWK message */
+    812                      pMlmeCnf->msgData.beaconNotifyInd.pPanDescriptor = (panDescriptor_t*)((uint8_t*)pMlmeCnf + sizeof(nwkMessage_t));        
+    813                      /* Fill PAN descriptor fields all at once as struct is packed */
+    814                      FLib_MemCpy(pMlmeCnf->msgData.beaconNotifyInd.pPanDescriptor, p, 
+    815                                  sizeof(panDescriptor_t) );
+    816                      p += sizeof(panDescriptor_t);
+    817                      
+    818                      /* Beacon payload points in pBufferRoot at the end of the pending address list */
+    819                      pMlmeCnf->msgData.beaconNotifyInd.pSdu = (uint8_t*)pMlmeCnf->msgData.beaconNotifyInd.pBufferRoot + pendAddrSize;
+    820                      /* Copy beacon payload */
+    821                      FLib_MemCpy(pMlmeCnf->msgData.beaconNotifyInd.pSdu, p, 
+    822                                  pMlmeCnf->msgData.beaconNotifyInd.sduLength );
+    823                      p += pMlmeCnf->msgData.beaconNotifyInd.sduLength;
+    824          
+    825          #if gTschSupport_d            
+    826                      pMlmeCnf->msgData.beaconNotifyInd.ebsn = *p++;
+    827                      pMlmeCnf->msgData.beaconNotifyInd.beaconType = (beaconType_t)*p++;
+    828          #endif
+    829                  }    
+    830                  break;
+    831                  
+    832              case mFsciMlmeNwkScanCnf_c:
+    833                  pMlmeCnf->msgType = gMlmeScanCnf_c;
+    834                  pMlmeCnf->msgData.scanCnf.status = (resultType_t)*p++;
+    835                  pMlmeCnf->msgData.scanCnf.scanType = (macScanType_t)*p++;
+    836                  pMlmeCnf->msgData.scanCnf.resultListSize = *p++;
+    837                  FLib_MemCpy(&pMlmeCnf->msgData.scanCnf.unscannedChannels, p, sizeof(channelMask_t));
+    838                  p += sizeof(channelMask_t);
+    839                  pMlmeCnf->msgData.scanCnf.resList.pEnergyDetectList = NULL;
+    840          
+    841                  if( pMlmeCnf->msgData.scanCnf.resultListSize )
+    842                  {
+    843                      switch( pMlmeCnf->msgData.scanCnf.scanType ){
+    844                      case gScanModeED_c:
+    845                      case gScanModeFastED_c:
+    846                          /* Allocate buffer for ED list */
+    847                          pMlmeCnf->msgData.scanCnf.resList.pEnergyDetectList = MEM_BufferAlloc(pMlmeCnf->msgData.scanCnf.resultListSize);
+    848                          if( NULL == pMlmeCnf->msgData.scanCnf.resList.pEnergyDetectList )
+    849                          {
+    850                              /* Free serial buffer and previously allocated NWK message */
+    851                              MEM_BufferFree( pData );
+    852                              MEM_BufferFree( pMlmeCnf );
+    853                              FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    854                              return;
+    855                          }
+    856                          
+    857                          FLib_MemCpy(pMlmeCnf->msgData.scanCnf.resList.pEnergyDetectList, p, 
+    858                                      pMlmeCnf->msgData.scanCnf.resultListSize);
+    859                          p += pMlmeCnf->msgData.scanCnf.resultListSize;              
+    860                          break;
+    861                      case gScanModeActive_c:
+    862                      case gScanModePassive_c:
+    863                          /* Allocate buffer for first PAN descriptor block */
+    864                          pMlmeCnf->msgData.scanCnf.resList.pPanDescriptorBlockList = (panDescriptorBlock_t*)MEM_BufferAlloc(sizeof(panDescriptorBlock_t));
+    865                          if( NULL == pMlmeCnf->msgData.scanCnf.resList.pPanDescriptorBlockList )
+    866                          {
+    867                              /* Free serial buffer and previously allocated NWK message */
+    868                              MEM_BufferFree( pData );
+    869                              MEM_BufferFree( pMlmeCnf );
+    870                              FSCI_Error( gFsciOutOfMessages_c, interfaceId );     
+    871                              return;
+    872                          }                
+    873                          else
+    874                          {
+    875                              panDescriptorBlock_t *pCrtPDBlock = pMlmeCnf->msgData.scanCnf.resList.pPanDescriptorBlockList;
+    876                              panDescriptorBlock_t *pNewPDBlock = NULL;
+    877                              
+    878                              pCrtPDBlock->panDescriptorCount = 0;
+    879                              pCrtPDBlock->pNext = NULL;
+    880                              
+    881                              for( uint32_t resIdx =0; resIdx<pMlmeCnf->msgData.scanCnf.resultListSize; resIdx++ )
+    882                              {
+    883                                  /* Allocate a new block if current one is full */
+    884                                  if( pCrtPDBlock->panDescriptorCount >= gScanResultsPerBlock_c )
+    885                                  {
+    886                                      pNewPDBlock = (panDescriptorBlock_t*)MEM_BufferAlloc(sizeof(panDescriptorBlock_t));
+    887                                      if( NULL == pNewPDBlock )
+    888                                      {
+    889                                          /* Update number of results and stop parsing serial message */
+    890                                          pMlmeCnf->msgData.scanCnf.resultListSize = resIdx;
+    891                                          break;
+    892                                      }
+    893                                      else
+    894                                      {
+    895                                          pNewPDBlock->panDescriptorCount = 0;
+    896                                          pNewPDBlock->pNext = NULL;
+    897          
+    898                                          pCrtPDBlock->pNext = pNewPDBlock;
+    899                                          pCrtPDBlock = pNewPDBlock;
+    900                                      } 
+    901                                  }
+    902                                  
+    903                                  /* Record PanDescriptor */
+    904                                  FLib_MemCpy(&pCrtPDBlock->panDescriptorList[pCrtPDBlock->panDescriptorCount], p, 
+    905                                              sizeof(panDescriptor_t));
+    906                                  p += sizeof(panDescriptor_t);
+    907                                  pCrtPDBlock->panDescriptorCount++;
+    908                              }
+    909                          }
+    910                          break;
+    911                      }
+    912                  }
+    913                  
+    914                  break;       
+    915              }    
+    916              
+    917              macInstance = fsciHostGetMacInstanceId(interfaceId);
+    918              fsciInterface = fsciGetMacInterfaceId(macInstance);
+    919              
+    920              /* Check if there is another FSCI interface for this MAC instance 
+    921                 and forwared FSCI message received on FSCI Host interface */
+    922              if( mFsciInvalidInterface_c != fsciInterface )
+    923              {
+    924                  FSCI_transmitFormatedPacket(pData, fsciInterface);
+    925              }
+    926              else
+    927              {
+    928                  MEM_BufferFree(pData);
+    929              }
+    930              
+    931              fsciHostMacInterfaces[macInstance].pfMLME_NWK_SapHandler(pMlmeCnf, fsciHostMacInterfaces[macInstance].upperLayerId);
+    932          #undef pClientPacket      
+    933          }
+    934          
+    935          #endif /* gFsciIncluded_c && gFsciHostMacSupport_c */
+    936          
+    937          /*! *********************************************************************************
+    938          * \brief   This is the handler function for All MLME Requests received over the
+    939                     serial interface
+    940          *
+    941          * \param[in] pData pointer to data location
+    942          * \param[in] param pointer to a parameter to be passed to the function
+    943          * \param[in] interfaceId
+    944          *
+    945          * \return None.
+    946          *
+    947          * \pre
+    948          *
+    949          * \post
+    950          *
+    951          * \remarks
+    952          *
+    953          ********************************************************************************** */
+    954          void fsciMlmeReqHandler(void *pData, void* param, uint32_t interfaceId)
+    955          {
+    956          #define pClientPacket ((clientPacket_t*)pData)
+    957              mlmeMessage_t  mlmeReq;    
+    958              uint8_t        *p = &pClientPacket->structured.payload[0];
+    959          
+    960              switch (pClientPacket->structured.header.opCode) {
+    961              case mFsciNwkMlmeGetReq_c:
+    962                  mlmeReq.msgType = gMlmeGetReq_c;
+    963                  mlmeReq.msgData.getReq.pibAttribute      = pClientPacket->structured.payload[0];
+    964                  mlmeReq.msgData.getReq.pibAttributeIndex = pClientPacket->structured.payload[1];
+    965                  mlmeReq.msgData.getReq.pibAttributeValue = &pClientPacket->structured.payload[2];
+    966                  break;
+    967          
+    968              case mFsciNwkMlmeSetReq_c:
+    969                  mlmeReq.msgType = gMlmeSetReq_c;
+    970                  mlmeReq.msgData.setReq.pibAttribute      = pClientPacket->structured.payload[0];
+    971                  mlmeReq.msgData.setReq.pibAttributeIndex = pClientPacket->structured.payload[1];
+    972                  mlmeReq.msgData.setReq.pibAttributeValue = &pClientPacket->structured.payload[2];
+    973                  break;
+    974          
+    975              case mFsciNwkMlmeResetReq_c:
+    976                  mlmeReq.msgType = gMlmeResetReq_c;
+    977                  mlmeReq.msgData.resetReq.setDefaultPIB = pClientPacket->structured.payload[0];
+    978                  break;
+    979          #if gTschSupport_d
+    980              case mFsciNwkMlmeSetSlotframeReq_c:
+    981                  mlmeReq.msgType = gMlmeSetSlotframeReq_c;
+    982                  mlmeReq.msgData.setSlotframeReq.slotframeHandle = *p++;
+    983                  mlmeReq.msgData.setSlotframeReq.operation = (macSetSlotframeOp_t)*p++;
+    984                  FLib_MemCpy(&mlmeReq.msgData.setSlotframeReq.size, p, sizeof(uint16_t));
+    985                  p += sizeof(uint16_t);
+    986                  break;
+    987                  
+    988              case mFsciNwkMlmeSetLinkReq_c:
+    989                  mlmeReq.msgType = gMlmeSetLinkReq_c;
+    990                  mlmeReq.msgData.setLinkReq.operation = (macSetLinkOp_t)*p++;
+    991                  FLib_MemCpy(&mlmeReq.msgData.setLinkReq.linkHandle, p, sizeof(uint16_t));
+    992                  p += sizeof(uint16_t);       
+    993                  mlmeReq.msgData.setLinkReq.slotframeHandle = *p++;
+    994                  FLib_MemCpy(&mlmeReq.msgData.setLinkReq.timeslot, p, sizeof(uint16_t));
+    995                  p += sizeof(uint16_t);         
+    996                  FLib_MemCpy(&mlmeReq.msgData.setLinkReq.channelOffset, p, sizeof(uint16_t));
+    997                  p += sizeof(uint16_t);
+    998                  FLib_MemCpy(&mlmeReq.msgData.setLinkReq.linkOptions, p, sizeof(uint8_t));
+    999                  p += sizeof(uint8_t);        
+   1000                  mlmeReq.msgData.setLinkReq.linkType = (macLinkType_t)*p++;
+   1001                  FLib_MemCpy(&mlmeReq.msgData.setLinkReq.nodeAddr, p, sizeof(uint16_t));
+   1002                  p += sizeof(uint16_t);    
+   1003                  break;
+   1004          
+   1005              case mFsciNwkMlmeTschModeReq_c:
+   1006                  mlmeReq.msgType = gMlmeTschModeReq_c;
+   1007                  mlmeReq.msgData.tschModeReq.tschMode = (macTschMode_t)*p++;
+   1008                  break;
+   1009                  
+   1010              case mFsciNwkMlmeKeepAliveReq_c:
+   1011                  mlmeReq.msgType = gMlmeKeepAliveReq_c;
+   1012                  FLib_MemCpy(&mlmeReq.msgData.keepAliveReq.dstAddr, p, sizeof(uint16_t));
+   1013                  p += sizeof(uint16_t);        
+   1014                  FLib_MemCpy(&mlmeReq.msgData.keepAliveReq.keepAlivePeriod, p, sizeof(uint16_t));
+   1015                  p += sizeof(uint16_t);
+   1016                  break;        
+   1017          #endif /* #if gTschSupport_d */
+   1018              default:
+   1019                  fsciMlmeAsyncReqHandler(pData, param, interfaceId);
+   1020                  return;
+   1021              }
+   1022          
+   1023              MEM_BufferFree( pData );
+   1024              (void)NWK_MLME_SapHandler(&mlmeReq, fsciGetMacInstanceId(interfaceId));  
+   1025          #undef pClientPacket
+   1026          }
+   1027          
+   1028          /*! *********************************************************************************
+   1029          * \brief   This is the handler function for Asynchronous MLME Requests received
+   1030                     over the serial interface
+   1031          *
+   1032          * \param[in] pData pointer to data location
+   1033          * \param[in] interfaceId
+   1034          *
+   1035          * \return None.
+   1036          *
+   1037          * \pre
+   1038          *
+   1039          * \post
+   1040          *
+   1041          * \remarks
+   1042          *
+   1043          ********************************************************************************** */
+   1044          void fsciMlmeAsyncReqHandler(void *pData, void* param, uint32_t interfaceId)
+   1045          {
+   1046          #define pClientPacket ((clientPacket_t*)pData)
+   1047              mlmeMessage_t  *pMlemReq = MEM_BufferAlloc(sizeof(mlmeMessage_t));
+   1048              uint8_t        *p = &pClientPacket->structured.payload[0];
+   1049          
+   1050              if (NULL == pMlemReq) {
+   1051                  MEM_BufferFree( pData );
+   1052                  FSCI_Error(gFsciOutOfMessages_c, interfaceId);
+   1053                  return;
+   1054              }
+   1055          
+   1056              switch (pClientPacket->structured.header.opCode) {
+   1057          #if gMacUseAssociation_d
+   1058              case mFsciNwkMlmeAssociateReq_c:
+   1059                  pMlemReq->msgType = gMlmeAssociateReq_c;
+   1060                  pMlemReq->msgData.associateReq.channelPage = gDefaultChannelPageId_c;
+   1061                  FLib_MemCpy(&pMlemReq->msgData.associateReq.coordAddress, p, 8);
+   1062                  p += 8;
+   1063                  FLib_MemCpy( &pMlemReq->msgData.associateReq.coordPanId,
+   1064                               p, sizeof(uint16_t));
+   1065                  p += sizeof(uint16_t);
+   1066                  pMlemReq->msgData.associateReq.coordAddrMode  = (addrModeType_t)*p++;
+   1067                  pMlemReq->msgData.associateReq.logicalChannel = *p++;
+   1068          #if gMacSecurityEnable_d
+   1069                  pMlemReq->msgData.associateReq.securityLevel  = (macSecurityLevel_t)*p++;
+   1070                  pMlemReq->msgData.associateReq.keyIdMode      = (keyIdModeType_t)*p++;
+   1071                  FLib_MemCpy(&pMlemReq->msgData.associateReq.keySource, p, 8);
+   1072                  p += 8;
+   1073                  pMlemReq->msgData.associateReq.keyIndex = *p++;
+   1074          #else
+   1075                  pMlemReq->msgData.associateReq.securityLevel  = gMacSecurityNone_c;
+   1076                  p += 11;
+   1077          #endif
+   1078                  pMlemReq->msgData.associateReq.capabilityInfo = *p++;
+   1079                  break;
+   1080          
+   1081          #if gMacCoordinatorCapability_d
+   1082              case mFsciNwkMlmeAssociateRes_c:
+   1083                  pMlemReq->msgType = gMlmeAssociateRes_c;
+   1084                  FLib_MemCpy(&pMlemReq->msgData.associateRes.deviceAddress, p, 8);
+   1085                  p += 8;
+   1086                  FLib_MemCpy( &pMlemReq->msgData.associateRes.assocShortAddress, p,
+   1087                              sizeof(uint16_t));
+   1088                  p += sizeof(uint16_t);
+   1089          #if gMacSecurityEnable_d
+   1090                  pMlemReq->msgData.associateRes.securityLevel  = (macSecurityLevel_t)*p++;
+   1091                  pMlemReq->msgData.associateRes.keyIdMode      = (keyIdModeType_t)*p++;
+   1092                  FLib_MemCpy(&pMlemReq->msgData.associateRes.keySource, p, 8);
+   1093                  p += 8;
+   1094                  pMlemReq->msgData.associateRes.keyIndex = *p++;
+   1095          #else
+   1096                  pMlemReq->msgData.associateRes.securityLevel  = gMacSecurityNone_c;
+   1097                  p += 11;
+   1098          #endif
+   1099                  pMlemReq->msgData.associateRes.status   = (resultType_t)*p++;
+   1100                  break;
+   1101          #endif
+   1102          
+   1103              case mFsciNwkMlmeDisassociateReq_c:
+   1104                  pMlemReq->msgType = gMlmeDisassociateReq_c;
+   1105                  FLib_MemCpy(&pMlemReq->msgData.disassociateReq.deviceAddress, p, 8);
+   1106                  p += 8;
+   1107                  FLib_MemCpy( &pMlemReq->msgData.disassociateReq.devicePanId, p,
+   1108                               sizeof(uint16_t));
+   1109                  p += sizeof(uint16_t);
+   1110                  pMlemReq->msgData.disassociateReq.deviceAddrMode  = (addrModeType_t)*p++;
+   1111                  pMlemReq->msgData.disassociateReq.disassociateReason = (macDisassociateReason_t)*p++;
+   1112                  pMlemReq->msgData.disassociateReq.txIndirect = *p++;
+   1113          #if gMacSecurityEnable_d
+   1114                  pMlemReq->msgData.disassociateReq.securityLevel = (macSecurityLevel_t)*p++;
+   1115                  pMlemReq->msgData.disassociateReq.keyIdMode     = (keyIdModeType_t)*p++;
+   1116                  FLib_MemCpy(&pMlemReq->msgData.disassociateReq.keySource, p, 8);
+   1117                  p += 8;
+   1118                  pMlemReq->msgData.disassociateReq.keyIndex = *p++;
+   1119          #else
+   1120                  pMlemReq->msgData.disassociateReq.securityLevel = gMacSecurityNone_c;
+   1121          #endif
+   1122                  break;
+   1123          #endif /* #if gMacUseAssociation_d */
+   1124          
+   1125          #if gGtsSupport_d
+   1126              case mFsciNwkMlmeGtsReq_c:
+   1127                  pMlemReq->msgType = gMlmeGtsReq_c;
+   1128                  *(uint8_t*)(&pMlemReq->msgData.gtsReq.gtsCharacteristics) = *p++;
+   1129          #if gMacSecurityEnable_d
+   1130                  pMlemReq->msgData.gtsReq.securityLevel      = (macSecurityLevel_t)*p++;
+   1131                  pMlemReq->msgData.gtsReq.keyIdMode          = (keyIdModeType_t)*p++;
+   1132                  FLib_MemCpy(&pMlemReq->msgData.gtsReq.keySource, p,
+   1133                              sizeof(pMlemReq->msgData.gtsReq.keySource));
+   1134                  p += sizeof(pMlemReq->msgData.gtsReq.keySource);
+   1135                  pMlemReq->msgData.gtsReq.keyIndex = *p;
+   1136          #else
+   1137                  pMlemReq->msgData.gtsReq.securityLevel      = gMacSecurityNone_c;
+   1138          #endif
+   1139                  break;
+   1140          #endif
+   1141          
+   1142          #if gMacCoordinatorCapability_d
+   1143              case mFsciNwkMlmeOrphanRes_c:
+   1144                  pMlemReq->msgType = gMlmeOrphanRes_c;
+   1145                  FLib_MemCpy(&pMlemReq->msgData.orphanRes.orphanAddress, p, 8);
+   1146                  p += 8;
+   1147                  FLib_MemCpy( &pMlemReq->msgData.orphanRes.shortAddress, p,
+   1148                              sizeof(uint16_t));
+   1149                  p += sizeof(uint16_t);
+   1150                  pMlemReq->msgData.orphanRes.associatedMember = *p++;
+   1151          #if gMacSecurityEnable_d
+   1152                  pMlemReq->msgData.orphanRes.securityLevel = (macSecurityLevel_t)*p++;
+   1153                  pMlemReq->msgData.orphanRes.keyIdMode = (keyIdModeType_t)*p++;
+   1154                  FLib_MemCpy(&pMlemReq->msgData.orphanRes.keySource, p, 8);
+   1155                  p += 8;
+   1156                  pMlemReq->msgData.orphanRes.keyIndex = *p++;
+   1157          #else
+   1158                  pMlemReq->msgData.orphanRes.securityLevel = gMacSecurityNone_c;
+   1159          #endif
+   1160                  break;
+   1161          #endif
+   1162          
+   1163          #if gMacUseRxEnableRequest_d
+   1164              case mFsciNwkMlmeRxEnableReq_c:
+   1165                  pMlemReq->msgType = gMlmeRxEnableReq_c;
+   1166                  pMlemReq->msgData.rxEnableReq.deferPermit = *p++;
+   1167                  pMlemReq->msgData.rxEnableReq.rxOnTime = 0;
+   1168                  pMlemReq->msgData.rxEnableReq.rxOnDuration = 0;
+   1169                  FLib_MemCpy(&pMlemReq->msgData.rxEnableReq.rxOnTime, p, 3);
+   1170                  p += 3;
+   1171                  FLib_MemCpy(&pMlemReq->msgData.rxEnableReq.rxOnDuration, p, 3);
+   1172          #ifdef gMAC2011_d
+   1173                  p += 3;
+   1174                  pMlemReq->msgData.rxEnableReq.rangingRxControl = (macRangingRxControl_t)*p;
+   1175          #endif
+   1176                  break;
+   1177          #endif
+   1178          
+   1179              case mFsciNwkMlmeScanReq_c:
+   1180                  pMlemReq->msgType = gMlmeScanReq_c;
+   1181                  pMlemReq->msgData.scanReq.scanType = (macScanType_t)*p++;
+   1182                  FLib_MemCpy( &pMlemReq->msgData.scanReq.scanChannels, p, sizeof(channelMask_t) );
+   1183                  p += sizeof(channelMask_t);
+   1184                  pMlemReq->msgData.scanReq.scanDuration = *p++;
+   1185          #if gMacSecurityEnable_d
+   1186                  pMlemReq->msgData.scanReq.securityLevel = (macSecurityLevel_t)*p++;
+   1187                  pMlemReq->msgData.scanReq.keyIdMode = (keyIdModeType_t)*p++;
+   1188                  FLib_MemCpy(&pMlemReq->msgData.scanReq.keySource, p, 8);
+   1189                  p += 8;
+   1190                  pMlemReq->msgData.scanReq.keyIndex = *p++;
+   1191          #else
+   1192                  pMlemReq->msgData.scanReq.securityLevel = gMacSecurityNone_c;
+   1193          #endif
+   1194                  break;
+   1195          
+   1196          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+   1197              case mFsciNwkMlmeStartReq_c:
+   1198                  pMlemReq->msgType = gMlmeStartReq_c;
+   1199                  pMlemReq->msgData.startReq.channelPage = gDefaultChannelPageId_c;
+   1200                  FLib_MemCpy( &pMlemReq->msgData.startReq.panId, p,
+   1201                              sizeof(uint16_t));
+   1202                  p += sizeof(uint16_t);
+   1203                  pMlemReq->msgData.startReq.logicalChannel = *p++;
+   1204                  FLib_MemCpy( &pMlemReq->msgData.startReq.startTime, p, sizeof(uint32_t) );
+   1205                  p += sizeof(uint32_t);
+   1206                  pMlemReq->msgData.startReq.beaconOrder = *p++;
+   1207                  pMlemReq->msgData.startReq.superframeOrder = *p++;
+   1208                  pMlemReq->msgData.startReq.panCoordinator = *p++;
+   1209                  pMlemReq->msgData.startReq.batteryLifeExtension = *p++;
+   1210                  pMlemReq->msgData.startReq.coordRealignment = *p++;
+   1211          #if gMacSecurityEnable_d
+   1212                  pMlemReq->msgData.startReq.coordRealignSecurityLevel = (macSecurityLevel_t)*p++;
+   1213                  pMlemReq->msgData.startReq.coordRealignKeyIdMode = (keyIdModeType_t)*p++;
+   1214                  FLib_MemCpy(&pMlemReq->msgData.startReq.coordRealignKeySource, p, 8);
+   1215                  p += 8;
+   1216                  pMlemReq->msgData.startReq.coordRealignKeyIndex = *p++;
+   1217                  pMlemReq->msgData.startReq.beaconSecurityLevel = (macSecurityLevel_t)*p++;
+   1218                  pMlemReq->msgData.startReq.beaconKeyIdMode = (keyIdModeType_t)*p++;
+   1219                  FLib_MemCpy(&pMlemReq->msgData.startReq.beaconKeySource, p, 8);
+   1220                  p += 8;
+   1221                  pMlemReq->msgData.startReq.beaconKeyIndex = *p++;
+   1222          #else
+   1223                  pMlemReq->msgData.startReq.coordRealignSecurityLevel = gMacSecurityNone_c;
+   1224          #endif
+   1225                  break;
+   1226          #endif
+   1227          
+   1228          #if gBeaconEnabledSupport_d
+   1229              case mFsciNwkMlmeSyncReq_c:
+   1230                  pMlemReq->msgType = gMlmeSyncReq_c;
+   1231                  pMlemReq->msgData.syncReq.channelPage = gDefaultChannelPageId_c;
+   1232                  pMlemReq->msgData.syncReq.logicalChannel = *p++;
+   1233                  pMlemReq->msgData.syncReq.trackBeacon    = *p;
+   1234                  break;
+   1235          #endif
+   1236          
+   1237              case mFsciNwkMlmePollReq_c:
+   1238                  pMlemReq->msgType = gMlmePollReq_c;
+   1239                  FLib_MemCpy(&pMlemReq->msgData.pollReq.coordAddress, p, sizeof(pMlemReq->msgData.pollReq.coordAddress));
+   1240                  p += sizeof(pMlemReq->msgData.pollReq.coordAddress);
+   1241                  FLib_MemCpy( &pMlemReq->msgData.pollReq.coordPanId, p,
+   1242                               sizeof(pMlemReq->msgData.pollReq.coordPanId));
+   1243                  p += sizeof(pMlemReq->msgData.pollReq.coordPanId);
+   1244                  pMlemReq->msgData.pollReq.coordAddrMode = (addrModeType_t)*p++;
+   1245          #if gMacSecurityEnable_d
+   1246                  pMlemReq->msgData.pollReq.securityLevel = (macSecurityLevel_t)*p++;
+   1247                  pMlemReq->msgData.pollReq.keyIdMode     = (keyIdModeType_t)*p++;
+   1248                  FLib_MemCpy(&pMlemReq->msgData.pollReq.keySource, p,
+   1249                              sizeof(pMlemReq->msgData.pollReq.keySource));
+   1250                  p += sizeof(pMlemReq->msgData.pollReq.keySource);
+   1251                  pMlemReq->msgData.pollReq.keyIndex = *p++;
+   1252          #else
+   1253                  pMlemReq->msgData.pollReq.securityLevel = gMacSecurityNone_c;
+   1254          #endif
+   1255                  break;
+   1256                  
+   1257              case mFsciNwkMlmeBeaconReq_c:
+   1258                  pMlemReq->msgType = gMlmeBeaconReq_c;
+   1259                  pMlemReq->msgData.beaconReq.beaconType = (beaconType_t)*p++;
+   1260                  pMlemReq->msgData.beaconReq.channel = *p++;
+   1261                  pMlemReq->msgData.beaconReq.channelPage = (channelPageId_t)*p++;
+   1262                  pMlemReq->msgData.beaconReq.superframeOrder = *p++;
+   1263          #if gMacSecurityEnable_d
+   1264                  pMlemReq->msgData.beaconReq.beaconSecurityLevel = (macSecurityLevel_t)*p++;
+   1265                  pMlemReq->msgData.beaconReq.beaconKeyIdMode = (keyIdModeType_t)*p++;
+   1266                  FLib_MemCpy(&pMlemReq->msgData.beaconReq.beaconKeySource, p, sizeof(uint64_t));
+   1267                  p += sizeof(uint64_t);
+   1268                  pMlemReq->msgData.beaconReq.beaconKeyIndex = *p++;
+   1269          #else
+   1270                  pMlemReq->msgData.beaconReq.beaconSecurityLevel = gMacSecurityNone_c;
+   1271                  p += 11;
+   1272          #endif
+   1273                  pMlemReq->msgData.beaconReq.dstAddrMode = (addrModeType_t)*p++;
+   1274                  FLib_MemCpy(&pMlemReq->msgData.beaconReq.dstAddr, p, sizeof(uint64_t));
+   1275                  p += sizeof(uint64_t);
+   1276                  pMlemReq->msgData.beaconReq.bsnSuppression = *p++;
+   1277                  break;
+   1278          
+   1279              default:
+   1280                  MEM_BufferFree( pData );
+   1281                  FSCI_Error(gFsciUnknownOpcode_c, interfaceId);
+   1282                  return;
+   1283              }
+   1284              /* To reduce peak memory usage, free the FSCI request before calling MAC SAPs */
+   1285              MEM_BufferFree( pData );
+   1286              if( gSuccess_c != NWK_MLME_SapHandler(pMlemReq, fsciGetMacInstanceId(interfaceId)) )
+   1287              {
+   1288                  MEM_BufferFree( pMlemReq );
+   1289              }
+   1290          #undef pClientPacket
+   1291          }
+   1292          
+   1293          /*! *********************************************************************************
+   1294          * \brief   This function is called to monitor the MAC's MCPS SAP
+   1295          *
+   1296          * \param[in] pData pointer to data location
+   1297          * \param[in] param pointer to a parameter to be passed to the function
+   1298          * \param[in] interfaceId
+   1299          *
+   1300          * \return None.
+   1301          *
+   1302          * \pre
+   1303          *
+   1304          * \post
+   1305          *
+   1306          * \remarks
+   1307          *
+   1308          ********************************************************************************** */
+   1309          void McpsSapMonitor(void *pData, void* param, uint32_t interfaceId)
+   1310          {
+   1311          #define pMscpCnf ((mcpsToNwkMessage_t*)pData)
+   1312          #define pMcpsReq ((nwkToMcpsMessage_t*)pData)
+   1313              clientPacket_t     *pFsciPacket;
+   1314              uint8_t            *p;
+   1315              uint16_t            size = sizeof(clientPacketHdr_t) + sizeof(uint8_t);
+   1316          
+   1317              /* Determine the size needed to be allocated */
+   1318              switch( ((macMsgHeader_t*)pData)->msgType )
+   1319              {
+   1320              case gMcpsDataReq_c:
+   1321                  {
+   1322                      mcpsDataReq_t *pSrc = &pMcpsReq->msgData.dataReq;
+   1323                      size += sizeof(mcpsDataReq_t) + pSrc->msduLength;
+   1324                  }
+   1325                  break;
+   1326          #if gMacCoordinatorCapability_d
+   1327              case gMcpsPurgeReq_c:
+   1328                  size += sizeof(mcpsPurgeReq_t);
+   1329                  break;
+   1330          #endif
+   1331              case gMcpsDataInd_c:
+   1332                  {
+   1333                      mcpsDataInd_t *pSrc = &pMscpCnf->msgData.dataInd;
+   1334                      size += sizeof(mcpsDataInd_t) + pSrc->msduLength;
+   1335                  }
+   1336                  break;
+   1337              case gMcpsDataCnf_c:
+   1338                  size += sizeof(mcpsDataCnf_t);
+   1339                  break;
+   1340          #if gMacCoordinatorCapability_d
+   1341              case gMcpsPurgeCnf_c:
+   1342                  size += sizeof(mcpsPurgeCnf_t);
+   1343                  break;
+   1344          #endif
+   1345          #if gMacUsePromiscuous_d
+   1346              case gMcpsPromInd_c:
+   1347                  {
+   1348                      mcpsPromInd_t *pSrc = &pMscpCnf->msgData.promInd;
+   1349                      size += sizeof(mcpsPromInd_t) + pSrc->msduLength;
+   1350                  }
+   1351                  break;
+   1352          #endif
+   1353              }
+   1354              
+   1355              pFsciPacket = MEM_BufferAlloc( size );
+   1356              if (NULL == pFsciPacket) {
+   1357                  FSCI_Error( gFsciOutOfMessages_c, interfaceId );
+   1358                  return;
+   1359              }
+   1360          
+   1361              pFsciPacket->structured.header.opGroup = gFSCI_McpsNwkOpcodeGroup_c;
+   1362              p = pFsciPacket->structured.payload;
+   1363          
+   1364              switch( ((macMsgHeader_t*)pData)->msgType )
+   1365              {
+   1366          /* MCPS requests */
+   1367              case gMcpsDataReq_c:         //87 00
+   1368                  {
+   1369                      mcpsDataReq_t *pSrc = &pMcpsReq->msgData.dataReq;
+   1370          
+   1371                      pFsciPacket->structured.header.opCode = mFsciNwkMcpsDataReq_c;
+   1372                      pFsciPacket->structured.header.opGroup = gFSCI_NwkMcpsOpcodeGroup_c;
+   1373                      FLib_MemCpy(p, &pSrc->dstAddr, sizeof(pSrc->dstAddr));
+   1374                      p += sizeof(pSrc->dstAddr);
+   1375                      FLib_MemCpy( p, &pSrc->dstPanId, sizeof(pSrc->dstPanId) );
+   1376                      p += sizeof(pSrc->dstPanId);
+   1377                      *p++ = pSrc->dstAddrMode;
+   1378          
+   1379                      FLib_MemCpy(p, &pSrc->srcAddr, sizeof(pSrc->srcAddr));
+   1380                      p += sizeof(pSrc->srcAddr);
+   1381                      FLib_MemCpy( p, &pSrc->srcPanId, sizeof(pSrc->srcPanId));
+   1382                      p += sizeof(pSrc->srcPanId);
+   1383                      *p++ = pSrc->srcAddrMode;
+   1384          
+   1385                      *p++ = pSrc->msduLength;
+   1386                      *p++ = pSrc->msduHandle;
+   1387                      *p++ = pSrc->txOptions;
+   1388                      *p++ = pSrc->securityLevel;
+   1389                      *p++ = pSrc->keyIdMode;
+   1390          
+   1391                      FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1392                      p += sizeof(pSrc->keySource);
+   1393                      *p++ = pSrc->keyIndex;
+   1394                      FLib_MemCpy(p, pSrc->pMsdu, pSrc->msduLength);
+   1395                      p += pSrc->msduLength;
+   1396                  }
+   1397                  break;
+   1398          
+   1399          #if gMacCoordinatorCapability_d
+   1400              case gMcpsPurgeReq_c:        //87 01
+   1401                  pFsciPacket->structured.header.opCode = mFsciNwkMcpsPurgeReq_c;
+   1402                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMcpsOpcodeGroup_c;
+   1403                  *p++ = pMcpsReq->msgData.purgeReq.msduHandle;
+   1404                  break;
+   1405          #endif
+   1406          
+   1407          /* MCPS confirms and indications */
+   1408              case gMcpsDataCnf_c:         //86 00
+   1409                  pFsciPacket->structured.header.opCode = mFsciMcpsNwkDataCnf_c;
+   1410                  *p++ = pMscpCnf->msgData.dataCnf.msduHandle;
+   1411                  *p++ = pMscpCnf->msgData.dataCnf.status;
+   1412                  break;
+   1413          
+   1414              case gMcpsDataInd_c:         //86 01
+   1415                  {
+   1416                      mcpsDataInd_t *pSrc = &pMscpCnf->msgData.dataInd;
+   1417          
+   1418                      pFsciPacket->structured.header.opCode = mFsciMcpsNwkDataInd_c;
+   1419                      FLib_MemCpy(p, &pSrc->dstAddr, sizeof(pSrc->dstAddr));
+   1420                      p += sizeof(pSrc->dstAddr);
+   1421                      FLib_MemCpy( p, &pSrc->dstPanId, sizeof(pSrc->dstPanId));
+   1422                      p += sizeof(pSrc->dstPanId);
+   1423                      *p++ = pSrc->dstAddrMode;
+   1424          
+   1425                      FLib_MemCpy(p, &pSrc->srcAddr, sizeof(pSrc->srcAddr));
+   1426                      p += sizeof(pSrc->srcAddr);
+   1427                      FLib_MemCpy( p, &pSrc->srcPanId, sizeof(pSrc->srcPanId) );
+   1428                      p += sizeof(pSrc->srcPanId);
+   1429                      *p++ = pSrc->srcAddrMode;
+   1430          
+   1431                      *p++ = pSrc->msduLength;
+   1432                      *p++ = pSrc->mpduLinkQuality;
+   1433                      *p++ = pSrc->dsn;
+   1434                      FLib_MemCpy( p, &pSrc->timestamp, sizeof(uint32_t) );
+   1435                      p += sizeof(uint32_t);
+   1436                      *p++ = pSrc->securityLevel;
+   1437                      *p++ = pSrc->keyIdMode;
+   1438                      FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1439                      p += sizeof(pSrc->keySource);
+   1440                      *p++ = pSrc->keyIndex;
+   1441                      FLib_MemCpy(p, pSrc->pMsdu, pSrc->msduLength);
+   1442                      p += pSrc->msduLength;
+   1443                  }
+   1444                  break;
+   1445          
+   1446          #if gMacCoordinatorCapability_d
+   1447              case gMcpsPurgeCnf_c:        //86 02
+   1448                  pFsciPacket->structured.header.opCode = mFsciMcpsNwkPurgeCnf_c;
+   1449                  *p++ = pMscpCnf->msgData.purgeCnf.msduHandle;
+   1450                  *p++ = pMscpCnf->msgData.purgeCnf.status;
+   1451                  break;
+   1452          #endif
+   1453          
+   1454          #if gMacUsePromiscuous_d
+   1455              case gMcpsPromInd_c:         //86 03
+   1456                  {
+   1457                      mcpsPromInd_t *pSrc = &pMscpCnf->msgData.promInd;
+   1458          
+   1459                      pFsciPacket->structured.header.opCode = mFsciMcpsNwkPromInd_c;
+   1460                      *p++ = pSrc->mpduLinkQuality;
+   1461                      FLib_MemCpy( p, &pSrc->timeStamp, sizeof(uint32_t) );
+   1462                      p += sizeof(uint32_t);
+   1463                      *p++ = pSrc->msduLength;
+   1464                      FLib_MemCpy(p, pSrc->pMsdu, pSrc->msduLength);
+   1465                      p += pSrc->msduLength;
+   1466                  }
+   1467                  break;
+   1468          #endif
+   1469              } /* switch( pMsg->msgType ) */
+   1470          
+   1471              /* Send data over the serial interface */
+   1472              pFsciPacket->structured.header.len = (fsciLen_t)(p - pFsciPacket->structured.payload);
+   1473          
+   1474              if ( pFsciPacket->structured.header.len )
+   1475                  FSCI_transmitFormatedPacket( pFsciPacket, interfaceId );
+   1476              else
+   1477                  MEM_BufferFree( pFsciPacket );
+   1478          #undef pMscpCnf
+   1479          #undef pMcpsReq
+   1480          }
+   1481          
+   1482          /*! *********************************************************************************
+   1483          * \brief   This function is called to monitor the MAC's MLME SAP
+   1484          *
+   1485          * \param[in] pData pointer to data location
+   1486          * \param[in] param pointer to a parameter to be passed to the function
+   1487          * \param[in] interfaceId
+   1488          *
+   1489          * \return None.
+   1490          *
+   1491          * \pre
+   1492          *
+   1493          * \post
+   1494          *
+   1495          * \remarks
+   1496          *
+   1497          ********************************************************************************** */
+   1498          void MlmeSapMonitor(void *pData, void* param, uint32_t interfaceId)
+   1499          {
+   1500          #define pMlmeReq ((mlmeMessage_t*)pData)
+   1501          #define pMlmeCnf ((nwkMessage_t*)pData)
+   1502              uint8_t        *p;
+   1503              clientPacket_t *pFsciPacket;
+   1504              uint16_t        size = sizeof(clientPacketHdr_t) + sizeof(uint8_t);
+   1505          
+   1506              /* Determine the size needed to be allocated */
+   1507              switch( pMlmeReq->msgType )
+   1508              {
+   1509          #if gMacUseAssociation_d
+   1510              case gMlmeAssociateReq_c:
+   1511                  size += sizeof(mlmeAssociateReq_t);
+   1512                  break;
+   1513          #if gMacCoordinatorCapability_d
+   1514              case gMlmeAssociateRes_c:
+   1515                  size += sizeof(mlmeAssociateRes_t);
+   1516                  break;
+   1517          #endif
+   1518              case gMlmeDisassociateReq_c:
+   1519                  size += sizeof(mlmeDisassociateReq_t);
+   1520                  break;
+   1521          #endif
+   1522              case gMlmeGetReq_c:
+   1523                  size += sizeof(mlmeGetReq_t);
+   1524                  break;
+   1525          #if gGtsSupport_d
+   1526              case gMlmeGtsReq_c:
+   1527                  size += sizeof(mlmeGtsReq_t);
+   1528                  break;
+   1529          #endif
+   1530          #if gMacCoordinatorCapability_d
+   1531              case gMlmeOrphanRes_c:
+   1532                  size += sizeof(mlmeOrphanRes_t);
+   1533                  break;
+   1534          #endif
+   1535              case gMlmeResetReq_c:
+   1536                  size += sizeof(mlmeResetReq_t);
+   1537                  break;
+   1538          #if gMacUseRxEnableRequest_d
+   1539              case gMlmeRxEnableReq_c:
+   1540                  size += sizeof(mlmeRxEnableReq_t);
+   1541                  break;
+   1542          #endif
+   1543              case gMlmeScanReq_c:
+   1544                  size += sizeof(mlmeScanReq_t);
+   1545                  break;
+   1546              case gMlmeSetReq_c:
+   1547          #if gFsciHostMacSupport_c
+   1548                  if( gMPibKey_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1549                  {
+   1550                      size = sizeof(mlmeSetReq_t) + 16;
+   1551                  }
+   1552          #ifndef gMAC2011_d        
+   1553                  else if( gMPibKeyIdLookupData_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1554                  {
+   1555                      size = sizeof(mlmeSetReq_t) + 9;
+   1556                  }
+   1557          #endif
+   1558          #if gTschSupport_d
+   1559                  else if( gMPibTimeslotTemplate_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1560                  {
+   1561                      size = sizeof(mlmeSetReq_t) + sizeof(macTimeslotTemplate_t);
+   1562                  }
+   1563          #endif
+   1564                  else if( (gMPibBeaconPayload_c == pMlmeReq->msgData.setReq.pibAttribute) 
+   1565          #if gTschSupport_d
+   1566                   || (gMPibHoppingSequenceList_c == pMlmeReq->msgData.setReq.pibAttribute) 
+   1567          #endif
+   1568                    )
+   1569                  {
+   1570                      size = gFsciMaxPayloadLen_c - sizeof(mlmeSetReq_t);
+   1571                  }
+   1572                  else
+   1573                  {
+   1574                      size += sizeof(mlmeSetReq_t) + sizeof(uint64_t);
+   1575                  }
+   1576          #else      
+   1577                  size += sizeof(mlmeSetReq_t) + mlmeGetSizeOfPIB(pMlmeReq->msgData.setReq.pibAttribute);
+   1578          #endif  
+   1579                  break;
+   1580          
+   1581          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+   1582              case gMlmeStartReq_c:
+   1583                  size += sizeof(mlmeStartReq_t);
+   1584                  break;
+   1585          #endif
+   1586          
+   1587          #if gBeaconEnabledSupport_d
+   1588              case gMlmeSyncReq_c:
+   1589                  size += sizeof(mlmeSyncReq_t);
+   1590                  break;
+   1591          #endif
+   1592          
+   1593              case gMlmePollReq_c:
+   1594                  size += sizeof(mlmePollReq_t);
+   1595                  break;
+   1596          
+   1597          #if gTschSupport_d
+   1598              case gMlmeSetSlotframeReq_c:
+   1599                  size += sizeof(mlmeSetSlotframeReq_t);
+   1600                  break;
+   1601              case gMlmeSetLinkReq_c:
+   1602                  size += sizeof(mlmeSetLinkReq_t);
+   1603                  break;
+   1604              case gMlmeTschModeReq_c:
+   1605                  size += sizeof(mlmeTschModeReq_t);
+   1606                  break;
+   1607              case gMlmeKeepAliveReq_c:
+   1608                  size += sizeof(mlmeKeepAliveReq_t);
+   1609                  break;
+   1610              case gMlmeBeaconReq_c:
+   1611                  size += sizeof(mlmeBeaconReq_t);
+   1612                  break;
+   1613          #endif
+   1614          
+   1615          #if gMacUseAssociation_d
+   1616          #if gMacCoordinatorCapability_d
+   1617              case gMlmeAssociateInd_c:
+   1618                  size += sizeof(mlmeAssociateInd_t);
+   1619                  break;
+   1620          #endif
+   1621              case gMlmeAssociateCnf_c:
+   1622                  size += sizeof(mlmeAssociateCnf_t);
+   1623                  break;
+   1624              case gMlmeDisassociateInd_c:
+   1625                  size += sizeof(mlmeDisassociateInd_t);
+   1626                  break;
+   1627              case gMlmeDisassociateCnf_c:
+   1628                  size += sizeof(mlmeDisassociateCnf_t);
+   1629                  break;
+   1630          #endif
+   1631          
+   1632              case gMlmeBeaconNotifyInd_c:
+   1633                  size += gFsciMaxPayloadLen_c;
+   1634                  break;
+   1635              case gMlmeGetCnf_c:
+   1636          #if gFsciHostMacSupport_c
+   1637                  if( (gMPibBeaconPayload_c == pMlmeReq->msgData.getReq.pibAttribute) 
+   1638          #if gTschSupport_d
+   1639                   || (gMPibHoppingSequenceList_c == pMlmeReq->msgData.getReq.pibAttribute) 
+   1640          #endif
+   1641                    )
+   1642                  {
+   1643                      size = gFsciMaxPayloadLen_c - sizeof(mlmeGetCnf_t);
+   1644                  }
+   1645                  else
+   1646                  {
+   1647                      size += sizeof(mlmeGetCnf_t) + sizeof(uint64_t);
+   1648                  }
+   1649          #else
+   1650                  size += sizeof(mlmeGetCnf_t) + mlmeGetSizeOfPIB(pMlmeReq->msgData.getReq.pibAttribute);
+   1651          #endif
+   1652                  break;
+   1653          
+   1654          #if gGtsSupport_d
+   1655              case gMlmeGtsInd_c:
+   1656                  size += sizeof(mlmeGtsInd_t);
+   1657                  break;
+   1658              case gMlmeGtsCnf_c:
+   1659                  size += sizeof(mlmeGtsCnf_t);
+   1660                  break;
+   1661          #endif
+   1662          
+   1663          #if gMacCoordinatorCapability_d
+   1664              case gMlmeOrphanInd_c:
+   1665                  size += sizeof(mlmeOrphanInd_t);
+   1666                  break;
+   1667          #endif
+   1668          
+   1669              case gMlmeResetCnf_c:
+   1670                  size += sizeof(mlmeResetCnf_t);
+   1671                  break;
+   1672          
+   1673          #if gMacUseRxEnableRequest_d
+   1674              case gMlmeRxEnableCnf_c:
+   1675                  size += sizeof(mlmeRxEnableCnf_t);
+   1676                  break;
+   1677          #endif
+   1678          
+   1679              case gMlmeScanCnf_c:
+   1680                  size += gFsciMaxPayloadLen_c;
+   1681                  break;
+   1682              case gMlmeCommStatusInd_c:
+   1683                  size += sizeof(mlmeCommStatusInd_t);
+   1684                  break;
+   1685              case gMlmeSetCnf_c:
+   1686                  size += sizeof(mlmeSetCnf_t);
+   1687                  break;
+   1688          
+   1689          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+   1690              case gMlmeStartCnf_c:
+   1691                  size += sizeof(mlmeStartCnf_t);
+   1692                  break;
+   1693          #endif
+   1694          
+   1695              case gMlmeSyncLossInd_c:
+   1696                  size += sizeof(mlmeSyncLossInd_t);
+   1697                  break;
+   1698              case gMlmePollCnf_c:
+   1699                  size += sizeof(mlmePollCnf_t);
+   1700                  break;
+   1701          
+   1702          #if gMacCoordinatorCapability_d
+   1703              case gMlmePollNotifyInd_c:
+   1704                  size += sizeof(mlmePollNotifyInd_t);
+   1705                  break;
+   1706          #endif
+   1707          
+   1708          #if gTschSupport_d
+   1709              case gMlmeSetSlotframeCnf_c:
+   1710                  size += sizeof(mlmeSetSlotframeCnf_t);
+   1711                  break;
+   1712              case gMlmeSetLinkCnf_c:
+   1713                  size += sizeof(mlmeSetLinkCnf_t);
+   1714                  break;
+   1715              case gMlmeTschModeCnf_c:
+   1716                  size += sizeof(mlmeTschModeCnf_t);
+   1717                  break;
+   1718              case gMlmeKeepAliveCnf_c:
+   1719                  size += sizeof(mlmeKeepAliveCnf_t);
+   1720                  break;
+   1721              case gMlmeBeaconCnf_c:
+   1722                  size += sizeof(mlmeBeaconCnf_t);
+   1723                  break;
+   1724          #endif
+   1725              }
+   1726          
+   1727              pFsciPacket = MEM_BufferAlloc( size );
+   1728              if( NULL == pFsciPacket ) 
+   1729              {
+   1730                  FSCI_Error( gFsciOutOfMessages_c, interfaceId );
+   1731                  return;
+   1732              }
+   1733          
+   1734              pFsciPacket->structured.header.opGroup = gFSCI_MlmeNwkOpcodeGroup_c;
+   1735              p = pFsciPacket->structured.payload;
+   1736          
+   1737              switch( pMlmeReq->msgType )
+   1738              {
+   1739          /* MLME requests */
+   1740          #if gMacUseAssociation_d
+   1741              case gMlmeAssociateReq_c:    //85 00
+   1742          #define pSrc (&pMlmeReq->msgData.associateReq)
+   1743                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeAssociateReq_c;
+   1744                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1745                  FLib_MemCpy(p, &pSrc->coordAddress, sizeof(pSrc->coordAddress));
+   1746                  p += sizeof(pSrc->coordAddress);
+   1747                  FLib_MemCpy( p, &pSrc->coordPanId, sizeof(pSrc->coordPanId) );
+   1748                  p += sizeof(pSrc->coordPanId);
+   1749                  *p++ = pSrc->coordAddrMode;
+   1750                  *p++ = pSrc->logicalChannel;
+   1751                  *p++ = pSrc->securityLevel;
+   1752                  *p++ = pSrc->keyIdMode;
+   1753                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1754                  p += sizeof(pSrc->keySource);
+   1755                  *p++ = pSrc->keyIndex;
+   1756                  *p++ = pSrc->capabilityInfo;
+   1757          #undef pSrc
+   1758                  break;
+   1759          
+   1760          #if gMacCoordinatorCapability_d
+   1761              case gMlmeAssociateRes_c:    //85 01
+   1762          #define pSrc (&pMlmeReq->msgData.associateRes)
+   1763                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeAssociateRes_c;
+   1764                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1765                  FLib_MemCpy(p, &pSrc->deviceAddress, sizeof(pSrc->deviceAddress));
+   1766                  p += sizeof(pSrc->deviceAddress);
+   1767                  FLib_MemCpy( p, &pSrc->assocShortAddress, sizeof(pSrc->assocShortAddress));
+   1768                  p += sizeof(pSrc->assocShortAddress);
+   1769                  *p++ = pSrc->securityLevel;
+   1770                  *p++ = pSrc->keyIdMode;
+   1771                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1772                  p += sizeof(pSrc->keySource);
+   1773                  *p++ = pSrc->keyIndex;
+   1774                  *p++ = pSrc->status;
+   1775          #undef pSrc
+   1776                  break;
+   1777          #endif
+   1778          
+   1779              case gMlmeDisassociateReq_c: //85 02
+   1780          #define pSrc (&pMlmeReq->msgData.disassociateReq)
+   1781                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeDisassociateReq_c;
+   1782                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1783                  FLib_MemCpy(p, &pSrc->deviceAddress, sizeof(pSrc->deviceAddress));
+   1784                  p += sizeof(pSrc->deviceAddress);
+   1785                  FLib_MemCpy( p, &pSrc->devicePanId, sizeof(pSrc->devicePanId) );
+   1786                  p += sizeof(pSrc->devicePanId);
+   1787                  *p++ = pSrc->deviceAddrMode;
+   1788                  *p++ = pSrc->disassociateReason;
+   1789                  *p++ = pSrc->txIndirect;
+   1790                  *p++ = pSrc->securityLevel;
+   1791                  *p++ = pSrc->keyIdMode;
+   1792                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1793                  p += sizeof(pSrc->keySource);
+   1794                  *p++ = pSrc->keyIndex;
+   1795          #undef pSrc
+   1796                  break;
+   1797          #endif /* #if gMacUseAssociation_d */
+   1798          
+   1799              case gMlmeGetReq_c:          //85 03
+   1800                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeGetReq_c;
+   1801                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1802          
+   1803                  *p++ = pMlmeReq->msgData.getReq.pibAttribute;
+   1804                  *p++ = pMlmeReq->msgData.getReq.pibAttributeIndex;
+   1805                  break;
+   1806          
+   1807          #if gGtsSupport_d
+   1808              case gMlmeGtsReq_c:          //85 04
+   1809          #define pSrc (&pMlmeReq->msgData.gtsReq)
+   1810                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeGtsReq_c;
+   1811                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1812                  *p++ = *((uint8_t*)&pSrc->gtsCharacteristics);
+   1813                  *p++ = pSrc->securityLevel;
+   1814                  *p++ = pSrc->keyIdMode;
+   1815                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1816                  p += sizeof(pSrc->keySource);
+   1817                  *p++ = pSrc->keyIndex;
+   1818          #undef pSrc
+   1819                  break;
+   1820          #endif
+   1821          
+   1822          #if gMacCoordinatorCapability_d
+   1823              case gMlmeOrphanRes_c:       //85 05
+   1824          #define pSrc (&pMlmeReq->msgData.orphanRes)
+   1825                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeOrphanRes_c;
+   1826                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1827                  FLib_MemCpy(p, &pSrc->orphanAddress, sizeof(pSrc->orphanAddress));
+   1828                  p += sizeof(pSrc->orphanAddress);
+   1829                  FLib_MemCpy( p, &pSrc->shortAddress, sizeof(pSrc->shortAddress) );
+   1830                  p += sizeof(pSrc->shortAddress);
+   1831                  *p++ = pSrc->associatedMember;
+   1832                  *p++ = pSrc->securityLevel;
+   1833                  *p++ = pSrc->keyIdMode;
+   1834                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1835                  p += sizeof(pSrc->keySource);
+   1836                  *p++ = pSrc->keyIndex;
+   1837          #undef pSrc
+   1838                  break;
+   1839          #endif
+   1840          
+   1841              case gMlmeResetReq_c:        //85 06
+   1842                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeResetReq_c;
+   1843                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1844                  *p++ = pMlmeReq->msgData.resetReq.setDefaultPIB;
+   1845                  break;
+   1846          
+   1847          #if gMacUseRxEnableRequest_d
+   1848              case gMlmeRxEnableReq_c:     //85 07
+   1849          #define pSrc (&pMlmeReq->msgData.rxEnableReq)
+   1850                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeRxEnableReq_c;
+   1851                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1852                  *p++ = pSrc->deferPermit;
+   1853                  FLib_MemCpy(p, &pSrc->rxOnTime, 3);
+   1854                  p += 3;
+   1855                  FLib_MemCpy(p, &pSrc->rxOnDuration, 3);
+   1856                  p += 3;
+   1857          #undef pSrc
+   1858                  break;
+   1859          #endif
+   1860          
+   1861              case gMlmeScanReq_c:         //85 08
+   1862          #define pSrc (&pMlmeReq->msgData.scanReq)
+   1863                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeScanReq_c;
+   1864                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1865                  *p++ = pSrc->scanType;
+   1866                  FLib_MemCpy(p, &pSrc->scanChannels, sizeof(channelMask_t));
+   1867                  p += sizeof(channelMask_t);
+   1868                  *p++ = pSrc->scanDuration;
+   1869                  *p++ = pSrc->securityLevel;
+   1870                  *p++ = pSrc->keyIdMode;
+   1871                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1872                  p += sizeof(pSrc->keySource);
+   1873                  *p++ = pSrc->keyIndex;
+   1874          #undef pSrc
+   1875                  break;
+   1876          
+   1877              case gMlmeSetReq_c:          //85 09
+   1878                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeSetReq_c;
+   1879                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1880                  *p++ = pMlmeReq->msgData.setReq.pibAttribute;
+   1881                  *p++ = pMlmeReq->msgData.setReq.pibAttributeIndex;
+   1882          #if gFsciHostMacSupport_c
+   1883                  if( gMPibKey_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1884                  {
+   1885                      size = 16;
+   1886                  }
+   1887          #ifndef gMAC2011_d        
+   1888                  else if( gMPibKeyIdLookupData_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1889                  {
+   1890                      size = 9;
+   1891                  }
+   1892          #endif
+   1893          #if gTschSupport_d
+   1894                  else if( gMPibTimeslotTemplate_c == pMlmeReq->msgData.setReq.pibAttribute )
+   1895                  {
+   1896                      size = sizeof(macTimeslotTemplate_t);
+   1897                  }
+   1898          #endif        
+   1899                  else if( (gMPibBeaconPayload_c == pMlmeReq->msgData.setReq.pibAttribute) 
+   1900          #if gTschSupport_d
+   1901                   || (gMPibHoppingSequenceList_c == pMlmeReq->msgData.setReq.pibAttribute) 
+   1902          #endif
+   1903                    )
+   1904                  {
+   1905                      size = gFsciMaxPayloadLen_c - sizeof(mlmeSetReq_t);
+   1906                  }
+   1907                  else
+   1908                  {
+   1909                      size = sizeof(uint64_t);
+   1910                  }
+   1911          #else        
+   1912                  size = mlmeGetSizeOfPIB(pMlmeReq->msgData.setReq.pibAttribute);
+   1913          #endif
+   1914                  FLib_MemCpy(p, pMlmeReq->msgData.setReq.pibAttributeValue, size);
+   1915                  p += size;
+   1916                  break;
+   1917          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+   1918              case gMlmeStartReq_c:        //85 0A
+   1919          #define pSrc (&pMlmeReq->msgData.startReq)
+   1920                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeStartReq_c;
+   1921                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1922                  FLib_MemCpy( p, &pSrc->panId, sizeof(pSrc->panId) );
+   1923                  p += sizeof(uint16_t);
+   1924                  *p++ = pSrc->logicalChannel;
+   1925                  FLib_MemCpy( p, &pSrc->startTime, sizeof(uint32_t) );
+   1926                  p += sizeof(uint32_t);
+   1927                  *p++ = pSrc->beaconOrder;
+   1928                  *p++ = pSrc->superframeOrder;
+   1929                  *p++ = pSrc->panCoordinator;
+   1930                  *p++ = pSrc->batteryLifeExtension;
+   1931                  *p++ = pSrc->coordRealignment;
+   1932                  *p++ = pSrc->coordRealignSecurityLevel;
+   1933                  *p++ = pSrc->coordRealignKeyIdMode;
+   1934                  FLib_MemCpy(p, &pSrc->coordRealignKeySource, sizeof(pSrc->coordRealignKeySource));
+   1935                  p += sizeof(pSrc->coordRealignKeySource);
+   1936                  *p++ = pSrc->coordRealignKeyIndex;
+   1937                  *p++ = pSrc->beaconSecurityLevel;
+   1938                  *p++ = pSrc->beaconKeyIdMode;
+   1939                  FLib_MemCpy(p, &pSrc->beaconKeySource, sizeof(pSrc->beaconKeySource));
+   1940                  p += sizeof(pSrc->beaconKeySource);
+   1941                  *p++ = pSrc->beaconKeyIndex;
+   1942          #undef pSrc
+   1943                  break;
+   1944          #endif
+   1945                  
+   1946          #if gBeaconEnabledSupport_d
+   1947              case gMlmeSyncReq_c:         //85 0B
+   1948                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeSyncReq_c;
+   1949                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1950                  *p++ = pMlmeReq->msgData.syncReq.logicalChannel;
+   1951                  *p++ = pMlmeReq->msgData.syncReq.trackBeacon;
+   1952                  break;
+   1953          #endif
+   1954          
+   1955              case gMlmePollReq_c:         //85 0C
+   1956          #define pSrc (&pMlmeReq->msgData.pollReq)
+   1957                  pFsciPacket->structured.header.opCode = mFsciNwkMlmePollReq_c;
+   1958                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1959                  FLib_MemCpy(p, &pSrc->coordAddress, sizeof(pSrc->coordAddress));
+   1960                  p += sizeof(pSrc->coordAddress);
+   1961                  FLib_MemCpy( p, &pSrc->coordPanId, sizeof(pSrc->coordPanId) );
+   1962                  p += sizeof(pSrc->coordPanId);
+   1963                  *p++ = pSrc->coordAddrMode;
+   1964                  *p++ = pSrc->securityLevel;
+   1965                  *p++ = pSrc->keyIdMode;
+   1966                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   1967                  p += sizeof(pSrc->keySource);
+   1968                  *p++ = pSrc->keyIndex;
+   1969          #undef pSrc
+   1970                  break;
+   1971          
+   1972          #if gTschSupport_d
+   1973              case gMlmeSetSlotframeReq_c: //85 0D
+   1974          #define pSrc (&pMlmeReq->msgData.setSlotframeReq)
+   1975                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeSetSlotframeReq_c;
+   1976                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1977                  *p++ = pSrc->slotframeHandle;
+   1978                  *p++ = pSrc->operation;
+   1979                  FLib_MemCpy(p, &pSrc->size, sizeof(pSrc->size));
+   1980                  p += sizeof(pSrc->size);
+   1981          #undef pSrc      
+   1982                  break;
+   1983                  
+   1984              case gMlmeSetLinkReq_c:      //85 0E
+   1985          #define pSrc (&pMlmeReq->msgData.setLinkReq)
+   1986                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeSetLinkReq_c;
+   1987                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   1988                  *p++ = pSrc->operation;
+   1989                  FLib_MemCpy(p, &pSrc->linkHandle, sizeof(pSrc->linkHandle));
+   1990                  p += sizeof(pSrc->linkHandle);
+   1991                  *p++ = pSrc->slotframeHandle;
+   1992                  FLib_MemCpy(p, &pSrc->timeslot, sizeof(pSrc->timeslot));
+   1993                  p += sizeof(pSrc->timeslot);
+   1994                  FLib_MemCpy(p, &pSrc->channelOffset, sizeof(pSrc->channelOffset));
+   1995                  p += sizeof(pSrc->channelOffset);
+   1996                  FLib_MemCpy(p, &pSrc->linkOptions, sizeof(pSrc->linkOptions));
+   1997                  p += sizeof(pSrc->linkOptions);
+   1998                  *p++ = pSrc->linkType;
+   1999                  FLib_MemCpy(p, &pSrc->nodeAddr, sizeof(pSrc->nodeAddr));
+   2000                  p += sizeof(pSrc->nodeAddr);        
+   2001          #undef pSrc 
+   2002                  break;
+   2003                  
+   2004              case gMlmeTschModeReq_c:     //85 0F
+   2005          #define pSrc (&pMlmeReq->msgData.tschModeReq)
+   2006                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeTschModeReq_c;
+   2007                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   2008                  *p++ = pSrc->tschMode;
+   2009          #undef pSrc 
+   2010                  break;
+   2011                  
+   2012              case gMlmeKeepAliveReq_c:    //85 10
+   2013          #define pSrc (&pMlmeReq->msgData.keepAliveReq)
+   2014                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeKeepAliveReq_c;
+   2015                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   2016                  FLib_MemCpy(p, &pSrc->dstAddr, sizeof(pSrc->dstAddr));
+   2017                  p += sizeof(pSrc->dstAddr);
+   2018                  FLib_MemCpy(p, &pSrc->keepAlivePeriod, sizeof(pSrc->keepAlivePeriod));
+   2019                  p += sizeof(pSrc->keepAlivePeriod);                    
+   2020          #undef pSrc 
+   2021                  break;
+   2022                  
+   2023              case gMlmeBeaconReq_c:       //85 11
+   2024          #define pSrc (&pMlmeReq->msgData.beaconReq)
+   2025                  pFsciPacket->structured.header.opCode = mFsciNwkMlmeBeaconReq_c;
+   2026                  pFsciPacket->structured.header.opGroup = gFSCI_NwkMlmeOpcodeGroup_c;
+   2027                  *p++ = pSrc->beaconType;
+   2028                  *p++ = pSrc->channel;
+   2029                  *p++ = pSrc->channelPage;
+   2030                  *p++ = pSrc->superframeOrder;
+   2031                  *p++ = pSrc->beaconSecurityLevel;
+   2032                  *p++ = pSrc->beaconKeyIdMode;
+   2033                  FLib_MemCpy(p, &pSrc->beaconKeySource, sizeof(pSrc->beaconKeySource));
+   2034                  p += sizeof(pSrc->beaconKeySource);        
+   2035                  *p++ = pSrc->beaconKeyIndex;
+   2036                  *p++ = pSrc->dstAddrMode;
+   2037                  FLib_MemCpy(p, &pSrc->dstAddr, sizeof(pSrc->dstAddr));
+   2038                  p += sizeof(pSrc->dstAddr);
+   2039                  *p++ = pSrc->bsnSuppression;
+   2040          #undef pSrc 
+   2041                  break;
+   2042          #endif /* #if gTschSupport_d */
+   2043          
+   2044          
+   2045          /* MLME confirms and indications */
+   2046          #if gMacUseAssociation_d
+   2047          #if gMacCoordinatorCapability_d
+   2048              case gMlmeAssociateInd_c:    //84 00
+   2049          #define pSrc (&pMlmeCnf->msgData.associateInd)
+   2050                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkAssociateInd_c;
+   2051                  FLib_MemCpy(p, &pSrc->deviceAddress, sizeof(pSrc->deviceAddress));
+   2052                  p += sizeof(pSrc->deviceAddress);
+   2053                  *p++ = pSrc->securityLevel;
+   2054                  *p++ = pSrc->keyIdMode;
+   2055                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2056                  p += sizeof(pSrc->keySource);
+   2057                  *p++ = pSrc->keyIndex;
+   2058                  *p++ = pSrc->capabilityInfo;
+   2059          #undef pSrc
+   2060                  break;
+   2061          #endif
+   2062          
+   2063              case gMlmeAssociateCnf_c:    //84 01
+   2064          #define pSrc (&pMlmeCnf->msgData.associateCnf)
+   2065                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkAssociateCnf_c;
+   2066                  
+   2067                  FLib_MemCpy( p, &pSrc->assocShortAddress, sizeof(pSrc->assocShortAddress) );
+   2068                  p += sizeof(pSrc->assocShortAddress);
+   2069                  if ((uint32_t)param != gSuccess_c)
+   2070                  {
+   2071                      *p++ = (uint32_t)param;
+   2072                  }
+   2073                  else
+   2074                  {
+   2075                      *p++ = pSrc->status;
+   2076                  }
+   2077                  *p++ = pSrc->securityLevel;
+   2078                  *p++ = pSrc->keyIdMode;
+   2079                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2080                  p += sizeof(pSrc->keySource);
+   2081                  *p++ = pSrc->keyIndex;
+   2082          #undef pSrc
+   2083                  break;
+   2084          
+   2085              case gMlmeDisassociateInd_c: //84 02
+   2086          #define pSrc (&pMlmeCnf->msgData.disassociateInd)
+   2087                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkDisassociateInd_c;
+   2088                  FLib_MemCpy(p, &pSrc->deviceAddress, sizeof(pSrc->deviceAddress));
+   2089                  p += sizeof(pSrc->deviceAddress);
+   2090                  *p++ = pSrc->disassociateReason;
+   2091                  *p++ = pSrc->securityLevel;
+   2092                  *p++ = pSrc->keyIdMode;
+   2093                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2094                  p += sizeof(pSrc->keySource);
+   2095                  *p++ = pSrc->keyIndex;
+   2096          #undef pSrc
+   2097                  break;
+   2098          
+   2099              case gMlmeDisassociateCnf_c: //84 03
+   2100          #define pSrc (&pMlmeCnf->msgData.disassociateCnf)
+   2101                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkDisassociateCnf_c;
+   2102                  FLib_MemCpy(p, &pSrc->deviceAddress, sizeof(pSrc->deviceAddress));
+   2103                  p += sizeof(pSrc->deviceAddress);
+   2104                  FLib_MemCpy( p, &pSrc->devicePanId, sizeof(pSrc->devicePanId) );
+   2105                  p += sizeof(pSrc->devicePanId);
+   2106                  *p++ = pSrc->deviceAddrMode;
+   2107                  if ((uint32_t)param != gSuccess_c)
+   2108                      *p++ = (uint32_t)param;
+   2109                  else
+   2110                      *p++ = pSrc->status;
+   2111          #undef pSrc
+   2112                  break;
+   2113          #endif
+   2114              case gMlmeBeaconNotifyInd_c: //84 04
+   2115          #define pSrc (&pMlmeCnf->msgData.beaconNotifyInd)
+   2116                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkBeaconNotifyInd_c;
+   2117                  *p++ = pSrc->bsn;
+   2118                  *p++ = pSrc->pendAddrSpec;
+   2119                  *p++ = pSrc->sduLength;
+   2120                  //pending short address
+   2121                  size = sizeof(uint16_t) * (pSrc->pendAddrSpec & 0x07);
+   2122                  //pending extended address
+   2123                  size += sizeof(uint64_t) * ((pSrc->pendAddrSpec >> 4) & 0x07);
+   2124                  FLib_MemCpy(p, pSrc->pAddrList, size);
+   2125                  p += size;
+   2126          
+   2127                  FLib_MemCpy(p, pSrc->pPanDescriptor, sizeof(panDescriptor_t));
+   2128                  p += sizeof(panDescriptor_t);
+   2129                  FLib_MemCpy(p, pSrc->pSdu, pSrc->sduLength);
+   2130                  p += pSrc->sduLength;
+   2131          #if gTschSupport_d
+   2132                  *p++ = pSrc->ebsn;
+   2133                  *p++ = pSrc->beaconType;
+   2134          #endif        
+   2135          #undef pSrc
+   2136                  break;
+   2137          
+   2138              case gMlmeGetCnf_c:          //84 05
+   2139                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkGetCnf_c;
+   2140                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2141                  *p++ = pMlmeReq->msgData.getReq.pibAttribute;
+   2142                  *p++ = pMlmeReq->msgData.getReq.pibAttributeIndex;
+   2143          #if gFsciHostMacSupport_c
+   2144                  if( (gMPibBeaconPayload_c == pMlmeReq->msgData.getReq.pibAttribute) 
+   2145          #if gTschSupport_d
+   2146                   || (gMPibHoppingSequenceList_c == pMlmeReq->msgData.getReq.pibAttribute) 
+   2147          #endif
+   2148                    )
+   2149                  {
+   2150                      size = gFsciMaxPayloadLen_c - sizeof(mlmeGetCnf_t);
+   2151                  }
+   2152                  else
+   2153                  {
+   2154                      size = sizeof(uint64_t);
+   2155                  }
+   2156          #else          
+   2157                  size = mlmeGetSizeOfPIB(pMlmeReq->msgData.getReq.pibAttribute);
+   2158          #endif
+   2159                  FLib_MemCpy( p, &size, sizeof(size) );
+   2160                  p += sizeof(size);
+   2161                  FLib_MemCpy(p, pMlmeReq->msgData.getReq.pibAttributeValue, size);
+   2162                  p += size;
+   2163                  break;
+   2164          
+   2165          #if gGtsSupport_d
+   2166              case gMlmeGtsInd_c:          //84 06
+   2167          #define pSrc (&pMlmeCnf->msgData.gtsInd)
+   2168                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkGtsInd_c;
+   2169                  FLib_MemCpy( p, &pSrc->deviceAddress, sizeof(uint16_t) );
+   2170                  p += sizeof(uint16_t);
+   2171                  *p++ = *((uint8_t*)&pSrc->gtsCharacteristics);
+   2172                  *p++ = pSrc->securityLevel;
+   2173                  *p++ = pSrc->keyIdMode;
+   2174                  FLib_MemCpy (p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2175                  p += sizeof(pSrc->keySource);
+   2176                  *p++ = pSrc->keyIndex;
+   2177          #undef pSrc
+   2178                  break;
+   2179          
+   2180              case gMlmeGtsCnf_c:          //84 07
+   2181                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkGtsCnf_c;
+   2182                  if ((uint32_t)param != gSuccess_c)
+   2183                  {
+   2184                      *p++ = (uint32_t)param;
+   2185                  }
+   2186                  else
+   2187                  {
+   2188                      *p++ = pMlmeCnf->msgData.gtsCnf.status;
+   2189                  }
+   2190                  *p++ = *((uint8_t*)&(pMlmeCnf->msgData.gtsCnf.gtsCharacteristics));
+   2191                  break;
+   2192          #endif
+   2193          
+   2194          #if gMacCoordinatorCapability_d
+   2195              case gMlmeOrphanInd_c:       //84 08
+   2196          #define pSrc (&pMlmeCnf->msgData.orphanInd)
+   2197                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkOrphanInd_c;
+   2198                  FLib_MemCpy(p, &pSrc->orphanAddress, sizeof(pSrc->orphanAddress));
+   2199                  p += sizeof(pSrc->orphanAddress);
+   2200                  *p++ = pSrc->securityLevel;
+   2201                  *p++ = pSrc->keyIdMode;
+   2202                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2203                  p += sizeof(pSrc->keySource);
+   2204                  *p++ = pSrc->keyIndex;
+   2205          #undef pSrc
+   2206                  break;
+   2207          #endif
+   2208          
+   2209              case gMlmeResetCnf_c:        //84 09
+   2210                  pFsciPacket->structured.header.opCode = mFsciMlmwNwkResetCnf_c;
+   2211                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2212                  break;
+   2213          
+   2214          #if gMacUseRxEnableRequest_d
+   2215              case gMlmeRxEnableCnf_c:     //84 0A
+   2216                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkRxEnableCnf_c;
+   2217                  if ((uint32_t)param != gSuccess_c)
+   2218                      *p++ = (uint8_t)((uint32_t)param);
+   2219                  else
+   2220                      *p++ = pMlmeCnf->msgData.rxEnableCnf.status;
+   2221                  break;
+   2222          #endif
+   2223          
+   2224              case gMlmeScanCnf_c:         //84 0B
+   2225          #define pSrc (&pMlmeCnf->msgData.scanCnf)
+   2226                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkScanCnf_c;
+   2227                  *p++ = pSrc->status;
+   2228                  *p++ = pSrc->scanType;
+   2229                  *p++ = pSrc->resultListSize;
+   2230                  FLib_MemCpy( p, &pSrc->unscannedChannels, sizeof(channelMask_t) );
+   2231                  p += sizeof(channelMask_t);
+   2232                  
+   2233                  if( pSrc->status == gSuccess_c )
+   2234                  {
+   2235                      if( (pSrc->scanType == gScanModeED_c) ||
+   2236                          (pSrc->scanType == gScanModeFastED_c) )
+   2237                      {
+   2238                          size = pSrc->resultListSize * sizeof(pSrc->resList.pEnergyDetectList[0]);
+   2239                          FLib_MemCpy(p, pSrc->resList.pEnergyDetectList, size);
+   2240                          p += size;
+   2241                      }
+   2242                      else if( (pSrc->scanType == gScanModeActive_c) ||
+   2243                               (pSrc->scanType == gScanModePassive_c) )
+   2244                      {
+   2245                          uint16_t len = sizeof(pSrc->status) +
+   2246                                         sizeof(pSrc->scanType) +
+   2247                                         sizeof(pSrc->resultListSize) +
+   2248                                         sizeof(pSrc->unscannedChannels);
+   2249                          panDescriptorBlock_t* pCrtPDBlock = pSrc->resList.pPanDescriptorBlockList;
+   2250                          uint8_t pdIdx = 0;
+   2251                          uint8_t resIdx = 0;
+   2252                          
+   2253                          size = sizeof(panDescriptor_t);
+   2254                          
+   2255                          while ((pCrtPDBlock) &&
+   2256                                 (resIdx < pSrc->resultListSize) &&
+   2257                                 ( (len + size) < gFsciMaxPayloadLen_c ))
+   2258                          {
+   2259                              FLib_MemCpy(p, &pCrtPDBlock->panDescriptorList[pdIdx], size);
+   2260                              p += size;
+   2261                              len += size;
+   2262                              resIdx++;
+   2263                              
+   2264                              if ( ++pdIdx >= gScanResultsPerBlock_c )
+   2265                              {
+   2266                                  pCrtPDBlock = pCrtPDBlock->pNext;
+   2267                                  pdIdx = 0;
+   2268                              }
+   2269                          }
+   2270                          
+   2271                          /* store how many pan descriptors were put in buffer */
+   2272                          pFsciPacket->structured.payload[2] = resIdx;
+   2273                      }
+   2274                  }
+   2275          #undef pSrc
+   2276                  break;
+   2277          
+   2278              case gMlmeCommStatusInd_c:   //84 0C
+   2279          #define pSrc (&pMlmeCnf->msgData.commStatusInd)
+   2280                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkCommStatusInd_c;
+   2281                  FLib_MemCpy(p, &pSrc->srcAddress, sizeof(pSrc->srcAddress));
+   2282                  p += sizeof(pSrc->srcAddress);
+   2283                  FLib_MemCpy( p, &pSrc->panId, sizeof(uint16_t) );
+   2284                  p += sizeof(uint16_t);
+   2285                  *p++ = pSrc->srcAddrMode;
+   2286                  FLib_MemCpy(p, &pSrc->destAddress, sizeof(pSrc->destAddress));
+   2287                  p += sizeof(pSrc->destAddress);
+   2288                  *p++ = pSrc->destAddrMode;
+   2289                  
+   2290                  if ((uint32_t)param != gSuccess_c)
+   2291                      *p++ = (uint32_t)param;
+   2292                  else
+   2293                      *p++ = pSrc->status;
+   2294                  
+   2295                  *p++ = pSrc->securityLevel;
+   2296                  *p++ = pSrc->keyIdMode;
+   2297                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2298                  p += sizeof(pSrc->keySource);
+   2299                  *p++ = pSrc->keyIndex;
+   2300          #undef pSrc
+   2301                  break;
+   2302          
+   2303              case gMlmeSetCnf_c:          //84 0D
+   2304                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkSetCnf_c;
+   2305                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2306                  *p++ = pMlmeReq->msgData.setReq.pibAttribute;
+   2307                  *p++ = pMlmeReq->msgData.setReq.pibAttributeIndex;
+   2308                  break;
+   2309          #if gMacUseMlmeStart_d && gMacCoordinatorCapability_d
+   2310              case gMlmeStartCnf_c:        //84 0E
+   2311                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkStartCnf_c;
+   2312                  if ((uint32_t)param != gSuccess_c)
+   2313                      *p++ = (uint8_t)((uint32_t)param);
+   2314                  else
+   2315                      *p++ = pMlmeCnf->msgData.startCnf.status;
+   2316                  break;
+   2317          #endif
+   2318              case gMlmeSyncLossInd_c:     //84 0F
+   2319          #define pSrc (&pMlmeCnf->msgData.syncLossInd)
+   2320                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkSyncLossInd_c;
+   2321                  *p++ = pSrc->lossReason;
+   2322                  FLib_MemCpy( p, &pSrc->panId, sizeof(uint16_t) );
+   2323                  p += sizeof(uint16_t);
+   2324                  *p++ = pSrc->logicalChannel;
+   2325                  *p++ = pSrc->securityLevel;
+   2326                  *p++ = pSrc->keyIdMode;
+   2327                  FLib_MemCpy(p, &pSrc->keySource, sizeof(pSrc->keySource));
+   2328                  p += sizeof(pSrc->keySource);
+   2329                  *p++ = pSrc->keyIndex;
+   2330          #undef pSrc
+   2331                  break;
+   2332          
+   2333              case gMlmePollCnf_c:         //84 10
+   2334                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkPollCnf_c;
+   2335                  if ((uint32_t)param != gSuccess_c)
+   2336                  {
+   2337                      *p++ = (uint32_t)param;
+   2338                  }
+   2339                  else
+   2340                  {
+   2341                      *p++ = pMlmeCnf->msgData.pollCnf.status;
+   2342                  }
+   2343                  break;
+   2344          
+   2345          #if gMacCoordinatorCapability_d
+   2346              case gMlmePollNotifyInd_c:   //84 14
+   2347          #define pSrc (&pMlmeCnf->msgData.pollNotifyInd)
+   2348                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkPollNotifyInd_c;
+   2349                  *p++ = pSrc->srcAddrMode;
+   2350                  FLib_MemCpy(p, &pSrc->srcAddr, sizeof(pSrc->srcAddr));
+   2351                  p += sizeof(pSrc->srcAddr);
+   2352                  FLib_MemCpy( p, &pSrc->srcPanId, sizeof(uint16_t) );
+   2353                  p += sizeof(uint16_t);
+   2354          #undef pSrc
+   2355                  break;
+   2356          #endif
+   2357          
+   2358          #if gTschSupport_d
+   2359              case gMlmeSetSlotframeCnf_c: //84 15
+   2360          #define pSrc (&pMlmeCnf->msgData.setSlotframeCnf)      
+   2361                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkSetSlotframeCnf_c;
+   2362                  *p++ = pSrc->slotframeHandle;
+   2363                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2364          #undef pSrc
+   2365                  break;
+   2366                  
+   2367              case gMlmeSetLinkCnf_c:      //84 16
+   2368          #define pSrc (&pMlmeCnf->msgData.setLinkCnf)
+   2369                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkSetLinkCnf_c;
+   2370                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2371                  FLib_MemCpy(p, &pSrc->linkHandle, sizeof(pSrc->linkHandle));
+   2372                  p += sizeof(pSrc->linkHandle);
+   2373                  *p++ = pSrc->slotframeHandle;
+   2374          #undef pSrc      
+   2375                  break;
+   2376                  
+   2377              case gMlmeTschModeCnf_c:     //84 17
+   2378          #define pSrc (&pMlmeCnf->msgData.tschModeCnf)
+   2379                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkTschModeCnf_c;
+   2380                  *p++ = pSrc->tschMode;
+   2381                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2382          #undef pSrc 
+   2383                  break;
+   2384                  
+   2385              case gMlmeKeepAliveCnf_c:    //84 18
+   2386          #define pSrc (&pMlmeCnf->msgData.keepAliveCnf)
+   2387                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkKeepAliveCnf_c;
+   2388                  *p++ = (uint8_t)((uint32_t)param); //Status of Sync request
+   2389          #undef pSrc 
+   2390                  break;
+   2391                  
+   2392              case gMlmeBeaconCnf_c:       //84 19
+   2393          #define pSrc (&pMlmeCnf->msgData.beaconCnf)
+   2394                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkBeaconCnf_c;
+   2395                  if ((uint32_t)param != gSuccess_c)
+   2396                  {
+   2397                      *p++ = (uint8_t)((uint32_t)param);
+   2398                  }
+   2399                  else
+   2400                  {
+   2401                      *p++ = pSrc->status;
+   2402                  }
+   2403          #undef pSrc 
+   2404                  break;       
+   2405          #endif /* #if gTschSupport_d */
+   2406          /*
+   2407              case BeaconStartInd:         //84 12
+   2408                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkBeaconStartInd_c;
+   2409                  *p++ = source
+   2410                  break;
+   2411          
+   2412              case MacMaintenanceScanCnf:  //84 13
+   2413                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkMaintenanceScanCnf_c;
+   2414                  *p++ = status
+   2415                  break;
+   2416          */
+   2417              default:                     //84 11
+   2418                  pFsciPacket->structured.header.opCode = mFsciMlmeNwkErrorCnf_c;
+   2419                  //*p++ = error...
+   2420              }
+   2421          
+   2422              /* Send data over the serial interface */
+   2423              pFsciPacket->structured.header.len = (fsciLen_t)(p - pFsciPacket->structured.payload);
+   2424          
+   2425              if ( pFsciPacket->structured.header.len )
+   2426                  FSCI_transmitFormatedPacket( pFsciPacket, interfaceId );
+   2427              else
+   2428                  MEM_BufferFree( pFsciPacket );
+   2429          #undef pMlmeReq
+   2430          #undef pMlmeCnf
+   2431          }
+   2432          #endif /* gFsciIncluded_c && gFSCI_IncludeMacCommands_c */
+   2433          
+   2434          /*! *********************************************************************************
+   2435          * \brief   This function determines the instance of the MAC registered on the 
+   2436          *          specified interface
+   2437          *
+   2438          * \param[in] interfaceId
+   2439          *
+   2440          * \return The instance of the MAC
+   2441          *
+   2442          * \pre
+   2443          *
+   2444          * \post
+   2445          *
+   2446          * \remarks
+   2447          *
+   2448          ********************************************************************************** */
+   2449          instanceId_t fsciGetMacInstanceId( uint32_t interfaceId )
+   2450          {
+   2451          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+   2452              uint32_t i;
+   2453          
+   2454              for( i=0; i<gMacInstancesCnt_c; i++ )
+   2455              {
+   2456                  if( interfaceId == fsciToMacBinding[i] )
+   2457                  {
+   2458                      return (instanceId_t)i;
+   2459                  }
+   2460              }
+   2461          #endif
+   2462              return gInvalidInstanceId_c;
+   2463          }
+   2464          
+   2465          /*! *********************************************************************************
+   2466          * \brief   This function determines the interface Id of the specified MAC instance
+   2467          *
+   2468          * \param[in] macInstance
+   2469          *
+   2470          * \return The interface Id on which the MAC is registered
+   2471          *
+   2472          * \pre
+   2473          *
+   2474          * \post
+   2475          *
+   2476          * \remarks
+   2477          *
+   2478          ********************************************************************************** */
+   2479          uint32_t fsciGetMacInterfaceId( instanceId_t macInstance )
+   2480          {
+   2481          #if gFsciIncluded_c && gFSCI_IncludeMacCommands_c
+   2482              return fsciToMacBinding[macInstance];
+   2483          #else
+   2484              return 0;
+   2485          #endif
+   2486          }
+   2487          
+   2488          /*! *********************************************************************************
+   2489          * \brief   This function determines the instance of the MAC registered on the 
+   2490          *          specified interface on FSCI host
+   2491          *
+   2492          * \param[in] interfaceId
+   2493          *
+   2494          * \return The instance of the MAC
+   2495          *
+   2496          * \pre
+   2497          *
+   2498          * \post
+   2499          *
+   2500          * \remarks
+   2501          *
+   2502          ********************************************************************************** */
+   2503          instanceId_t fsciHostGetMacInstanceId( uint32_t interfaceId )
+   2504          {
+   2505          #if gFsciIncluded_c && gFsciHostMacSupport_c
+   2506              uint32_t i;
+   2507          
+   2508              for( i=0; i<gMacInstancesCnt_c; i++ )
+   2509              {
+   2510                  if( interfaceId == fsciHostMacInterfaces[i].fsciInterfaceId )
+   2511                  {
+   2512                      return (instanceId_t)i;
+   2513                  }
+   2514              }
+   2515          #endif
+   2516              return gInvalidInstanceId_c;
+   2517          }
+   2518          
+   2519          /*! *********************************************************************************
+   2520          * \brief   This function determines the interface Id of the specified MAC 
+   2521          *          instance registered on FSCI host
+   2522          *
+   2523          * \param[in] macInstance
+   2524          *
+   2525          * \return The interface Id on which the MAC is registered
+   2526          *
+   2527          * \pre
+   2528          *
+   2529          * \post
+   2530          *
+   2531          * \remarks
+   2532          *
+   2533          ********************************************************************************** */
+   2534          uint32_t fsciHostGetMacInterfaceId( instanceId_t macInstance )
+   2535          {
+   2536          #if gFsciIncluded_c && gFsciHostMacSupport_c
+   2537              return fsciHostMacInterfaces[macInstance].fsciInterfaceId;
+   2538          #else
+   2539              return 0;
+   2540          #endif
+   2541          }
+   2542          
+   2543          #if gFsciIncluded_c && gFsciHostMacSupport_c
+   2544          /*! *********************************************************************************
+   2545          * \brief  This function will bind an instance of the upper layet to a MAC instance 
+   2546          *
+   2547          * \param[in]  nwkId instance of the upper layer
+   2548          *
+   2549          * \return  instanceId_t instance of the MAC
+   2550          *
+   2551          ********************************************************************************** */
+   2552          instanceId_t BindToMAC( instanceId_t nwkId )
+   2553          {
+   2554              uint32_t i;
+   2555              for( i=0; i<gMacInstancesCnt_c; i++)
+   2556              {
+   2557                  if( fsciHostMacInterfaces[i].upperLayerId == gInvalidInstanceId_c )
+   2558                  {
+   2559                      fsciHostMacInterfaces[i].upperLayerId = nwkId;
+   2560                      return (instanceId_t)i;
+   2561                  }
+   2562              }
+   2563              
+   2564              return gInvalidInstanceId_c;
+   2565          }
+   2566          
+   2567          /*! *********************************************************************************
+   2568          * \brief  This function will unbind a MAC instance from the upper layer
+   2569          *
+   2570          * \param[in]  macId instance of the MAC
+   2571          *
+   2572          ********************************************************************************** */
+   2573          void UnBindFromMAC ( instanceId_t macId )
+   2574          {
+   2575              fsciHostMacInterfaces[macId].upperLayerId = gInvalidInstanceId_c;
+   2576          }
+   2577          
+   2578          void Mac_RegisterSapHandlers( MCPS_NWK_SapHandler_t pMCPS_NWK_SapHandler,
+   2579                                        MLME_NWK_SapHandler_t pMLME_NWK_SapHandler,
+   2580                                        instanceId_t macInstanceId )
+   2581          {
+   2582              fsciHostMacInterfaces[macInstanceId].pfMCPS_NWK_SapHandler = pMCPS_NWK_SapHandler;
+   2583              fsciHostMacInterfaces[macInstanceId].pfMLME_NWK_SapHandler = pMLME_NWK_SapHandler;
+   2584          }
+   2585          
+   2586          /*! *********************************************************************************
+   2587          * \brief  Dummy SAP handler
+   2588          *
+   2589          * \param[in]  pMsg
+   2590          * \param[in]  instanceId
+   2591          *
+   2592          * \return  None.
+   2593          *
+   2594          ********************************************************************************** */
+   2595          resultType_t Dumy_MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanceId)
+   2596          {
+   2597              MEM_BufferFree(pMsg);
+   2598              return gSuccess_c;
+   2599          }
+   2600          
+   2601          /*! *********************************************************************************
+   2602          * \brief  Dummy SAP handler
+   2603          *
+   2604          * \param[in]  pMsg
+   2605          * \param[in]  instanceId
+   2606          *
+   2607          * \return  None.
+   2608          *
+   2609          ********************************************************************************** */
+   2610          resultType_t Dumy_MLME_NWK_SapHandler (nwkMessage_t* pMsg, instanceId_t instanceId)
+   2611          {
+   2612              MEM_BufferFree(pMsg);
+   2613              return gSuccess_c;
+   2614          }
+   2615          
+   2616          /*! *********************************************************************************
+   2617          * \brief  This function handles MCPS requests
+   2618          *
+   2619          * \param[in] pMsg Message containing the message type and
+   2620          *                          a pointer to the request
+   2621          * \param[in] instanceId instance of the MAC
+   2622          *
+   2623          * \return  resultType_t.
+   2624          *
+   2625          ********************************************************************************** */
+   2626          #undef mFuncId_c
+   2627          #define mFuncId_c 7
+   2628          resultType_t NWK_MCPS_SapHandler (nwkToMcpsMessage_t* pMsg, instanceId_t instanceId)
+   2629          {
+   2630              if( instanceId >= gMacInstancesCnt_c )
+   2631              {
+   2632                  return gInvalidParameter_c;
+   2633              }
+   2634              
+   2635              /* Monitor message from fsci interface */
+   2636              FSCI_Monitor(gFSCI_McpsSapId_c, pMsg, gSuccess_c, fsciGetMacInterfaceId(instanceId));
+   2637              
+   2638              /* Parse message and send request to fsci host interface */
+   2639              FSCI_Monitor(gFSCI_McpsSapId_c, pMsg, gSuccess_c, fsciHostGetMacInterfaceId(instanceId));
+   2640              
+   2641              /* Async request can be freed now */
+   2642              MEM_BufferFree(pMsg);
+   2643                
+   2644              return gSuccess_c;
+   2645          }
+   2646          
+   2647          /*! *********************************************************************************
+   2648          * \brief  This function handles MLME requests
+   2649          *
+   2650          * \param[in]  pMsg Message containing the message type and
+   2651          *                           a pointer to the request
+   2652          * \param[in] instanceId instance of the MAC
+   2653          *
+   2654          * \return  resultType_t.
+   2655          *
+   2656          ********************************************************************************** */
+   2657          #undef mFuncId_c
+   2658          #define mFuncId_c 8
+   2659          resultType_t NWK_MLME_SapHandler (mlmeMessage_t* pMsg, instanceId_t instanceId)
+   2660          {    
+   2661              uint8_t      *p = NULL;
+   2662              uint16_t     size = 0;
+   2663              resultType_t status = gSuccess_c;
+   2664              uint8_t      fsciInterface;
+   2665              uint8_t      fsciHostInterface;
+   2666              opCode_t     OpCode;
+   2667          #if gFsciHostSyncUseEvent_c    
+   2668              event_flags_t fsciHostSyncRspEventFlags; 
+   2669          #endif
+   2670            
+   2671              if( instanceId >= gMacInstancesCnt_c )
+   2672                  return gInvalidParameter_c;
+   2673          
+   2674              fsciInterface = fsciGetMacInterfaceId(instanceId);
+   2675              fsciHostInterface = fsciHostGetMacInterfaceId(instanceId);
+   2676              
+   2677              /* Monitor message from fsci interface */
+   2678              FSCI_Monitor(gFSCI_MlmeSapId_c, pMsg, gSuccess_c, fsciInterface);
+   2679              
+   2680              /* Parse message and send request to fsci host interface */
+   2681              FSCI_Monitor(gFSCI_MlmeSapId_c, pMsg, gSuccess_c, fsciHostInterface);
+   2682          
+   2683              /* Check for sync requests */
+   2684              switch( pMsg->msgType )
+   2685              {
+   2686              case gMlmeGetReq_c: 
+   2687                  pMsg->msgType = gMlmeGetCnf_c;
+   2688                  OpCode = mFsciMlmeNwkGetCnf_c;
+   2689                  break;
+   2690          
+   2691              case gMlmeResetReq_c:
+   2692                  pMsg->msgType = gMlmeResetCnf_c;
+   2693                  OpCode = mFsciMlmwNwkResetCnf_c;
+   2694                  break;
+   2695          
+   2696              case gMlmeSetReq_c:
+   2697                  pMsg->msgType = gMlmeSetCnf_c;
+   2698                  OpCode = mFsciMlmeNwkSetCnf_c;
+   2699                  break;
+   2700          #if gTschSupport_d
+   2701              case gMlmeSetSlotframeReq_c:
+   2702                  pMsg->msgType = gMlmeSetSlotframeCnf_c;
+   2703                  OpCode = mFsciMlmeNwkSetSlotframeCnf_c;
+   2704                  break;
+   2705          
+   2706              case gMlmeSetLinkReq_c:
+   2707                  pMsg->msgType = gMlmeSetLinkCnf_c;
+   2708                  OpCode = mFsciMlmeNwkSetLinkCnf_c;
+   2709                  break;
+   2710          
+   2711              case gMlmeTschModeReq_c:
+   2712                  pMsg->msgType = gMlmeTschModeCnf_c;
+   2713                  OpCode = mFsciMlmeNwkTschModeCnf_c;
+   2714                  break;
+   2715          
+   2716              case gMlmeKeepAliveReq_c:
+   2717                  pMsg->msgType = gMlmeKeepAliveCnf_c;
+   2718                  OpCode = mFsciMlmeNwkKeepAliveCnf_c;
+   2719                  break;
+   2720          #endif
+   2721              default:
+   2722                  /* Async request can be freed now */
+   2723                  MEM_BufferFree(pMsg);
+   2724                  return gSuccess_c;
+   2725              }
+   2726          
+   2727              FSCI_HostSyncLock( fsciHostInterface, gFSCI_MlmeNwkOpcodeGroup_c, OpCode );
+   2728              
+   2729              /* Wait for result from the serial interface */
+   2730              while( !pFsciHostSyncRsp )
+   2731              {
+   2732          #if gFsciHostSyncUseEvent_c
+   2733                  OSA_EventWait(&gFsciHostSyncRspEvent, 0x00FFFFFF, FALSE, OSA_WAIT_FOREVER ,&fsciHostSyncRspEventFlags);
+   2734          #else
+   2735                  FSCI_receivePacket((void*)fsciHostInterface);
+   2736          #endif
+   2737                  
+   2738                  if( NULL != pFsciHostSyncRsp )
+   2739                  {
+   2740                      p = pFsciHostSyncRsp->structured.payload;
+   2741                  }
+   2742                  else
+   2743                  {
+   2744                      continue;
+   2745                  }
+   2746          
+   2747                  /* Check that response matches the sync request */
+   2748                  switch( pMsg->msgType )
+   2749                  {
+   2750                  case gMlmeGetCnf_c:
+   2751                      if( mFsciMlmeNwkGetCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2752                      { 
+   2753                          status = (resultType_t)*p++;
+   2754                          /* Skip pib attribute and index */
+   2755                          p += 2;
+   2756                          FLib_MemCpy(&size, p, 2);
+   2757                          p += 2;
+   2758                          FLib_MemCpy(pMsg->msgData.getReq.pibAttributeValue, p, size);
+   2759                          p += size;
+   2760                      }
+   2761                      break;
+   2762          
+   2763                  case gMlmeResetCnf_c:
+   2764                      if( mFsciMlmwNwkResetCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2765                      {
+   2766                          status = (resultType_t)*p++;
+   2767                      }            
+   2768                      break;
+   2769          
+   2770                  case gMlmeSetCnf_c:
+   2771                      if( mFsciMlmeNwkSetCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2772                      {
+   2773                          status = (resultType_t)*p++;
+   2774                      }            
+   2775                      break;
+   2776          #if gTschSupport_d
+   2777                  case gMlmeSetSlotframeCnf_c:
+   2778                      if( mFsciMlmeNwkSetSlotframeCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2779                      {
+   2780                          /* Skip slotframe handle */
+   2781                          p += 1;
+   2782                          status = (resultType_t)*p++;
+   2783                      }            
+   2784                      break;
+   2785          
+   2786                  case gMlmeSetLinkCnf_c:
+   2787                      if( mFsciMlmeNwkSetLinkCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2788                      {
+   2789                          status = (resultType_t)*p++;
+   2790                      }            
+   2791                      break;
+   2792          
+   2793                  case gMlmeTschModeCnf_c:
+   2794                      if( mFsciMlmeNwkTschModeCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2795                      {
+   2796                          /* Skip tsch mode */
+   2797                          p += 1;
+   2798                          status = (resultType_t)*p++;
+   2799                      }            
+   2800                      break;
+   2801          
+   2802                  case gMlmeKeepAliveCnf_c:
+   2803                      if( mFsciMlmeNwkKeepAliveCnf_c == pFsciHostSyncRsp->structured.header.opCode )
+   2804                      {
+   2805                          status = (resultType_t)*p++;
+   2806                      }            
+   2807                      break;
+   2808          #endif
+   2809                  default:
+   2810                      break;
+   2811                  }        
+   2812              }
+   2813             
+   2814              /* Check if there is another FSCI interface for this MAC instance 
+   2815                 and forwared FSCI message received on FSCI Host interface */
+   2816              if( mFsciInvalidInterface_c != fsciInterface )
+   2817              {
+   2818                  FSCI_transmitFormatedPacket(pFsciHostSyncRsp, fsciInterface);
+   2819              }
+   2820              else
+   2821              {
+   2822                  MEM_BufferFree(pFsciHostSyncRsp);
+   2823              }
+   2824              
+   2825              FSCI_HostSyncUnlock( fsciHostInterface );
+   2826              
+   2827              return status;
+   2828          }
+   2829          
+   2830          #endif /* gFsciIncluded_c && gFsciHostMacSupport_c */
+   2831          
+   2832          /************************************************************************************
+   2833          *************************************************************************************
+   2834          * Private functions
+   2835          *************************************************************************************
+   2836          ************************************************************************************/
+   2837          
+   2838          /************************************************************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   MAC_Monitor
+       0   fsciGetMacInstanceId
+       0   fsciGetMacInterfaceId
+       0   fsciHostGetMacInstanceId
+       0   fsciHostGetMacInterfaceId
+       0   fsciRegisterMac
+       0   fsciRegisterMacToHost
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  MAC_Monitor
+       8  fsciGetMacInstanceId
+       6  fsciGetMacInterfaceId
+       8  fsciHostGetMacInstanceId
+       6  fsciHostGetMacInterfaceId
+       2  fsciRegisterMac
+       2  fsciRegisterMacToHost
+
+ 
+ 34 bytes in section .text
+ 
+ 34 bytes of CODE memory
+
+Errors: none
+Warnings: none

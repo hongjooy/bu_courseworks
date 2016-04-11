@@ -1,0 +1,1207 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:16
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\DCDC\Source\DCDC.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\DCDC\Source\DCDC.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\DCDC.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\DCDC.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\DCDC\Source\DCDC.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file TimersManager.c
+      6          * TIMER implementation file for the ARM CORTEX-M4 processor
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          #include "EmbeddedTypes.h"
+     35          #include "DCDC.h"
+     36          #include "fsl_clock_manager.h"
+     37          #include "fsl_adc16_driver.h"
+     38          #include "TimersManager.h"
+     39          #include "fsl_os_abstraction.h"
+     40          
+     41          /*****************************************************************************
+     42          ******************************************************************************
+     43          * Private type definitions
+     44          ******************************************************************************
+     45          *****************************************************************************/
+     46          
+     47          typedef struct dcdcInputs_tag
+     48          {
+     49            dcdc1P45OutputTargetVal_t outputTarget_1P45;
+     50            dcdc1P8OutputTargetVal_t  outputTarget_1P8;
+     51            uint16_t vbatVal_mV;
+     52            bool_t outputTargetsToUpdate;
+     53          }dcdcInputs_t;
+     54          
+     55          /*****************************************************************************
+     56          ******************************************************************************
+     57          * Private macros
+     58          ******************************************************************************
+     59          *****************************************************************************/
+     60          
+     61          #define mDCDC_VBatMinBuck_c  1800
+     62          #define mDCDC_VBatMaxBuck_c  4200
+     63          #define mDCDC_VBatMinBoost_c  900
+     64          #define mDCDC_VBatMaxBoost_c 1800
+     65          #define mDCDC_1P45TrgMaxBuck_c   gDCDC_1P45OutputTargetVal_1_650_c
+     66          #define mDCDC_1P45TrgMaxBoost_c  gDCDC_1P45OutputTargetVal_1_800_c
+     67          #define mDCDC_BoostVOutToVBatMin_c 50
+     68          #define mDCDC_BuckVBatToVOutMin_c  0
+     69          #define mDCDC_PosLimitBoostIn_c 0x12
+     70          #define mDCDC_BGAPVal_mV_c           999
+     71          #define mDCDC_DutyCycleMax_c         127
+     72          //#define mDCDC_BGAPVal_mV_c         1037
+     73          //#define mDCDC_BGAPVal_mV_c         1038
+     74          /*****************************************************************************
+     75           *****************************************************************************
+     76           * Private prototypes
+     77           *****************************************************************************
+     78           *****************************************************************************/
+     79          
+     80          /*****************************************************************************
+     81           *****************************************************************************
+     82           * Private memory definitions
+     83           *****************************************************************************
+     84           *****************************************************************************/
+     85          
+     86          #if gDCDC_Enabled_d
+     87          
+     88          static const adc16_converter_config_t adcConfig = {
+     89            .lowPowerEnable = false,
+     90            .clkDividerMode = kAdc16ClkDividerOf8, 
+     91            .longSampleTimeEnable = false,
+     92            .resolution = kAdc16ResolutionBitOfSingleEndAs12,
+     93            .clkSrc = kAdc16ClkSrcOfBusClk,
+     94            .asyncClkEnable = false,
+     95            .highSpeedEnable = false,
+     96            .hwTriggerEnable = false,
+     97            .refVoltSrc = kAdc16RefVoltSrcOfVref,
+     98            .continuousConvEnable = false,
+     99          #if FSL_FEATURE_ADC16_HAS_DMA
+    100            .dmaEnable = false
+    101          #endif /* FSL_FEATURE_ADC16_HAS_DMA */
+    102          };
+    103          const adc16_chn_config_t vbatChanConfig = {
+    104            .chnIdx = kAdc16Chn23, /*!< Select the sample channel index. */
+    105            .convCompletedIntEnable = 0, /*!< Enable the conversion complete interrupt. */
+    106            .diffConvEnable = 0 /*!< Enable the differential conversion. */
+    107          };
+    108          const adc16_chn_config_t bgapChanConfig = {
+    109            .chnIdx = kAdc16Chn27, /*!< Select the sample channel index. */
+    110            .convCompletedIntEnable = 0, /*!< Enable the conversion complete interrupt. */
+    111            .diffConvEnable = 0 /*!< Enable the differential conversion. */
+    112          };
+    113          
+    114          const adc16_hw_average_config_t adcHwAverageConfig =
+    115          {
+    116            .hwAverageEnable = false, /*!< Enable the hardware average function. */
+    117            .hwAverageCountMode = kAdc16HwAverageCountOf4 /*!< Select the count of conversion result for accumulator. */
+    118          } ;
+    119          const adc16_hw_cmp_config_t adcHwCmpConfig =
+    120          {
+    121            .hwCmpEnable = false, /*!< Enable the hardware compare function. @internal gui name="Hardware compare" */
+    122            .hwCmpGreaterThanEnable = false, /*!< Configure the compare function. @internal gui name="Compare function greater than" */
+    123            /*
+    124            false - Configures less than the threshold. The outside and inside range are not inclusive.
+    125            The functionality is based on the values
+    126            placed in CV1 and CV2.
+    127            true  - Configures greater than or equal to the threshold. The outside and inside
+    128            ranges are inclusive. The functionality is based on the values placed in
+    129            CV1 and CV2.
+    130            */
+    131            .hwCmpRangeEnable = false, /*!< Configure the comparator function. @internal gui name="Compare function range" */
+    132            /*
+    133            Configures the comparator function to check if the conversion result of the
+    134            input being monitored is either between or outside the range formed by
+    135            CV1 and CV2 and determined by the value of hwCmpGreaterThanEnable.
+    136            
+    137            false - Range function disabled. Only CV1 is compared.
+    138            true  - Range function enabled. Both CV1 and CV2 are compared.
+    139            */
+    140            .cmpValue1 = 0, /*!< Setting value for CV1. @internal gui name="Compare value 1" */
+    141            .cmpValue2 = 0 /*!< Setting value for CV2. @internal gui name="Compare value 2" */
+    142          } ;
+    143          
+    144          static tmrTimerID_t mVBatMonitorTimerId;
+    145          static const dcdcConfig_t * mpDCDCConfig;
+    146          static dcdcCallbackParam_t mDCDCCallbackParam;
+    147          static dcdcInputs_t mDCDCInputs;
+    148          static pfDCDCPSwitchCallback_t mpfDCDCPSwitchCallback;
+    149          #endif /*gDCDC_Enabled_d*/
+    150          
+    151          
+    152          
+    153          
+    154          
+    155          /*****************************************************************************
+    156          ******************************************************************************
+    157          * Private functions
+    158          ******************************************************************************
+    159          *****************************************************************************/
+    160          
+    161          #if gDCDC_Enabled_d
+    162          ///*---------------------------------------------------------------------------
+    163          //* NAME: DCDC_AdjustVbatDiv
+    164          //* DESCRIPTION: 
+    165          //* PARAMETERS:  
+    166          //* RETURN: 
+    167          //* NOTES: none
+    168          //*---------------------------------------------------------------------------*/
+    169          static void DCDC_AdjustVbatDiv()
+    170          {
+    171            uint16_t batVal;
+    172            uint8_t vBatDiv = 3;
+    173            do
+    174            {
+    175              DCDC_BWR_REG0_DCDC_VBAT_DIV_CTRL(DCDC_BASE_PTR, vBatDiv);  
+    176              ADC16_DRV_ConfigConvChn(0, 0, &vbatChanConfig);
+    177              ADC16_DRV_WaitConvDone(0,0);
+    178              batVal = ADC16_DRV_GetConvValueRAW(0,0);   
+    179              if(batVal > 0x7FF)
+    180              {
+    181                break;
+    182              }
+    183            }
+    184            while(vBatDiv-- != 1);
+    185          }
+    186          ///*---------------------------------------------------------------------------
+    187          //* NAME: DCDC_Get1P8VOutputTargetAndVBatInmV
+    188          //* DESCRIPTION: 
+    189          //* PARAMETERS:  
+    190          //* RETURN: 
+    191          //* NOTES: none
+    192          //*---------------------------------------------------------------------------*/
+    193          static void DCDC_Get1P8VOutputTargetAndVBatInmV(uint16_t* p1P8VOutputInMv, uint16_t* pVBatInMv )
+    194          {
+    195            uint16_t batVal;
+    196            uint16_t bgapVal;
+    197            uint32_t mvVal;
+    198            uint8_t vBatDiv;
+    199            ADC16_DRV_ConfigConvChn(0, 0, &vbatChanConfig);
+    200            ADC16_DRV_WaitConvDone(0,0);
+    201            batVal = ADC16_DRV_GetConvValueRAW(0,0);
+    202            ADC16_DRV_ConfigConvChn(0, 0, &bgapChanConfig);
+    203            ADC16_DRV_WaitConvDone(0,0);
+    204            bgapVal = ADC16_DRV_GetConvValueRAW(0,0);
+    205            mvVal = 4095;
+    206            mvVal *= mDCDC_BGAPVal_mV_c;
+    207            mvVal += (bgapVal>>1);
+    208            mvVal /= bgapVal;
+    209            *p1P8VOutputInMv = mvVal;
+    210            vBatDiv = DCDC_BRD_REG0_DCDC_VBAT_DIV_CTRL(DCDC_BASE_PTR);
+    211            if(vBatDiv)
+    212            {
+    213              vBatDiv--;
+    214            }
+    215            mvVal = (batVal<<vBatDiv);
+    216            mvVal *= mDCDC_BGAPVal_mV_c;
+    217            mvVal += (bgapVal>>1);
+    218            mvVal /= bgapVal;  
+    219            *pVBatInMv = mvVal;
+    220          }
+    221          
+    222          ///*---------------------------------------------------------------------------
+    223          //* NAME: DCDC_mVTo1P8OutputTargetBoost
+    224          //* DESCRIPTION: 
+    225          //* PARAMETERS:  
+    226          //* RETURN: 
+    227          //* NOTES: none
+    228          //*---------------------------------------------------------------------------*/
+    229          static dcdc1P8OutputTargetVal_t DCDC_mVTo1P8OutputTargetBoost(uint16_t mV)
+    230          {
+    231            if(mV < 1650)
+    232            {
+    233              return gDCDC_1P8OutputTargetVal_1_650_c;
+    234            }
+    235            if(mV <= 2050)
+    236            {
+    237              mV -= 1650;
+    238              if(mV%25)
+    239              {
+    240                mV = mV/25 +1;
+    241              }
+    242              else
+    243              {
+    244                mV /= 25;
+    245              }
+    246              return (dcdc1P8OutputTargetVal_t)mV;
+    247            }
+    248            if (mV < 2800)
+    249            {
+    250              return gDCDC_1P8OutputTargetVal_2_800_c;
+    251            }
+    252            mV -= 2800;
+    253            if(mV%25)
+    254            {
+    255              mV = mV/25 +1;
+    256            }
+    257            else
+    258            {
+    259              mV /= 25;
+    260            }
+    261            mV += gDCDC_1P8OutputTargetVal_2_800_c;
+    262            if(mV > gDCDC_1P8OutputTargetVal_3_575_c)
+    263            {
+    264              mV = gDCDC_1P8OutputTargetVal_3_575_c;
+    265            }  
+    266            return (dcdc1P8OutputTargetVal_t)mV;
+    267          }
+    268          
+    269          ///*---------------------------------------------------------------------------
+    270          //* NAME: DCDC_mVTo1P8OutputTargetBuck
+    271          //* DESCRIPTION: 
+    272          //* PARAMETERS:  
+    273          //* RETURN: 
+    274          //* NOTES: none
+    275          //*---------------------------------------------------------------------------*/
+    276          static dcdc1P8OutputTargetVal_t DCDC_mVTo1P8OutputTargetBuck(uint16_t mV)
+    277          {
+    278            
+    279            dcdc1P8OutputTargetVal_t base;
+    280            if(mV < 1650)
+    281            {
+    282              return gDCDC_1P8OutputTargetVal_1_650_c;
+    283            }
+    284            if(mV <= 2050)
+    285            {
+    286              mV -= 1650;
+    287              mV /= 25;
+    288              return (dcdc1P8OutputTargetVal_t)mV;
+    289            }
+    290            if (mV < 2800)
+    291            {
+    292              return gDCDC_1P8OutputTargetVal_2_050_c;
+    293            }
+    294            mV -= 2800;
+    295            mV /= 25;
+    296            mV += gDCDC_1P8OutputTargetVal_2_800_c;
+    297            if(mV > gDCDC_1P8OutputTargetVal_3_575_c)
+    298            {
+    299              mV = gDCDC_1P8OutputTargetVal_3_575_c;
+    300            }  
+    301            return (dcdc1P8OutputTargetVal_t)mV;
+    302          }
+    303          
+    304          
+    305          ///*---------------------------------------------------------------------------
+    306          //* NAME: DCDC_mVTo1P45OutputTargetBoost
+    307          //* DESCRIPTION: 
+    308          //* PARAMETERS:  
+    309          //* RETURN: 
+    310          //* NOTES: none
+    311          //*---------------------------------------------------------------------------*/
+    312          dcdc1P45OutputTargetVal_t DCDC_mVTo1P45OutputTargetBoost(uint16_t mV)
+    313          {
+    314            
+    315            if (mV <= 1275)
+    316            {
+    317              return gDCDC_1P45OutputTargetVal_1_275_c;
+    318            }
+    319            mV -= 1275;
+    320            
+    321            if(mV%25)
+    322            {
+    323              mV = mV/25 +1;
+    324            }
+    325            else
+    326            {
+    327              mV /= 25;
+    328            }
+    329            if(mV > gDCDC_1P45OutputTargetVal_1_800_c)
+    330            {
+    331              mV = gDCDC_1P45OutputTargetVal_1_800_c;
+    332            }
+    333            return (dcdc1P45OutputTargetVal_t)mV;
+    334          }
+    335          ///*---------------------------------------------------------------------------
+    336          //* NAME: DCDC_mVTo1P45OutputTargetBuck
+    337          //* DESCRIPTION: 
+    338          //* PARAMETERS:  
+    339          //* RETURN: 
+    340          //* NOTES: none
+    341          //*---------------------------------------------------------------------------*/
+    342          dcdc1P45OutputTargetVal_t DCDC_mVTo1P45OutputTargetBuck(uint16_t mV)
+    343          {
+    344            if (mV <= 1275)
+    345            {
+    346              return gDCDC_1P45OutputTargetVal_1_275_c;
+    347            }
+    348            mV -= 1275;
+    349            mV /= 25;
+    350            
+    351            if(mV > gDCDC_1P45OutputTargetVal_1_800_c)
+    352            {
+    353              mV = gDCDC_1P45OutputTargetVal_1_800_c;
+    354            }
+    355            return (dcdc1P45OutputTargetVal_t)mV;
+    356          }
+    357          
+    358          ///*---------------------------------------------------------------------------
+    359          //* NAME: DCDC_GetOutputTargetsBoost
+    360          //* DESCRIPTION: 
+    361          //* PARAMETERS:  
+    362          //* RETURN: 
+    363          //* NOTES: none
+    364          //*---------------------------------------------------------------------------*/
+    365          static void DCDC_GetOutputTargetsBoost(dcdc1P45OutputTargetVal_t* p1P45OutputTarget, dcdc1P8OutputTargetVal_t* p1P8OutputTarget )
+    366          {
+    367            dcdc1P45OutputTargetVal_t dcdc1P45MinOutputTarget,dcdc1P45OutputTarget,dcdc1P45Wanted ;
+    368            dcdc1P8OutputTargetVal_t dcdc1P8MinOutputTarget,dcdc1P8OutputTarget, dcdc1P8Wanted;
+    369            uint16_t vBATmV;
+    370            OSA_EnterCritical(kCriticalDisableInt); 
+    371            {
+    372              dcdc1P45Wanted = mDCDCInputs.outputTarget_1P45;
+    373              dcdc1P8Wanted = mDCDCInputs.outputTarget_1P8;
+    374              vBATmV = mDCDCInputs.vbatVal_mV;
+    375            }
+    376            OSA_ExitCritical(kCriticalDisableInt);    
+    377            dcdc1P45MinOutputTarget = DCDC_mVTo1P45OutputTargetBoost(vBATmV + mDCDC_BoostVOutToVBatMin_c);
+    378            dcdc1P8MinOutputTarget = DCDC_mVTo1P8OutputTargetBoost(vBATmV + mDCDC_BoostVOutToVBatMin_c);
+    379            if(dcdc1P45Wanted >= dcdc1P45MinOutputTarget)
+    380            {
+    381              dcdc1P45OutputTarget = dcdc1P45Wanted;
+    382            }
+    383            else
+    384            {
+    385              dcdc1P45OutputTarget = dcdc1P45MinOutputTarget;
+    386            }
+    387            if(dcdc1P8Wanted >= dcdc1P8MinOutputTarget)
+    388            {
+    389              dcdc1P8OutputTarget = dcdc1P8Wanted;
+    390            }
+    391            else
+    392            {
+    393              dcdc1P8OutputTarget = dcdc1P8MinOutputTarget;
+    394            }
+    395            *p1P45OutputTarget = dcdc1P45OutputTarget;
+    396            *p1P8OutputTarget = dcdc1P8OutputTarget;
+    397          }
+    398          
+    399          
+    400          ///*---------------------------------------------------------------------------
+    401          //* NAME: DCDC_GetOutputTargetsBuck
+    402          //* DESCRIPTION: 
+    403          //* PARAMETERS:  
+    404          //* RETURN: 
+    405          //* NOTES: none
+    406          //*---------------------------------------------------------------------------*/
+    407          static void DCDC_GetOutputTargetsBuck(dcdc1P45OutputTargetVal_t* p1P45OutputTarget, dcdc1P8OutputTargetVal_t* p1P8OutputTarget )
+    408          {
+    409            dcdc1P45OutputTargetVal_t dcdc1P45Wanted;
+    410            dcdc1P8OutputTargetVal_t dcdc1P8MaxOutputTarget,dcdc1P8OutputTarget,dcdc1P8Wanted;
+    411            uint16_t vBATmV;
+    412            OSA_EnterCritical(kCriticalDisableInt); 
+    413            {
+    414              dcdc1P45Wanted = mDCDCInputs.outputTarget_1P45;
+    415              dcdc1P8Wanted = mDCDCInputs.outputTarget_1P8;
+    416              vBATmV = mDCDCInputs.vbatVal_mV;
+    417            }
+    418            OSA_ExitCritical(kCriticalDisableInt);    
+    419            dcdc1P8MaxOutputTarget = DCDC_mVTo1P8OutputTargetBuck(vBATmV - mDCDC_BuckVBatToVOutMin_c);
+    420            if(dcdc1P8Wanted <= dcdc1P8MaxOutputTarget)
+    421            {
+    422              dcdc1P8OutputTarget = dcdc1P8Wanted;
+    423            }
+    424            else
+    425            {
+    426              dcdc1P8OutputTarget = dcdc1P8MaxOutputTarget;
+    427            }
+    428            *p1P45OutputTarget = dcdc1P45Wanted;
+    429            *p1P8OutputTarget = dcdc1P8OutputTarget;
+    430          }
+    431          ///*---------------------------------------------------------------------------
+    432          //* NAME: DCDC_VBatMonitorBoost
+    433          //* DESCRIPTION: 
+    434          //* PARAMETERS:  
+    435          //* RETURN: 
+    436          //* NOTES: none
+    437          //*---------------------------------------------------------------------------*/
+    438          static void DCDC_VBatMonitorBoost(void* param)
+    439          {
+    440            uint16_t mV_VBat;
+    441            uint16_t mV_1P8V;
+    442            dcdc1P45OutputTargetVal_t dcdc1P45OutputTarget;
+    443            dcdc1P8OutputTargetVal_t dcdc1P8OutputTarget; 
+    444            mDCDCCallbackParam.dcdcEvent = gDCDC_Event_NoEvent_c;
+    445            DCDC_Get1P8VOutputTargetAndVBatInmV(&mV_1P8V ,&mV_VBat);
+    446            OSA_EnterCritical(kCriticalDisableInt);  
+    447            {
+    448              mDCDCInputs.vbatVal_mV  = mV_VBat;
+    449              mDCDCInputs.outputTargetsToUpdate = 1;
+    450            }
+    451            OSA_ExitCritical(kCriticalDisableInt);
+    452            
+    453            DCDC_BWR_REG2_DCDC_BATTMONITOR_EN_BATADJ(DCDC_BASE_PTR,0);
+    454            DCDC_BWR_REG2_DCDC_BATTMONITOR_BATT_VAL(DCDC_BASE_PTR, mV_VBat >> 3);
+    455            DCDC_BWR_REG2_DCDC_BATTMONITOR_EN_BATADJ(DCDC_BASE_PTR,1);  
+    456            mDCDCCallbackParam.dcdcVbatMeasuredVal = mV_VBat;
+    457            mDCDCCallbackParam.dcdc1P8OutputMeasuredVal = mV_1P8V;
+    458            DCDC_GetOutputTargetsBoost(&dcdc1P45OutputTarget, &dcdc1P8OutputTarget );
+    459            OSA_EnterCritical(kCriticalDisableInt);  
+    460            {
+    461              if(mDCDCInputs.outputTargetsToUpdate == 1)
+    462              {
+    463                DCDC_BWR_REG3_DCDC_VDD1P45CTRL_TRG_BOOST(DCDC_BASE_PTR, dcdc1P45OutputTarget);
+    464                DCDC_BWR_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR, dcdc1P8OutputTarget);
+    465                mDCDCInputs.outputTargetsToUpdate = 0;
+    466              }
+    467            }
+    468            OSA_ExitCritical(kCriticalDisableInt);
+    469            
+    470            if(param == NULL)  
+    471            {
+    472              if(mpDCDCConfig->pfDCDCAppCallback)
+    473              {
+    474                if((mDCDCInputs.vbatVal_mV < mpDCDCConfig->vbatMin) || (mDCDCInputs.vbatVal_mV > mpDCDCConfig->vbatMax))
+    475                {
+    476                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_VBatOutOfRange_c;
+    477                }
+    478                OSA_EnterCritical(kCriticalDisableInt);
+    479                if( mDCDCCallbackParam.dcdc1P45OutputTargetVal != (dcdc1P45OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P45CTRL_TRG_BOOST(DCDC_BASE_PTR) )
+    480                {
+    481                  mDCDCCallbackParam.dcdc1P45OutputTargetVal = (dcdc1P45OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P45CTRL_TRG_BOOST(DCDC_BASE_PTR);
+    482                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_1P45OutputTargetChange_c;
+    483                }
+    484                if(mDCDCCallbackParam.dcdc1P8OutputTargetVal  != (dcdc1P8OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR))
+    485                {
+    486                  mDCDCCallbackParam.dcdc1P8OutputTargetVal  = (dcdc1P8OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR);
+    487                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_1P8OutputTargetChange_c;
+    488                }      
+    489                OSA_ExitCritical(kCriticalDisableInt);
+    490                mpDCDCConfig->pfDCDCAppCallback(&mDCDCCallbackParam);
+    491              }
+    492            }
+    493            
+    494          }
+    495          
+    496          ///*---------------------------------------------------------------------------
+    497          //* NAME: DCDC_VBatMonitorBuck
+    498          //* DESCRIPTION: 
+    499          //* PARAMETERS:  
+    500          //* RETURN: 
+    501          //* NOTES: none
+    502          //*---------------------------------------------------------------------------*/
+    503          static void DCDC_VBatMonitorBuck(void* param)
+    504          {
+    505            uint16_t mV_VBat;
+    506            uint16_t mV_1P8V;
+    507            dcdc1P45OutputTargetVal_t dcdc1P45OutputTarget;
+    508            dcdc1P8OutputTargetVal_t dcdc1P8OutputTarget; 
+    509            mDCDCCallbackParam.dcdcEvent = gDCDC_Event_NoEvent_c;
+    510            DCDC_AdjustVbatDiv();
+    511            DCDC_Get1P8VOutputTargetAndVBatInmV(&mV_1P8V ,&mV_VBat);
+    512            OSA_EnterCritical(kCriticalDisableInt);  
+    513            {
+    514              mDCDCInputs.vbatVal_mV  = mV_VBat;
+    515              mDCDCInputs.outputTargetsToUpdate = 1;
+    516            }
+    517            OSA_ExitCritical(kCriticalDisableInt);
+    518            DCDC_BWR_REG2_DCDC_BATTMONITOR_EN_BATADJ(DCDC_BASE_PTR,0);
+    519            DCDC_BWR_REG2_DCDC_BATTMONITOR_BATT_VAL(DCDC_BASE_PTR, mV_VBat >> 3);
+    520            DCDC_BWR_REG2_DCDC_BATTMONITOR_EN_BATADJ(DCDC_BASE_PTR,1);
+    521            mDCDCCallbackParam.dcdcVbatMeasuredVal = mV_VBat;
+    522            mDCDCCallbackParam.dcdc1P8OutputMeasuredVal = mV_1P8V;
+    523            DCDC_GetOutputTargetsBuck(&dcdc1P45OutputTarget, &dcdc1P8OutputTarget );
+    524            
+    525            OSA_EnterCritical(kCriticalDisableInt);  
+    526            {
+    527              if(mDCDCInputs.outputTargetsToUpdate == 1)
+    528              {
+    529                DCDC_BWR_REG3_DCDC_VDD1P45CTRL_TRG_BUCK(DCDC_BASE_PTR, dcdc1P45OutputTarget);
+    530                DCDC_BWR_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR, dcdc1P8OutputTarget);
+    531                mDCDCInputs.outputTargetsToUpdate = 0;
+    532              }
+    533            }
+    534            OSA_ExitCritical(kCriticalDisableInt);
+    535            
+    536            if(param == NULL)
+    537            {
+    538              if(mpDCDCConfig->pfDCDCAppCallback)
+    539              {
+    540                if((mDCDCInputs.vbatVal_mV < mpDCDCConfig->vbatMin) || (mDCDCInputs.vbatVal_mV > mpDCDCConfig->vbatMax))
+    541                {
+    542                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_VBatOutOfRange_c;
+    543                }
+    544                OSA_EnterCritical(kCriticalDisableInt);
+    545                if(mDCDCCallbackParam.dcdc1P45OutputTargetVal != (dcdc1P45OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P45CTRL_TRG_BUCK(DCDC_BASE_PTR))
+    546                {
+    547                  mDCDCCallbackParam.dcdc1P45OutputTargetVal = (dcdc1P45OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P45CTRL_TRG_BUCK(DCDC_BASE_PTR);
+    548                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_1P45OutputTargetChange_c;
+    549                }
+    550                if(mDCDCCallbackParam.dcdc1P8OutputTargetVal != (dcdc1P8OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR))
+    551                {
+    552                  mDCDCCallbackParam.dcdc1P8OutputTargetVal = (dcdc1P8OutputTargetVal_t)DCDC_BRD_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR);
+    553                  mDCDCCallbackParam.dcdcEvent |= gDCDC_Event_1P8OutputTargetChange_c;
+    554                } 
+    555                OSA_ExitCritical(kCriticalDisableInt);
+    556                mpDCDCConfig->pfDCDCAppCallback(&mDCDCCallbackParam);
+    557              }    
+    558            }
+    559          }
+    560          
+    561          ///*---------------------------------------------------------------------------
+    562          //* NAME: DCDC_PSwitchIsr
+    563          //* DESCRIPTION: 
+    564          //* PARAMETERS:  
+    565          //* RETURN: 
+    566          //* NOTES: none
+    567          //*---------------------------------------------------------------------------*/
+    568          static void DCDC_PSwitchIsr(void)
+    569          {
+    570              dcdcPSwStatus_t dcdcPSwStatus;
+    571              DCDC_BWR_REG6_PSWITCH_INT_CLEAR(DCDC_BASE_PTR, 1);
+    572              DCDC_BWR_REG6_PSWITCH_INT_CLEAR(DCDC_BASE_PTR, 0);
+    573              if( DCDC_BRD_REG0_PSWITCH_STATUS(DCDC_BASE_PTR) == 0)
+    574            {
+    575              dcdcPSwStatus = gDCDC_PSwStatus_Low_c;
+    576            }
+    577            else
+    578            {
+    579              dcdcPSwStatus = gDCDC_PSwStatus_High_c;
+    580            }
+    581              mpfDCDCPSwitchCallback(dcdcPSwStatus);
+    582          }
+    583          
+    584          #endif /*gDCDC_Enabled_d*/
+    585          
+    586          
+    587          
+    588          /*****************************************************************************
+    589          ******************************************************************************
+    590          * Public functions
+    591          ******************************************************************************
+    592          *****************************************************************************/
+    593          
+    594          
+    595          
+    596          
+    597          /*---------------------------------------------------------------------------
+    598           * NAME: DCDC_Init
+    599           * DESCRIPTION: initialize 
+    600           * PARAMETERS: -
+    601           * RETURN: -
+    602           *---------------------------------------------------------------------------*/
+    603          bool_t DCDC_Init
+    604          (
+    605           const dcdcConfig_t * pDCDCConfig
+    606          )
+    607          {
+    608          #if gDCDC_Enabled_d == 0
+    609          (void) pDCDCConfig;
+    610          return TRUE;
+    611          #else  
+    612            adc16_calibration_param_t adcCalibParam;  
+    613            adc16_status_t adcStatus;
+    614            if(pDCDCConfig == NULL)
+    615            {
+    616              return FALSE;
+    617            }
+    618            SIM_HAL_EnableClock(SIM, kSimClockGateDcdc);
+    619            if(pDCDCConfig->dcdcMode == gDCDC_Mode_Bypass_c)
+    620            {
+    621              mpDCDCConfig = pDCDCConfig;
+    622              return TRUE;
+    623            }
+    624            if(pDCDCConfig->vbatMin > pDCDCConfig->vbatMax)
+    625            {
+    626              return FALSE;
+    627            }  
+    628            if(pDCDCConfig->dcdcMode == gDCDC_Mode_Buck_c)
+    629            {
+    630              if((pDCDCConfig->vbatMin < mDCDC_VBatMinBuck_c)||(pDCDCConfig->vbatMax > mDCDC_VBatMaxBuck_c))
+    631              {
+    632                return FALSE;
+    633              }
+    634              if(mDCDC_1P45TrgMaxBuck_c < pDCDCConfig->dcdc1P45OutputTargetVal)
+    635              {
+    636                return FALSE;
+    637              }
+    638            }
+    639            else if(pDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    640            {
+    641              if((pDCDCConfig->vbatMin < mDCDC_VBatMinBoost_c)||(pDCDCConfig->vbatMax > mDCDC_VBatMaxBoost_c))
+    642              {
+    643                return FALSE;
+    644              }
+    645              if(mDCDC_1P45TrgMaxBoost_c < pDCDCConfig->dcdc1P45OutputTargetVal)
+    646              {
+    647                return FALSE;
+    648              }
+    649            }
+    650            else
+    651            {
+    652              return FALSE;
+    653            }
+    654             if((gDCDC_1P8OutputTargetVal_2_050_c < pDCDCConfig->dcdc1P8OutputTargetVal) && (pDCDCConfig->dcdc1P8OutputTargetVal < gDCDC_1P8OutputTargetVal_2_800_c))
+    655            {
+    656              return FALSE;
+    657            }
+    658            if(gDCDC_1P8OutputTargetVal_3_575_c < pDCDCConfig->dcdc1P8OutputTargetVal)
+    659            {
+    660              return FALSE;
+    661            }
+    662            TMR_Init();
+    663            mVBatMonitorTimerId = TMR_AllocateTimer();
+    664            if(gTmrInvalidTimerID_c == mVBatMonitorTimerId)
+    665            {
+    666              return FALSE;
+    667            }
+    668            CLOCK_SYS_EnableAdcClock(0);
+    669            adcStatus = ADC16_DRV_GetAutoCalibrationParam(0, &adcCalibParam);
+    670            if (kStatus_ADC16_Success == adcStatus)
+    671            {
+    672              adcStatus = ADC16_DRV_SetCalibrationParam(0 , &adcCalibParam);
+    673              if (kStatus_ADC16_Success == adcStatus)
+    674              {
+    675                adcStatus = ADC16_DRV_Init(0, &adcConfig);
+    676              }
+    677            }
+    678            if(kStatus_ADC16_Success != adcStatus)
+    679            {
+    680              return FALSE;
+    681            }
+    682            ADC16_DRV_SetChnMux(0,kAdc16ChnMuxOfA);
+    683            ADC16_DRV_ConfigHwAverage(0, &adcHwAverageConfig);
+    684            ADC16_DRV_ConfigHwCompare(0, &adcHwCmpConfig);
+    685            mDCDCInputs.outputTarget_1P45 = pDCDCConfig->dcdc1P45OutputTargetVal;
+    686            mDCDCInputs.outputTarget_1P8 = pDCDCConfig->dcdc1P8OutputTargetVal; 
+    687            mpDCDCConfig = pDCDCConfig;
+    688            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_DF_HYST(DCDC_BASE_PTR,1);
+    689            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_CM_HYST(DCDC_BASE_PTR,1);
+    690            DCDC_BWR_REG2_DCDC_LOOPCTRL_HYST_SIGN(DCDC_BASE_PTR,1);
+    691            DCDC_BWR_REG3_DCDC_VDD1P8CTRL_DISABLE_STEP(DCDC_BASE_PTR,0);  
+    692            DCDC_BWR_REG3_DCDC_VDD1P45CTRL_DISABLE_STEP(DCDC_BASE_PTR,0);  
+    693            PMC_BWR_REGSC_BGBE(PMC_BASE_PTR,1);
+    694            
+    695            mDCDCCallbackParam.dcdc1P8OutputTargetVal = gDCDC_1P8OutputTargetVal_1_800_c;
+    696            if(pDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    697            {
+    698              DCDC_BWR_REG0_DCDC_VBAT_DIV_CTRL(DCDC_BASE_PTR, 0x1);
+    699              DCDC_BWR_REG1_POSLIMIT_BOOST_IN(DCDC_BASE_PTR,mDCDC_PosLimitBoostIn_c);
+    700              mDCDCCallbackParam.dcdc1P45OutputTargetVal = gDCDC_1P45OutputTargetVal_1_800_c;
+    701              DCDC_VBatMonitorBoost((void*)1);
+    702              TMR_StartLowPowerTimer(mVBatMonitorTimerId, gTmrIntervalTimer_c ,pDCDCConfig->vBatMonitorIntervalMs, DCDC_VBatMonitorBoost, NULL);    
+    703            }
+    704            else
+    705            {
+    706              mDCDCCallbackParam.dcdc1P45OutputTargetVal = gDCDC_1P45OutputTargetVal_1_450_c;
+    707              DCDC_AdjustVbatDiv();
+    708              DCDC_VBatMonitorBuck((void*)1);
+    709              TMR_StartLowPowerTimer(mVBatMonitorTimerId, gTmrIntervalTimer_c ,pDCDCConfig->vBatMonitorIntervalMs, DCDC_VBatMonitorBuck, NULL);    
+    710            }
+    711            
+    712            
+    713            return TRUE; 
+    714          #endif  
+    715          }
+    716          
+    717          /*---------------------------------------------------------------------------
+    718           * NAME: DCDC_SetOutputVoltageTargets
+    719           * DESCRIPTION: initialize the timer module
+    720           * PARAMETERS: -
+    721           * RETURN: -
+    722           *---------------------------------------------------------------------------*/
+    723          bool_t DCDC_SetOutputVoltageTargets
+    724          (
+    725          dcdc1P45OutputTargetVal_t dcdc1P45OutputTargetVal,
+    726          dcdc1P8OutputTargetVal_t  dcdc1P8OutputTargetVal
+    727          )
+    728          {
+    729          #if gDCDC_Enabled_d == 0
+    730            (void)dcdc1P45OutputTargetVal;
+    731            (void)dcdc1P8OutputTargetVal;
+    732            return TRUE;
+    733          #else  
+    734            dcdc1P45OutputTargetVal_t dcdc1P45OutputTarget;
+    735            dcdc1P8OutputTargetVal_t dcdc1P8OutputTarget; 
+    736            
+    737            if(mpDCDCConfig == NULL)
+    738            {
+    739              // DCDC_Init has to be called prior to this function
+    740              return FALSE;
+    741            }
+    742            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Bypass_c)
+    743            {
+    744              return TRUE;
+    745            }
+    746            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    747            {
+    748              if(mDCDC_1P45TrgMaxBoost_c < dcdc1P45OutputTargetVal)
+    749              {
+    750                return FALSE;
+    751              } 
+    752            }
+    753            else
+    754            {
+    755              if(mDCDC_1P45TrgMaxBuck_c < dcdc1P45OutputTargetVal)
+    756              {
+    757                return FALSE;
+    758              }
+    759            }
+    760            if((gDCDC_1P8OutputTargetVal_2_050_c < dcdc1P8OutputTargetVal) && (dcdc1P8OutputTargetVal < gDCDC_1P8OutputTargetVal_2_800_c))
+    761            {
+    762              return FALSE;
+    763            }
+    764            if(gDCDC_1P8OutputTargetVal_3_575_c < dcdc1P8OutputTargetVal)
+    765            {
+    766              return FALSE;
+    767            }
+    768            
+    769            OSA_EnterCritical(kCriticalDisableInt);  
+    770            {
+    771              mDCDCInputs.outputTarget_1P45 = dcdc1P45OutputTargetVal;
+    772              mDCDCInputs.outputTarget_1P8 = dcdc1P8OutputTargetVal; 
+    773              mDCDCInputs.outputTargetsToUpdate = 1;
+    774            }
+    775            OSA_ExitCritical(kCriticalDisableInt);
+    776            
+    777            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    778            {
+    779              DCDC_GetOutputTargetsBoost(&dcdc1P45OutputTarget, &dcdc1P8OutputTarget );
+    780            }
+    781            else
+    782            {
+    783              DCDC_GetOutputTargetsBuck(&dcdc1P45OutputTarget, &dcdc1P8OutputTarget );
+    784            }
+    785            
+    786            OSA_EnterCritical(kCriticalDisableInt);  
+    787            {
+    788              if(mDCDCInputs.outputTargetsToUpdate == 1)
+    789              {
+    790                if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    791                {
+    792                  DCDC_BWR_REG3_DCDC_VDD1P45CTRL_TRG_BOOST(DCDC_BASE_PTR, dcdc1P45OutputTarget);
+    793                  DCDC_BWR_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR, dcdc1P8OutputTarget);
+    794                }
+    795                else
+    796                {
+    797                  DCDC_BWR_REG3_DCDC_VDD1P45CTRL_TRG_BUCK(DCDC_BASE_PTR, dcdc1P45OutputTarget);
+    798                  DCDC_BWR_REG3_DCDC_VDD1P8CTRL_TRG(DCDC_BASE_PTR, dcdc1P8OutputTarget);
+    799                }
+    800                mDCDCInputs.outputTargetsToUpdate = 0;
+    801              }
+    802            }
+    803            OSA_ExitCritical(kCriticalDisableInt);
+    804            return TRUE;
+    805          #endif
+    806          }
+    807          ///*---------------------------------------------------------------------------
+    808          //* NAME: DCDC_1P45OutputTargetTomV
+    809          //* DESCRIPTION: 
+    810          //* PARAMETERS:  
+    811          //* RETURN: 
+    812          //* NOTES: none
+    813          //*---------------------------------------------------------------------------*/
+    814          uint16_t DCDC_1P45OutputTargetTomV(dcdc1P45OutputTargetVal_t dcdc1P45OutputTarget)
+    815          {
+    816            uint16_t mV;
+    817            mV = (uint16_t)(dcdc1P45OutputTarget-gDCDC_1P45OutputTargetVal_1_275_c) * 25 + 1275;
+    818            return mV;
+    819          }
+    820          ///*---------------------------------------------------------------------------
+    821          //* NAME: DCDC_1P8OutputTargetTomV
+    822          //* DESCRIPTION: 
+    823          //* PARAMETERS:  
+    824          //* RETURN: 
+    825          //* NOTES: none
+    826          //*---------------------------------------------------------------------------*/
+    827          uint16_t DCDC_1P8OutputTargetTomV(dcdc1P8OutputTargetVal_t dcdc1P8OutputTarget)
+    828          {
+    829            uint16_t mV;
+    830            if( dcdc1P8OutputTarget <= gDCDC_1P8OutputTargetVal_2_050_c)
+    831            {
+    832              mV = (uint16_t)(dcdc1P8OutputTarget - gDCDC_1P8OutputTargetVal_1_650_c)*25 + 1650;
+    833            }
+    834            else if(dcdc1P8OutputTarget >= gDCDC_1P8OutputTargetVal_2_800_c )
+    835            {
+    836              mV = (uint16_t)(dcdc1P8OutputTarget - gDCDC_1P8OutputTargetVal_2_800_c)*25 + 2800;
+    837            }
+    838            else  
+    839            {
+    840              mV = 1800;
+    841            }
+    842            return mV;
+    843          }
+    844          
+    845          ///*---------------------------------------------------------------------------
+    846          //* NAME: DCDC_PrepareForPulsedMode
+    847          //* DESCRIPTION: 
+    848          //* PARAMETERS:  
+    849          //* RETURN: 
+    850          //* NOTES: none
+    851          //*---------------------------------------------------------------------------*/
+    852          bool_t DCDC_PrepareForPulsedMode(void)
+    853          {
+    854          #if gDCDC_Enabled_d == 0
+    855              return TRUE;
+    856          #else
+    857             if(mpDCDCConfig == NULL)
+    858            {
+    859              // DCDC_Init has to be called prior to this function
+    860              return FALSE;
+    861            }
+    862            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Bypass_c)
+    863            {
+    864              return TRUE;
+    865            }
+    866            DCDC_BWR_REG3_DCDC_VDD1P8CTRL_DISABLE_STEP(DCDC_BASE_PTR,1);  
+    867            DCDC_BWR_REG3_DCDC_VDD1P45CTRL_DISABLE_STEP(DCDC_BASE_PTR,1);    
+    868            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_DF_HYST(DCDC_BASE_PTR,1);
+    869            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_CM_HYST(DCDC_BASE_PTR,1);
+    870            DCDC_BWR_REG2_DCDC_LOOPCTRL_HYST_SIGN(DCDC_BASE_PTR,1);
+    871            DCDC_BWR_REG0_DCDC_LP_DF_CMP_ENABLE(DCDC_BASE_PTR,1);
+    872            return TRUE;
+    873          #endif
+    874          }
+    875          
+    876          ///*---------------------------------------------------------------------------
+    877          //* NAME: DCDC_PrepareForContinuousMode
+    878          //* DESCRIPTION: 
+    879          //* PARAMETERS:  
+    880          //* RETURN: 
+    881          //* NOTES: none
+    882          //*---------------------------------------------------------------------------*/
+    883          bool_t DCDC_PrepareForContinuousMode(void)
+    884          {
+    885          #if gDCDC_Enabled_d == 0
+    886              return TRUE;
+    887          #else
+    888             if(mpDCDCConfig == NULL)
+    889            {
+    890              // DCDC_Init has to be called prior to this function
+    891              return FALSE;
+    892            }
+    893            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Bypass_c)
+    894            {
+    895              return TRUE;
+    896            }
+    897            DCDC_BWR_REG3_DCDC_VDD1P8CTRL_DISABLE_STEP(DCDC_BASE_PTR,0);  
+    898            DCDC_BWR_REG3_DCDC_VDD1P45CTRL_DISABLE_STEP(DCDC_BASE_PTR,0);    
+    899            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_DF_HYST(DCDC_BASE_PTR,1);
+    900            DCDC_BWR_REG1_DCDC_LOOPCTRL_EN_CM_HYST(DCDC_BASE_PTR,1);
+    901            DCDC_BWR_REG2_DCDC_LOOPCTRL_HYST_SIGN(DCDC_BASE_PTR,1);
+    902            DCDC_BWR_REG0_DCDC_LP_DF_CMP_ENABLE(DCDC_BASE_PTR,0);
+    903            return TRUE;
+    904          #endif
+    905          }
+    906          
+    907          ///*---------------------------------------------------------------------------
+    908          //* NAME: DCDC_SetUpperLimitDutyCycle
+    909          //* DESCRIPTION: 
+    910          //* PARAMETERS:  
+    911          //* RETURN: 
+    912          //* NOTES: none
+    913          //*---------------------------------------------------------------------------*/
+    914          bool_t DCDC_SetUpperLimitDutyCycle(uint8_t upperLimitDutyCycle)
+    915          {
+    916          #if gDCDC_Enabled_d == 0
+    917              return TRUE;
+    918          #else
+    919             if(mpDCDCConfig == NULL)
+    920            {
+    921              // DCDC_Init has to be called prior to this function
+    922              return FALSE;
+    923            }
+    924            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Bypass_c)
+    925            {
+    926              return TRUE;
+    927            }
+    928            if(mDCDC_DutyCycleMax_c < upperLimitDutyCycle)
+    929            {
+    930              return FALSE;
+    931            }
+    932            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Boost_c)
+    933            {
+    934              DCDC_BWR_REG1_POSLIMIT_BOOST_IN(DCDC_BASE_PTR,upperLimitDutyCycle);
+    935            }
+    936            else
+    937            {
+    938              DCDC_BWR_REG1_POSLIMIT_BUCK_IN(DCDC_BASE_PTR,upperLimitDutyCycle);
+    939            }
+    940            return TRUE;
+    941          #endif
+    942          }
+    943          
+    944          ///*---------------------------------------------------------------------------
+    945          //* NAME: DCDC_GetPowerSwitchStatus
+    946          //* DESCRIPTION: 
+    947          //* PARAMETERS:  
+    948          //* RETURN: 
+    949          //* NOTES: none
+    950          //*---------------------------------------------------------------------------*/
+    951          bool_t DCDC_GetPowerSwitchStatus(dcdcPSwStatus_t* pDCDCPSwStatus)
+    952          {
+    953          #if gDCDC_Enabled_d == 0
+    954            *pDCDCPSwStatus = gDCDC_PSwStatus_High_c;
+    955            return TRUE;
+    956          #else
+    957            if(mpDCDCConfig == NULL)
+    958            {
+    959              // DCDC_Init has to be called prior to this function
+    960              *pDCDCPSwStatus = gDCDC_PSwStatus_High_c;
+    961              return FALSE;
+    962            }
+    963            if( DCDC_BRD_REG0_PSWITCH_STATUS(DCDC_BASE_PTR) == 0)
+    964            {
+    965              *pDCDCPSwStatus = gDCDC_PSwStatus_Low_c;
+    966            }
+    967            else
+    968            {
+    969              *pDCDCPSwStatus = gDCDC_PSwStatus_High_c;
+    970            }
+    971            return TRUE;
+    972          #endif
+    973          }
+    974          
+    975          ///*---------------------------------------------------------------------------
+    976          //* NAME: DCDC_ShutDown
+    977          //* DESCRIPTION: 
+    978          //* PARAMETERS:  
+    979          //* RETURN: 
+    980          //* NOTES: none
+    981          //*---------------------------------------------------------------------------*/
+    982          void DCDC_ShutDown(void)
+    983          {
+    984          #if gDCDC_Enabled_d == 0
+    985            return ;
+    986          #else
+    987            uint32_t reg4; 
+    988            if(mpDCDCConfig == NULL)
+    989            {
+    990              // DCDC_Init has to be called prior to this function
+    991              return;
+    992            }
+    993            if(mpDCDCConfig->dcdcMode == gDCDC_Mode_Buck_c)
+    994            {
+    995              if( DCDC_BRD_REG0_PSWITCH_STATUS(DCDC_BASE_PTR) == 0)
+    996              {
+    997                DCDC_WR_REG4(DCDC_BASE_PTR, (uint32_t)0x3E770001);
+    998                DCDC_WR_REG4(DCDC_BASE_PTR, (uint32_t)0x3E770001);      
+    999              }
+   1000            }
+   1001          #endif
+   1002          }
+   1003          ///*---------------------------------------------------------------------------
+   1004          //* NAME: DCDC_InstallPSwitchCallback
+   1005          //* DESCRIPTION: 
+   1006          //* PARAMETERS:  
+   1007          //* RETURN: 
+   1008          //* NOTES: none
+   1009          //*---------------------------------------------------------------------------*/
+   1010          bool_t DCDC_InstallPSwitchCallback(pfDCDCPSwitchCallback_t pfPSwCallback, dcdcPSwIntEdge_t pSwIntEdge)
+   1011          {
+   1012          #if gDCDC_Enabled_d == 0
+   1013             return FALSE;
+   1014          #else
+   1015             uint32_t reg4; 
+   1016            if(mpDCDCConfig == NULL)
+   1017            {
+   1018              // DCDC_Init has to be called prior to this function
+   1019              return FALSE;
+   1020            }
+   1021            NVIC_DisableIRQ(LVD_LVW_DCDC_IRQn);
+   1022            mpfDCDCPSwitchCallback = pfPSwCallback;
+   1023            
+   1024            if(pfPSwCallback != NULL)
+   1025            {
+   1026              if(gDCDC_PSwIntEdge_Rising_c & pSwIntEdge )
+   1027              {
+   1028                DCDC_BWR_REG6_PSWITCH_INT_RISE_EN(DCDC_BASE_PTR, 1);
+   1029              }
+   1030              if(gDCDC_PSwIntEdge_Falling_c & pSwIntEdge )
+   1031              {
+   1032                DCDC_BWR_REG6_PSWITCH_INT_FALL_EN(DCDC_BASE_PTR, 1);  
+   1033              }
+   1034              DCDC_BWR_REG6_PSWITCH_INT_MUTE(DCDC_BASE_PTR, 0);
+   1035              NVIC_SetPriority(LVD_LVW_DCDC_IRQn, 0x80);
+   1036              OSA_InstallIntHandler(LVD_LVW_DCDC_IRQn, DCDC_PSwitchIsr);
+   1037              NVIC_EnableIRQ(LVD_LVW_DCDC_IRQn);
+   1038            }
+   1039            else
+   1040            {
+   1041              DCDC_BWR_REG6_PSWITCH_INT_RISE_EN(DCDC_BASE_PTR, 0); 
+   1042              DCDC_BWR_REG6_PSWITCH_INT_FALL_EN(DCDC_BASE_PTR, 0);   
+   1043            }
+   1044            return TRUE;
+   1045          #endif
+   1046          }
+   1047          /*****************************************************************************
+   1048           *                               <<< EOF >>>                                 *
+   1049           *****************************************************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DCDC_1P45OutputTargetTomV
+       4   DCDC_1P8OutputTargetTomV
+       0   DCDC_GetPowerSwitchStatus
+       0   DCDC_Init
+       0   DCDC_InstallPSwitchCallback
+       0   DCDC_PrepareForContinuousMode
+       0   DCDC_PrepareForPulsedMode
+       0   DCDC_SetOutputVoltageTargets
+       0   DCDC_SetUpperLimitDutyCycle
+       0   DCDC_ShutDown
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+      18  DCDC_1P45OutputTargetTomV
+      62  DCDC_1P8OutputTargetTomV
+      10  DCDC_GetPowerSwitchStatus
+       6  DCDC_Init
+       6  DCDC_InstallPSwitchCallback
+       4  DCDC_PrepareForContinuousMode
+       4  DCDC_PrepareForPulsedMode
+       6  DCDC_SetOutputVoltageTargets
+       6  DCDC_SetUpperLimitDutyCycle
+       2  DCDC_ShutDown
+
+ 
+ 132 bytes in section .text
+ 
+ 132 bytes of CODE memory
+
+Errors: none
+Warnings: none

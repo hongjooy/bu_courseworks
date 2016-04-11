@@ -1,0 +1,414 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:50
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\pin_mux.c
+#    Command line =  
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\pin_mux.c"
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\pin_mux.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\pin_mux.o
+#
+###############################################################################
+
+C:\Users\Jooyoun Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\boards\frdmkw40z\pin_mux.c
+      1          /* ###################################################################
+      2          **     THIS COMPONENT MODULE IS GENERATED BY THE TOOL. DO NOT MODIFY IT.
+      3          **     Filename    : pin_mux.c
+      4          **     Project     : frdmkw40z
+      5          **     Processor   : MKW40Z160VHT4
+      6          **     Component   : PinSettings
+      7          **     Version     : Component 01.002, Driver 1.1, CPU db: 3.00.000
+      8          **     Compiler    : IAR ARM C Compiler
+      9          **     Date/Time   : 2013-12-10, 14:58, # CodeGen: 7
+     10          **     Abstract    :
+     11          **
+     12          **     Settings    :
+     13          **
+     14          **     Contents    :
+     15          **         GPIO                - void pin_mux_GPIO(uint32_t instance);
+     16          **         I2C                 - void pin_mux_I2C(uint32_t instance);
+     17          **         TPM                 - void pin_mux_TPM(uint32_t instance);
+     18          **         RTC                 - void pin_mux_RTC(uint32_t instance);
+     19          **         SPI                 - void pin_mux_SPI(uint32_t instance);
+     20          **         LPUART              - void pin_mux_LPUART(uint32_t instance);
+     21          **
+     22          **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. All Rights Reserved.
+     23          **     SOURCE DISTRIBUTION PERMISSIBLE as directed in End User License Agreement.
+     24          **
+     25          **     http      : www.freescale.com
+     26          **     mail      : support@freescale.com
+     27          ** ###################################################################*/
+     28          /*!
+     29          ** @file pin_mux.c
+     30          ** @version 1.1
+     31          ** @brief
+     32          **
+     33          */
+     34          /*!
+     35          **  @addtogroup pin_mux_module pin_mux module documentation
+     36          **  @{
+     37          */
+     38          
+     39          /* MODULE pin_mux. */
+     40          
+     41          #include "fsl_device_registers.h"
+     42          #include "fsl_port_hal.h"
+     43          #include "board.h"
+     44          #include "pin_mux.h"
+     45          
+     46            
+     47          void configure_gpio_pins(uint32_t instance)
+     48          {
+     49            switch(instance) {
+     50              case 0:                             /* PTA */
+     51                break;
+     52              case 1:                             /* PTB */
+     53                break;
+     54              case 2:                             /* PTC */
+     55                /* PORTC_PCR3    LLWU_P7*/
+     56                PORT_HAL_SetMuxMode(PORTC,3u,kPortMuxAsGpio);
+     57                /* PORTC_PCR5 */
+     58                PORT_HAL_SetMuxMode(PORTC,5u,kPortMuxAsGpio);
+     59                /* PORTC_PCR12 */
+     60                PORT_HAL_SetMuxMode(PORTC,12u,kPortMuxAsGpio);
+     61                break;
+     62              default:
+     63                break;
+     64            }
+     65          }
+     66          
+     67          void configure_i2c_pins(uint32_t instance)
+     68          {
+     69            switch(instance) {
+     70              case 0:                          /* I2C0 */
+     71                /* PORTB_PCR0 */
+     72                PORT_HAL_SetMuxMode(PORTB,0u,kPortMuxAlt3);
+     73                PORT_HAL_SetPullCmd(PORTB,0u,true);
+     74                PORT_HAL_SetPullMode(PORTB,0u,kPortPullUp);
+     75                PORT_HAL_SetPassiveFilterCmd(PORTB,0u,false);
+     76                /* PORTB_PCR1 */
+     77                PORT_HAL_SetMuxMode(PORTB,1u,kPortMuxAlt3);
+     78                PORT_HAL_SetPullCmd(PORTB,1u,true);
+     79                PORT_HAL_SetPullMode(PORTB,1u,kPortPullUp);
+     80                PORT_HAL_SetPassiveFilterCmd(PORTB,1u,false);
+     81          
+     82                break;
+     83              case 1:
+     84                /* PORTC_PCR2 */
+     85                PORT_HAL_SetMuxMode(PORTC,2u,kPortMuxAlt3);
+     86                PORT_HAL_SetPullCmd(PORTC,2u,true);
+     87                PORT_HAL_SetPullMode(PORTC,2u,kPortPullUp);
+     88                PORT_HAL_SetPassiveFilterCmd(PORTC,2u,false);
+     89                /* PORTC_PCR3 */
+     90                PORT_HAL_SetMuxMode(PORTC,3u,kPortMuxAlt3);
+     91                PORT_HAL_SetPullCmd(PORTC,3u,true);
+     92                PORT_HAL_SetPullMode(PORTC,3u,kPortPullUp);
+     93                PORT_HAL_SetPassiveFilterCmd(PORTC,3u,false);
+     94                break;
+     95              case 2:
+     96                break;
+     97              case 3:
+     98                break;
+     99                case 4:
+    100                break;
+    101              default:
+    102                break;
+    103            }
+    104          }
+    105          
+    106          void configure_rtc_pins(uint32_t instance)
+    107          {
+    108              /* PORTB_PCR3 */
+    109              PORT_HAL_SetMuxMode(PORTB,3u,kPortMuxAlt7);
+    110          
+    111          }
+    112          
+    113          void configure_lpuart_pins(uint32_t instance)
+    114          {
+    115            switch(instance) {
+    116              case 0:                             /* LPUART0 */
+    117          #if (BOARD_UART_CONFIG == BOARD_USE_DEBUG_UART)
+    118                /* PORTC_PCR6 */
+    119                PORT_HAL_SetMuxMode(PORTC,6u,kPortMuxAlt4); /* RX */
+    120                /* PORTC_PCR7 */
+    121                PORT_HAL_SetMuxMode(PORTC,7u,kPortMuxAlt4); /* TX */
+    122          //      /* PORTC_PCR5 */
+    123          //      PORT_HAL_SetMuxMode(PORTC,5u,kPortMuxAlt4); /* CTS */
+    124          //      /* PORTC_PCR4 */
+    125          //      PORT_HAL_SetMuxMode(PORTC,4u,kPortMuxAlt4); /* RTS */      
+    126          #elif (BOARD_UART_CONFIG == BOARD_USE_FRDM_HDR_UART)
+    127                /* PORTC_PCR17 */
+    128                PORT_HAL_SetMuxMode(PORTC,17u,kPortMuxAlt4); /* RX */
+    129                /* PORTC_PCR18 */
+    130                PORT_HAL_SetMuxMode(PORTC,18u,kPortMuxAlt4); /* TX */
+    131          #elif (BOARD_UART_CONFIG == BOARD_USE_FRDM_HDR_UART_ALT)
+    132                /* PORTC_PCR2 */
+    133                PORT_HAL_SetMuxMode(PORTC,2u,kPortMuxAlt4); /* RX */ /* Shared with default I2C1_SCL */
+    134                /* PORTC_PCR3 */
+    135                PORT_HAL_SetMuxMode(PORTC,3u,kPortMuxAlt4); /* TX */ /* Shared with default I2C1_SDA */
+    136                /* PORTC_PCR0 */
+    137                PORT_HAL_SetMuxMode(PORTC,0u,kPortMuxAlt4); /* CTS */ /* Shared with default LED4 */
+    138                /* PORTC_PCR1 */
+    139                PORT_HAL_SetMuxMode(PORTC,1u,kPortMuxAlt4); /* RTS */ /* Shared with default LED3 */
+    140          #endif      
+    141                break;
+    142              default:
+    143                break;
+    144            }
+    145          }
+    146          
+    147          void configure_spi_pins(uint32_t instance)
+    148          {
+    149            switch(instance) {
+    150              case 0:                          /* SPI0 */
+    151                /* PORTC_PCR18 */
+    152                PORT_HAL_SetMuxMode(PORTC,18u,kPortMuxAlt2); /* MOSI */
+    153                /* PORTC_PCR17 */
+    154                PORT_HAL_SetMuxMode(PORTC,17u,kPortMuxAlt2); /* MISO */
+    155                /* PORTC_PCR16 */
+    156                PORT_HAL_SetMuxMode(PORTC,16u,kPortMuxAlt2); /* CLK */
+    157                /* PORTC_PCR19 */
+    158                PORT_HAL_SetMuxMode(PORTC,19u,kPortMuxAlt2); /* PCS0 */
+    159                break;
+    160              case 1:                          /* SPI1 */
+    161                /* PORTA_PCR16 */
+    162                PORT_HAL_SetMuxMode(PORTA,16u,kPortMuxAlt2); /* MISO */
+    163                /* PORTA_PCR17 */
+    164                PORT_HAL_SetMuxMode(PORTA,17u,kPortMuxAlt2); /* MOSI */
+    165                /* PORTA_PCR18 */
+    166                PORT_HAL_SetMuxMode(PORTA,18u,kPortMuxAlt2); /* SCK */
+    167                /* PORTA_PCR19 */
+    168                PORT_HAL_SetMuxMode(PORTA,19u,kPortMuxAlt2); /* PCS0 */
+    169                break;
+    170              default:
+    171                break;
+    172            }
+    173          }
+    174          
+    175          void configure_tpm_pins(uint32_t instance)
+    176          {
+    177            switch(instance) {
+    178              case 0:                             /* TPM0 */
+    179                /* PORTC_PCR0 */
+    180                PORT_HAL_SetMuxMode(PORTC,0u,kPortMuxAlt5); /* TPM0_CH1 */
+    181                break;
+    182              case 1:                             /* TPM1 */
+    183                break;
+    184              default:
+    185                break;
+    186            }
+    187          }
+    188          
+    189          void configure_tsi_pins(uint32_t instance)
+    190          {
+    191              switch (instance)
+    192              {
+    193                  case 0U:
+    194                      break;
+    195                  default:
+    196                      break;
+    197              }
+    198          }
+    199          
+    200          void configure_dac_pins(uint32_t instance)
+    201          {
+    202              switch (instance)
+    203              {
+    204                  case 0U:
+    205                    /* PORTB_PCR18 */
+    206                    PORT_HAL_SetMuxMode(PORTB,18u,kPortPinDisabled); /* DAC0 */    
+    207                    break;
+    208                  default:
+    209                      break;
+    210              }
+    211          }
+    212          
+    213          /* END pin_mux. */
+    214          /*!
+    215          ** @}
+    216          */
+    217          /*
+    218          ** ###################################################################
+    219          **
+    220          **     This file was created by Processor Expert 10.3 [05.09]
+    221          **     for the Freescale Kinetis series of microcontrollers.
+    222          **
+    223          ** ###################################################################
+    224          */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   PORT_HAL_SetMuxMode
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetPassiveFilterCmd
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetPullCmd
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   PORT_HAL_SetPullMode
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+       8   configure_dac_pins
+         8   -> PORT_HAL_SetMuxMode
+       8   configure_gpio_pins
+         8   -> PORT_HAL_SetMuxMode
+       8   configure_i2c_pins
+         8   -> PORT_HAL_SetMuxMode
+         8   -> PORT_HAL_SetPassiveFilterCmd
+         8   -> PORT_HAL_SetPullCmd
+         8   -> PORT_HAL_SetPullMode
+       8   configure_lpuart_pins
+         8   -> PORT_HAL_SetMuxMode
+       8   configure_rtc_pins
+         8   -> PORT_HAL_SetMuxMode
+       8   configure_spi_pins
+         8   -> PORT_HAL_SetMuxMode
+       8   configure_tpm_pins
+         8   -> PORT_HAL_SetMuxMode
+       4   configure_tsi_pins
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+      12  ?_0
+      92  ?_1
+      44  PORT_HAL_SetMuxMode
+      46  PORT_HAL_SetPassiveFilterCmd
+      46  PORT_HAL_SetPullCmd
+      44  PORT_HAL_SetPullMode
+      22  configure_dac_pins
+      54  configure_gpio_pins
+     194  configure_i2c_pins
+      32  configure_lpuart_pins
+      16  configure_rtc_pins
+     100  configure_spi_pins
+      30  configure_tpm_pins
+       8  configure_tsi_pins
+
+ 
+ 104 bytes in section .rodata
+ 660 bytes in section .text
+ 
+ 660 bytes of CODE  memory
+ 104 bytes of CONST memory
+
+Errors: none
+Warnings: none

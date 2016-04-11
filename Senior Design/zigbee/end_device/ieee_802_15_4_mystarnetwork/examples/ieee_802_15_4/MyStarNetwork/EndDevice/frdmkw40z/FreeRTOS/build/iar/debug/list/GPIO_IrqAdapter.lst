@@ -1,0 +1,467 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:35
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\GPIOIrq\GPIO_IrqAdapter.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\GPIOIrq\GPIO_IrqAdapter.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\GPIO_IrqAdapter.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\GPIO_IrqAdapter.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\GPIOIrq\GPIO_IrqAdapter.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file GPIO_IrqAdapter.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "fsl_gpio_driver.h"
+     40          #include "fsl_os_abstraction.h"
+     41          
+     42          #include "GPIO_IrqAdapter.h"
+     43          #include "FunctionLib.h"
+     44          
+     45          /*! *********************************************************************************
+     46          *************************************************************************************
+     47          * Private macros
+     48          *************************************************************************************
+     49          ********************************************************************************** */
+     50          #define gGpio_FoundPortIsr_c  0x01
+     51          #define gGpio_FoundSimilar_c  0x02
+     52          
+     53          
+     54          /*! *********************************************************************************
+     55          *************************************************************************************
+     56          * Private type definitions
+     57          *************************************************************************************
+     58          ********************************************************************************** */
+     59          
+     60          
+     61          /*! *********************************************************************************
+     62          *************************************************************************************
+     63          * Private prototypes
+     64          *************************************************************************************
+     65          ********************************************************************************** */
+     66          static void Gpio_CommonIsr(void);
+     67          static gpioStatus_t Gpio_InstallPortISR(IRQn_Type irqId, uint32_t nvicPrio);
+     68          
+     69          
+     70          /*! *********************************************************************************
+     71          *************************************************************************************
+     72          * Private memory declarations
+     73          *************************************************************************************
+     74          ********************************************************************************** */
+     75          static gpioIsr_t mGpioIsr[gGpioMaxIsrEntries_c];
+     76          static uint16_t  mGpioIsrCount=0;
+     77          
+     78          
+     79          /*! *********************************************************************************
+     80          *************************************************************************************
+     81          * Public functions
+     82          *************************************************************************************
+     83          ********************************************************************************** */
+     84          
+     85          /*! *********************************************************************************
+     86          * \brief  Uninstall the callback for the specified Pin Definition
+     87          *
+     88          * \param[in]  cb              The callback function to be installed
+     89          * \param[in]  priority        The priority used by the GPIO_IrqAdapter
+     90          * \param[in]  nvicPriority    The priority to be set in NVIC. Only most significant bits are used!
+     91          * \param[in]  pinDef          The KSDK pin definition
+     92          *
+     93          * \return  install status
+     94          *
+     95          ********************************************************************************** */
+     96          gpioStatus_t GpioInstallIsr( pfGpioIsrCb_t cb, uint8_t priority, uint8_t nvicPriority, uint32_t pinDef )
+     97          {
+     98              uint32_t i;
+     99              uint8_t  found   = 0;
+    100              uint8_t  pos     = mGpioIsrCount;
+    101              uint8_t  portId  = GPIO_EXTRACT_PORT(pinDef);
+    102              uint32_t pinMask = 1 << GPIO_EXTRACT_PIN(pinDef);
+    103              IRQn_Type irqNo  = g_portIrqId[portId];
+    104          
+    105              for( i=0; i<mGpioIsrCount; i++ )
+    106              {
+    107                  /* search for port ISR already installed */
+    108                  if( mGpioIsr[i].port == portId )
+    109                  {
+    110                      found |= gGpio_FoundPortIsr_c;
+    111                  }
+    112                  /* search for insert position */
+    113                  if( (pos == mGpioIsrCount) && (mGpioIsr[i].prio >= priority) ) 
+    114                  {
+    115                      pos = i;
+    116                  }
+    117                  /* search for an entry with the same callback installed for the same port with the same priority */
+    118                  if( (mGpioIsr[i].callback == cb) && (mGpioIsr[i].port == portId) && (mGpioIsr[i].prio == priority) )
+    119                  {
+    120                      pos = i;
+    121                      found |= gGpio_FoundSimilar_c;
+    122                      break;
+    123                  }
+    124              }
+    125          
+    126              if( found & gGpio_FoundSimilar_c )
+    127              {
+    128                  /* found the same ISR installed for the same port, but other pins */
+    129                  mGpioIsr[pos].pinMask |= pinMask;
+    130              }
+    131              else
+    132              {
+    133                  if( mGpioIsrCount >= gGpioMaxIsrEntries_c )
+    134                      return gpio_outOfMemory;
+    135          
+    136                  if( pos != mGpioIsrCount )
+    137                  {
+    138                      OSA_EnterCritical(kCriticalDisableInt);
+    139                      /* Shift all entries to the left, to obtain a sorted list */
+    140                      for( i=mGpioIsrCount; i>pos; i-- )
+    141                      {
+    142                          mGpioIsr[i] = mGpioIsr[i-1];
+    143                      }
+    144                      OSA_ExitCritical(kCriticalDisableInt);
+    145                  }
+    146                  /* install new callback */
+    147                  mGpioIsr[pos].callback = cb;
+    148                  mGpioIsr[pos].prio     = priority;
+    149                  mGpioIsr[pos].port     = portId;
+    150                  mGpioIsr[pos].irqId    = g_portIrqId[portId];
+    151                  mGpioIsr[pos].pinMask  = pinMask;
+    152                  mGpioIsrCount++;
+    153              }
+    154          
+    155              if( found )
+    156              {
+    157                  /* The PORT ISR was already installed. Update NVIC priority if higher than the old one! */
+    158                  nvicPriority = nvicPriority >> (8 - __NVIC_PRIO_BITS);
+    159                  i = NVIC_GetPriority(irqNo);
+    160                  if( i > nvicPriority )
+    161                  {
+    162                      NVIC_SetPriority(irqNo, nvicPriority);
+    163                  }
+    164                  return gpio_success;
+    165              }
+    166              else
+    167              {
+    168                  /* Install common PORT ISR */
+    169                  return Gpio_InstallPortISR(irqNo, nvicPriority);
+    170              }
+    171          }
+    172          
+    173          /*! *********************************************************************************
+    174          * \brief  Uninstall the callback for the specified Pin Definition
+    175          *
+    176          * \param[in]  pinDef    The KSDK pin definition
+    177          *
+    178          * \return  uninstall status
+    179          *
+    180          ********************************************************************************** */
+    181          gpioStatus_t GpioUninstallIsr( uint32_t pinDef )
+    182          {
+    183              IRQn_Type irqNo;
+    184              uint32_t  i, j;
+    185              uint8_t port      = GPIO_EXTRACT_PORT(pinDef);
+    186              uint32_t pinMask  = 1 << GPIO_EXTRACT_PIN(pinDef);    
+    187              
+    188              for( i=0; i<mGpioIsrCount; i++ )
+    189              {
+    190                  if( (mGpioIsr[i].port == port) && (mGpioIsr[i].pinMask & pinMask) )
+    191                  {
+    192                      OSA_EnterCritical(kCriticalDisableInt);
+    193                      /* uninstall ISR only for specified pins */
+    194                      mGpioIsr[i].pinMask &= ~pinMask;
+    195                      /* if no more pins are active, uninstall handler function */
+    196                      if( !mGpioIsr[i].pinMask )
+    197                      {
+    198                          irqNo = mGpioIsr[i].irqId;
+    199                          mGpioIsr[i].callback = NULL;
+    200          
+    201                          /* Shift next entries to the left */
+    202                          for( j=i; j<mGpioIsrCount-1; j++ )
+    203                          {
+    204                              mGpioIsr[j] = mGpioIsr[j+1];
+    205                          }
+    206                          mGpioIsrCount--;
+    207          
+    208                          /* Search for other ISR installed for the same IRQ */
+    209                          for( j=0; j<mGpioIsrCount; j++ )
+    210                          {
+    211                              if( irqNo == mGpioIsr[j].irqId )
+    212                              {
+    213                                  irqNo = NotAvail_IRQn;
+    214                                  break;
+    215                              }
+    216                          }
+    217          
+    218                          /* If no other ISR was installed for this IRQ, disable IRQ in NVIC */
+    219                          if( irqNo != NotAvail_IRQn )
+    220                          {
+    221                              NVIC_DisableIRQ(irqNo);
+    222                          }
+    223                      }
+    224                      OSA_ExitCritical(kCriticalDisableInt);
+    225                      return gpio_success;
+    226                  }
+    227              }
+    228          
+    229              return gpio_notFound;
+    230          }
+    231          
+    232          /*! *********************************************************************************
+    233          *************************************************************************************
+    234          * Private functions
+    235          *************************************************************************************
+    236          ********************************************************************************* */
+    237          
+    238          /*! *********************************************************************************
+    239          * \brief  Common GPIO ISR.
+    240          *
+    241          ********************************************************************************** */
+    242          static void Gpio_CommonIsr(void)
+    243          {
+    244              uint32_t i;
+    245              IRQn_Type irqId = (IRQn_Type)(__get_IPSR() - 16);
+    246          
+    247              /* Search for the highest priority ISR installed for the current PORT */
+    248              for( i=0; i<mGpioIsrCount; i++ )
+    249              {
+    250                  if( (mGpioIsr[i].irqId == irqId) && 
+    251                      (mGpioIsr[i].pinMask & PORT_HAL_GetPortIntFlag(g_portBase[mGpioIsr[i].port]))
+    252                    )
+    253                  {
+    254                      mGpioIsr[i].callback();
+    255                      /* If other lower priority IRSs need to run, this common ISR will run again! */
+    256                      return;
+    257                  }
+    258              }
+    259          }
+    260          
+    261          /*! *********************************************************************************
+    262          * \brief  Install the Gpio_CommonIsr() ISR for the specified IRQ
+    263          *
+    264          * \param[in]  irqId    The CMSIS irq Id
+    265          * \param[in]  nvicPrio The priority to be set in NVIC
+    266          *
+    267          * \return  install status
+    268          *
+    269          ********************************************************************************** */
+    270          static gpioStatus_t Gpio_InstallPortISR(IRQn_Type irqId, uint32_t nvicPrio)
+    271          {
+    272              if( irqId != NotAvail_IRQn )
+    273              {
+    274                  if( NULL == OSA_InstallIntHandler(irqId, Gpio_CommonIsr) )
+    275                      return gpio_error;
+    276          
+    277                  /* Enable IRQ in NVIC and set priority */
+    278                  NVIC_ClearPendingIRQ(irqId);
+    279                  NVIC_EnableIRQ(irqId);
+    280                  NVIC_SetPriority(irqId, nvicPrio >> (8 - __NVIC_PRIO_BITS));
+    281              }
+    282              return gpio_success;
+    283          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   GpioInstallIsr
+        40   -> Gpio_InstallPortISR
+        40   -> NVIC_GetPriority
+        40   -> NVIC_SetPriority
+        40   -> OSA_EnterCritical
+        40   -> OSA_ExitCritical
+      24   GpioUninstallIsr
+        24   -> NVIC_DisableIRQ
+        24   -> OSA_EnterCritical
+        24   -> OSA_ExitCritical
+      16   Gpio_CommonIsr
+        16   -- Indirect call
+        16   -> PORT_HAL_GetPortIntFlag
+      16   Gpio_InstallPortISR
+        16   -> NVIC_ClearPendingIRQ
+        16   -> NVIC_EnableIRQ
+        16   -> NVIC_SetPriority
+        16   -> OSA_InstallIntHandler
+       0   NVIC_ClearPendingIRQ
+       0   NVIC_DisableIRQ
+       0   NVIC_EnableIRQ
+       4   NVIC_GetPriority
+      20   NVIC_SetPriority
+       0   PORT_HAL_GetPortIntFlag
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable8
+       4  ??DataTable8_1
+     448  GpioInstallIsr
+     272  GpioUninstallIsr
+      94  Gpio_CommonIsr
+      64  Gpio_InstallPortISR
+      14  NVIC_ClearPendingIRQ
+      14  NVIC_DisableIRQ
+      14  NVIC_EnableIRQ
+      74  NVIC_GetPriority
+     132  NVIC_SetPriority
+       6  PORT_HAL_GetPortIntFlag
+      60  mGpioIsr
+       2  mGpioIsrCount
+
+ 
+    62 bytes in section .bss
+ 1 172 bytes in section .text
+ 
+ 1 172 bytes of CODE memory
+    62 bytes of DATA memory
+
+Errors: none
+Warnings: none

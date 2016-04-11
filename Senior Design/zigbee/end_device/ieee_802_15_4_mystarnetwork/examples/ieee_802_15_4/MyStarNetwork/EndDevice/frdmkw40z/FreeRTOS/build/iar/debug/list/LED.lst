@@ -1,0 +1,904 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:40
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\LED\Source\LED.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\LED\Source\LED.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\LED.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\LED.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\LED\Source\LED.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file LED.c
+      6          * LED implementation file for ARM CORTEX-M4 processor
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          #include "LED.h"
+     35          #include "TimersManager.h"
+     36          
+     37          #include "board.h"
+     38          #include "fsl_gpio_driver.h"
+     39          
+     40          #if (gLEDSupported_d)
+     41          
+     42          /******************************************************************************
+     43          *******************************************************************************
+     44          * Private macros
+     45          *******************************************************************************
+     46          ******************************************************************************/
+     47          
+     48          /******************************************************************************
+     49          *******************************************************************************
+     50          * Private type definitions
+     51          *******************************************************************************
+     52          ******************************************************************************/
+     53          
+     54          /******************************************************************************
+     55          *******************************************************************************
+     56          * Public memory definitions
+     57          *******************************************************************************
+     58          ******************************************************************************/
+     59          
+     60          /******************************************************************************
+     61          *******************************************************************************
+     62          * Private memory definitions
+     63          *******************************************************************************
+     64          ******************************************************************************/
+     65          
+     66          /******************************************************************************
+     67          *******************************************************************************
+     68          * Private function prototypes
+     69          *******************************************************************************
+     70          ******************************************************************************/
+     71          
+     72          /******************************************************************************
+     73          * Name: LED_FlashTimeout
+     74          * Description: timer callback function that is called each time the timer
+     75          *              expires
+     76          * Param(s): [IN] timerId - the timer ID
+     77          * Return: -
+     78          ******************************************************************************/
+     79          #if gTMR_Enabled_d
+     80          static void LED_FlashTimeout
+     81          (
+     82          uint8_t timerId
+     83          );
+     84          #endif
+     85          
+     86          /******************************************************************************
+     87          * Name: LED_ExitSerialFlash
+     88          * Description: Stop serial flashing mode, if serial flash mode is active.
+     89          *              Turns all LEDs off.
+     90          * Param(s): -
+     91          * Return: -
+     92          ******************************************************************************/
+     93          static void LED_ExitSerialFlash
+     94          (
+     95          void
+     96          );
+     97          
+     98          /******************************************************************************
+     99          * Name: LED_DecrementBlip
+    100          * Description: Decrements the blink count
+    101          * Param(s): -
+    102          * Return: -
+    103          ******************************************************************************/
+    104          #if gLEDBlipEnabled_d
+    105          static void LED_DecrementBlip
+    106          (
+    107          void
+    108          );
+    109          #endif
+    110          
+    111          /******************************************************************************
+    112          *******************************************************************************
+    113          * Private type definitions
+    114          *******************************************************************************
+    115          ******************************************************************************/
+    116          
+    117          /******************************************************************************
+    118          *******************************************************************************
+    119          * Private Memory Declarations
+    120          *******************************************************************************
+    121          ******************************************************************************/
+    122          
+    123          /*
+    124          * Name: mfLedInSerialMode
+    125          * Description: indicates if the LED module is in serial mode or not
+    126          */
+    127          static bool_t mfLedInSerialMode;      /* doing serial lights */
+    128          
+    129          /*
+    130          * Name: mLedFlashingLEDs
+    131          * Description: indicates how many LEDs are in flashing mode
+    132          */
+    133          static uint8_t mLedFlashingLEDs = 0;  /* flashing LEDs */
+    134          static uint8_t mLedStartFlashingPosition = LED1;
+    135          /*
+    136          * Name: mLEDTimerID
+    137          * Description: LED timer ID
+    138          */
+    139          #if gTMR_Enabled_d
+    140          static tmrTimerID_t mLEDTimerID = gTmrInvalidTimerID_c;
+    141          #endif
+    142          
+    143          /*
+    144          * Name: mLedBlips
+    145          * Description: array that stores the LEDs blip information
+    146          */
+    147          #if gLEDBlipEnabled_d
+    148          static uint8_t mLedBlips[gLEDsOnTargetBoardCnt_c];
+    149          #endif
+    150          
+    151          /******************************************************************************
+    152          ******************************************************************************
+    153          * Public functions
+    154          ******************************************************************************
+    155          *****************************************************************************/
+    156          
+    157          /******************************************************************************
+    158          * Name: LED_Init
+    159          * Description: Initialize the LED module
+    160          * Parameters: -
+    161          * Return: -
+    162          ******************************************************************************/
+    163          void LED_Init
+    164          (
+    165          void
+    166          )
+    167          {
+    168              uint32_t i;
+    169          
+    170              for( i=0; i<gLEDsOnTargetBoardCnt_c; i++ )
+    171              {
+    172                  /* Initialize KBD pins. Function alse set pin MUX as GPIO */
+    173                  GPIO_DRV_OutputPinInit(&ledPins[i]);
+    174              }
+    175          
+    176              /* allocate a timer for use in flashing LEDs */
+    177          #if gTMR_Enabled_d
+    178              mLEDTimerID = TMR_AllocateTimer();
+    179          #endif
+    180          }
+    181          
+    182          /******************************************************************************
+    183          * Name: Un-initialize the LED module
+    184          * Description: turns off all the LEDs and disables clock gating for LED port
+    185          * Parameters: -
+    186          * Return: -
+    187          ******************************************************************************/
+    188          void LED_UnInit
+    189          (
+    190          void
+    191          )
+    192          {
+    193              uint32_t i;
+    194          
+    195          #if gTMR_Enabled_d
+    196              /* free the timer used for flashing mode */
+    197              TMR_FreeTimer(mLEDTimerID);
+    198          #endif
+    199          
+    200              for( i=0; i<gLEDsOnTargetBoardCnt_c; i++ )
+    201              {
+    202                  /* turn off LED */
+    203                  GPIO_DRV_SetPinOutput(ledPins[i].pinName);
+    204              }
+    205          }
+    206          
+    207          /******************************************************************************
+    208          * Name: LED_Operate
+    209          * Description: Basic LED operation: ON, OFF, TOGGLE.
+    210          * Param(s): -
+    211          * Return: -
+    212          ******************************************************************************/
+    213          void LED_Operate
+    214          (
+    215          LED_t led,
+    216          LED_OpMode_t operation
+    217          )
+    218          {
+    219          #if gLEDsOnTargetBoardCnt_c > 0
+    220              if(led & LED1)
+    221              {
+    222                  switch(operation)
+    223                  {
+    224                  case gLedOn_c:
+    225                      GPIO_DRV_ClearPinOutput(kGpioLED1);
+    226                      break;
+    227                  case gLedOff_c:
+    228                      GPIO_DRV_SetPinOutput(kGpioLED1);
+    229                      break;
+    230                  case gLedToggle_c:
+    231                      GPIO_DRV_TogglePinOutput(kGpioLED1);
+    232                      break;
+    233                  default:
+    234                      break;
+    235                  }
+    236              }
+    237          #endif /*gLEDsOnTargetBoardCnt_c > 0*/
+    238          #if gLEDsOnTargetBoardCnt_c > 1
+    239              if(led & LED2)
+    240              {
+    241                  switch(operation)
+    242                  {
+    243                  case gLedOn_c:
+    244                      GPIO_DRV_ClearPinOutput(kGpioLED2);
+    245                      break;
+    246                  case gLedOff_c:
+    247                      GPIO_DRV_SetPinOutput(kGpioLED2);
+    248                      break;
+    249                  case gLedToggle_c:
+    250                      GPIO_DRV_TogglePinOutput(kGpioLED2);
+    251                      break;
+    252                  default:
+    253                      break;
+    254                  }
+    255              }
+    256          #endif /*gLEDsOnTargetBoardCnt_c > 1*/
+    257          #if gLEDsOnTargetBoardCnt_c > 2
+    258              if(led & LED3)
+    259              {
+    260                  switch(operation)
+    261                  {
+    262                  case gLedOn_c:
+    263                      GPIO_DRV_ClearPinOutput(kGpioLED3);
+    264                      break;
+    265                  case gLedOff_c:
+    266                      GPIO_DRV_SetPinOutput(kGpioLED3);
+    267                      break;
+    268                  case gLedToggle_c:
+    269                      GPIO_DRV_TogglePinOutput(kGpioLED3);
+    270                      break;
+    271                  default:
+    272                      break;
+    273                  }
+    274              }
+    275          #endif /*gLEDsOnTargetBoardCnt_c > 2*/
+    276          #if gLEDsOnTargetBoardCnt_c > 3
+    277              if(led & LED4)
+    278              {
+    279                  switch(operation)
+    280                  {
+    281                  case gLedOn_c:
+    282                      GPIO_DRV_ClearPinOutput(kGpioLED4);
+    283                      break;
+    284                  case gLedOff_c:
+    285                      GPIO_DRV_SetPinOutput(kGpioLED4);
+    286                      break;
+    287                  case gLedToggle_c:
+    288                      GPIO_DRV_TogglePinOutput(kGpioLED4);
+    289                      break;
+    290                  default:
+    291                      break;
+    292                  }
+    293              }
+    294          #endif /*gLEDsOnTargetBoardCnt_c > 3*/
+    295          }
+    296          
+    297          
+    298          /******************************************************************************
+    299          * Name: LED_TurnOnLed
+    300          * Description: Turns ON the specified LED(s)
+    301          * Parameters: LEDNr - LED number(s) to be turned ON
+    302          * Return:
+    303          ******************************************************************************/
+    304          void LED_TurnOnLed
+    305          (
+    306          LED_t LEDNr
+    307          )
+    308          {
+    309              if (LEDNr & LED1)
+    310                  Led1On(); /* turn ON LED 1 */
+    311              if (LEDNr & LED2)
+    312                  Led2On(); /* turn ON LED 2 */
+    313              if (LEDNr & LED3)
+    314                  Led3On(); /* turn ON LED 3 */
+    315              if (LEDNr & LED4)
+    316                  Led4On(); /* turn ON LED 4 */
+    317          }
+    318          
+    319          /******************************************************************************
+    320          * Name: LED_TurnOffLed
+    321          * Description: Turns OFF the specified LED(s)
+    322          * Parameters: LEDNr - LED number(s) to be turned OFF
+    323          * Return:
+    324          ******************************************************************************/
+    325          void LED_TurnOffLed
+    326          (
+    327          LED_t LEDNr
+    328          )
+    329          {
+    330              if (LEDNr & LED1)
+    331                  Led1Off(); /* turn OFF LED 1 */
+    332              if (LEDNr & LED2)
+    333                  Led2Off(); /* turn OFF LED 2 */
+    334              if (LEDNr & LED3)
+    335                  Led3Off(); /* turn OFF LED 3 */
+    336              if (LEDNr & LED4)
+    337                  Led4Off(); /* turn OFF LED 4 */
+    338          }
+    339          
+    340          /******************************************************************************
+    341          * Name: LED_ToggleLed
+    342          * Description: Toggles the specified LED(s)
+    343          * Parameters:  LEDNr - LED number(s) to be toggled
+    344          * Return: -
+    345          ******************************************************************************/
+    346          void LED_ToggleLed
+    347          (
+    348          LED_t LEDNr
+    349          )
+    350          {
+    351              if (LEDNr & LED1)
+    352                  Led1Toggle(); /* toggle LED 1 */
+    353              if (LEDNr & LED2)
+    354                  Led2Toggle(); /* toggle LED 2 */
+    355              if (LEDNr & LED3)
+    356                  Led3Toggle(); /* toggle LED 3 */
+    357              if (LEDNr & LED4)
+    358                  Led4Toggle(); /* toggle LED 4 */
+    359          }
+    360          
+    361          /******************************************************************************
+    362          * Name: LED_TurnOffAllLeds
+    363          * Description: Turns OFF all LEDs
+    364          * Parameters: -
+    365          * Return: -
+    366          ******************************************************************************/
+    367          void LED_TurnOffAllLeds
+    368          (
+    369          void
+    370          )
+    371          {
+    372              LED_TurnOffLed(LED_ALL);
+    373          }
+    374          
+    375          /******************************************************************************
+    376          * Name: LED_TurnOnAllLeds
+    377          * Description: Turns ON all LEDs
+    378          * Parameters: -
+    379          * Return: -
+    380          ******************************************************************************/
+    381          void LED_TurnOnAllLeds
+    382          (
+    383          void
+    384          )
+    385          {
+    386              LED_TurnOnLed(LED_ALL);
+    387          }
+    388          
+    389          /******************************************************************************
+    390          * Name: LED_StopFlashingAllLeds
+    391          * Description: Stops flashing and turns OFF all LEDs
+    392          * Parameters: -
+    393          * Return: -
+    394          ******************************************************************************/
+    395          void LED_StopFlashingAllLeds(void)
+    396          {
+    397              LED_SetLed(LED_ALL, gLedOff_c);
+    398          }
+    399          
+    400          /******************************************************************************
+    401          * LED_StartFlash
+    402          *
+    403          *
+    404          *******************************************************************************/
+    405          /******************************************************************************
+    406          * Name: LED_StartFlash
+    407          * Description: Starts flashing one or more LEDs
+    408          * Parameters: [IN] LED_t LEDNr - LED Number (may be an OR of the list)
+    409          * Return: -
+    410          ******************************************************************************/
+    411          void LED_StartFlash
+    412          (
+    413          LED_t LEDNr
+    414          )
+    415          {
+    416              /* indicate which LEDs are flashing */
+    417              mLedFlashingLEDs |= LEDNr;
+    418          
+    419          #if gTMR_Enabled_d
+    420              /* start the timer */
+    421              if(!TMR_IsTimerActive(mLEDTimerID))
+    422                  TMR_StartIntervalTimer(mLEDTimerID, mLEDInterval_c, (pfTmrCallBack_t)LED_FlashTimeout, (void*)mLEDTimerID);
+    423          #else
+    424          #warning "The TIMER component is not enabled and therefore the LED flashing function is disabled"
+    425          #endif
+    426          }
+    427          
+    428          #if gLEDBlipEnabled_d
+    429          /******************************************************************************
+    430          * Name: LED_StartBlip
+    431          * Description: Set up for blinking one or more LEDs once
+    432          * Parameters: [IN] LED_t LEDNr - LED Number (may be an OR of the list)
+    433          * Return: -
+    434          ******************************************************************************/
+    435          void LED_StartBlip
+    436          (
+    437          LED_t LEDNr
+    438          )
+    439          {
+    440              uint8_t iLedIndex;
+    441          
+    442              /* set up for blinking one or more LEDs once */
+    443              for(iLedIndex = 0; iLedIndex < gLEDsOnTargetBoardCnt_c; ++iLedIndex) {
+    444                  if(LEDNr & (1 << iLedIndex))
+    445                      mLedBlips[iLedIndex] = 2;   /* blink on, then back off */
+    446              }
+    447          
+    448              /* start flashing */
+    449              LED_StartFlash(LEDNr);
+    450          }
+    451          #endif
+    452          
+    453          /******************************************************************************
+    454          * Name: LED_StopFlash
+    455          * Description: Stop an LED from flashing.
+    456          * Parameters: [IN] LED_t LEDNr - LED Number (may be an OR of the list)
+    457          * Return: -
+    458          ******************************************************************************/
+    459          void LED_StopFlash
+    460          (
+    461          LED_t LEDNr
+    462          )
+    463          {
+    464              /* leave stopped LEDs in the off state */
+    465              LED_TurnOffLed(LEDNr);
+    466          
+    467              /* stop flashing on one or more LEDs */
+    468              mLedFlashingLEDs &= (~LEDNr);
+    469          #if gTMR_Enabled_d
+    470              /* if ALL LEDs have stopped flashing, then stop timer */
+    471              if(!mLedFlashingLEDs)
+    472                  TMR_StopTimer(mLEDTimerID);
+    473          #endif
+    474          }
+    475          
+    476          /******************************************************************************
+    477          * Name: LED_StartSerialFlash
+    478          * Description: starts serial flashing LEDs
+    479          * Parameters: -
+    480          * Return: -
+    481          ******************************************************************************/
+    482          void LED_StartSerialFlash
+    483          (
+    484          uint8_t LEDStartPosition
+    485          )
+    486          {
+    487              /* indicate going into flashing mode (must be done first) */
+    488              LED_StartFlash(0);
+    489          
+    490              if(LEDStartPosition >= LED4)
+    491                  LEDStartPosition = LED1;
+    492          
+    493              mLedStartFlashingPosition   = LEDStartPosition;
+    494          
+    495              /* set up for serial lights */
+    496              do
+    497              {
+    498                  LED_TurnOffLed(LEDStartPosition);
+    499                  LEDStartPosition = LEDStartPosition<<1;
+    500              }while(LEDStartPosition <= (LED4 << 1));
+    501          
+    502              LED_TurnOnLed(mLedStartFlashingPosition);
+    503          
+    504              mLedFlashingLEDs = mLedStartFlashingPosition | mLedStartFlashingPosition << 1; /* toggle these to on first flash */
+    505          
+    506              /* indicate in serial flash mode */
+    507              mfLedInSerialMode = TRUE;
+    508          }
+    509          
+    510          /******************************************************************************
+    511          * Name: LED_SetHex
+    512          * Description: Sets a specified hex value on the LEDs
+    513          * Parameters: [IN] hexValue - the value to be set on LEDs
+    514          * Return: -
+    515          ******************************************************************************/
+    516          void LED_SetHex
+    517          (
+    518          uint8_t hexValue
+    519          )
+    520          {
+    521              LED_SetLed(LED_ALL, gLedOff_c);
+    522              LED_SetLed(hexValue, gLedOn_c);
+    523          }
+    524          
+    525          /******************************************************************************
+    526          * Name: LED_SetLed
+    527          * Description: This function can set the specified LED(s) in one of the
+    528          *              following states: On, Off, Toggle, Flashing or StopFlash
+    529          * Parameters: [IN] LEDNr - LED(s) to
+    530          *              [IN] LedState_t state - one of the possible states listed above
+    531          * Return:
+    532          ******************************************************************************/
+    533          void LED_SetLed
+    534          (
+    535          LED_t LEDNr,
+    536          LedState_t state
+    537          )
+    538          {
+    539              /* turning off flashing same as off state */
+    540              if(state == gLedStopFlashing_c)
+    541                  state = gLedOff_c;
+    542          
+    543              /* turn off serial lights if in serial mode */
+    544              LED_ExitSerialFlash();
+    545          
+    546              /* flash LED */
+    547              if(state == gLedFlashing_c)
+    548                  LED_StartFlash(LEDNr);
+    549          
+    550          #if gLEDBlipEnabled_d
+    551              /* blink LEDs */
+    552              else if(state == gLedBlip_c)
+    553                  LED_StartBlip(LEDNr);
+    554          #endif
+    555          
+    556              /* On, Off or Toggle Led*/
+    557              else {
+    558          
+    559                  /* on, off or toggle will stop flashing on the LED. Also exits serial mode */
+    560                  if(mfLedInSerialMode || (mLedFlashingLEDs & LEDNr))
+    561                      LED_StopFlash(LEDNr);
+    562          
+    563                  /* Select the operation to be done on the port */
+    564                  if(state == gLedOn_c)
+    565                      LED_TurnOnLed(LEDNr);
+    566                  if(state == gLedOff_c)
+    567                      LED_TurnOffLed(LEDNr);
+    568                  if(state == gLedToggle_c)
+    569                      LED_ToggleLed(LEDNr);
+    570              }
+    571          }
+    572          
+    573          /******************************************************************************
+    574          *******************************************************************************
+    575          * Private functions
+    576          *******************************************************************************
+    577          ******************************************************************************/
+    578          
+    579          /******************************************************************************
+    580          * Name: LED_ExitSerialFlash
+    581          * Description: Stop serial flashing mode, if serial flash mode is active.
+    582          *              Turns all LEDs off.
+    583          * Param(s): -
+    584          * Return: -
+    585          ******************************************************************************/
+    586          static void LED_ExitSerialFlash
+    587          (
+    588          void
+    589          )
+    590          {
+    591              if(mfLedInSerialMode) {
+    592                  mLedFlashingLEDs = 0;   /* no LEDs are currently flashing */
+    593                  do
+    594                  {
+    595                      LED_TurnOffLed(mLedStartFlashingPosition);
+    596                      mLedStartFlashingPosition = mLedStartFlashingPosition<<1;
+    597                  }while(mLedStartFlashingPosition <= (LED4 << 1));
+    598                  mLedStartFlashingPosition = LED1;
+    599                  //LED_TurnOffAllLeds();
+    600          #if gTMR_Enabled_d
+    601                  TMR_StopTimer(mLEDTimerID);
+    602          #endif
+    603                  mfLedInSerialMode = FALSE;
+    604              }
+    605          }
+    606          
+    607          #if gLEDBlipEnabled_d
+    608          /******************************************************************************
+    609          * Name: LED_DecrementBlip
+    610          * Description: Decrements the blink count
+    611          * Param(s): -
+    612          * Return: -
+    613          ******************************************************************************/
+    614          static void LED_DecrementBlip(void)
+    615          {
+    616              uint8_t iLedIndex;
+    617          
+    618              for(iLedIndex = 0; iLedIndex < gLEDsOnTargetBoardCnt_c; ++iLedIndex)
+    619              {
+    620                  if(mLedBlips[iLedIndex])
+    621                  {
+    622                      --mLedBlips[iLedIndex];
+    623                      if(!mLedBlips[iLedIndex])
+    624                      {
+    625                          mLedFlashingLEDs &= ~(1 << iLedIndex);
+    626                      }
+    627                  }
+    628              }
+    629          #if gTMR_Enabled_d
+    630              /* done, stop the timer */
+    631              if(!mLedFlashingLEDs)
+    632              {
+    633                  TMR_StopTimer(mLEDTimerID);
+    634              }
+    635          #endif
+    636          }
+    637          #endif
+    638          
+    639          /******************************************************************************
+    640          * Name: LED_FlashTimeout
+    641          * Description: timer callback function that is called each time the timer
+    642          *              expires
+    643          * Param(s): [IN] timerId - the timer ID
+    644          * Return: -
+    645          ******************************************************************************/
+    646          #if gTMR_Enabled_d
+    647          static void LED_FlashTimeout
+    648          (
+    649          uint8_t timerId /* IN: TimerID. */
+    650          )
+    651          {
+    652              (void)timerId;  /* prevent compiler warning */
+    653          
+    654              if(mLedFlashingLEDs & LED1)
+    655                  Led1Toggle();
+    656              if(mLedFlashingLEDs & LED2)
+    657                  Led2Toggle();
+    658              if(mLedFlashingLEDs & LED3)
+    659                  Led3Toggle();
+    660              if(mLedFlashingLEDs & LED4)
+    661                  Led4Toggle();
+    662          
+    663          #if gLEDBlipEnabled_d
+    664              /* decrement blips */
+    665              LED_DecrementBlip();
+    666          #endif
+    667          
+    668              /* if serial lights, move on to next light */
+    669              if(mfLedInSerialMode)
+    670              {
+    671                  mLedFlashingLEDs = mLedFlashingLEDs << 1;
+    672                  if(mLedFlashingLEDs & (LED4 << 1))  /* wrap around */
+    673                  {
+    674                      mLedFlashingLEDs &= LED_ALL;
+    675                      mLedFlashingLEDs |= mLedStartFlashingPosition;
+    676                  }
+    677              }
+    678          }
+    679          #endif /* gTMR_Enabled_d */
+    680          #endif /* gLEDSupported_d */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   LED_DecrementBlip
+         8   -> TMR_StopTimer
+       8   LED_ExitSerialFlash
+         8   -> LED_TurnOffLed
+         8   -> TMR_StopTimer
+       8   LED_FlashTimeout
+         8   -> LED_DecrementBlip
+         8   -> LED_Operate
+       8   LED_Init
+         8   -> GPIO_DRV_OutputPinInit
+         8   -> TMR_AllocateTimer
+      16   LED_Operate
+        16   -> GPIO_DRV_ClearPinOutput
+        16   -> GPIO_DRV_SetPinOutput
+        16   -> GPIO_DRV_TogglePinOutput
+       8   LED_SetHex
+         8   -> LED_SetLed
+      16   LED_SetLed
+        16   -> LED_ExitSerialFlash
+        16   -> LED_StartBlip
+        16   -> LED_StartFlash
+        16   -> LED_StopFlash
+        16   -> LED_ToggleLed
+        16   -> LED_TurnOffLed
+        16   -> LED_TurnOnLed
+      16   LED_StartBlip
+        16   -> LED_StartFlash
+       8   LED_StartFlash
+         8   -> TMR_IsTimerActive
+         8   -> TMR_StartIntervalTimer
+       8   LED_StartSerialFlash
+         8   -> LED_StartFlash
+         8   -> LED_TurnOffLed
+         8   -> LED_TurnOnLed
+       8   LED_StopFlash
+         8   -> LED_TurnOffLed
+         8   -> TMR_StopTimer
+       8   LED_StopFlashingAllLeds
+         8   -> LED_SetLed
+       8   LED_ToggleLed
+         8   -> LED_Operate
+       8   LED_TurnOffAllLeds
+         8   -> LED_TurnOffLed
+       8   LED_TurnOffLed
+         8   -> LED_Operate
+       8   LED_TurnOnAllLeds
+         8   -> LED_TurnOnLed
+       8   LED_TurnOnLed
+         8   -> LED_Operate
+       8   LED_UnInit
+         8   -> GPIO_DRV_SetPinOutput
+         8   -> TMR_FreeTimer
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable8
+      82  LED_DecrementBlip
+      64  LED_ExitSerialFlash
+     126  LED_FlashTimeout
+      36  LED_Init
+     196  LED_Operate
+      24  LED_SetHex
+     120  LED_SetLed
+      48  LED_StartBlip
+      44  LED_StartFlash
+      72  LED_StartSerialFlash
+      40  LED_StopFlash
+      12  LED_StopFlashingAllLeds
+      54  LED_ToggleLed
+      10  LED_TurnOffAllLeds
+      54  LED_TurnOffLed
+      10  LED_TurnOnAllLeds
+      54  LED_TurnOnLed
+      36  LED_UnInit
+       1  mLEDTimerID
+       4  mLedBlips
+       1  mLedFlashingLEDs
+       1  mLedStartFlashingPosition
+       1  mfLedInSerialMode
+
+ 
+     6 bytes in section .bss
+     2 bytes in section .data
+ 1 122 bytes in section .text
+ 
+ 1 122 bytes of CODE memory
+     8 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,308 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:25
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashInit.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashInit.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\FlashInit.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\FlashInit.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\platform\drivers\src\flash\C90TFS\drvsrc\source\FlashInit.c
+      1          /*****************************************************************************
+      2           (c) Copyright 2010-2014 Freescale Semiconductor, Inc.
+      3           ALL RIGHTS RESERVED.
+      4          
+      5           Redistribution and use in source and binary forms, with or without
+      6           modification, are permitted provided that the following conditions are met:
+      7              * Redistributions of source code must retain the above copyright
+      8                notice, this list of conditions and the following disclaimer.
+      9              * Redistributions in binary form must reproduce the above copyright
+     10                notice, this list of conditions and the following disclaimer in the
+     11                documentation and/or other materials provided with the distribution.
+     12              * Neither the name of the <organization> nor the
+     13                names of its contributors may be used to endorse or promote products
+     14                derived from this software without specific prior written permission.
+     15          
+     16           THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     17           ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     18           WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     19           DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT,
+     20           INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     21           (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     22           LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+     23           ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     24           (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     25           SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     26          ******************************************************************************
+     27          
+     28          *****************************************************************************
+     29          *                                                                           *
+     30          *        Standard Software Flash Driver For FTFx                            *
+     31          *                                                                           *
+     32          * FILE NAME     :  SSD_FTFx.h                                               *
+     33          * DATE          :  Sep 25, 2014                                           *
+     34          *                                                                           *
+     35          * AUTHOR        :  FPT Team                                                 *
+     36          * E-mail        :  r56611@freescale.com                                     *
+     37          *                                                                           *
+     38          *****************************************************************************/
+     39          
+     40          /************************** CHANGES *************************************
+     41          1.1.GA      09.25.2014      FPT Team      First version of SDK C90TFS flash driver
+     42                                                    inherited from BM C90TFS flash driver v1.02
+     43                                                    (08.04.2014, FPT Team)
+     44          *************************************************************************/
+     45          /* include the header files */
+     46          #include "SSD_FTFx.h"
+     47          
+     48          /************************************************************************
+     49          *
+     50          *  Function Name    : FlashInit.c
+     51          *  Description      : Initialize the Flash memory
+     52          *  Arguments        : PFLASH_SSD_CONFIG
+     53          *  Return Value     : uint32_t
+     54          *
+     55          *************************************************************************/
+     56          
+     57          /* Enable size optimization */
+     58          #if(ARM_CORTEX_M != CPU_CORE)
+     59          #pragma optimize_for_size on
+     60          #pragma optimization_level 4
+     61          #endif /* End of CPU_CORE */
+     62          
+     63          uint32_t SIZE_OPTIMIZATION FlashInit (PFLASH_SSD_CONFIG pSSDConfig)
+     64          {
+     65          #if (DEBLOCK_SIZE != 0x0U)
+     66              uint8_t  EEEDataSetSize;    /* store EEE Data Set Size */
+     67              uint8_t  DEPartitionCode;    /* store D/E-Flash Partition Code */
+     68              uint32_t temp;               /* temporary variable */
+     69          
+     70              /* clear RDCOLERR & ACCERR & FPVIOL flag in flash status register. Write 1 to clear*/
+     71              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FSTAT_OFFSET;
+     72              REG_WRITE(temp, FTFx_SSD_FSTAT_ERROR_BITS);
+     73          
+     74              /* Write Command Code to FCCOB0 */
+     75              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB0_OFFSET;
+     76              REG_WRITE(temp, FTFx_READ_RESOURCE);
+     77          
+     78              /* Write address to FCCOB1/2/3 */
+     79              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB1_OFFSET;
+     80              REG_WRITE(temp, GET_BIT_16_23(DFLASH_IFR_READRESOURCE_ADDRESS));
+     81          
+     82              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB2_OFFSET;
+     83              REG_WRITE(temp, GET_BIT_8_15(DFLASH_IFR_READRESOURCE_ADDRESS));
+     84          
+     85              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB3_OFFSET;
+     86              REG_WRITE(temp, GET_BIT_0_7(DFLASH_IFR_READRESOURCE_ADDRESS));
+     87          
+     88              /* Write Resource Select Code of 0 to FCCOB8 to select IFR. Without this, */
+     89              /* an access error may occur if the register contains data from a previous command. */
+     90              /* for FTFE module, resource code is FCCOB4. For others, recource code is FCCOB8 */
+     91              temp = pSSDConfig->ftfxRegBase + RSRC_CODE_OFSSET;
+     92              REG_WRITE(temp, 0x0U);
+     93          
+     94              /* clear CCIF bit */
+     95              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FSTAT_OFFSET;
+     96              REG_BIT_SET(temp, FTFx_SSD_FSTAT_CCIF);
+     97          
+     98              /* check CCIF bit */
+     99              temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FSTAT_OFFSET;
+    100              while((REG_BIT_GET(temp, FTFx_SSD_FSTAT_CCIF)) == 0x0U)
+    101              {
+    102                  /* wait till CCIF bit is set */
+    103              }
+    104              /* read out EEdata set size and DEpartition code from FCCOBA, FCCOBB for FTFE module, from FCCOB6 and FCCOB7 for others */
+    105              #ifdef FTFE_M
+    106                  temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOBA_OFFSET;
+    107                  EEEDataSetSize = REG_READ(temp);
+    108          
+    109                  temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOBB_OFFSET;
+    110                  DEPartitionCode = REG_READ(temp);
+    111              #else
+    112                  temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB6_OFFSET;
+    113                  EEEDataSetSize = REG_READ(temp);
+    114          
+    115                  temp = pSSDConfig->ftfxRegBase + FTFx_SSD_FCCOB7_OFFSET;
+    116                  DEPartitionCode = REG_READ(temp);
+    117              #endif
+    118              DEPartitionCode = DEPartitionCode & 0x0FU;
+    119              EEEDataSetSize = EEEDataSetSize & 0x0FU;
+    120                  /* Calculate D-Flash size and EEE size */
+    121              if       (0x0U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0000;}
+    122              else if (0x01U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0001;}
+    123              else if (0x02U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0010;}
+    124              else if (0x03U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0011;}
+    125              else if (0x04U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0100;}
+    126              else if (0x05U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0101;}
+    127              else if (0x06U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0110;}
+    128              else if (0x07U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_0111;}
+    129              else if (0x08U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1000;}
+    130              else if (0x09U == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1001;}
+    131              else if (0x0AU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1010;}
+    132              else if (0x0BU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1011;}
+    133              else if (0x0CU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1100;}
+    134              else if (0x0DU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1101;}
+    135              else if (0x0EU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1110;}
+    136              else if (0x0FU == DEPartitionCode) {pSSDConfig->DFlashSize = DEPART_1111;}
+    137          
+    138              if       (0x0U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0000;}
+    139              else if (0x01U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0001;}
+    140              else if (0x02U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0010;}
+    141              else if (0x03U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0011;}
+    142              else if (0x04U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0100;}
+    143              else if (0x05U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0101;}
+    144              else if (0x06U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0110;}
+    145              else if (0x07U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_0111;}
+    146              else if (0x08U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1000;}
+    147              else if (0x09U == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1001;}
+    148              else if (0x0AU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1010;}
+    149              else if (0x0BU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1011;}
+    150              else if (0x0CU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1100;}
+    151              else if (0x0DU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1101;}
+    152              else if (0x0EU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1110;}
+    153              else if (0x0FU == EEEDataSetSize) {pSSDConfig->EEESize = EEESIZE_1111;}
+    154          
+    155          #else /* DEBLOCK_SIZE == 0 */
+    156              /* If size of D/E-Flash = 0 */
+    157              pSSDConfig->DFlashSize = 0x0U;
+    158              pSSDConfig->EEESize = 0x0U;
+    159          #endif /* end of DEBLOCK_SIZE */
+    160          #if C90TFS_ENABLE_DEBUG
+    161              /* Enter Debug state if enabled */
+    162              if (TRUE == (pSSDConfig->DebugEnable))
+    163              {
+    164                  ENTER_DEBUG_MODE;
+    165              }
+    166          #endif
+    167          
+    168              return(FTFx_OK);
+    169          }
+    170          /* End of file */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   FlashInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      14  FlashInit
+
+ 
+ 14 bytes in section .text
+ 
+ 14 bytes of CODE memory
+
+Errors: none
+Warnings: none

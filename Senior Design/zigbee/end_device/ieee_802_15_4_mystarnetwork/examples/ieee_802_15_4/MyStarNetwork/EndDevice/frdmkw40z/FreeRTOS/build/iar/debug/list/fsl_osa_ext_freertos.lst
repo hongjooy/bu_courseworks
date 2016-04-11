@@ -1,0 +1,1395 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:34
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\OSAbstraction\Source\fsl_osa_ext_freertos.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\OSAbstraction\Source\fsl_osa_ext_freertos.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\fsl_osa_ext_freertos.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\fsl_osa_ext_freertos.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\OSAbstraction\Source\fsl_osa_ext_freertos.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file freertos_Adapter.c
+      6          * This is the source file for the OS Abstraction layer for freertos. 
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          /*! *********************************************************************************
+     35          *************************************************************************************
+     36          * Include
+     37          *************************************************************************************
+     38          ********************************************************************************** */
+     39          #include "EmbeddedTypes.h"
+     40          #include "fsl_osa_ext.h"
+     41          #include "fsl_os_abstraction.h"
+     42          #include "fsl_interrupt_manager.h"
+     43          #include <string.h>
+     44          #include "GenericList.h"
+     45          
+     46          
+     47          /*! *********************************************************************************
+     48          *************************************************************************************
+     49          * Private macros
+     50          *************************************************************************************
+     51          ********************************************************************************** */
+     52          #define millisecToTicks(millisec) ((millisec * configTICK_RATE_HZ + 999)/1000)
+     53          
+     54          #ifdef DEBUG_ASSERT
+     55          #define OS_ASSERT(condition) if(!(condition))while(1);
+     56          #else
+     57          #define OS_ASSERT(condition) (void)(condition);
+     58          #endif
+     59          
+     60          #if (osNumberOfTimers || osNumberOfEvents)
+     61          #define osObjectAlloc_c 1
+     62          #else
+     63          #define osObjectAlloc_c 0
+     64          #endif
+     65          
+     66          
+     67          /************************************************************************************
+     68          *************************************************************************************
+     69          * Private type definitions
+     70          *************************************************************************************
+     71          ************************************************************************************/
+     72          typedef struct osTimerStruct_tag
+     73          {
+     74              uint32_t inUse;
+     75              osaTimerFctPtr_t userCallback;
+     76              void *userArg;
+     77              //uint32_t timer_type;
+     78              TimerHandle_t tmr;
+     79          }osTimerStruct_t;
+     80          
+     81          typedef struct osEventStruct_tag
+     82          {
+     83              uint32_t inUse;
+     84              event_t event;
+     85          }osEventStruct_t;
+     86          
+     87          typedef struct osObjStruct_tag
+     88          {
+     89              uint32_t inUse;
+     90              uint32_t osObj;
+     91          }osObjStruct_t;
+     92          
+     93          typedef struct osObjectInfo_tag
+     94          {
+     95              void* pHeap;
+     96              uint32_t objectStructSize;
+     97              uint32_t objNo;
+     98          } osObjectInfo_t;
+     99          
+    100          
+    101          /*! *********************************************************************************
+    102          *************************************************************************************
+    103          * Private prototypes
+    104          *************************************************************************************
+    105          ********************************************************************************** */
+    106          #if osObjectAlloc_c
+    107          static void* osObjectAlloc(const osObjectInfo_t* pOsObjectInfo);
+    108          static bool_t osObjectIsAllocated(const osObjectInfo_t* pOsObjectInfo, void* pObjectStruct);
+    109          static void osObjectFree(const osObjectInfo_t* pOsObjectInfo, void* pObjectStruct);
+    110          #endif
+    111          #if osNumberOfTimers
+    112          static void TimerCallback(TimerHandle_t t);
+    113          #endif
+    114          extern void main_task(void const *argument);
+    115          void startup_task(void const *argument);
+    116          
+    117          
+    118          /*! *********************************************************************************
+    119          *************************************************************************************
+    120          * Public memory declarations
+    121          *************************************************************************************
+    122          ********************************************************************************** */
+    123          const uint8_t gUseRtos_c = USE_RTOS;  // USE_RTOS = 0 for BareMetal and 1 for OS
+    124          
+    125          
+    126          /*! *********************************************************************************
+    127          *************************************************************************************
+    128          * Private memory declarations
+    129          *************************************************************************************
+    130          ********************************************************************************** */
+    131          #if osNumberOfTimers
+    132          osTimerStruct_t osTimersHeap[osNumberOfTimers];
+    133          const osObjectInfo_t osTimerInfo = {osTimersHeap, sizeof(osTimerStruct_t),osNumberOfTimers};
+    134          #endif
+    135          
+    136          #if osNumberOfEvents
+    137          osEventStruct_t osEventHeap[osNumberOfEvents];
+    138          const osObjectInfo_t osEventInfo = {osEventHeap, sizeof(osEventStruct_t),osNumberOfEvents};
+    139          #endif
+    140          
+    141          
+    142          /*! *********************************************************************************
+    143          *************************************************************************************
+    144          * Public functions
+    145          *************************************************************************************
+    146          ********************************************************************************** */
+    147          
+    148          /*FUNCTION**********************************************************************
+    149           *
+    150           * Function Name : startup_task
+    151           * Description   : Wrapper over main_task..
+    152           *
+    153           *END**************************************************************************/
+    154          void startup_task(void const *argument)
+    155          {
+    156              main_task(argument);
+    157              while(1);
+    158          }
+    159          
+    160          /*FUNCTION**********************************************************************
+    161           *
+    162           * Function Name : OSA_EXT_TaskGetId
+    163           * Description   : This function is used to get current active task's handler.
+    164           *
+    165           *END**************************************************************************/
+    166          osaTaskId_t OSA_EXT_TaskGetId(void)
+    167          {
+    168              return (osaTaskId_t)OSA_TaskGetHandler();
+    169          }
+    170          
+    171          /*FUNCTION**********************************************************************
+    172           *
+    173           * Function Name : OSA_EXT_TaskYield
+    174           * Description   : When a task calls this function, it will give up CPU and put
+    175           * itself to the tail of ready list.
+    176           *
+    177           *END**************************************************************************/
+    178          osaStatus_t OSA_EXT_TaskYield(void)
+    179          {
+    180              return (osaStatus_t)OSA_TaskYield();
+    181          }
+    182          
+    183          /*FUNCTION**********************************************************************
+    184           *
+    185           * Function Name : OSA_EXT_TaskGetPriority
+    186           * Description   : This function returns task's priority by task handler.
+    187           *
+    188           *END**************************************************************************/
+    189          osaTaskPriority_t OSA_EXT_TaskGetPriority(osaTaskId_t taskId)
+    190          {
+    191              return (osaTaskPriority_t)OSA_TaskGetPriority((task_handler_t)taskId);
+    192          }
+    193          
+    194          /*FUNCTION**********************************************************************
+    195           *
+    196           * Function Name : OSA_EXT_TaskSetPriority
+    197           * Description   : This function sets task's priority by task handler.
+    198           *
+    199           *END**************************************************************************/
+    200          osaStatus_t OSA_EXT_TaskSetPriority(osaTaskId_t taskId, osaTaskPriority_t taskPriority)
+    201          {
+    202              return (osaStatus_t)OSA_TaskSetPriority((task_handler_t)taskId,( uint16_t)taskPriority);
+    203          }
+    204          
+    205          /*FUNCTION**********************************************************************
+    206           *
+    207           * Function Name : OSA_EXT_TaskCreate
+    208           * Description   : This function is used to create a task and make it ready.
+    209           * Param[in]     :  threadDef  - Definition of the thread.
+    210           *                  task_param - Parameter to pass to the new thread.
+    211           * Return Thread handle of the new thread, or NULL if failed.
+    212            *
+    213           *END**************************************************************************/
+    214          osaTaskId_t OSA_EXT_TaskCreate(osaThreadDef_t *thread_def,osaTaskParam_t task_param)
+    215          {
+    216              uint32_t *threadStackPtr;
+    217              osaTaskId_t taskId = NULL;
+    218              uint16_t oldPriority;
+    219              osa_status_t status;
+    220              task_handler_t task_handler;
+    221              
+    222              if(thread_def->instances == 0)
+    223              {
+    224                  return NULL;
+    225              }
+    226          
+    227              /*Change priority to avoid context switches*/
+    228              oldPriority = OSA_TaskGetPriority(OSA_TaskGetHandler());
+    229              (void)OSA_TaskSetPriority(OSA_TaskGetHandler(), OSA_PRIORITY_REAL_TIME);
+    230              threadStackPtr = thread_def->tstack;
+    231              
+    232              status = OSA_TaskCreate((task_t)thread_def->pthread,
+    233                                      thread_def->tname,
+    234                                      thread_def->stacksize,
+    235                                      (task_stack_t*)threadStackPtr,
+    236                                      thread_def->tpriority,
+    237                                      (task_param_t)task_param,
+    238                                      thread_def->useFloat,
+    239                                      &task_handler);
+    240          
+    241              if(kStatus_OSA_Success == status)
+    242              {
+    243                  taskId = (osaTaskId_t)task_handler;
+    244                  thread_def->instances--;  
+    245              }
+    246          
+    247              (void)OSA_TaskSetPriority(OSA_TaskGetHandler(), oldPriority);
+    248          
+    249              return taskId;
+    250          }
+    251          
+    252          /*FUNCTION**********************************************************************
+    253           *
+    254           * Function Name : OSA_EXT_TaskDestroy
+    255           * Description   : This function destroy a task. 
+    256           * Param[in]     :taskId - Thread handle.
+    257           * Return osaStatus_Success if the task is destroied, otherwise return osaStatus_Error.
+    258           *
+    259           *END**************************************************************************/
+    260          osaStatus_t OSA_EXT_TaskDestroy(osaTaskId_t taskId)
+    261          {
+    262              osa_status_t status;
+    263              uint16_t oldPriority;
+    264              
+    265              /*Change priority to avoid context switches*/
+    266              oldPriority = OSA_TaskGetPriority(OSA_TaskGetHandler());
+    267          
+    268              (void)OSA_TaskSetPriority(OSA_TaskGetHandler(), OSA_PRIORITY_REAL_TIME);
+    269              
+    270              status = OSA_TaskDestroy((task_handler_t)taskId);
+    271          
+    272              (void)OSA_TaskSetPriority(OSA_TaskGetHandler(), oldPriority);
+    273              
+    274              return (osaStatus_t)status;
+    275          }
+    276          
+    277          /*FUNCTION**********************************************************************
+    278           *
+    279           * Function Name : OSA_EXT_TimeDelay
+    280           * Description   : This function is used to suspend the active thread for the given number of milliseconds.
+    281           *
+    282           *END**************************************************************************/
+    283          void OSA_EXT_TimeDelay(uint32_t millisec)
+    284          {
+    285              vTaskDelay(millisecToTicks(millisec));
+    286          }
+    287          
+    288          /*FUNCTION**********************************************************************
+    289           *
+    290           * Function Name : OSA_EXT_SemaphoreCreate
+    291           * Description   : This function is used to create a semaphore. 
+    292           * Return         : Semaphore handle of the new semaphore, or NULL if failed. 
+    293            *
+    294           *END**************************************************************************/
+    295          osaSemaphoreId_t OSA_EXT_SemaphoreCreate(uint32_t initValue)
+    296          {
+    297          #if osNumberOfSemaphores
+    298              semaphore_t sem;
+    299          
+    300              if( kStatus_OSA_Success == OSA_SemaCreate(&sem, (uint8_t)initValue) )
+    301              {
+    302                  return (osaSemaphoreId_t)sem;
+    303              }
+    304          #else 
+    305              (void)initValue;
+    306          #endif
+    307              return NULL;
+    308          }
+    309          
+    310          /*FUNCTION**********************************************************************
+    311           *
+    312           * Function Name : OSA_EXT_SemaphoreDestroy
+    313           * Description   : This function is used to destroy a semaphore.
+    314           * Return        : osaStatus_Success if the semaphore is destroyed successfully, otherwise return osaStatus_Error.
+    315           *
+    316           *END**************************************************************************/
+    317          osaStatus_t OSA_EXT_SemaphoreDestroy(osaSemaphoreId_t semId)
+    318          {
+    319          #if osNumberOfSemaphores
+    320              osa_status_t osa_status;
+    321              semaphore_t sem = (semaphore_t)semId; 
+    322              
+    323              osa_status = OSA_SemaDestroy(&sem);
+    324              
+    325              return(osaStatus_t)osa_status;  
+    326          #else
+    327              (void)semId;
+    328              return osaStatus_Error;
+    329          #endif  
+    330          }
+    331          
+    332          /*FUNCTION**********************************************************************
+    333           *
+    334           * Function Name : OSA_EXT_SemaphoreWait
+    335           * Description   : This function checks the semaphore's counting value, if it is
+    336           * positive, decreases it and returns osaStatus_Success, otherwise, timeout
+    337           * will be used for wait. The parameter timeout indicates how long should wait
+    338           * in milliseconds. Pass osaWaitForever_c to wait indefinitely, pass 0 will
+    339           * return osaStatus_Timeout immediately if semaphore is not positive.
+    340           * This function returns osaStatus_Success if the semaphore is received, returns
+    341           * osaStatus_Timeout if the semaphore is not received within the specified
+    342           * 'timeout', returns osaStatus_Error if any errors occur during waiting.
+    343           *
+    344           *END**************************************************************************/
+    345          osaStatus_t OSA_EXT_SemaphoreWait(osaSemaphoreId_t semId, uint32_t millisec)
+    346          {
+    347          #if osNumberOfSemaphores
+    348              osa_status_t osa_status;
+    349              semaphore_t sem = (semaphore_t)semId;
+    350              
+    351              osa_status = OSA_SemaWait(&sem, millisec);
+    352              return  (osaStatus_t)osa_status;
+    353          #else
+    354              (void)semId; 
+    355              (void)millisec;
+    356              return osaStatus_Error;
+    357          #endif  
+    358          }
+    359          
+    360          /*FUNCTION**********************************************************************
+    361           *
+    362           * Function Name : OSA_EXT_SemaphorePost
+    363           * Description   : This function is used to wake up one task that wating on the
+    364           * semaphore. If no task is waiting, increase the semaphore. The function returns
+    365           * osaStatus_Success if the semaphre is post successfully, otherwise returns
+    366           * osaStatus_Error.
+    367           *
+    368           *END**************************************************************************/
+    369          osaStatus_t OSA_EXT_SemaphorePost(osaSemaphoreId_t semId)
+    370          {
+    371          #if osNumberOfSemaphores
+    372              osa_status_t osa_status;
+    373              semaphore_t sem = (semaphore_t)semId;
+    374              
+    375              osa_status = OSA_SemaPost(&sem);
+    376              return (osaStatus_t)osa_status;
+    377          #else
+    378              (void)semId;
+    379              return osaStatus_Error;
+    380          #endif  
+    381          }
+    382          
+    383          /*FUNCTION**********************************************************************
+    384           *
+    385           * Function Name : OSA_EXT_MutexCreate
+    386           * Description   : This function is used to create a mutex.
+    387           * Return        : Mutex handle of the new mutex, or NULL if failed. 
+    388           *
+    389           *END**************************************************************************/
+    390          osaMutexId_t OSA_EXT_MutexCreate(void)
+    391          {
+    392          #if osNumberOfMutexes  
+    393              mutex_t mutex;
+    394          
+    395              if( OSA_MutexCreate(&mutex) == kStatus_OSA_Success )
+    396              {
+    397                  return (osaMutexId_t)mutex;
+    398              }
+    399          #endif  
+    400              return NULL;
+    401          }
+    402          
+    403          /*FUNCTION**********************************************************************
+    404           *
+    405           * Function Name : OSA_EXT_MutexLock
+    406           * Description   : This function checks the mutex's status, if it is unlocked,
+    407           * lock it and returns osaStatus_Success, otherwise, wait for the mutex.
+    408           * This function returns osaStatus_Success if the mutex is obtained, returns
+    409           * osaStatus_Error if any errors occur during waiting. If the mutex has been
+    410           * locked, pass 0 as timeout will return osaStatus_Timeout immediately.
+    411           *
+    412           *END**************************************************************************/
+    413          osaStatus_t OSA_EXT_MutexLock(osaMutexId_t mutexId, uint32_t millisec)
+    414          {
+    415          #if osNumberOfMutexes    
+    416              osa_status_t osa_status;
+    417              mutex_t mutex = (mutex_t)mutexId;
+    418              
+    419              osa_status = OSA_MutexLock(&mutex, millisec);
+    420              return  (osaStatus_t)osa_status; 
+    421          #else
+    422              (void)mutexId;
+    423              (void)millisec;  
+    424              return osaStatus_Error;
+    425          #endif  
+    426          }
+    427          
+    428          /*FUNCTION**********************************************************************
+    429           *
+    430           * Function Name : OSA_EXT_MutexUnlock
+    431           * Description   : This function is used to unlock a mutex.
+    432           *
+    433           *END**************************************************************************/
+    434          osaStatus_t OSA_EXT_MutexUnlock(osaMutexId_t mutexId)
+    435          {
+    436          #if osNumberOfMutexes  
+    437              osa_status_t osa_status;
+    438              mutex_t mutex = (mutex_t)mutexId;
+    439              
+    440              osa_status = OSA_MutexUnlock(&mutex);
+    441              return (osaStatus_t)osa_status;
+    442          #else
+    443              (void)mutexId;
+    444              return osaStatus_Error;  
+    445          #endif  
+    446          }
+    447          
+    448          /*FUNCTION**********************************************************************
+    449           *
+    450           * Function Name : OSA_EXT_MutexDestroy
+    451           * Description   : This function is used to destroy a mutex.
+    452           * Return        : osaStatus_Success if the lock object is destroyed successfully, otherwise return osaStatus_Error.
+    453           *
+    454           *END**************************************************************************/
+    455          osaStatus_t OSA_EXT_MutexDestroy(osaMutexId_t mutexId)
+    456          {
+    457          #if osNumberOfMutexes    
+    458              osa_status_t osa_status;
+    459              mutex_t mutex = (mutex_t)mutexId;
+    460              
+    461              osa_status = OSA_MutexDestroy(&mutex);
+    462              return(osaStatus_t)osa_status;  
+    463          #else
+    464              (void)mutexId;
+    465              return osaStatus_Error;    
+    466          #endif  
+    467          }
+    468          
+    469          /*FUNCTION**********************************************************************
+    470           *
+    471           * Function Name : OSA_EXT_EventCreate
+    472           * Description   : This function is used to create a event object.
+    473           * Return        : Event handle of the new event, or NULL if failed. 
+    474           *
+    475           *END**************************************************************************/
+    476          osaEventId_t OSA_EXT_EventCreate(bool_t autoClear)
+    477          {
+    478          #if osNumberOfEvents  
+    479              osaEventId_t eventId;
+    480              osEventStruct_t* pEventStruct; 
+    481              osa_status_t osa_status;
+    482              OSA_EXT_InterruptDisable();
+    483              eventId = pEventStruct = osObjectAlloc(&osEventInfo);
+    484              OSA_EXT_InterruptEnable();
+    485              if(eventId == NULL)
+    486              {
+    487                  return NULL;
+    488              }
+    489              osa_status = OSA_EventCreate(&pEventStruct->event, autoClear? (kEventAutoClear):(kEventManualClear));
+    490              if(osa_status != kStatus_OSA_Success)
+    491              {
+    492                  OSA_EXT_InterruptDisable();
+    493                  osObjectFree(&osEventInfo, eventId);
+    494                  OSA_EXT_InterruptEnable();
+    495                  eventId = NULL;
+    496              }
+    497              return eventId;
+    498          #else
+    499              (void)autoClear;
+    500              return NULL;
+    501          #endif  
+    502          }
+    503          
+    504          /*FUNCTION**********************************************************************
+    505           *
+    506           * Function Name : OSA_EXT_EventSet
+    507           * Description   : Set one or more event flags of an event object.
+    508           * Return        : osaStatus_Success if set successfully, osaStatus_Error if failed.
+    509           *
+    510           *END**************************************************************************/
+    511          osaStatus_t OSA_EXT_EventSet(osaEventId_t eventId, osaEventFlags_t flagsToSet)
+    512          {
+    513          #if osNumberOfEvents    
+    514              osa_status_t osa_status;
+    515              osEventStruct_t* pEventStruct; 
+    516              if(osObjectIsAllocated(&osEventInfo, eventId) == FALSE)
+    517              {
+    518                  return osaStatus_Error;
+    519              }
+    520              pEventStruct = (osEventStruct_t*)eventId;  
+    521              osa_status = OSA_EventSet(&pEventStruct->event, (event_flags_t)flagsToSet);
+    522              return (osaStatus_t)osa_status;
+    523          #else
+    524              (void)eventId;
+    525              (void)flagsToSet;  
+    526              return osaStatus_Error;
+    527          #endif  
+    528          }
+    529          
+    530          /*FUNCTION**********************************************************************
+    531           *
+    532           * Function Name : OSA_EXT_EventClear
+    533           * Description   : Clear one or more event flags of an event object.
+    534           * Return        :osaStatus_Success if clear successfully, osaStatus_Error if failed.
+    535           *
+    536           *END**************************************************************************/
+    537          osaStatus_t OSA_EXT_EventClear(osaEventId_t eventId, osaEventFlags_t flagsToClear)
+    538          {
+    539          #if osNumberOfEvents      
+    540              osa_status_t osa_status;
+    541              osEventStruct_t* pEventStruct; 
+    542              if(osObjectIsAllocated(&osEventInfo, eventId) == FALSE)
+    543              {
+    544                  return osaStatus_Error;
+    545              }
+    546              pEventStruct = (osEventStruct_t*)eventId;  
+    547              osa_status = OSA_EventClear(&pEventStruct->event, (event_flags_t)flagsToClear);
+    548              return (osaStatus_t)osa_status;
+    549          #else
+    550              (void)eventId;
+    551              (void)flagsToClear;  
+    552              return osaStatus_Error;
+    553          #endif  
+    554          }
+    555          
+    556          /*FUNCTION**********************************************************************
+    557           *
+    558           * Function Name : OSA_EXT_EventWait
+    559           * Description   : This function checks the event's status, if it meets the wait
+    560           * condition, return osaStatus_Success, otherwise, timeout will be used for
+    561           * wait. The parameter timeout indicates how long should wait in milliseconds.
+    562           * Pass osaWaitForever_c to wait indefinitely, pass 0 will return the value
+    563           * osaStatus_Timeout immediately if wait condition is not met. The event flags
+    564           * will be cleared if the event is auto clear mode. Flags that wakeup waiting
+    565           * task could be obtained from the parameter setFlags.
+    566           * This function returns osaStatus_Success if wait condition is met, returns
+    567           * osaStatus_Timeout if wait condition is not met within the specified
+    568           * 'timeout', returns osaStatus_Error if any errors occur during waiting.
+    569           *
+    570           *END**************************************************************************/
+    571          osaStatus_t OSA_EXT_EventWait(osaEventId_t eventId, osaEventFlags_t flagsToWait, bool_t waitAll, uint32_t millisec, osaEventFlags_t *pSetFlags)
+    572          {
+    573          #if osNumberOfEvents  
+    574              osa_status_t osa_status;
+    575              osEventStruct_t* pEventStruct; 
+    576              if(osObjectIsAllocated(&osEventInfo, eventId) == FALSE)
+    577              {
+    578                  return osaStatus_Error;
+    579              }
+    580              
+    581              /* Clean FreeRTOS cotrol flags */
+    582              flagsToWait = flagsToWait & 0x00FFFFFF;
+    583              
+    584              pEventStruct = (osEventStruct_t*)eventId;  
+    585              osa_status = OSA_EventWait(&pEventStruct->event, (event_flags_t)flagsToWait, waitAll, millisec, (event_flags_t*)pSetFlags);
+    586              return (osaStatus_t)osa_status;
+    587          #else
+    588              (void)eventId;
+    589              (void)flagsToWait;  
+    590              (void)waitAll;  
+    591              (void)millisec;  
+    592              (void)pSetFlags;  
+    593              return osaStatus_Error;
+    594          #endif  
+    595          }
+    596          
+    597          /*FUNCTION**********************************************************************
+    598           *
+    599           * Function Name : OSA_EXT_EventDestroy
+    600           * Description   : This function is used to destroy a event object. Return
+    601           * osaStatus_Success if the event object is destroyed successfully, otherwise
+    602           * return osaStatus_Error.
+    603           *
+    604           *END**************************************************************************/
+    605          osaStatus_t OSA_EXT_EventDestroy(osaEventId_t eventId)
+    606          {
+    607          #if osNumberOfEvents    
+    608              osa_status_t osa_status;
+    609              osEventStruct_t* pEventStruct; 
+    610              if(osObjectIsAllocated(&osEventInfo, eventId) == FALSE)
+    611              {
+    612                  return osaStatus_Error;
+    613              }
+    614              pEventStruct = (osEventStruct_t*)eventId;
+    615              osa_status = OSA_EventDestroy(&pEventStruct->event);
+    616              if(osa_status == kStatus_OSA_Success)
+    617              {
+    618                  OSA_EXT_InterruptDisable();
+    619                  osObjectFree(&osEventInfo, eventId);
+    620                  OSA_EXT_InterruptEnable();
+    621              }
+    622              return(osaStatus_t)osa_status;    
+    623          #else
+    624              (void)eventId;
+    625              return osaStatus_Error;
+    626          #endif  
+    627          }
+    628          
+    629          /*FUNCTION**********************************************************************
+    630           *
+    631           * Function Name : OSA_EXT_MsgQCreate
+    632           * Description   : This function is used to create a message queue.
+    633           * Return        : the handle to the message queue if create successfully, otherwise
+    634           * return NULL.
+    635           *
+    636           *END**************************************************************************/
+    637          osaMsgQId_t OSA_EXT_MsgQCreate( uint32_t  msgNo )
+    638          {
+    639          #if osNumberOfMessageQs
+    640              msg_queue_handler_t msg_queue_handler; 
+    641          
+    642              /* Create the message queue where each element is a pointer to the message item. */
+    643              msg_queue_handler = OSA_MsgQCreate(NULL, msgNo, (sizeof(osaMsg_t)+3)/4);
+    644          
+    645              return (osaMsgQId_t)msg_queue_handler;
+    646          #else
+    647              (void)msgNo;
+    648              return NULL;
+    649          #endif  
+    650          }
+    651          
+    652          /*FUNCTION**********************************************************************
+    653           *
+    654           * Function Name : OSA_EXT_MsgQPut
+    655           * Description   : This function is used to put a message to a message queue.
+    656          * Return         : osaStatus_Success if the message is put successfully, otherwise return osaStatus_Error.
+    657           *
+    658           *END**************************************************************************/
+    659          osaStatus_t OSA_EXT_MsgQPut(osaMsgQId_t msgQId, void* pMessage)
+    660          {
+    661          #if osNumberOfMessageQs  
+    662              osa_status_t osa_status;
+    663          
+    664              osa_status = OSA_MsgQPut((msg_queue_handler_t)msgQId, pMessage);
+    665          
+    666              return (osaStatus_t)osa_status;  
+    667          #else
+    668              (void)msgQId;
+    669              (void)pMessage;
+    670              return osaStatus_Error;
+    671          #endif  
+    672          }
+    673          
+    674          /*FUNCTION**********************************************************************
+    675           *
+    676           * Function Name : OSA_EXT_MsgQGet
+    677           * Description   : This function checks the queue's status, if it is not empty,
+    678           * get message from it and return osaStatus_Success, otherwise, timeout will
+    679           * be used for wait. The parameter timeout indicates how long should wait in
+    680           * milliseconds. Pass osaWaitForever_c to wait indefinitely, pass 0 will return
+    681           * osaStatus_Timeout immediately if queue is empty.
+    682           * This function returns osaStatus_Success if message is got successfully,
+    683           * returns osaStatus_Timeout if message queue is empty within the specified
+    684           * 'timeout', returns osaStatus_Error if any errors occur during waiting.
+    685           *
+    686           *END**************************************************************************/
+    687          osaStatus_t OSA_EXT_MsgQGet(osaMsgQId_t msgQId, void *pMessage, uint32_t millisec)
+    688          {
+    689          #if osNumberOfMessageQs  
+    690              osa_status_t osa_status;
+    691          
+    692              osa_status = OSA_MsgQGet((msg_queue_handler_t)msgQId, pMessage ,millisec);
+    693          
+    694              return (osaStatus_t)osa_status;
+    695          #else
+    696              (void)msgQId;
+    697              (void)pMessage;
+    698              (void)millisec;
+    699              return osaStatus_Error;
+    700          #endif  
+    701          }
+    702          
+    703          /*FUNCTION**********************************************************************
+    704           *
+    705           * Function Name : OSA_EXT_MsgQDestroy
+    706           * Description   : This function is used to destroy the message queue.
+    707           * Return        : osaStatus_Success if the message queue is destroyed successfully, otherwise return osaStatus_Error.
+    708           *
+    709           *END**************************************************************************/
+    710          osaStatus_t OSA_EXT_MsgQDestroy(osaMsgQId_t msgQId)
+    711          {
+    712          #if osNumberOfMessageQs  
+    713              osa_status_t osa_status;
+    714          
+    715              osa_status = OSA_MsgQDestroy((msg_queue_handler_t)msgQId);
+    716          
+    717              return(osaStatus_t)osa_status;    
+    718          #else
+    719              (void)msgQId;
+    720              return osaStatus_Error;
+    721          #endif  
+    722          }
+    723          
+    724          /*FUNCTION**********************************************************************
+    725           *
+    726           * Function Name : OSA_EXT_InterruptEnable
+    727           * Description   : self explanatory.
+    728           *
+    729           *END**************************************************************************/
+    730          void OSA_EXT_InterruptEnable(void)
+    731          {
+    732              OSA_ExitCritical(kCriticalDisableInt) ;
+    733          }
+    734          
+    735          /*FUNCTION**********************************************************************
+    736           *
+    737           * Function Name : OSA_EXT_InterruptDisable
+    738           * Description   : self explanatory.
+    739           *
+    740           *END**************************************************************************/
+    741          void OSA_EXT_InterruptDisable(void)
+    742          {
+    743              OSA_EnterCritical(kCriticalDisableInt);
+    744          }
+    745          
+    746          /*FUNCTION**********************************************************************
+    747           *
+    748           * Function Name : OSA_EXT_InstallIntHandler
+    749           * Description   : This function is used to install interrupt handler.
+    750           *
+    751           *END**************************************************************************/
+    752          void * OSA_EXT_InstallIntHandler(uint32_t IRQNumber, void (*handler)(void))
+    753          {
+    754              return (void *)OSA_InstallIntHandler((int32_t)IRQNumber,handler);
+    755          }
+    756          
+    757          /*! *********************************************************************************
+    758          * \brief   Creates a timer object.
+    759          *
+    760          * \param[in] timer_def - Timer definition which includes the callback function pointer.
+    761          *            type - One-shot or periodic timer.
+    762          *            param - Parameter to pass to callback.
+    763          *
+    764          * \return Timer handle if procedure is successful or NULL if failed.
+    765          *
+    766          * \pre
+    767          *
+    768          * \post
+    769          *
+    770          * \remarks
+    771          *
+    772          ********************************************************************************** */
+    773          osaTimerId_t OSA_EXT_TimerCreate (osaTimerDef_t *timer_def, osaTimer_t type, void *argument)
+    774          {
+    775          #if osNumberOfTimers  
+    776              osaTimerId_t timer_id;
+    777              osTimerStruct_t* pTimerStruct;
+    778              UBaseType_t autoReload = pdFALSE;
+    779              
+    780              OSA_EXT_InterruptDisable();
+    781              timer_id = pTimerStruct = osObjectAlloc(&osTimerInfo);
+    782              OSA_EXT_InterruptEnable();
+    783              
+    784              if(timer_id == NULL)
+    785              {
+    786                  return NULL; /*Alloc error*/
+    787              }
+    788              
+    789              if(type == osaTimer_Periodic)
+    790              {
+    791                  autoReload = pdTRUE;
+    792              }
+    793              
+    794              pTimerStruct->userCallback = timer_def->pfCallback;
+    795              pTimerStruct->userArg = argument;
+    796              pTimerStruct->tmr = xTimerCreate(NULL, 1, autoReload, pTimerStruct, TimerCallback);
+    797              
+    798              return timer_id;
+    799          #else
+    800              (void)timer_def;
+    801              (void)type;
+    802              (void)argument;  
+    803              return NULL;
+    804          #endif  
+    805          }
+    806          
+    807          /*! *********************************************************************************
+    808          * \brief   Starts a timer.
+    809          *
+    810          * \param[in] timer_id - Timer handle of the timer to start.
+    811          *            millisec - Timer period in milliseconds.
+    812          *
+    813          * \return osOK: The specified timer has been started or restarted.
+    814          *         osErrorParameter: Timer ID is incorrect.
+    815          *
+    816          * \pre
+    817          *
+    818          * \post
+    819          *
+    820          * \remarks
+    821          *
+    822          ********************************************************************************** */
+    823          osaStatus_t OSA_EXT_TimerStart (osaTimerId_t timer_id, uint32_t millisec)
+    824          {
+    825          #if osNumberOfTimers  
+    826              BaseType_t status;
+    827              portBASE_TYPE taskToWake = pdFALSE;
+    828              osTimerStruct_t* pTimerStruct = (osTimerStruct_t*)timer_id;
+    829              
+    830              if(osObjectIsAllocated(&osTimerInfo, timer_id) == FALSE)
+    831              {
+    832                  return osaStatus_Error;
+    833              }
+    834              
+    835              if (__get_IPSR())
+    836              {
+    837                  status = xTimerChangePeriodFromISR(pTimerStruct->tmr, millisecToTicks(millisec), &taskToWake);
+    838                  if(pdPASS ==  status)
+    839                  {
+    840                      status = xTimerStartFromISR(pTimerStruct->tmr, &taskToWake);
+    841                  }
+    842                  if (pdTRUE == taskToWake)
+    843                  {
+    844                      vPortYieldFromISR();
+    845                  }
+    846              }
+    847              else
+    848              {
+    849                  status = xTimerChangePeriod(pTimerStruct->tmr, millisecToTicks(millisec), portMAX_DELAY);
+    850                  if(pdPASS ==  status)
+    851                  {
+    852                      status = xTimerStart(pTimerStruct->tmr, portMAX_DELAY);
+    853                  }
+    854              }
+    855              
+    856              if(pdPASS ==  status)
+    857              {
+    858                  return osaStatus_Success;
+    859              }
+    860              
+    861              return osaStatus_Error;
+    862          #else
+    863              (void)timer_id;
+    864              (void)millisec;
+    865              return osaStatus_Error;
+    866          #endif  
+    867          }
+    868          
+    869          /*! *********************************************************************************
+    870          * \brief   Stops a timer.
+    871          *
+    872          * \param[in] timer_id - Timer handle of the timer to stop.
+    873          *
+    874          * \return osOK: The specified timer has been stopped.
+    875          *         osErrorParameter: Timer handle is incorrect.
+    876          *         osErrorResource: The timer was not started.
+    877          *
+    878          * \pre
+    879          *
+    880          * \post
+    881          *
+    882          * \remarks
+    883          *
+    884          ********************************************************************************** */
+    885          osaStatus_t OSA_EXT_TimerStop (osaTimerId_t timer_id)
+    886          {
+    887          #if osNumberOfTimers  
+    888              BaseType_t status;
+    889              portBASE_TYPE taskToWake = pdFALSE;
+    890              osTimerStruct_t* pTimerStruct = (osTimerStruct_t*)timer_id;
+    891              
+    892              if(osObjectIsAllocated(&osTimerInfo, timer_id) == FALSE)
+    893              {
+    894                  return osaStatus_Error;
+    895              }
+    896              
+    897              if (__get_IPSR())
+    898              {
+    899                  status = xTimerStopFromISR(pTimerStruct->tmr, &taskToWake);
+    900                  if (pdTRUE == taskToWake)
+    901                  {
+    902                      vPortYieldFromISR();
+    903                  }
+    904              }
+    905              else
+    906              {
+    907                  status = xTimerStop(pTimerStruct->tmr, portMAX_DELAY);
+    908              }
+    909              
+    910              if(pdPASS ==  status)
+    911              {
+    912                  return osaStatus_Success;
+    913              }
+    914              return osaStatus_Error;
+    915          #else
+    916              (void)timer_id;
+    917              return osaStatus_Error;
+    918          #endif  
+    919          }
+    920          
+    921          /*! *********************************************************************************
+    922          * \brief   Unqueues the timer from the os and deallocates it from the timers heap.
+    923          *
+    924          * \param[in] timer_id - Timer handle of the timer to destroy.
+    925          *
+    926          * \return osOK: The specified timer has been destroyd.
+    927          *         osErrorParameter: Timer handle is incorrect.
+    928          *         osErrorResource: The timer was not started.
+    929          *
+    930          * \pre
+    931          *
+    932          * \post
+    933          *
+    934          * \remarks
+    935          *
+    936          ********************************************************************************** */
+    937          osaStatus_t OSA_EXT_TimerDestroy (osaTimerId_t timer_id)
+    938          {
+    939          #if osNumberOfTimers  
+    940              BaseType_t status;
+    941              portBASE_TYPE taskToWake = pdFALSE;
+    942              osTimerStruct_t* pTimerStruct = (osTimerStruct_t*)timer_id;
+    943              
+    944              if(osObjectIsAllocated(&osTimerInfo, timer_id) == FALSE)
+    945              {
+    946                  return osaStatus_Error;
+    947              }
+    948              
+    949              if (__get_IPSR())
+    950              {
+    951                  status = xTimerStopFromISR(pTimerStruct->tmr, &taskToWake);
+    952                  if (pdTRUE == taskToWake)
+    953                  {
+    954                      vPortYieldFromISR();
+    955                  }
+    956              }
+    957              else
+    958              {
+    959                  status = xTimerStop(pTimerStruct->tmr, portMAX_DELAY);
+    960              }
+    961              
+    962              if(pdPASS ==  status)
+    963              {
+    964                  status = xTimerDelete(pTimerStruct->tmr, portMAX_DELAY);
+    965              }
+    966              
+    967              if(pdPASS ==  status)
+    968              {
+    969                  OSA_EXT_InterruptDisable();
+    970                  osObjectFree(&osTimerInfo, timer_id);
+    971                  OSA_EXT_InterruptEnable();
+    972                  return osaStatus_Success;
+    973              }
+    974              
+    975              return osaStatus_Error;
+    976          #else
+    977              (void)timer_id;
+    978              return osaStatus_Error;
+    979          #endif  
+    980          }
+    981          
+    982          /*! *********************************************************************************
+    983          *************************************************************************************
+    984          * Private functions
+    985          *************************************************************************************
+    986          ********************************************************************************** */
+    987          
+    988          int main (void)
+    989          {
+    990              task_handler_t handler;
+    991              
+    992              OSA_Init();
+    993          
+    994              OSA_TaskCreate((task_t)startup_task, 
+    995                             "main",
+    996                             gMainThreadStackSize_c,
+    997                             NULL,
+    998                             gMainThreadPriority_c,
+    999                             0,
+   1000                             FALSE,
+   1001                             &handler);
+   1002          
+   1003              OSA_Start();
+   1004          
+   1005              return 0;
+   1006          }
+   1007          
+   1008          /*! *********************************************************************************
+   1009          * \brief     Allocates a osObjectStruct_t block in the osObjectHeap array.
+   1010          * \param[in] pointer to the object info struct.
+   1011          * Object can be semaphore, mutex, osTimer, message Queue, event
+   1012          * \return Pointer to the allocated osObjectStruct_t, NULL if failed.
+   1013          *
+   1014          * \pre 
+   1015          *
+   1016          * \post
+   1017          *
+   1018          * \remarks Function is unprotected from interrupts. 
+   1019          *
+   1020          ********************************************************************************** */
+   1021          #if osObjectAlloc_c
+   1022          static void* osObjectAlloc(const osObjectInfo_t* pOsObjectInfo)
+   1023          {
+   1024              uint32_t i;
+   1025              uint8_t* pObj = (uint8_t*)pOsObjectInfo->pHeap;
+   1026              for( i=0 ; i < pOsObjectInfo->objNo ; i++, pObj += pOsObjectInfo->objectStructSize)
+   1027              {
+   1028                  if(((osObjStruct_t*)pObj)->inUse == 0)
+   1029                  {
+   1030                      ((osObjStruct_t*)pObj)->inUse = 1;
+   1031                      return (void*)pObj;
+   1032                  }
+   1033              }
+   1034              return NULL;
+   1035          }
+   1036          #endif
+   1037          
+   1038          /*! *********************************************************************************
+   1039          * \brief     Verifies the object is valid and allocated in the osObjectHeap array.
+   1040          * \param[in] the pointer to the object info struct.
+   1041          * \param[in] the pointer to the object struct.
+   1042          * Object can be semaphore, mutex, osTimer, message Queue, event
+   1043          * \return TRUE if the object is valid and allocated, FALSE otherwise
+   1044          *
+   1045          * \pre 
+   1046          *
+   1047          * \post
+   1048          *
+   1049          * \remarks Function is unprotected from interrupts. 
+   1050          *
+   1051          ********************************************************************************** */
+   1052          #if osObjectAlloc_c
+   1053          static bool_t osObjectIsAllocated(const osObjectInfo_t* pOsObjectInfo, void* pObjectStruct)
+   1054          {
+   1055              uint32_t i;
+   1056              uint8_t* pObj = (uint8_t*)pOsObjectInfo->pHeap;
+   1057              for( i=0 ; i < pOsObjectInfo->objNo ; i++ , pObj += pOsObjectInfo->objectStructSize)
+   1058              {
+   1059                  if(pObj == pObjectStruct)
+   1060                  {
+   1061                      if(((osObjStruct_t*)pObj)->inUse)
+   1062                      {
+   1063                          return TRUE;
+   1064                      }
+   1065                      break;
+   1066                  }
+   1067              }
+   1068              return FALSE;
+   1069          }
+   1070          #endif
+   1071          
+   1072          /*! *********************************************************************************
+   1073          * \brief     Frees an osObjectStruct_t block from the osObjectHeap array.
+   1074          * \param[in] pointer to the object info struct.
+   1075          * \param[in] Pointer to the allocated osObjectStruct_t to free.
+   1076          * Object can be semaphore, mutex, osTimer, message Queue, event
+   1077          * \return none.
+   1078          *
+   1079          * \pre 
+   1080          *
+   1081          * \post
+   1082          *
+   1083          * \remarks Function is unprotected from interrupts. 
+   1084          *
+   1085          ********************************************************************************** */
+   1086          #if osObjectAlloc_c
+   1087          static void osObjectFree(const osObjectInfo_t* pOsObjectInfo, void* pObjectStruct)
+   1088          {
+   1089              uint32_t i;
+   1090              uint8_t* pObj = (uint8_t*)pOsObjectInfo->pHeap;
+   1091              for( i=0; i < pOsObjectInfo->objNo; i++, pObj += pOsObjectInfo->objectStructSize )
+   1092              {
+   1093                  if(pObj == pObjectStruct)
+   1094                  {
+   1095                      ((osObjStruct_t*)pObj)->inUse = 0;
+   1096                      break;
+   1097                  }
+   1098              }
+   1099          }
+   1100          #endif
+   1101          
+   1102          /*! *********************************************************************************
+   1103          * \brief   Re-entrant timer callback used for all timers to catch and stop one-shot timers.
+   1104          *
+   1105          * \param[in] param - Timer handle.
+   1106          *
+   1107          * \return void.
+   1108          *
+   1109          * \pre
+   1110          *
+   1111          * \post
+   1112          *
+   1113          * \remarks
+   1114          *
+   1115          ********************************************************************************** */
+   1116          #if osNumberOfTimers
+   1117          static void TimerCallback(TimerHandle_t t)
+   1118          {
+   1119              uint32_t i;
+   1120              void *userArg;
+   1121              osaTimerFctPtr_t userFunc = NULL;
+   1122              
+   1123              for( i=0; i<osNumberOfTimers; i++)
+   1124              {
+   1125                  if( osTimersHeap[i].tmr == t )
+   1126                  {
+   1127                      userFunc = osTimersHeap[i].userCallback;
+   1128                      userArg = osTimersHeap[i].userArg;
+   1129                      break;
+   1130                  }
+   1131              }
+   1132          
+   1133              if( userFunc )
+   1134              {
+   1135                  userFunc(userArg);
+   1136              }
+   1137          }
+   1138          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   OSA_EXT_EventClear
+        24   -> OSA_EventClear
+        24   -> osObjectIsAllocated
+      24   OSA_EXT_EventCreate
+        24   -> OSA_EXT_InterruptDisable
+        24   -> OSA_EXT_InterruptEnable
+        24   -> OSA_EventCreate
+        24   -> osObjectAlloc
+        24   -> osObjectFree
+      16   OSA_EXT_EventDestroy
+        16   -> OSA_EXT_InterruptDisable
+        16   -> OSA_EXT_InterruptEnable
+        16   -> OSA_EventDestroy
+        16   -> osObjectFree
+        16   -> osObjectIsAllocated
+      24   OSA_EXT_EventSet
+        24   -> OSA_EventSet
+        24   -> osObjectIsAllocated
+      40   OSA_EXT_EventWait
+        40   -> OSA_EventWait
+        40   -> osObjectIsAllocated
+      16   OSA_EXT_InstallIntHandler
+        16   -> OSA_InstallIntHandler
+       8   OSA_EXT_InterruptDisable
+         8   -> OSA_EnterCritical
+       8   OSA_EXT_InterruptEnable
+         8   -> OSA_ExitCritical
+       0   OSA_EXT_MsgQCreate
+       0   OSA_EXT_MsgQDestroy
+       0   OSA_EXT_MsgQGet
+       0   OSA_EXT_MsgQPut
+       0   OSA_EXT_MutexCreate
+       0   OSA_EXT_MutexDestroy
+       0   OSA_EXT_MutexLock
+       0   OSA_EXT_MutexUnlock
+       0   OSA_EXT_SemaphoreCreate
+       0   OSA_EXT_SemaphoreDestroy
+       0   OSA_EXT_SemaphorePost
+       0   OSA_EXT_SemaphoreWait
+      48   OSA_EXT_TaskCreate
+        48   -> OSA_TaskCreate
+        48   -> OSA_TaskGetHandler
+        48   -> OSA_TaskGetPriority
+        48   -> OSA_TaskSetPriority
+      16   OSA_EXT_TaskDestroy
+        16   -> OSA_TaskDestroy
+        16   -> OSA_TaskGetHandler
+        16   -> OSA_TaskGetPriority
+        16   -> OSA_TaskSetPriority
+       8   OSA_EXT_TaskGetId
+         8   -> OSA_TaskGetHandler
+       8   OSA_EXT_TaskGetPriority
+         8   -> OSA_TaskGetPriority
+      16   OSA_EXT_TaskSetPriority
+        16   -> OSA_TaskSetPriority
+       8   OSA_EXT_TaskYield
+         8   -> OSA_TaskYield
+       8   OSA_EXT_TimeDelay
+         8   -> vTaskDelay
+         8 __aeabi_uidiv
+       0   OSA_EXT_TimerCreate
+       0   OSA_EXT_TimerDestroy
+       0   OSA_EXT_TimerStart
+       0   OSA_EXT_TimerStop
+      24   main
+        24   -> OSA_Init
+        24   -> OSA_Start
+        24   -> OSA_TaskCreate
+       4   osObjectAlloc
+       8   osObjectFree
+       8   osObjectIsAllocated
+       8   startup_task
+         8   -> main_task
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       8  ?_0
+      42  OSA_EXT_EventClear
+      84  OSA_EXT_EventCreate
+      60  OSA_EXT_EventDestroy
+      42  OSA_EXT_EventSet
+      74  OSA_EXT_EventWait
+      16  OSA_EXT_InstallIntHandler
+      10  OSA_EXT_InterruptDisable
+      10  OSA_EXT_InterruptEnable
+       6  OSA_EXT_MsgQCreate
+       6  OSA_EXT_MsgQDestroy
+       6  OSA_EXT_MsgQGet
+       6  OSA_EXT_MsgQPut
+       4  OSA_EXT_MutexCreate
+       6  OSA_EXT_MutexDestroy
+       6  OSA_EXT_MutexLock
+       6  OSA_EXT_MutexUnlock
+       6  OSA_EXT_SemaphoreCreate
+       6  OSA_EXT_SemaphoreDestroy
+       6  OSA_EXT_SemaphorePost
+       6  OSA_EXT_SemaphoreWait
+     128  OSA_EXT_TaskCreate
+      50  OSA_EXT_TaskDestroy
+       8  OSA_EXT_TaskGetId
+      12  OSA_EXT_TaskGetPriority
+      18  OSA_EXT_TaskSetPriority
+       8  OSA_EXT_TaskYield
+      26  OSA_EXT_TimeDelay
+       6  OSA_EXT_TimerCreate
+       6  OSA_EXT_TimerDestroy
+       6  OSA_EXT_TimerStart
+       6  OSA_EXT_TimerStop
+       1  gUseRtos_c
+      48  main
+      12  osEventHeap
+      12  osEventInfo
+      42  osObjectAlloc
+      34  osObjectFree
+      44  osObjectIsAllocated
+      12  startup_task
+
+ 
+  12 bytes in section .bss
+  21 bytes in section .rodata
+ 878 bytes in section .text
+ 
+ 878 bytes of CODE  memory
+  21 bytes of CONST memory
+  12 bytes of DATA  memory
+
+Errors: none
+Warnings: none

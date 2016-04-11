@@ -1,0 +1,543 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:52
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\RNG\Source\RNG.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\RNG\Source\RNG.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\RNG.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\RNG.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\RNG\Source\RNG.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file RNG.c
+      6          * RNG implementation file for the ARM CORTEX-M4 processor
+      7          *
+      8          * Redistribution and use in source and binary forms, with or without modification,
+      9          * are permitted provided that the following conditions are met:
+     10          *
+     11          * o Redistributions of source code must retain the above copyright notice, this list
+     12          *   of conditions and the following disclaimer.
+     13          *
+     14          * o Redistributions in binary form must reproduce the above copyright notice, this
+     15          *   list of conditions and the following disclaimer in the documentation and/or
+     16          *   other materials provided with the distribution.
+     17          *
+     18          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     19          *   contributors may be used to endorse or promote products derived from this
+     20          *   software without specific prior written permission.
+     21          *
+     22          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     23          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     24          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     25          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     26          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     27          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     28          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     29          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     30          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     31          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     32          */
+     33          
+     34          
+     35          #include "RNG_Interface.h"
+     36          #include "FunctionLib.h"
+     37          #include "SecLib.h"
+     38          #include "fsl_device_registers.h"
+     39          #include "fsl_clock_manager.h"
+     40          #include "fsl_interrupt_manager.h"
+     41          
+     42          #ifdef cPWR_UsePowerDownMode
+     43          #include "PWR_Interface.h"
+     44          #include "PWR_Configuration.h"
+     45          #endif
+     46          
+     47          #if FSL_FEATURE_SOC_TRNG_COUNT
+     48              #include "fsl_trng_driver.h"
+     49          #elif FSL_FEATURE_SOC_RNG_COUNT
+     50              #include "fsl_rnga_driver.h"
+     51          #endif
+     52          
+     53          
+     54          /*! *********************************************************************************
+     55          *************************************************************************************
+     56          * Private macros
+     57          *************************************************************************************
+     58          ********************************************************************************** */
+     59          #ifndef gRNG_UsePhyRngForInitialSeed_d
+     60          #define gRNG_UsePhyRngForInitialSeed_d 0
+     61          #endif
+     62          
+     63          #define mPRNG_NoOfBits_c      (160)
+     64          #define mPRNG_NoOfBytes_c     (mPRNG_NoOfBits_c/8)
+     65          #define mPRNG_NoOfLongWords_c (mPRNG_NoOfBits_c/32)
+     66          
+     67          #if cPWR_UsePowerDownMode
+     68          #define RNG_DisallowDeviceToSleep() PWR_DisallowDeviceToSleep()
+     69          #define RNG_AllowDeviceToSleep()    PWR_AllowDeviceToSleep()
+     70          #else
+     71          #define RNG_DisallowDeviceToSleep()
+     72          #define RNG_AllowDeviceToSleep()
+     73          #endif
+     74          
+     75          /*! *********************************************************************************
+     76          *************************************************************************************
+     77          * Private memory declarations
+     78          *************************************************************************************
+     79          ********************************************************************************** */
+     80          static uint32_t XKEY[mPRNG_NoOfLongWords_c];
+     81          static uint32_t mPRNG_Requests = gRngMaxRequests_d;
+     82          
+     83          #if FSL_FEATURE_SOC_TRNG_COUNT
+     84          uint8_t mRngDisallowMcuSleep = 0;
+     85          #endif
+     86          
+     87          /*! *********************************************************************************
+     88          *************************************************************************************
+     89          * Public prototypes
+     90          *************************************************************************************
+     91          ********************************************************************************** */
+     92          #if (FSL_FEATURE_SOC_RNG_COUNT == 0) && \
+     93              (FSL_FEATURE_SOC_TRNG_COUNT == 0) && \
+     94              (gRNG_UsePhyRngForInitialSeed_d)
+     95          extern void PhyGetRandomNo(uint32_t *pRandomNo);
+     96          #endif
+     97          
+     98          
+     99          /*! *********************************************************************************
+    100          *************************************************************************************
+    101          * Private prototypes
+    102          *************************************************************************************
+    103          ********************************************************************************** */
+    104          #if FSL_FEATURE_SOC_TRNG_COUNT
+    105          static void TRNG_ISR(void);
+    106          #endif
+    107          
+    108          
+    109          /*! *********************************************************************************
+    110          *************************************************************************************
+    111          * Public functions
+    112          *************************************************************************************
+    113          ********************************************************************************** */
+    114          
+    115          /*! *********************************************************************************
+    116          * \brief  Initialize the RNG HW module
+    117          *
+    118          * \return  Status of the RNG initialization sequence
+    119          *
+    120          ********************************************************************************** */
+    121          uint8_t RNG_Init(void)
+    122          {
+    123              uint32_t seed;
+    124          #if FSL_FEATURE_SOC_RNG_COUNT
+    125              const rnga_user_config_t config = {
+    126                  .isIntMasked = 1,
+    127                  .highAssuranceEnable = 0
+    128              };
+    129          
+    130              RNGA_DRV_Init(0, &config);
+    131          
+    132              /* Get seed for pseudo RNG */
+    133              if( kStatus_RNGA_Success != RNGA_DRV_GetRandomData(0, &seed, sizeof(uint32_t)) )
+    134              {
+    135                  return gRngInternalError_d;
+    136              }        
+    137          
+    138          #elif FSL_FEATURE_SOC_TRNG_COUNT
+    139              trng_user_config_t config;
+    140          
+    141              TRNG_DRV_InitUserConfigDefault(&config);
+    142              config.frequencyCountLimit.minimum = 0x00000100;
+    143              config.frequencyCountLimit.maximum = 0x000F0000;
+    144              config.ringOscDiv = kTRNGRingOscDiv0;
+    145              config.entropyDelay = 1200;
+    146          
+    147              OSA_InstallIntHandler(g_trngIrqId[0], TRNG_ISR);
+    148          
+    149              if( kStatus_TRNG_Success != TRNG_DRV_Init(0, &config) )
+    150              {
+    151                  return gRngInternalError_d;
+    152              }
+    153              
+    154          #if !TRNG_DRV_RTOS_SLEEP
+    155                  /* Clear Interrupt status.*/
+    156                  TRNG_HAL_ClearIntStatusFlag(g_trngBase[0], kTRNGInterruptAll);
+    157          
+    158                  /* Enable interrupt.*/
+    159                  INT_SYS_EnableIRQ(g_trngIrqId[0]);
+    160                  TRNG_HAL_SetIntMode(g_trngBase[0], kTRNGInterruptAll, 1);
+    161          #endif
+    162          
+    163              /* Get seed for pseudo RNG */
+    164              if( kStatus_TRNG_Success != TRNG_DRV_GetRandomData(0, &seed, sizeof(uint32_t)) )
+    165              {
+    166                  return gRngInternalError_d;
+    167              }
+    168          
+    169          #else
+    170              #if gRNG_UsePhyRngForInitialSeed_d
+    171              /* Use 802.15.4 PHY to generate the seed for RNG */
+    172              PhyGetRandomNo(&seed);
+    173              #else
+    174              /* Use MCU unique Id for RNG seed */
+    175              seed = SIM_UIDL;
+    176              #endif
+    177          #endif
+    178          
+    179              /* Make sure that the seed is not zero */
+    180              SecLib_set_rng_seed(seed+1);
+    181          
+    182              /* Init Successfull */
+    183              return gRngSuccess_d;
+    184          }
+    185          
+    186          
+    187          /*! *********************************************************************************
+    188          * \brief  Read a random number from the HW RNG module.
+    189          *         If the HW fails, the SW PRNG is used as backup.
+    190          *
+    191          * \param[out] pRandomNo - pointer to location where the value will be stored
+    192          *
+    193          * \return  status of the RNG module
+    194          *
+    195          ********************************************************************************** */
+    196          uint8_t RNG_HwGetRandomNo(uint32_t* pRandomNo)
+    197          {
+    198              uint8_t status = gRngSuccess_d;
+    199          
+    200              if(!pRandomNo)
+    201              {
+    202                  return gRngNullPointer_d;
+    203              }
+    204          
+    205          #if FSL_FEATURE_SOC_RNG_COUNT
+    206              if( kStatus_RNGA_Success != RNGA_DRV_GetRandomData(0, pRandomNo, sizeof(uint32_t)) )
+    207              {
+    208                  status = gRngInternalError_d;
+    209              }
+    210          
+    211          #elif FSL_FEATURE_SOC_TRNG_COUNT
+    212              if( !TRNG_HAL_GetEntropyValidCmd(g_trngBase[0]) ||
+    213                  (kStatus_TRNG_Success != TRNG_DRV_GetRandomData(0, pRandomNo, sizeof(uint32_t))) )
+    214              {
+    215                  status = gRngInternalError_d;
+    216              }
+    217          
+    218              if( !mRngDisallowMcuSleep && !TRNG_HAL_GetEntropyValidCmd(g_trngBase[0]) )
+    219              {
+    220                  mRngDisallowMcuSleep = 1;
+    221                  RNG_DisallowDeviceToSleep();
+    222              }
+    223          
+    224          #elif gRNG_UsePhyRngForInitialSeed_d
+    225              PhyGetRandomNo(pRandomNo);
+    226          #else
+    227              status = gRngInternalError_d;
+    228          #endif
+    229              
+    230              return status;
+    231          }
+    232          
+    233          
+    234          /*! *********************************************************************************
+    235          * \brief  Generate a random number
+    236          *
+    237          * \param[out] pRandomNo - pointer to location where the value will be stored
+    238          *
+    239          ********************************************************************************** */
+    240          void RNG_GetRandomNo(uint32_t* pRandomNo)
+    241          {
+    242              /* Check for NULL pointers */
+    243              if (NULL != pRandomNo)
+    244              {
+    245                  uint32_t n = SecLib_get_random();
+    246                  FLib_MemCpy(pRandomNo, &n, sizeof(uint32_t));  
+    247              }
+    248          }
+    249          
+    250          
+    251          /*! *********************************************************************************
+    252          * \brief  Initialize seed for the PRNG algorithm.
+    253          *
+    254          * \param[in]  pSeed - pointer to a buffer containing 20 bytes (160 bits).
+    255          *             Can be set using the RNG_GetRandomNo() function.
+    256          *
+    257          ********************************************************************************** */
+    258          void RNG_SetPseudoRandomNoSeed(uint8_t* pSeed)
+    259          {
+    260              mPRNG_Requests = 1;
+    261              FLib_MemCpy( XKEY, pSeed, mPRNG_NoOfBytes_c );
+    262          }
+    263          
+    264          
+    265          /*! *********************************************************************************
+    266          * \brief  Pseudo Random Number Generator (PRNG) implementation
+    267          *         according to NIST FIPS Publication 186-2, APPENDIX 3
+    268          *
+    269          *         Let x be the signer's private key.  
+    270          *         The following may be used to generate m values of x:
+    271          *           Step 1. Choose a new, secret value for the seed-key, XKEY.
+    272          *           Step 2. In hexadecimal notation let
+    273          *             t = 67452301 EFCDAB89 98BADCFE 10325476 C3D2E1F0.
+    274          *             This is the initial value for H0 || H1 || H2 || H3 || H4 in the SHS.
+    275          *           Step 3. For j = 0 to m - 1 do
+    276          *             a. XSEEDj = optional user input.
+    277          *             b. XVAL = (XKEY + XSEEDj) mod 2^b
+    278          *             c. xj = G(t,XVAL) mod q
+    279          *             d. XKEY = (1 + XKEY + xj) mod 2^b
+    280          *
+    281          * \param[out]    pOut - pointer to the output buffer
+    282          * \param[in]     outBytes - the number of bytes to be copyed (1-20)
+    283          * \param[in]     pXSEED - optional user SEED. Should be NULL if not used.
+    284          *
+    285          * \return  The number of bytes copied or -1 if reseed is needed
+    286          *
+    287          ********************************************************************************** */
+    288          int16_t RNG_GetPseudoRandomNo(uint8_t* pOut, uint8_t outBytes, uint8_t* pXSEED)
+    289          {
+    290              uint32_t i;
+    291              sha1Context_t ctx;
+    292          
+    293              if(pXSEED)
+    294              {
+    295                  mPRNG_Requests = 1;
+    296              }
+    297          
+    298              if (mPRNG_Requests == gRngMaxRequests_d)
+    299              {
+    300                  return -1;
+    301              }
+    302          
+    303              mPRNG_Requests++;
+    304          
+    305              /* a. XSEEDj = optional user input. */
+    306              if (pXSEED)
+    307              {
+    308                  /* b. XVAL = (XKEY + XSEEDj) mod 2^b */
+    309                  for (i=0; i<mPRNG_NoOfBytes_c; i++)
+    310                  {
+    311                      ctx.buffer[i] = ((uint8_t*)XKEY)[i] + pXSEED[i];
+    312                  }
+    313              }
+    314              else
+    315              {
+    316                  for (i=0; i<mPRNG_NoOfBytes_c; i++)
+    317                  {
+    318                      ctx.buffer[i] = ((uint8_t*)XKEY)[i];
+    319                  }
+    320              }
+    321          
+    322              /* c. xj = G(t,XVAL) mod q
+    323              ***************************/
+    324              SHA1_Hash(&ctx, ctx.buffer, mPRNG_NoOfBytes_c);
+    325          
+    326              /* d. XKEY = (1 + XKEY + xj) mod 2^b */
+    327              XKEY[0] += 1;
+    328              for (i=0; i<mPRNG_NoOfLongWords_c; i++)
+    329              {
+    330                  XKEY[i] += ctx.hash[i];
+    331              }
+    332          
+    333              /* Check if the length provided exceeds the output data size */
+    334              if (outBytes > mPRNG_NoOfBytes_c)
+    335              {
+    336                  outBytes = mPRNG_NoOfBytes_c;
+    337              }
+    338          
+    339              /* Copy the generated number */
+    340              for (i=0; i < outBytes; i++)
+    341              {
+    342                  pOut[i] = ((uint8_t*)ctx.hash)[i];
+    343              }
+    344          
+    345              return outBytes;
+    346          }
+    347          
+    348          
+    349          /*! *********************************************************************************
+    350          *************************************************************************************
+    351          * Private functions
+    352          *************************************************************************************
+    353          ********************************************************************************** */
+    354          #if FSL_FEATURE_SOC_TRNG_COUNT
+    355          static void TRNG_ISR(void)
+    356          {
+    357              TRNG_DRV_IRQHandler(0);
+    358          
+    359              if( mRngDisallowMcuSleep && TRNG_HAL_GetEntropyValidCmd(g_trngBase[0]) )
+    360              {
+    361                  mRngDisallowMcuSleep = 0;
+    362                  RNG_AllowDeviceToSleep();
+    363              }
+    364          }
+    365          #endif
+    366          
+    367          /********************************** EOF ***************************************/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     112   RNG_GetPseudoRandomNo
+       112   -> SHA1_Hash
+      16   RNG_GetRandomNo
+        16   -> FLib_MemCpy
+        16   -> SecLib_get_random
+      16   RNG_HwGetRandomNo
+        16   -> TRNG_DRV_GetRandomData
+        16   -> TRNG_HAL_GetEntropyValidCmd
+      96   RNG_Init
+        96   -> OSA_InstallIntHandler
+        96   -> SecLib_set_rng_seed
+        96   -> TRNG_DRV_GetRandomData
+        96   -> TRNG_DRV_Init
+        96   -> TRNG_DRV_InitUserConfigDefault
+       8   RNG_SetPseudoRandomNoSeed
+         8   -> FLib_MemCpy
+       4   TRNG_HAL_GetEntropyValidCmd
+       8   TRNG_ISR
+         8   -> TRNG_DRV_IRQHandler
+         8   -> TRNG_HAL_GetEntropyValidCmd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+     198  RNG_GetPseudoRandomNo
+      28  RNG_GetRandomNo
+      76  RNG_HwGetRandomNo
+      96  RNG_Init
+      22  RNG_SetPseudoRandomNoSeed
+      24  TRNG_HAL_GetEntropyValidCmd
+      36  TRNG_ISR
+      20  XKEY
+       4  mPRNG_Requests
+       1  mRngDisallowMcuSleep
+
+ 
+  21 bytes in section .bss
+   4 bytes in section .data
+ 508 bytes in section .text
+ 
+ 508 bytes of CODE memory
+  25 bytes of DATA memory
+
+Errors: none
+Warnings: none

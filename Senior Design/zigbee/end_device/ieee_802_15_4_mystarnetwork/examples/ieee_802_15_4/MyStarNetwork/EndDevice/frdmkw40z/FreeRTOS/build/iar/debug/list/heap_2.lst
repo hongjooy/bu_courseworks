@@ -1,0 +1,444 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:37
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_2.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_2.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\heap_2.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\heap_2.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0\rtos\FreeRTOS\src\heap_2.c
+      1          /* << EST */
+      2          #include "FreeRTOSConfig.h"
+      3          #if configFRTOS_MEMORY_SCHEME==2
+      4          
+      5          /*
+      6              FreeRTOS V8.2.0 - Copyright (C) 2015 Real Time Engineers Ltd.
+      7              All rights reserved
+      8          
+      9              VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
+     10          
+     11              This file is part of the FreeRTOS distribution.
+     12          
+     13              FreeRTOS is free software; you can redistribute it and/or modify it under
+     14              the terms of the GNU General Public License (version 2) as published by the
+     15              Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
+     16          
+     17          	***************************************************************************
+     18              >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+     19              >>!   distribute a combined work that includes FreeRTOS without being   !<<
+     20              >>!   obliged to provide the source code for proprietary components     !<<
+     21              >>!   outside of the FreeRTOS kernel.                                   !<<
+     22          	***************************************************************************
+     23          
+     24              FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
+     25              WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+     26              FOR A PARTICULAR PURPOSE.  Full license text is available on the following
+     27              link: http://www.freertos.org/a00114.html
+     28          
+     29              ***************************************************************************
+     30               *                                                                       *
+     31               *    FreeRTOS provides completely free yet professionally developed,    *
+     32               *    robust, strictly quality controlled, supported, and cross          *
+     33               *    platform software that is more than just the market leader, it     *
+     34               *    is the industry's de facto standard.                               *
+     35               *                                                                       *
+     36               *    Help yourself get started quickly while simultaneously helping     *
+     37               *    to support the FreeRTOS project by purchasing a FreeRTOS           *
+     38               *    tutorial book, reference manual, or both:                          *
+     39               *    http://www.FreeRTOS.org/Documentation                              *
+     40               *                                                                       *
+     41              ***************************************************************************
+     42          
+     43              http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
+     44          	the FAQ page "My application does not run, what could be wrong?".  Have you
+     45          	defined configASSERT()?
+     46          
+     47          	http://www.FreeRTOS.org/support - In return for receiving this top quality
+     48          	embedded software for free we request you assist our global community by
+     49          	participating in the support forum.
+     50          
+     51          	http://www.FreeRTOS.org/training - Investing in training allows your team to
+     52          	be as productive as possible as early as possible.  Now you can receive
+     53          	FreeRTOS training directly from Richard Barry, CEO of Real Time Engineers
+     54          	Ltd, and the world's leading authority on the world's leading RTOS.
+     55          
+     56              http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+     57              including FreeRTOS+Trace - an indispensable productivity tool, a DOS
+     58              compatible FAT file system, and our tiny thread aware UDP/IP stack.
+     59          
+     60              http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
+     61              Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
+     62          
+     63              http://www.OpenRTOS.com - Real Time Engineers ltd. license FreeRTOS to High
+     64              Integrity Systems ltd. to sell under the OpenRTOS brand.  Low cost OpenRTOS
+     65              licenses offer ticketed support, indemnification and commercial middleware.
+     66          
+     67              http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+     68              engineered and independently SIL3 certified version for use in safety and
+     69              mission critical applications that require provable dependability.
+     70          
+     71              1 tab == 4 spaces!
+     72          */
+     73          
+     74          /*
+     75           * A sample implementation of pvPortMalloc() and vPortFree() that permits
+     76           * allocated blocks to be freed, but does not combine adjacent free blocks
+     77           * into a single larger block (and so will fragment memory).  See heap_4.c for
+     78           * an equivalent that does combine adjacent blocks into single larger blocks.
+     79           *
+     80           * See heap_1.c, heap_3.c and heap_4.c for alternative implementations, and the
+     81           * memory management pages of http://www.FreeRTOS.org for more information.
+     82           */
+     83          #include <stdlib.h>
+     84          
+     85          
+     86          /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+     87          all the API functions to use the MPU wrappers.  That should only be done when
+     88          task.h is included from an application file. */
+     89          #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     90          
+     91          #include "FreeRTOS.h"
+     92          #include "task.h"
+     93          
+     94          #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     95          
+     96          /* A few bytes might be lost to byte aligning the heap start address. */
+     97          #define configADJUSTED_HEAP_SIZE	( configTOTAL_HEAP_SIZE - portBYTE_ALIGNMENT )
+     98          
+     99          /*
+    100           * Initialises the heap structures before their first use.
+    101           */
+    102          static void prvHeapInit( void );
+    103          
+    104          /* Allocate the memory for the heap. */
+    105          #if configUSE_HEAP_SECTION_NAME && configCOMPILER==configCOMPILER_ARM_IAR /* << EST */
+    106            #pragma language=extended
+    107            #pragma location = configHEAP_SECTION_NAME_STRING
+    108            static uint8_t ucHeap[configTOTAL_HEAP_SIZE] @ configHEAP_SECTION_NAME_STRING; 
+    109          #elif configUSE_HEAP_SECTION_NAME
+    110            static uint8_t __attribute__((section (configHEAP_SECTION_NAME_STRING))) ucHeap[configTOTAL_HEAP_SIZE];
+    111          #else
+    112            static uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+    113          #endif
+    114          
+    115          /* Define the linked list structure.  This is used to link free blocks in order
+    116          of their size. */
+    117          typedef struct A_BLOCK_LINK
+    118          {
+    119          	struct A_BLOCK_LINK *pxNextFreeBlock;	/*<< The next free block in the list. */
+    120          	size_t xBlockSize;						/*<< The size of the free block. */
+    121          } BlockLink_t;
+    122          
+    123          
+    124          static const uint16_t heapSTRUCT_SIZE	= ( ( sizeof ( BlockLink_t ) + ( portBYTE_ALIGNMENT - 1 ) ) & ~portBYTE_ALIGNMENT_MASK );
+    125          #define heapMINIMUM_BLOCK_SIZE	( ( size_t ) ( heapSTRUCT_SIZE * 2 ) )
+    126          
+    127          /* Create a couple of list links to mark the start and end of the list. */
+    128          static BlockLink_t xStart, xEnd;
+    129          
+    130          /* Keeps track of the number of free bytes remaining, but says nothing about
+    131          fragmentation. */
+    132          static size_t xFreeBytesRemaining = configADJUSTED_HEAP_SIZE;
+    133          
+    134          /* STATIC FUNCTIONS ARE DEFINED AS MACROS TO MINIMIZE THE FUNCTION CALL DEPTH. */
+    135          
+    136          /*
+    137           * Insert a block into the list of free blocks - which is ordered by size of
+    138           * the block.  Small blocks at the start of the list and large blocks at the end
+    139           * of the list.
+    140           */
+    141          #define prvInsertBlockIntoFreeList( pxBlockToInsert )								\
+    142          {																					\
+    143          BlockLink_t *pxIterator;																\
+    144          size_t xBlockSize;																	\
+    145          																					\
+    146          	xBlockSize = pxBlockToInsert->xBlockSize;										\
+    147          																					\
+    148          	/* Iterate through the list until a block is found that has a larger size */	\
+    149          	/* than the block we are inserting. */											\
+    150          	for( pxIterator = &xStart; pxIterator->pxNextFreeBlock->xBlockSize < xBlockSize; pxIterator = pxIterator->pxNextFreeBlock )	\
+    151          	{																				\
+    152          		/* There is nothing to do here - just iterate to the correct position. */	\
+    153          	}																				\
+    154          																					\
+    155          	/* Update the list to include the block being inserted in the correct */		\
+    156          	/* position. */																	\
+    157          	pxBlockToInsert->pxNextFreeBlock = pxIterator->pxNextFreeBlock;					\
+    158          	pxIterator->pxNextFreeBlock = pxBlockToInsert;									\
+    159          }
+    160          /*-----------------------------------------------------------*/
+    161          
+    162          void *pvPortMalloc( size_t xWantedSize )
+    163          {
+    164          BlockLink_t *pxBlock, *pxPreviousBlock, *pxNewBlockLink;
+    165          static BaseType_t xHeapHasBeenInitialised = pdFALSE;
+    166          void *pvReturn = NULL;
+    167          
+    168          	vTaskSuspendAll();
+    169          	{
+    170          		/* If this is the first call to malloc then the heap will require
+    171          		initialisation to setup the list of free blocks. */
+    172          		if( xHeapHasBeenInitialised == pdFALSE )
+    173          		{
+    174          			prvHeapInit();
+    175          			xHeapHasBeenInitialised = pdTRUE;
+    176          		}
+    177          
+    178          		/* The wanted size is increased so it can contain a BlockLink_t
+    179          		structure in addition to the requested amount of bytes. */
+    180          		if( xWantedSize > 0 )
+    181          		{
+    182          			xWantedSize += heapSTRUCT_SIZE;
+    183          
+    184          			/* Ensure that blocks are always aligned to the required number of bytes. */
+    185          			if( ( xWantedSize & portBYTE_ALIGNMENT_MASK ) != 0 )
+    186          			{
+    187          				/* Byte alignment required. */
+    188          				xWantedSize += ( portBYTE_ALIGNMENT - ( xWantedSize & portBYTE_ALIGNMENT_MASK ) );
+    189          			}
+    190          		}
+    191          
+    192          		if( ( xWantedSize > 0 ) && ( xWantedSize < configADJUSTED_HEAP_SIZE ) )
+    193          		{
+    194          			/* Blocks are stored in byte order - traverse the list from the start
+    195          			(smallest) block until one of adequate size is found. */
+    196          			pxPreviousBlock = &xStart;
+    197          			pxBlock = xStart.pxNextFreeBlock;
+    198          			while( ( pxBlock->xBlockSize < xWantedSize ) && ( pxBlock->pxNextFreeBlock != NULL ) )
+    199          			{
+    200          				pxPreviousBlock = pxBlock;
+    201          				pxBlock = pxBlock->pxNextFreeBlock;
+    202          			}
+    203          
+    204          			/* If we found the end marker then a block of adequate size was not found. */
+    205          			if( pxBlock != &xEnd )
+    206          			{
+    207          				/* Return the memory space - jumping over the BlockLink_t structure
+    208          				at its start. */
+    209          				pvReturn = ( void * ) ( ( ( uint8_t * ) pxPreviousBlock->pxNextFreeBlock ) + heapSTRUCT_SIZE );
+    210          
+    211          				/* This block is being returned for use so must be taken out of the
+    212          				list of free blocks. */
+    213          				pxPreviousBlock->pxNextFreeBlock = pxBlock->pxNextFreeBlock;
+    214          
+    215          				/* If the block is larger than required it can be split into two. */
+    216          				if( ( pxBlock->xBlockSize - xWantedSize ) > heapMINIMUM_BLOCK_SIZE )
+    217          				{
+    218          					/* This block is to be split into two.  Create a new block
+    219          					following the number of bytes requested. The void cast is
+    220          					used to prevent byte alignment warnings from the compiler. */
+    221          					pxNewBlockLink = ( void * ) ( ( ( uint8_t * ) pxBlock ) + xWantedSize );
+    222          
+    223          					/* Calculate the sizes of two blocks split from the single
+    224          					block. */
+    225          					pxNewBlockLink->xBlockSize = pxBlock->xBlockSize - xWantedSize;
+    226          					pxBlock->xBlockSize = xWantedSize;
+    227          
+    228          					/* Insert the new block into the list of free blocks. */
+    229          					prvInsertBlockIntoFreeList( ( pxNewBlockLink ) );
+    230          				}
+    231          
+    232          				xFreeBytesRemaining -= pxBlock->xBlockSize;
+    233          			}
+    234          		}
+    235          
+    236          		traceMALLOC( pvReturn, xWantedSize );
+    237          	}
+    238          	( void ) xTaskResumeAll();
+    239          
+    240          	#if( configUSE_MALLOC_FAILED_HOOK == 1 )
+    241          	{
+    242          		if( pvReturn == NULL )
+    243          		{
+    244          			extern void vApplicationMallocFailedHook( void );
+    245          			vApplicationMallocFailedHook();
+    246          		}
+    247          	}
+    248          	#endif
+    249          
+    250          	return pvReturn;
+    251          }
+    252          /*-----------------------------------------------------------*/
+    253          
+    254          void vPortFree( void *pv )
+    255          {
+    256          uint8_t *puc = ( uint8_t * ) pv;
+    257          BlockLink_t *pxLink;
+    258          
+    259          	if( pv != NULL )
+    260          	{
+    261          		/* The memory being freed will have an BlockLink_t structure immediately
+    262          		before it. */
+    263          		puc -= heapSTRUCT_SIZE;
+    264          
+    265          		/* This unexpected casting is to keep some compilers from issuing
+    266          		byte alignment warnings. */
+    267          		pxLink = ( void * ) puc;
+    268          
+    269          		vTaskSuspendAll();
+    270          		{
+    271          			/* Add this block to the list of free blocks. */
+    272          			prvInsertBlockIntoFreeList( ( ( BlockLink_t * ) pxLink ) );
+    273          			xFreeBytesRemaining += pxLink->xBlockSize;
+    274          			traceFREE( pv, pxLink->xBlockSize );
+    275          		}
+    276          		( void ) xTaskResumeAll();
+    277          	}
+    278          }
+    279          /*-----------------------------------------------------------*/
+    280          
+    281          size_t xPortGetFreeHeapSize( void )
+    282          {
+    283          	return xFreeBytesRemaining;
+    284          }
+    285          /*-----------------------------------------------------------*/
+    286          
+    287          void vPortInitialiseBlocks( void )
+    288          {
+    289          	/* This just exists to keep the linker quiet. */
+    290          }
+    291          /*-----------------------------------------------------------*/
+    292          
+    293          static void prvHeapInit( void )
+    294          {
+    295          BlockLink_t *pxFirstFreeBlock;
+    296          uint8_t *pucAlignedHeap;
+    297          
+    298          	/* Ensure the heap starts on a correctly aligned boundary. */
+    299          	pucAlignedHeap = ( uint8_t * ) ( ( ( portPOINTER_SIZE_TYPE ) &ucHeap[ portBYTE_ALIGNMENT ] ) & ( ( portPOINTER_SIZE_TYPE ) ~portBYTE_ALIGNMENT_MASK ) );
+    300          
+    301          	/* xStart is used to hold a pointer to the first item in the list of free
+    302          	blocks.  The void cast is used to prevent compiler warnings. */
+    303          	xStart.pxNextFreeBlock = ( void * ) pucAlignedHeap;
+    304          	xStart.xBlockSize = ( size_t ) 0;
+    305          
+    306          	/* xEnd is used to mark the end of the list of free blocks. */
+    307          	xEnd.xBlockSize = configADJUSTED_HEAP_SIZE;
+    308          	xEnd.pxNextFreeBlock = NULL;
+    309          
+    310          	/* To start with there is a single free block that is sized to take up the
+    311          	entire heap space. */
+    312          	pxFirstFreeBlock = ( void * ) pucAlignedHeap;
+    313          	pxFirstFreeBlock->xBlockSize = configADJUSTED_HEAP_SIZE;
+    314          	pxFirstFreeBlock->pxNextFreeBlock = &xEnd;
+    315          }
+    316          /*-----------------------------------------------------------*/
+    317          #endif /* configFRTOS_MEMORY_SCHEME==2 */ /* << EST */
+    318          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

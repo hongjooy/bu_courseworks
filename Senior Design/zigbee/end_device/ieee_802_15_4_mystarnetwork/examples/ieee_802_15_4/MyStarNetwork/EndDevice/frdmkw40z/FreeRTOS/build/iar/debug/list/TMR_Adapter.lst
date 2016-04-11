@@ -1,0 +1,494 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.3.10732/W32 for ARM       06/Apr/2016  15:58:58
+# Copyright 1999-2016 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\TimersManager\Source\TMR_Adapter.c
+#    Command line =  
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\TimersManager\Source\TMR_Adapter.c
+#        -D DEBUG -D IAR -D CPU_MKW40Z160VHT4 -lcN "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list"
+#        --diag_suppress Pa039,Pe068,Pe069,Pa082,Pe177,Pe186,Pe550,Pa050 -o
+#        "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" --preinclude "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/frdmkw40z/FreeRTOS/app_preinclude.h"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/CMSIS/Include\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/boards/frdmkw40z\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/src/clock/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/App\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Mac/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/GPIOIrq\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Keyboard/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/LED/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Source/SPI_Adapter\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Common\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/MemManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Messaging/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/OSAbstraction/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/osa/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Panic/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/RNG/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SerialManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/TimersManager/Source\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/FunctionLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Lists\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/SecLib\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/ModuleInfo\
+#        -I "C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork/examples/ieee_802_15_4/MyStarNetwork/EndDevice/common\"
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/devices/MKW40Z4/startup\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/port/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/rtos/FreeRTOS/config/KW40Z4/iar\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Source/MKW40Z\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/ieee_802_15_4/Source/Phy/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/XCVR/MKW40Z4\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/DCDC/Interface\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/../ConnSw/framework/Flash/Internal\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/include\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/drivers/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/system/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/hal/inc\
+#        -I
+#        C:\Freescale\KW40Z_Connectivity_Software_1.0.1\KSDK_1.3.0/platform/utilities/inc\
+#        -On
+#    List file    =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\list\TMR_Adapter.lst
+#    Object file  =  
+#        C:\Users\Jooyoun
+#        Hong.Julianne\Desktop\cloned_star\ieee_802_15_4_mystarnetwork\examples\ieee_802_15_4\MyStarNetwork\EndDevice\frdmkw40z\FreeRTOS\build\iar\debug\obj\TMR_Adapter.o
+#
+###############################################################################
+
+C:\Freescale\KW40Z_Connectivity_Software_1.0.1\ConnSw\framework\TimersManager\Source\TMR_Adapter.c
+      1          /*!
+      2          * Copyright (c) 2015, Freescale Semiconductor, Inc.
+      3          * All rights reserved.
+      4          *
+      5          * \file TMR_Adapter.c
+      6          *
+      7          * Redistribution and use in source and binary forms, with or without modification,
+      8          * are permitted provided that the following conditions are met:
+      9          *
+     10          * o Redistributions of source code must retain the above copyright notice, this list
+     11          *   of conditions and the following disclaimer.
+     12          *
+     13          * o Redistributions in binary form must reproduce the above copyright notice, this
+     14          *   list of conditions and the following disclaimer in the documentation and/or
+     15          *   other materials provided with the distribution.
+     16          *
+     17          * o Neither the name of Freescale Semiconductor, Inc. nor the names of its
+     18          *   contributors may be used to endorse or promote products derived from this
+     19          *   software without specific prior written permission.
+     20          *
+     21          * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+     22          * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+     23          * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     24          * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+     25          * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     26          * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+     27          * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+     28          * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     29          * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     30          * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     31          */
+     32          
+     33          #include "TMR_Adapter.h"
+     34          
+     35          #include "fsl_lptmr_driver.h"
+     36          #include "fsl_lptmr_hal.h"
+     37          
+     38          #include "fsl_os_abstraction.h"
+     39          #include "fsl_clock_manager.h"
+     40          #include "pin_mux.h"
+     41          #if defined(FSL_FEATURE_SOC_FTM_COUNT)
+     42            #include "fsl_ftm_driver.h"
+     43          #else
+     44             #include "fsl_tpm_driver.h"
+     45          #endif
+     46          
+     47          
+     48          /*! *********************************************************************************
+     49          *************************************************************************************
+     50          * Private prototypes
+     51          *************************************************************************************
+     52          ********************************************************************************** */
+     53          static void LPTMR_ISR(void);
+     54          
+     55          /*! *********************************************************************************
+     56          *************************************************************************************
+     57          * Private memory declarations
+     58          *************************************************************************************
+     59          ********************************************************************************** */
+     60          static lptmr_state_t gLptmrUserState;
+     61          extern const IRQn_Type g_lptmrIrqId[LPTMR_INSTANCE_COUNT];
+     62          
+     63          /*! *********************************************************************************
+     64          *************************************************************************************
+     65          * Public functions
+     66          *************************************************************************************
+     67          ********************************************************************************** */
+     68          void StackTimer_Init(void (*cb)(void))
+     69          {
+     70              IRQn_Type irqId;
+     71          #if FSL_FEATURE_SOC_FTM_COUNT
+     72              FTM_Type * ftmBaseAddr = g_ftmBase[gStackTimerInstance_c];
+     73          
+     74              CLOCK_SYS_EnableFtmClock(gStackTimerInstance_c);
+     75          
+     76              FTM_HAL_Reset(ftmBaseAddr);
+     77              FTM_HAL_Enable(ftmBaseAddr, TRUE);
+     78              FTM_HAL_SetClockPs(ftmBaseAddr, kFtmDividedBy128);
+     79              FTM_HAL_SetClockSource(ftmBaseAddr, kClock_source_FTM_None);
+     80              FTM_HAL_SetTofFreq(ftmBaseAddr, 0);
+     81              FTM_HAL_SetWriteProtectionCmd(ftmBaseAddr, 0);
+     82              FTM_HAL_SetCounterInitVal(ftmBaseAddr, 0);
+     83              FTM_HAL_SetCounter(ftmBaseAddr, 0);
+     84              FTM_HAL_SetMod(ftmBaseAddr, 0xFFFF);
+     85              /* Configure channel to toggle on compare match */
+     86              FTM_HAL_SetChnMSnBAMode(ftmBaseAddr, gStackTimerChannel_c, 1);
+     87              FTM_HAL_SetChnCountVal(ftmBaseAddr, gStackTimerChannel_c, 0x01);
+     88          
+     89              /* Install ISR */
+     90              irqId = g_ftmIrqId[gStackTimerInstance_c];
+     91              FTM_HAL_EnableTimerOverflowInt(ftmBaseAddr);
+     92              FTM_HAL_EnableChnInt(ftmBaseAddr, gStackTimerChannel_c);
+     93          #else
+     94              TPM_Type *tpmBaseAddr = g_tpmBase[gStackTimerInstance_c];
+     95          
+     96              CLOCK_SYS_EnableTpmClock(gStackTimerInstance_c);
+     97          
+     98              TPM_HAL_Reset(tpmBaseAddr, gStackTimerInstance_c);
+     99              TPM_HAL_SetClockDiv(tpmBaseAddr, kTpmDividedBy128);
+    100          
+    101              TPM_HAL_SetClockMode(tpmBaseAddr, kTpmClockSourceNoneClk);
+    102              TPM_HAL_ClearCounter(tpmBaseAddr);
+    103              TPM_HAL_SetMod(tpmBaseAddr, 0xFFFF); //allready done by TPM_HAL_Reset()
+    104              /* Configure channel to Software compare; output pin not used */
+    105              TPM_HAL_SetChnMsnbaElsnbaVal(tpmBaseAddr, gStackTimerChannel_c, TPM_CnSC_MSA_MASK);
+    106              TPM_HAL_SetChnCountVal(tpmBaseAddr, gStackTimerChannel_c, 0x01);
+    107          
+    108              /* Install ISR */
+    109              irqId = g_tpmIrqId[gStackTimerInstance_c];
+    110              TPM_HAL_EnableTimerOverflowInt(tpmBaseAddr);
+    111              TPM_HAL_EnableChnInt(tpmBaseAddr, gStackTimerChannel_c);
+    112          #endif
+    113              /* Overwrite old ISR */
+    114              OSA_InstallIntHandler(irqId, cb);
+    115              /* set interrupt priority */
+    116              NVIC_SetPriority(irqId, gStackTimer_IsrPrio_c >> (8 - __NVIC_PRIO_BITS));
+    117              NVIC_ClearPendingIRQ(irqId);
+    118              NVIC_EnableIRQ(irqId);
+    119          }
+    120          
+    121          void StackTimer_Enable(void)
+    122          {
+    123          #if FSL_FEATURE_SOC_FTM_COUNT
+    124              FTM_HAL_SetClockSource(g_ftmBase[gStackTimerInstance_c], kClock_source_FTM_SystemClk);
+    125          #else
+    126              TPM_HAL_SetClockMode(g_tpmBase[gStackTimerInstance_c], kTpmClockSourceModuleClk);
+    127          #endif
+    128          }
+    129          
+    130          void StackTimer_Disable(void)
+    131          {
+    132          #if FSL_FEATURE_SOC_FTM_COUNT
+    133              FTM_HAL_SetClockSource(g_ftmBase[gStackTimerInstance_c], kClock_source_FTM_None);
+    134          #else
+    135              TPM_HAL_SetClockMode(g_tpmBase[gStackTimerInstance_c], kTpmClockSourceNoneClk);
+    136          #endif
+    137          }
+    138          
+    139          uint32_t StackTimer_GetInputFrequency(void)
+    140          {
+    141              uint32_t prescaller;
+    142              uint32_t refClk;
+    143          #if FSL_FEATURE_SOC_FTM_COUNT
+    144              CLOCK_SYS_GetFreq(kBusClock, &refClk);
+    145              prescaller = FTM_HAL_GetClockPs(g_ftmBase[gStackTimerInstance_c]);
+    146          #else
+    147              refClk = CLOCK_SYS_GetTpmFreq(gStackTimerInstance_c);
+    148              prescaller = TPM_HAL_GetClockDiv(g_tpmBase[gStackTimerInstance_c]);
+    149          #endif
+    150              return refClk / (1 << prescaller);
+    151          }
+    152          
+    153          uint32_t StackTimer_GetCounterValue(void)
+    154          {
+    155          #if FSL_FEATURE_SOC_FTM_COUNT
+    156              return FTM_HAL_GetCounter(g_ftmBase[gStackTimerInstance_c]);
+    157          #else
+    158              return TPM_HAL_GetCounterVal(g_tpmBase[gStackTimerInstance_c]);
+    159          #endif
+    160          }
+    161          
+    162          void StackTimer_SetOffsetTicks(uint32_t offset)
+    163          {
+    164          #if FSL_FEATURE_SOC_FTM_COUNT
+    165              FTM_HAL_SetChnCountVal(g_ftmBase[gStackTimerInstance_c], gStackTimerChannel_c, offset);
+    166          #else
+    167              TPM_HAL_SetChnCountVal(g_tpmBase[gStackTimerInstance_c], gStackTimerChannel_c, offset);
+    168          #endif
+    169          }
+    170          
+    171          void StackTimer_ClearIntFlag(void)
+    172          {
+    173          #if FSL_FEATURE_SOC_FTM_COUNT
+    174              FTM_Type * ftmBaseAddr = g_ftmBase[gStackTimerInstance_c];
+    175          
+    176              if( FTM_HAL_HasChnEventOccurred(ftmBaseAddr, gStackTimerChannel_c) )
+    177              {
+    178                  FTM_HAL_ClearChnEventFlag(ftmBaseAddr, gStackTimerChannel_c);
+    179              }
+    180              if( FTM_HAL_HasTimerOverflowed(ftmBaseAddr) )
+    181              {
+    182                  FTM_HAL_ClearTimerOverflow(ftmBaseAddr);
+    183              }
+    184          #else
+    185              TPM_DRV_IRQHandler(gStackTimerInstance_c);
+    186          #endif
+    187          }
+    188          
+    189          
+    190          void LPTMR_Init(void (*cb)(void))
+    191          {
+    192              const lptmr_user_config_t userConfig = {
+    193                  .timerMode = kLptmrTimerModeTimeCounter,
+    194                  .prescalerClockSource = kClockLptmrSrcEr32kClk,
+    195                  .prescalerValue = kLptmrPrescalerDivide32GlitchFilter16,
+    196                  .freeRunningEnable = 1,
+    197                  .isInterruptEnabled = 1,
+    198                  .pinSelect = kLptmrPinSelectInput0,
+    199                  .pinPolarity = kLptmrPinPolarityActiveHigh
+    200              };
+    201          
+    202              /* Overwrite old ISR */
+    203              OSA_InstallIntHandler(g_lptmrIrqId[gLptmrInstance_c], LPTMR_ISR);
+    204          
+    205              LPTMR_DRV_Init(gLptmrInstance_c, &gLptmrUserState, &userConfig);
+    206              LPTMR_DRV_InstallCallback(gLptmrInstance_c, cb);
+    207              LPTMR_DRV_Stop(gLptmrInstance_c);
+    208          }
+    209          
+    210          void LPTMR_Enable(void)
+    211          {
+    212              LPTMR_DRV_Start(gLptmrInstance_c);
+    213          }
+    214          
+    215          void LPTMR_Disable(void)
+    216          {
+    217              LPTMR_DRV_Stop(gLptmrInstance_c);
+    218          }
+    219          
+    220          uint32_t LPTMR_GetInputFrequency(void)
+    221          {
+    222              return gLptmrUserState.prescalerClockHz;
+    223          }
+    224          
+    225          uint32_t LPTMR_GetCounterValue(void)
+    226          {
+    227              return LPTMR_HAL_GetCounterValue(g_lptmrBase[gLptmrInstance_c]);
+    228          }
+    229          
+    230          void LPTMR_SetOffsetTicks(uint32_t offset)
+    231          {
+    232              LPTMR_HAL_SetCompareValue(g_lptmrBase[gLptmrInstance_c], offset);
+    233          }
+    234          
+    235          /*! *********************************************************************************
+    236          *************************************************************************************
+    237          * Private functions
+    238          *************************************************************************************
+    239          ********************************************************************************* */
+    240          static void LPTMR_ISR(void)
+    241          {
+    242              LPTMR_DRV_IRQHandler(gLptmrInstance_c);
+    243          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   LPTMR_Disable
+         8   -> LPTMR_DRV_Stop
+       8   LPTMR_Enable
+         8   -> LPTMR_DRV_Start
+       8   LPTMR_GetCounterValue
+         8   -> LPTMR_HAL_GetCounterValue
+       0   LPTMR_GetInputFrequency
+       0   LPTMR_HAL_SetCompareValue
+       8   LPTMR_ISR
+         8   -> LPTMR_DRV_IRQHandler
+      16   LPTMR_Init
+        16   -> LPTMR_DRV_Init
+        16   -> LPTMR_DRV_InstallCallback
+        16   -> LPTMR_DRV_Stop
+        16   -> OSA_InstallIntHandler
+       8   LPTMR_SetOffsetTicks
+         8   -> LPTMR_HAL_SetCompareValue
+       0   NVIC_ClearPendingIRQ
+       0   NVIC_EnableIRQ
+      20   NVIC_SetPriority
+       8   StackTimer_ClearIntFlag
+         8   -> TPM_DRV_IRQHandler
+       8   StackTimer_Disable
+         8   -> TPM_HAL_SetClockMode
+       8   StackTimer_Enable
+         8   -> TPM_HAL_SetClockMode
+       8   StackTimer_GetCounterValue
+         8   -> TPM_HAL_GetCounterVal
+      16   StackTimer_GetInputFrequency
+        16   -> CLOCK_SYS_GetTpmFreq
+        16   -> TPM_HAL_GetClockDiv
+        16 __aeabi_uidiv
+      16   StackTimer_Init
+        16   -> CLOCK_SYS_EnableTpmClock
+        16   -> NVIC_ClearPendingIRQ
+        16   -> NVIC_EnableIRQ
+        16   -> NVIC_SetPriority
+        16   -> OSA_InstallIntHandler
+        16   -> TPM_HAL_ClearCounter
+        16   -> TPM_HAL_EnableChnInt
+        16   -> TPM_HAL_EnableTimerOverflowInt
+        16   -> TPM_HAL_Reset
+        16   -> TPM_HAL_SetChnCountVal
+        16   -> TPM_HAL_SetChnMsnbaElsnbaVal
+        16   -> TPM_HAL_SetClockDiv
+        16   -> TPM_HAL_SetClockMode
+        16   -> TPM_HAL_SetMod
+       8   StackTimer_SetOffsetTicks
+         8   -> TPM_HAL_SetChnCountVal
+       0   TPM_HAL_ClearCounter
+      16   TPM_HAL_EnableChnInt
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+       0   TPM_HAL_EnableTimerOverflowInt
+       0   TPM_HAL_GetClockDiv
+       0   TPM_HAL_GetCounterVal
+      16   TPM_HAL_SetChnCountVal
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+      16   TPM_HAL_SetChnMsnbaElsnbaVal
+        16   -> __aeabi_assert
+        16   -> __iar_EmptyStepPoint
+       0   TPM_HAL_SetClockDiv
+       4   TPM_HAL_SetMod
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable21
+       4  ??DataTable21_1
+       4  ??DataTable21_10
+       4  ??DataTable21_11
+       4  ??DataTable21_12
+       4  ??DataTable21_13
+       4  ??DataTable21_14
+       4  ??DataTable21_15
+       4  ??DataTable21_2
+       4  ??DataTable21_3
+       4  ??DataTable21_4
+       4  ??DataTable21_5
+       4  ??DataTable21_6
+       4  ??DataTable21_7
+       4  ??DataTable21_8
+       4  ??DataTable21_9
+      40  ?_0
+      92  ?_1
+       8  ?_2
+      10  LPTMR_Disable
+      10  LPTMR_Enable
+      12  LPTMR_GetCounterValue
+       6  LPTMR_GetInputFrequency
+      12  LPTMR_HAL_SetCompareValue
+      10  LPTMR_ISR
+      52  LPTMR_Init
+      16  LPTMR_SetOffsetTicks
+      14  NVIC_ClearPendingIRQ
+      14  NVIC_EnableIRQ
+     132  NVIC_SetPriority
+      10  StackTimer_ClearIntFlag
+      14  StackTimer_Disable
+      14  StackTimer_Enable
+      12  StackTimer_GetCounterValue
+      32  StackTimer_GetInputFrequency
+     132  StackTimer_Init
+      20  StackTimer_SetOffsetTicks
+      14  TPM_HAL_ClearCounter
+      50  TPM_HAL_EnableChnInt
+      12  TPM_HAL_EnableTimerOverflowInt
+      10  TPM_HAL_GetClockDiv
+      12  TPM_HAL_GetCounterVal
+      50  TPM_HAL_SetChnCountVal
+      62  TPM_HAL_SetChnMsnbaElsnbaVal
+      10  TPM_HAL_SetClockDiv
+      30  TPM_HAL_SetMod
+       8  gLptmrUserState
+
+ 
+   8 bytes in section .bss
+ 140 bytes in section .rodata
+ 836 bytes in section .text
+ 
+ 836 bytes of CODE  memory
+ 140 bytes of CONST memory
+   8 bytes of DATA  memory
+
+Errors: none
+Warnings: none
