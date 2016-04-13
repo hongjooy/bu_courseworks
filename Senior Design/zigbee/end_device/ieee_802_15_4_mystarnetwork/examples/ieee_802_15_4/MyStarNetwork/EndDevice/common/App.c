@@ -228,7 +228,8 @@ uint16_t               pulsePeriod=64*60; //one sample set every 60 sec
 uint16_t               numPulseSamplesPerPeriod=64*30; //64 samples per set
 
 uint32_t inter_counter = 0;
-uint32_t out = 123; // ADA!! FIX THIS!!!!!!
+ /* ADA, FIX THIS!! */
+uint32_t gap = 123; 
 
 
 
@@ -1223,6 +1224,7 @@ static void App_SendPredefinedMessage( void )
         mcPendingPackets++;
     }
 }
+uint32_t test = 0xABCDEF12;
 /******************************************************************************
 * The App_SendSensorStatus() function will perform  data transmissions of
 * sensor data to the coordinator. It works exactly like the
@@ -1239,11 +1241,11 @@ static void App_SendSensorStatus( void )
     // Dummy accelerometer data
    // static int16_t dummyAccelData[3] = {76, 84, 67};
     // Dummy pressure data
-    static int16_t dummyPulse = 14;
+    //static int16_t dummyPulse = 14;
     // Dummy temperature data
-    static int8_t  dummyTemperature = 23;
+   // static int8_t  dummyTemperature = 23;
     // Dummy battery level
-    static int8_t  dummyBatteryLevel = 31;
+   // static int8_t  dummyBatteryLevel = 31;
     
     mpPacket1 = NULL;
     mpPacket2 = NULL;
@@ -1302,22 +1304,22 @@ static void App_SendSensorStatus( void )
         mpPacket1->msgData.dataReq.pMsdu[0] = 0x01;
         // Put dummy sensor data into the data packet
       
-        mpPacket1->msgData.dataReq.pMsdu[1] = (uint8_t)(xData & 0xFF00);
-        mpPacket1->msgData.dataReq.pMsdu[2] = (uint8_t)(xData & 0x00FF);
-        mpPacket1->msgData.dataReq.pMsdu[3] = (uint8_t)(yData & 0xFF00);
-        mpPacket1->msgData.dataReq.pMsdu[4] = (uint8_t)(yData & 0x00FF);
-        mpPacket1->msgData.dataReq.pMsdu[5] = (uint8_t)(zData & 0xFF00);
-        mpPacket1->msgData.dataReq.pMsdu[6] = (uint8_t)(zData & 0x00FF);
+        mpPacket1->msgData.dataReq.pMsdu[1] = (uint8_t)(xData);
+        mpPacket1->msgData.dataReq.pMsdu[2] = (uint8_t)(xData>>8);
+        mpPacket1->msgData.dataReq.pMsdu[3] = (uint8_t)(yData);
+        mpPacket1->msgData.dataReq.pMsdu[4] = (uint8_t)(yData>>8);
+        mpPacket1->msgData.dataReq.pMsdu[5] = (uint8_t)(zData);
+        mpPacket1->msgData.dataReq.pMsdu[6] = (uint8_t)(zData>>8);
         mpPacket1->msgData.dataReq.pMsdu[7] = (uint8_t)orientation;
-        mpPacket1->msgData.dataReq.pMsdu[8] = (uint8_t)(inter_counter & 0xFF000000);
-        mpPacket1->msgData.dataReq.pMsdu[9] = (uint8_t)(inter_counter & 0x00FF0000);
-        mpPacket1->msgData.dataReq.pMsdu[10] = (uint8_t)(inter_counter & 0x0000FF00);
-        mpPacket1->msgData.dataReq.pMsdu[11] = (uint8_t)(inter_counter & 0x000000FF);
-        // ADA!! FIX THIS!!!!!!!!
-        mpPacket1->msgData.dataReq.pMsdu[12] = (uint8_t)(out & 0xFF000000);
-        mpPacket1->msgData.dataReq.pMsdu[13] = (uint8_t)(out & 0x00FF0000);
-        mpPacket1->msgData.dataReq.pMsdu[14] = (uint8_t)(out & 0x0000FF00);
-        mpPacket1->msgData.dataReq.pMsdu[15] = (uint8_t)(out & 0x000000FF);
+         mpPacket1->msgData.dataReq.pMsdu[8] = (uint8_t)(inter_counter);
+         mpPacket1->msgData.dataReq.pMsdu[9] = (uint8_t)(inter_counter>>8);
+         mpPacket1->msgData.dataReq.pMsdu[10] = (uint8_t)(inter_counter>>16);
+         mpPacket1->msgData.dataReq.pMsdu[11] = (uint8_t)(inter_counter>>24);
+        /* ADA, FIX THIS!! */
+        mpPacket1->msgData.dataReq.pMsdu[12] = (uint8_t)(gap);
+         mpPacket1->msgData.dataReq.pMsdu[13] = (uint8_t)(gap>>8);
+         mpPacket1->msgData.dataReq.pMsdu[14] = (uint8_t)(gap>>16);
+         mpPacket1->msgData.dataReq.pMsdu[15] = (uint8_t)(gap>>24);
         
        
         /* Request MAC level acknowledgment of the data packet */
@@ -1376,19 +1378,23 @@ static void App_SendSensorStatus( void )
         // Signal to Coordinator that a sensor message follows
         mpPacket2->msgData.dataReq.pMsdu[0] = 0x02;
         // Put dummy sensor data into the data packet
-        mpPacket2->msgData.dataReq.pMsdu[1] = (uint8_t)(adcValue & 0xFF00);
-        mpPacket2->msgData.dataReq.pMsdu[2] = (uint8_t)(adcValue & 0x00FF);
-        mpPacket1->msgData.dataReq.pMsdu[3] = (uint8_t)(inter_counter & 0xFF000000);
-        mpPacket1->msgData.dataReq.pMsdu[4] = (uint8_t)(inter_counter & 0x00FF0000);
-        mpPacket1->msgData.dataReq.pMsdu[5] = (uint8_t)(inter_counter & 0x0000FF00);
-        mpPacket1->msgData.dataReq.pMsdu[6] = (uint8_t)(inter_counter & 0x000000FF);
-        // ADA!! FIX THIS!!!!!!!!
-        mpPacket1->msgData.dataReq.pMsdu[7] = (uint8_t)(out & 0xFF000000);
-        mpPacket1->msgData.dataReq.pMsdu[8] = (uint8_t)(out & 0x00FF0000);
-        mpPacket1->msgData.dataReq.pMsdu[9] = (uint8_t)(out & 0x0000FF00);
-        mpPacket1->msgData.dataReq.pMsdu[10] = (uint8_t)(out & 0x000000FF);
-       
-       
+        mpPacket2->msgData.dataReq.pMsdu[1] = (uint8_t)(adcValue);
+        mpPacket2->msgData.dataReq.pMsdu[2] = (uint8_t)(adcValue>>8);
+       mpPacket2->msgData.dataReq.pMsdu[3] = (uint8_t)(inter_counter);
+         mpPacket2->msgData.dataReq.pMsdu[4] = (uint8_t)(inter_counter>>8);
+        mpPacket2->msgData.dataReq.pMsdu[5] = (uint8_t)(inter_counter>>16);
+         mpPacket2->msgData.dataReq.pMsdu[6] = (uint8_t)(inter_counter>>24);
+         /* ADA, FIX THIS!! */
+          mpPacket2->msgData.dataReq.pMsdu[7] = (uint8_t)(gap);
+         mpPacket2->msgData.dataReq.pMsdu[8] = (uint8_t)(gap>>8);
+         mpPacket2->msgData.dataReq.pMsdu[9] = (uint8_t)(gap>>16);
+         mpPacket2->msgData.dataReq.pMsdu[10] = (uint8_t)(gap>>24);
+            /*   mpPacket2->msgData.dataReq.pMsdu[7] = (uint8_t)(test);
+         mpPacket2->msgData.dataReq.pMsdu[8] = (uint8_t)(test>>8);
+        mpPacket2->msgData.dataReq.pMsdu[9] = (uint8_t)(test>>16);
+         mpPacket2->msgData.dataReq.pMsdu[10] = (uint8_t)(test>>24);*/
+         
+
         /* Request MAC level acknowledgment of the data packet */
         mpPacket2->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
         /* Give the data packet a handle. The handle is

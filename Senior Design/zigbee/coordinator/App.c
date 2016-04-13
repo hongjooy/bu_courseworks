@@ -970,40 +970,40 @@ static void App_HandleMcpsInput(mcpsToNwkMessage_t *pMsgIn)
        * a message with sensor data.
        * The sensor data message starts wita a 0xFF.
        */
-      Serial_Print(mInterfaceId,"\n\rDevice address: ", gAllowToBlock_d);
+      Serial_Print(mInterfaceId,"\n\rdeviceAddr:", gAllowToBlock_d);
       Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.srcAddr, 2, 0);
       
       if (pMsgIn->msgData.dataInd.pMsdu[0] == 0x01) //Accel
       {
         // Sensor data message
-    	  Serial_Print(mInterfaceId," xData:", gNoBlock_d);      
+        Serial_Print(mInterfaceId,",xCoord:", gNoBlock_d);      
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[1], 2, 0);
           
     	  
-    	  Serial_Print(mInterfaceId," yData:", gNoBlock_d);      
+    	  Serial_Print(mInterfaceId,",yCoord:", gNoBlock_d);      
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[3], 2, 0);
     	  
-    	  Serial_Print(mInterfaceId," zData:", gNoBlock_d);
+    	  Serial_Print(mInterfaceId,",zCoord:", gNoBlock_d);
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[5], 2, 0);
           
-    	  Serial_Print(mInterfaceId," orientation:", gNoBlock_d);
+    	  Serial_Print(mInterfaceId,",orientation:", gNoBlock_d);
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[7], 1, 0);
-         // Serial_PrintHex(mInterfaceId, &rssi, 1, 0);
-           Serial_Print(mInterfaceId," Counter:", gNoBlock_d);
-          Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[8], 4, 0);
-          Serial_Print(mInterfaceId," Gap:", gNoBlock_d);
-          Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[12], 4, 0);
+        //  Serial_PrintHex(mInterfaceId, &rssi, 1, 0);
+            Serial_Print(mInterfaceId,",time:", gNoBlock_d);
+           Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[8], 4, 0);
+          // Serial_Print(mInterfaceId," Gap:", gNoBlock_d);
+          // Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[12], 4, 0);
       }
       else if (pMsgIn->msgData.dataInd.pMsdu[0] == 0x02) //Mic
       {
         // Sensor data message
-    	  Serial_Print(mInterfaceId," Noise:", gNoBlock_d);      
+    	  Serial_Print(mInterfaceId,",mic:", gNoBlock_d);      
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[1], 1, 0);
     	  Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[2], 1, 0);
-          Serial_Print(mInterfaceId," Counter:", gNoBlock_d);
+          Serial_Print(mInterfaceId,",time:", gNoBlock_d);
           Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[3], 4, 0);
-          Serial_Print(mInterfaceId," Gap:", gNoBlock_d);
-          Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[7], 4, 0);
+          //Serial_Print(mInterfaceId," Test:", gNoBlock_d);
+          //Serial_PrintHex(mInterfaceId,(uint8_t*)&pMsgIn->msgData.dataInd.pMsdu[7], 4, 0);
           
       }
       else
