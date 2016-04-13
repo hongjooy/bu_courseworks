@@ -27,13 +27,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src='{% static "website/js/bootstrap.min.js" %} '></script>
+    <!-- Custom JavaScript -->
+    <script src='{% static "website/js/menu.js" %} '></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -99,7 +95,8 @@
             <h1>Welcome to Mooove</h1>
             <h3>for the betterness of livestocks</h3>
             <br>
-            <a href="/login" class="btn btn-dark btn-lg">Log In</a>
+            <a href="/login" class="btn btn-dark btn-lg">Log In</a>&nbsp; &nbsp; &nbsp; &nbsp; 
+            <a href="/dashboard/0" class="btn btn-dark btn-lg">Preview</a>
             {% endif %}
 
            
@@ -222,39 +219,6 @@
         </div>
     </footer>
 
- 
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
 
 </body>
 
