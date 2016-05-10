@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+{% block body_block %}
+
+<style>
+#login-header{
+    width : 100%;
+    padding-top: 20px;
+    padding-left: 220px;
+
+}
+#login-container{
+    margin: 20px auto;
+  
+}
+</style>
+<div id="login-header">
+    <h1> <strong>MOOOVE SIGN UP</strong> </h1>
+</div>
+<div id="login-container">
+    <form class="form-horizontal" method='post' action=''>
+        {% csrf_token %}
+    <!-- One Field Begin -->
+      <div class="form-group">
+        <label for="id_firstname" class="col-sm-2 control-label">Firstname</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="first_name" placeholder="Type First Name" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+    <!-- One Field Begin -->
+      <div class="form-group">
+        <label for="id_lastname" class="col-sm-2 control-label">Lastname</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="last_name" placeholder="Type Last Name" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+    <!-- One Field Begin -->
+      <div class="form-group">
+        <label for="id_username" class="col-sm-2 control-label">Username</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="username" placeholder="Type Username" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+    <!-- One Field Begin -->
+      <div class="form-group">
+        <label for="id_email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="email" placeholder="Type Email" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+          <div class="form-group">
+        <label for="id_password" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="password" class="form-control" name="password" placeholder="Type Password" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+          <div class="form-group">
+        <label for="id_password" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="password" class="form-control" name="re_password" placeholder="Verify Password" value="" size="50">
+            </p>
+        </div>
+      </div>
+    <!-- One Field End -->
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" value="Sign Up" class="btn btn-default"/>
+        </div>
+      </div>
+    </form>
+</div>
+ 
+{% endblock %}

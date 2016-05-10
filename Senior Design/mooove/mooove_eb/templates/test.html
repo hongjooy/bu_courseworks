@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block body_block %}
+{% load staticfiles %}
+<script src='{% static "website/js/friends.js" %}'></script>
+
+<h1>{{first_name}}</h1><br>
+<div>
+	{% for cow in cow_list %}
+	<h2>{{cow.cowname}} {{cow.cowbirthdate}}</h2><br>
+	{% endfor %}
+</div>
+<div>
+	<h1>{{thismanyfriends}}<h1>
+	<h2>{{cowid}}, {{cownum}}, {{cowname}}, {{ankletnum}}</h2><br>
+</div>
+<div>
+	{{jsondump}}
+	{% for fr in friendlist %}
+	<h2>{{fr.friend_name}}<h2></h2>
+
+	{% endfor %}
+
+</div>
+
+<script type="text/javascript" >
+    var cowid = "{{cowid}}";
+    var cowIcon = '{% static "img/cowmarker.png" %}';
+    var jsondump = {{friendlist|safe}};
+    console.log("DEBUG: js called.");
+
+</script>
+
+
+{% endblock %}

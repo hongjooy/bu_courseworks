@@ -1,0 +1,353 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block body_block %}
+{% load staticfiles %}
+<!-- <script src='{% static "website/js/dashboard.js" %}'></script> -->
+<script src='{% static "website/js/maps.js" %}'></script>
+<script src='{% static "website/js/activity.js" %}'></script>
+<script src='{% static "website/js/noise.js" %}'></script>
+<script src='{% static "website/js/pulse.js" %}'></script>
+<script src='{% static "website/js/friends.js" %}'></script>
+<script src='{% static "website/js/overview.js" %}'></script>
+<script src='{% static "website/js/social.js" %}'></script>
+<script src='{% static "website/js/group.js" %}'></script>
+<script src='{% static "website/js/step.js" %}'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9YQ9P2Ax9SP4_xo9nVY44yWqH_9En4Y"></script>
+<meta name="viewport" content="initial-scale=1.0">
+<meta charset="utf-8">
+
+<!-- Social vis.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.0/vis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.0/vis.min.css"></script>
+
+<!-- GoogleAnalyistic.js -->
+<script src="https://www.google-analytics.com/analytics.js"></script>
+
+<style>
+
+#dash-header{
+    width : 100%;
+    padding-left: 60px;
+
+
+}
+.dash-container {
+  width: 100%;
+  margin: 20px auto;
+  padding-right:60px;
+  padding-left: 60px;
+}
+.panel-inverse>.panel-heading {
+    background: #242a30;
+    color: #fff;
+}
+#map{
+
+    width:100%;
+    height:300px;"
+}
+.chart-legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+#here{
+    width: 100%;
+}
+
+
+#noise{
+    width:100%;
+    height:300px;
+}
+#pulse{
+    width:100%;
+    height:355px;
+}
+#step{
+    width:100%;
+    height:355px;
+}
+#overview{
+    width:100%;
+    height:300px;
+}
+#activity{
+    width:100%;
+    height:350px;
+}
+#friendship{
+    width:100%;
+    height:250px;
+}
+#mynetwork {
+  width: 100%;
+  height: 300px;
+
+}
+#group {
+  width: 100%;
+  height: 300px;
+
+}
+.table{
+    margin-bottom: 0px;
+}
+.dropdown{
+    margin-left: 60px;
+}
+
+</style>
+
+
+<div id = "dash-header"> 
+    <h1><strong>
+        {% if cowname %}
+        {{cowname}}'s Dashboard! (Cow Number: {{cownum}})
+        {% else %}
+        Cow Number {{cownum}}'s Dashboard! (Device Number: {{ankletnum}})
+        {% endif %}    
+    </strong></h1>
+
+</div>
+    <div class="dropdown">
+ 
+  <button class="btn btn-default dropdown-toggle" type="button" id="mycows" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    My Other Cows
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    {% for cow in cow_list %}
+    <li><a href="/dashboard/{{cow.idcow}}">Name: {{cow.cowname}} (#{{cow.cownum}}) </a></li>
+    {% endfor %}
+
+  </ul>
+  </div>
+
+    </div>
+
+
+<div class="dash-container">
+
+        <div class="row">
+            <div class="col-md-12 ui-sortable">
+                <div class="panel panel-inverse" data-sortable-id="char-3">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">General Activity</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            The grey bar describes {{cowname}}'s general activity in average, and the blue bar represents how {{cowname}} is doing at the moment. This section will also have alert at the buttom if there is any significant event happend to {{cowname}}.
+                        </p>
+                        <div >
+                            <canvas id="overview"></canvas> 
+                        </div>
+                        {% if in_heat > 0 %}
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                            <strong>Important:</strong> {{cowname}} is in heat!</div>
+                        </div>
+                        {% endif %}
+               
+                        </div>
+
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-1">
+                    <div class="panel-heading">
+                        
+                        <h4 class="panel-title">Surrounding Noise </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                           This graph indicates how loud {{cowname}}'s environment currently is. 
+                        </p>
+                        <div>
+                            <canvas id="noise" ></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ui-sortable">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-2">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"> Location</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            {{cowname}}'s current location. This will be refreshed every minute.
+                        </p>
+                        <div>
+                            <div id="map" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--************************************ 2nd Row ***************************************-->
+<!--================ Activity Monitor Moment ==============-->
+        <div class="row">
+            <div class="col-md-6 ui-sortable">
+                <div class="panel panel-inverse" data-sortable-id="char-3">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Activity Level</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            {{cowname}}'s general activity percentage!
+
+
+                        </p>
+                        <div >
+                            <canvas id="activity">
+                            </canvas> 
+                        </div>
+                        <div id="act-legend" class="chart-legend"></div>
+
+                    </div>
+                </div>
+            </div>
+<!--================ Activity Monitor Average ==============-->
+            <div class="col-md-6">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-4">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Friends List</h4>
+                    </div>
+                    <div class="panel-body">
+                   <p>
+                            {{cowname}}'s friends! The graph represents how close {{cowname}} is to each of its friends. The higher the closer! If you want to see more about its friends, click the names on the table below and look at their dashboard as well!
+                        </p>
+                        <div>
+                            <canvas id="friendship"></canvas>
+                        </div>
+                            <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Friend's Name</th>
+                                <th>Friendship Rank</th>
+                                <th>Friendship Score</th>
+                                <th>Friends's Number</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                {% for friend in friendlist %}
+                                <tr>
+                                    <td><a href="/dashboard/{{friend.friend_id}}">{{friend.friend_name}}</a></td>
+                                    <td>{{friend.friendship_rank}}</td>
+                                    <td>{{friend.friendship_score}}</td>
+                                    <td>{{friend.friend_number}}</td>
+                                </tr>
+                                {% endfor %}
+
+                            </tbody>
+                          </table> 
+
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-1">
+                    <div class="panel-heading">
+                        
+                        <h4 class="panel-title">Pulse Rate</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                           {{cowname}}'s Pulse rate!
+                        </p>
+                        <div>
+                            <canvas id="pulse" ></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--================ Activity Monitor Average ==============-->
+            <div class="col-md-6 ui-sortable">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-2">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"> Friendships </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            This describes general social map of the cows you have registered. Each circle represents the cows, and more social they are the larger the circle gets. Moreover, if two cows are connected to each other, it means they are friends, and the thickness of the link describes how close they are. 
+                        </p>
+                        <div >
+                            <div id="mynetwork" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--  ADDED     -->   
+    <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-1">
+                    <div class="panel-heading">
+                        
+                        <h4 class="panel-title">Step Counting</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                           {{cowname}}'s Step Counts! 
+                        </p>
+                        <div>
+                            <canvas id="step" ></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--================ Activity Monitor Average ==============-->
+            <div class="col-md-6 ui-sortable">
+                <div class="panel panel-inverse" data-sortable-id="chart-js-2">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"> Social Grouping </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            This describes general social map of the cows you have registered. Each circle represents the cows, and more social they are the larger the circle gets. Moreover, if two cows are connected to each other, it means they are friends, and the thickness of the link describes how close they are. 
+                        </p>
+                        <div >
+                            <div id="group" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</div>
+   
+<script type="text/javascript" >
+    var cowid = "{{cowid}}";
+    var user = "{{user.id}}";
+    var friends = {{friendlist|safe}};
+    var ave_stand = {{ave_stand|safe}};
+    var ave_walk = {{ave_walk|safe}};
+    var ave_run = {{ave_run|safe}};
+    var ave_lying = {{ave_lying|safe}};
+    var ave_noise = {{ave_noise|safe}};
+    var ave_stepcount = {{ave_stepcount|safe}};
+    var ave_sociallevel = {{ave_sociallevel|safe}};
+    
+    var cow_id = {{cowid|safe}};
+    var cowname = "{{cowname}}";
+    var cownum = "{{cownum}}";
+    var cowIcon = '{% static "website/img/cowmarker.png" %}';
+    
+</script>
+
+
+
+{% endblock %}
+

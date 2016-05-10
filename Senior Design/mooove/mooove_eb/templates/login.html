@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+{% block body_block %}
+<style>
+#login-header{
+    width : 100%;
+    padding-top: 20px;
+    padding-left: 220px;
+
+}
+#login-container{
+    margin: 20px auto;
+  
+}
+#notmemberyet{
+    padding-left:220px
+}
+
+</style>
+<div id="login-header">
+    <h1> <strong>MOOOVE LOGIN</strong> </h1>
+</div>
+<div id="login-container">
+    <form class="form-horizontal" method='post' action=''>
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="id_username" class="col-sm-2 control-label">Username</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="text" class="form-control" name="username" placeholder="Username" value="" size="50">
+            </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="id_password" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-4">
+           <p class = "required"> 
+            <input type="password" class="form-control" name="password" placeholder="Password" value="" size="50">
+            </p>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" value="submit" class="btn btn-default"/>
+        </div>
+      </div>
+    </form>
+    <div id="notmemberyet">
+        <h3> Not a member yet? <a href = "{% url 'register' %}" >Register here!</a>
+    </div>
+</div>
+
+ {% endblock %}
